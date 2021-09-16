@@ -1,0 +1,45 @@
+{
+  "name": "ts-node-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest",
+    "start": "ts-node-dev src/app.ts",
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts  migrate:latest",
+    "build": "rm -rf build && mkdir build && tsc --outDir build && cp ../dbBackup/database.sqlite build/src/database && cp .env build/",
+    "start:prod": "pm2 start build/src/app.js",
+    "backup": "cd ../ && rm -rf dbBackup && mkdir dbBackup && cp server/build/src/database/database.sqlite dbBackup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "export-to-csv": "^0.2.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.12",
+    "objection": "^2.2.3",
+    "sqlite3": "^5.0.0",
+    "typescript": "^4.1.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.18",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/supertest": "^2.0.10",
+    "@types/uuid": "^8.3.0",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.0.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1"
+  }
+}

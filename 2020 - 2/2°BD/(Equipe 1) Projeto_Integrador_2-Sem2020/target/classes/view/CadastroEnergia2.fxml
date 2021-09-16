@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroEnergia2">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" layoutY="-1.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtMesReferenciaEnergia" layoutX="200.0" layoutY="32.0" onKeyReleased="#mascaraMesReferencia" prefHeight="25.0" prefWidth="167.0" promptText="Mês/Ano" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNumeroInstalacao" layoutX="200.0" layoutY="107.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtConsumodoMesKWH" layoutX="200.0" layoutY="130.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDataVencimento" layoutX="200.0" layoutY="176.0" onKeyReleased="#mascaraVencimento" prefHeight="26.0" prefWidth="92.0" AnchorPane.topAnchor="176.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtValorTotal" layoutX="549.0" layoutY="176.0" prefHeight="25.0" prefWidth="86.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtConstMulti" layoutX="160.0" layoutY="290.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="290.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNRdoMedidor" layoutX="160.0" layoutY="340.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAnteriorEnergia" layoutX="160.0" layoutY="390.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="390.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAtualEnergia" layoutX="160.0" layoutY="440.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.topAnchor="440.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDataLeituraAnterior" layoutX="607.0" layoutY="296.0" onKeyReleased="#mascaraDataAnt" prefHeight="26.0" prefWidth="106.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDataLeituraAtual" layoutX="607.0" layoutY="343.0" onKeyReleased="#mascaraDataAtual" prefHeight="26.0" prefWidth="106.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField id="txtUsuario" fx:id="txtUsuario" layoutX="533.0" layoutY="34.0" />
+      <ComboBox fx:id="comboBandeirasTarifarias" layoutX="440.0" layoutY="433.0" prefHeight="25.0" prefWidth="152.0" style="-fx-background-radius: 5em;" />
+      <Button fx:id="btnVoltarTelaIncial" layoutX="500.0" layoutY="491.0" mnemonicParsing="false" onAction="#changeScreenVoltarTelaInicial" prefHeight="30.0" prefWidth="255.0" style="-fx-background-radius: 5em;" text="Salvar e voltar á tela inicial" textFill="#4a8af2">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetornarEnergia" layoutX="15.0" layoutY="491.0" mnemonicParsing="false" onAction="#changeScreenRetornar" opacity="0.96" prefHeight="33.0" prefWidth="129.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="87.0" text="Número da instalação*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="37.0" text="Conta do mês*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="181.0" text="Data de vencimento*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="135.0" text="Consumo do mês/kWh*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="256.0" text="Descrição de consumo" AnchorPane.leftAnchor="12.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="395.0" text="Leitura anterior*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="295.0" text="Const.Multi." AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="179.0" prefHeight="20.0" prefWidth="152.0" text="Valor total a pagar*" AnchorPane.leftAnchor="373.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="445.0" text="Leitura atual*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="345.0" text="NR do medidor*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="256.0" text="Período do faturamento" AnchorPane.leftAnchor="440.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="298.0" text="Data leitura anterior*" AnchorPane.leftAnchor="440.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="345.0" text="Data leitura atual*" AnchorPane.leftAnchor="440.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="397.0" text="Bandeiras tarifarias*">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="470.0" text="Campos com * são obrigatórios">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="36.0" text="Quem cadastrou*">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

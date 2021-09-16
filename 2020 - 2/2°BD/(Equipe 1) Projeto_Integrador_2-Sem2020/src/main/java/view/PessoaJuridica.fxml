@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" prefHeight="538.0" prefWidth="790.0" scaleShape="false" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PessoaJuridica">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="272.0" text="Informações Pessoais:" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNomeFantasia" disable="true" layoutX="331.0" layoutY="120.0" prefHeight="33.0" prefWidth="330.0" AnchorPane.leftAnchor="302.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCNPJEmpresa" layoutX="331.0" layoutY="68.0" onKeyReleased="#mascaraCNPJCliente" prefHeight="33.0" prefWidth="330.0" AnchorPane.leftAnchor="302.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" disable="true" layoutX="331.0" layoutY="172.0" prefHeight="33.0" prefWidth="330.0" AnchorPane.leftAnchor="302.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNomeFornecedor" disable="true" layoutX="302.0" layoutY="340.0" prefHeight="33.0" prefWidth="330.0" AnchorPane.leftAnchor="302.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCNPJFornecedor" layoutX="302.0" layoutY="288.0" onKeyReleased="#mascaraCNPJFornecedor" prefHeight="33.0" prefWidth="330.0" AnchorPane.leftAnchor="302.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboTipo" disable="true" layoutX="302.0" layoutY="398.0" prefHeight="30.0" prefWidth="198.0" promptText="Escolha o tipo de fornecedor" style="-fx-background-radius: 5em;" />
+      <Button fx:id="btnProsseguirPJ" layoutX="546.0" layoutY="471.0" mnemonicParsing="false" onAction="#changeScreenProsseguir" prefHeight="33.0" prefWidth="216.0" style="-fx-background-radius: 5em;" text="Salvar e prosseguir" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="63.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetornarPJ" layoutX="14.0" layoutY="471.0" mnemonicParsing="false" onAction="#changeScreenRetornar" opacity="0.96" prefHeight="30.0" prefWidth="189.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="15.0" layoutY="242.0" text="Informações do fornecedor:" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="464.0" text="Campos com * são obrigatórios">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="125.0" text="Nome fantasia*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="73.0" text="CNPJ*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="177.0" text="E-mail" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="345.0" text="Nome*" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="297.0" text="CNPJ*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="401.0" text="Tipo*" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBuscarCNPJ" layoutX="690.0" layoutY="69.0" mnemonicParsing="false" onAction="#changeScreenBuscarCNPJ" prefHeight="25.0" prefWidth="79.0" style="-fx-background-radius: 5em;" AnchorPane.rightAnchor="55.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/Lupa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnBuscarCNPJFornecedor" layoutX="656.0" layoutY="293.0" mnemonicParsing="false" onAction="#changeScreenBuscarCNPJFornecedor" prefHeight="25.0" prefWidth="79.0" style="-fx-background-radius: 5em;" AnchorPane.rightAnchor="55.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/Lupa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnFornecedor" layoutX="401.0" layoutY="15.0" mnemonicParsing="false" onAction="#changeScreenFornecedor" style="-fx-background-radius: 3em;" text="Cadastrar fornecedor" textFill="#4a8af2" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPessoaJuridica" layoutX="582.0" layoutY="15.0" mnemonicParsing="false" onAction="#changeScreenPessoaJuridica" style="-fx-background-radius: 3em;" text="Cadastrar pessoa jurídica" textFill="#4a8af2" AnchorPane.leftAnchor="574.0" AnchorPane.topAnchor="18.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

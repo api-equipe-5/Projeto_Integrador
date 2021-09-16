@@ -1,0 +1,4 @@
+tasks:
+  - init: mysql < DDL.sql
+image:
+  file: .gitpod.Dockerfile

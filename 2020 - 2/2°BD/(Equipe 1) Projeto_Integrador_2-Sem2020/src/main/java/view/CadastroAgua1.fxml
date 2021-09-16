@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroAgua1">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="460.0" text="Complemeto" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCidade1" layoutX="490.0" layoutY="424.0" text="N°*">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblConsumo" layoutX="537.0" layoutY="261.0" text="Consumo(m3)*">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHidrometro" layoutX="455.0" layoutY="123.0" text="Hidrômetro">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTipoDe" layoutX="436.0" layoutY="84.0" text="Tipo de ligação">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCodCliente" layoutX="20.0" layoutY="83.0" text="Código do cliente*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCEP" layoutX="13.0" layoutY="344.0" text="CEP*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUf" layoutX="485.0" layoutY="383.0" text="UF*">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCidade" layoutX="17.0" layoutY="383.0" text="Cidade*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRGI" layoutX="71.0" layoutY="33.0" onKeyReleased="#mascaraRGI" opacity="0.8" prefHeight="25.0" prefWidth="202.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGR" layoutX="387.0" layoutY="32.0" opacity="0.8" prefHeight="25.0" prefWidth="78.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCodigoCliente" layoutX="185.0" layoutY="81.0" opacity="0.8" prefHeight="26.0" prefWidth="177.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNumeroConta" layoutX="186.0" layoutY="121.0" opacity="0.8" prefHeight="26.0" prefWidth="177.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMesReferencia" layoutX="186.0" layoutY="161.0" onKeyReleased="#mascaraMesReferencia" opacity="0.8" prefHeight="26.0" prefWidth="91.0" promptText="Mês/Ano">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTipoLigacao" layoutX="584.0" layoutY="81.0" opacity="0.8" prefHeight="25.0" prefWidth="177.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtHidrometro" layoutX="584.0" layoutY="121.0" opacity="0.8" prefHeight="26.0" prefWidth="188.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAntData" layoutX="239.0" layoutY="258.0" onKeyReleased="#mascaraDataAnt" opacity="0.8" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAntNumero" layoutX="363.0" layoutY="258.0" opacity="0.8" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAtualData" layoutX="239.0" layoutY="299.0" onKeyReleased="#mascaraDataAtual" opacity="0.8" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLeituraAtualNumero" layoutX="363.0" layoutY="299.0" opacity="0.8" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtConsumo" layoutX="664.0" layoutY="258.0" opacity="0.8" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCEP" layoutX="128.0" layoutY="341.0" onKeyReleased="#mascaraCEP" opacity="0.8" prefHeight="26.0" prefWidth="110.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBuscarCEP" layoutX="260.0" layoutY="341.0" mnemonicParsing="false" onAction="#buscarCEP" prefHeight="25.0" prefWidth="70.0" style="-fx-background-radius: 5em;" text="Buscar" textFill="#4a8af2">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCadastrarEndereco" layoutX="366.0" layoutY="341.0" mnemonicParsing="false" onAction="#cadastrarNovoEndereco" style="-fx-background-radius: 5em;" text="Cadastrar novo endereço" textFill="#4a8af2">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumero" layoutX="530.0" layoutY="421.0" opacity="0.8" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSalvarContinuar" layoutX="518.0" layoutY="501.0" mnemonicParsing="false" onAction="#changeScreenContinuar" prefHeight="30.0" prefWidth="222.0" style="-fx-background-radius: 5em;" text="Salvar e continuar" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="565.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetornarAgua1" layoutX="21.0" layoutY="501.0" mnemonicParsing="false" onAction="#changeScreenRetornar" opacity="0.96" prefHeight="30.0" prefWidth="188.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblEndereco" layoutX="13.0" layoutY="423.0" text="Endereço*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLeituraAnterior" layoutX="17.0" layoutY="258.0" text="Leitura anterior*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLeituraAtual" layoutX="15.0" layoutY="302.0" text="Leitura atual*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApresentacao" layoutX="13.0" layoutY="219.0" text="Apresentação" AnchorPane.leftAnchor="13.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMesReferencia" layoutX="24.0" layoutY="164.0" text="Mês de referência*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGR" layoutX="337.0" layoutY="35.0" text="GR*">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbNumConta" layoutX="25.0" layoutY="123.0" text="N° da conta*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRGI" layoutX="28.0" layoutY="35.0" prefHeight="21.0" prefWidth="64.0" text="RGI*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCidade" disable="true" layoutX="119.0" layoutY="381.0" prefHeight="25.0" prefWidth="307.0" AnchorPane.leftAnchor="125.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEndereco" disable="true" layoutX="122.0" layoutY="421.0" prefHeight="25.0" prefWidth="307.0" AnchorPane.leftAnchor="125.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtComplemento" layoutX="122.0" layoutY="458.0" AnchorPane.leftAnchor="125.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboUF" disable="true" layoutX="528.0" layoutY="381.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="574.0" layoutY="473.0" text="Campos com * são obrigatórios">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

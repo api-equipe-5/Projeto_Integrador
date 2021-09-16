@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicialController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnInstalacaoCadastrada" ellipsisString="" layoutX="207.0" layoutY="101.0" mnemonicParsing="false" onAction="#changeScreenInstalacaoCadastrada" prefHeight="43.0" prefWidth="52.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/VelhaInst.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnNovaInst" ellipsisString="" layoutX="210.0" layoutY="251.0" mnemonicParsing="false" onAction="#changeScreenNovaInst" prefHeight="30.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/NovaInst.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnRelatorios" ellipsisString="" layoutX="207.0" layoutY="401.0" mnemonicParsing="false" onAction="#changeScreenTipoRelatorio" prefHeight="43.0" prefWidth="62.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/Relatorios.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="227.0" layoutY="21.0" text="Selecione o tipo de cadastro">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="142.0" text="Instalação já cadastrada">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="292.0" text="Nova Instalação">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="442.0" text="Relatórios">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

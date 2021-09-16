@@ -1,0 +1,64 @@
+{
+  //workbench
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "left",
+  "workbench.view.experimental.allowMovingToNewContainer": true,
+  //limite de editores(aba) abertos
+  "workbench.editor.limit.enabled": true, //Enable this feature (off by default).
+  //"workbench.editor.limit.perEditorGroup": //Whether to apply the limit per editor group or across all groups.
+  "workbench.editor.limit.value": 6, //The maximum number of open editors (10 by default).
+  //======================================================================//
+  // Configuraçao de formato e correcao do codigo (eslint) automatica (prettier)
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript"],
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.packageManager": "yarn",
+  //======================================================================//
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 2,
+  //files
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  //explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  //git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Deep Ocean - Blue",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

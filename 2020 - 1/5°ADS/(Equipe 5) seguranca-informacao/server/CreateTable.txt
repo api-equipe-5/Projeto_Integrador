@@ -1,0 +1,52 @@
+CREATE TABLE if not EXISTS comunicado(
+  cod_comunicado integer PRIMARY KEY AUTOINCREMENT,
+  data_comunicado DATETIME,
+  responsavel_comunicado varchar(100),
+  email_comunicado varchar(100),
+  data_criado DATETIME,
+  data_atualizado DATETIME
+);
+
+CREATE TABLE if not EXISTS resposta(
+  cod_resposta INTEGER PRIMARY KEY AUTOINCREMENT,
+  conteudo_resposta TEXT,
+  autor_resposta varchar(100),
+  data_criado DATETIME,
+  data_atualizado DATETIME,
+  cod_comunicado INtEGER NOT NULL,
+   FOREIGN KEY (cod_comunicado)
+    REFERENCES comunicado(cod_comunicado)
+);
+
+CREATE TABLE if not EXISTS area(
+  cod_area INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome_area VARChar(50),
+  data_criado DATETIME,
+  data_atualizado DATETIME
+);
+
+CREATE TABLE if not EXISTS empresa(
+  cod_empresa INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome_empresa VARChar(100),
+  razao_social varchar(100),
+  data_criado DATETIME,
+  data_atualizado DATETIME,
+  cod_area INtEGER NOT NULL,
+   FOREIGN KEY (cod_area)
+    REFERENCES area(cod_area)
+);
+
+CREATE TABLE if not EXISTS dpo(
+  cod_dpo INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome_dpo VARCHAR(100),
+  cnpj_dpo VARChar(21),
+  email_dpo varchar(100),
+  senha_dpo varchar(32),
+  telefone_dpo varchar(20),
+  bio_dpo varchar(255),
+  data_criado DATETIME,
+  data_atualizado DATETIME,
+  cod_empresa INTEGER not NULL,
+   FOREIGN KEY(cod_empresa)
+    REFERENCES empresa(cod_empresa)
+);

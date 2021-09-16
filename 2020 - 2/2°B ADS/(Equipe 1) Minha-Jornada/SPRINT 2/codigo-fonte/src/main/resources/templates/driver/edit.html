@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Minha Jornada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+</div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Edição de Motorista
+        </h1>
+    </div>
+</section>
+<section class="is-rounded is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="#" class="box" method="post" th:action="@{/driver/save}" th:object="${driver}">
+                        <div class="field">
+                            <label class="label" for="">Id</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="id" name="id" placeholder="Id"
+                                           readonly="readonly" required th:field="*{id}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Nome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="name" name="name" placeholder="nome"
+                                           required th:field="*{name}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Sobrenome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="surname" name="surname"
+                                           placeholder="Sobrenome" required th:field="*{surname}"
+                                           type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Categoria da habilitação</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="categoryLicense" name="categoryLicense"
+                                           placeholder="Categoria da habilitação"
+                                           required th:field="*{categoryLicense}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Ano de Admissão</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="yearAdmission" name="yearAdmission"
+                                           placeholder="Ano de Admissão"
+                                           required th:field="*{yearAdmission}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Telefone</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="telephone" name="telephone" placeholder="Telefone"
+                                           required th:field="*{telephone}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Sindicato</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="union" name="union" placeholder="Sindicato"
+                                           required th:field="*{unionName}" type="text">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">email</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="email" name="email" placeholder="email"
+                                           required th:field="*{email}" type="text">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field" id="savebutton">
+                            <button class="button is-success">
+                                Registrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            var $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
+        });
+    });
+</script>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Minha Jornada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+</div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Criação de motoristas
+        </h1>
+    </div>
+</section>
+<section class="is-rounded is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="#" class="box" method="post" th:action="@{/driver/save}" th:object="${driver}">
+                        <div class="field">
+                            <label class="label" for="">Nome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="nome" name="nome" placeholder="Nome do motorista"
+                                           required th:field="*{name}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Senha</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="password" name="password" placeholder="*******"
+                                           required th:field="*{password}" type="password">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Sobrenome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="Sobrenome" name="sobrenome"
+                                           placeholder="Sobrenome do Motorista" required th:field="*{surname}"
+                                           type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Categoria da Habilitada</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{categoryLicense}">
+                                            <option th:each="categoryLicense : ${availableLicenses}"
+                                                    th:text="${categoryLicense.label}"
+                                                    th:value="${categoryLicense}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Ano de admissão</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="yearAdmission" name="yearAdmission"
+                                           placeholder="Ano de admissão"
+                                           required th:field="*{yearAdmission}" type="integer">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Telefone</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="telefone" name="telefone" placeholder="telefone"
+                                           required th:field="*{telephone}" type="number">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Sindicato</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{unionName}">
+                                            <option th:each="union: ${unionList}" th:text="${union}"
+                                                    th:value="${union}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Email</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="email" name="email" placeholder="Email"
+                                           required th:field="*{email}" type="integer">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field" id="savebutton">
+                            <button class="button is-success">
+                                Registrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+
+<script
+        crossorigin="anonymous"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        src="https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<script crossorigin="anonymous"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+    $("#telefone").keypress(function () {
+        $("#telefone").mask("9999999999");
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            var $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
+        });
+    });
+
+</script>

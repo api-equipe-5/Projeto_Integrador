@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha Jornada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item is-primary is-spaced is-dark" href="/">
+            Minha Jornada
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+</nav>
+<section class="hero is-light is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form name="f" th:action="@{/login}" method="post" class="box">
+                        <div th:if="${param.error}" class="alert alert-error">
+                            <div class="notification is-danger is-light">
+                                <button class="delete"></button>
+                                Usuario ou senha invalidos
+                            </div>
+                        </div>
+                        <div th:if="${param.logout}" class="alert alert-success">
+                            <div class="notification is-warning is-light">
+                                <button class="delete"></button>
+                                Voce foi deslogado por inatividade
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="" class="label">Usuario</label>
+                            <div class="control has-icons-left">
+                                <input type="text" name="username" id="username" placeholder="nome do usuario" class="input" required>
+                                <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                              </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="" class="label">Senha</label>
+                            <div class="control has-icons-left">
+                                <input type="password" name="password" id="password" placeholder="*******" class="input" required>
+                                <span class="icon is-small is-left">
+                              <i class="fa fa-lock"></i>
+                              </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button class="button is-success">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            var $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
+        });
+    });
+</script>

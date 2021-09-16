@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Minha Jornada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+</div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Registrar nova jornada
+        </h1>
+    </div>
+</section>
+<section class="is-rounded is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="#" class="box" method="post" th:action="@{/driver/save}" th:object="${driver}">
+                        <div class="field">
+                            <label class="label" for="">Nome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="nome" name="nome" placeholder="Nome do motorista"
+                                           required th:field="*{name}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Sobrenome</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="Sobrenome" name="sobrenome"
+                                           placeholder="Sobrenome do Motorista" required th:field="*{surname}"
+                                           type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Turno</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{working_hours}">
+                                            <option th:each="working_hours : ${availableworking_hours}"
+                                                    th:text="${working_hours.label}"
+                                                    th:value="${working_hours}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Hora de almoço</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="lunch_time" name="lunch_time"
+                                           placeholder="lunch_time"
+                                           required th:field="*{lunch_time}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Fracionar almoço</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{second_fraction}">
+                                            <option th:each="second_fraction : ${availablesecond_fraction}"
+                                                    th:text="${second_fraction.label}"
+                                                    th:value="${second_fraction}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Repouso</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="resting_hours" name="resting_hours"
+                                           placeholder="resting_hours"
+                                           required th:field="*{resting_hours}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Fracionar repouso</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{first_fraction}">
+                                            <option th:each="first_fraction : ${availablefirst_fraction}"
+                                                    th:text="${first_fraction.label}"
+                                                    th:value="${first_fraction}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Folga</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="time_off" name="time_off"
+                                           placeholder="time_off"
+                                           required th:field="*{time_off}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Fracionar folga</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <div class="select" style="width: 100%;">
+                                        <select style="width: 100%;" th:field="*{third_fraction}">
+                                            <option th:each="third_fraction : ${availablethird_fraction}"
+                                                    th:text="${third_fraction.label}"
+                                                    th:value="${third_fraction}"></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="field" id="savebutton">
+                            <button class="button is-success">
+                                Registrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+
+
+<script
+        crossorigin="anonymous"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        src="https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<script crossorigin="anonymous"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>

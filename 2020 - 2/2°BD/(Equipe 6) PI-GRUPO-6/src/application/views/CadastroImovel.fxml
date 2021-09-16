@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ImovelController">
+   <top>
+      <Label text="Cadastro do Imóvel" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="54.0" text="Tipo:" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="tiposImovel" prefHeight="25.0" prefWidth="259.0" />
+                  <TextField fx:id="txtIdentificacaoImovel" prefHeight="25.0" prefWidth="222.0" promptText="Informe o número conforme o tipo">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label text="Nome do Cliente: *" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtNomeCliente" prefHeight="25.0" prefWidth="441.0" />
+                  <Button fx:id="btnBuscarCliente" mnemonicParsing="false" onAction="#clickBuscarCliente" text="BUSCAR">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="UF: *" />
+            <TextField fx:id="txtUf" />
+            <Label text="Cidade: *" />
+            <TextField fx:id="txtCidade" />
+            <Label text="Bairro: *" />
+            <TextField fx:id="txtBairro" />
+            <Label text="Rua: *" />
+            <TextField fx:id="txtRua" />
+            <Label text="Número: *" />
+            <TextField fx:id="txtNumero" />
+            <Label text="Complemento:" />
+            <TextField fx:id="txtComplemento" />
+            <Label text="CEP: *" />
+            <TextField fx:id="txtCep" onKeyReleased="#txtCepKeyReleased" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" top="40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="131.0" prefWidth="589.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="64.0" prefWidth="600.0" spacing="45.0">
+               <children>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#clickEditar" text="EDITAR">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#clickLimpar" text="LIMPAR">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#clickCadastrar" text="CADASTRAR">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="btnContinuarCadastro" mnemonicParsing="false" onAction="#clickContinuarCadastro" text="IR PARA CADASTRO DA CONTA">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TipoRelatorio">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="207.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="Selecione o tipo de Relatório">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="198.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="Relatório de água" AnchorPane.leftAnchor="198.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="198.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="Relatório de luz" AnchorPane.leftAnchor="198.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnRelatorioLuz" ellipsisString="" layoutX="59.0" layoutY="81.0" mnemonicParsing="false" onAction="#changeScreenRelatorioLuz" prefHeight="110.0" prefWidth="96.0" AnchorPane.leftAnchor="59.0" AnchorPane.topAnchor="81.0">
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="image/Energia.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnRelatorioAgua" ellipsisString="" layoutX="64.0" layoutY="214.0" mnemonicParsing="false" onAction="#changeScreenRelatorioAgua" prefHeight="110.0" prefWidth="100.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="638.0" AnchorPane.topAnchor="214.0">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="image/Agua.jpeg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnRelatorioCliente" ellipsisString="" layoutX="57.0" layoutY="348.0" mnemonicParsing="false" onAction="#changeScreenRelatorioCliente" prefHeight="110.0" prefWidth="100.0" AnchorPane.leftAnchor="57.0">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="image/PessoaJuridica.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnRetornarTipoR" layoutX="20.0" layoutY="480.0" mnemonicParsing="false" onAction="#changeScreenRetornar" opacity="0.96" prefHeight="30.0" prefWidth="164.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="198.0" layoutY="390.0" text="Relatório de cliente" AnchorPane.leftAnchor="198.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBuscarInstalacao" layoutX="619.0" layoutY="179.0" />
+      <Label layoutX="506.0" layoutY="118.0" text="Gerar Relatório PDF:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="178.0" prefHeight="27.0" prefWidth="156.0" text="Número Instalação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGerarPDF" layoutX="567.0" layoutY="220.0" mnemonicParsing="false" onAction="#gerarRelatorio" style="-fx-background-radius: 5em;" text="Gerar PDF">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

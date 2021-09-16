@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Agendamento{% endblock %}
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }}" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endwith %}
+<div class="container-fluid py-5 mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <h1 class="text-center align-middle mb-5">Agendamento</h1>
+            <form action="{{ url_for('agendamento.criar_agendamento') }}" method="POST" autocomplete="off">
+                <div class="mb-5 text-body">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Cliente</label>
+                        <div class="col-sm-10">
+                            <select name="id_usuario" class="form-control form-control-lg border border-primary" required>
+                                {% for cliente, chave in clientes %}
+                                    {% if chave %}
+                                        <option value="{{ cliente.id_usuario }}">
+                                            {{ fn_decript(chave.chave_privada, cliente.nome) }}
+                                        </option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Serviço</label>
+                        <div class="col-sm-10">
+                            <select name="id_servico" class="form-control form-control-lg border border-primary" required>
+                                {% for servico in servicos %}
+                                    <option value="{{ servico.id_servico }}">{{ servico.nome }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Data</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control form-control-lg border border-primary" name="dataAgenda" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg">Horário</label>
+                        <div class="col-sm-10">
+                             <input type="time" class="form-control form-control-lg border border-primary time-mask" name="horarioAgenda" required>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row-reverse">
+                        <button class="ml-4 btn btn-primary btn-lg" type="submit">Agendar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
