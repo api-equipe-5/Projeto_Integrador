@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html id="htmlMenu" lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" th:href="@{/styles/components.css}">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Menu</title>
+</head>
+<body id="mainMenu" class=".bg-info">
+    <div id="divLogo" class="d-flex justify-content-center">
+        <img id="logoMenu" src="images/logo.png">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm d-flex align-items-stretch">
+                <div class="card">
+                    <img id="codeMenu" class="card-img-top" src="images/codelist.png" alt="Card image cap">
+                    <h5 id="codeTitle">CodeList</h5>
+                    <div class="card-body">
+                        <p class="card-text">Create, Update, Save and Delete the Codelist</p>
+                        <a href="/code-create" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex align-items-stretch">
+                <div class="card">
+                    <img id="lepMenu" class="card-img-top" src="images/lep.png" alt="Card image cap">
+                    <h5 id="codeTitle">List of Effective Pages</h5>
+                    <div class="card-body">
+                        <p class="card-text">Create, Update, Save and Delete the List of Effective Pages</p>
+                        <a href="/lep-create" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex align-items-stretch">
+                <div class="card">
+                    <img id="pdfMenu" class="card-img-top" src="images/pdf.png" alt="Card image cap">
+                    <h5 id="codeTitle">PDF Compilation</h5>
+                    <div class="card-body">
+                        <p class="card-text">Create and Save a Full or Delta file based on Codelist and LEP</p>
+                        <a href="/pdf-full" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="logout" href="/logout"><i id="logoutMenu" class="fas fa-sign-out-alt fa-2x"></i></a>
+        <a id="addUser" href="/create-user"><i id="iconUser" class="fas fa-user-plus fa-2x"></i></a>
+    </div>
+
+    <script src="script.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

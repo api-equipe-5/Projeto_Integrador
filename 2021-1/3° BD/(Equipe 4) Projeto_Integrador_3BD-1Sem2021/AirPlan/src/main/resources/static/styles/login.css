@@ -1,0 +1,102 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background: url('../images/AC.jpg');
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+textarea:focues, input:focus{
+    outline: none;
+}
+
+a, label {
+    font-size: .8rem; /* 16 x 0.8 =x */
+}
+
+a:hover{
+    color: #08558B;
+}
+
+/*container login */
+
+#login-container {
+    background-color: #DCDCDC;
+    width: 400px;
+    margin-left: 15vh;
+    padding: 20px 30px;
+    margin-top: 15vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* forms */
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display:block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border-bottom:2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #08558d;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #191970;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+/* Register Container */
+
+#register-container p {
+    margin-bottom: 10px;
+}
+
+#singup{
+    text-align: right;
+    display: block;
+}

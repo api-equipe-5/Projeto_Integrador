@@ -1,0 +1,36 @@
+version: '3.0'
+
+services:
+  web:
+    build: .
+    image: lms
+    container_name: lms
+    restart: "no"
+    environment:
+      - DB_HOST=db
+      - DB_USER=postgres
+      - DB_PASS=password
+      - DB_DEV=lms_development
+      - DB_TEST=lms_test
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    volumes:
+      - .:/lms
+
+  db:
+    image: postgres
+    container_name: lms_db
+    restart: "no"
+    ports:
+      - 5429:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - data:/var/lib/postgresql/data/
+
+volumes:
+  data:
+

@@ -1,0 +1,35 @@
+
+<section class="page-section cursos" id="cursos">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cursos</h2>
+                <br><br><br>
+                <div class="col-md-12">
+                    <h4>Listando todos os Cursos</h4>
+                </div>
+                <br>
+                <div class="row">
+                    <% @courses.each do |course| %>
+                      <div class="col-md-4">
+                          <div class="card-cursos">
+                              <%= link_to course_path(course) do%>
+                                  <% if course.cover_picture.attached? %>
+                                    <%= image_tag(course.cover_picture) %>
+                                  <% else %>
+                                    <%= image_tag 'portfolio/sketch-design-mobile' , class: "icon" %>
+                                  <% end %>
+
+                                  <p><%= course.name %></p>
+
+                                <div class="tempo-curso">
+                                  <%= image_tag 'portfolio/icon-time-card.1616501197' , class: "icon" %> 
+
+                                  <span><%= course.course_duration %></span>
+                                </div>
+                              <% end %>
+                          </div>
+                      </div>
+                    <% end %>
+                </div>
+        <br><br>
+    </div>
+</section>

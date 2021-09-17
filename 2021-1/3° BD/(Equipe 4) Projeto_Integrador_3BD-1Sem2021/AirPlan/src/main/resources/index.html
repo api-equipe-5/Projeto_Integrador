@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/styles/components.css}">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CodeListCreate</title>
+</head>
+<body id="codecreate" class=".bg-info">
+
+        <header id = "header">
+            <div id="logo">
+                <img id= " imagem1" src ='images/146.png'> </img>  
+                <h1 id="titulo"> <strong> Codelist </strong> </h1>
+            </div>
+
+                <a id = "button1" href="/codeCreate" class="btn">
+                     Create Codelist
+                </a>
+
+                <button id = "button2" class="btn">
+                     Consult Codelist
+                </button>
+               
+                <a id = "button3" href="/codeEdit" class="btn">
+                     Edit Codelist
+                </a>
+            
+                <a id = "button4" href="/codeDelete" class="btn">
+                     Delete Codelist
+                </a>
+        </header>
+    <form th:action="@{/codeCreate}" th:object="${general}" method="post">
+    <div>
+        <div class="inline">
+            <input class="codeimport" type="file" id="myFile" name="filename">
+            <button class="btn btn-secondary" id="listcreate">Create</button>
+        </div>
+        <hr>
+        <div class="inline">
+        <label>Primary Key
+            <input id="primaryKey" class="file" th:field="*{mnl_name}" type="text"></input>
+        </label>
+        <label>Secundary Key
+            <input id="secundaryKey" class="file" th:field="*{flg_secundary}" type="text"></input>
+        </label>
+        <label>Tag
+            <input id="tag"  class="file" th:field="*{flg_tag}" type="text"></input>
+        </label>
+    </div>
+        <div>
+            <div class="inline" action="#">
+                <label class="fileLabel" value="Section Number">Section Number
+                    <input id="sectionNumber" class="file" th:field="*{cdl_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Subsection
+                    <input id="subsection" class="file" th:field="*{cdl_sub_section}" type="text" ></input>
+                </label>
+                <label class="fileLabel">Block Number
+                    <input id="blockNumber" class="file" th:field="*{cdl_block}" type="text"></input>
+                </label>
+                <label class="fileLabel">Code
+                    <input id="code" class="file" th:field="*{cdl_code}" type="text"></input>
+                </label>
+                <label class="fileLabel">Block Name
+                    <input id="secundaryKey1" class="file" th:field="*{cdl_block_name}" type="text"></input>
+                </label>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <button onclick="getFile();" id="create-code" class="btn btn-secondary float-right">Create</button>
+            <button id="back-menu" class="btn btn-secondary float-right">Back</button>
+        </div>
+    </div>
+    </form>    
+    <script src="script.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

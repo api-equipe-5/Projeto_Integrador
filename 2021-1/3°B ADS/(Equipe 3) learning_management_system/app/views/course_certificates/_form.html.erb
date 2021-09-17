@@ -1,0 +1,27 @@
+<%= form_with(model: course_certificate, local: true) do |form| %>
+  <% if course_certificate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course_certificate.errors.count, "error") %> prohibited this course_certificate from being saved:</h2>
+
+      <ul>
+        <% course_certificate.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.text_field :course_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

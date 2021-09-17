@@ -1,0 +1,11 @@
+flask
+imgurpython
+keras
+numpy
+requests
+matplotlib
+flask-cors
+GDAL
+fiona
+rasterio
+tensorflow

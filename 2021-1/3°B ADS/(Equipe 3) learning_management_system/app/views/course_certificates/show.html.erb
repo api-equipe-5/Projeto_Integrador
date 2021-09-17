@@ -1,0 +1,25 @@
+<div class="certificate__container">
+  <div class="certificate__logo">
+    LMS
+  </div>
+
+  <div class="certificate__marquee">
+    Certificado de Conclusão
+  </div>
+
+  <div class="certificate__assignment">
+    Certificado entregue a
+  </div>
+
+  <div class="certificate__person">
+    <%= User.find(@course_certificate.user_id).username %>
+  </div>
+
+  <div class="certificate__reason">
+    Por ter completado o curso:
+  </div>
+
+  <div class="certificate__course">
+    <%= Course.find(@course_certificate.course_id).name %>
+  </div>
+</div>

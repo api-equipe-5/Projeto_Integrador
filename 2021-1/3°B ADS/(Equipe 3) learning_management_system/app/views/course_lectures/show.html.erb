@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row" >
+    <div class="col-md-12">
+      <br><br>
+      <h2 class="page-section-heading text-uppercase text-secondary mb-0" style="text-align:center"><%= @course_lecture.course.name%> </h2>
+      <br><br>
+    </div>
+
+    <div class="col-md-8 media-div">
+      <% if @course_lecture.media.attached? %>
+        <% if @course_lecture.media.content_type.include?("video") %>
+          <div>
+            <%= video_tag(url_for(@course_lecture.media), controls: '') %>
+          </div>
+          <div>
+            <% if @course_certificate %>
+              <%= link_to "ACESSAR CERTIFICADO", course_certificate_path(@course_certificate), class: 'btn btn-primary course-button' %>
+            <% end %>
+            <% if @course.course_lecture.any? && !@course_certificate %>
+              <% if @course.course_lecture.last.id == @course_lecture.id %>
+                <%= link_to "GERAR CERTIFICADO", course_certificates_path(:user_id => current_user.id, :course_id => @course_lecture.course.id), :method => :post, class: 'btn btn-primary course-button' %>
+              <% end %>
+            <% end %>
+          </div>
+        <% elsif @course_lecture.media.content_type.include?("pdf") %>
+          <iframe src=<%= url_for(@course_lecture.media) %> width="716" height="700" style="border: none;"> </iframe>
+          <div>
+            <% if @course_certificate %>
+              <%= link_to "ACESSAR CERTIFICADO", course_certificate_path(@course_certificate), class: 'btn btn-primary course-button' %>
+            <% end %>
+            <% if @course.course_lecture.any? && !@course_certificate %>
+              <% if @course.course_lecture.last.id == @course_lecture.id %>
+                <%= link_to "GERAR CERTIFICADO", course_certificates_path(:user_id => current_user.id, :course_id => @course_lecture.course.id), :method => :post, class: 'btn btn-primary course-button' %>
+              <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      <% else%>
+        <%= @course_lecture.description %>
+      <% end %>
+    </div>
+
+    <div class="col-md-4 lecture-bar">
+      <ul>
+        <% @course_lecture.course.course_lecture.each do |lecture| %>
+          <li><input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate1"><label class="form-check-label" for="flexCheckIndeterminate1"><%= link_to lecture.name, course_lecture_path(lecture)%></label> </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <% if @course.meet_url %>
+    <a target="_blank" href="<%= @course.meet_url %>" class="floating-icon"><%= image_tag 'portfolio/meet-logo.png', class: 'floating-icon__image' %></a>
+  <% end %>
+</div>

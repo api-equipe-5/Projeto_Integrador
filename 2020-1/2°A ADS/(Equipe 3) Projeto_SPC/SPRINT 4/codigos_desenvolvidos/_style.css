@@ -1,0 +1,492 @@
+/* global */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #DFDFDF;
+} 
+
+main {
+    max-width: 100%;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5px;
+}
+
+/* template's rules */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.header {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-areas: "sideMenu contentMenu";
+    height: 50px;
+    font-size: small;
+}
+
+/* where the metalicts title goes */
+.metalitcs {
+    background: #112244;
+    color: #ffffff;
+    grid-area: sideMenu;  
+}
+
+.metalitcs p {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* where left and rightbox goes */
+.location {
+    background: #112244;
+    color: #ffffff;
+    box-shadow: -10px 0px 10px 0.5px rgba(0, 0, 0, 0.1);
+    grid-area: contentMenu;
+}
+
+.leftbox { 
+    float:left;  
+    background:#112244; 
+    width:25%; 
+    height: 50px; 
+}
+
+.leftbox p {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.rightbox{ 
+    float:left;  
+    background:#112244;
+    width: 25%;
+    height: 50px;
+    box-shadow: 0.25px 0px white, -0.25px 0px white;
+} 
+
+.rightbox p {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* side menu and page's content */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* where side menu and page's content goes*/
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-areas: "menu-col content-col";
+    font-size: small;
+}
+
+/* for side menu only */
+.container-menu-col {
+    margin-top: 30px;
+}
+
+/* where divs goes */
+.menu-col {
+    height: 100%;
+    font-weight: bold;
+    grid-area: menu-col;
+}
+
+/* where page's content goes */
+.container-content-col {
+    height: 100%;
+    box-shadow: -5px 0px 100px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    grid-area: content-col;
+}
+
+/* dark blue divs */
+.index {
+    width: 100%;
+    height: 50px;
+    background: #112244;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1), 0px -1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* light blue divs */
+.stg-in {
+    width: 100%;
+    height: 50px;
+    background: #3749E9;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1), 0px -1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.stg-in:hover {
+    background: rgba(116, 114, 115, 0.247);
+    color: black;
+}
+
+/* white divs */
+.stg {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1), 0px -1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.stg:hover {
+    background: rgba(116, 114, 115, 0.247);
+}
+
+/* rules for the graphs */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.head {
+    height: 40px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+    background: rgba(116, 114, 115, 0.247);
+}
+
+/* inside of head*/
+.title {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+/* inside of head*/
+.paragraph {
+    font-size: 7pt;
+    color: #707070;
+}
+
+/* for, most of the time, graphs */
+.content {
+    background: #ffffff;
+    width: auto;
+    height: 90%;
+}
+
+/* imported graphs */
+iframe {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+
+/* two first graphs */
+.percent_value {
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+.content_percent {
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 10px;
+    grid-template-rows: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* graphs for grid */
+/* the bonus graphs can be placed wherever you like to */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.graph_one {
+    background-color: #ffffff;
+    grid-area: one;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_two {
+    background-color: #ffffff;
+    grid-area: two;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_three {
+    background-color: #ffffff;
+    grid-area: three;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_four {
+    background-color: #ffff;
+    grid-area: four;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_five {
+    background-color: #ffffff;
+    grid-area: five;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_six {
+    background-color: #ffffff;
+    grid-area: six;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_seven {
+    background-color: #ffffff;
+    grid-area: seven;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_eight {
+    background-color: #ffffff;
+    grid-area: eight;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_nine {
+    background-color: #ffffff;
+    grid-area: nine;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_ten {
+    background-color: #ffffff;
+    grid-area: ten;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_eleven {
+    background-color: #ffffff;
+    grid-area: eleven;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_twelve {
+    background-color: #ffffff;
+    grid-area: twelve;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_thirteen {
+    background-color: #ffffff;
+    grid-area: thirteen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_fourteen {
+    background-color: #ffffff;
+    grid-area: fourteen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_fifteen {
+    background-color: #ffffff;
+    grid-area: fifteen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_sixteen {
+    background-color: #ffffff;
+    grid-area: sixteen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_seventeen {
+    background-color: #ffffff;
+    grid-area: seventeen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_eighteen {
+    background-color: #ffffff;
+    grid-area: eighteen;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* static and dynamic containers - no mediaquery*/
+/* each page have it own container because of specific layout */
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* static_graph_container is the same for all pages that requires it */
+.static_graph_container_01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 30vh 50vh 10vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two three" 
+                         "four four three";
+    margin: 43px 50px 0px 50px;
+}
+
+.dynamic_graph_container_FNT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two" 
+                         "three three"
+                         "four five" 
+                         "six seven";
+    margin: -60px 50px 50px 50px;
+}
+
+.dynamic_graph_container_MVT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two"
+                         "one three" 
+                         "four three"
+                         "four three";
+    margin: -60px 50px 50px 50px;
+}
+
+.dynamic_graph_container_OPR {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two"
+                         "one three" 
+                         "four three"
+                         "four three";
+    margin: -60px 50px 50px 50px;
+}
+
+.dynamic_graph_container_PGT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two"
+                         "one three" 
+                         "four three"
+                         "four three";
+    margin: -60px 50px 50px 50px;
+}
+
+.static_graph_container_02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two three four";
+    margin: 43px 50px 0px 50px;
+}
+
+.dynamic_graph_container_result_MVT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70vh 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas:
+                         "five five five five"
+                         "six six six six"
+                         "seven seven seven seven"
+                         "eight eight eight eight"
+                         "nine nine nine nine";
+    margin: 10px 50px 50px 50px;
+}
+
+.dynamic_graph_container_result_OPR {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "five five six"
+                         "seven seven seven"
+                         "eight eight eight"
+                         "nine nine nine"
+                         "ten ten ten";
+    margin: 10px 50px 50px 50px;
+}
+
+.static_graph_container_03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two three";
+    margin: 43px 50px 0px 50px;
+}
+
+.dynamic_graph_container_result_PGT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70vh 50vh 70vh 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "five five five five"
+                         "six six seven seven"
+                         "eight eight eight eight"
+                         "nine nine nine nine"
+                         "ten ten ten ten"
+                         "eleven eleven eleven eleven"
+                         "twelve twelve twelve twelve";
+    margin: 10px 50px 50px 50px;
+}
+
+.dynamic_graph_container_index_MOD {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 30vh 30vh 30vh 20vh 30vh 30vh 30vh 20vh 30vh 30vh 30vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two three four four"
+                         "five five five four four"
+                         "five five five six six"
+                         "five five five six six"
+                         
+                         "seven eight nine ten ten"
+                         "eleven eleven eleven ten ten"
+                         "eleven eleven eleven twelve twelve"
+                         "eleven eleven eleven twelve twelve"
+                         
+                         "thirteen fourteen fifteen sixteen sixteen"
+                         "seventeen seventeen seventeen sixteen sixteen"
+                         "seventeen seventeen seventeen eighteen eighteen"
+                         "seventeen seventeen seventeen eighteen eighteen";
+    margin: 43px 50px 50px 50px;
+}
+
+.dynamic_graph_container_index_MOD .title {
+    font-size: 8pt;
+}
+

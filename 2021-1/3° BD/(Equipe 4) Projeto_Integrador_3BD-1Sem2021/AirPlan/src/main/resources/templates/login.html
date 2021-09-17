@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{styles/login.css}">
+</head>
+<body>
+
+<div id="login-container">
+    <form th:action="@{/login}" method="post">
+        <label for="user">Username</label>
+        <input type="user" name="user" id="user" placeholder="Type your username" autocomplete="off">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Type your password">
+        <input type="submit" href="/menu" value="Login">
+    </form>
+    <div id="register-container">
+        <p>Do not have an account?</p>
+        <a href="/create-user" id="singup">Sign up</a>
+    </div>
+</div>
+</body>
+</html>

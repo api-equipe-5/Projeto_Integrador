@@ -1,0 +1,25 @@
+
+<%= form_with(model: @course, local: true) do |f| %>
+
+  <div class='form-group'>
+    <%= f.label :name  %><br/>
+    <%= f.text_field :name , class:'form-control'  %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :description %><br/>
+    <%= f.text_area :description , class:'form-control' ,rows:'5' %>
+  </div>
+
+  <div clas='form-group' id="picture-btn">
+    <%= f.label :cover_picture %><br/>
+    <%= f.file_field :cover_picture  %>
+  </div>
+
+  <div class='form-group' id="send-btn">
+    <br>
+    <%= f.submit %> 
+  </div>
+
+<% end %>
+

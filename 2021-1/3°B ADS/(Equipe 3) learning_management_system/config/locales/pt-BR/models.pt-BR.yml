@@ -1,0 +1,75 @@
+pt-BR:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+    models:
+      course:
+        one: "Curso"
+        other: "Cursos"
+
+      user:
+        one: "Usuário"
+        other: "Usuários"
+
+      course_lecture:
+        one: "Lição"
+        other: "Lições"
+
+      course_category:
+        one: "Categoria"
+        other: "Categorias"
+
+    attributes:
+      course:
+        name: "Nome"
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+        cover_picture: "Capa"
+        course_lecture: "Lições"
+        course_duration: "Duração"
+        course_category: "Categoria"
+
+      user:
+        username: "Nome do usuário"
+        role: "Permissão"
+        confirmation_sent_at: Confirmação enviada em
+        confirmation_token: Token de confirmação
+        confirmed_at: Confirmado em
+        created_at: Criado em
+        current_password: Senha atual
+        current_sign_in_at: Atualmente logado em
+        current_sign_in_ip: IP do acesso atual
+        email: E-mail
+        encrypted_password: Senha criptografada
+        failed_attempts: Tentativas sem sucesso
+        last_sign_in_at: Último acesso em
+        last_sign_in_ip: Último IP de acesso
+        locked_at: Bloqueado em
+        password: Senha
+        password_confirmation: Confirme sua senha
+        remember_created_at: Lembrar criado em
+        remember_me: Lembre-se de mim
+        reset_password_sent_at: Resetar senha enviado em
+        reset_password_token: Resetar token de senha
+        sign_in_count: Contagem de acessos
+        unconfirmed_email: E-mail não confirmado
+        unlock_token: Token de desbloqueio
+        updated_at: Atualizado em
+
+      course_lecture:
+        name: "Nome"
+        content: "Conteúdo"
+        course: "Curso"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+
+      course_category:
+        name: "Nome da Categoria"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+        cover_picture: "Imagem"

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>DP Standardize</title>
+  </head>
+  <body>
+    <div class="modals-container">
+
+      <div class="modal" id="modal">
+        <div class="modal__content">
+          <a href="#" onclick='closeModal()' class="modal__close">&times;</a>
+
+          <div class="help">
+            <div class="ajust-top"></div>
+
+          <div class="metadado_place"></div>
+
+          <button class="myHelpBtn" id="myHelpBtn">?</button>
+
+              
+          <div id="myHelpModal" class="help-modal">
+
+          
+            <div class="help-modal-content">
+              <span class="close">&times;</span>
+              <h3>Instrução de Usabilidade</h3>
+              - Defina o padrão das colunas de metadados:
+              <p class="data-help">Ex.: Se for definido que o dado deve ser
+                requerido, único, numérico. <br> O programa irá analisar e voltar
+                para o usuário dados que cumprem esses requisitos.
+              </p>
+              <br>
+              - Se preciso, para uma otimização de busca, utilize o campo METADADOS
+              para que o programa realize a busca no metadado selecionado com base
+              nos requisitos definidos anteriormente.
+              <p class="data-help">Ex.: COD_MDL, CLI_CAD_POS, ID_STG_MDL</p>
+              <br>
+              - Em descrição digite exatamente o dado deseja buscar para otimizar
+              ainda mais sua análise.
+              <p class="data-help">Ex.: C01</p>
+              <br>
+              Após todas as informações serem definidas. Clique em Confirmar
+               ou cancelar para salvar ou cancelar as definições respectivamente.
+            </div>
+
+          </div>         
+
+          </div>
+          
+            <div class="row">
+              <div class="ajust">
+              <label>
+                <input 
+                  class="check" 
+                  type="checkbox" 
+                  onchange="changeDisabled('0')"
+                  name="" 
+                  id="requerido" />
+                Requerido
+              </label>
+              <span class="condicional">Quando&#x2192;</span>
+            </div>
+
+            <div class="ajust">
+              <label class="receiveSelect">
+              </label>
+            </div>
+
+            <div class="ajust-desc">
+              <label>
+                <!--Descrição-->
+                <input
+                  class="description"
+                  type="text"
+                  name=""
+                  disabled
+                  id="description-one"
+                  placeholder="Descrição..."
+                />
+              </label>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="ajust">
+                <label>
+                  <input 
+                    class="check" 
+                    type="checkbox" 
+                    onchange="changeDisabled('1')"
+                    name="" 
+                    id="unicos" />
+                  Unicos
+                </label>
+                <span class="condicional">Quando&#x2192;</span>
+              </div>
+
+
+              <div class="ajust">
+                <label class="receiveSelect">
+                </label>
+              </div>
+
+              
+              <div class="ajust-desc">
+                <label>
+                  <!--Descrição-->
+                  <input
+                    class="description"
+                    type="text"
+                    name=""
+                    disabled
+                    id="description-two"
+                    placeholder="Descrição..."
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="ajust">
+                <label>
+                  <input 
+                    class="check" 
+                    type="checkbox" 
+                    onchange="changeDisabled('2')"
+                    name="" 
+                    id="numerico" />
+                    Numérico
+                </label>
+                <span class="condicional">Quando&#x2192;</span>
+              </div>
+
+
+              <div class="ajust">
+                <label class="receiveSelect">
+
+                </label>
+              </div>
+
+
+              <div class="ajust-desc">
+                <label>
+                  <!--Descrição-->
+                  <input
+                    class="description"
+                    type="text"
+                    disabled
+                    name=""
+                    id="description-three"
+                    placeholder="Descrição..."
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="ajust">
+                <label>
+                  <input 
+                    class="check" 
+                    type="checkbox" 
+                    onchange="changeDisabled('3')"
+                    name="" 
+                    id="letras" />
+                  Letras
+                </label>
+                <span class="condicional">Quando&#x2192;</span>
+              </div>
+
+
+              <div class="ajust">
+                <label class="receiveSelect">
+                </label>
+              </div>
+
+
+              <div class="ajust-desc">
+                <label>
+                  <!--Descrição-->
+                  <input
+                    class="description"
+                    type="text"
+                    disabled
+                    name=""
+                    id="description-four"
+                    placeholder="Descrição..."
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="ajust">
+                <label>
+                  <input 
+                    class="check" 
+                    type="checkbox" 
+                    onchange="changeDisabled('4')"
+                    name="" 
+                    id="alphanumerico" />
+                  Alpha numericos
+                </label>
+                <span class="condicional">Quando&#x2192;</span>
+              </div>
+
+
+              <div class="ajust">
+                <label class="receiveSelect">
+                </label>
+              </div>
+                
+              <div class="ajust-desc">
+                <label>
+                  <!--Descrição-->
+                  <input
+                    class="description"
+                    type="text"
+                    disabled
+                    name=""
+                    id="description-five"
+                    placeholder="Descrição..."
+                  />
+                </label>
+              </div>
+            </div>
+          
+
+          <div class="buttonsModal">
+            <a href="#" onclick='closeModal()'>
+              <button class="cancel-modal">
+                &times;<!--Hexcode para o button cancelar-->
+              </button>
+            </a>
+
+            <a href="#" onclick="closeModal()">
+              <button onclick="confirmModal()" class="save-modal">
+                &#x2713;<!--Hexcode para o button salvar-->
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttonsMetadados">
+      </div>
+
+      <div class="back-and-run">
+        <div class="tooltip">
+          <a>
+            <button class="back" onclick="cleansing()">Limpar</button>
+          </a>
+          <span class="tooltiptext">Este botão limpa todas as
+            configurações definidas!
+          </span>
+        </div>
+
+        <a href="../ferramenta/index.html">
+          <button class="back">Cancelar</button>
+        </a>        
+        
+        <a href="#">
+          <button class="run" onclick="runAnalise()">Baixar tabela</button>
+        </a>
+      </div>
+  
+    </div>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>

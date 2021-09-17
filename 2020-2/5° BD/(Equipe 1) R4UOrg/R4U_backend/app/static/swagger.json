@@ -1,0 +1,139 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "R4U"
+    },
+    "serves": [
+        {
+            "url": "/"
+        }
+    ],
+    "tags": [
+        {
+            "name": "R4U",
+            "description": "API para recomendações de filmes"
+        }
+    ],
+    "paths": {
+        "/getFilmes": {
+            "get": {
+                "tags": [
+                    "Recomendação de filmes"
+                ],
+                "summary": "Retorna todos os filmes da base",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/components/schemas/filme"
+                        }
+                    }
+                }
+            }
+        },
+        "/getFilmes/{id}": {
+            "get": {
+                "tags": [
+                    "Recomendação de filmes"
+                ],
+                "summary": "Retorna os filmes por grupo",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "description": "Id do grupo",
+                        "schema": {
+                            "$ref": "#/components/schemas/id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "$ref": "#/components/schemas/filme"
+                        }
+                    }
+                }
+            }
+        },
+        "/getFilme/{id}": {
+            "get": {
+                "tags": [
+                    "Recomendação de filmes"
+                ],
+                "summary": "Retorna o filme recomendado por grupo",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "description": "Id do grupo",
+                        "schema": {
+                            "$ref": "#/components/schemas/id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/components/schemas/filme"
+                        }
+                    },
+                    "400": {
+                        "description": "Grupo não encontrado",
+                        "schema": {
+                            "$ref": "#/components/schemas/error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "filme": {
+                "properties": {
+                    "filme": {
+                        "type": "string"
+                    }
+                }
+            },
+            "filmes": {
+                "type": "object",
+                "properties": {
+                    "grupo": {
+                        "type": "string",
+                        "format": "string"
+                    },
+                    "id": {
+                        "type": "number",
+                        "format": "number"
+                    },
+                    "nome": {
+                        "type": "string",
+                        "format": "string"
+                    }
+                }
+            },
+            "id": {
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "error": {
+                "properties": {
+                    "Erro": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

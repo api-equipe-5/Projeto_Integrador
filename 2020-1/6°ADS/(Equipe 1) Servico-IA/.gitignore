@@ -1,0 +1,11 @@
+*.ipynb
+*.h5
+*.zip
+*.tif
+
+Procfile
+
+ia/
+imagens/
+rasterio_install/
+layers/

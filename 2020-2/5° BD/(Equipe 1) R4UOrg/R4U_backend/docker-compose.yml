@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  app:
+    build: ./app
+    container_name: app
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 5001:5000
+    environment:
+      POSTGRES_USER: fatec
+      POSTGRES_PASSWORD: fatec
+      POSTGRES_DB: pi
+    
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+    - 6001:6001
+    depends_on: 
+    - app

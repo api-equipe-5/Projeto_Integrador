@@ -1,0 +1,1503 @@
++------------------+-----------------------------+-----------------------+
+| id_pessoa_fisica | nom_cidade                  | des_estado            |
++------------------+-----------------------------+-----------------------+
+| 41173256         | TREMEMBE                    | SAO PAULO             |
+| 212014803        | SALVADOR                    | BAHIA                 |
+| 252868763        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 351777344        | CORURIPE                    | ALAGOAS               |
+| 84464227         | GUAPIACU                    | SAO PAULO             |
+| 191052496        | SINOP                       | MATO GROSSO           |
+| 184044224        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 42512664         | FLORIANOPOLIS               | SANTA CATARINA        |
+| 265939717        | GUARAPARI                   | ESPIRITO SANTO        |
+| 70925411         | MORAUJO                     | CEARA                 |
+| 52404837         | SOROCABA                    | SAO PAULO             |
+| 330187373        | FORTALEZA                   | CEARA                 |
+| 803384987        | CAPITOLIO                   | MINAS GERAIS          |
+| 151156317        | COTIA                       | SAO PAULO             |
+| 792989333        | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 131944776        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 120050997        | RECIFE                      | PERNAMBUCO            |
+| 10386581         | MEDIANEIRA                  | PARANA                |
+| 127385723        | MANAUS                      | AMAZONAS              |
+| 75820744         | SOROCABA                    | SAO PAULO             |
+| 156591907        | MACEIO                      | ALAGOAS               |
+| 89700507         | CATALAO                     | GOIAS                 |
+| 44253557         | SAO PAULO                   | SAO PAULO             |
+| 243776125        | FORTALEZA                   | CEARA                 |
+| 276173640        | GOIANIA                     | GOIAS                 |
+| 738288411        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 271350568        | NOVA LIMA                   | MINAS GERAIS          |
+| 3219061          | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 259521893        | GUAPO                       | GOIAS                 |
+| 288244056        | ITAPEVA                     | SAO PAULO             |
+| 657657467        | NITEROI                     | RIO DE JANEIRO        |
+| 383727683        | FRANCISCOPOLIS              | MINAS GERAIS          |
+| 6276509          | GUARULHOS                   | SAO PAULO             |
+| 56074997         | MONTE CARMELO               | MINAS GERAIS          |
+| 203246013        | JOAO MONLEVADE              | MINAS GERAIS          |
+| 124011072        | ITAJAI                      | SANTA CATARINA        |
+| 245067213        | AMERICANA                   | SAO PAULO             |
+| 151547408        | CONCEICAO DO COITE          | BAHIA                 |
+| 187477707        | VARZEA GRANDE               | MATO GROSSO           |
+| 219755619        | PINDAMONHANGABA             | SAO PAULO             |
+| 283025448        | SAO PAULO                   | SAO PAULO             |
+| 235451499        | SAO PAULO                   | SAO PAULO             |
+| 692586605        | SAO GONCALO DO AMARANTE     | CEARA                 |
+| 653393685        | ANANINDEUA                  | PARA                  |
+| 6167291          | BELO HORIZONTE              | MINAS GERAIS          |
+| 148479296        | MACEIO                      | ALAGOAS               |
+| 74825549         | SALVADOR                    | BAHIA                 |
+| 38089691         | SAO PAULO                   | SAO PAULO             |
+| 246049187        | SAO PAULO                   | SAO PAULO             |
+| 132151960        | SANTANA DO LIVRAMENTO       | RIO GRANDE DO SUL     |
+| 222461341        | BALSAS                      | MARANHAO              |
+| 197949877        | SOROCABA                    | SAO PAULO             |
+| 143841437        | CURITIBA                    | PARANA                |
+| 2803440          | MACEIO                      | ALAGOAS               |
+| 38792107         | SAO PAULO                   | SAO PAULO             |
+| 351407477        | MARACANAU                   | CEARA                 |
+| 362444680        | SALVADOR                    | BAHIA                 |
+| 160792376        | SENADOR LA ROCQUE           | MARANHAO              |
+| 116020339        | ITAPORANGA                  | PARAIBA               |
+| 246688275        | NOVO PLANALTO               | GOIAS                 |
+| 137225421        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 244878067        | CAUCAIA                     | CEARA                 |
+| 744247909        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 760643389        | ARACATI                     | CEARA                 |
+| 655940843        | TRINDADE                    | GOIAS                 |
+| 110518733        | BRASILIA                    | DISTRITO FEDERAL      |
+| 289118896        | FORTALEZA                   | CEARA                 |
+| 751871944        | NATAL                       | RIO GRANDE DO NORTE   |
+| 68155307         | XIQUE-XIQUE                 | BAHIA                 |
+| 59903232         | SANTOS                      | SAO PAULO             |
+| 239835064        | SALVADOR                    | BAHIA                 |
+| 681592256        | BOA VISTA                   | RORAIMA               |
+| 396703592        | ARACI                       | BAHIA                 |
+| 125493608        | CATU                        | BAHIA                 |
+| 50360141         | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 172665957        | ARACAJU                     | SERGIPE               |
+| 89856035         | GOIANIA                     | GOIAS                 |
+| 657294053        | RIBAS DO RIO PARDO          | MATO GROSSO DO SUL    |
+| 335563381        | PACAJUS                     | CEARA                 |
+| 243100880        | IBITINGA                    | SAO PAULO             |
+| 272268837        | SAO PAULO                   | SAO PAULO             |
+| 112433856        | CURITIBA                    | PARANA                |
+| 762246547        | BALNEARIO CAMBORIU          | SANTA CATARINA        |
+| 283280907        | OSASCO                      | SAO PAULO             |
+| 49410677         | MACAE                       | RIO DE JANEIRO        |
+| 117979363        | RECIFE                      | PERNAMBUCO            |
+| 22158237         | CONTAGEM                    | MINAS GERAIS          |
+| 346143461        | ANAPOLIS                    | GOIAS                 |
+| 664014251        | SAO PAULO                   | SAO PAULO             |
+| 44305675         | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 65424784         | MONTE ALTO                  | SAO PAULO             |
+| 144953539        | BRASILIA                    | DISTRITO FEDERAL      |
+| 138706528        | RECIFE                      | PERNAMBUCO            |
+| 665882565        | PONTA GROSSA                | PARANA                |
+| 667061603        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 186656376        | CARUARU                     | PERNAMBUCO            |
+| 164463008        | SUZANO                      | SAO PAULO             |
+| 55602528         | SAO PAULO                   | SAO PAULO             |
+| 362421819        | JEQUIE                      | BAHIA                 |
+| 260995963        | SALVADOR                    | BAHIA                 |
+| 198623368        | IMBARIE                     | RIO DE JANEIRO        |
+| 207617664        | URUGUAIANA                  | RIO GRANDE DO SUL     |
+| 124086192        | SAO LUIS                    | MARANHAO              |
+| 104903773        | CONCORDIA                   | SANTA CATARINA        |
+| 699147355        | CUIABA                      | MATO GROSSO           |
+| 113138941        | FORTALEZA                   | CEARA                 |
+| 281123533        | MORENO                      | PERNAMBUCO            |
+| 195588704        | GOIANIA                     | GOIAS                 |
+| 179802328        | RECIFE                      | PERNAMBUCO            |
+| 259287485        | ARAQUARI                    | SANTA CATARINA        |
+| 713338227        | ULIANOPOLIS                 | PARA                  |
+| 101254392        | APUCARANA                   | PARANA                |
+| 661808813        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 672997856        | SAO PAULO                   | SAO PAULO             |
+| 182529256        | BARRA BONITA                | SAO PAULO             |
+| 69225632         | LENCOIS PAULISTA            | SAO PAULO             |
+| 264102171        | BELO HORIZONTE              | MINAS GERAIS          |
+| 104854013        | BREJO                       | MARANHAO              |
+| 359740685        | INHAMBUPE                   | BAHIA                 |
+| 208719243        | UBERLANDIA                  | MINAS GERAIS          |
+| 263542613        | TEOLANDIA                   | BAHIA                 |
+| 7369021          | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 223723232        | ARACAJU                     | SERGIPE               |
+| 285477515        | SAO PAULO                   | SAO PAULO             |
+| 730133677        | BRASILIA                    | DISTRITO FEDERAL      |
+| 733923469        | FORTALEZA                   | CEARA                 |
+| 225709467        | ITAPETINGA                  | BAHIA                 |
+| 6076059          | SANTA LUZIA                 | MINAS GERAIS          |
+| 764869931        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 105863152        | SANTA CRUZ DO CAPIBARIBE    | PERNAMBUCO            |
+| 154960944        | SANTO ANTONIO DO DESCOBERTO | GOIAS                 |
+| 146863563        | CURITIBA                    | PARANA                |
+| 170712616        | URUGUAIANA                  | RIO GRANDE DO SUL     |
+| 684542960        | SANTO ANDRE                 | SAO PAULO             |
+| 220318040        | SOROCABA                    | SAO PAULO             |
+| 247544080        | FEIRA DE SANTANA            | BAHIA                 |
+| 124915613        | CORDEIROS                   | BAHIA                 |
+| 27182525         | LAURO DE FREITAS            | BAHIA                 |
+| 73317133         | SAO JOSE DOS PINHAIS        | PARANA                |
+| 187022005        | QUIXADA                     | CEARA                 |
+| 94915941         | COSMOPOLIS                  | SAO PAULO             |
+| 285089960        | GUARULHOS                   | SAO PAULO             |
+| 689011416        | EMBU-GUACU                  | SAO PAULO             |
+| 259631771        | APARECIDA DE GOIANIA        | GOIAS                 |
+| 82852939         | BELO HORIZONTE              | MINAS GERAIS          |
+| 86486328         | SAO PAULO                   | SAO PAULO             |
+| 71176400         | BELEM                       | PARA                  |
+| 224834571        | BELO HORIZONTE              | MINAS GERAIS          |
+| 267706491        | SALVADOR                    | BAHIA                 |
+| 196831816        | SALVADOR                    | BAHIA                 |
+| 292541216        | MOGI GUACU                  | SAO PAULO             |
+| 240450491        | SAO PAULO                   | SAO PAULO             |
+| 214435605        | CAMBE                       | PARANA                |
+| 237801083        | SOROCABA                    | SAO PAULO             |
+| 369686867        | CRATO                       | CEARA                 |
+| 42945973         | CAMPINAS                    | SAO PAULO             |
+| 29622363         | CUIABA                      | MATO GROSSO           |
+| 62715341         | FEIRA DE SANTANA            | BAHIA                 |
+| 218206181        | MACAE                       | RIO DE JANEIRO        |
+| 64440629         | SANTA HELENA DE GOIAS       | GOIAS                 |
+| 40535200         | SAO PAULO                   | SAO PAULO             |
+| 671542701        | PINDAMONHANGABA             | SAO PAULO             |
+| 687332675        | AQUIRAZ                     | CEARA                 |
+| 268614373        | CRUZ ALTA                   | RIO GRANDE DO SUL     |
+| 181030120        | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 98422813         | BELO HORIZONTE              | MINAS GERAIS          |
+| 165809563        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 169382149        | CUIABA                      | MATO GROSSO           |
+| 291766064        | SAO PAULO                   | SAO PAULO             |
+| 624161656        | GUARULHOS                   | SAO PAULO             |
+| 166945840        | PAULISTA                    | ESPIRITO SANTO        |
+| 94141595         | PASSO FUNDO                 | RIO GRANDE DO SUL     |
+| 118730672        | VARZEA GRANDE               | MATO GROSSO           |
+| 102477139        | GUARULHOS                   | SAO PAULO             |
+| 53626549         | MARACAI                     | SAO PAULO             |
+| 815516717        | SAO PAULO                   | SAO PAULO             |
+| 268796008        | SAO CAITANO                 | PERNAMBUCO            |
+| 172429883        | DUQUE DE CAXIAS             | RIO DE JANEIRO        |
+| 656024323        | RIO BRANCO                  | ACRE                  |
+| 79246648         | SALVADOR                    | BAHIA                 |
+| 96393061         | CUIABA                      | MATO GROSSO           |
+| 171190501        | BRASILIA                    | DISTRITO FEDERAL      |
+| 94212571         | SAO GABRIEL                 | RIO GRANDE DO SUL     |
+| 791453           | POMPEU                      | MINAS GERAIS          |
+| 181771624        | LONDRINA                    | PARANA                |
+| 663358709        | SAO LEOPOLDO                | RIO GRANDE DO SUL     |
+| 132985981        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 34729485         | TUPA                        | SAO PAULO             |
+| 394523392        | CAMPINAS                    | SAO PAULO             |
+| 854730363        | RIBEIRAO PRETO              | SAO PAULO             |
+| 208719299        | SALVADOR                    | BAHIA                 |
+| 692086445        | IGARASSU                    | PERNAMBUCO            |
+| 280962480        | MARILIA                     | SAO PAULO             |
+| 761992483        | GOIANIA                     | GOIAS                 |
+| 831176237        | MARACANAU                   | CEARA                 |
+| 38184155         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 185844456        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 2932005          | JACAREI                     | SAO PAULO             |
+| 18275717         | RECIFE                      | PERNAMBUCO            |
+| 17894005         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 14888707         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 124879168        | FORTALEZA                   | CEARA                 |
+| 207173557        | SANTO AMARO                 | BAHIA                 |
+| 414486083        | MOSTARDAS                   | RIO GRANDE DO SUL     |
+| 223506928        | PAULO AFONSO                | BAHIA                 |
+| 2179797          | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 41599875         | GOIANIA                     | GOIAS                 |
+| 37926541         | SAO PAULO                   | SAO PAULO             |
+| 70337907         | CURITIBA                    | PARANA                |
+| 659160608        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 244671941        | TAUBATE                     | SAO PAULO             |
+| 384035709        | OURICURI                    | PERNAMBUCO            |
+| 185363491        | BOA ESPERANCA               | MINAS GERAIS          |
+| 147794549        | PETROLINA                   | PERNAMBUCO            |
+| 50179445         | SAO MATEUS                  | ESPIRITO SANTO        |
+| 275116547        | CAMPO FORMOSO               | BAHIA                 |
+| 287965136        | JUNDIAI                     | SAO PAULO             |
+| 79708085         | SAO SEBASTIAO               | SAO PAULO             |
+| 252725939        | SOROCABA                    | SAO PAULO             |
+| 4021856          | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 672681901        | ARARAQUARA                  | SAO PAULO             |
+| 354221965        | POA                         | SAO PAULO             |
+| 115503083        | JACINTO MACHADO             | SANTA CATARINA        |
+| 672434413        | SUZANO                      | SAO PAULO             |
+| 81081136         | BROTAS                      | SAO PAULO             |
+| 690463061        | SAO PAULO                   | SAO PAULO             |
+| 760095400        | IMPERATRIZ                  | MARANHAO              |
+| 253928267        | COLORADO DO OESTE           | RONDONIA              |
+| 102816016        | PIABETA                     | RIO DE JANEIRO        |
+| 211314235        | SAO PAULO                   | SAO PAULO             |
+| 338626203        | PERDIZES                    | MINAS GERAIS          |
+| 145504141        | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 95688075         | ITABAIANA                   | SERGIPE               |
+| 57751653         | JAU                         | SAO PAULO             |
+| 92354128         | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 22200597         | JUQUITIBA                   | SAO PAULO             |
+| 195885941        | SAO LUIS                    | MARANHAO              |
+| 676296376        | SAO PAULO                   | SAO PAULO             |
+| 1518344          | SAO PAULO                   | SAO PAULO             |
+| 142450229        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 281852848        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 265725488        | SAO PAULO                   | SAO PAULO             |
+| 150976709        | LONDRINA                    | PARANA                |
+| 241795832        | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 148503979        | BARRAS                      | PIAUI                 |
+| 253038360        | GUARATINGUETA               | SAO PAULO             |
+| 350983093        | EUSEBIO                     | CEARA                 |
+| 204475549        | NILOPOLIS                   | RIO DE JANEIRO        |
+| 158717784        | BELFORD ROXO                | RIO DE JANEIRO        |
+| 230438899        | ALTOS                       | PIAUI                 |
+| 213455971        | GALIA                       | SAO PAULO             |
+| 229580907        | AGUA FRIA                   | BAHIA                 |
+| 229483760        | FORTALEZA                   | CEARA                 |
+| 217926965        | SAO JOSE DE RIBAMAR         | MARANHAO              |
+| 408974168        | NATAL                       | RIO GRANDE DO NORTE   |
+| 31517176         | SAO CARLOS                  | SAO PAULO             |
+| 417414187        | CAMACARI                    | BAHIA                 |
+| 246054869        | ABREU E LIMA                | PERNAMBUCO            |
+| 368055232        | JACOBINA                    | BAHIA                 |
+| 254370261        | SALVADOR                    | BAHIA                 |
+| 132435104        | BELO HORIZONTE              | MINAS GERAIS          |
+| 51042536         | RESENDE                     | RIO DE JANEIRO        |
+| 36104853         | SAO PAULO                   | SAO PAULO             |
+| 254089101        | SANTOS                      | SAO PAULO             |
+| 95794981         | CANAA DOS CARAJAS           | PARA                  |
+| 106444293        | MANAUS                      | AMAZONAS              |
+| 108110960        | CHA DE ALEGRIA              | PERNAMBUCO            |
+| 113975229        | SERRA                       | ESPIRITO SANTO        |
+| 115853603        | CHORO                       | CEARA                 |
+| 227516507        | JOAO PESSOA                 | PARAIBA               |
+| 355436285        | PAULO AFONSO                | BAHIA                 |
+| 7076512          | SAO PAULO                   | SAO PAULO             |
+| 14331573         | SAO PAULO                   | SAO PAULO             |
+| 98354245         | CUIABA                      | MATO GROSSO           |
+| 279443760        | MARACANAU                   | CEARA                 |
+| 792630293        | MANAUS                      | AMAZONAS              |
+| 659672552        | VIDEIRA                     | SANTA CATARINA        |
+| 652049568        | ARACAJU                     | SERGIPE               |
+| 279939808        | PARAUAPEBAS                 | PARA                  |
+| 399636312        | ALFREDO CHAVES              | ESPIRITO SANTO        |
+| 224169176        | PAULISTA                    | PERNAMBUCO            |
+| 26678123         | ITAPEVI                     | SAO PAULO             |
+| 181468725        | CARATINGA                   | MINAS GERAIS          |
+| 158296483        | BARRA DO GARCAS             | MATO GROSSO           |
+| 57450059         | SAO PAULO                   | SAO PAULO             |
+| 236663939        | BLUMENAU                    | SANTA CATARINA        |
+| 740337899        | UMBAUBA                     | SERGIPE               |
+| 648343096        | AGUAS LINDAS DE GOIAS       | GOIAS                 |
+| 66655152         | CASTANHAL                   | PARA                  |
+| 18663760         | CURITIBA                    | PARANA                |
+| 125907485        | REDENCAO                    | PARA                  |
+| 66975043         | MACEIO                      | ALAGOAS               |
+| 142112643        | ALTONIA                     | PARANA                |
+| 352548008        | SALVADOR                    | BAHIA                 |
+| 22518952         | PIRACICABA                  | SAO PAULO             |
+| 335552915        | SALVADOR                    | BAHIA                 |
+| 35823800         | TAIUVA                      | SAO PAULO             |
+| 55004547         | SAO PAULO                   | SAO PAULO             |
+| 40113307         | OSASCO                      | SAO PAULO             |
+| 85805408         | JAU                         | SAO PAULO             |
+| 137803088        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 252469467        | SANTO ANDRE                 | SAO PAULO             |
+| 75017253         | OSASCO                      | SAO PAULO             |
+| 385554176        | SANTA VITORIA               | MINAS GERAIS          |
+| 259643269        | RIO VERDE                   | GOIAS                 |
+| 832384341        | PETROPOLIS                  | RIO DE JANEIRO        |
+| 64978589         | LAGO SUL                    | DISTRITO FEDERAL      |
+| 204412205        | FORTALEZA                   | CEARA                 |
+| 341761989        | FORTALEZA                   | CEARA                 |
+| 17417661         | PITANGUI                    | MINAS GERAIS          |
+| 52979184         | SAO PAULO                   | SAO PAULO             |
+| 151582029        | COLINAS DO TOCANTINS        | TOCANTINS             |
+| 33251475         | RIBEIRAO PRETO              | SAO PAULO             |
+| 133134885        | RECIFE                      | PERNAMBUCO            |
+| 663702973        | PARANATINGA                 | MATO GROSSO           |
+| 271914952        | MANAUS                      | AMAZONAS              |
+| 127070307        | LAURO DE FREITAS            | BAHIA                 |
+| 45883149         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 37122568         | SAO PAULO                   | SAO PAULO             |
+| 79890403         | SAO PAULO                   | SAO PAULO             |
+| 135226624        | PATOS DE MINAS              | MINAS GERAIS          |
+| 134228437        | BELEM                       | ALAGOAS               |
+| 242713632        | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 188032515        | GOIANIA                     | GOIAS                 |
+| 133320843        | MANAUS                      | AMAZONAS              |
+| 208451389        | MEDEIROS NETO               | BAHIA                 |
+| 63228515         | FORTALEZA                   | CEARA                 |
+| 279860720        | ALEXANIA                    | GOIAS                 |
+| 152429651        | SALVADOR                    | BAHIA                 |
+| 7585680          | ARMACAO DOS BUZIOS          | RIO DE JANEIRO        |
+| 831146005        | BELEM                       | PARA                  |
+| 663127837        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 68826989         | SATIRO DIAS                 | BAHIA                 |
+| 186000205        | ASSARE                      | CEARA                 |
+| 745280016        | JUINA                       | MATO GROSSO           |
+| 167169299        | IMBE                        | RIO GRANDE DO SUL     |
+| 61295792         | GOIANIA                     | GOIAS                 |
+| 25207043         | PRINCESA ISABEL             | PARAIBA               |
+| 267725853        | IBIRITE                     | MINAS GERAIS          |
+| 116277808        | ARACAJU                     | SERGIPE               |
+| 338367923        | GUAXUPE                     | MINAS GERAIS          |
+| 46872165         | MANAUS                      | AMAZONAS              |
+| 249037912        | SAUBARA                     | BAHIA                 |
+| 287668749        | CURITIBA                    | PARANA                |
+| 273477029        | JI-PARANA                   | RONDONIA              |
+| 54877875         | OLINDA                      | PERNAMBUCO            |
+| 198926224        | SAO DOMINGOS DO PRATA       | MINAS GERAIS          |
+| 195762581        | ITAPEVA                     | SAO PAULO             |
+| 796308472        | BARREIRAS                   | BAHIA                 |
+| 691040019        | JOSE BONIFACIO              | SAO PAULO             |
+| 67440064         | VARZEA GRANDE               | MATO GROSSO           |
+| 274030165        | CAMBORIU                    | SANTA CATARINA        |
+| 186453984        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 414451109        | BAURU                       | SAO PAULO             |
+| 349098893        | SALVADOR                    | BAHIA                 |
+| 813547768        | LAURO DE FREITAS            | BAHIA                 |
+| 226782680        | MARILIA                     | SAO PAULO             |
+| 131705224        | IPIAU                       | BAHIA                 |
+| 170729728        | CUIABA                      | MATO GROSSO           |
+| 353937291        | BOA VISTA                   | RORAIMA               |
+| 660150549        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 676776955        | JAU                         | SAO PAULO             |
+| 764162365        | SALVADOR                    | BAHIA                 |
+| 206037621        | CABO DE SANTO AGOSTINHO     | PERNAMBUCO            |
+| 685168619        | IGARAPE-MIRI                | PARA                  |
+| 690383533        | PARAGUACU PAULISTA          | SAO PAULO             |
+| 36620419         | BELO HORIZONTE              | MINAS GERAIS          |
+| 84158653         | RIBEIRAO PRETO              | SAO PAULO             |
+| 201714701        | SALVADOR                    | BAHIA                 |
+| 857225525        | MACEIO                      | ALAGOAS               |
+| 719107979        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 94354955         | BELO HORIZONTE              | MINAS GERAIS          |
+| 43911128         | SAO PAULO                   | SAO PAULO             |
+| 355047901        | BACABAL                     | MARANHAO              |
+| 164442296        | SALVADOR                    | BAHIA                 |
+| 117623067        | BIRITINGA                   | BAHIA                 |
+| 92776760         | COLOMBO                     | PARANA                |
+| 198396840        | PAULISTA                    | PERNAMBUCO            |
+| 259354491        | PORTO VELHO                 | RONDONIA              |
+| 190441493        | DOM VICOSO                  | MINAS GERAIS          |
+| 240405096        | SANTO ANTONIO DO MONTE      | MINAS GERAIS          |
+| 788411720        | MANAUS                      | AMAZONAS              |
+| 378074037        | SERRANOPOLIS DO IGUACU      | PARANA                |
+| 80489909         | MAUA                        | SAO PAULO             |
+| 92098976         | LIMEIRA                     | SAO PAULO             |
+| 736059544        | PARAUAPEBAS                 | PARA                  |
+| 344238184        | NAZAREZINHO                 | PARAIBA               |
+| 111804168        | PIRACURUCA                  | PIAUI                 |
+| 195364272        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 203979568        | LAGOA SANTA                 | GOIAS                 |
+| 42890472         | FORTALEZA                   | CEARA                 |
+| 674466213        | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 343324176        | MANAUS                      | AMAZONAS              |
+| 652807547        | ANAPOLIS                    | GOIAS                 |
+| 847874237        | BELEM                       | PARA                  |
+| 394041280        | BELA VISTA                  | MATO GROSSO DO SUL    |
+| 761627488        | BRASILIA                    | DISTRITO FEDERAL      |
+| 118531667        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 78403819         | GURUPI                      | TOCANTINS             |
+| 713061344        | JUARA                       | MATO GROSSO           |
+| 154950467        | SAO PAULO                   | SAO PAULO             |
+| 345871536        | MIRASSOL                    | SAO PAULO             |
+| 748206075        | PRAIA GRANDE                | SAO PAULO             |
+| 164000275        | SETE LAGOAS                 | MINAS GERAIS          |
+| 193581683        | CUITE                       | PARAIBA               |
+| 125888667        | COLONIA DO GURGUEIA         | PIAUI                 |
+| 140823347        | RIO VERDE                   | GOIAS                 |
+| 295560645        | SIMOES FILHO                | BAHIA                 |
+| 213336267        | LAURO DE FREITAS            | BAHIA                 |
+| 286526376        | MANAUS                      | AMAZONAS              |
+| 181102787        | RECIFE                      | PERNAMBUCO            |
+| 26106152         | SANTAREM                    | PARA                  |
+| 137170392        | RECIFE                      | PERNAMBUCO            |
+| 389042448        | UBERLANDIA                  | MINAS GERAIS          |
+| 217283565        | FEIRA DE SANTANA            | BAHIA                 |
+| 212099669        | LIMOEIRO DO NORTE           | CEARA                 |
+| 169356237        | FLORIANOPOLIS               | SANTA CATARINA        |
+| 1444403          | RIBEIRAO DAS NEVES          | MINAS GERAIS          |
+| 189864957        | VESPASIANO                  | MINAS GERAIS          |
+| 18245565         | VESPASIANO                  | MINAS GERAIS          |
+| 253932507        | FORTALEZA                   | CEARA                 |
+| 91579221         | BRASILIA                    | DISTRITO FEDERAL      |
+| 375452669        | CAJUEIRO                    | ALAGOAS               |
+| 140669568        | CUIABA                      | MATO GROSSO           |
+| 235615712        | BELO HORIZONTE              | MINAS GERAIS          |
+| 129679368        | CARDEAL DA SILVA            | BAHIA                 |
+| 118200805        | SANTIAGO                    | RIO GRANDE DO SUL     |
+| 124012568        | ANANINDEUA                  | PARA                  |
+| 814838789        | IMPERATRIZ                  | MARANHAO              |
+| 54156440         | BARRA MANSA                 | RIO DE JANEIRO        |
+| 92100243         | SAO PAULO                   | SAO PAULO             |
+| 70284109         | JUAZEIRO DO NORTE           | CEARA                 |
+| 385623304        | JULIO MESQUITA              | SAO PAULO             |
+| 346935003        | ITAMBE                      | PERNAMBUCO            |
+| 155890285        | SAO PAULO                   | SAO PAULO             |
+| 248410861        | CONTAGEM                    | MINAS GERAIS          |
+| 18911877         | SAO PAULO                   | SAO PAULO             |
+| 363907075        | ITAMARI                     | BAHIA                 |
+| 254477301        | FORTALEZA                   | CEARA                 |
+| 130948635        | SANTO ANDRE                 | SAO PAULO             |
+| 51176317         | DELMIRO GOUVEIA             | ALAGOAS               |
+| 738031093        | SAO PAULO                   | SAO PAULO             |
+| 121679821        | TRINDADE                    | GOIAS                 |
+| 52814552         | SAO JOAQUIM DA BARRA        | SAO PAULO             |
+| 185591528        | BRASILIA                    | DISTRITO FEDERAL      |
+| 257811736        | ITAPECERICA DA SERRA        | SAO PAULO             |
+| 353034288        | MACEIO                      | ALAGOAS               |
+| 117008341        | GRAVATA                     | PERNAMBUCO            |
+| 193840843        | VARZEA GRANDE               | MATO GROSSO           |
+| 176104419        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 149125339        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 138797453        | GUARARAPES                  | SAO PAULO             |
+| 120092341        | MACAPA                      | AMAPA                 |
+| 42814397         | SALVADOR                    | BAHIA                 |
+| 414606787        | MANAUS                      | AMAZONAS              |
+| 159967461        | FORTALEZA                   | CEARA                 |
+| 149642083        | RIO DO PRADO                | MINAS GERAIS          |
+| 242339027        | RIO BRANCO                  | ACRE                  |
+| 12226680         | ARARAQUARA                  | SAO PAULO             |
+| 242001477        | MAIRINQUE                   | SAO PAULO             |
+| 71474344         | SAO PAULO                   | SAO PAULO             |
+| 62042984         | MARABA                      | PARA                  |
+| 353803739        | SAO GONCALO DO AMARANTE     | RIO GRANDE DO NORTE   |
+| 872792840        | TUBARAO                     | SANTA CATARINA        |
+| 225241877        | BALSAS                      | MARANHAO              |
+| 166312275        | VARZEA GRANDE               | MATO GROSSO           |
+| 275149968        | SAO PAULO                   | SAO PAULO             |
+| 361288472        | LAURO DE FREITAS            | BAHIA                 |
+| 60427704         | GOIANIA                     | GOIAS                 |
+| 182611547        | CURITIBA                    | PARANA                |
+| 87515997         | MANAUS                      | AMAZONAS              |
+| 132360523        | BELEM                       | PARA                  |
+| 251041861        | BARRA DO MENDES             | BAHIA                 |
+| 164615709        | GUARAPUAVA                  | PARANA                |
+| 361001555        | MANAUS                      | AMAZONAS              |
+| 335350144        | ANAPOLIS                    | GOIAS                 |
+| 232888333        | SAO PAULO                   | SAO PAULO             |
+| 287161216        | SALVADOR                    | BAHIA                 |
+| 198204301        | APIAI                       | SAO PAULO             |
+| 116166072        | CARAMBEI                    | PARANA                |
+| 113855693        | LINHARES                    | ESPIRITO SANTO        |
+| 245200915        | DIADEMA                     | SAO PAULO             |
+| 369423645        | ITAICABA                    | CEARA                 |
+| 14437523         | SAO PAULO                   | SAO PAULO             |
+| 105980061        | TRAIPU                      | ALAGOAS               |
+| 335636693        | RECIFE                      | PERNAMBUCO            |
+| 280267176        | SALVADOR                    | BAHIA                 |
+| 108064117        | PARANAGUA                   | PARANA                |
+| 98926453         | CASCAVEL                    | PARANA                |
+| 211014128        | SALVADOR                    | BAHIA                 |
+| 752125099        | PARNAMIRIM                  | RIO GRANDE DO NORTE   |
+| 234099992        | BRASILIA                    | DISTRITO FEDERAL      |
+| 220397653        | FORTALEZA                   | CEARA                 |
+| 192681984        | IBIRITE                     | MINAS GERAIS          |
+| 175871259        | ITABAIANA                   | SERGIPE               |
+| 81747803         | ARARAS                      | SAO PAULO             |
+| 67473677         | JATAI                       | GOIAS                 |
+| 655476779        | CASTANHAL                   | PARA                  |
+| 89941251         | JOSE DE FREITAS             | PIAUI                 |
+| 129694219        | BELO HORIZONTE              | MINAS GERAIS          |
+| 29396389         | RECIFE                      | PERNAMBUCO            |
+| 150074312        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 66586069         | JI-PARANA                   | RONDONIA              |
+| 249201024        | AVARE                       | SAO PAULO             |
+| 45087493         | OLINDA                      | PERNAMBUCO            |
+| 372884328        | ANANINDEUA                  | PARA                  |
+| 99775763         | UBERABA                     | MINAS GERAIS          |
+| 793927347        | TERESINA                    | PIAUI                 |
+| 79530736         | BELEM                       | PARA                  |
+| 21925069         | CARIACICA                   | ESPIRITO SANTO        |
+| 397459507        | PORTO NACIONAL              | TOCANTINS             |
+| 380662427        | NITEROI                     | RIO DE JANEIRO        |
+| 379328501        | OURICURI                    | PERNAMBUCO            |
+| 361832949        | JOAO LISBOA                 | MARANHAO              |
+| 288018080        | CIDADE NAO ENCONTRADA       | ESTADO NAO ENCONTRADO |
+| 382953299        | GOIANIA                     | GOIAS                 |
+| 161298392        | COROATA                     | MARANHAO              |
+| 217427845        | PARNAMIRIM                  | RIO GRANDE DO NORTE   |
+| 409685928        | BALNEARIO ARROIO DO SILVA   | SANTA CATARINA        |
+| 372723141        | RECIFE                      | PERNAMBUCO            |
+| 376186771        | ITUPIRANGA                  | PARA                  |
+| 73184339         | FRANCA                      | SAO PAULO             |
+| 240474029        | DIVISOPOLIS                 | MINAS GERAIS          |
+| 184143157        | SALVADOR                    | BAHIA                 |
+| 123419344        | GUARULHOS                   | SAO PAULO             |
+| 80589003         | ITAJAI                      | SANTA CATARINA        |
+| 201076533        | PARNAMIRIM                  | RIO GRANDE DO NORTE   |
+| 117171685        | MACAPA                      | AMAPA                 |
+| 55286728         | RAFARD                      | SAO PAULO             |
+| 111367277        | GUARAPARI                   | ESPIRITO SANTO        |
+| 731893656        | BELFORD ROXO                | RIO DE JANEIRO        |
+| 42757587         | FRUTAL                      | MINAS GERAIS          |
+| 209081787        | GUARULHOS                   | SAO PAULO             |
+| 63520381         | SAO GONCALO DO AMARANTE     | RIO GRANDE DO NORTE   |
+| 734995453        | FORMOSA DO RIO PRETO        | BAHIA                 |
+| 831175648        | BRASILIA                    | DISTRITO FEDERAL      |
+| 238031157        | SAO JOAO DEL REI            | MINAS GERAIS          |
+| 114540544        | NATAL                       | RIO GRANDE DO NORTE   |
+| 151682736        | RECIFE                      | PERNAMBUCO            |
+| 136818157        | FORTALEZA                   | CEARA                 |
+| 349453717        | PATOS                       | PARAIBA               |
+| 288481997        | NOVA SERRANA                | MINAS GERAIS          |
+| 361068160        | MANAUS                      | AMAZONAS              |
+| 34928584         | SAO PAULO                   | SAO PAULO             |
+| 748011501        | JOAO PESSOA                 | PARAIBA               |
+| 112159011        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 176142411        | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 2557688          | DUQUE DE CAXIAS             | RIO DE JANEIRO        |
+| 361662997        | MACAPA                      | AMAPA                 |
+| 114286960        | CASCAVEL                    | CEARA                 |
+| 209547061        | JOAO PESSOA                 | PARAIBA               |
+| 150238523        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 38065736         | POCOS DE CALDAS             | MINAS GERAIS          |
+| 335945357        | BELEM                       | PARA                  |
+| 256141240        | SANTA BARBARA D'OESTE       | SAO PAULO             |
+| 118722701        | BELO HORIZONTE              | MINAS GERAIS          |
+| 146836819        | BALNEARIO CAMBORIU          | SANTA CATARINA        |
+| 40514443         | UBATUBA                     | SAO PAULO             |
+| 869514888        | MARACANAU                   | CEARA                 |
+| 268120752        | FORTALEZA                   | CEARA                 |
+| 186186528        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 76678123         | PONTA GROSSA                | PARANA                |
+| 22214539         | NOVA LIMA                   | MINAS GERAIS          |
+| 57816093         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 20780403         | MARINGA                     | PARANA                |
+| 168065883        | CONQUISTA                   | MINAS GERAIS          |
+| 24332067         | RIO CLARO                   | SAO PAULO             |
+| 13268405         | BARAUNA                     | RIO GRANDE DO NORTE   |
+| 674978723        | COTIA                       | SAO PAULO             |
+| 337094064        | GOIANIA                     | GOIAS                 |
+| 85031507         | ITIUBA                      | BAHIA                 |
+| 187995024        | JUIZ DE FORA                | MINAS GERAIS          |
+| 790680101        | CANELA                      | RIO GRANDE DO SUL     |
+| 207845291        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 125688077        | REDENCAO                    | PARA                  |
+| 247790176        | CARAPICUIBA                 | SAO PAULO             |
+| 127562501        | TOLEDO                      | PARANA                |
+| 48135915         | SAO PAULO                   | SAO PAULO             |
+| 32854765         | RIBEIRAO PRETO              | SAO PAULO             |
+| 221438731        | SAO LUIS                    | MARANHAO              |
+| 363781064        | SIMOES FILHO                | BAHIA                 |
+| 147222253        | BELO HORIZONTE              | MINAS GERAIS          |
+| 171263045        | FORTALEZA                   | CEARA                 |
+| 58312304         | ANANINDEUA                  | PARA                  |
+| 281951744        | IGARASSU                    | PERNAMBUCO            |
+| 60962376         | BELEM                       | PARA                  |
+| 196098672        | DOURADOS                    | MATO GROSSO DO SUL    |
+| 359918112        | MATUPA                      | MATO GROSSO           |
+| 173490035        | CASTANHAL                   | PARA                  |
+| 146423461        | ITABIRA                     | MINAS GERAIS          |
+| 203686851        | JERONIMO MONTEIRO           | ESPIRITO SANTO        |
+| 286210696        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 276370560        | DIAS D'AVILA                | BAHIA                 |
+| 56507829         | SAO PAULO                   | SAO PAULO             |
+| 295652336        | ITAPEVI                     | SAO PAULO             |
+| 26910792         | SANTANA DA PONTE PENSA      | SAO PAULO             |
+| 372611461        | OROBO                       | PERNAMBUCO            |
+| 204436099        | ITABAIANA                   | SERGIPE               |
+| 173974267        | LAGO NORTE                  | DISTRITO FEDERAL      |
+| 280978013        | SAO PAULO                   | SAO PAULO             |
+| 185037725        | AQUIRAZ                     | CEARA                 |
+| 761415000        | PEDREIRAS                   | MARANHAO              |
+| 380690133        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 60083395         | LIMEIRA                     | SAO PAULO             |
+| 288926283        | APODI                       | RIO GRANDE DO NORTE   |
+| 70855461         | PAULINIA                    | SAO PAULO             |
+| 69617816         | BOA VISTA                   | RORAIMA               |
+| 9327587          | LONDRINA                    | PARANA                |
+| 290112232        | SALVADOR                    | BAHIA                 |
+| 255424731        | JUNDIAI                     | SAO PAULO             |
+| 373360365        | CASTANHAL                   | PARA                  |
+| 344005573        | BRASILIA                    | DISTRITO FEDERAL      |
+| 152235672        | FORMIGA                     | MINAS GERAIS          |
+| 36053829         | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 255264005        | SANTO ANDRE                 | SAO PAULO             |
+| 340920517        | ARAGUATINS                  | TOCANTINS             |
+| 178972333        | JARINU                      | SAO PAULO             |
+| 750324264        | MACEIO                      | ALAGOAS               |
+| 37714480         | BAMBUI                      | MINAS GERAIS          |
+| 164433456        | ITORORO                     | BAHIA                 |
+| 397159851        | JAGUAQUARA                  | BAHIA                 |
+| 168861917        | OSASCO                      | SAO PAULO             |
+| 762895605        | GOIANIA                     | GOIAS                 |
+| 147153709        | SALVADOR                    | BAHIA                 |
+| 100918515        | FERROS                      | MINAS GERAIS          |
+| 105376563        | BANANEIRAS                  | PARAIBA               |
+| 795319456        | JUAZEIRO                    | BAHIA                 |
+| 122145547        | MULUNGU DO MORRO            | BAHIA                 |
+| 45025827         | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 68604451         | BRASILIA                    | DISTRITO FEDERAL      |
+| 245427515        | SAO PAULO                   | SAO PAULO             |
+| 12613413         | SERTANIA                    | PERNAMBUCO            |
+| 341294941        | CASCAVEL                    | PARANA                |
+| 183942805        | SALVADOR                    | BAHIA                 |
+| 793285485        | TERESINA                    | PIAUI                 |
+| 33141040         | IGARAPE                     | MINAS GERAIS          |
+| 266311299        | CAMPO VERDE                 | MATO GROSSO           |
+| 183189013        | NAVIRAI                     | MATO GROSSO DO SUL    |
+| 19192227         | CRICIUMA                    | SANTA CATARINA        |
+| 362748608        | PAULO AFONSO                | BAHIA                 |
+| 100810811        | MACAPA                      | AMAPA                 |
+| 655753181        | ALTER DO CHAO               | PARA                  |
+| 84643843         | PAULINIA                    | SAO PAULO             |
+| 70276421         | ARRAIAS                     | TOCANTINS             |
+| 99050533         | FORTALEZA                   | CEARA                 |
+| 155594525        | BRASILIA                    | DISTRITO FEDERAL      |
+| 40158197         | SAO PAULO                   | SAO PAULO             |
+| 268201344        | PASSOS                      | MINAS GERAIS          |
+| 86635371         | CAMPINAS                    | SAO PAULO             |
+| 167382584        | VITORIA DA CONQUISTA        | BAHIA                 |
+| 172386035        | MARABA                      | PARA                  |
+| 428671104        | CURITIBA                    | PARANA                |
+| 111860811        | TERESINA                    | PIAUI                 |
+| 72125021         | ALAGOINHAS                  | BAHIA                 |
+| 117742627        | CONSELHEIRO LAFAIETE        | MINAS GERAIS          |
+| 79658125         | OSASCO                      | SAO PAULO             |
+| 260596024        | CONTAGEM                    | MINAS GERAIS          |
+| 204118736        | MONTANHAS                   | RIO GRANDE DO NORTE   |
+| 261437624        | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 648378973        | IBOTIRAMA                   | BAHIA                 |
+| 179685507        | JAGUAQUARA                  | BAHIA                 |
+| 118693173        | BRASILIA                    | DISTRITO FEDERAL      |
+| 43821611         | BARBACENA                   | MINAS GERAIS          |
+| 245627149        | JUNDIAI                     | SAO PAULO             |
+| 683317397        | SUZANO                      | SAO PAULO             |
+| 148674347        | BRASILIA                    | DISTRITO FEDERAL      |
+| 58522915         | VILHENA                     | RONDONIA              |
+| 106360056        | MANAUS                      | AMAZONAS              |
+| 152027048        | ARACAJU                     | SERGIPE               |
+| 148045573        | SALVADOR                    | BAHIA                 |
+| 80357493         | PELOTAS                     | RIO GRANDE DO SUL     |
+| 29269192         | IRAI DE MINAS               | MINAS GERAIS          |
+| 151183384        | BRASILIA                    | DISTRITO FEDERAL      |
+| 58361387         | SENADOR GEORGINO AVELINO    | RIO GRANDE DO NORTE   |
+| 102660408        | SANTOS                      | SAO PAULO             |
+| 230890699        | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 381521104        | OSASCO                      | SAO PAULO             |
+| 178134293        | SANTA LUZIA DE CARATINGA    | MINAS GERAIS          |
+| 866402717        | CABO FRIO                   | RIO DE JANEIRO        |
+| 228519923        | TERESINA                    | PIAUI                 |
+| 38392856         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 64208277         | SANTA JULIANA               | MINAS GERAIS          |
+| 244995149        | NATAL                       | RIO GRANDE DO NORTE   |
+| 278468923        | FORTALEZA                   | CEARA                 |
+| 79051109         | SETE LAGOAS                 | MINAS GERAIS          |
+| 282178024        | SAO JOAQUIM DA BARRA        | SAO PAULO             |
+| 8696661          | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 27732667         | SALVADOR                    | BAHIA                 |
+| 9318416          | SENGES                      | PARANA                |
+| 380445099        | EMBU DAS ARTES              | SAO PAULO             |
+| 183447432        | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 427424920        | RIO VERDE                   | GOIAS                 |
+| 767401219        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 156086533        | FORMOSA                     | GOIAS                 |
+| 252471147        | MANAUS                      | AMAZONAS              |
+| 244124379        | ITABORAI                    | RIO DE JANEIRO        |
+| 373109195        | BELEM                       | PARA                  |
+| 369461395        | CAPISTRANO                  | CEARA                 |
+| 117687557        | SAPUCAIA DO SUL             | RIO GRANDE DO SUL     |
+| 344597592        | SANTA CRUZ CABRALIA         | BAHIA                 |
+| 271099619        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 42434219         | FORTALEZA                   | CEARA                 |
+| 239824995        | FEIRA DE SANTANA            | BAHIA                 |
+| 686376221        | DELFINOPOLIS                | MINAS GERAIS          |
+| 107045381        | SAO PAULO                   | SAO PAULO             |
+| 200011696        | ITUIUTABA                   | MINAS GERAIS          |
+| 114867179        | PACATUBA                    | CEARA                 |
+| 261908683        | SANTA ROSA DE VITERBO       | SAO PAULO             |
+| 64836096         | TRACUATEUA                  | PARA                  |
+| 363492581        | FEIRA DE SANTANA            | BAHIA                 |
+| 49369139         | MANAUS                      | AMAZONAS              |
+| 277887149        | CAMPINAS                    | SAO PAULO             |
+| 735995587        | BOTUCATU                    | SAO PAULO             |
+| 250204368        | ARACAJU                     | SERGIPE               |
+| 351373141        | GOIANIA                     | GOIAS                 |
+| 661946600        | PRIMAVERA DO LESTE          | MATO GROSSO           |
+| 247678973        | IBITITA                     | BAHIA                 |
+| 261004208        | BETIM                       | MINAS GERAIS          |
+| 87013296         | SALVADOR                    | BAHIA                 |
+| 164786293        | BLUMENAU                    | SANTA CATARINA        |
+| 345253261        | TEOFILO OTONI               | MINAS GERAIS          |
+| 67660549         | CONTAGEM                    | MINAS GERAIS          |
+| 361304923        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 262918781        | BELO HORIZONTE              | MINAS GERAIS          |
+| 63232493         | ITAGUAI                     | RIO DE JANEIRO        |
+| 88787941         | CANDIDO MOTA                | SAO PAULO             |
+| 663437283        | ARARAQUARA                  | SAO PAULO             |
+| 687333533        | BENTO GONCALVES             | RIO GRANDE DO SUL     |
+| 670935053        | MAUA                        | SAO PAULO             |
+| 212522397        | PINHEIRO                    | MARANHAO              |
+| 120906085        | MANAUS                      | AMAZONAS              |
+| 5397613          | CURITIBA                    | PARANA                |
+| 32880797         | ORLANDIA                    | SAO PAULO             |
+| 33327520         | IRAQUARA                    | BAHIA                 |
+| 91162272         | LAJEDAO                     | BAHIA                 |
+| 105125075        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 157072608        | SANTAREM                    | PARA                  |
+| 22294083         | PETROLINA                   | PERNAMBUCO            |
+| 268924168        | SOBRADINHO                  | BAHIA                 |
+| 173736381        | BUJARU                      | PARA                  |
+| 91910211         | PAULISTA                    | PERNAMBUCO            |
+| 101686155        | JACI                        | SAO PAULO             |
+| 216585627        | SAO MATEUS                  | ESPIRITO SANTO        |
+| 857840211        | BELO HORIZONTE              | MINAS GERAIS          |
+| 347853232        | BREU BRANCO                 | PARA                  |
+| 10034691         | CAMPINAS                    | SAO PAULO             |
+| 154439915        | VIANA                       | ESPIRITO SANTO        |
+| 138235968        | FORTALEZA                   | CEARA                 |
+| 178754251        | VIAMAO                      | RIO GRANDE DO SUL     |
+| 342979603        | MONTIVIDIU                  | GOIAS                 |
+| 111667397        | FORTALEZA                   | CEARA                 |
+| 265161053        | TERESINA                    | PIAUI                 |
+| 369230827        | FORTALEZA                   | CEARA                 |
+| 295131685        | FEIRA DE SANTANA            | BAHIA                 |
+| 186169499        | SAPUCAIA DO SUL             | RIO GRANDE DO SUL     |
+| 284106187        | MARILIA                     | SAO PAULO             |
+| 2940211          | BRUSQUE                     | SANTA CATARINA        |
+| 172221776        | DIONISIO CERQUEIRA          | SANTA CATARINA        |
+| 87922077         | PEREIRA BARRETO             | SAO PAULO             |
+| 245021989        | PORTO FERREIRA              | SAO PAULO             |
+| 196508613        | NOVA MUTUM                  | MATO GROSSO           |
+| 182560829        | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 277857408        | SAO PAULO                   | SAO PAULO             |
+| 98991083         | TRINDADE                    | GOIAS                 |
+| 222387392        | JUAZEIRO                    | BAHIA                 |
+| 115433309        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 82986893         | VIGIA                       | PARA                  |
+| 227945160        | CANDEIAS                    | BAHIA                 |
+| 5439312          | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 74349248         | CUIABA                      | MATO GROSSO           |
+| 248741461        | AMERICANA                   | SAO PAULO             |
+| 33236341         | PINDORAMA DO TOCANTINS      | TOCANTINS             |
+| 115168763        | SAO PAULO                   | SAO PAULO             |
+| 677872803        | SAO VICENTE                 | SAO PAULO             |
+| 131074776        | RESENDE                     | RIO DE JANEIRO        |
+| 54977107         | SAO PAULO                   | SAO PAULO             |
+| 115168357        | BRASILIA                    | DISTRITO FEDERAL      |
+| 347580285        | SALVADOR                    | BAHIA                 |
+| 66330285         | CIDADE OCIDENTAL            | GOIAS                 |
+| 212522173        | ANANINDEUA                  | PARA                  |
+| 143265715        | MORADA NOVA                 | PARA                  |
+| 134749264        | JUNDIAI                     | SAO PAULO             |
+| 376219829        | SANTA CRUZ DO SUL           | RIO GRANDE DO SUL     |
+| 189405933        | AVARE                       | SAO PAULO             |
+| 210279699        | BAGE                        | RIO GRANDE DO SUL     |
+| 255099560        | CURITIBA                    | PARANA                |
+| 88247731         | SAO PAULO                   | SAO PAULO             |
+| 165419971        | BELEM                       | PARA                  |
+| 206630920        | VITORIA DA CONQUISTA        | BAHIA                 |
+| 763709368        | JAU                         | SAO PAULO             |
+| 102687424        | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 336641832        | ANAPOLIS                    | GOIAS                 |
+| 173506136        | BARRA DO GARCAS             | MATO GROSSO           |
+| 257322045        | CAPAO DA CANOA              | RIO GRANDE DO SUL     |
+| 792510571        | FIRMINOPOLIS                | GOIAS                 |
+| 78384320         | NOVA IGUACU                 | RIO DE JANEIRO        |
+| 349159043        | ANAPOLIS                    | GOIAS                 |
+| 192681333        | CONTAGEM                    | MINAS GERAIS          |
+| 33780605         | SAO PAULO                   | SAO PAULO             |
+| 220813203        | BELO HORIZONTE              | MINAS GERAIS          |
+| 100257683        | CONTAGEM                    | MINAS GERAIS          |
+| 77680504         | CURITIBA                    | PARANA                |
+| 66340909         | GUARULHOS                   | SAO PAULO             |
+| 9470392          | NOVA IGUACU                 | RIO DE JANEIRO        |
+| 249065080        | FRANCO DA ROCHA             | SAO PAULO             |
+| 48088619         | SAO PAULO                   | SAO PAULO             |
+| 100826699        | SALVADOR                    | BAHIA                 |
+| 47275424         | SAO PAULO                   | SAO PAULO             |
+| 214079245        | SAO PAULO                   | SAO PAULO             |
+| 5046096          | SANTIAGO                    | RIO GRANDE DO SUL     |
+| 428638179        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 108119013        | RIBAS DO RIO PARDO          | MATO GROSSO DO SUL    |
+| 249719949        | OSASCO                      | SAO PAULO             |
+| 263973485        | MARACANAU                   | CEARA                 |
+| 60770475         | SAO PAULO                   | SAO PAULO             |
+| 682551069        | CAMPINAS                    | SAO PAULO             |
+| 145034544        | VALPARAISO DE GOIAS         | GOIAS                 |
+| 257553048        | SAO PAULO                   | SAO PAULO             |
+| 16649912         | CAMPO ALEGRE                | ALAGOAS               |
+| 745229592        | MANAUS                      | AMAZONAS              |
+| 104427672        | SAO LUIS                    | MARANHAO              |
+| 192858267        | RIO VERDE                   | GOIAS                 |
+| 86751640         | SANTA MARIA                 | RIO GRANDE DO SUL     |
+| 110817576        | RIBEIRA DO POMBAL           | BAHIA                 |
+| 56340037         | ANDRADINA                   | SAO PAULO             |
+| 56649880         | FEIRA DE SANTANA            | BAHIA                 |
+| 196380424        | CUIABA                      | MATO GROSSO           |
+| 132107099        | BELEM                       | PARA                  |
+| 352963491        | IGARAPE-MIRI                | PARA                  |
+| 19725171         | CURITIBA                    | PARANA                |
+| 146373632        | JACAREZINHO                 | PARANA                |
+| 801415048        | DUQUE DE CAXIAS             | RIO DE JANEIRO        |
+| 133545048        | GUAIRA                      | PARANA                |
+| 97015909         | COELHO NETO                 | MARANHAO              |
+| 283073203        | CUBATAO                     | SAO PAULO             |
+| 11550301         | LORENA                      | SAO PAULO             |
+| 362406357        | JEQUIE                      | BAHIA                 |
+| 369127336        | SAO PAULO                   | SAO PAULO             |
+| 14044493         | CURITIBA                    | PARANA                |
+| 282739936        | MAGE                        | RIO DE JANEIRO        |
+| 181366741        | BACABAL                     | MARANHAO              |
+| 200247139        | GOIANIA                     | GOIAS                 |
+| 215882739        | MANAUS                      | AMAZONAS              |
+| 243998645        | BRASILIA                    | DISTRITO FEDERAL      |
+| 113406677        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 137647512        | AFONSO CUNHA                | MARANHAO              |
+| 658476928        | ANDRADAS                    | MINAS GERAIS          |
+| 116924685        | PORTO VELHO                 | RONDONIA              |
+| 214996008        | BELEM                       | PARA                  |
+| 41944760         | SAO JOSE DOS PINHAIS        | PARANA                |
+| 28258901         | PONTA PORA                  | MATO GROSSO DO SUL    |
+| 35309987         | JOAO PESSOA                 | PARAIBA               |
+| 203491187        | SENTO SE                    | BAHIA                 |
+| 236766459        | CAMPINAS                    | SAO PAULO             |
+| 262621843        | ANANINDEUA                  | PARA                  |
+| 378298144        | SANTAREM                    | PARA                  |
+| 381482197        | ARARAS                      | SAO PAULO             |
+| 252922688        | SAO PAULO                   | SAO PAULO             |
+| 217145133        | MACAPA                      | AMAPA                 |
+| 94489117         | BRASILIA                    | DISTRITO FEDERAL      |
+| 59597936         | SAO CARLOS                  | SAO PAULO             |
+| 13581704         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 72927621         | SAO PAULO                   | SAO PAULO             |
+| 76997629         | MANAUS                      | AMAZONAS              |
+| 128381800        | CUIABA                      | MATO GROSSO           |
+| 173153723        | MANAUS                      | AMAZONAS              |
+| 37265053         | ARACAJU                     | SERGIPE               |
+| 123479485        | FORTALEZA                   | CEARA                 |
+| 400392843        | PORANGATU                   | GOIAS                 |
+| 228198144        | NOVA ODESSA                 | SAO PAULO             |
+| 243491107        | ITU                         | SAO PAULO             |
+| 23916949         | UBERLANDIA                  | MINAS GERAIS          |
+| 131718613        | BARREIRAS                   | BAHIA                 |
+| 252566992        | JAGUARIUNA                  | SAO PAULO             |
+| 259760923        | ALVARES MACHADO             | SAO PAULO             |
+| 42927707         | MOGI MIRIM                  | SAO PAULO             |
+| 733122627        | AFOGADOS DA INGAZEIRA       | PERNAMBUCO            |
+| 215186216        | OLINDA                      | PERNAMBUCO            |
+| 166525389        | MAUA                        | SAO PAULO             |
+| 108898019        | CUIABA                      | MATO GROSSO           |
+| 255688563        | PRAIA GRANDE                | SAO PAULO             |
+| 213193341        | TERESINA                    | PIAUI                 |
+| 179397869        | SALTO                       | SAO PAULO             |
+| 69874315         | TAUBATE                     | SAO PAULO             |
+| 676299208        | JAU                         | SAO PAULO             |
+| 222233219        | GRANJEIRO                   | CEARA                 |
+| 282923635        | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 414829307        | RIBEIRAO DAS NEVES          | MINAS GERAIS          |
+| 73701397         | PAICANDU                    | PARANA                |
+| 147884147        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 70700840         | SUZANO                      | SAO PAULO             |
+| 186335533        | SAO PAULO                   | SAO PAULO             |
+| 3135680          | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 30152949         | ITABERABA                   | BAHIA                 |
+| 286505789        | PEDRA BRANCA DO AMAPARI     | AMAPA                 |
+| 199488304        | ITIQUIRA                    | MATO GROSSO           |
+| 212808571        | SAO JOSE DE RIBAMAR         | MARANHAO              |
+| 230561435        | SALVADOR                    | BAHIA                 |
+| 253353939        | SUCUPIRA                    | TOCANTINS             |
+| 289931264        | FORTALEZA                   | CEARA                 |
+| 254931888        | SAO PAULO                   | SAO PAULO             |
+| 16763200         | RIO BRANCO                  | ACRE                  |
+| 66399909         | CATOLE DO ROCHA             | PARAIBA               |
+| 672560899        | GUARULHOS                   | SAO PAULO             |
+| 168261773        | BELO HORIZONTE              | MINAS GERAIS          |
+| 97310581         | SALVADOR                    | BAHIA                 |
+| 387088909        | MACAE                       | RIO DE JANEIRO        |
+| 8745160          | SANTA TEREZINHA DE ITAIPU   | PARANA                |
+| 688593987        | TAGUAI                      | SAO PAULO             |
+| 98502280         | ARACATUBA                   | SAO PAULO             |
+| 228718939        | NOVA MUTUM                  | MATO GROSSO           |
+| 80442216         | SAO PAULO                   | SAO PAULO             |
+| 203832051        | SALVADOR                    | BAHIA                 |
+| 73248792         | CURITIBA                    | PARANA                |
+| 2800645          | SAO JOSE                    | SANTA CATARINA        |
+| 284744291        | SAO PAULO                   | SAO PAULO             |
+| 233404576        | TRINDADE                    | GOIAS                 |
+| 77328051         | SALVADOR                    | BAHIA                 |
+| 184673501        | MARINGA                     | PARANA                |
+| 756407456        | NATAL                       | RIO GRANDE DO NORTE   |
+| 75514832         | EMBU DAS ARTES              | SAO PAULO             |
+| 673438651        | FRANCO DA ROCHA             | SAO PAULO             |
+| 744871576        | MASSANGANO                  | PERNAMBUCO            |
+| 376696213        | PLANURA                     | MINAS GERAIS          |
+| 280860797        | FLORIANOPOLIS               | SANTA CATARINA        |
+| 205523352        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 56226365         | MOGI DAS CRUZES             | SAO PAULO             |
+| 272757357        | ANANINDEUA                  | PARA                  |
+| 154610309        | PORTO VELHO                 | RONDONIA              |
+| 147240032        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 273231496        | VILA VELHA                  | ESPIRITO SANTO        |
+| 63726528         | SENADOR CANEDO              | GOIAS                 |
+| 380440864        | BARRA DO JACUIPE            | BAHIA                 |
+| 101493360        | RIO GRANDE DA SERRA         | SAO PAULO             |
+| 217015573        | MANAUS                      | AMAZONAS              |
+| 844212085        | BELO HORIZONTE              | MINAS GERAIS          |
+| 34279067         | BRASILIA                    | DISTRITO FEDERAL      |
+| 132508267        | FEIRA DE SANTANA            | BAHIA                 |
+| 23181773         | QUEIMADAS                   | CEARA                 |
+| 188169091        | ANAPOLIS                    | GOIAS                 |
+| 15337936         | MARILAC                     | MINAS GERAIS          |
+| 831679875        | MAGE                        | RIO DE JANEIRO        |
+| 362142064        | CAMPINAS                    | SAO PAULO             |
+| 372174501        | FORTALEZA                   | CEARA                 |
+| 82455931         | MONTE ALTO                  | SAO PAULO             |
+| 178273544        | CURACA                      | BAHIA                 |
+| 37873571         | BLUMENAU                    | SANTA CATARINA        |
+| 739292864        | PIRIPIRI                    | PIAUI                 |
+| 7320253          | SAO PAULO                   | SAO PAULO             |
+| 356263109        | TIMBAUBA                    | PERNAMBUCO            |
+| 200142173        | BOM JESUS DA LAPA           | BAHIA                 |
+| 109143571        | MURIAE                      | MINAS GERAIS          |
+| 684408027        | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 146559376        | SAO PAULO                   | SAO PAULO             |
+| 146758680        | ACARI                       | RIO GRANDE DO NORTE   |
+| 146451901        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 102130829        | RECIFE                      | PERNAMBUCO            |
+| 153589205        | MACAPA                      | AMAPA                 |
+| 78228571         | SAO JOSE DO NORTE           | RIO GRANDE DO SUL     |
+| 80241581         | VILA DOS CABANOS            | PARA                  |
+| 14263571         | SAO PAULO                   | SAO PAULO             |
+| 817146755        | MANAUS                      | AMAZONAS              |
+| 78942456         | ELIAS FAUSTO                | SAO PAULO             |
+| 137421803        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 142978408        | RECIFE                      | PERNAMBUCO            |
+| 60241003         | SALVADOR                    | BAHIA                 |
+| 252481512        | SANTO ANDRE                 | SAO PAULO             |
+| 220253557        | GASPAR                      | SANTA CATARINA        |
+| 374781541        | BELEM                       | PARA                  |
+| 143703355        | RIO BRANCO                  | ACRE                  |
+| 213658152        | MAUA                        | SAO PAULO             |
+| 206549568        | ARAXA                       | MINAS GERAIS          |
+| 264388376        | JACAREI                     | SAO PAULO             |
+| 144926029        | ESTEIO                      | RIO GRANDE DO SUL     |
+| 346227184        | APARECIDA DE GOIANIA        | GOIAS                 |
+| 161877171        | COLIDER                     | MATO GROSSO           |
+| 240773629        | FORTALEZA                   | CEARA                 |
+| 286378509        | MATIAS OLIMPIO              | PIAUI                 |
+| 214513507        | FEIRA DE SANTANA            | BAHIA                 |
+| 375163547        | BRASILIA                    | DISTRITO FEDERAL      |
+| 37181475         | LENCOIS PAULISTA            | SAO PAULO             |
+| 205893517        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 263694523        | RONDONOPOLIS                | MATO GROSSO           |
+| 8002123          | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 176061675        | SABARA                      | MINAS GERAIS          |
+| 256977640        | SALVADOR                    | BAHIA                 |
+| 24310531         | SAO LOURENCO DA MATA        | PERNAMBUCO            |
+| 120485989        | OSASCO                      | SAO PAULO             |
+| 12364109         | PIRANHAS                    | ALAGOAS               |
+| 104407720        | GOIANIA                     | GOIAS                 |
+| 187306251        | JOAO MONLEVADE              | MINAS GERAIS          |
+| 242701197        | CARPINA                     | PERNAMBUCO            |
+| 83157701         | MAIOBA                      | MARANHAO              |
+| 352831912        | VITORIA                     | ESPIRITO SANTO        |
+| 251407715        | SAO PAULO                   | SAO PAULO             |
+| 336819947        | HORIZONTE                   | CEARA                 |
+| 676361800        | CAMPINAS                    | SAO PAULO             |
+| 2472851          | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 267555899        | SAO PAULO                   | SAO PAULO             |
+| 143700427        | CAIEIRAS                    | SAO PAULO             |
+| 257375797        | IBIUNA                      | SAO PAULO             |
+| 98110037         | BURITIRAMA                  | BAHIA                 |
+| 220783512        | JOAO PESSOA                 | PARAIBA               |
+| 21470352         | MAIRINQUE                   | SAO PAULO             |
+| 251164859        | CAMPINAS                    | SAO PAULO             |
+| 246422637        | SAO PAULO                   | SAO PAULO             |
+| 155773373        | SAO LUIZ GONZAGA            | RIO GRANDE DO SUL     |
+| 116644152        | FORTALEZA                   | CEARA                 |
+| 223032629        | PINDORETAMA                 | CEARA                 |
+| 50167181         | RECIFE                      | PERNAMBUCO            |
+| 83880293         | SAO PAULO                   | SAO PAULO             |
+| 339197808        | FORTALEZA                   | CEARA                 |
+| 49882133         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 280387013        | ARACAJU                     | SERGIPE               |
+| 105003317        | CAPANEMA                    | PARANA                |
+| 275307856        | SAO FRANCISCO DE GOIAS      | GOIAS                 |
+| 91679296         | CONFINS                     | MINAS GERAIS          |
+| 263695277        | SALVADOR                    | BAHIA                 |
+| 15706275         | CONCHAL                     | SAO PAULO             |
+| 114530520        | UBERLANDIA                  | MINAS GERAIS          |
+| 57955179         | PEDRA DO INDAIA             | MINAS GERAIS          |
+| 717634651        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 665307309        | SALVADOR                    | BAHIA                 |
+| 132854997        | AGUA COMPRIDA               | MINAS GERAIS          |
++------------------+-----------------------------+-----------------------+
++------------------+-----------------------------+-----------------------+
+| id_pessoa_fisica | nom_cidade                  | des_estado            |
++------------------+-----------------------------+-----------------------+
+| 716760160        | NOVA MUTUM                  | MATO GROSSO           |
+| 660748923        | MONTENEGRO                  | RIO GRANDE DO SUL     |
+| 805827269        | JAU                         | SAO PAULO             |
+| 854656744        | TERESOPOLIS                 | RIO DE JANEIRO        |
+| 296049453        | APIACAS                     | MATO GROSSO           |
+| 363009944        | SALVADOR                    | BAHIA                 |
+| 164405176        | CABO DE SANTO AGOSTINHO     | PERNAMBUCO            |
+| 61450685         | GOIANIA                     | GOIAS                 |
+| 49310160         | TERESINA                    | PIAUI                 |
+| 46624136         | PINDAMONHANGABA             | SAO PAULO             |
+| 793471747        | MILAGRES                    | CEARA                 |
+| 812179573        | GOIANIA                     | GOIAS                 |
+| 239704411        | JOINVILLE                   | SANTA CATARINA        |
+| 58850069         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 623497557        | LAURO DE FREITAS            | BAHIA                 |
+| 88980597         | MONTE MOR                   | SAO PAULO             |
+| 279057760        | SANTA RITA DE CASSIA        | BAHIA                 |
+| 54687573         | SAO PAULO                   | SAO PAULO             |
+| 249607957        | SANTO ANDRE                 | SAO PAULO             |
+| 216026493        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 665725107        | BELO HORIZONTE              | MINAS GERAIS          |
+| 243469579        | SAO PAULO                   | SAO PAULO             |
+| 262914248        | POCOS                       | BAHIA                 |
+| 242944885        | IBITINGA                    | SAO PAULO             |
+| 830932107        | SALVADOR                    | BAHIA                 |
+| 235756168        | RIBEIRAO DAS NEVES          | MINAS GERAIS          |
+| 153837048        | JACOBINA                    | BAHIA                 |
+| 713356064        | CAUCAIA                     | CEARA                 |
+| 859470405        | VITORIA DA CONQUISTA        | BAHIA                 |
+| 96115416         | GUARULHOS                   | SAO PAULO             |
+| 105211237        | PACATUBA                    | CEARA                 |
+| 783063875        | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 265798723        | FORTALEZA                   | CEARA                 |
+| 72788869         | CARAGUATATUBA               | SAO PAULO             |
+| 63886216         | CRICIUMA                    | SANTA CATARINA        |
+| 214993141        | PORTO VELHO                 | RONDONIA              |
+| 204228563        | ITAPEVI                     | SAO PAULO             |
+| 241158315        | SAO PAULO                   | SAO PAULO             |
+| 710311915        | VITORIA                     | ESPIRITO SANTO        |
+| 196257992        | BELO HORIZONTE              | MINAS GERAIS          |
+| 22996144         | BERTIOGA                    | SAO PAULO             |
+| 227932624        | TRAIRI                      | CEARA                 |
+| 136308725        | CARAPICUIBA                 | SAO PAULO             |
+| 95120413         | PASSO DE TORRES             | SANTA CATARINA        |
+| 5012285          | CAICO                       | RIO GRANDE DO NORTE   |
+| 87998904         | SAO PAULO                   | SAO PAULO             |
+| 112547573        | JI-PARANA                   | RONDONIA              |
+| 23216501         | SAO PAULO                   | SAO PAULO             |
+| 174346619        | MANAUS                      | AMAZONAS              |
+| 200894560        | SAO PAULO                   | SAO PAULO             |
+| 139954419        | CRICIUMA                    | SANTA CATARINA        |
+| 95893136         | SAO PAULO                   | SAO PAULO             |
+| 192076451        | NOVA VICOSA                 | BAHIA                 |
+| 109764645        | JUIZ DE FORA                | MINAS GERAIS          |
+| 17303848         | NATAL                       | RIO GRANDE DO NORTE   |
+| 86547211         | JUQUITIBA                   | SAO PAULO             |
+| 818020851        | FORTALEZA                   | CEARA                 |
+| 136993219        | TUCURUI                     | PARA                  |
+| 3498360          | CONTAGEM                    | MINAS GERAIS          |
+| 85886043         | SAO PAULO                   | SAO PAULO             |
+| 353444613        | GOIANIA                     | GOIAS                 |
+| 181724272        | TRES CORACOES               | MINAS GERAIS          |
+| 242202392        | SALVADOR                    | BAHIA                 |
+| 240644253        | SAO PAULO                   | SAO PAULO             |
+| 381501411        | SAO PAULO                   | SAO PAULO             |
+| 133115544        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 400582757        | SAO PAULO                   | SAO PAULO             |
+| 56216147         | PETROLINA                   | PERNAMBUCO            |
+| 65133491         | ALVARO DE CARVALHO          | SAO PAULO             |
+| 177560555        | GRAVATAI                    | RIO GRANDE DO SUL     |
+| 202800269        | IBOTIRAMA                   | BAHIA                 |
+| 50919019         | JACAREI                     | SAO PAULO             |
+| 341371323        | CONCORDIA DO PARA           | PARA                  |
+| 127387101        | BALBINA                     | AMAZONAS              |
+| 142990445        | GUARUJA                     | SAO PAULO             |
+| 161952525        | DIAS D'AVILA                | BAHIA                 |
+| 354526955        | SAO PAULO                   | SAO PAULO             |
+| 65541088         | PAULISTA                    | PERNAMBUCO            |
+| 224373619        | AGUAS LINDAS DE GOIAS       | GOIAS                 |
+| 734534477        | MANAUS                      | AMAZONAS              |
+| 341759139        | ANAPOLIS                    | GOIAS                 |
+| 733274205        | CAMAMU                      | BAHIA                 |
+| 172817515        | SAO PAULO                   | SAO PAULO             |
+| 204485947        | SAO PAULO                   | SAO PAULO             |
+| 23510968         | MORENO                      | PERNAMBUCO            |
+| 145430955        | IGUATU                      | CEARA                 |
+| 247846413        | VITORIA DA CONQUISTA        | BAHIA                 |
+| 21063875         | TRES CORACOES               | MINAS GERAIS          |
+| 37444411         | PATOS DE MINAS              | MINAS GERAIS          |
+| 659655021        | SAO JOSE DE RIBAMAR         | MARANHAO              |
+| 35648104         | COTIA                       | SAO PAULO             |
+| 265884123        | CAUCAIA                     | CEARA                 |
+| 79609373         | SALTO DE PIRAPORA           | SAO PAULO             |
+| 52852989         | APARECIDA                   | SAO PAULO             |
+| 94992773         | SALVADOR                    | BAHIA                 |
+| 730676480        | VITORIA DA CONQUISTA        | BAHIA                 |
+| 34189715         | IBIRITE                     | MINAS GERAIS          |
+| 212441395        | CABO DE SANTO AGOSTINHO     | PERNAMBUCO            |
+| 106436552        | SAO LUIS DO QUITUNDE        | ALAGOAS               |
+| 109661733        | BRASILIA                    | DISTRITO FEDERAL      |
+| 55412917         | SAO PAULO                   | SAO PAULO             |
+| 793514989        | FORTALEZA                   | CEARA                 |
+| 120700784        | SANTAREM                    | PARA                  |
+| 191366741        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 355881013        | TERESINA                    | PIAUI                 |
+| 32348403         | CARUARU                     | PERNAMBUCO            |
+| 23063699         | JUIZ DE FORA                | MINAS GERAIS          |
+| 855615213        | MANAUS                      | AMAZONAS              |
+| 215561813        | LARANJAL PAULISTA           | SAO PAULO             |
+| 86705197         | AMERICANA                   | SAO PAULO             |
+| 97718872         | BRASILIA                    | DISTRITO FEDERAL      |
+| 41372859         | SALVADOR                    | BAHIA                 |
+| 192478960        | CARATINGA                   | MINAS GERAIS          |
+| 191751864        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 106802205        | VICOSA                      | MINAS GERAIS          |
+| 142587496        | SIMOES FILHO                | BAHIA                 |
+| 349081795        | PATOS DE MINAS              | MINAS GERAIS          |
+| 130649173        | MACEIO                      | ALAGOAS               |
+| 236532896        | DIAS D'AVILA                | BAHIA                 |
+| 346430221        | CAMPO MAIOR                 | PIAUI                 |
+| 184740083        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 662104411        | GOIANIA                     | GOIAS                 |
+| 157650920        | CAETITE                     | BAHIA                 |
+| 221239435        | PATOS                       | PARAIBA               |
+| 262148011        | BELEM                       | PARA                  |
+| 222632576        | SALVADOR                    | BAHIA                 |
+| 241791581        | IMPERATRIZ                  | MARANHAO              |
+| 112745989        | RIO GRANDE                  | RIO GRANDE DO SUL     |
+| 9256328          | TANABI                      | SAO PAULO             |
+| 140867245        | SAO PAULO                   | SAO PAULO             |
+| 239393392        | RESPLENDOR                  | MINAS GERAIS          |
+| 251766211        | RECIFE                      | PERNAMBUCO            |
+| 73287571         | FORTALEZA                   | CEARA                 |
+| 127273517        | CONTAGEM                    | MINAS GERAIS          |
+| 173408045        | BRASILIA                    | DISTRITO FEDERAL      |
+| 863930595        | FORTALEZA                   | CEARA                 |
+| 53823315         | FEIRA DE SANTANA            | BAHIA                 |
+| 262287013        | LENCOIS PAULISTA            | SAO PAULO             |
+| 336930128        | OSASCO                      | SAO PAULO             |
+| 353097075        | FORTALEZA                   | CEARA                 |
+| 29035427         | CUIABA                      | MATO GROSSO           |
+| 397107811        | SALVADOR                    | BAHIA                 |
+| 396485661        | VILA VELHA                  | ESPIRITO SANTO        |
+| 50259021         | VOLTA REDONDA               | RIO DE JANEIRO        |
+| 40917893         | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 246951371        | FORTALEZA                   | CEARA                 |
+| 121286808        | DIAS D'AVILA                | BAHIA                 |
+| 37148861         | IPATINGA                    | MINAS GERAIS          |
+| 380033853        | IGARASSU                    | PERNAMBUCO            |
+| 146888152        | PONTA GROSSA                | PARANA                |
+| 79429779         | FORTALEZA                   | CEARA                 |
+| 63761637         | RONDONOPOLIS                | MATO GROSSO           |
+| 74143912         | ITAGUAI                     | RIO DE JANEIRO        |
+| 175776200        | ITAPORANGA D'AJUDA          | SERGIPE               |
+| 246036379        | ASSIS                       | SAO PAULO             |
+| 18004635         | DUQUE DE CAXIAS             | RIO DE JANEIRO        |
+| 62187976         | SAO LUIS                    | MARANHAO              |
+| 683247403        | SAO PAULO                   | SAO PAULO             |
+| 225634008        | NOVA IGUACU                 | RIO DE JANEIRO        |
+| 287759579        | PLANALTINA                  | GOIAS                 |
+| 20585424         | ALVORADA                    | RIO GRANDE DO SUL     |
+| 668292203        | DIADEMA                     | SAO PAULO             |
+| 29469008         | BOA VISTA                   | RORAIMA               |
+| 108181373        | NATAL                       | RIO GRANDE DO NORTE   |
+| 160595741        | PAULISTA                    | PERNAMBUCO            |
+| 247635851        | SAO PAULO                   | SAO PAULO             |
+| 250098979        | MOGI DAS CRUZES             | SAO PAULO             |
+| 43567493         | SABAUNA                     | SAO PAULO             |
+| 354151672        | MARTINOPOLE                 | CEARA                 |
+| 70027368         | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 275761987        | GOVERNADOR VALADARES        | MINAS GERAIS          |
+| 361644952        | MACAPA                      | AMAPA                 |
+| 382723923        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 273326757        | TEREZOPOLIS DE GOIAS        | GOIAS                 |
+| 109199829        | RECIFE                      | PERNAMBUCO            |
+| 23737205         | TABOAO DA SERRA             | SAO PAULO             |
+| 224798437        | QUATRO BARRAS               | PARANA                |
+| 21524725         | CURITIBA                    | PARANA                |
+| 5598800          | GUAPORE                     | RIO GRANDE DO SUL     |
+| 220030717        | SAO PAULO                   | SAO PAULO             |
+| 65991453         | TOBIAS BARRETO              | SERGIPE               |
+| 664034064        | SAO PAULO                   | SAO PAULO             |
+| 384151080        | ABADIANIA                   | GOIAS                 |
+| 246603669        | TERESINA                    | PIAUI                 |
+| 194143619        | FORMOSA                     | GOIAS                 |
+| 99374467         | SAO PAULO                   | SAO PAULO             |
+| 267956347        | FORTALEZA                   | CEARA                 |
+| 680580533        | BELEM                       | PARA                  |
+| 68544240         | RIO VERDE                   | GOIAS                 |
+| 199952595        | SALVADOR                    | BAHIA                 |
+| 133083091        | TAGUATINGA                  | DISTRITO FEDERAL      |
+| 205320173        | JOAO PESSOA                 | PARAIBA               |
+| 214432176        | QUINTANA                    | SAO PAULO             |
+| 671778971        | VARZEA PAULISTA             | SAO PAULO             |
+| 28771277         | SAO GONCALO                 | RIO DE JANEIRO        |
+| 64372205         | LUCAS DO RIO VERDE          | MATO GROSSO           |
+| 229218813        | ANANINDEUA                  | PARA                  |
+| 399010603        | CIANORTE                    | PARANA                |
+| 55608437         | SAO PAULO                   | SAO PAULO             |
+| 60363381         | SONORA                      | MATO GROSSO DO SUL    |
+| 222022680        | SANTO ANTONIO DO DESCOBERTO | GOIAS                 |
+| 275300715        | INDAIAL                     | SANTA CATARINA        |
+| 90737400         | ANANINDEUA                  | PARA                  |
+| 841246992        | GRAVATAI                    | RIO GRANDE DO SUL     |
+| 282956141        | MAUA                        | SAO PAULO             |
+| 372723955        | MANOEL EMIDIO               | PIAUI                 |
+| 241698392        | SALVADOR                    | BAHIA                 |
+| 1400552          | FERNANDOPOLIS               | SAO PAULO             |
+| 344262141        | BALSAS                      | MARANHAO              |
+| 178897776        | SALVADOR                    | BAHIA                 |
+| 179079045        | ITAPEVA                     | SAO PAULO             |
+| 137727504        | BENEVIDES                   | PARA                  |
+| 43880624         | SANTOS                      | SAO PAULO             |
+| 104989792        | QUIXERE                     | CEARA                 |
+| 15303080         | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 229948752        | JABOATAO DOS GUARARAPES     | PERNAMBUCO            |
+| 394203349        | ITUPIRANGA                  | PARA                  |
+| 37216955         | SANTO ANDRE                 | SAO PAULO             |
+| 428468035        | CAMPO FORMOSO               | BAHIA                 |
+| 688347568        | SAO PAULO                   | SAO PAULO             |
+| 12613936         | SOROCABA                    | SAO PAULO             |
+| 70816459         | VINHEDO                     | SAO PAULO             |
+| 134475581        | ITAPECERICA                 | MINAS GERAIS          |
+| 154188523        | MARINGA                     | PARANA                |
+| 680901789        | CACHOEIRA DO SUL            | RIO GRANDE DO SUL     |
+| 204491931        | CANINDE DE SAO FRANCISCO    | SERGIPE               |
+| 70434093         | SAO CARLOS                  | SAO PAULO             |
+| 21501643         | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 45686213         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 137506216        | GOIANIA                     | GOIAS                 |
+| 201414528        | ARCOVERDE                   | PERNAMBUCO            |
+| 79349989         | ITAJUTIBA                   | MINAS GERAIS          |
+| 6323035          | MOGI DAS CRUZES             | SAO PAULO             |
+| 256747           | CURITIBA                    | PARANA                |
+| 861072283        | GARRAFAO DO NORTE           | PARA                  |
+| 103768928        | VIAMAO                      | RIO GRANDE DO SUL     |
+| 233374851        | CRUZEIRO DO SUL             | ACRE                  |
+| 817263344        | FORTALEZA                   | CEARA                 |
+| 382228523        | TUPACIGUARA                 | MINAS GERAIS          |
+| 117374715        | CACHOEIRINHA                | RIO GRANDE DO SUL     |
+| 776261411        | SAO JOAO DE MERITI          | RIO DE JANEIRO        |
+| 63282077         | MACEIO                      | ALAGOAS               |
+| 373458072        | PARAUAPEBAS                 | PARA                  |
+| 164931664        | SINOP                       | MATO GROSSO           |
+| 151228536        | COTIA                       | SAO PAULO             |
+| 386358736        | NANUQUE                     | MINAS GERAIS          |
+| 717529253        | SANTA LUZIA                 | MINAS GERAIS          |
+| 203331851        | NOVA SANTA RITA             | RIO GRANDE DO SUL     |
+| 167360355        | MAUA                        | RIO GRANDE DO SUL     |
+| 352089744        | OEIRAS                      | PIAUI                 |
+| 185472315        | FORTALEZA                   | CEARA                 |
+| 61252352         | FRANCISCO MORATO            | SAO PAULO             |
+| 113179387        | RIO BRANCO                  | ACRE                  |
+| 251728733        | MORENO                      | PERNAMBUCO            |
+| 124109008        | CARUARU                     | PERNAMBUCO            |
+| 242908395        | SANTA BARBARA D'OESTE       | SAO PAULO             |
+| 656358872        | FORTALEZA                   | CEARA                 |
+| 238023752        | LINHARES                    | ESPIRITO SANTO        |
+| 182336771        | ITABERABA                   | BAHIA                 |
+| 24965379         | BODOCO                      | PERNAMBUCO            |
+| 350892632        | BARBACENA                   | MINAS GERAIS          |
+| 270278613        | SALVADOR                    | BAHIA                 |
+| 78540893         | SANTA RITA                  | MARANHAO              |
+| 361687360        | SANTANA                     | AMAPA                 |
+| 220126336        | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 202768965        | SAO PAULO                   | SAO PAULO             |
+| 222427325        | UMBAUBA                     | SERGIPE               |
+| 209776680        | SALVADOR                    | BAHIA                 |
+| 745826344        | SALVADOR                    | BAHIA                 |
+| 263205307        | MANAUS                      | AMAZONAS              |
+| 257498907        | ARARAS                      | SAO PAULO             |
+| 272640008        | NHAMUNDA                    | AMAZONAS              |
+| 154826504        | BENTO GONCALVES             | RIO GRANDE DO SUL     |
+| 32609453         | MACAE                       | RIO DE JANEIRO        |
+| 670540093        | BOTUCATU                    | SAO PAULO             |
+| 46279728         | CORUMBA                     | MATO GROSSO DO SUL    |
+| 381586688        | PRESIDENTE FIGUEIREDO       | AMAZONAS              |
+| 156065651        | BENEVIDES                   | PARA                  |
+| 377745227        | MANAUS                      | AMAZONAS              |
+| 96952869         | ZE DOCA                     | MARANHAO              |
+| 855171824        | UBERABA                     | MINAS GERAIS          |
+| 60356437         | BRASILIA                    | DISTRITO FEDERAL      |
+| 251968515        | CAMPINAS                    | SAO PAULO             |
+| 348158771        | UNIAO DOS PALMARES          | ALAGOAS               |
+| 98276203         | BATATAIS                    | SAO PAULO             |
+| 11296821         | CAMPO GRANDE                | MATO GROSSO DO SUL    |
+| 415605064        | SAO JOAO DE MERITI          | RIO DE JANEIRO        |
+| 170322813        | UAUA                        | BAHIA                 |
+| 109633032        | SAO JOSE DE RIBAMAR         | MARANHAO              |
+| 281785856        | MATIPO                      | MINAS GERAIS          |
+| 287107           | CHAPECO                     | SANTA CATARINA        |
+| 89463331         | SAO JOSE DOS CAMPOS         | SAO PAULO             |
+| 81850757         | RIO CLARO                   | SAO PAULO             |
+| 106732139        | GUARULHOS                   | SAO PAULO             |
+| 104789328        | ARACAJU                     | SERGIPE               |
+| 178411664        | AREAL                       | RIO DE JANEIRO        |
+| 165445205        | PORTO VELHO                 | RONDONIA              |
+| 204773501        | FEIRA DE SANTANA            | BAHIA                 |
+| 367582037        | BONINAL                     | BAHIA                 |
+| 100279829        | JATAI                       | GOIAS                 |
+| 215326936        | UBERLANDIA                  | MINAS GERAIS          |
+| 108457896        | FORTALEZA                   | CEARA                 |
+| 258840560        | FOZ DO IGUACU               | PARANA                |
+| 11338461         | RECIFE                      | PERNAMBUCO            |
+| 855139155        | CACHOEIRA SECA              | PERNAMBUCO            |
+| 114695845        | CARUARU                     | PERNAMBUCO            |
+| 653003216        | ENCANTADO                   | RIO GRANDE DO SUL     |
+| 58830211         | SANTA HELENA DE GOIAS       | GOIAS                 |
+| 22482693         | IPATINGA                    | MINAS GERAIS          |
+| 240966760        | EMBU DAS ARTES              | SAO PAULO             |
+| 265135859        | BELO HORIZONTE              | MINAS GERAIS          |
+| 863458048        | FORTALEZA                   | CEARA                 |
+| 688038781        | SANTO ANDRE                 | SAO PAULO             |
+| 281377307        | CURITIBA                    | PARANA                |
+| 71270608         | TOCOS                       | RIO DE JANEIRO        |
+| 219165867        | CRUZEIRO                    | SAO PAULO             |
+| 47760877         | SAO PAULO                   | SAO PAULO             |
+| 242210483        | FORTALEZA                   | AMAPA                 |
+| 165418261        | OLINDA                      | PERNAMBUCO            |
+| 190245925        | SAO PAULO                   | SAO PAULO             |
+| 378647960        | OSASCO                      | SAO PAULO             |
+| 166581963        | SAO PAULO                   | SAO PAULO             |
+| 89817712         | BELO HORIZONTE              | MINAS GERAIS          |
+| 758389987        | IMPERATRIZ                  | MARANHAO              |
+| 33518539         | BELO HORIZONTE              | MINAS GERAIS          |
+| 67520341         | CAMPINAS                    | SAO PAULO             |
+| 55611803         | SANTO ANDRE                 | SAO PAULO             |
+| 128172891        | PONTA GROSSA                | PARANA                |
+| 136555621        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 690451688        | SAO PAULO                   | SAO PAULO             |
+| 95701933         | CAMPOS DOS GOYTACAZES       | RIO DE JANEIRO        |
+| 407094568        | FLORIANOPOLIS               | SANTA CATARINA        |
+| 672206784        | GUARULHOS                   | SAO PAULO             |
+| 247277019        | VARGEM GRANDE PAULISTA      | SAO PAULO             |
+| 220580472        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 189592333        | SAO PAULO                   | SAO PAULO             |
+| 270841325        | PAULINIA                    | SAO PAULO             |
+| 361289856        | PARAGOMINAS                 | PARA                  |
+| 197198749        | SERTAO                      | RIO GRANDE DO SUL     |
+| 163294019        | SALVADOR                    | BAHIA                 |
+| 6323035          | ADAMANTINA                  | SAO PAULO             |
+| 26901288         | SERRA                       | ESPIRITO SANTO        |
+| 260253389        | BELO HORIZONTE              | MINAS GERAIS          |
+| 273126389        | SUMARE                      | SAO PAULO             |
+| 198280797        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 204302317        | CACHOEIRA PAULISTA          | SAO PAULO             |
+| 98458389         | RESENDE                     | RIO DE JANEIRO        |
+| 241664688        | CONCEICAO DA FEIRA          | BAHIA                 |
+| 202000595        | ITABUNA                     | BAHIA                 |
+| 751015080        | CABO DE SANTO AGOSTINHO     | PERNAMBUCO            |
+| 104015221        | VIANA                       | MARANHAO              |
+| 242907723        | PORTO VELHO                 | RONDONIA              |
+| 202219171        | CAMACARI                    | BAHIA                 |
+| 343532733        | FORTALEZA                   | CEARA                 |
+| 143031061        | SAO JOSE DO JACURI          | MINAS GERAIS          |
+| 95664549         | SALVADOR                    | BAHIA                 |
+| 197680717        | ARACAJU                     | SERGIPE               |
+| 40159373         | TERESOPOLIS                 | RIO DE JANEIRO        |
+| 350927680        | SAO LUIS                    | MARANHAO              |
+| 110560467        | ITIRUCU                     | BAHIA                 |
+| 926741           | CORDEIRO                    | RIO DE JANEIRO        |
+| 210774285        | ARACAJU                     | SERGIPE               |
+| 31823877         | RIO DO SUL                  | SANTA CATARINA        |
+| 730212005        | SALVADOR                    | BAHIA                 |
+| 137321720        | SALVADOR                    | BAHIA                 |
+| 16006115         | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 1687496          | TESOURO                     | MATO GROSSO           |
+| 192219128        | ITAPEVI                     | SAO PAULO             |
+| 220283432        | GUAIRA                      | SAO PAULO             |
+| 112798957        | LONDRINA                    | PARANA                |
+| 251945592        | SAO PAULO                   | SAO PAULO             |
+| 378520813        | BRASILIA                    | DISTRITO FEDERAL      |
+| 163718664        | PIRAI DO SUL                | PARANA                |
+| 120505835        | BARREIRAS                   | BAHIA                 |
+| 244808280        | ITAPETININGA                | SAO PAULO             |
+| 657283723        | CAUCAIA                     | CEARA                 |
+| 34498189         | GUARUJA                     | SAO PAULO             |
+| 85616349         | JOSE BONIFACIO              | SAO PAULO             |
+| 428597208        | ITABUNA                     | BAHIA                 |
+| 147088189        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 127821080        | JUNDIAI                     | SAO PAULO             |
+| 200051165        | PRAIA GRANDE                | SAO PAULO             |
+| 36063192         | FORTALEZA                   | CEARA                 |
+| 159110165        | CONCEICAO DE MACABU         | RIO DE JANEIRO        |
+| 76942264         | CALDAS NOVAS                | GOIAS                 |
+| 154232347        | MANAUS                      | AMAZONAS              |
+| 9388869          | PRESIDENTE PRUDENTE         | SAO PAULO             |
+| 284671613        | SAO PAULO                   | SAO PAULO             |
+| 231125061        | SAO PAULO                   | SAO PAULO             |
+| 37532355         | SANTA LUZIA                 | MINAS GERAIS          |
+| 94788395         | SAO BERNARDO DO CAMPO       | SAO PAULO             |
+| 345468843        | CONSELHEIRO LAFAIETE        | MINAS GERAIS          |
+| 77045805         | TUTOIA                      | MARANHAO              |
+| 88322768         | SAO PAULO                   | SAO PAULO             |
+| 76412477         | FORTALEZA                   | CEARA                 |
+| 61812243         | SAO JOSE DOS PINHAIS        | PARANA                |
+| 294814045        | SAO PAULO                   | SAO PAULO             |
+| 157293619        | SAO VICENTE                 | SAO PAULO             |
+| 681062029        | GRAVATAI                    | RIO GRANDE DO SUL     |
+| 218663259        | ITATIBA                     | SAO PAULO             |
+| 80833773         | MAUA                        | SAO PAULO             |
+| 190508611        | BRASILIA                    | DISTRITO FEDERAL      |
+| 20701808         | BELO HORIZONTE              | MINAS GERAIS          |
+| 53095603         | MACEIO                      | ALAGOAS               |
+| 740873211        | MARACANAU                   | CEARA                 |
+| 758913331        | JAU                         | SAO PAULO             |
+| 186163397        | LONDRINA                    | PARANA                |
+| 341781763        | ANAPOLIS                    | GOIAS                 |
+| 138803293        | LUZIANIA                    | GOIAS                 |
+| 428860973        | JACOBINA                    | BAHIA                 |
+| 15671600         | RECIFE                      | PERNAMBUCO            |
+| 254771947        | CARPINA                     | PERNAMBUCO            |
+| 245019669        | LIMEIRA                     | SAO PAULO             |
+| 154515152        | BELEM                       | PARA                  |
+| 175653968        | JOINVILLE                   | SANTA CATARINA        |
+| 98978264         | ARAGUAINA                   | TOCANTINS             |
+| 66135147         | JAU                         | SAO PAULO             |
+| 87181544         | SAO PAULO                   | SAO PAULO             |
+| 211998997        | BRASILIA                    | DISTRITO FEDERAL      |
+| 98553131         | LAURO DE FREITAS            | BAHIA                 |
+| 281672819        | BELO HORIZONTE              | MINAS GERAIS          |
+| 171330701        | URUGUAIANA                  | RIO GRANDE DO SUL     |
+| 167670331        | PRAIA GRANDE                | SAO PAULO             |
+| 158090707        | JIJOCA DE JERICOACOARA      | CEARA                 |
+| 123859021        | TIMON                       | MARANHAO              |
+| 114822835        | SALVADOR                    | BAHIA                 |
+| 212095005        | SAO JOSE DO RIO PRETO       | SAO PAULO             |
+| 235312995        | ARARANGUA                   | SANTA CATARINA        |
+| 271869733        | SAO PAULO                   | SAO PAULO             |
+| 118844027        | BRASILIA                    | DISTRITO FEDERAL      |
+| 290372453        | VALPARAISO DE GOIAS         | GOIAS                 |
+| 101600819        | DIADEMA                     | SAO PAULO             |
+| 173251515        | ALEXANIA                    | GOIAS                 |
+| 35428979         | IPATINGA                    | MINAS GERAIS          |
+| 233558581        | BRASILIA                    | DISTRITO FEDERAL      |
+| 23112029         | SANTA BARBARA               | MINAS GERAIS          |
+| 253884859        | DIADEMA                     | SAO PAULO             |
+| 77025221         | BRASILIA                    | DISTRITO FEDERAL      |
+| 284985424        | SUZANO                      | SAO PAULO             |
+| 15584189         | EUNAPOLIS                   | BAHIA                 |
+| 674522664        | CAMPOS DO JORDAO            | SAO PAULO             |
+| 51425093         | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 289465803        | CRISTOPOLIS                 | BAHIA                 |
+| 152303080        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 48492061         | XEREM                       | RIO DE JANEIRO        |
+| 186219459        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 53814043         | NITEROI                     | RIO DE JANEIRO        |
+| 29617320         | CURITIBA                    | PARANA                |
+| 27253856         | CAMPINA GRANDE              | PARAIBA               |
+| 653383643        | ABAETETUBA                  | PARA                  |
+| 165354323        | SANTOS                      | SAO PAULO             |
+| 198754800        | SAO PAULO                   | SAO PAULO             |
+| 356818283        | SAO PAULO                   | SAO PAULO             |
+| 397989605        | FEIRA DE SANTANA            | BAHIA                 |
+| 232317152        | COTIA                       | SAO PAULO             |
+| 380117013        | RIO DE JANEIRO              | RIO DE JANEIRO        |
+| 24485352         | SOLANEA                     | PARAIBA               |
+| 121394141        | PORTO ALEGRE                | RIO GRANDE DO SUL     |
+| 78878739         | CANOAS                      | RIO GRANDE DO SUL     |
+| 216216419        | SAO PAULO                   | SAO PAULO             |
+| 802237531        | BELO HORIZONTE              | MINAS GERAIS          |
+| 7193243          | SAO PAULO                   | SAO PAULO             |
+| 246540907        | INDAIATUBA                  | SAO PAULO             |
+| 205496248        | FOZ DO IGUACU               | PARANA                |
+| 87352075         | SANTO ANDRE                 | SAO PAULO             |
+| 141769160        | NAZARIA                     | PIAUI                 |
+| 251038981        | OLINDA                      | PERNAMBUCO            |
+| 194428443        | NATAL                       | RIO GRANDE DO NORTE   |
+| 161500379        | OLINDINA                    | BAHIA                 |
+| 12112261         | PONTA GROSSA                | PARANA                |
+| 375589915        | FORTALEZA                   | CEARA                 |
+| 260611923        | BELO HORIZONTE              | MINAS GERAIS          |

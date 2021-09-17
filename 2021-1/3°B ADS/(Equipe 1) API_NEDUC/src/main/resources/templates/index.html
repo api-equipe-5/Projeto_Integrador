@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>NEDUC</title>
+
+    <link rel="stylesheet" href="../static/css/chat.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Fale conosco
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tecle 'Enter' para enviar uma mensagem">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--- HEADER DO SITE --->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand">
+                        <img src="../assets/ness-logo-website.svg" width="150px" class="img-fluid" />
+                    </a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/help">Ajuda</a>
+                            </li>
+                            <div class="container-space2"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/div">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/divcad">Cadastrar-se</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <!--- //HEADER DO SITE --->
+
+    <div class="container-text"></div>
+
+    <!--- SLIDER --->
+    <div id="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h1>NEDUC</h1>
+                    <h3 class="title">A SUA PLATAFORMA DE CURSOS ONLINE</h3>
+                    <h6 class="subtitle">A nEDUC é mais nova plataforma de cursos online com o objetivo de trazer aos seus alunos e colaboradores a melhor experiência de uso.</h6>
+                    <div class="container-text"></div>
+                    <a href="#" class="btn button-primary btn-primary button">Saiba mais</a>
+                    <a href="#" class="btn button-primary btn-primary button">Cursos</a>
+                    <div class="container-text"></div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="../assets/Design sem nome (4).png" width="800px" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- //SLIDER --->
+
+    <!--- SOBRE --->
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 order-md-1 order-2">
+                    <img src="../assets/sobre.png" class="img-fluid" />
+                </div>
+                <div class="container-text"></div>
+                <div class="col-md-7 mb-md-0 mb-4 order-md-2 order-0">
+                    <h3 class="title">Inovação e Transformação</h3>
+                        <h6 class="subtitle">A NESS entrega resultados de negócios com velocidade e segurança, ao mesmo tempo em que ajuda você a gerenciar riscos dos processos e do negócio. Entregamos mais do que serviços de tecnologia. Entregamos transformação, performance e inovação em negócios.</h6>
+                            <h6>A nEDUC é apenas uma das diversas ferramentas ofericidas pela Ness. Com o objetivo de elevar ao máximo a inovação em todos os ramos da área de tecnoligia, trazemos hoje a plataforma de estudo que irá mudar completamente a experiência de alunos e colaboradores com o ensino digital.</h6>
+            <div class="container-text"></div>                    
+                            <a href="#" class="btn button-primary btn-primary button">Conheça nossa empresa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- //SOBRE --->
+    
+    <div class="container-text"></div>
+    <div class="container-text"></div>
+
+    <!--- SERVIÇOS --->
+    <div id="servicos">
+        <div class="container">
+            <h2 class="title text-center">Nossas ferramentas</h2>
+            <h4 class="subtitle text-center mb-4">Conheça algumas das funcionalidades da nossa plataforma</h4>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="#" class="destaque">
+                        <div class="img-container mb-3">
+                            <img src="../assets/certificado (2).png" class="img-fluid">
+                        </div>
+                        <h5>CERTIFICADOS</h5>
+                        <p class="mb-0">Emissão de certificados conforme seu progresso</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="#" class="destaque">
+                        <div class="img-container mb-3">
+                            <img src="../assets/pilula.png" class="img-fluid">
+                        </div>
+                        <h5>PÍLULAS</h5>
+                        <p class="mb-0">Vídeos para impulsionar seu conhecimento</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="#" class="destaque">
+                        <div class="img-container mb-3">
+                            <img src="../assets/biblio.png" class="img-fluid">
+                        </div>
+                        <h5>BIBLIOTECA</h5>
+                        <p class="mb-0">Bibliotecas de conteúdo dos seus cursos</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a href="#" class="destaque">
+                        <div class="img-container mb-3">
+                            <img src="../assets/destaq.png" class="img-fluid">
+                        </div>
+                        <h5>DESTAQUES</h5>
+                        <p class="mb-0">Novidades e eventos para nossos alunos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- //SERVIÇOS --->
+    
+    <div class="container-text"></div>
+    <div class="container-text"></div>
+
+    <!--- CLIENTES 
+    <dic id="clientes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">logos</div>
+                <div class="col-md-6 align-self-center">texto</div>
+            </div>
+        </div>
+    </dic>
+    //CLIENTES --->
+
+
+
+    <div class="container-text"></div>
+    <div class="container-text"></div>
+
+    <!--- RODAPÉ --->
+    <footer id="contato">
+        <div class="container">
+          <div class="email">
+            <img src="../assets/paperplane.svg" />
+            <h2 class="title text-center">Fique por dentro das novidades</h2>
+            <h4 class="subtitle text-center mb-4">
+              Enviaremos todas as novidades sobre nossos cursos para você
+            </h4>
+            <form  >
+              <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
+                <label for="email" class="sr-only"></label>
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  id="email_input"
+                  placeholder="seu email"
+                />
+              <div class="flex-grow-1 flex-md-grow-0">
+                <div class="space"></div>
+                <button
+                  type="submit"
+                  class="btn btn-light button mb-3 d-md-inline d-block w-100"
+                >
+                  quero receber novidades
+                </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="container-text"></div>
+          <div class="logo py-4">
+            <div class="row">
+              <div class="col-md-6 align-self-center text-md-left text-center">
+              </div>
+              <div class="col-md-6 align-self-center text-right">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/ness.health/" target="https://www.facebook.com/ness.health/">
+                        <img src="../assets/facebook.png" /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/ness.health/" target="https://www.instagram.com/ness.health/">
+                        <img src="../assets/instagram.png" /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/ness-health/" target="https://www.linkedin.com/company/ness-health/">
+                        <img src="../assets/linkedin.png" /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCtR3U-Qmb1h2GE9w0Fe3NrA" target="https://www.youtube.com/channel/UCtR3U-Qmb1h2GE9w0Fe3NrA">
+                        <img src="../assets/youtube.png" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--//RODAPÉ --->
+
+    <div class="container-text"></div>
+    <div class="container-text"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" 
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" 
+    crossorigin="anonymous">
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../static/scripts/responses.js"></script>
+<script src="../static/scripts/chat.js"></script>
+
+</html>

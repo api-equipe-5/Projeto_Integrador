@@ -1,0 +1,346 @@
+pt-BR:
+  date:
+    abbr_day_names:
+    - dom
+    - seg
+    - ter
+    - qua
+    - qui
+    - sex
+    - sáb
+    abbr_month_names:
+    - 
+    - jan
+    - fev
+    - mar
+    - abr
+    - mai
+    - jun
+    - jul
+    - ago
+    - set
+    - out
+    - nov
+    - dez
+    day_names:
+    - domingo
+    - segunda-feira
+    - terça-feira
+    - quarta-feira
+    - quinta-feira
+    - sexta-feira
+    - sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
+    month_names:
+    - 
+    - janeiro
+    - fevereiro
+    - março
+    - abril
+    - maio
+    - junho
+    - julho
+    - agosto
+    - setembro
+    - outubro
+    - novembro
+    - dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
+    prompts:
+      second: Segundo
+      minute: Minuto
+      hour: Hora
+      day: Dia
+      month: Mês
+      year: Ano
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      confirmation: não é igual a %{attribute}
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      other_than: deve ser diferente de %{count}
+      present: deve ficar em branco
+      required: é obrigatório(a)
+      taken: já está em uso
+      too_long:
+        one: 'é muito longo (máximo: 1 caracter)'
+        other: 'é muito longo (máximo: %{count} caracteres)'
+      too_short:
+        one: 'é muito curto (mínimo: 1 caracter)'
+        other: 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length:
+        one: não possui o tamanho esperado (1 caracter)
+        other: não possui o tamanho esperado (%{count} caracteres)
+    template:
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: 'Não foi possível gravar %{model}: 1 erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros'
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Criar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: "."
+        format: "%n%"
+    precision:
+      format:
+        delimiter: "."
+  support:
+    array:
+      last_word_connector: " e "
+      two_words_connector: " e "
+      words_connector: ", "
+  time:
+    am: ''
+    formats:
+      default: "%a, %d de %B de %Y, %H:%M:%S %z"
+      long: "%d de %B de %Y, %H:%M"
+      short: "%d de %B, %H:%M"
+    pm: ''
+  views:
+  admin:
+    home:
+      name: Home
+    pagination:
+      previous: "« Anterior"
+      next: "Próximo »"
+      truncate: "…"
+    misc:
+      search: "Procurar"
+      filter: "Filtrar"
+      refresh: "Atualizar"
+      show_all: "Mostrar tudo"
+      add_filter: "Novo Filtro..."
+      bulk_menu_title: "Itens selecionados..."
+      remove: "Remover"
+      add_new: "Criar Novo"
+      chosen: "%{name} escolhido"
+      chose_all: "Escolher tudo"
+      clear_all: "Limpar tudo"
+      up: "Cima"
+      down: "Baixo"
+      navigation: "Navegação"
+      log_out: "Terminar Sessão"
+      ago: "atrás"
+    flash:
+      successful: "%{name} %{action} com sucesso"
+      error: "%{name} %{action} sem sucesso"
+      noaction: "Nenhuma ação executada"
+      model_not_found: "Modelo '%{model}' não encontrado "
+      object_not_found: "%{model} com identificador '%{id}' não encontrado"
+    table_headers:
+      model_name: "Nome do modelo"
+      last_used: "Última vez usado em"
+      last_created: "Última vez criado em"
+      records: "Registros"
+      username: "Usuário"
+      changes: "Alterações"
+      created_at: "Data/Hora"
+      item: "Item"
+      message: "Mensagem"
+    actions:
+      dashboard:
+        title: "Administração do Site"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Lista de %{model_label_plural}"
+        menu: "Lista"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalhes para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar na aplicação"
+      new:
+        title: "Novo %{model_label}"
+        menu: "Criar novo"
+        breadcrumb: "Novo"
+        link: "Criar um novo %{model_label}"
+        done: "criado"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar este %{model_label}"
+        done: "atualizado"
+      delete:
+        title: "Remover %{model_label} '%{object_label}'"
+        menu: "Remover"
+        breadcrumb: "Remover"
+        link: "Remover '%{object_label}'"
+        done: "removido"
+      bulk_delete:
+        title: "Remover %{model_label_plural}"
+        menu: "Remover vários"
+        breadcrumb: "Remover vários"
+        bulk_link: "Remover selecionados %{model_label_plural}"
+      export:
+        title: "Exportar %{model_label}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural} encontrados"
+        bulk_link: "Exportar %{model_label_plural} selecionados"
+        done: "exportados"
+        select_all_fields: "Selecionar todos"
+      history_index:
+        title: "Histórico para %{model_label_plural}"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+      history_show:
+        title: "Histórico para %{model_label} '%{object_label}'"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+    form:
+      cancel: "Cancelar"
+      basic_info: "Informação Básica"
+      required: "Obrigatórios"
+      optional: "Opcional"
+      one_char: "caracter"
+      char_length_up_to: "comprimento até"
+      char_length_of: "comprimento de"
+      save: "Gravar"
+      save_and_add_another: "Gravar e criar outro"
+      save_and_edit: "Gravar e editar"
+      all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
+      are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
+      confirmation: "Sim, tenho a certeza"
+      delete_confirmation: "Confirmar apagar"
+      bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
+    export:
+      confirmation: "Exportar para %{name}"
+      select: "Selecionar campos para exportar"
+      fields_from: "Campos de %{name}"
+      fields_from_associated: "Campos associados com %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opções para %{name}"
+      empty_value_for_associated_objects: ""
+      click_to_reverse_selection: 'Click para inverter selecção'
+      select_all_fields: "Selecionar todos"
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar para"
+        encoding_to_help: "Escolha a codificação. Deixe em branco para manter a codificação original: (%{name})"
+        skip_header: "Sem cabeçalho"
+        skip_header_help: "Não gerar cabeçalhos para (Campos sem cabeçalho)"
+        default_col_sep: ","
+        col_sep: "Separador de colunas"
+        col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep

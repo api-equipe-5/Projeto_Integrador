@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user
+    overwrite: true
+hooks:
+  ApplicationBefforeInstall:
+    - location: scripts/load_container.sh
+      timeout: 20
+      runas: root
+  ApplicationStart:
+    - location: /start_container.sh
+      timeout: 30
+      runas: root

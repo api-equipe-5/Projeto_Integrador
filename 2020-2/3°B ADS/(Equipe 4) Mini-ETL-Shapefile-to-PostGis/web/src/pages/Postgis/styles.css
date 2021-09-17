@@ -1,0 +1,161 @@
+.main-container {
+    flex: 1;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    margin: -5rem 30rem 2rem;
+    padding: 3rem;
+
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background: var(--color-box-base);
+  }
+  .post-step1-header {
+    display: flex;
+    justify-content: start;
+
+    margin-bottom: 2rem;
+}
+
+.post-step1-header p {
+    color: #800000;
+        
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 8.0rem Montserrat;
+}
+
+.post-step1-header span {
+    text-align: start;
+
+    color: var(--color-text-complement);
+
+    font: 400 3rem Montserrat;
+    margin: 3rem 0 0 1rem;
+}
+
+
+
+.post-step2-header {
+    display: flex;
+    justify-content: start;
+
+    margin: 3rem 0;
+}
+
+.post-step2-header p {
+
+    color: #800000;
+        
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 8.0rem Montserrat;
+}
+
+.post-step2-header span {
+    text-align: start;
+
+    color: var(--color-text-complement);
+
+    font: 400 3rem Montserrat;
+    margin: 3rem 0 0 1rem;
+}
+
+.post-step2-button {
+    display: block;
+}
+
+.post-step3-header {
+    display: flex;
+    justify-content: start;
+
+    margin: 3rem 0;
+}
+
+.post-step3-header p {
+
+    color: #800000;
+        
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 8.0rem Montserrat;
+}
+
+.post-step3-header span {
+    text-align: start;
+
+    color: var(--color-text-complement);
+
+    font: 400 3rem Montserrat;
+    margin: 3rem 0 0 1rem;
+}
+
+.post-send-button {
+    flex: 1;
+    display: flex;
+
+    margin: 4rem 0 0 0;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    height: 125px;
+    width: 100%;
+    
+    background: #06a6ce;
+
+    font: 700 4.0rem Montserrat;
+    color: #fff;
+}
+
+.post-step3-de-para {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+    margin: 4rem 0 0 0;
+
+    border: 10px solid;
+    border-image-source: linear-gradient(135deg, #1a4c82, #1e69a5);
+    border-image-slice: 1;
+
+    background: rgb(40, 165, 234);
+    background: linear-gradient(90deg, rgb(40, 165, 234) 0%,rgb(26, 76, 130) 71%);
+}
+
+.post-step3-de-para h1 {
+color: #fff;
+font: 700 3.5rem Montserrat;
+margin: 3rem 0 0 0;
+}
+
+.post-step3-selection {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+}
+
+.columns {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+    margin: 4rem 0 0 0;margin: 4rem;
+}
+
+.fields {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    font: 1.4rem Montserrat;
+    margin-bottom: 1rem;
+}

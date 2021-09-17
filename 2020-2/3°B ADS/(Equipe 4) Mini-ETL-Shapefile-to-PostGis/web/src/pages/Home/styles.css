@@ -1,0 +1,100 @@
+.main-container {
+    flex: 1;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    margin: -5rem 30rem 2rem;
+    padding: 3rem;
+
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background: var(--color-box-base);
+  }
+  .shape-header {
+    display: block;
+
+    justify-content: start;
+
+    margin-bottom: 2%;
+}
+
+.shape-header p {
+    display: block;
+
+    color: #800000;
+        
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 4.0rem Montserrat;
+}
+
+.shape-header span {
+    display: block;
+    text-align: start;
+
+    color: var(--color-text-complement);
+
+    font: 400 1.5rem Montserrat;
+}
+
+
+.shape-button {
+    display: block;
+}
+
+.header-content p {
+    display: block;
+        
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 4.0rem Montserrat;
+}
+
+.post-header {
+    display: block;
+
+    justify-content: start;
+
+    margin: 4rem 0;
+}
+
+.post-header p {
+    display: block;
+
+    color: #006680;
+        
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 4.0rem Montserrat;
+}
+
+.post-header span {
+    display: block;
+    text-align: start;
+
+    color: var(--color-text-complement);
+
+    font: 400 1.5rem Montserrat;
+}
+
+.post-button {
+    display: block;
+}
+
+
+.header-content p {
+    display: block;
+        
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font: 700 4.0rem Montserrat;
+}

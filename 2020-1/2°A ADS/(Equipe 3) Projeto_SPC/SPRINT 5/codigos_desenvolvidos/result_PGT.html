@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="git: diegosilva89, ud21">
+  <title>METAlitcs - Pagamentos</title>
+  <link rel="stylesheet" href="_style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="metalitcs">
+        <p><b>METAlitcs</b></p>
+      </div>
+      <div class="location">
+        <div class="leftbox">
+          <p>Resultados da Remessa</p>
+        </div>
+        <div class="rightbox">
+          <p>Pagamentos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-menu-col">
+        <div class="menu-col">
+          <div class="index">
+            <p>Validação das Tabelas</p>
+          </div>
+          <a style="text-decoration: none;" href="table_FNT.html">
+            <div class="stg">
+              <p>STG_FNT_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_MVT.html">
+            <div class="stg">
+              <p>STG_MVT_CRD</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_OPR.html">
+            <div class="stg">
+              <p>STG_OPR_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_PGT.html">
+            <div class="stg">
+              <p>STG_PGT</p>
+            </div>
+          </a>
+
+          <div class="index">
+            <p>Resultados da Remessa</p>
+          </div>
+          <a style="text-decoration: none;" href="result_MVT.html">
+            <div class="stg">
+              <p>Movimentações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_OPR.html">
+            <div class="stg">
+              <p>Operações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_PGT.html">
+            <div class="stg-in">
+              <p>Pagamentos</p>
+            </div>
+          </a>
+
+          <div class="index_two_rows">
+            <p>Índice de Pagamentos<br>em Dia</p>
+          </div>
+          <a style="text-decoration: none;" href="index_MOD.html">
+            <div class="stg">
+              <p>Por Modalidades</p>
+            </div>
+          </a>
+          <div class="index_two_rows">
+            <p>Índice de Número de Pagamentos por Clientes</p>
+          </div>
+          <a style="text-decoration: none;" href="index_FaixaVAL.html">
+            <div class="stg">
+              <p>Por Faixas de Valores</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- content of graphs and etc. -->
+      <div class="container-content-col">
+        <div class="static_graph_container_03">
+          <div class="graph_one">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Valor Total de Pagamentos</div>
+            </div>
+            <div class="result_content">
+                <div class="result_value">R$ 23,938,995,643.27</div>              
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_two">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Quantidade Total de Registros Vencidos</div>
+            </div>
+            <div class="result_content">
+                <div class="result_value">41,196,040</div>              
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_three">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Quantidade Total de Pagamentos</div>
+            </div>
+            <div class="result_content">
+                <div class="result_value">50,805,683</div>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_four">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Média do Número de Pagamentos por Clientes</div>
+            </div>
+            <div class="result_content">
+                <div class="result_value">1.00</div>
+            </div>
+            <!-- graph form -->
+          </div>
+        </div>
+        <div class="dynamic_graph_container_result_PGT">
+          <div class="graph_one">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Comparação dos Valores Totais de Pagamentos e Pagamentos Vencidos</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_vencidos_totais.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_two">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Tabela de Pagamentos por Modalidades</div>
+              <div class="paragraph">Valor de pagamentos, número de clientes e número de pagamentos</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_tab_modalidades.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_three">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Tabela de Pagamentos Vencidos por Modalidades</div>
+              <div class="paragraph">Valor de pagamentos, número de clientes e número de pagamentos</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_tab_vencidos.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_four">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Valor Total de Pagamentos Vencidos</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_pagamentos_vencidos.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_five">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Valor Total de Pagamentos</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_total_pagamentos.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_six">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Comparação do Número Total de Clientes e Pagamentos</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_clientes_num_pagamentos.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_seven">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Número Total de Clientes</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_clientes.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+          <div class="graph_eight">
+            <!-- graph form -->
+            <div class="head">
+              <div class="title">Número Total de Pagamentos</div>
+              <div class="paragraph">Por modalidades</div>
+            </div>
+            <div class="content">
+              <iframe src=pags/pgt_num_pagamentos.html></iframe>
+            </div>
+            <!-- graph form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

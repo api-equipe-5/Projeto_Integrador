@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">	  
+<title>Tarefas</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>TAREFAS</title>
+
+    <link rel="stylesheet" href="../static/css/chat.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand" href="/homeprofessor">
+                        <img src="../assets/ness-logo-website.svg" width="150px" class="img-fluid" />
+                    </a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page">Cursos</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="/help">Ajuda</a>
+                            </li>
+                            <div class="container-space2"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/div">Perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="center" style="margin-left: 380px; margin-top: 30px;">
+    <iframe th:object="${tarefas}"
+        th:src="@{${tarefa.url_form}}" 
+        width="640" height="730" frameborder="0" marginheight="0" marginwidth="0">
+        Carregando…
+    </iframe>
+</div>
+
+</body>

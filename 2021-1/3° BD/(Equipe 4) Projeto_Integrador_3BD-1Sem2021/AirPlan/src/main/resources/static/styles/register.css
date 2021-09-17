@@ -1,0 +1,135 @@
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color:#323232;
+    border: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+body{
+    padding-top: 5vh;
+    background: url('../images/airplane.jpg');
+    background-size: cover;
+}
+
+/*form*/
+
+#main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position:relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+select{
+    border-bottom: none;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+
+input:focus{
+    border-color: 2px solid #08558d;
+}
+
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #191970;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+#btn-voltar {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #5B0105;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: .9rem;
+}
+
+/* validation */
+
+.error-validation{
+    color: #FF1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}

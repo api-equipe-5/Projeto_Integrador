@@ -1,0 +1,27 @@
+<div class="calendar__body">
+  <%= month_calendar(events: @events) do |date, events| %>
+    <%= date %>
+
+    <% events.each do |meeting| %>
+      <div>
+        <%= meeting.name %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="calendar__button">
+    <%= link_to "ADICIONAR EVENTO", new_event_path(), class: 'btn btn-primary course-button' %>
+  </div>
+
+</div>
+
+<style>
+  .calendar__body {
+    margin: auto;
+    width: 50%;
+  }
+
+  .calendar__button {
+    margin-bottom: 120px;
+  }
+</style>

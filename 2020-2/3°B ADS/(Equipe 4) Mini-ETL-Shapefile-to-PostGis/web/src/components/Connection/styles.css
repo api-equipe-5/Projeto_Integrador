@@ -1,0 +1,154 @@
+.db-container {
+    flex: 1;
+    display: flex;
+    padding: 40px;
+    
+
+
+    align-items: center;
+    flex-direction: column;
+
+    /*background-image: url('../../assets/img/post-shape-connection.png') ;
+    */
+    background: rgb(230, 140, 11);
+
+    border: 10px solid;
+    border-color: rgb(255, 188, 91);
+
+   
+}
+
+.db-container-title h1 {
+    color: #fff;
+    font: 700 3.0rem Montserrat;
+    margin-bottom: 20px;
+    }
+
+.post-step1-button{
+    flex: 1;
+
+}
+
+
+.forms-content-label-text-box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+.forms-content-label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    font: 400 2rem Montserrat;
+    
+    /*padding-left: 50px; 
+    */
+    justify-content: flex-end;
+    /*border: solid 2px black;
+    */
+
+}
+
+.forms-content-label label{
+    
+    text-align: right;
+    float: right;
+    margin-right: 2px;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    
+    
+
+}
+
+.forms-content-text-box {
+
+    width: 20%;
+    margin-right: 90px;
+
+    /*border: solid 2px blue;
+    */
+
+}
+
+.forms-content-text-box .txtbox{
+    margin-bottom: 12px;
+    border: 3px solid orange;
+    border-radius: 4px;
+}
+
+
+
+
+.forms-content input{
+    height: 28px;
+    margin: 10px;
+    border:1px solid rgb(255, 188, 91);
+    border-radius:4px;
+
+}
+
+.db-container button{
+
+    
+    border:1px solid rgb(255, 188, 91);
+    border-radius:4px;
+    
+
+    display:inline-block;
+    height: 45px;
+    cursor:pointer;
+
+
+    margin-top: 8px;
+    
+    padding: 5px 40px;
+    font: 700 1.5rem Montserrat;
+
+    color: rgb(255, 255, 255);
+    background: rgb(255, 188, 91);
+
+}
+
+.db-container button:link,
+.db-container button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.db-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.db-container button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.db-container button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
