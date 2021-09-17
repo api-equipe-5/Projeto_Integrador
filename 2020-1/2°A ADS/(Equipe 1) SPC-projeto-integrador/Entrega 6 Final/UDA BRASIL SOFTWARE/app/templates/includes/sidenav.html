@@ -1,0 +1,100 @@
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2" data-background-color="dark2">
+					
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+
+					{% if current_user.is_authenticated %}
+
+						<div class="user">
+							<div class="avatar-sm float-left mr-2">
+								<img src="/static/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+							</div>
+							<div class="info">
+								<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+									<span>
+										{{ current_user.user }}
+										<span class="user-level">
+											{{ current_user.email }}  
+										</span>
+										<span class="caret"></span>
+									</span>
+								</a>
+								<div class="clearfix"></div>
+
+								<div class="collapse in" id="collapseExample">
+									<ul class="nav">
+										<li>
+											<a href={{ url_for('logout') }}>
+												<span class="link-collapse">Sair da Conta</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<ul class="nav nav-primary">
+
+							<li class="nav-section">
+								<span class="sidebar-mini-icon">
+									<i class="fa fa-ellipsis-h"></i>
+								</span>
+								<h4 class="text-section">Painel - UDA Brasil</h4>
+							</li>
+							<li class="nav-item">
+								<a data-toggle="collapse" href="#base">
+									<i class="fas fa-layer-group"></i>
+									<p>Gráficos</p>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse" id="base">
+									<ul class="nav nav-collapse">
+										<li>
+											<a href="/charts.html">
+												<span class="sub-item">Operação</span>
+											</a>
+										</li>
+										<li>
+											<a href="/charts2.html">
+												<span class="sub-item">Movimento</span>
+											</a>
+										</li>
+										<li>
+											<a href="/charts3.html">
+												<span class="sub-item">Pagamento</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							 <li class="nav-item">
+								<a data-toggle="collapse" href="#tables">
+									<i class="fas fa-table"></i>
+									<p>Opções</p>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse" id="tables">
+									<ul class="nav nav-collapse">
+										<li>
+											<a href="/tables.html">
+												<span class="sub-item">Página Inicial - Ranking</span>
+											</a>
+										</li>
+										<li>
+											<a href="/screen2.html">
+												<span class="sub-item">Atualizar Dados</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
