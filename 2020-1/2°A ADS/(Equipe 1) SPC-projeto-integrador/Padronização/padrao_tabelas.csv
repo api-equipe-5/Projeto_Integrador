@@ -1,0 +1,6 @@
+nome_original;nome_utilizado;tipo
+STG_FNT_ITT;fonte;tabela
+STG_MDL;modalidade;tabela
+STG_MVT_CRD; movimento;tabela
+STG_OPR_ITT;operacao;tabela
+STG_PGT;pagamento;tabela
