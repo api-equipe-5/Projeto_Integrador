@@ -1,0 +1,68 @@
+{% extends 'screen3.html' %}
+              
+{% block content %}
+
+        <table class="table-striped">
+            <thead>
+            <tr>
+                <th>Posição</th>
+                <th>ID Fonte</th>
+                <th>Pontuação Geral</th>
+                <th>Completude</th>
+                <th>Consistência</th>
+            </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>{{ranking[0][-1]}}</td>
+                <td>{{ranking[0][1]}}</td>
+                <td>{{ranking[0][0]}}</td>
+                <td>{{ranking[0][2]}}</td>
+                <td>{{ranking[0][3]}}</td>
+              </tr>
+
+              <tr>
+                <td>{{ranking[1][-1]}}</td>
+                <td>{{ranking[1][1]}}</td>
+                <td>{{ranking[1][0]}}</td>
+                <td>{{ranking[1][2]}}</td>
+                <td>{{ranking[1][3]}}</td>
+              </tr>
+
+              <tr>
+                <td>{{ranking[2][-1]}}</td>
+                <td>{{ranking[2][1]}}</td>
+                <td>{{ranking[2][0]}}</td>
+                <td>{{ranking[2][2]}}</td>
+                <td>{{ranking[2][3]}}</td>
+              </tr>
+
+              <tr>
+                <td>{{ranking[3][-1]}}</td>
+                <td>{{ranking[3][1]}}</td>
+                <td>{{ranking[3][0]}}</td>
+                <td>{{ranking[3][2]}}</td>
+                <td>{{ranking[3][3]}}</td>
+              </tr>
+
+              <tr>
+                <td>{{ranking[4][-1]}}</td>
+                <td>{{ranking[4][1]}}</td>
+                <td>{{ranking[4][0]}}</td>
+                <td>{{ranking[4][2]}}</td>
+                <td>{{ranking[4][3]}}</td>
+              </tr>
+
+              <tr>
+                <td>{{ranking[5][-1]}}</td>
+                <td>{{ranking[5][1]}}</td>
+                <td>{{ranking[5][0]}}</td>
+                <td>{{ranking[5][2]}}</td>
+                <td>{{ranking[5][3]}}</td>
+              </tr>
+
+            </tbody>
+        </table>
+
+{% endblock %}
