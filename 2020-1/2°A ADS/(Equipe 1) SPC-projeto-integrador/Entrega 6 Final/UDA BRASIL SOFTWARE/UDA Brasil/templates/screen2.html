@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+
+
+  <title>Input dos Dados</title>
+
+  <link rel="stylesheet" href="../static/styles/screen_2.css">
+
+</head>
+
+<body>
+  <div>
+  
+  {% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+  {% endfor %}
+  
+  </div>
+  
+  <div id="bt_sair">
+    <label id="label_bt_sair">
+      Sair
+      <input type="Button"></input>
+    </label>
+  </div>
+
+  <div id="titulo">
+    <h1>SELECIONE E ENVIE CADA PLANILHA. DEPOIS CLIQUE PARA RANQUEAR</h1>
+  </div>
+
+  <!-- TABELA 1 -->
+  <form action="/upload" enctype="multipart/form-data" method="post" id="box1">
+    <div id="STG_FNT_ITT">
+      <h1>STG_FNT_ITT</h1>
+    </div>
+    <div id="STG_FNT_ITT_caixa"></div>
+
+    <div id="bt_1">
+      <label id="label_bt1">
+        Selecionar
+        <input type="file" name="inputFile" id="input_file" value="input_tb1" />
+      </label>
+    </div>
+
+
+    <div id="up1">
+      <label id="label_up1">
+        UP
+        <input type="submit" name="up_tb1" value=""></input>
+      </label>
+    </div>
+  </form>
+
+  <!-- TABELA 2 -->
+  <form action="/upload" enctype="multipart/form-data" method="post" id="box2">
+    <div id="STG_MDL">
+      <h1>STG_MDL</h1>
+    </div>
+    <div id="STG_MDL_caixa"></div>
+
+    <div id="bt_2">
+      <label id="label_bt2">
+        Selecionar
+        <input type="file" name="inputFile" id="input_file" value="input_tb2" />
+      </label>
+    </div>
+
+
+    <div id="up2">
+      <label id="label_up2">
+        UP
+        <input type="submit" name="up_tb2" value=""></input>
+      </label>
+    </div>
+  </form>
+
+  <!-- TABELA 3 -->
+  <form action="/upload" enctype="multipart/form-data" method="post" id="box3">
+    <div id="STG_MVT_CRD">
+      <h1>STG_MVT_CRD</h1>
+    </div>
+    <div id="STG_MVT_CRD_caixa"></div>
+
+    <div id="bt_3">
+      <label id="label_bt3">
+        Selecionar
+        <input type="file" name="inputFile" id="input_file" value="input_tb3" />
+      </label>
+    </div>
+
+
+    <div id="up3">
+      <label id="label_up3">
+        UP
+        <input type="submit" name="up_tb3" value=""></input>
+      </label>
+    </div>
+  </form>
+
+
+  <!-- TABELA 4 -->
+  <form action="/upload" enctype="multipart/form-data" method="post" id="box4">
+    <div id="STG_OPR_ITT">
+      <h1>STG_OPR_ITT</h1>
+    </div>
+    <div id="STG_OPR_ITT_caixa"></div>
+
+    <div id="bt_4">
+      <label id="label_bt4">
+        Selecionar
+        <input type="file" name="inputFile" id="input_file" value="input_tb4" />
+      </label>
+    </div>
+
+
+    <div id="up4">
+      <label id="label_up4">
+        UP
+        <input type="submit" name="up_tb4" value=""></input>
+      </label>
+    </div>
+  </form>
+
+  <!-- TABELA 5 -->
+  <form action="/upload" enctype="multipart/form-data" method="post" id="box5">
+    <div id="STG_PGT">
+      <h1>STG_PGT</h1>
+    </div>
+    <div id="STG_PGT_caixa"></div>
+
+    <div id="bt_5">
+      <label id="label_bt5">
+        Selecionar
+        <input type="file" name="inputFile" id="input_file" value="input_tb5" />
+      </label>
+    </div>
+
+
+    <div id="up5">
+      <label id="label_up5">
+        UP
+        <input type="submit" name="up_tb5" value=""></input>
+      </label>
+    </div>
+  </form>
+
+
+
+
+  <div id="bt_rank">
+    <button type="submit" value="ranquear">
+      <a href="http://127.0.0.1:5000/rank">RANQUEAR</a>
+    </button>
+  </div>
+
+
+
+
+
+</body>
