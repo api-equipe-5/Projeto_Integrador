@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" stylesheets="@designs.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlesPerfilSuperAvisos">
+   <children>
+      <VBox alignment="TOP_CENTER" opacity="0.85" prefHeight="450.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="250.0" />
+            <ImageView fitHeight="117.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@usuario.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="25.0" prefWidth="250.0" />
+            <HBox alignment="CENTER" onMouseClicked="#abrirTelaMotoristas" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@funcionarios.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="163.0" layoutY="10.0" prefHeight="59.0" prefWidth="20.0" />
+                  <Label prefWidth="117.0" text="Motoristas e Veículos" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="7.0" />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#abrirTelaEntregas" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@viagens.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="59.0" prefWidth="40.0" />
+                  <Label text="Histórico de entregas" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#abrirTelaAvisos" prefHeight="58.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@alert.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Avisos" textFill="WHITE" />
+               </children>
+               <styleClass>
+                  <String fx:value="caixasDeSelecao1" />
+                  <String fx:value="menuSelecionado" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="105.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#voltar" prefHeight="13.0" prefWidth="8.0" styleClass="botaoVoltar">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@voltar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="bordaMenu" />
+            <String fx:value="sombraDaImagemLogin" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="25.0" prefWidth="500.0">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#minimizarJanela" styleClass="botaoMinimizar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#fecharJanela" styleClass="botaoFechar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fechar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="272.0" layoutY="47.0" prefHeight="31.0" prefWidth="387.0" styleClass="textoDeMenu">
+         <children>
+            <Label fx:id="labelAvisos" text="Avisos">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="paneVisualizarAvisos" layoutX="252.0" layoutY="87.0" prefHeight="362.0" prefWidth="493.0">
+         <children>
+            <TableView fx:id="tabelaAvisos" fixedCellSize="45.0" layoutX="16.0" layoutY="19.0" prefHeight="268.0" prefWidth="455.0">
+               <columns>
+                  <TableColumn fx:id="colunaTituloAviso" prefWidth="261.0" text="Mensagem" />
+                  <TableColumn fx:id="colunaRemetente" prefWidth="109.0" text="Funcionário" />
+                  <TableColumn fx:id="colunaDataAviso" prefWidth="82.0" text="Data" />
+               </columns>
+            </TableView>
+            <Button fx:id="btSelecionarAviso" layoutX="14.0" layoutY="305.0" mnemonicParsing="false" onAction="#selecionarAviso" prefHeight="30.0" prefWidth="85.0" styleClass="customizarBotoes" text="Selecionar" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneAvisoSelecionado" disable="true" layoutX="252.0" layoutY="93.0" prefHeight="352.0" prefWidth="493.0" visible="false">
+         <children>
+            <TextField fx:id="campoIDAviso" disable="true" layoutX="301.0" layoutY="23.0" promptText="ID do aviso" styleClass="customizarInputs" />
+            <TextArea fx:id="msg" editable="false" layoutX="28.0" layoutY="64.0" prefHeight="179.0" prefWidth="422.0" wrapText="true" />
+            <Label layoutX="30.0" layoutY="36.0" text="Mensagem" />
+            <DatePicker fx:id="dataDoAviso" disable="true" layoutX="301.0" layoutY="251.0" prefHeight="27.0" prefWidth="149.0" styleClass="customizarInputs" />
+            <TextField fx:id="remetente" disable="true" layoutX="142.0" layoutY="251.0" promptText="Remetente" styleClass="customizarInputs" />
+            <CheckBox fx:id="visualizado" disable="true" layoutX="30.0" layoutY="256.0" mnemonicParsing="false" text="Visualizado" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

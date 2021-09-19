@@ -1,0 +1,70 @@
+------------------------ INSTALAÇÃO DO FRAMEWORK JAVAFX --------------------------
+- Na barra de navegação no topo do Eclipse, clique em "Help" e depois em "Eclipse Marketplace..."
+	- Uma nova janela irá abrir
+	
+- Busque por "e(fx)clipse" e instale o plugin
+	- Deve ser o primeiro resultado da busca
+	- Aguarde o plugin ser instalado, o Eclipse irá pedir permissão para reiniciar após a conclusão, aceite
+	
+- Baixe e instale o SceneBuilder em: https://gluonhq.com/products/scene-builder/
+	- Não é necessário instalar o SceneBuilder para executar o programa, apenas para editar a janela
+	- No momento da instalação, guarde o caminho onde o SceneBuilder será instalado, será importante logo adiante
+	
+- Na barra superior, clique em "Window" e depois em "Preferences"
+	- Uma janela será aberta
+	
+- Procure por "JavaFX" na esquerda da janela e clique nele
+
+- No campo "SceneBuilder executable", coloque o caminho até o executavel do SceneBuilder
+	- Deve ser algo parecido com isso: C:\Program Files\SceneBuilder\SceneBuilder.exe
+	
+- Clique em "Apply" e depois "Apply and Close"
+
+- Baixe o repositório das bibliotecas do JavaFX neste link:
+
+	 https://fatecspgov-my.sharepoint.com/:f:/g/personal/barbara_port_fatec_sp_gov_br/El5V6Pl3aulGve9Jc9V8DUwBrq8cB0kx1jA_lNEI2q99sQ?e=N3Xo1U
+	 
+	- Procure a pasta "javafx-sdk-14.0.2.1.rar" e baixe
+	- Após terminado o download, descompacte o arquivo
+	- Coloque a pasta em um lugar onde você saiba encontrar, será usado mais a frente
+	
+- No Eclipse, clique com o botão direito na pasta do projeto RoadTracker, procure por "Gradle" no final das opções 
+e clique em "Refresh Gradle Project"
+	- Aguarde o Eclipse carregar as novas bibliotecas
+	
+- Execute o Main.java no pacote view para o sistema criar o método de execução dele
+	- Provavelmente irá ocorrer um erro aqui, mas está tudo bem, já era o esperado
+	
+- Na barra de navegação lá em cima, procure por "Run", clique e vá em "Run configurations..."
+	- Uma janela irá abrir
+	
+- Na nova janela, procure pelo método de Execução "Main" e o selecione
+	- Pode ser que exista mais de um método "Main", no formato "Main(1)", "Main(2), etc
+	- Para saber se selecionou o correto, confira se no campo "Project" está o nome do projeto, RoadTracker
+	
+- Clique em "Arguments"
+
+- Cole o seguinte comando no campo "VM arguments": 
+
+
+
+			--module-path "caminho da lib dentro das aspas aqui" --add-modules javafx.controls,javafx.fxml
+			
+			
+			
+	- Onde está indicado para colocar o caminho da lib, vá até a pasta do JavaFX que você baixou e acesse a pasta "lib" dentro dela
+	- Copie o caminho e substitua no campo indicado
+	- Deve ficar algo parecido com isso:
+	
+	
+	
+	 		--module-path "C:\Users\rafs9\Desktop\libs\javafx\javafx-sdk-14.0.2.1\lib" --add-modules javafx.controls,javafx.fxml
+	 		
+	 		
+	 		
+- Clique em "Apply" e depois em "Close"
+
+- Execute novamente o Main.java no pacote view, se tudo estiver correto, uma janela deve aparecer
+
+
+ c:

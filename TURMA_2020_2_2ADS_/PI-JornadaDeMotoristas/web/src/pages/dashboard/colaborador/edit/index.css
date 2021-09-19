@@ -1,0 +1,12 @@
+.editColaborador{
+    padding: 20px 40px;
+}
+
+.editColaborador section{
+    margin-bottom: 20px;
+}
+
+.editColaborador section a{
+    text-decoration: none;
+    color: black;
+}

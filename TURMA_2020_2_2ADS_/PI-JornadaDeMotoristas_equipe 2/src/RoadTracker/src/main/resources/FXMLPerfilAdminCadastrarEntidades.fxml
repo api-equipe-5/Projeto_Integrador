@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" stylesheets="@designs.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlesPerfilAdminCadastrarEntidades">
+   <children>
+      <VBox alignment="TOP_CENTER" opacity="0.85" prefHeight="450.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="250.0" />
+            <ImageView fitHeight="117.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@usuario.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="25.0" prefWidth="250.0" />
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#voltarParaTelaDeEscolhas" prefHeight="58.0" prefWidth="250.0">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@adicionar.png" />
+                     </image></ImageView>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="31.0" />
+                  <Label text="Cadastrar Entidades" textFill="WHITE" />
+               </children>
+               <styleClass>
+                  <String fx:value="caixasDeSelecao" />
+                  <String fx:value="menuSelecionado" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" onMouseClicked="#abrirTelaFunc" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@funcionarios.png" />
+                     </image></ImageView>
+                  <HBox layoutX="163.0" layoutY="10.0" prefHeight="59.0" prefWidth="29.0" />
+                  <Label prefHeight="17.0" prefWidth="76.0" text="Entidades" textFill="WHITE" />
+                  <HBox layoutX="106.0" layoutY="10.0" prefHeight="59.0" prefWidth="27.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="203.0" onMouseClicked="#abrirTelaHistEntregas" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@viagens.png" />
+                     </image></ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Histórico de entregas" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="300.0" onMouseClicked="#abrirTelaAvisos" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@alert.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Avisos e logs" textFill="WHITE" />
+               </children>
+            </HBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#voltar" prefHeight="15.0" prefWidth="23.0" styleClass="botaoVoltar">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@voltar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="bordaMenu" />
+            <String fx:value="sombraDaImagemLogin" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="25.0" prefWidth="500.0">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#minimizarJanela" styleClass="botaoMinimizar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#fecharJanela" styleClass="botaoFechar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fechar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="272.0" layoutY="47.0" prefHeight="31.0" prefWidth="387.0" styleClass="textoDeMenu">
+         <children>
+            <Label fx:id="labelTipoDeCadastro" text="Cadastrar Entidades">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="paneCadastrarFuncionarios" disable="true" layoutX="266.0" layoutY="87.0" prefHeight="356.0" prefWidth="476.0" visible="false">
+         <children>
+            <Button layoutX="14.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#cadastrarFuncionario" prefHeight="31.0" prefWidth="102.0" styleClass="customizarBotoes" text="Confirmar" textFill="WHITE" />
+            <ComboBox fx:id="cbCargo" layoutX="13.0" layoutY="27.0" onAction="#ajustarEscolhaDoCargo" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefHeight="27.0" prefWidth="159.0" promptText="Escolha o cargo..." styleClass="customizarInputs" />
+            <ComboBox fx:id="cbFilial" layoutX="187.0" layoutY="27.0" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefHeight="27.0" prefWidth="159.0" promptText="Escolha a filial..." styleClass="customizarInputs" />
+            <Pane fx:id="paneInfosExtrasMotorista" disable="true" layoutX="175.0" layoutY="61.0" prefHeight="235.0" prefWidth="295.0" visible="false">
+               <children>
+                  <VBox layoutX="180.0" layoutY="14.0" prefHeight="123.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Dias de trabalho:" />
+                        <CheckBox fx:id="cbDomingo" mnemonicParsing="false" text="Domingo" />
+                        <CheckBox fx:id="cbSegunda" mnemonicParsing="false" text="Segunda" />
+                        <CheckBox fx:id="cbTerca" mnemonicParsing="false" text="Terça" />
+                        <CheckBox fx:id="cbQuarta" mnemonicParsing="false" text="Quarta" />
+                        <CheckBox fx:id="cbQuinta" mnemonicParsing="false" text="Quinta" />
+                        <CheckBox fx:id="cbSexta" mnemonicParsing="false" text="Sexta" />
+                        <CheckBox fx:id="cbSabado" mnemonicParsing="false" text="Sábado" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="16.0" layoutY="14.0" prefHeight="156.0" prefWidth="149.0" spacing="15.0">
+                     <children>
+                        <ComboBox fx:id="cbTurno" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefWidth="150.0" promptText="Turno" styleClass="customizarInputs" />
+                        <TextField fx:id="tfCargaHoraria" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Carga Horária Diária" styleClass="customizarInputs" />
+                        <TextField fx:id="textFieldSalario" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Salário" styleClass="customizarInputs" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <VBox layoutX="15.0" layoutY="75.0" prefHeight="218.0" prefWidth="159.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="tfNome" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Nome" styleClass="customizarInputs" />
+                  <TextField fx:id="tfCpf" onKeyTyped="#mascararCpf" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="CPF" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldEmail" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="E-mail" styleClass="customizarInputs" />
+                  <PasswordField fx:id="pfSenha1" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Senha" styleClass="customizarInputs" />
+                  <PasswordField fx:id="pfSenha2" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Confirme a senha" styleClass="customizarInputs" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="paneCadastrarFiliais" disable="true" layoutX="265.0" layoutY="87.0" prefHeight="356.0" prefWidth="476.0" visible="false">
+         <children>
+            <Button layoutX="19.0" layoutY="310.0" mnemonicParsing="false" onAction="#cadastrarFilial" prefHeight="32.0" prefWidth="78.0" styleClass="customizarBotoes" text="Confirmar" textFill="WHITE" />
+            <VBox alignment="TOP_CENTER" layoutX="19.0" layoutY="65.0" prefHeight="183.0" prefWidth="168.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="tfNomeFilial" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Nome da filial" styleClass="customizarInputs" />
+                  <TextField fx:id="tfCidadeFilial" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Cidade da filial" styleClass="customizarInputs" />
+                  <ComboBox fx:id="comboBoxEstados" prefHeight="27.0" prefWidth="180.0" promptText="Estado" styleClass="customizarInputs" />
+               </children>
+            </VBox>
+            <TextField fx:id="tfCnpj" layoutX="238.0" layoutY="65.0" onKeyTyped="#mascararCnpj" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="CNPJ" styleClass="customizarInputs" />
+            <TextField fx:id="tfRntrc" layoutX="238.0" layoutY="117.0" onKeyTyped="#mascararRntrc" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="RNTRC" styleClass="customizarInputs" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneCadastrarVeiculos" disable="true" layoutX="266.0" layoutY="87.0" prefHeight="356.0" prefWidth="476.0" visible="false">
+         <children>
+            <VBox layoutX="21.0" layoutY="14.0" prefHeight="136.0" prefWidth="168.0" spacing="25.0">
+               <children>
+                  <TextField fx:id="textFieldMarcaRastreador" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Marca do Rastreador" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldModeloRastreador" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Versão do Rastreador" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldIDRastreador" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="ID do Rastreador" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldModeloVeiculo" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Modelo do Veículo" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldPlacaVeiculo" onKeyTyped="#mascararPlaca" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Placa do Veículo" styleClass="customizarInputs" />
+               </children>
+            </VBox>
+            <Button layoutX="21.0" layoutY="305.0" mnemonicParsing="false" onAction="#cadastrarVeiculo" prefHeight="30.0" prefWidth="106.0" styleClass="customizarBotoes" text="Confirmar" textFill="WHITE" />
+            <ComboBox fx:id="comboBoxEscolherFilialVeiculos" layoutX="250.0" layoutY="13.0" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefWidth="150.0" promptText="Escolha a filial..." styleClass="customizarInputs" />
+         </children></Pane>
+      <Pane fx:id="paneCadastrarViagens" disable="true" layoutX="262.0" layoutY="87.0" prefHeight="356.0" prefWidth="476.0" visible="false">
+         <children>
+            <Button layoutX="26.0" layoutY="299.0" mnemonicParsing="false" onAction="#cadastrarViagem" prefHeight="30.0" prefWidth="85.0" styleClass="customizarBotoes" text="Confirmar" textFill="WHITE" />
+            <VBox layoutX="26.0" layoutY="39.0" prefHeight="228.0" prefWidth="149.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tfEmpresaDestino" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefHeight="27.0" prefWidth="136.0" promptText="Empresa de Destino" styleClass="customizarInputs" />
+                  <TextField fx:id="textFieldCarga" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Carga da entrega" styleClass="customizarInputs" />
+                  <ComboBox fx:id="comboBoxMotoristaViagem" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefWidth="150.0" promptText="Motorista" styleClass="customizarInputs" />
+                  <ComboBox fx:id="comboBoxVeiculoViagem" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefWidth="150.0" promptText="Veículo" styleClass="customizarInputs" />
+                  <DatePicker fx:id="datePickerPrazoEntrega" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefHeight="27.0" prefWidth="155.0" promptText="Prazo da entrega" styleClass="customizarInputs" />
+               </children>
+            </VBox>
+         </children></Pane>
+      <Pane fx:id="paneEscolherTipoDeCadastro" layoutX="265.0" layoutY="87.0" prefHeight="356.0" prefWidth="476.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="24.0" layoutY="30.0" onMouseClicked="#abrirTelaCadastrarFuncionarios" prefHeight="68.0" prefWidth="197.0" styleClass="caixasDeSelecaoBoasVindas">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@adicionar.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="61.0" prefWidth="131.0" text="Cadastre Funcionários, atribuindo a eles cargos e mais" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="244.0" layoutY="110.0" onMouseClicked="#abrirTelaCadastrarFiliais" prefHeight="68.0" prefWidth="197.0" styleClass="caixasDeSelecaoBoasVindas">
+               <children>
+                  <Label prefHeight="74.0" prefWidth="129.0" text="Cadastre Filiais no sistema para serem atribuídas aos funcionários" textAlignment="RIGHT" wrapText="true" />
+                  <ImageView fitHeight="140.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@filiais.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="24.0" layoutY="184.0" onMouseClicked="#abrirTelaCadastrarVeiculos" prefHeight="68.0" prefWidth="197.0" spacing="5.0" styleClass="caixasDeSelecaoBoasVindas">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@truck.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="61.0" prefWidth="131.0" text="Cadastre os Veículos que serão utilizados pelos motoristas" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="244.0" layoutY="263.0" onMouseClicked="#abrirTelaCadastrarViagens" prefHeight="68.0" prefWidth="197.0" styleClass="caixasDeSelecaoBoasVindas">
+               <children>
+                  <Label prefHeight="61.0" prefWidth="131.0" text="Crie viagens/entregas a serem realizadas pelos motoristas" textAlignment="RIGHT" wrapText="true" />
+                  <ImageView fitHeight="140.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@viagens.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label fx:id="labelDicaFlutuante" layoutX="648.0" layoutY="38.0" styleClass="dicaFlutuante" text="Dica Flutuante" visible="false">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+      <Pane fx:id="paneAvisosPrincipal" disable="true" prefHeight="450.0" prefWidth="750.0" visible="false">
+         <children>
+            <Pane fx:id="paneAvisosSombra" disable="true" prefHeight="450.0" prefWidth="750.0" styleClass="sombraDeAviso" visible="false" />
+            <Pane fx:id="paneAvisosSucesso" disable="true" layoutX="175.0" layoutY="116.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloSucesso" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoConfirmar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoSucesso" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneAvisosFalha" disable="true" layoutX="185.0" layoutY="126.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloFalha" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoCancelar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoFalha" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

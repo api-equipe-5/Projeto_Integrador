@@ -1,0 +1,139 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+{% load static %}
+{% block extra_css  %}
+ <style>
+  .disabledbutton {
+      pointer-events: none;
+      opacity: 0.7;
+      background-color: #A9A9A9;
+  }
+</style>
+{% endblock extra_css %}
+
+{% block form_content %}
+  {% if user.is_authenticated %}
+    <div class="row">
+      {{ form.status|as_bs4:"col-md-4" }}
+      {{ form.id_vaga|as_bs4:"col-md-2" }}
+    </div>
+    <div class="row">
+      {{ form.nome_vaga|as_bs4:"col-md-5 col-sm-8" }}
+      {{ form.qtd_vaga|as_bs4:"col-md-2 col-sm-3" }}
+      {{ form.horario_trab|as_bs4:"col-md-2 col-sm-3" }}
+    </div>
+    <div class="row">
+      {{ form.categoria|as_bs4:"col-md-3 col-sm-4" }}
+      {{ form.competencia|as_bs4:"col-md-5 col-sm-8" }}
+    </div>
+    <div class="row">
+      {{ form.cidade|as_bs4:"col-md-3 col-sm-4" }}
+    </div>
+    <div class="row">
+      {{ form.beneficios|as_bs4:"col-md-6" }}
+    </div>
+    <div class="row">
+      {{ form.descricao|as_bs4:"col-md-6" }}
+    </div>
+    <div class="row">
+      {{ form.exp_requerida|as_bs4:"col-md-6" }}
+    </div>
+
+  {% else %}
+  <div class="d-none">
+    {{ form.id_vaga|as_bs4:"" }}
+    {{ form.nome_vaga|as_bs4:"" }}
+    {{ form.qtd_vaga|as_bs4:"" }}
+    {{ form.categoria|as_bs4:"" }}
+    {{ form.cidade|as_bs4:"" }}
+    {{ form.beneficios|as_bs4:"" }}
+    {{ form.competencia|as_bs4:"" }}
+    {{ form.descricao|as_bs4:"" }}
+  </div>
+  <h1 class="job-title text-capitalize text-center">{{ form.nome_vaga.value|default_if_none:"" }}</h1>
+  <div class="mt-5 aside-card d-flex flex-column justify-content-between align-items-start p-4">
+    {% if form.get_horario_trab %}
+    <div class="my-1">
+      <h3>Turno</h3>
+      <p>{{ form.get_horario_trab }}</p>
+    </div>
+    {% endif %}
+    <div class="my-1">
+      <h3>Local</h3>
+      <p>{{ form.get_cidade }}</p>
+    </div>
+    <div class="my-1">
+      <h3>Categoria</h3>
+      <p>{{ form.get_categoria }}</p>
+    </div>
+    <button class="btn secondary-btn align-self-end" id="open-modal" type="button">
+      Candidatar-se
+    </button>
+  </div>
+    <div class="job-description d-flex flex-column justify-content-around align-items-start">
+      <div class="my-4">
+        <h3>Sobre a vaga</h3>
+        <p>{{ form.descricao.value|default_if_none:"" }}</p>
+      </div>
+      <div class="my-4">
+        <h3>Requisitos</h3>
+        <ul>
+          {% for comp in form.get_competencia %}
+            <li>{{ comp }}</li>
+          {% endfor %}
+        </ul>
+      </div class="my-4">
+      {% if form.exp_requerida.value %}
+        <div>
+          <h3>Experiências</h3>
+          <p>{{ form.exp_requerida.value }}</p>
+        </div>
+      {% endif %}
+      {% if form.beneficios.value %}
+      <div class="my-4">
+        <h3>Benefícios</h3>
+        <ul>
+          {% for beneficio in form.beneficios %}
+            <li>{{ beneficio }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+
+    <div id="modal-container">
+      <div class="modal-wrapper d-flex flex-column justify-content-between align-items-center p-3">
+        <i class="fa fa-times blue-icon align-self-end" id="close-modal"></i>
+        <h4 class="my-4">
+          Procure pelo <strong>CPF</strong> ou <strong>Nome</strong> para se candidatar
+        </h4>
+        {{ form.candidato|as_bs4:"col my-1" }}
+        <button class="btn btn-primary my-4" type="submit">
+          {{ save_btn_label|default:'Candidatar' }}
+        </button>
+      </div>
+    </div>
+
+  {% endif %}
+{% endblock form_content %}
+
+{% block extra_js %}
+<script>
+  $(document).ready(function() {
+    $('#id_id_vaga').mask('0000/000', {reverse: true});
+
+    // modal settings....
+    const modalContainer = $("#modal-container");
+    modalContainer.hide();
+
+    $('#open-modal').click(function() {
+      modalContainer.show();
+    });
+
+    $('#close-modal').click(function() {
+      modalContainer.hide();
+    });
+
+  });
+</script>
+{% endblock extra_js %}

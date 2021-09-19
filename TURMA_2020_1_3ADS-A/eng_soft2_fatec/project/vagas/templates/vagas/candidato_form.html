@@ -1,0 +1,65 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+{% load static %}
+
+{% block form_content %}
+<h3 class="strong" style="text-decoration: underline;">Dados Pessoais</h3>
+  <div class="row">
+    {{ form.nome|as_bs4:"col-md-6 col-sm-8" }}
+    {{ form.sexo|as_bs4:"col-md-2 col-sm-4" }}
+  </div>
+  <div class="row">
+    {{ form.cpf|as_bs4:"col-md-3 col-sm-5" }}
+    {{ form.email|as_bs4:"col-md-4 col-sm-8" }}
+  </div>
+  <div class="row mb-5">
+    {{ form.ddd|as_bs4:"col-md-1 col-sm-3" }}
+    {{ form.celular|as_bs4:"col-md-3 col-sm-5" }}
+    {{ form.ddd2|as_bs4:"col-md-1 col-sm-3" }}
+    {{ form.telefone|as_bs4:"col-md-3 col-sm-5" }}
+  </div>
+<h3 class="strong" style="text-decoration: underline;">Dados de Endereço</h3>
+  <div class="row">
+    {{ form.rua|as_bs4:"col-md-4 col-sm-6" }}
+    {{ form.bairro|as_bs4:"col-md-4 col-sm-6" }}
+  </div>
+  <div class="row">
+    {{ form.numero_end|as_bs4:"col-md-3 col-sm-4" }}
+    {{ form.complemento|as_bs4:"col-md-3 col-sm-4" }}
+  </div>
+  <div class="row mb-5">
+    {{ form.cidade|as_bs4:"col-md-3 col-sm-4" }}
+    {{ form.estado|as_bs4:"col-md-3 col-sm-4" }}
+  </div>
+  <h3 class="strong" style="text-decoration: underline;">Informações de Formação/Currículo</h3>
+  <div class="row mb-5">
+    {{ form.curriculo|as_bs4:"col-md-6" }}
+  </div>
+
+  {% if user.is_authenticated %}
+    <h4 class="strong" style="text-decoration: underline;">Campos Reservados (Somente Usuários do sistema)</h4>
+    <div class="row my-3">
+      {{ form.habilidades|as_bs4:"col-md-6" }}
+    </div>
+    <div class="row">
+      {{ form.observacoes|as_bs4:"col-md-6" }}
+    </div>
+  {% endif %}
+
+{% endblock form_content %}
+
+{% block extra_js %}
+<script>
+  $(document).ready(function() {
+    $('#id_cpf').mask('000.000.000-00', {reverse: true});
+    $('#id_ddd').mask("(00)");
+    $('#id_celular').mask('99999-9999', {reverse: true});
+    $('#id_ddd2').mask("(00)");
+    $('#id_telefone').mask('9999-9999', {reverse: true});
+  });
+</script>
+{% endblock extra_js %}
+
+
+
+

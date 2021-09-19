@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:left;
+    color:black ;
+}
+
+iframe{
+    align-items: center;
+
+}
+
+#texto{
+    text-align: center;
+    padding-left:40pt;
+    padding-right:40pt;
+	line-height: 1,5;
+}
+
+#info {
+	text-align:center;
+} 
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+	text-align: center;
+}
+/*footer*/
+
+#contato {
+    padding:10pt;
+    text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a.face {
+    padding-right: 15pt;
+}
+
+a.youtube {
+    padding-left: 15pt;
+}
+

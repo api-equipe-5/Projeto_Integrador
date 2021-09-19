@@ -1,0 +1,9 @@
+- Refatoração do User Stories para o Modelo da GSW;
+- Refatoração do cenário de testes para o modelo indicado;
+- Estimativa de esforço utilizando o Jira - Fixando o erro da Sprint 3;
+- VídeoCadastroDeVagaEListagem - Funcionamento do cadastro da vaga e a listagem de todas as vagas cadastradas;
+- VídeoCadastroDosDetalhes - Funcionamento do cadastro dos detalhes de forma personalizada;
+- VídeoIntegradoBackEnd - Demonstração da integração com a API do backend.
+- WireFrames (não houve alterações)
+- Diagrama de classes (não houve alterações)
+- Diagrama de domínio (não houve alterações)

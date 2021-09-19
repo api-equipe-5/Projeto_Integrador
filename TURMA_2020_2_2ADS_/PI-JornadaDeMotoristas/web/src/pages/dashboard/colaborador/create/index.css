@@ -1,0 +1,12 @@
+.createColaborador{
+    padding: 20px 40px;
+}
+
+.createColaborador section{
+    margin-bottom: 20px;
+}
+
+.createColaborador section a{
+    text-decoration: none;
+    color: black;
+}

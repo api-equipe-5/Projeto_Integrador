@@ -1,0 +1,68 @@
+.barra_admin{
+    background-color: grey;
+	padding: 30px;
+    color: white;
+    border: 0px;
+    outline: 0;
+    opacity: 1;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.welcome{
+    text-align: center;
+    color:white;
+    font-size: xx-large;
+    margin-right: -90px;
+}
+
+.welcome-voltar{
+    margin-left: -137px;
+}
+
+.sair{
+    float: right;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    border: 0px;
+    background: rgb(215, 102, 109);
+    width: 90px;
+    height: 35px;
+	margin-left:1px;
+}
+.painel{
+    width: 220px;
+    margin-right: 1px;
+	float: right;
+    color: white;
+    font-size: large;
+    
+    border: 0px;
+    background: rgb(215, 102, 109);
+  
+    height: 35px;
+	border-radius: 5px;
+	
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #982b2e, #8C1317);
+}
+
+.editar { /*botão: voltar*/
+    float: left;
+    color: white;
+    font-size: large;
+    
+    border: 0px;
+    background: rgb(215, 102, 109);
+    width: 130px;
+    
+	height: 35px;
+	border-radius: 5px;
+
+}
+.hidden{
+    display: none;
+}
