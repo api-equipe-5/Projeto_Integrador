@@ -1,1 +1,0 @@
-ALTER TABLE "driver" ADD COLUMN "password" varchar(30);

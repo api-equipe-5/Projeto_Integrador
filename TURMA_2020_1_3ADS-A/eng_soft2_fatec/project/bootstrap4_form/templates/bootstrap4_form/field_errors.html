@@ -1,5 +1,0 @@
-{% if field.errors %}
-  {% for error in field.errors %}
-    <div class="invalid-feedback {% if type == 'checkbox' or type == 'radio' %}d-block{% endif %}">{{ error }}</div>
-  {% endfor %}
-{% endif %}

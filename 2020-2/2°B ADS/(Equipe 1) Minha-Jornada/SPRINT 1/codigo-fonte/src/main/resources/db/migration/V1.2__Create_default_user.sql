@@ -1,1 +1,0 @@
-insert into "user" (name, password, profile) values('admin', 'admin', 'admin');

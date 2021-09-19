@@ -1,9 +1,0 @@
-node_modules/
-.env
-database.sqlite
-tmp/
-yarn-error.log
-.vscode/
-build/
-
-**.js
