@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" stylesheets="@designs.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlesPerfilAdminBoasVindas">
+   <children>
+      <VBox alignment="TOP_CENTER" opacity="0.85" prefHeight="450.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="250.0" />
+            <ImageView fitHeight="117.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@usuario.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="25.0" prefWidth="250.0" />
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#abrirTelaCadFunc" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@adicionar.png" />
+                     </image></ImageView>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="31.0" />
+                  <Label text="Cadastrar Entidades" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" onMouseClicked="#abrirTelaFuncionarios" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@funcionarios.png" />
+                     </image></ImageView>
+                  <HBox layoutX="163.0" layoutY="10.0" prefHeight="59.0" prefWidth="29.0" />
+                  <Label prefHeight="17.0" prefWidth="76.0" text="Entidades" textFill="WHITE" />
+                  <HBox layoutX="106.0" layoutY="10.0" prefHeight="59.0" prefWidth="27.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="203.0" onMouseClicked="#abrirTelaHistEntregas" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@viagens.png" />
+                     </image></ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Histórico de entregas" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="300.0" onMouseClicked="#abrirTelaAvisos" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="56.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@alert.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Avisos e logs" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#voltar" prefHeight="22.0" prefWidth="20.0" styleClass="botaoVoltar">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@voltar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="bordaMenu" />
+            <String fx:value="sombraDaImagemLogin" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="25.0" prefWidth="500.0">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#minimizarJanela" styleClass="botaoMinimizar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#fecharJanela" styleClass="botaoFechar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fechar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="272.0" layoutY="47.0" prefHeight="31.0" prefWidth="400.0" styleClass="textoDeMenu">
+         <children>
+            <Label text="RoadTracker">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="299.0" layoutY="113.0" onMouseClicked="#abrirTelaCadFunc" prefHeight="68.0" prefWidth="197.0" styleClass="caixasDeSelecaoBoasVindas">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@adicionar.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="61.0" prefWidth="131.0" text="Cadastre Entidades, como funcionários, veículos, viagens e mais" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="487.0" layoutY="202.0" onMouseClicked="#abrirTelaFuncionarios" prefHeight="68.0" prefWidth="231.0" styleClass="caixasDeSelecaoBoasVindas">
+         <children>
+            <Label prefHeight="56.0" prefWidth="168.0" text="Visualize todoas as entidades cadastradas e edite suas informações " textAlignment="RIGHT" wrapText="true" />
+            <ImageView fitHeight="84.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@funcionarios.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="299.0" layoutY="318.0" onMouseClicked="#abrirTelaHistEntregas" prefHeight="68.0" prefWidth="231.0" spacing="10.0" styleClass="caixasDeSelecaoBoasVindas">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@viagens.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="78.0" prefWidth="147.0" text="Veja todas as entregas e viagens realizadas pelos motoristas" wrapText="true" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

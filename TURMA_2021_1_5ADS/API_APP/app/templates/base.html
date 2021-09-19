@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+    <link rel = "stylesheet"  href="{{ url_for('static', filename='css/custom.css')}}"/>
+    <link rel = "stylesheet"  href="{{ url_for('static', filename= 'css/all.css' ) }}"/>
+    <link rel = "stylesheet"  href="{{ url_for('static', filename='css/animate.css')}}"/>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.hackpack.min.css">
+    
+    <title>Api Analytics</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top  wow fadeInLeft navbar-expand-lg navbar-light bgcolor" style="padding-bottom:20px; background-color:;">
+      <div class ="logo1 text-center  logo1" style="background-color:">
+         <p class ="logo font-weight-bolder bgcolor0 " id="teste"> Api Analytics</p>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse ms-5 mt-2" id="navbarNav" style="">
+      <div class="navbar-nav">
+          <a class="nav-link text-dark text-center bgcolor1 act" id="teste1" style = " background-color: #fffff;"  href="/" >Inicio</a>
+
+           {% if current_user.is_authenticated %}
+           {% if current_user.id == 0 %}
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/adm/manager">Adm</a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/api">Analises </a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/dados">Dados salvos</a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/select">Csv</a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/logout">Deslogar</a>
+           {% else %}
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/api">Analises</a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/dados">Dados salvos </a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/select">Csv</a>
+           <a class="nav-link text-center text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/logout">Deslogar </a>
+           {% endif %}
+           {% else %}
+           <a class="nav-link text-end text-dark bgcolor1 act" id="teste3" style = " background-color: ;"  href="/login"> Login</a>
+           {% endif %}
+      </div>
+      
+    </div>
+   </nav>
+  {% block content %}
+  {% endblock %}
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"> import 'transition-style';</script>
+
+    <script src="{{url_for('static', filename= 'js/wow.min.js')}}"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
+    <script>
+     
+    </script>
+ </body>
+</html>

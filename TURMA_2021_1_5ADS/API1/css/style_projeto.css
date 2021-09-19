@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:left;
+    color: black;
+	margin-bottom:5pt;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size:26px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:left;
+    color:black;
+	margin-bottom:2pt;
+}
+
+#projeto1 {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-top: 2pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+}
+
+#projeto2 {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+}
+
+figure.projeto1 {
+    float: left;
+    padding-right: 50pt;
+	padding-bottom: 20pt;
+}
+
+figure.Projeto2 {
+    float:left;
+    padding-right: 50pt;
+    padding-bottom: 20pt;
+}
+
+.btn {
+    background-color:rgb(198,37,47);
+    width: 250px;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+	border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+	margin-left:200pt;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}

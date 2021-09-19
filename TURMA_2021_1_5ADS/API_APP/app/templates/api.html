@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid  border ">
+    {% for t in posts.items %}
+    {% if ( (t.state == none ) and 
+    (t.city == none) and (t.country == none) ) %}
+        
+        {% else%}
+        {% if loop.index%2 == 0%}
+        <div class="container-fluid " style="background-color: rgb(224, 224, 224);">
+        {% else %}
+        <div class="container-fluid border-bottom" >
+        {% endif %}
+            <div class='row mt-5' >
+                <div class='col-10 text-center d-flex align-items-center' >
+                
+                    <p class="me-5 " >
+                    Id: {{t.id}}
+                    </p>
+                    <p class="me-5" >
+                    País: {{t.country}}
+                    </p>
+                    <p class="me-5" >Estado: {{t.state}}</p>
+                    <p class="me-5" >Cidade: {{t.city}}</p>
+                    
+                    <p class="me-5" >Idade: {{t.age | int}}</p>
+                    
+                    <p class="me-5" >Renda pessoa: R$ {{t.avg_income}}</p>
+
+                    
+                    <p class="me-5" >Estado produto: {% if t.customer_products_active == True %} Ativo{% else%}Desativado{% endif %}</p>
+                    
+                    
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                    <div class="container-fluid ">
+                        <a class=" ad2 btn btn-secondary" href="/api/{{t.id}}">Recomendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    {% endif %}
+    {% endfor %}
+    <div class="conteinar-fluid text-center">
+        {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+          {% if page_num %}
+            {% if posts.page == page_num %}
+              <a class="btn btn-secondary mb-4 text-light" href="{{ url_for('showdata', page=page_num) }}">{{ page_num }}</a>
+            {% else %}
+              <a class="btn btn-outline-secondary mb-4 text-dark" href="{{ url_for('showdata', page=page_num) }}">{{ page_num }}</a>
+            {% endif %}
+          {% else %}
+            ...
+          {% endif %}
+        {% endfor %}
+    </div>
+    </div>
+</div>
+{% endblock %}

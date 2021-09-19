@@ -1,0 +1,12 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+
+
+{% block form_content %}
+  <div class="row">
+    {{ form.nome|as_bs4:"col-md-4" }}
+  </div>
+  <div class="row">
+    {{ form.tipo|as_bs4:"col-md-4" }}
+  </div>
+{% endblock form_content %}

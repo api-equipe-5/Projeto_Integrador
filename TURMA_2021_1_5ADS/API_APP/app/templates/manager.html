@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block content%}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="flashes ">
+    {% for message in messages %}
+    <div class="text-center  container-fluid col-12"style="; background-color: ; width:300px; ">{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+{% endwith %}
+
+
+<div class="container-fluid col-12 text-center">
+    <a class="btn btn-secondary text-center mt-5 ad2" style="color:#ffff; width:400px; background-color:" href="/adm/manager/new">Cadastrar usuario</a>
+</div>
+<div class="container-fluid">
+{% for l in users %}
+<div class="container-fluid border mt-4 col-12" style="">
+    <div class="row">
+        <div class="col-6">
+            <h4>Username: {{l.username}}</h4>
+        </div>
+        <div class="col-6">
+
+            <h4>senha: {{l.password}}</h4>
+
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-6">
+            
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+
+<!-- Button trigger modal -->
+{% if l.id == 0%}
+{% else %}
+<button type="button" class="btn btn-secondary ad2" data-bs-toggle="modal" data-bs-target="#exampleModal{{l.id}}">
+    Deletar
+</button>
+{% endif %}
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal{{l.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tem certeza que quer deletar esse usuário?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Após deleção será impossivel a recuperação das informações deste usuário
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn ad1" data-bs-dismiss="modal">Fechar</button>
+          <a class="btn btn-secondary ad2" href="/adm/manager/{{l.id}}/delete">Deletar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+</div>
+</div>
+{% endfor%}
+
+</div>
+
+
+{% endblock%}

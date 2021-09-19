@@ -1,0 +1,21 @@
+.header{
+    width: 80vw;
+    height: 90px;
+    background-color: #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px;
+}
+
+.header h1{
+    font-size: 28px;
+}
+
+.header div p{
+    margin: 0;
+}
+
+.header div p span{
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content%}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="flashes ">
+    {% for message in messages %}
+    <div class="text-center  container-fluid col-12"style="; background-color: ; width:300px; ">{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+{% endwith %}
+<div class="container-fluid mt-5">
+{% for l in data %}
+{% if current_user.id == l.user_id %}
+<div class="container-fluid border mt-4 col-12" style="">
+    <div class="row">
+        <div class="col-6">
+            <h4>Id produto: {{l.product_id}}</h4>
+            <h4>Nome: {{l.products.name}}</h4>
+        </div>
+        <div class="col-6">
+
+            <h4>Id cliente: {{l.costumer_id}}</h4>
+            <h4>Estado: {{l.customers.state}}</h4>
+            <h4>Cidade: {{l.customers.city}}</h4>
+
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-6">
+            
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary ad2" data-bs-toggle="modal" data-bs-target="#exampleModal{{l.id}}">
+    Deletar
+</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal{{l.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tem certeza que quer deletar esse dado?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Após deleção será impossivel a recuperação das informações salvas
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn ad1" data-bs-dismiss="modal">Fechar</button>
+          <a class="btn btn-secondary ad2" href="/dados/{{current_user.id}}/{{l.id}}/delete">Deletar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+</div>
+</div>
+{% endif %}
+{% endfor%}
+
+</div>
+
+
+{% endblock%}

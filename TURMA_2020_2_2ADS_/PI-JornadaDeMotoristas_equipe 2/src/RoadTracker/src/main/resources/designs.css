@@ -1,0 +1,163 @@
+.fundoDaJanela{
+	-fx-background-color: #FFFFFF;
+}
+
+.barraDeMenu{
+	-fx-background-color: transparent;
+}
+
+.botaoFechar{
+	-fx-background-color: transparent;
+}
+
+.botaoFechar:hover{
+	-fx-background-color: #e74c3c;
+}
+
+.botaoMinimizar{
+	-fx-background-color: transparent;
+}
+
+.botaoMinimizar:hover{
+	-fx-background-color: #0984e3;
+}
+
+.customizarInputs{
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color: #00a8ff;
+}
+.customizarInputs:focused{
+	-fx-background-color: #DCDDE1;
+}
+
+.customizarBotoes{
+	-fx-background-color: #00a8ff;
+}
+
+.customizarBotoes:hover{
+	-fx-background-color: #2f3640;
+	-fx-cursor: hand;
+}
+
+.sombraDaImagemLogin{
+	-fx-effect: dropshadow(gaussian, #000000, 10, 0.5, 0, 1);
+}
+
+.bordaMenu{
+	-fx-background-color: #30306b; 
+}
+
+.caixasDeSelecao{
+	-fx-border-width: 2px 0px 2px 0px;
+	-fx-border-color: #FFFFFF;
+}
+
+.caixasDeSelecao1{
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color: #FFFFFF;
+}
+
+.caixasDeSelecao:hover{
+	-fx-background-color: #0984e3;
+	-fx-cursor: hand;
+}
+.caixasDeSelecao1:hover{
+	-fx-background-color: #0984e3;
+	-fx-cursor: hand;
+}
+
+.textoDeMenu{
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-color: #00a8ff;
+}
+
+.checkBoxs{
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 1px 0px;
+	-fx-border-color: #00a8ff;
+}
+
+.botaoPesquisar{
+	-fx-background-color: transparent;
+}
+
+.botaoPesquisar:hover{
+	-fx-background-color: #2f3640;
+}
+
+.botaoVoltar{
+	-fx-background-color: transparent;
+}
+.botaoVoltar:hover{
+	-fx-background-color: #d90000;
+	-fx-cursor: hand;
+}
+
+.caixasDeSelecaoBoasVindas{
+	-fx-border-radius: 15px;
+	-fx-background-radius: 15px;
+}
+.caixasDeSelecaoBoasVindas:hover{
+	-fx-background-color: #0984e3;
+	-fx-cursor: hand;
+}
+
+.botaoConfirmar{
+	-fx-background-color: #2ecc71;
+}
+.botaoConfirmar:hover{
+	-fx-background-color: #27ae60;
+	-fx-cursor: hand;
+}
+
+.botaoCancelar{
+	-fx-background-color: #e74c3c;
+}
+.botaoCancelar:hover{
+	-fx-background-color: #c0392b;
+	-fx-cursor: hand;
+}
+
+.fundoAviso{
+	-fx-background-color: #34495e;
+}
+
+.fundoMenuAviso{
+	-fx-background-color: #2c3e50;
+}
+
+.sombraMenuAviso{
+	-fx-effect: dropshadow(gaussian, #000000, 10, 0.1, 0, 1);
+}
+
+.sombraDeAviso{
+	-fx-background-color: #000000;
+	-fx-opacity: 0.25;
+}
+
+.menuSelecionado{
+	-fx-background-color: #879eae;
+}
+
+.dicaFlutuante{
+	-fx-background-color: #f7d794;
+	-fx-border-color: #303952;
+	-fx-border-width: 1px;
+	-fx-opacity: 0.7;
+}
+
+.separadorLateralEsquerdo{
+	-fx-border-color: #00a8ff;
+	-fx-border-width: 0px 0px 0px 2px;
+}
+
+.separadorInferior{
+	-fx-border-color: #00a8ff;
+	-fx-border-width: 0px 0px 1px 0px;
+}
+
+.bordasMenuRecuperarSenha{
+	-fx-border-color: #0077ae;
+	-fx-border-width: 2px 2px 2px 2px;
+}

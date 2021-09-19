@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Truck-in</h1>
+        <form id="login-form" action="">
+            <div class="full-box">
+                <label for="email">Login</label>
+                <input type="email" name="email" id="email" placeholder="Login" data-min-length="2"
+                    data-email-validate>
+                <div class="half-box spacing">
+                    <label for="cpf">Senha</label>
+                    <input type="cpf" name="cpf" id="cpf" placeholder="Senha" data-required data-only-numbers>
+                </div>
+				 <p>
+        Ainda não possui uma conta?
+        <a href="signup.html">Registre-se clicando aqui.</a>
+    </p>
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

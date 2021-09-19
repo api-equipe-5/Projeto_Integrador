@@ -1,0 +1,20 @@
+{% extends "components/base_form.html" %}
+{% load bs4_form %}
+{% load static %}
+{% block extra_css  %}
+ <style> 
+  .disabledbutton {
+      pointer-events: none;
+      opacity: 0.7;
+      background-color: #A9A9A9;
+  }
+</style>
+{% endblock extra_css %}
+
+{% block form_content %}
+  {% if user.is_authenticated %}
+    <div class="row">
+      {{ form.status|as_bs4:"col-md-4" }}
+    </div>
+
+{% endblock form_content %}

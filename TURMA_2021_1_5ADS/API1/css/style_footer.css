@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*_footer.php*/
+ 
+#contato {
+    padding:10pt;
+    text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+}
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a.face {
+    padding-right: 50pt;
+}
+
+a.youtube {
+    padding-left: 50pt;
+}

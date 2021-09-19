@@ -1,0 +1,23 @@
+
+
+MEMBROS ATIVOS e ainda integrantes da equipe.  
+
+CLARISSE SANTOS; desenvolvedora.          
+DOUGLAS BARBOSA; PO                      
+JAQUELINE BEZERRA; desenvolvedora.       
+RAFAEL RODRIGUES; SCRUM master             
+ -
+
+--------------------------------------------------------------------------
+
+
+                                     1º ENTREGA  2º ENTREGA  3º ENTREGA 4º ENTREGA 5º ENTREGA 6º ENTREGA   
+  
+CLARISSE SANTOS; desenvolvedora.          ok           ok        ok          ok         ok          ok
+DOUGLAS BARBOSA; PO                       ok           ok        ok          ok         ok          ok
+JAQUELINE BEZERRA; desenvolvedora.        ok           ok        ok          ok         ok          ok        
+RAFAEL RODRIGUES; SCRUM master            ok           ok        ok          ok         ok          ok 
+GABRIEL RODRIGUES; desenvolvedor          ok           -         -           -          -            -
+
+
+---------------------------------------------------------------------------

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> Cadastro de Usuário </title>
+ <link rel="stylesheet" href="style2.css">
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+  <header>
+        <h1>GSW</h1>
+    </header>
+    
+	
+<section class="content">
+        <div class="cadastro">
+            <h3>Cadastro de Vaga</h3>
+         
+	
+<form enctype="multipart/form-data" method="post" action="insere-vaga.php"> <!-- action: direciona para  arquivo **insere.php** -->
+
+<label>Vaga:</label> <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+<label>Data Entrada:</label> <input type="text" name="Data_entrada" id="Data_entrada" placeholder="AAAA-MM-DD"><br>
+<label>Data saida:</label> <input type="text" name="Data_saida" id="Data_saida" placeholder="AAAA-MM-DD"><br>
+<label>Descricao:</label> <input type="text" name="Descricao" id="Descricao" placehouder="Descricao"><br>
+
+
+
+		
+       
+            <input  type="hidden" name="ignorar" size="30">
+            <button type="submit" class="btn" value="Cadastrar" id="cadastrar" name="cadastrar">Cadastrar</button>
+        </form>
+
+</form>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+

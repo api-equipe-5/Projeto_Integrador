@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="flashes ">
+    {% for message in messages %}
+    <div class="text-center  container-fluid col-12"style="; background-color: ; width:300px; ">{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+{% endwith %}
+<div class=" container-fluid text-center text-light w-75 p-3 mt-5 " style="">
+    <div class="card text-center " style="height: 350px; background-color: #212529;">
+        <h5 class="card-header border-bottom border-light" >Recomendação ID: {{teste4}}<p>Nome produto: {{teste5.name}}</p></h5>
+        
+        <div class="card-body text-start">
+            <div class="row">
+                <div class=" text-center col-12">
+                    <h4>{{a}}</h4>
+                </div>
+                <h5 class="card-text text-center mt-5">Esse produto foi recomendado para este cliente baseado nos nossos perfis de produtos e clientes</h5>
+            </div>
+        </div>
+
+            <a class="ad1 btn" style="background-color: ; color:#ffff;" type="button" href="/csv/{{n}}">voltar</a>
+
+    </div>
+    
+</div>
+{% endblock %}

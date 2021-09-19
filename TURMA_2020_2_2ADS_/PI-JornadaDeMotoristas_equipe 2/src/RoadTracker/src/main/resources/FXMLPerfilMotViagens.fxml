@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" stylesheets="@designs.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlesPerfilMotViagens">
+   <children>
+      <VBox alignment="TOP_CENTER" opacity="0.85" prefHeight="450.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="250.0" />
+            <ImageView fitHeight="117.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@usuario.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="62.0" prefWidth="250.0" />
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#abrirRealizarViagem" prefHeight="65.0" prefWidth="250.0" styleClass="caixasDeSelecao">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@viagens.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="31.0" />
+                  <Label text="Jornada atual" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" onMouseClicked="#abrirMinhasViagens" prefHeight="58.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@truck.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="163.0" layoutY="10.0" prefHeight="53.0" prefWidth="23.0" />
+                  <Label prefHeight="17.0" prefWidth="88.0" text="Minhas viagens" textFill="WHITE" />
+                  <HBox layoutX="106.0" layoutY="10.0" prefHeight="53.0" prefWidth="28.0" />
+               </children>
+               <styleClass>
+                  <String fx:value="caixasDeSelecao1" />
+                  <String fx:value="menuSelecionado" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="300.0" onMouseClicked="#abrirCriarAviso" prefHeight="58.0" prefWidth="250.0" styleClass="caixasDeSelecao1">
+               <children>
+                  <HBox prefHeight="59.0" prefWidth="31.0" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@alert.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="56.0" prefWidth="40.0" />
+                  <Label text="Avisos" textFill="WHITE" />
+               </children>
+            </HBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="84.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#voltar" prefHeight="15.0" prefWidth="23.0" styleClass="botaoVoltar">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@voltar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="bordaMenu" />
+            <String fx:value="sombraDaImagemLogin" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="25.0" prefWidth="500.0">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#minimizarJanela" styleClass="botaoMinimizar">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#fecharJanela" styleClass="botaoFechar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fechar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="272.0" layoutY="47.0" prefHeight="31.0" prefWidth="387.0" styleClass="textoDeMenu">
+         <children>
+            <Label text="Minhas viagens">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="paneMinhasViagens" layoutX="259.0" layoutY="87.0" prefHeight="362.0" prefWidth="486.0">
+         <children>
+            <TableView fx:id="tabelaViagens" layoutX="16.0" layoutY="16.0" prefHeight="255.0" prefWidth="449.0">
+              <columns>
+                <TableColumn fx:id="colunaDestino" prefWidth="159.0" text="Empresa de destino" />
+                <TableColumn fx:id="colunaCarga" prefWidth="101.0" text="Carga" />
+                  <TableColumn fx:id="colunaPrazo" prefWidth="87.0" text="Prazo" />
+                  <TableColumn fx:id="colunaSituacao" prefWidth="101.0" text="Situação" />
+              </columns>
+            </TableView>
+            <Button layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#iniciaViagem" prefHeight="33.0" prefWidth="77.0" styleClass="customizarBotoes" text="Iniciar" textFill="WHITE" />
+            <Button layoutX="102.0" layoutY="293.0" mnemonicParsing="false" onAction="#pausaViagem" prefHeight="33.0" prefWidth="77.0" styleClass="customizarBotoes" text="Pausar" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneAvisosPrincipal" disable="true" prefHeight="450.0" prefWidth="750.0" visible="false">
+         <children>
+            <Pane fx:id="paneAvisosSombra" disable="true" prefHeight="450.0" prefWidth="750.0" styleClass="sombraDeAviso" visible="false" />
+            <Pane fx:id="paneAvisosSucesso" disable="true" layoutX="175.0" layoutY="116.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloSucesso" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoConfirmar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoSucesso" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneAvisosFalha" disable="true" layoutX="185.0" layoutY="126.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloFalha" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoCancelar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoFalha" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

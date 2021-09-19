@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> Cadastro de Usuário </title>
+</head>
+<body>
+<form enctype="multipart/form-data" method="post" action="insere.php"> <!-- action: direciona para  arquivo **insere.php** -->
+
+<label>Nome:</label><input type="text" name="nome" id="nome"><br>
+<label>CPF:</label><input type="number" name="cpf" id="cpf"><br>
+<label>E-mail:</label><input type="text" name="email" id="email"><br>
+
+
+<label> <p>Ja eh funcionario?</p> </label> 	
+<p>
+	Sim: <input id="radio1" type="radio" name="Estado_Atual" value="SIM"/><br />
+	Nao: <input id="radio2" type="radio" name="Estado_Atual" value "NAO"/>
+
+</p> 
+
+		
+            Curriculo
+            <input type="file" name="arquivo" class="form-control" required>
+
+            <input  type="hidden" name="ignorar" size="30">
+            <button type="submit" class="btn" value="Cadastrar" id="cadastrar" name="cadastrar">Cadastrar</button>
+        </form>
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

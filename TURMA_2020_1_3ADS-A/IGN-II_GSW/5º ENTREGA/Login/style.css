@@ -1,0 +1,253 @@
+header{
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(13, 13, 223, 0.781);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.content{
+    border-radius: 13px;
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(10, 10, 146);
+    width: 39%;
+    height: 100%;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+
+
+    left: 0;
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    font: bold;
+    text-transform: capitalize;
+}
+
+.title-prime{
+    color: white;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 300;
+ 
+    line-height: 30px;
+}
+.description-prime{
+    color: white;
+}
+.description-second{
+    color: rgb(10, 10, 146)
+}
+
+.btn{
+    border-radius: 11px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 160px;
+    align-self: center;
+    align-items: center;
+    border-width: 0px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-prime{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: backgroud-color 1s;
+}
+
+.btn-prime:hover{
+    background-color: white;
+    color: rgb(10, 10, 146);
+}
+
+.btn-second{
+    background-color: rgb(10, 10, 146);
+    border: 1px solid rgb(10, 10, 146);
+    transition: backgroud-color 1s;
+}
+
+.btn-second:hover{
+    background-color: white;
+    border: 1px solid rgb(10, 10, 146);
+    color: rgb(10, 10, 146);
+}
+
+.primary{
+    display: flex;
+    /*display: none; Não Esquecer de Alterar*/
+}
+
+.primary .coluna02{
+    z-index: 12;
+}
+
+.coluna01{
+    text-align: center;
+    width: 40%;
+    /*flex: 0.9 0 auto;*/
+    z-index: 10;
+}
+
+.coluna02{
+    text-align: center;
+    width: 60%;
+    /*flex: 1.3 0 auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-second{
+    color: blue;
+
+}
+.social-midia{
+    margin: 1rem 0;
+}
+.align-social-midia{
+    display: flex;
+    list-style-type: none;
+}
+
+.icone-social-midia{
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    align-items: center;
+}
+
+.link-social-midia{
+    color: rgb(124, 124, 124);
+}
+
+.link-social-midia:not(:first-child){
+    margin-left: 10px;
+}
+
+.link-social-midia .icone-social-midia{
+    transition: backgroud-color 1s;
+}
+.link-social-midia:hover .icone-social-midia{
+    background-color: rgb(10, 10, 146);
+    color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+}
+.label-input{
+    display: flex;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    margin: 6px;
+}
+
+.icon-mod{
+    color: rgb(124, 124, 124);
+    padding: 0 6px;
+}
+
+/*Segunda Tela*/
+.secound{
+    position: absolute;
+    display: flex;
+}
+
+.secound .coluna01{
+    order: 2;
+    z-index: -1;
+}
+
+.secound .coluna02{
+    order: 1;
+    z-index: -1;
+}
+
+.password{
+    color: teal;
+    font-size: 14px;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.sign-in-js .primary .coluna01,
+.sign-in-js .primary .coluna02{
+    z-index: -1;
+}
+
+.sign-in-js .secound .coluna01,
+.sign-in-js .secound .coluna02{
+    z-index: 12;
+}
+
+.sign-in-js .content::before{
+    left: 61%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.register-js .secound .coluna01,
+.register-js .secound .coluna02{
+    z-index: -1;
+}
+
+.register-js .primary .coluna01,
+.register-js .primary .coluna02{
+    z-index: 11;
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*index admin*/
+
+.fundo{
+    background-image: url('imagens/backg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fundo:before{
+    opacity: 0.1;
+}
+
+/*footer*/
+ 
+footer {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+}
+
+/*index*/
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:left;
+    color:black ;
+	margin-bottom:5pt;
+}
+
+#bemvindo {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-top: 5pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+	
+}
+
+#projetos {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+	text-decoration: none;
+}
+
+#ajudar {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+}
+
+/*projetos_edit<*/
+
+
+#projeto1 {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-top: 5pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+	
+}
+
+#projeto2 {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+	text-decoration: none;
+}
+
+figure.projeto1 {
+    float: left;
+    padding-right: 50pt;
+}
+
+figure.Projeto2 {
+    float:right;
+    padding-left: 50pt;
+}
+
+/*acesso.php >style na própria página*/
+
+/*print_apoio , print_especifico e print_projetos.php*/
+
+a {
+	color:white;
+}
+
+tr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    background-color: white;
+    color: black;
+}
+table {
+	border-color:black;
+	width: 95% !important;
+    margin: auto;
+}
+	
+th{
+    font-size: 14pt;
+    background-color: #d7666d;
+    color: white;
+	padding:5px;
+	text-align:center;
+    border: 1px solid black;	
+}	
+
+/*botão de voltar paginas dos bancos de dados*/
+
+sair { /*botão: editar, descartar e voltar*/
+    float: left;
+    color: white;
+    font-size: large;
+    border: 0px;
+    background: rgb(215, 102, 109);
+    width: 130px;
+	height: 35px;
+	border-radius: 5px;
+
+}
+
+a.sair {
+    margin-left:20pt;
+	text-decoration: none;
+    font-size:18px;
+}
+
+a.btn {
+    background-color:rgb(198,37,47);
+    width: 250px;
+    border-color: black;
+    color:white;
+    padding: 10px 277px;
+    text-align: right;
+	border-radius: 10px;
+	
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*doacao.php*/
+
+
+#corpodoacao {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:center;
+    color:black ;
+	margin-bottom:5pt;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+
+}

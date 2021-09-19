@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="janela" disable="false" prefHeight="450.0" prefWidth="750.0" styleClass="fundoDaJanela" stylesheets="@designs.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlesLogin">
+   <children>
+      <VBox prefHeight="450.0" prefWidth="300.0" styleClass="sombraDaImagemLogin">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="300.0" opacity="0.79" pickOnBounds="true">
+               <image>
+                  <Image url="@estrada.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="300.0" prefHeight="25.0" prefWidth="450.0">
+         <children>
+            <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#minimizarJanela" prefHeight="30.0" prefWidth="15.0" styleClass="botaoMinimizar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#fecharJanela" prefHeight="20.0" prefWidth="20.0" styleClass="botaoFechar">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fechar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="452.0" layoutY="55.0" text="RoadTracker" textFill="#157586">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneLogin" layoutX="304.0" layoutY="97.0" prefHeight="350.0" prefWidth="443.0">
+         <children>
+            <TextField fx:id="inputUsuario" layoutX="151.0" layoutY="81.0" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="E-mail" styleClass="customizarInputs" />
+            <PasswordField fx:id="inputSenha" layoutX="151.0" layoutY="124.0" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Senha" styleClass="customizarInputs" />
+            <Button fx:id="botaoEntrar" layoutX="182.0" layoutY="175.0" mnemonicParsing="false" onAction="#verificarLogin" prefHeight="25.0" prefWidth="79.0" styleClass="customizarBotoes" text="Entrar" textFill="WHITE" />
+            <Label layoutX="128.0" layoutY="215.0" onMouseClicked="#esqueceuSenha" text="Esqueceu sua senha? Clique aqui" textFill="#0984e3" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="111.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="109.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@chave.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="trocaSenha" disable="true" prefHeight="450.0" prefWidth="750.0" visible="false">
+         <children>
+            <Pane prefHeight="450.0" prefWidth="750.0" styleClass="sombraDeAviso" />
+            <Pane layoutX="188.0" layoutY="56.0" prefHeight="328.0" prefWidth="386.0">
+               <children>
+                  <Button layoutX="218.0" layoutY="283.0" mnemonicParsing="false" onAction="#confirmarTroca" prefHeight="31.0" prefWidth="88.0" styleClass="botaoConfirmar" text="Confirmar" textFill="WHITE" />
+                  <Button layoutX="314.0" layoutY="283.0" mnemonicParsing="false" onAction="#voltar" prefHeight="31.0" prefWidth="58.0" styleClass="botaoCancelar" text="Voltar" textFill="WHITE" />
+                  <Label layoutX="98.0" layoutY="21.0" text="Recuperação de Senha" textFill="#157586">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="67.0" prefHeight="52.0" prefWidth="241.0" text="Insira suas informações de login para confirmar sua conta e trocar sua senha" textAlignment="CENTER" wrapText="true" />
+                  <VBox layoutX="24.0" layoutY="136.0" prefHeight="174.0" prefWidth="149.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="tfNome" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Nome" styleClass="customizarInputs" />
+                        <TextField fx:id="tfCpf" onKeyTyped="#mascararCpf" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="CPF" styleClass="customizarInputs" />
+                        <TextField fx:id="textFieldEmail" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="E-mail" styleClass="customizarInputs" />
+                        <ComboBox fx:id="cbCargos" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" prefWidth="150.0" promptText="Cargo" styleClass="customizarInputs" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="214.0" layoutY="136.0" prefHeight="110.0" prefWidth="149.0" spacing="15.0">
+                     <children>
+                        <PasswordField fx:id="pfSenha1" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Nova senha" styleClass="customizarInputs" />
+                        <PasswordField fx:id="pfSenha2" onMouseEntered="#exibirDicaFlutuante" onMouseExited="#esconderDicaFlutuante" promptText="Confirme a senha" styleClass="customizarInputs" />
+                     </children>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="fundoDaJanela" />
+                  <String fx:value="bordasMenuRecuperarSenha" />
+               </styleClass>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneAvisosPrincipal" disable="true" prefHeight="450.0" prefWidth="750.0" visible="false">
+         <children>
+            <Pane fx:id="paneAvisosSombra" disable="true" layoutX="-1.0" layoutY="-1.0" prefHeight="460.0" prefWidth="768.0" styleClass="sombraDeAviso" visible="false" />
+            <Pane fx:id="paneAvisosFalha" disable="true" layoutX="185.0" layoutY="126.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloFalha" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoCancelar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoFalha" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" onMouseClicked="#fecharAviso" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneAvisosSucesso" disable="true" layoutX="185.0" layoutY="126.0" prefHeight="150.0" prefWidth="400.0" styleClass="fundoAviso" visible="false">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="26.0" prefWidth="400.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="labelAvisosTituloSucesso" prefHeight="26.0" prefWidth="202.0" text="Tela de Avisos" textFill="#bdc3c7">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="fundoMenuAviso" />
+                        <String fx:value="sombraMenuAviso" />
+                     </styleClass>
+                  </HBox>
+                  <Button layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#fecharAviso" prefHeight="32.0" prefWidth="78.0" styleClass="botaoConfirmar" text="Confirmar" textFill="WHITE" />
+                  <Label fx:id="labelAvisosTextoSucesso" alignment="TOP_CENTER" layoutX="57.0" layoutY="35.0" prefHeight="63.0" prefWidth="286.0" text="Aviso" textAlignment="CENTER" textFill="#bdc3c7" wrapText="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label fx:id="labelDicaFlutuante" layoutX="648.0" layoutY="36.0" styleClass="dicaFlutuante" text="Dica Flutuante" visible="false">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding></Label>
+   </children>
+</AnchorPane>

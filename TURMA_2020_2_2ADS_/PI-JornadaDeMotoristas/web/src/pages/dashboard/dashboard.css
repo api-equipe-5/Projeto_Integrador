@@ -1,0 +1,42 @@
+.dashboard{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+}
+
+.content .main{
+    height: 85.7vh;
+    overflow-y: auto;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form div label{
+    margin: 0;
+}
+
+form div input,form div textarea,form div select{
+    border: none;
+    background-color: #D8D8D8;
+    padding: 4px;
+}
+
+form button{
+    float: right;
+    border: none;
+    padding: 8px 30px;
+    background-color: #B40404;
+    margin: 20px 0px;
+    color: white;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: #610B0B;
+}
