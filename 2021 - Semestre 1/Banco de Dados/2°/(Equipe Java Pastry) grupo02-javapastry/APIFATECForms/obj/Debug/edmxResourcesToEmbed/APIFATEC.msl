@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APIFATECModelStoreContainer" CdmEntityContainer="APIFATECEntities">
+    <EntitySetMapping Name="AREA_IMOVEL">
+      <EntityTypeMapping TypeName="APIFATECModel.AREA_IMOVEL">
+        <MappingFragment StoreEntitySet="AREA_IMOVEL">
+          <ScalarProperty Name="condicao_i" ColumnName="condicao_i" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+          <ScalarProperty Name="tipo_imove" ColumnName="tipo_imove" />
+          <ScalarProperty Name="num_modulo" ColumnName="num_modulo" />
+          <ScalarProperty Name="nom_munici" ColumnName="nom_munici" />
+          <ScalarProperty Name="cod_estado" ColumnName="cod_estado" />
+          <ScalarProperty Name="num_area" ColumnName="num_area" />
+          <ScalarProperty Name="cod_imovel" ColumnName="cod_imovel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BR_UF_2020">
+      <EntityTypeMapping TypeName="APIFATECModel.BR_UF_2020">
+        <MappingFragment StoreEntitySet="BR_UF_2020">
+          <ScalarProperty Name="nm_regiao" ColumnName="nm_regiao" />
+          <ScalarProperty Name="sigla_uf" ColumnName="sigla_uf" />
+          <ScalarProperty Name="nm_uf" ColumnName="nm_uf" />
+          <ScalarProperty Name="cd_uf" ColumnName="cd_uf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRASIL_MUNICIPIO">
+      <EntityTypeMapping TypeName="APIFATECModel.BRASIL_MUNICIPIO">
+        <MappingFragment StoreEntitySet="BRASIL_MUNICIPIO">
+          <ScalarProperty Name="área_km2" ColumnName="área_km2" />
+          <ScalarProperty Name="sigla_uf" ColumnName="sigla_uf" />
+          <ScalarProperty Name="nm_mun" ColumnName="nm_mun" />
+          <ScalarProperty Name="cd_mun" ColumnName="cd_mun" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

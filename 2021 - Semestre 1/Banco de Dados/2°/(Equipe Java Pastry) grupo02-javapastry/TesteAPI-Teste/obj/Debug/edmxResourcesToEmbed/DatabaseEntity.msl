@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APIFATECModelStoreContainer" CdmEntityContainer="APIFATECEntities">
+    <EntitySetMapping Name="AREA_IMOVEL">
+      <EntityTypeMapping TypeName="APIFATECModel.AREA_IMOVEL">
+        <MappingFragment StoreEntitySet="AREA_IMOVEL">
+          <ScalarProperty Name="cod_imovel" ColumnName="cod_imovel" />
+          <ScalarProperty Name="condicao_i" ColumnName="condicao_i" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+          <ScalarProperty Name="tipo_imove" ColumnName="tipo_imove" />
+          <ScalarProperty Name="num_modulo" ColumnName="num_modulo" />
+          <ScalarProperty Name="nom_munici" ColumnName="nom_munici" />
+          <ScalarProperty Name="cod_estado" ColumnName="cod_estado" />
+          <ScalarProperty Name="num_area" ColumnName="num_area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

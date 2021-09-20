@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="APIFATECModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="APIFATECEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AREA_IMOVEL" EntityType="APIFATECModel.AREA_IMOVEL" />
+  </EntityContainer>
+  <EntityType Name="AREA_IMOVEL">
+    <Key>
+      <PropertyRef Name="cod_imovel" />
+    </Key>
+    <Property Name="num_area" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="cod_estado" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="nom_munici" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="num_modulo" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="tipo_imove" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="situacao" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="condicao_i" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cod_imovel" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

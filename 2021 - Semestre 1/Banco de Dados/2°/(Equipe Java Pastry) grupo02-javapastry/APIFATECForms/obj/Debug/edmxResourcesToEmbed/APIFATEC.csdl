@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="APIFATECModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="APIFATECEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AREA_IMOVEL" EntityType="APIFATECModel.AREA_IMOVEL" />
+    <EntitySet Name="BR_UF_2020" EntityType="APIFATECModel.BR_UF_2020" />
+    <EntitySet Name="BRASIL_MUNICIPIO" EntityType="APIFATECModel.BRASIL_MUNICIPIO" />
+  </EntityContainer>
+  <EntityType Name="AREA_IMOVEL">
+    <Key>
+      <PropertyRef Name="cod_imovel" />
+    </Key>
+    <Property Name="cod_imovel" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="num_area" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="cod_estado" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="nom_munici" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="num_modulo" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="tipo_imove" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="situacao" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="condicao_i" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BR_UF_2020">
+    <Key>
+      <PropertyRef Name="cd_uf" />
+    </Key>
+    <Property Name="cd_uf" Type="Int32" Nullable="false" />
+    <Property Name="nm_uf" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sigla_uf" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="nm_regiao" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BRASIL_MUNICIPIO">
+    <Key>
+      <PropertyRef Name="cd_mun" />
+    </Key>
+    <Property Name="cd_mun" Type="Int32" Nullable="false" />
+    <Property Name="nm_mun" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="sigla_uf" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="área_km2" Type="Decimal" Precision="10" Scale="3" />
+  </EntityType>
+</Schema>

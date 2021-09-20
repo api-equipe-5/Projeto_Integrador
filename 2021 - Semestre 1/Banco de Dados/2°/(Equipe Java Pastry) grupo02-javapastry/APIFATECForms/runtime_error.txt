@@ -1,0 +1,6 @@
+Easy GIS .NET uses Proj6 native DLLs written using MSVC++
+
+If you receive a runtime error that the application can not load projections you will need to install the Microsoft Visual C++ Redistributable for Visual Studio 2019
+
+https://visualstudio.microsoft.com/downloads/
+
