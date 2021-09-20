@@ -29,7 +29,10 @@
 
 #### Whimsical: Prototipagem
 
-#### GitHub: Versionamento
+#### Git: Versionamento
+
+#### GitHub: Hospedagem de código-fonte e arquivos
+
 <br>
 
 ## Time de Desenvolvimento
