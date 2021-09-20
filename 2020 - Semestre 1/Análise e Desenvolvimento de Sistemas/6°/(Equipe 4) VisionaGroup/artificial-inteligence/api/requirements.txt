@@ -1,0 +1,10 @@
+flask
+requests
+tensorflow
+keras
+rasterio
+rasterio[s3]
+boto3
+flask-cors
+geojson
+geopandas

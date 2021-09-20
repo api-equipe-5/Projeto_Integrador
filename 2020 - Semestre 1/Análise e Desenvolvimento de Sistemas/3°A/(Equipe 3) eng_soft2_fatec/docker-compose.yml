@@ -1,0 +1,47 @@
+# ***************
+# DOCKER Compose 
+# ***************
+version: '3.7'
+
+services:
+  db:
+    image: postgres:11.6
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=project
+    ports:
+      - "${PG_PORT}:5432"
+
+    container_name: dev_project_db
+
+  web:
+    build:
+      context: .
+      args:
+        APP_NAME: project
+        # ambiente de DEV
+        ENVIRONMENT: dev
+
+    container_name: dev_project
+
+    volumes:
+      - ./${APP_NAME}/:/usr/src/app/
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+
+    #o 0.0.0.0 é importante para funcionar com qualquer IP
+    command: ["python3", "manage.py", "runserver", "0.0.0.0:8000", "--settings", "project.settings.${SETTINGS_FILE}"]
+
+    # SEMPRE verifique se isso pode ser um problema
+    #read_only: true
+
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

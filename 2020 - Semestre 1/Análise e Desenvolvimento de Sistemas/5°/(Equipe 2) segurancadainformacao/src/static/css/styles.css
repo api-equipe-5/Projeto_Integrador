@@ -1,0 +1,141 @@
+
+body > table{
+    width: 99%;
+}
+
+table{
+    border-collapse: collapse;/*nao funciona no login*/
+
+}
+table.list{
+    width:100%;
+    color: #069;
+}
+
+table.list>thead{
+    font-weight: bold;
+    color: white;
+}
+
+.espaco, .espaco-login{
+    margin: 50 auto;
+    color: #069;
+    font-family: 'Abel', sans-serif;
+}
+.espaco-login{
+    width: 40%
+}
+.subtitulo{
+    font-size: 2em;
+    font-weight: bold;
+    margin:0 0 0.8em 0;
+}
+.campo-selecao{
+    display: block;
+    margin: 0.3em 0;
+}
+fieldset.campo-selecao>legend{
+    font-size: 1.1em;
+}
+fieldset.campo-selecao>label{
+    font-size: 1em;
+}
+.espaco-login label{
+    font-size: 1.1em;
+}
+
+td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+td:nth-child(1) {
+    width: 30%;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #069;
+}
+
+.campo-texto, .campo-select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.campo-selecao{
+    padding: 4px 0;
+    margin-bottom: 6px;
+}
+
+option{
+    background-color: whitesmoke;
+    border: 6px solid transparent;
+    border-color: solid blue;
+}
+.botao-confin{
+    width: 40%;
+    background-color: #069;
+    font-size: 1em;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    transition: 2s background;
+}
+.botao-confin:hover{
+    background-color:  #089;
+}
+
+form .form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0000ee;
+    margin-right: 4px;
+}
+a:hover{
+   color: #FF0000; 
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+.botao{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+select option:first-child { 
+    color: grey; 
+}
+select:required:invalid {
+    color: gray;
+}
+option {
+    color: black;
+}
+
+.test {
+    text-decoration: none;
+    color: tomato;
+}

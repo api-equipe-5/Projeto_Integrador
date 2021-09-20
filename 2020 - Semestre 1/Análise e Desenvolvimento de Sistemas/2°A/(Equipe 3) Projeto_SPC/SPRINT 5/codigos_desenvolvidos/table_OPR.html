@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="git: diegosilva89, ud21">
+  <title>METAlitcs - STG_OPR_ITT</title>
+  <link rel="stylesheet" href="_style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="metalitcs">
+        <p><b>METAlitcs</b></p>
+      </div>
+      <div class="location">
+        <div class="leftbox">
+          <p>Validação das Tabelas</p>
+        </div>
+        <div class="rightbox">
+          <p>STG_OPR_ITT</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-menu-col">
+        <div class="menu-col">
+          <div class="index">
+            <p>Validação das Tabelas</p>
+          </div>
+          <a style="text-decoration: none;" href="table_FNT.html">
+            <div class="stg">
+              <p>STG_FNT_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_MVT.html">
+            <div class="stg">
+              <p>STG_MVT_CRD</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_OPR.html">
+            <div class="stg-in">
+              <p>STG_OPR_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_PGT.html">
+            <div class="stg">
+              <p>STG_PGT</p>
+            </div>
+          </a>
+
+          <div class="index">
+            <p>Resultados da Remessa</p>
+          </div>
+          <a style="text-decoration: none;" href="result_MVT.html">
+            <div class="stg">
+              <p>Movimentações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_OPR.html">
+            <div class="stg">
+              <p>Operações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_PGT.html">
+            <div class="stg">
+              <p>Pagamentos</p>
+            </div>
+          </a>
+
+          <div class="index_two_rows">
+            <p>Índice de Pagamentos<br>em Dia</p>
+          </div>
+          <a style="text-decoration: none;" href="index_MOD.html">
+            <div class="stg">
+              <p>Por Modalidades</p>
+            </div>
+          </a>
+          <div class="index_two_rows">
+            <p>Índice de Número de Pagamentos por Clientes</p>
+          </div>
+          <a style="text-decoration: none;" href="index_FaixaVAL.html">
+            <div class="stg">
+              <p>Por Faixas de Valores</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- content of graphs and etc. -->
+      <div class="container-content-col">
+        <section id="graphs">
+          <div class="static_graph_container_01">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validade da Tabela</div>
+              </div>
+              <div class="table_content">
+                <div class="table_value">100%</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Média de Preenchimento da Tabela</div>
+              </div>
+              <div class="table_content">
+                <div class="table_value">100%</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Verificação de Campos Não Nulos</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_completude_sem_consorcio.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Datas Encontradas</div>
+                <div class="paragraph">Porcentagem de campos preenchidos nas colunas DAT_INC_DBO e DAT_RSS_FNT_ITT</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_tab_datas.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+
+          <div class="dynamic_graph_container_MVT">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validação dos Tipos de Dados</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_tipo.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validação das IDs de Modalidades e das IDs das Fontes</div>
+                <div class="paragraph">Porcentagem de campos preenchidos comparando a existência dos dados encontrados com as tabelas de origem</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_tab_correspondencia.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Verificação de Dados Idênticos</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_unicos.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Definição das Colunas com Dados Sensíveis</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/opr_tab_sensibilidade.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

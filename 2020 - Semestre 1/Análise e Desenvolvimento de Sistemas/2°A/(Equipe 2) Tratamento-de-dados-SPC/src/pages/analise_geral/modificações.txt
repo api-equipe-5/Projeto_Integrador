@@ -1,0 +1,29 @@
+Modificações dia 10/07/2020 por Pedro:
+
+- Alinhamento dos elementos dentro da modal box: Adicionei uma "div.ajust"
+ para os checkbox's e select's, precisei adicionar uma dia com 
+ classe "ajust-desc" para descrição, pois estava ficando com excesso de 
+ margin no lado direito da modal box.
+
+
+
+- Tirei o "Cancelar" e o "Salvar" e troquei por ícones.
+Eles estão escritos em hexCode. O de cancelar está como "&times;" e o de
+ Salvar está como "&#x2713;".
+
+
+
+- Mudei as classes dos botões "cancelar" e "salvar" que estão dentro dos modal box
+para finalidade de estilização. O botão "cancelar" está agora com a
+classe "cancel-modal". E o botão "salvar" agora está com a classe "save-modal".
+
+
+
+- Apaguei a escrita "Descrição" da modal box e adicionei o placeholder em cada
+input. Caso queira reverter eu deixei comentado as escritas descrição. Aí
+é só descomentar e tirar o placeholder dos parâmetros dos input's.
+
+
+
+- Adicionei cores aos ícones de cancelar e salvar quando passa o mouse por
+cima {hover}.

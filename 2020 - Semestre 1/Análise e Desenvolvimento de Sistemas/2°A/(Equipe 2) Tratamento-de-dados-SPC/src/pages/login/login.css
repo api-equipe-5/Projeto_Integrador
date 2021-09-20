@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.backbtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+button.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 80px;
+  font-size: 50px;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+
+  background-color: transparent;
+  outline: none;
+}
+
+button.back:hover {
+  margin-left: -50px;
+  transition: 0.3s;
+}
+
+div.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 700px;
+}
+
+figure.login {
+  width: 400px;
+  height: 150px;
+
+  background-image: url('../../assets/logo_figma.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 180px;
+}
+
+div.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid rgb(46, 45, 45);
+}
+
+figure.user {
+  margin: 0;
+  width: 70px;
+  height: 60px;
+
+  background-image: url('../../assets/userFigure.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px;
+}
+
+figure.password {
+  margin: 0;
+  width: 70px;
+  height: 60px;
+
+  background-image: url('../../assets/senhaFigure.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+input {
+  width: 330px;
+  height: 60px;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+  font-weight: 400;
+  transition: .7s;
+
+  font-size: 20px;
+  background-color: rgb(46, 45, 45);
+}
+
+a button.login {
+  width: 400px;
+  height: 60px;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  color: white;
+  background-color: rgb(46, 45, 45);
+  outline: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+a button.login:hover {
+  background-color: rgb(87, 86, 86);
+  color: white;
+  transition: 0.7s;
+}
+
+.fatec{
+  width: 200px;
+  height: 100px;
+  
+  
+}
+
+.spc{
+  
+  width: 200px;
+  height: 100px;
+  
+}
+
+.fatec img{
+  width: 150px;
+}
+
+.spc img{
+  width: 150px;
+}
+
+.sec-logo{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}

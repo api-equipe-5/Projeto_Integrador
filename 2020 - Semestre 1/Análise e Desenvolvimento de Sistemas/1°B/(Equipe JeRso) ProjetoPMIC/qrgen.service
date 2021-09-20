@@ -1,0 +1,10 @@
+[Unit]
+Description=Gerador de codigo qr
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh /home/jerso/qrgen.sh
+
+[Install]
+WantedBy=multi-user.target

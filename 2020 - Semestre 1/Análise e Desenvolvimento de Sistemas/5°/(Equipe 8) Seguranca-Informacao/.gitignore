@@ -1,0 +1,10 @@
+*.log
+frontend/.cache/
+frontend/dist/
+frontend/node_modules/
+backend/node_modules/
+backend/secrets/
+node_modules/
+segunda_aplicacao/frontend/.cache/
+segunda_aplicacao/frontend/dist/
+segunda_aplicacao/backend/secrets/

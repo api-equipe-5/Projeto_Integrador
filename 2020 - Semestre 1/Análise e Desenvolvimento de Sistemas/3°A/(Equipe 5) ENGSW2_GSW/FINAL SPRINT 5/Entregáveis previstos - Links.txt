@@ -1,0 +1,9 @@
+- Documentação finalizada e única (mostrando evolução, etc);
+
+//Vídeos
+- Todos os vídeos descrevendo as funcionalidades - Google Drive: https://drive.google.com/drive/folders/1uKooRp42O32QSgkaIXxvDVpqEBjUsvVX?usp=sharing
+- Único vídeo demonstrando o projeto funcionando - YouTube: https://youtu.be/IbEzA-uYT0s
+
+//Projetos
+Backend: https://github.com/fabsvas/ENGSW2_GSW/tree/master/SPRINT%202/InicioImplementacao
+Frontend: https://github.com/fabsvas/rh-gsw-front-fatecsjc

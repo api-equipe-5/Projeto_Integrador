@@ -1,0 +1,202 @@
+/*					PISCINA				*/
+
+int liga = 0;
+
+int aquece = 0;
+
+void setup()
+{
+  pinMode(7, INPUT);
+  pinMode(A0, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(A1, OUTPUT);
+}
+
+void loop()
+{
+  aquece = digitalRead(7);
+  liga = analogRead(A0);
+  if (liga >= 186) {
+    digitalWrite(13, HIGH);
+    digitalWrite(12, LOW);
+    digitalWrite(11, LOW);
+    if (liga > 195){
+      digitalWrite(A1, LOW);
+  	}
+  } else if (liga <= 163) {
+    digitalWrite(13, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(11, HIGH);
+    if (aquece == 0) {
+      digitalWrite(A1, HIGH);
+  	}
+  } else {
+      digitalWrite(13, LOW);
+      digitalWrite(12, HIGH);
+      digitalWrite(11, LOW);
+  }
+  delay(10);
+}
+
+
+
+
+
+/*				ILUMINAÇÃO				*/
+
+int LDR = 0;
+
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+}
+
+void loop()
+{
+  LDR = analogRead(A0);
+  Serial.println(LDR);
+  if (LDR < 550) {
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+  } else {
+    if (LDR < 600) {
+      digitalWrite(4, HIGH);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+    } else {
+      if (LDR < 700) {
+        digitalWrite(4, HIGH);
+        digitalWrite(5, HIGH);
+        digitalWrite(6, LOW);
+        digitalWrite(7, LOW);
+      } else {
+        if (LDR < 850) {
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, LOW);
+        } else {
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+        }
+      }
+    }
+  }
+  delay(10);
+}
+
+
+
+
+
+/*                   ALARME                 */
+char* senha = "ABC123";  // defina a senha aqui, ela deve conter seis dígitos
+
+/************************* CHAMADA DA BIBLIOTECA *****************************/
+
+#include <Keypad.h>
+
+
+/************************ CONFIGURAÇÕES TECLADO ******************************* */
+
+const byte LINHAS = 4; // quantidade de linhas do teclado
+const byte COLUNAS = 4; // quantidade de colunas do teclado
+
+char digitos[LINHAS][COLUNAS] = {
+{'1','2','3','A'},
+{'4','5','6','B'},
+{'7','8','9','C'},
+{'*','0','#','D'}}; // todos os caracteres do teclado
+
+byte pinosLinha[LINHAS] = { 11, 10, 9, 8 }; // pinos de conexão das linhas no arduino 
+byte pinosColuna[COLUNAS] = { 7, 6, 5, 4 }; // pinos de conexão das colunas no arduino 
+
+Keypad keypad = Keypad(makeKeymap(digitos), pinosLinha, pinosColuna, LINHAS, COLUNAS ); // objeto de leitura das teclas com os parâmetros lidos
+
+/************************ VARIÁVEIS AUXILIARES ******************************* */
+
+int position = 0;
+int ledVermelho = 12;
+int ledVerde = 13;
+int ledFechadura = 3; //led azul substituir por módulo relé
+int buzzer = 2;
+int tempoBuzz = 50;
+int tempoAberto = 2000;
+
+/***************************************************************************** */
+
+void setup()
+{ 
+  
+estadoPorta(true); // diz se a porta está ou não trancada
+
+pinMode(ledVermelho,OUTPUT); 
+pinMode(ledVerde,OUTPUT);
+pinMode(ledFechadura,OUTPUT);
+pinMode(buzzer,OUTPUT); // define os pinos de saída do arduino
+
+}
+
+void loop()
+{
+  
+char digito = keypad.getKey(); // faz a leitura das teclas
+
+if (digito !=0)
+{
+  digitalWrite(buzzer, HIGH);
+  delay(tempoBuzz);
+  digitalWrite(buzzer, LOW); // acionamento do buzzer ao apertar qualquer tecla
+
+if (digito == senha[position]) // verifica se o dígito apertado corresponde ao equivalente da senha
+{
+position ++;
+}
+else { // retorna a leitura para a primeira posição de leitura da senha quando o dígito apertado não corresponde ao correto 
+position = 0;
+}
+if (position == 6) // altera estado da porta  
+{
+estadoPorta(false);
+}
+delay(100);
+}
+}
+
+void estadoPorta(int trancado)
+{
+  
+if (trancado) // trancamento da porta
+{
+digitalWrite(ledVermelho, HIGH);
+digitalWrite(ledVerde, LOW);
+digitalWrite(ledFechadura, HIGH); // importante: para uso com rele de acionamento da fechadura LOW deve ser subsstituído por HIGH
+}
+
+else // abertura da porta
+{
+digitalWrite(ledVermelho, LOW);
+digitalWrite(ledVerde, HIGH);
+digitalWrite(ledFechadura, HIGH); // importante: para uso com rele de acionamento da fechadura HIGH deve ser subsstituído por LOW
+digitalWrite(buzzer, HIGH);
+delay(tempoBuzz*10);
+digitalWrite(buzzer, LOW); // buzzer indica o acerto da senha 
+delay(tempoAberto);
+position = 0;
+digitalWrite(ledFechadura, HIGH);
+estadoPorta(true); // tranca a porta novamente 
+}
+}

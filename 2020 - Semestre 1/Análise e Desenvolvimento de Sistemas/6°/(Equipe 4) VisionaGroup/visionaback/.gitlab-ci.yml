@@ -1,0 +1,32 @@
+cache:
+  paths:
+    - node_modules/
+    - .yarn
+
+stages:
+  - test
+  - deploy
+
+test:
+  image: node:9.4.0
+  stage: test
+  before_script:
+    - npm i -g @adonisjs/cli
+    - npm install
+  script:
+    - cp .env.example .env
+    - adonis key:generate
+    - adonis migration:run --env testing
+    - adonis seed --env testing
+    - adonis test
+
+deploy_heroku:
+  image: ruby:latest
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+  only:
+    - master

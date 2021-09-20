@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  margin: 10%;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navigation ul li svg { 
+  fill: var(--text-color);
+  width: 2rem;
+  height: auto;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login svg { 
+  width: 3rem;
+  height: auto;
+  margin-right: 0.5rem;
+}

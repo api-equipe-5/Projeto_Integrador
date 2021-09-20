@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Perfil{% endblock %}
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }}" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endwith %}
+<div class="container-fluid py-5 mt-4">
+    <div class="row justify-content-center">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h2 class="text-center align-middle my-2">Dados pessoais</h2>
+            </li>
+            <li class="list-group-item">Nome: {{ nome }}</li>
+            <li class="list-group-item">E-mail: {{ email }}</li>
+            <li class="list-group-item">CPF: {{ cpf }}</li>
+            <li class="list-group-item">Data de nascimento: {{ data_nascimento }}</li>
+
+            {% if telefone %}
+                <li class="list-group-item">Telefone: {{ telefone.numero }}</li>
+            {% else %}
+                <li class="list-group-item">Telefone: Adicionar telefone</li>
+            {% endif %}
+
+            {% if endereco %}
+                <li class="list-group-item">CEP: {{ endereco.cep }}</li>
+                <li class="list-group-item">Nº: {{ endereco.numero }}</li>
+                <li class="list-group-item">Complemento: {{ endereco.complemento }}</li>
+            {% else %}
+                <li class="list-group-item">Endereço: Adicionar endereço</li>
+            {% endif %}
+
+            <a href="{{ url_for('usuario.editar') }}">
+                <button class="btn btn-primary btn-block" type="button" href>Editar Perfil</button>
+            </a>
+
+            {% if not user_is_funcionario %}
+                <a href="{{ url_for('usuario.deletar') }}">
+                    <button class="btn btn-danger btn-block" type="button" href>Deletar Perfil</button>
+                </a>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

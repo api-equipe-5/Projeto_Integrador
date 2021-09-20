@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Editar Perfil{% endblock %}
+{% block content %}
+<div class="container-fluid py-5 mt-4">
+   <div class="row justify-content-center">
+        <div class="col-md-5">
+            <h2 class="text-center align-middle mb-5">Editar dados pessoais</h2>
+            <form method="POST" action="{{ url_for('usuario.editar') }}" autocomplete="off">
+            <div class="mb-5 text-body">
+                <div class="form-group row">
+                    <label for="nome" class="col-sm-3 col-form-label col-form-label-lg">Nome</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg border border-primary" id="nome" name="nome" placeholder="João" value="{{ nome }}" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label col-form-label-lg">E-mail</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg border border-primary" id="email" name="email" placeholder="seu@email.com" value="{{ email }}" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="cpf" class="col-sm-3 col-form-label col-form-label-lg">CPF</label>
+                    <div class="col-sm-8 "> 
+                        <input type="text" class="form-control form-control-lg border border-primary" id="cpf" name="cpf" placeholder="444444444-40" value="{{ cpf }}" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="data" class="col-sm-3 col-form-label col-form-label-lg">Data de nascimento</label>
+                    <div class="col-sm-8 ">
+                        <input type="date" class="form-control form-control-lg border border-primary" id="data" name="data" value="{{ data_nascimento }}"required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="senha" class="col-sm-3 col-form-label col-form-label-lg">Senha</label>
+                    <div class="col-sm-8 ">
+                        <input type="password" class="form-control form-control-lg border border-primary" id="senha" name="senha" value="{{ senha }}" required>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-sm-6 mb-2">
+                        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+            <h2 class="text-center align-middle mb-5">Editar Telefone</h2>
+            <form method="POST" action="{{ url_for('usuario.telefone') }}" autocomplete="off">
+            <div class="mb-5 text-body">
+                <div class="form-group row">
+                    <label for="numero" class="col-sm-3 col-form-label col-form-label-lg">Número</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg border border-primary" id="numero" name="numero" placeholder="6457-4679" value="{{ telefone.numero }}" required>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-sm-6 my-3">
+                        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+            <h2 class="text-center align-middle mb-5">Editar endereço</h2>
+            <form method="POST" action="{{ url_for('usuario.endereco') }}" autocomplete="off">
+            <div class="mb-5 text-body">
+                <div class="form-group row">
+                    <label for="cep" class="col-sm-3 col-form-label col-form-label-lg">CEP</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-lg border border-primary" id="cep" name="cep" placeholder="12242-790" value="{{ cep }}" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="numero" class="col-sm-3 col-form-label col-form-label-lg">Número</label>
+                    <div class="col-sm-8 "> 
+                        <input type="text" class="form-control form-control-lg border border-primary" id="numero" name="numero" placeholder="100" value="{{ numero }}" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="complemento" class="col-sm-3 col-form-label col-form-label-lg">Complemento</label>
+                    <div class="col-sm-8 ">
+                        <input type="text" class="form-control form-control-lg border border-primary" id="complemento" name="complemento" placeholder="Apt. 5 Bloco 3" value="{{ complemento }}" required>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <div class="col-sm-6 my-3">
+                        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        </div>
+</div>
+{% endblock %}

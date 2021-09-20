@@ -1,0 +1,22 @@
+Editor eclipse 
+Servidor web tomcat 8.5.55 
+
+adicionar javax.mail.jar servlet-api.jar no buildpath do eclipse:
+-Clicar com direito do mouse no projeto
+-descer  e selecionar properties
+-ADDExternal jars e adicionar essas duas libs q estão disponíveis nesta mesma pasta.
+
+-O javax.mail e o  tambem precisa ser adicionado na pasta lib do diretório do tomcat
+
+-Configurando o gmail:
+https://support.google.com/mail/answer/7126229?hl=pt-BR
+
+-Depois no arquivo web.xml dentro da pasta WEB-INF colocar o seu email e sua senha no param-value do user e no param-value do pass
+
+-para rodar o projeto basta escolher "Run as on Server" e escolher o servidor web tomcat 8.5.55 
+
+Obs:É possível q eu não tenha lembrado de tudo qualquer dúvida estou á disposição.
+
+
+
+

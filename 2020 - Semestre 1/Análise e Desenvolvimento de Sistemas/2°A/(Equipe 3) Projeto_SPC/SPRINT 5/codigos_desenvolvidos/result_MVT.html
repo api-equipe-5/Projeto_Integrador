@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="git: diegosilva89, ud21">
+  <title>METAlitcs - Movimentações</title>
+  <link rel="stylesheet" href="_style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="metalitcs">
+        <p><b>METAlitcs</b></p>
+      </div>
+      <div class="location">
+        <div class="leftbox">
+          <p>Resultados da Remessa</p>
+        </div>
+        <div class="rightbox">
+          <p>Movimentações</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-menu-col">
+        <div class="menu-col">
+          <div class="index">
+            <p>Validação das Tabelas</p>
+          </div>
+          <a style="text-decoration: none;" href="table_FNT.html">
+            <div class="stg">
+              <p>STG_FNT_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_MVT.html">
+            <div class="stg">
+              <p>STG_MVT_CRD</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_OPR.html">
+            <div class="stg">
+              <p>STG_OPR_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_PGT.html">
+            <div class="stg">
+              <p>STG_PGT</p>
+            </div>
+          </a>
+
+          <div class="index">
+            <p>Resultados da Remessa</p>
+          </div>
+          <a style="text-decoration: none;" href="result_MVT.html">
+            <div class="stg-in">
+              <p>Movimentações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_OPR.html">
+            <div class="stg">
+              <p>Operações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_PGT.html">
+            <div class="stg">
+              <p>Pagamentos</p>
+            </div>
+          </a>
+
+          <div class="index_two_rows">
+            <p>Índice de Pagamentos<br>em Dia</p>
+          </div>
+          <a style="text-decoration: none;" href="index_MOD.html">
+            <div class="stg">
+              <p>Por Modalidades</p>
+            </div>
+          </a>
+          <div class="index_two_rows">
+            <p>Índice de Número de Pagamentos por Clientes</p>
+          </div>
+          <a style="text-decoration: none;" href="index_FaixaVAL.html">
+            <div class="stg">
+              <p>Por Faixas de Valores</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- content of graphs and etc. -->
+      <div class="container-content-col">
+        <section id="graphs">
+          <div class="static_graph_container_02">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Valor Total das Parcelas</div>
+              </div>
+              <div class="result_content">
+                  <div class="result_value">R$ 10,000,650,715.08</div>                
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Valor Total das Faturas do Cartão de Crédito</div>
+              </div>
+              <div class="result_content">
+                  <div class="result_value">R$ 19,327,671,920</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Valor Mínimo das Faturas do Cartão de Crédito</div>
+              </div>
+              <div class="result_content">
+                  <div class="result_value">R$ 6,071,737,936.60</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Quantidade Total de Movimentações</div>
+              </div>
+              <div class="result_content">
+                  <div class="result_value">57,060,759</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_five">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Média do Número de Movimentações por Clientes</div>
+              </div>
+              <div class="result_content">
+                  <div class="result_value">13.00</div>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+          <div class="dynamic_graph_container_result_MVT">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Valor Total das Movimentações</div>
+                <div class="paragraph">Valor das parcelas, valor das faturas ou saldo devedor por modalidades</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/mvt_modalidades.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Tabela de Movimentações por Modalidades</div>
+                <div class="paragraph">Valor de parcelas, valor de faturas (cartão de crédito) ou saldo devedor 
+                  (cheque especial), número de clientes e número de movimentações
+                </div>
+              </div>
+              <div class="content">
+                <iframe src=pags/mvt_tab_modalidades.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Comparação do Número Total de Clientes e Movimentações</div>
+                <div class="paragraph">Por modalidades</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/mvt_clientes_movimentacoes.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Número Total de Clientes</div>
+                <div class="paragraph">Por modalidades</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/mvt_clientes.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_five">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Número Total de Movimentações</div>
+                <div class="paragraph">Por modalidades</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/mvt_movimentacoes.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+        </section>
+      </div>
+  </main>
+</body>
+
+</html>

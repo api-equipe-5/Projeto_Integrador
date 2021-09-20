@@ -1,0 +1,37 @@
+[
+  {
+    "model": "vagas.beneficio",
+    "pk": 1,
+    "fields": {
+      "nome": "Plano de Saúde"
+    }
+  },
+  {
+    "model": "vagas.beneficio",
+    "pk": 2,
+    "fields": {
+      "nome": "Plano Odontológico"
+    }
+  },
+  {
+    "model": "vagas.beneficio",
+    "pk": 3,
+    "fields": {
+      "nome": "Vale Alimentação"
+    }
+  },
+  {
+    "model": "vagas.beneficio",
+    "pk": 4,
+    "fields": {
+      "nome": "Vale Transporte"
+    }
+  },
+  {
+    "model": "vagas.beneficio",
+    "pk": 5,
+    "fields": {
+      "nome": "Vale Refeição"
+    }
+  }
+]

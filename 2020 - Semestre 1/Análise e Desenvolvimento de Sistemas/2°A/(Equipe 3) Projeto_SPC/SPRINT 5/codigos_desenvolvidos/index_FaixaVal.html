@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="git: diegosilva89, ud21">
+  <title>METAlitcs - Faixas de Valores</title>
+  <link rel="stylesheet" href="_style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="metalitcs">
+        <p><b>METAlitcs</b></p>
+      </div>
+      <div class="location">
+        <div class="leftbox">
+          <p>Índice de Número de Pagamentos por Clientes</p>
+        </div>
+        <div class="rightbox">
+          <p>Por Faixas de Valores</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-menu-col">
+        <div class="menu-col">
+          <div class="index">
+            <p>Validação das Tabelas</p>
+          </div>
+          <a style="text-decoration: none;" href="table_FNT.html">
+            <div class="stg">
+              <p>STG_FNT_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_MVT.html">
+            <div class="stg">
+              <p>STG_MVT_CRD</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_OPR.html">
+            <div class="stg">
+              <p>STG_OPR_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_PGT.html">
+            <div class="stg">
+              <p>STG_PGT</p>
+            </div>
+          </a>
+
+          <div class="index">
+            <p>Resultados da Remessa</p>
+          </div>
+          <a style="text-decoration: none;" href="result_MVT.html">
+            <div class="stg">
+              <p>Movimentações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_OPR.html">
+            <div class="stg">
+              <p>Operações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_PGT.html">
+            <div class="stg">
+              <p>Pagamentos</p>
+            </div>
+          </a>
+
+          <div class="index_two_rows">
+            <p>Índice de Pagamentos<br>em Dia</p>
+          </div>
+          <a style="text-decoration: none;" href="index_MOD.html">
+            <div class="stg">
+              <p>Por Modalidades</p>
+            </div>
+          </a>
+          <div class="index_two_rows">
+            <p>Índice de Número de Pagamentos por Clientes</p>
+          </div>
+          <a style="text-decoration: none;" href="index_FaixaVAL.html">
+            <div class="stg-in">
+              <p>Por Faixas de Valores</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- content of graphs and etc. -->
+      <div class="container-content-col">
+        <div class="container-content-col">
+          <section id="graphs">
+            <div class="dynamic_graph_container_index_FaixaVAL">
+              <div class="graph_one">
+                <!-- graph form -->
+                <div class="head">
+                  <div class="title">Número de Pagamentos por Clientes</div>
+                  <div class="paragraph">Por faixa de valores de Pagamentos</div>
+                </div>
+                <div class="content">
+                  <iframe src=pags/pgt_indice_pgt_por_cli_faixas_valores.html></iframe>
+                </div>
+                <!-- graph form -->
+              </div>
+              <div class="graph_two">
+                <!-- graph form -->
+                <div class="head">
+                  <div class="title">Tabela de Pagamentos por Faixas de Valores</div>
+                  <div class="paragraph">Totais de pagamentos, número de clientes, número de pagamentos e número de pagamentos por cliente</div>
+                </div>
+                <div class="content">
+                  <iframe src=pags/pgt_indice_pgt_por_cli_tab_faixas_valores.html></iframe>
+                </div>
+                <!-- graph form -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
