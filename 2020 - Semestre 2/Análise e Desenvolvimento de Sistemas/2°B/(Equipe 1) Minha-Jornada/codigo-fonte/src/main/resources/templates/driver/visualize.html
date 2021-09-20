@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listagem de usuarios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+</div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Visualização do banco de horas de <td th:text="${driver.name}"></td> <td th:text="${driver.surname}"></td>
+        </h1>
+    </div>
+</section>
+<section class="container mt-5">
+    <input class="input is-rounded mb-5" id="txtSearch" name="keyword" placeholder="Entre com uma data para pesquisar"
+           type="text">
+
+    <table class="table container" style="width: 100%">
+        <thead>
+        <tr>
+            <th>Id</th>
+           <!-- <th>ID Driver</th>-->
+            <th>Data</th>
+            <th>Tempo de Refeição</th>
+            <th>Tempo de Trabalho</th>
+            <th>Tempo de Intervalo</th>
+            <th>Observação/Justificativa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:id="'tr' + ${journey.id}" th:each="journey: ${journeyList}">
+            <td th:text="${journey.id}">Id</td>
+            <!--<td th:text="${journey.getIdDriver()}">Id Driver</td>-->
+             <td th:text="${journey.date}">Data</td>
+             <td th:text="${journey.mealtime}">Tempo de Refeição</td>
+             <td th:text="${journey.workingtime}">Tempo de Trabalho</td>
+             <td th:text="${journey.resttime}">Tempo de Intervalo</td>
+            <td th:text="${journey.observation}">Observação/Justificativa</td>
+         </tr>
+         </tbody>
+     </table>
+ </section>
+
+ <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"></script>
+
+ <script th:inline="javascript">
+     /*<![CDATA[*/
+     var hourBank = /*[[${journey}]]*/;
+     /*]]>*/
+
+     $('#txtSearch').on('keyup',function (){
+         var value = $(this).val();
+
+         FilterFunction(value,hourBank);
+     });
+
+     function FilterFunction(value,data){
+         var filteredData = [];
+         for(var i =0;i<data.length;i++){
+             var fname = data[i].date;
+             if(fname.includes(value)){
+                 document.querySelector("#tr" + data[i].id).style.display = 'table-row'
+             } else {
+                 document.querySelector("#tr" + data[i].id).style.display = 'none'
+             }
+         }
+     }
+ </script>
+
+ </body>
+ </html>

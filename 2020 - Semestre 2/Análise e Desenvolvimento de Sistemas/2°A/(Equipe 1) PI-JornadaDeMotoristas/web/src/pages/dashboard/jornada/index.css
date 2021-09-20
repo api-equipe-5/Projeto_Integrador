@@ -1,0 +1,25 @@
+.indexJornada{
+    padding: 20px 40px;
+}
+
+.indexJornada .listHeader h5{
+    font-size: 16px;
+    color: #333333;
+}
+
+.indexJornada .listHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 20px 20px;
+}
+
+.indexJornada .listHeader a{
+    text-decoration: none;
+    color: #2E64FE;
+    transition: 0.3s;
+}
+
+.indexJornada .listHeader a:hover{
+    color: #08088A;
+}

@@ -1,0 +1,23 @@
+.main {
+  background-color: #F0FCFF;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  margin-top: 400px;
+  height: 100%;
+  padding: 5px;
+  align-items: center;
+}
+
+.container h1{
+  margin-bottom: 20px;
+  color: #006478;
+}
+
+.container p{
+  color: #006478;
+}

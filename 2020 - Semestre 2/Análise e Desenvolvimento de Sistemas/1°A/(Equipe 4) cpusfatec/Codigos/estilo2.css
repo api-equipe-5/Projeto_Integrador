@@ -1,0 +1,1889 @@
+/*Label*/
+.mercadopago-button{
+    margin-top: 16px;
+    width: 100%;
+}
+
+label[for="files"] {
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -80px;
+    border: 1px solid black;
+    display: none;
+    text-align: center;
+}
+
+label[for="files"]:hover {
+    opacity: 0.8;
+}
+
+label[for="files"]:active {
+    opacity: 0.9;
+}
+
+#alterabotao {
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    left: 10px;
+    bottom: 100px;
+    border: 0px black solid;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+
+/*fim*/
+
+label[for="bt-menu"] {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    display: none;
+    float: right;
+    margin-right: 100px;
+}
+
+.center__text {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -60px;
+}
+
+.center__text1 {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glitch {
+    position: relative;
+    color: white;
+    mix-blend-mode: lighten;
+}
+
+.glitch:before,
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: black;
+    clip: rect(0, 0, 0, 0);
+}
+
+.glitch:before {
+    left: -1px;
+    text-shadow: 2px 0 rgba(255, 0, 0, 0.7);
+}
+
+.glitch:after {
+    left: 1px;
+    text-shadow: -2px 0 rgba(0, 0, 255, 0.7);
+}
+
+.glitch:hover:before {
+    text-shadow: 5px 0 rgba(255, 0, 0, 0.7);
+    animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+}
+
+.glitch:hover:after {
+    text-shadow: -6px 0 rgba(0, 0, 255, 0.7);
+    animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px, 9999px, 9px, 0);
+    }
+    25% {
+        clip: rect(25px, 9999px, 99px, 0);
+    }
+    50% {
+        clip: rect(50px, 9999px, 102px, 0);
+    }
+    75% {
+        clip: rect(30px, 9999px, 92px, 0);
+    }
+    100% {
+        clip: rect(91px, 9999px, 98px, 0);
+    }
+}
+
+@keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px, 9999px, 119px, 0);
+    }
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px, 9999px, 19px, 0);
+    }
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px, 9999px, 11px, 0);
+    }
+    75% {
+        top: 0px;
+        left: -4px;
+        clip: rect(95px, 9999px, 53px, 0);
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px, 9999px, 149px, 0);
+    }
+}
+
+body {
+    margin: 0 auto;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 90px;
+}
+
+input[type='file'] {
+    display: none
+}
+
+.topo {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(6, 16, 50);
+}
+
+#topo-tudo {
+    background-color: rgb(6, 16, 50);
+    margin-top: 0px;
+    height: 60px;
+    width: 100%;
+}
+
+#topo-tudo2 {
+    display: none;
+}
+
+.topo-textos {
+    float: right;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.topo-texto {
+    color: white;
+    font-size: 16px;
+    float: left;
+    margin: 40px 0px 0px 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid black;    
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.topo-texto:hover {
+    cursor: pointer;
+}
+
+
+.topo-logo {
+    float: left;
+    margin: 10px 0px 0px 150px;
+    cursor: pointer;
+}
+.loguinho{
+    height: 85px;
+    width: 130px;
+}
+
+#inv {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000000;
+    display: none;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#logo-caixa {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -400px;
+    transition-duration: 1s;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.modal-caixa {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+#modal {
+    margin-top: -250px;
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000000;
+    transition-duration: 1s;
+}
+
+#modal2 {
+    margin-top: -250px;
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000000;
+    transition-duration: 1s;
+}
+
+.meio {
+    height: 800px;
+    width: 1599px;
+}
+
+.meio.foto {
+    object-fit: cover;
+}
+
+#hero-image {
+    content: "";
+    background-image: url("../img/fundo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#trabalhos-ir-v {
+    height: 10px;
+    width: 10px;
+    margin: -120px 0px 120px 0px;
+}
+
+#trabalhos-ir {
+    width: 100%;
+    height: 1150px;
+    background-color: white;
+}
+
+.trabalhos-titulo {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.conteiner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.card-imagem {
+    width: 280px;
+    height: 200px;
+}
+
+.card {
+    height: 400px;
+    width: 500px;
+    margin: 100px 0px 0px 0px;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.text-item {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#mais {
+    background-color: rgb(228, 228, 228);
+    width: 80px;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+#mais:hover {
+    background-color: rgb(163, 162, 162);
+}
+
+#mais-add {
+    height: 580px;
+    background-color: white;
+}
+
+#mais-add2 {
+    height: 640px;
+    background-color: white;
+}
+
+#contato-ir-v {
+    height: 10px;
+    width: 10px;
+    margin: -100px 0px 60px 0px;
+}
+
+#contato-ir {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.contato-caixa {
+    width: 1250px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.contato-titulo {
+    font-size: 40px;
+    text-align: left;
+}
+
+.contato-caixa1 {
+    width: 500px;
+    float: left;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.form-control {
+    margin-top: -10px;
+}
+
+.contato-caixa2 {
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 100px 50px 0px 0px;
+    font-size: 20px;
+}
+
+.icone {
+    margin: 0px 5px 0px 5px;
+}
+
+.icone-f {
+    margin: 31px 0px 0px 20px;
+    float: left;
+}
+
+.icone-i {
+    margin: 35px 0px 0px 10px;
+    float: left;
+}
+
+.icone-l {
+    margin: 38px 0 0 20px;
+    border-radius: 150px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.icone-f:hover {
+    margin: 26px -5px 0px 15px;
+    height: 70px;
+    width: 70px;
+}
+
+.icone-i:hover {
+    margin: 30px -5px 0px 5px;
+    height: 60px;
+    width: 60px;
+}
+
+.icone-l:hover {
+    margin: 33px -5px 0 15px;
+    border-radius: 150px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    height: 55px;
+    width: 55px;
+}
+
+.caio {
+    width: 450px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    color: white;
+}
+
+#mapa {
+    margin: 0 auto;
+    height: 460px;
+    width: 100%;
+    margin-top: -400px;
+    transition-duration: 1s;
+}
+
+.caixa-x-mapa {
+    margin-top: -450px;
+    margin-left: 95.5%;
+}
+
+#x-mapa {
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+.x-mapa-text {
+    margin-top: -5px;
+    font-weight: 650;
+    color: rgb(102, 102, 102);
+    font-size: 30px;
+}
+
+.x-mapa-text:hover {
+    margin-top: -5px;
+    font-weight: 650;
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+}
+
+#caixa-bot {
+    width: 70px;
+    height: 70px;
+    z-index: 10000;
+    position: fixed;
+}
+
+#bot {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 100px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+}
+
+#whats {
+    border-radius: 100px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+}
+
+#bot:hover {
+    opacity: 0.8;
+}
+
+#whats:hover {
+    opacity: 0.8;
+}
+
+#containe {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#bot-titulo {
+    height: 50px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    z-index: 3;
+    position: relative;
+}
+
+#bot-titulo p {
+    margin: 0;
+    padding: 0;
+    padding-top: 17px;
+    padding-left: 10px;
+    color: #59f;
+    float: left;
+    font-size: 14px;
+}
+
+#bot-titulo h6 {
+    padding: 0;
+    margin: 0;
+    padding-top: 17px;
+    padding-left: 50px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+
+.chats {
+    width: 100%;
+    display: block;
+    height: 480px;
+    list-style: none;
+    position: absolute;
+    bottom: 50px;
+    transition: bottom 0.2s;
+    overflow-y: scroll;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+li {
+    max-width: 70%;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    opacity: 1;
+    transition: all 0.5s;
+    word-wrap: break-word;
+    font-size: 15px;
+    position: relative;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.chats-right {
+    float: right;
+    text-align: right;
+    background-color: #59f;
+    color: #fff;
+    margin-left: 80%;
+}
+
+.chats-right:after {
+    right: -3px;
+    background-color: #59f;
+}
+
+.chats-left {
+    float: left;
+    text-align: left;
+    margin-right: 30%;
+    margin-left: 40px;
+    background-color: #eee;
+    color: #333;
+    transition-delay: 1s;
+}
+
+.chats-left:after {
+    left: -3px;
+    background-color: #eee;
+}
+
+.chats-left:before {
+    content: "";
+    background-image: url("../img/robo2.png");
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+}
+
+.pre {
+    opacity: 0;
+}
+
+.chats-right.pre {
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.chats-left.pre {
+    margin-left: 100px;
+    margin-right: 10%;
+}
+
+#input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+}
+
+input {
+    background-color: #eee;
+    padding: 20px;
+    font-size: 14px;
+    border: 0;
+    width: 80%;
+}
+
+.response-button {
+    width: 113%;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0px;
+    background-color: #f8f8f8;
+    color: #59f;
+    margin-left: -10px;
+}
+
+.response-button:first-child {
+    margin-top: 10px;
+}
+
+.response-button:last-child {
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.submit-button {
+    border: 0;
+    padding: 20px;
+    background-color: #59f;
+    color: #eee;
+    font-size: 14px;
+    float: right;
+    transition: all 0.2s;
+    width: 20%;
+}
+
+.response-image {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.submit-button:hover {
+    background-color: #567;
+}
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1180px) and (max-width:1279px) {
+
+    .contato-caixa {
+        width: 97%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1180px) and (max-width:1199px) {
+    .contato-caixa1 {
+        margin-left: 100px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1160px) and (max-width:1179px) {
+    .conteiner {
+        width: 1100px;
+    }
+    .contato-caixa {
+        width: 1120px;
+    }
+    .contato-caixa1 {
+        margin-left: 100px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1140px) and (max-width:1159px) {
+    .conteiner {
+        width: 1080px;
+    }
+    .contato-caixa {
+        width: 1100px;
+    }
+    .contato-caixa1 {
+        margin-left: 100px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1120px) and (max-width:1139px) {
+
+    .conteiner {
+        width: 1060px;
+    }
+    .contato-caixa {
+        width: 1080px;
+    }
+    .contato-caixa1 {
+        margin-left: 80px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1100px) and (max-width:1119px) {
+
+    .conteiner {
+        width: 1040px;
+    }
+    .contato-caixa {
+        width: 1060px;
+    }
+    .contato-caixa1 {
+        margin-left: 60px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1080px) and (max-width:1099px) {
+    .conteiner {
+        width: 1020px;
+    }
+    .contato-caixa {
+        width: 1060px;
+    }
+    .contato-caixa1 {
+        margin-left: 40px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1060px) and (max-width:1079px) {
+
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    .contato-caixa {
+        width: 1040px;
+    }
+    .contato-caixa1 {
+        margin-left: 20px;
+    }
+    .contato-caixa2 {
+        width: 300px;
+        float: right;
+        margin: 100px 50px 0px 0px;
+        font-size: 20px;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1040px) and (max-width:1059px) {
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    .contato-caixa {
+        width: 1020px;
+        height: 800px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 100px 0px 0px 380px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1020px) and (max-width:1039px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 980px;
+        height: 800px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 380px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:1000px) and (max-width:1019px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 960px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 230px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 360px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:980px) and (max-width:999px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 940px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 200px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 330px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:960px) and (max-width:979px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 920px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 190px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 320px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:940px) and (max-width:959px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 900px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 180px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 310px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:920px) and (max-width:939px) {
+
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 880px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 170px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 300px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:881px) and (max-width:919px) {
+    .center__text {
+        font-size: 85px;
+    }
+    .center__text1 {
+        font-size: 45px;
+    }
+    .conteiner {
+        width: 500px;
+    }
+    .card {
+        float: left;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 2200px;
+        background-color: white;
+    }
+    .contato-caixa {
+        width: 860px;
+        height: 800px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 120px;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 1050px;
+        background-color: black;
+    }
+    .caio {
+        width: 450px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0 auto;
+        color: white;
+    }
+    .contato-caixa1 {
+        width: 500px;
+        float: left;
+        font-size: 20px;
+        margin-left: 160px;
+    }
+    .contato-caixa2 {
+        width: 500px;
+        float: left;
+        margin: 80px 0px 0px 290px;
+        font-size: 20px;
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 560px;
+        width: 100%;
+        margin-top: -600px;
+    }
+    .caixa-x-mapa {
+        margin-top: -550px;
+        margin-left: 95.5%;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 880px) {
+    label[for="bt-menu"] {
+        display: block;
+    }
+    #topo-tudo2 {
+        background-color: rgb(6, 16, 50);
+        transition-duration: 1s;
+        margin-top: 0px;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        display: block;
+        z-index: 1;
+    }
+    #topo-tudo {
+        display: none;
+    }
+}
+
+
+/*celular*/
+
+
+/*111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111*/
+
+@media screen and (min-width:0px) and (max-width:880px) {
+    body {
+        width: 100%;
+    }
+    .topo {
+        height: 60px;
+        width: 100%;
+    }
+    .topo-logo {
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .loguinho{
+        height: 50px;
+        width: 70px;
+    }
+    #logo-caixa {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        margin-top: -400px;
+        transition-duration: 1s;
+        margin-left: 0px;
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .modal-caixa {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #modal {
+        margin-top: -250px;
+        height: 200px;
+        width: 80%;
+        background-color: white;
+        position: fixed;
+        z-index: 1000000;
+        transition-duration: 1s;
+    }
+    #modal2 {
+        margin-top: -250px;
+        height: 200px;
+        width: 80%;
+        background-color: white;
+        position: fixed;
+        z-index: 1000000;
+        transition-duration: 1s;
+    }
+    label[for="files"]:hover {
+        opacity: 0.6;
+    }
+    label[for="files"]:active {
+        opacity: 0.9;
+    }
+    .center__text {
+        font-size: 50px;
+        margin-top: -10px;
+    }
+    .center__text1 {
+        font-size: 30px;
+    }
+    .card {
+        height: 300px;
+        width: 300px;
+    }
+    .conteiner {
+        width: 300px;
+    }
+    .card-body {
+        height: 150px;
+        width: 300px;
+        font-size: 13px;
+    }
+    #trabalhos-ir {
+        width: 100%;
+        height: 1750px;
+        background-color: white;
+    }
+    #mais:hover {
+        background-color: rgb(228, 228, 228);
+    }
+    #mais:active {
+        background-color: rgb(163, 162, 162);
+    }
+    .contato-caixa {
+        width: 95%;
+        height: 700px;
+        background-color: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        ;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .contato-titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    #contato-ir {
+        width: 100%;
+        height: 860px;
+        background-color: black;
+        overflow: hidden;
+    }
+    .caio {
+        margin: 0 auto;
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        width: 100%;
+        height: 30px;
+        padding-top: 50px;
+    }
+    .contato-caixa1 {
+        width: 95%;
+        font-size: 20px;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 40px;
+    }
+    .contato-caixa2 {
+        width: 190px;
+        height: 200px;
+        margin: 0 auto;
+        font-size: 15px;
+        float: none;
+    }
+    .icone {
+        height: 20px;
+        width: 20px;
+    }
+    .icone-f {
+        margin: 31px 0px 0px 20px;
+        float: left;
+        height: 45px;
+        width: 45px;
+    }
+    .icone-i {
+        margin: 35px 0px 0px 10px;
+        float: left;
+        height: 35px;
+        width: 35px;
+    }
+    .icone-l {
+        margin: 38px 0 0 20px;
+        border-radius: 150px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        float: left;
+        height: 30px;
+        width: 30px;
+    }
+    .icone-f:hover {
+        margin: 26px -2.5px 0px 17.5px;
+        height: 50px;
+        width: 50px;
+    }
+    .icone-i:hover {
+        margin: 30px -2.5px 0px 7.5px;
+        height: 40px;
+        width: 40px;
+    }
+    .icone-l:hover {
+        margin: 33px 0px 0 17.5px;
+        border-radius: 150px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        height: 35px;
+        width: 35px;
+    }
+    .topo-textos {
+        margin: 0 auto;
+        width: 283px;
+        text-align: left;
+        float: none;
+    }
+    .topo-texto {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 30px;
+        float: left;
+    }
+    label[for="bt-menu"] {
+        display: block;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(6, 16, 50);
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin-right: 40px;
+        margin-top: 2px;
+        transition-duration: 1s;
+    }
+    .giro {
+        transform: rotate(90deg);
+    }
+    #mapa {
+        margin: 0 auto;
+        height: 360px;
+        width: 100%;
+        margin-top: -400px;
+    }
+    .caixa-x-mapa {
+        margin-top: -350px;
+        margin-left: 83.5%;
+    }
+    #x-mapa {
+        cursor: pointer;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        height: 40px;
+        width: 40px;
+        position: absolute;
+    }
+    .x-mapa-text {
+        margin-top: -5px;
+        font-weight: 650;
+        color: rgb(102, 102, 102);
+        font-size: 30px;
+    }
+    .x-mapa-text:hover {
+        color: rgb(102, 102, 102);
+    }
+    .x-mapa-text:active {
+        color: rgb(51, 51, 51);
+    }
+    #caixa-bot {
+        z-index: 10000;
+        position: fixed;
+    }
+    #bot {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        background-color: green;
+        z-index: 1000;
+        border-radius: 100px;
+        cursor: pointer;
+        float: right;
+    }
+    #bot:hover {
+        opacity: 1.0;
+    }
+    #bot:active {
+        opacity: 0.8;
+    }
+    .robo-img {
+        height: 30px;
+        width: 30px;
+    }
+    .whats-img {
+        height: 50px;
+        width: 80px;
+    }
+    #whats:hover {
+        opacity: 1.0;
+    }
+    #whats:active {
+        opacity: 0.8;
+    }
+    #containe {
+        height: 400px;
+        position: relative;
+        background-color: #fff;
+        position: fixed;
+        z-index: 10000;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    #bot-titulo {
+        height: 40px;
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+        z-index: 3;
+        position: relative;
+    }
+    #bot-titulo p {
+        margin: 0;
+        padding: 0;
+        padding-top: 17px;
+        padding-left: 10px;
+        color: #59f;
+        float: left;
+        font-size: 14px;
+    }
+    #bot-titulo h6 {
+        padding: 0;
+        margin: 0;
+        padding-top: 17px;
+        padding-left: 50px;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        float: left;
+    }
+    #chats {
+        display: block;
+        list-style: none;
+        padding: 10px;
+        position: absolute;
+        bottom: 50px;
+        transition: bottom 0.2s;
+        overflow-y: scroll;
+        padding-right: 30px;
+    }
+    .clear {
+        clear: both;
+    }
+    li {
+        max-width: 70%;
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 3px;
+        opacity: 1;
+        transition: all 0.5s;
+        word-wrap: break-word;
+        font-size: 15px;
+        position: relative;
+    }
+    li:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+    }
+    .chats-right {
+        float: right;
+        text-align: right;
+        background-color: #59f;
+        color: #fff;
+        margin-left: 80%;
+    }
+    .chats-right:after {
+        right: -3px;
+        background-color: #59f;
+    }
+    .chats-left {
+        float: left;
+        text-align: left;
+        margin-left: 40px;
+        background-color: #eee;
+        color: #333;
+        margin-right: 30%;
+    }
+    .chats-left:after {
+        left: -3px;
+        background-color: #eee;
+    }
+    .chats-left:before {
+        content: "";
+        background-image: url("../img/robo2.png");
+        position: absolute;
+        top: 5px;
+        left: -40px;
+        width: 30px;
+        height: 30px;
+    }
+    .pre {
+        opacity: 0;
+    }
+    .chats-right.pre {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+    .chats-left.pre {
+        margin-left: 100px;
+        margin-right: 10%;
+    }
+    #input {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+    }
+    input {
+        background-color: #eee;
+        padding: 20px;
+        font-size: 14px;
+        border: 0;
+        width: 80%;
+    }
+    .response-button {
+        width: 113%;
+        border: 0px;
+        border-top: 1px solid #ccc;
+        padding: 10px 0px;
+        background-color: #f8f8f8;
+        color: #59f;
+        margin-left: -10px;
+    }
+    .response-button:first-child {
+        margin-top: 10px;
+    }
+    .response-button:last-child {
+        margin-bottom: -10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .submit-button {
+        border: 0;
+        padding: 20px;
+        background-color: #59f;
+        color: #eee;
+        font-size: 14px;
+        float: right;
+        transition: all 0.2s;
+        width: 20%;
+    }
+    .response-image {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .submit-button:hover {
+        background-color: #567;
+    }
+    .needs-validation {
+        text-align: center;
+    }
+}

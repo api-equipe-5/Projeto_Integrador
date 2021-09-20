@@ -1,0 +1,250 @@
+/*
+I wanted to go with a mobile first approach, but it actually lead to more verbose CSS in this case, so I've gone web first. Can't always force things...
+
+Side note: I know that this style of nesting in SASS doesn't result in the most performance efficient CSS code... but on the OCD/organizational side, I like it. So for CodePen purposes, CSS selector performance be damned.
+*/
+/* Global settings */
+/* Global "table" column settings */
+
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+}
+
+
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price {
+  float: left;
+  width: 22%;
+  text-align: center;
+}
+
+
+/* This is used as the traditional .clearfix class */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {}
+
+/* Body/Header stuff */
+body {position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+label {
+  color: #aaa;
+}
+
+.shopping-cart {
+  text-align: center;
+  margin-top: -45px;
+  width: 98%;
+}
+
+/* Column headers */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.column-labels label.product-line-price{
+  width: 22%;
+}
+
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.product .product-image {
+  text-align: center;
+}
+.product .product-image img {
+  width: 100px;
+}
+.product .product-details .product-title {
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+
+.product .remove-product {
+  background-color: #5B2CBF;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 0;
+}
+.product .remove-product:hover {
+  background-color: #6f42c1;
+}
+
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals .totals-item label {
+  position: absolute;
+  clear: both;
+  width: 10%;
+  text-align: left;
+  left: 70%;
+}
+.totals .totals-item .totals-value {
+  position: absolute;
+  width: 10%;
+  text-align: right;
+  left: 80%;
+}
+.totals .totals-item-total {
+  font-family: "Poppins", sans-serif;
+}
+
+.continue{
+  position: absolute;
+  width: 25%;
+  margin-top: 90px;
+  border:0;
+  max-height: 7%;
+  background-color: blue;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+  left: 68%;
+}
+
+.continue:hover {
+  background-color: #6f42c1;
+}
+
+.checkout {
+  position: absolute;
+  border: 0;
+  width: 25%;
+  max-height: 7%;
+  margin-top: 40px;
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  left: 68%}
+
+.checkout:hover {
+  background-color: #5B2CBF;
+  cursor: pointer;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+  }
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+   
+
+
+  .totals .totals-item label {
+    width: 60%;
+  }
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}

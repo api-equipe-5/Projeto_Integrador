@@ -1,0 +1,12 @@
+.createJornada{
+    padding: 20px 40px;
+}
+
+.createJornada section{
+    margin-bottom: 20px;
+}
+
+.createJornada section a{
+    text-decoration: none;
+    color: black;
+}

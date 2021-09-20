@@ -1,0 +1,43 @@
+.sidenav{
+    background-color: #333333;
+    color: white;
+    height: 100vh;
+    width: 25vw;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.sidenav section{
+    height: 80px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav section a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.sidenav ul{
+    list-style: none;
+}
+
+.sidenav ul li{
+    padding-left: 18px;
+    margin: 12px 0px;
+}
+
+.sidenav ul li a{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+.game {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: blue;
+    color: #FFF;
+    border: 6px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game > div {
+    border: 6px solid black;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.winner{
+    background-color: red;
+}

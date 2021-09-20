@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}</title>
+    
+</head>
+<style>
+
+
+.tx1{
+    position: absolute;
+    width: 185px;
+    height: 60px;
+    left: 70px;
+    top: 100px;
+    
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 12px;
+
+}
+
+.fc{
+    position: absolute;
+    left: -2px;
+    top: 130px;
+
+}
+
+
+
+
+
+
+</style>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+    
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+    <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/faleconosco.PNG"  style="width: 180px;"  alt="Image" class= "fc1">
+    <br>
+    <div class="col-lg mt-3">
+    <p style="font-weight: bolder;">Nome: Antonio Egydio São Thiago Graça</p>
+    <p style="font-weight: bolder;">E-mail: antonio.graca@fatec.sp.gov.br</p>
+    <p style="font-weight: bolder;">Telefone:</p>
+    <p style="font-weight: bolder;">LinkedIn:</p>
+
+
+    <p></p>   
+    <br>
+    <br>
+   
+    <div>
+    <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/falecom osdesenvolvedores.PNG"  style="width: 180px;" style="left: 45px;" alt="Image" class= "fc">
+    </div>
+    <br>
+    <p></p>   
+    <p></p>   
+    <p></p>   
+    <p></p>  
+    <p></p>
+    <p></p>   
+    <p></p>   
+    <p></p>   
+    <p></p>  
+    <p></p>  
+    <p></p>  
+    <p style="font-weight: bolder;">
+        Guilherme Cleyton Pereira (Scrum Master) – <a href = "https://github.com/gui863" >Git Hub</a>, <a href = "https://www.linkedin.com/in/guilherme-cleyton-7993aa7a/">LinkedIn;</a>
+    </p>
+    <p style="font-weight: bolder;">
+        Danielle Brito Evangelista – <a href = "https://github.com/DanielleBritoEvangelista">Git Hub</a>, <a href = "https://www.linkedin.com/in/danielle-brito-81b4381b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV7w%2BnMliT5CnzhdsWhACew%3D%3D">LinkedIn;</a>
+    </p>
+    <p style="font-weight: bolder;">
+        Elias Ferreira de Faria - <a href = "https://github.com/elias31072002">Git Hub</a>, <a href = "https://www.linkedin.com/in/elias-ferreira-525ba41b6/">LinkedIn;</a>
+    </p>
+    <p style="font-weight: bolder;">
+        Lucas Cesar Andrade Prado – <a href = "https://github.com/LucasACES">Git Hub</a>, <a href = "https://www.linkedin.com/in/lucas-c%C3%A9sar-2020k/">LinkedIn;</a>
+    </p>
+    <p style="font-weight: bolder;">
+        Marcus Vinicius Augusto Rocha – <a href = "https://github.com/mvarocha">Git Hub</a>, <a href = "https://www.linkedin.com/in/marcus-vin%C3%ADcius-augusto-rocha-568bb8192/">LinkedIn.</a>
+    </p>   
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+    </div>
+    {% include 'parciais/_footer.html' %}
+
+    
+</body>
+
+</html>

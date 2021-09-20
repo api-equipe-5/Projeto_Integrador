@@ -1,0 +1,2 @@
+Concordância_video.mp4 filter=lfs diff=lfs merge=lfs -text
+Pontuação_video.mp4 filter=lfs diff=lfs merge=lfs -text

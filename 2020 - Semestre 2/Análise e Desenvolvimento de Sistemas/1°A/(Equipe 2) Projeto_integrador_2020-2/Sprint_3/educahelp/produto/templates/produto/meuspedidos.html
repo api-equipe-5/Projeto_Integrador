@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}</title>
+    
+</head>
+<style>
+
+
+.tx1{
+    position: absolute;
+    width: 185px;
+    height: 60px;
+    left: 70px;
+    top: 100px;
+    
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 12px;
+
+}
+
+.fc{
+    position: absolute;
+    left: -2px;
+    top: 130px;
+
+}
+
+
+
+
+
+
+</style>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+    
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+    
+    <div class="card-deck" style="width:100%">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/matematicac.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lógica</h5>
+          <p class="card-text">Matéria: Matemática / Conteúdo: Lógica</p>
+          <a href="{% url 'perfil:interface' %}" class="btn btn-primary">Acessar Conteúdo</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/matematicac.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Grafos</h5>
+          <p class="card-text">Matéria: Matemática / Conteúdo: Grafos</p>
+          <a href="{% url 'perfil:interface2' %}" class="btn btn-primary">Acessar Conteúdo</a>
+        </div>
+      </div>
+    </div>  
+
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% include 'parciais/_footer.html' %}
+
+    
+</body>
+
+</html>

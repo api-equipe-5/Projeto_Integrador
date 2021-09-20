@@ -1,0 +1,25 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+AddDefaultCharset utf-8
+php_value post_max_size 500M
+php_value upload_max_filesize 500M
+
+Options +Indexes
+#IndexOptions FancyIndexing
+#DirectoryIndex main.php
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+
+#Ideias para usar
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

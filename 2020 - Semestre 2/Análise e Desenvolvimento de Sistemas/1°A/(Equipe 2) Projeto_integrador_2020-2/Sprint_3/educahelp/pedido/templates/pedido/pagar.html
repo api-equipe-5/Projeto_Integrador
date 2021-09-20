@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Pagamento | {% endblock %}
+
+{% load omfilters %}
+{% load static %}
+
+{% block conteudo %}
+<div class="container">
+    <div class="col" style="width: 300px;">
+        <h3>Escolha o método de pagamento</h3>
+        <form action="/action_page.php">
+            <div class="form-group">
+              <label for="name">Nome do titular do cartão:</label>
+              <input type="name" class="form-control" placeholder="" id="name">
+            </div>
+            <div class="form-group">
+              <label for="nmr">Número do cartão:</label>
+              <input type="number" class="form-control" placeholder="" id="nmr">
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="number" class="form-control" placeholder="" id="nmr">
+              </div>
+              <div class="form-group">
+                <label for="number">CVC:</label>
+                <input type="number" class="form-control" placeholder="" id="nmr">
+              </div>
+          </form>
+</div>
+
+{% include 'parciais/_pedido.html' %}
+
+<div class="row mt-4">
+    <div class="col">
+        <a href="{% url 'pedido:confirmado' %}" class="btn btn-primary btn-block btn-lg">Pagar</a>
+    </div>
+</div>
+</div>
+<br>
+<br>
+{% endblock %}

@@ -1,0 +1,138 @@
+@media (max-width: 900px){
+
+    .jogo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .corpo {
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #dir {
+        display: none;
+    }
+}
+
+@media (min-height: 760px) {
+
+    .jogo .card {
+        height: 25vh;
+    }
+    
+    .jogo .card img {
+        width:110px; 
+        height:110px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    #esq {
+        display: none;
+    }
+
+    #responsivo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #responsivo span {
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+
+    #responsivo h2 {
+        margin: 5px;
+        margin-left: 24px;
+    }
+
+    #responsivo a {
+        
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
+        font-size: 18px;
+        padding: 10px;
+        margin: 5px;
+        margin-right: 24px;
+        border-radius: 10px;
+
+    }
+
+    .jogo {
+        margin: 0px 10vw 0px 10vw;
+    }
+
+    .jogo .card {
+        width: 27vw;
+        height: 17vh;
+   
+   }
+   
+
+}
+
+@media (max-width: 550px) {
+
+    header nav a {
+
+        display: none;
+
+    }
+
+    .jogo {
+        padding: 10px;
+
+    }
+
+    .jogo .card {
+         width: 27vw;
+         height: 16vh;
+         margin: 2vw;
+    
+    }
+
+    .jogo .card img {
+        width:80px; 
+        height:80px;
+    }
+
+    #vitoria #container {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        font-size: 3.2vw;
+    }
+
+    #vitoria a {
+        left: calc(50% - 14.2vw);
+    }
+
+}
+
+@media (max-width: 280px) {
+    .jogo .card img {
+        width:70px; 
+        height:70px;
+    }
+
+}

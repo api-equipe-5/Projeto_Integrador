@@ -1,0 +1,34 @@
+/**.ratized input[type="radio"]:checked+label:before {
+    content: attr(for)  " / 5";
+    position: absolute;
+    top: 0;
+    right:-20px;
+**/
+
+.ratized {
+    position: relative;
+}
+
+.ratized input[type="radio"] {
+  position: fixed;
+  top: 0;
+  right: 100%;
+}
+
+
+.ratized label {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.ratized input[type="radio"]:checked ~ input + label {
+  background: none;
+  color: #aaa;
+}
+
+.ratized input + label {
+  color: orange;
+}
+
+
+

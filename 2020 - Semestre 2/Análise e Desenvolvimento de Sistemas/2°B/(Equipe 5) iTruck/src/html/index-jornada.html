@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregas Rápidas by iTruck Solutions</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="../img/header-sidebar.png" alt="sidebar image">
+      <div class="user-level">
+        <img src="../img/user-circle.png" alt="user identification">
+      <h2>Administrador</h2></div>
+      <ul class="nav">
+        <li>
+          <a href="funcionarios.html">
+            <span>Funcionários</span>
+          </a>
+        </li>
+        <li>
+          <a href="filiais.html">
+            <span>Filiais</span>
+          </a>
+        </li>
+        <li>
+          <a href="veiculos.html">
+            <span>Veículos</span>
+          </a>
+        </li>
+        <li>
+          <a href="estados.html">
+            <span>Estados</span>
+          </a>
+        </li>
+        <li>
+          <a href="jornadas.html">
+            <span>Jornadas</span>
+          </a>
+        </li>
+        <li>
+          <a href="contato.html">
+            <span>Contato - iTruck</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="container">   
+          <div id="content-title">
+          JORNADA  
+          </div>
+          <form>
+            <div class="container-form">
+            <div>
+              <label for="Data">Data:</label>
+              <input type="text" class="data-jornada" required>
+              <label for="Data">Início:</label>
+              <input type="text" class="inicio-jornada" required>
+              <label for="Data">Fim:</label>
+              <input type="text" class="fim-jornada" required>
+            </div>
+            <div>
+              <label for="estado-origem">Estado Origem:</label>
+              <input type="text" class="estado-origem">
+              <label for="estado-destino">Estado Destino:</label>
+              <input type="text" class="estado-destino">
+            </div>
+            <div>
+              <label for="motorista">Motorista:</label>
+              <input type="text" class="motorista-jornada">
+            </div>
+            <div>
+              <label for="veiculo">Veículo:</label>
+              <input type="text" class="veiculo-jornada">
+              <label for="paradas">Nº de Paradas:</label>
+              <input type="text" class="paradas-jornada">
+            </div>
+            <div>
+              <label for="parada1">Parada 1:</label>
+              <input type="text" class="parada-jornada">
+            </div>
+            <div>
+              <label for="parada2">Parada 2:</label>
+              <input type="text" class="parada-jornada">
+            </div>
+            <div>
+              <label for="contratempos">Contratempos:</label>
+              <input type="text" class="contratempo">
+            </div>
+            </div>
+            </form>
+          <a class="btn-cadastrar" href="jornadas.html">Salvar dados</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

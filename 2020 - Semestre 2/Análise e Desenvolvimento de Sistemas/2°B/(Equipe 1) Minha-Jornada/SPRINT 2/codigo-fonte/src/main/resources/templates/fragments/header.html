@@ -1,0 +1,89 @@
+<header th:fragment="header">
+    <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet"/>
+    <nav aria-label="main navigation" class="navbar is-primary is-light is-spaced" role="navigation">
+        <div class="navbar-brand">
+            <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navbarBasicExample"
+               role="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navbarBasicExample">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Minha Jornada
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Funcionario
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/employee/list" style="margin-left: 4px">
+                            Listagem
+                        </a>
+                        <a class="navbar-item" href="/employee/new" style="margin-left: 4px">
+                            Cadastro de Funcionario
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Sindicato
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/union/list" style="margin-left: 4px">
+                            Listagem
+                        </a>
+                        <a class="navbar-item" href="/union/new" style="margin-left: 4px">
+                            Cadastro de Sindicato
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Motorista
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/driver/list" style="margin-left: 4px">
+                            Listagem
+                        </a>
+                        <a class="navbar-item" href="/driver/new" style="margin-left: 4px">
+                            Cadastro de Motorista
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Veiculos
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/vehicle/list" style="margin-left: 4px">
+                            Listagem
+                        </a>
+                        <a class="navbar-item" href="/vehicle/new" style="margin-left: 4px">
+                            Cadastro de Veiculo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item is-light" href="/employee/password" style="margin-left: 4px">
+                        <i class="fas fa-unlock-alt"></i>
+                    </a>
+                    <a class="navbar-item is-light" href="/logout" style="margin-left: 4px">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+</header>

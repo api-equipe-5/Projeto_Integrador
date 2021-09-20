@@ -1,0 +1,60 @@
+.list{
+    padding: 0px 20px;
+}
+
+.list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list ul li{
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.list ul li section h4{
+    font-size: 22px;
+    color: black;
+}
+
+.list ul li section h5{
+    margin: 0.5px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.list ul li section{
+    display: inline;
+}
+
+.list ul li div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #BDBDBD;
+    font-size: 20px;
+}
+
+.list ul li div span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list ul li div span:hover{
+    color: #2E64FE;
+}
+
+.list ul li div a{
+    text-decoration: none;
+    color: #BDBDBD;
+    transition: 0.3s;
+}
+
+.list ul li div a:hover{
+    color: #2E64FE;
+}

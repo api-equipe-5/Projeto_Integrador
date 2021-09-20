@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Minha Jornada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Edição de Sindicato
+        </h1>
+    </div>
+</section>
+<section class="is-rounded is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="#" class="box" method="post" th:action="@{/union/edit}" th:object="${sindicato}">
+                        <div class="field">
+                            <label class="label" for="">ID</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" readonly="readonly" th:field="*{id}" type="text"/>
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Nome do Sindicato</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="name" name="name" placeholder="Nome do Sindicato"
+                                           th:field="*{name}" type="text">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas de Trabalho</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="workingHours" name="workingHours"
+                                           placeholder="Horas de Trabalho" th:field="*{workingHours}"
+                                           type="number">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas de Descanço</label>
+                            <div class="control has-icons-left">
+                                <td><input class="input" id="restingHours" name="restingHours"
+                                           placeholder="Horas de Descanço"
+                                           th:field="*{restingHours}" type="number">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas de Repouso a ser fracionada</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="firstFraction" name="firstFraction"
+                                           placeholder="Horas de Repouso a ser fracionada"
+                                           th:field="*{firstFraction}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas de Almoço a ser fracionada</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="secondFraction" name="secondFraction"
+                                           placeholder="Horas de Almoço a ser fracionada"
+                                           th:field="*{secondFraction}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas de Folga a ser fracionada</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="thirdFraction" name="thirdFraction"
+                                           placeholder="Horas de Folga a ser fracionada"
+                                           th:field="*{thirdFraction}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horario de Almoço</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="lunchTime" name="lunchTime" placeholder="Horario de Almoço"
+                                           th:field="*{lunchTime}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horario de Folga</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="timeOff" name="timeOff" placeholder="Horario de Folga"
+                                           th:field="*{timeOff}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Banco de hora permitido</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="allowedExtraHours" name="allowedExtraHours"
+                                           placeholder="Banco de hora permitido"
+                                           th:field="*{allowedExtraHours}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="">Horas Extra permitida</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input class="input" id="allowedClockHours" name="allowedClockHours"
+                                           placeholder="Horas Extra permitida"
+                                           th:field="*{allowedClockHours}" type="number">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field" id="savebutton">
+                            <button class="button is-success" id="savebutton">
+                                Editar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            var $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
+        });
+    });
+</script>

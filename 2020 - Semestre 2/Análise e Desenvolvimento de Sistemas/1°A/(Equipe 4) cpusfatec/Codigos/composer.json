@@ -1,0 +1,13 @@
+{
+    "name": "cpu/mp",
+    "description": "Mercado Pago",
+    "authors": [
+        {
+            "name": "Caio",
+            "email": "c.sendreto9116@gmail.com"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^2.2"
+    }
+}

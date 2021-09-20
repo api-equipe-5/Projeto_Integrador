@@ -1,0 +1,12 @@
+.editVeiculo{
+    padding: 20px 40px;
+}
+
+.editVeiculo section{
+    margin-bottom: 20px;
+}
+
+.editVeiculo section a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha Jornada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Cdastro de veículos
+        </h1>
+    </div>
+</section>
+<section class="is-rounded is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    <form action="#" th:action="@{/vehicle/save}" th:object="${vehicle}" method="post" class="box">
+                        <div class="field">
+                            <label for="" class="label">Chassi</label>
+                            <div class="control has-icons-left">
+                                <td><input type="text" name="chassi" id="chassi" placeholder="chassi"
+                                           class="input" required th:field="*{chassi}">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="" class="label">Marca Rastreador</label>
+                            <div class="control has-icons-left">
+                                <td><input type="text" name="tracker_brand" id="tracker_brand"
+                                           placeholder="marca do rastreador" class="input" required
+                                           th:field="*{trackerBrand}">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="" class="label">Versão Rastreador</label>
+                            <div class="control has-icons-left">
+                                <td><input type="text" name="tracker_version" id="tracker_version"
+                                           placeholder="versão do rastreador"
+                                           class="input" required th:field="*{trackerVersion}">
+                                    <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="" class="label">ID Integração</label>
+                            <div class="control has-icons-left">
+                                <td>
+                                    <input type="text" name="id_integr" id="id_integr" placeholder="id integração"
+                                           class="input" required th:field="*{idIntegr}">
+                                    <span class="icon is-small is-left">
+                              	<i class="fa fa-lock"></i>
+                                </td>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field" id="savebutton">
+                            <button class="button is-success">
+                                Registrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            var $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
+        });
+    });
+
+
+
+
+</script>

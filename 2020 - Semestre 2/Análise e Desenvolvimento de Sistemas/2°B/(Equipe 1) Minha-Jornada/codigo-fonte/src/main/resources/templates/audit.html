@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Logs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+</div>
+
+<section class="section hero is-light medium">
+    <div class="container">
+        <h1 class="title">
+            Logs
+        </h1>
+    </div>
+</section>
+<section class="container mt-5">
+    <table class="table container" style="width: 100%">
+        <thead>
+        <tr>
+            <th>Indentificador</th>
+            <th>Entidade</th>
+            <th>Ultima modificação feita por</th>
+            <th>Ultima data de modificação do Entidade</th>
+            <th>Entidade criado por</th>
+            <th>Data De crição do Entidade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="cliente: ${clienteList}" th:id="'tr' + ${cliente.lastModifiedDate}">
+            <td th:text="Usuario"></td>
+            <td th:text="${cliente.name}"></td>
+            <td th:text="${cliente.lastModifiedBy}"></td>
+            <td th:text="${cliente.lastModifiedDate}"></td>
+            <td th:text="${cliente.createdBy}"></td>
+            <td th:text="${cliente.createdDate}"></td>
+        </tr>
+        <tr th:each="union: ${unionList}" th:id="'tr' + ${union.lastModifiedDate}">
+            <td th:text="Sindicato"></td>
+            <td th:text="${union.name}"></td>
+            <td th:text="${union.lastModifiedBy}"></td>
+            <td th:text="${union.lastModifiedDate}"></td>
+            <td th:text="${union.createdBy}"></td>
+            <td th:text="${union.createdDate}"></td>
+        </tr>
+        <tr th:each="driver: ${driverList}" th:id="'tr' + ${driver.lastModifiedDate}">
+            <td th:text="Motorista"></td>
+            <td th:text="${driver.name}"></td>
+            <td th:text="${driver.lastModifiedBy}"></td>
+            <td th:text="${driver.lastModifiedDate}"></td>
+            <td th:text="${driver.createdBy}"></td>
+            <td th:text="${driver.createdDate}"></td>
+        </tr>
+        <tr th:each="vehicle: ${vehicleList}" th:id="'tr' + ${vehicle.lastModifiedDate}">
+            <td th:text="Veiculo"></td>
+            <td th:text="${vehicle.chassi}"></td>
+            <td th:text="${vehicle.lastModifiedBy}"></td>
+            <td th:text="${vehicle.lastModifiedDate}"></td>
+            <td th:text="${vehicle.createdBy}"></td>
+            <td th:text="${vehicle.createdDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<script
+        crossorigin="anonymous"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var cliente = /*[[${cliente}]]*/;
+    /*]]>*/
+
+    $('#txtSearch').on('keyup', function () {
+        var value = $(this).val();
+
+        FilterFunction(value, cliente);
+    });
+
+    function FilterFunction(value, data) {
+        var filteredData = [];
+        for (var i = 0; i < data.length; i++) {
+            value = value.toLowerCase();
+            var fname = data[i].name.toLowerCase();
+            if (fname.includes(value)) {
+                document.querySelector("#tr" + data[i].id).style.display = 'table-row'
+            } else {
+                document.querySelector("#tr" + data[i].id).style.display = 'none'
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

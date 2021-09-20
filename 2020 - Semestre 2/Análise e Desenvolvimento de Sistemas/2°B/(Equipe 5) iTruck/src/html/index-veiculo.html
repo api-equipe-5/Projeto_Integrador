@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregas Rápidas by iTruck Solutions</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="../img/header-sidebar.png" alt="sidebar image">
+      <div class="user-level">
+        <img src="../img/user-circle.png" alt="user identification">
+      <h2>Administrador</h2></div>
+      <ul class="nav">
+        <li>
+          <a href="funcionarios.html">
+            <span>Funcionários</span>
+          </a>
+        </li>
+        <li>
+          <a href="filiais.html">
+            <span>Filiais</span>
+          </a>
+        </li>
+        <li>
+          <a href="veiculos.html">
+            <span>Veículos</span>
+          </a>
+        </li>
+        <li>
+          <a href="estados.html">
+            <span>Estados</span>
+          </a>
+        </li>
+        <li>
+          <a href="jornadas.html">
+            <span>Jornadas</span>
+          </a>
+        </li>
+        <li>
+          <a href="contato.html">
+            <span>Contato - iTruck</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="container">   
+          <div id="content-title">
+          VEÍCULO  
+          </div>
+          <form>
+            <div class="container-form">
+            <div>
+              <label for="marca">Marca:</label>
+              <input type="text" class="marca-veiculo" required>
+              <label for="modelo">Modelo:</label>
+              <input type="text" class="modelo-veiculo" required>
+            </div>
+            <div>
+            <label for="ano">Ano:</label>
+                <input class="ano-veiculo" type="text">
+            <label for="Cor">Cor:</label>
+                <input class="cor-veiculo"id="logradouro" type="text">
+            </div>
+            <div>
+            <label for="placa-veiculo">Placa:</label>
+                <input class="placa-veiculo" type="text" required>
+            <label for="uf">Estado:</label>
+                <select id="uf" class="estado-veiculo">
+                  <option value="selecione">Selecione um Estado:</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </div>
+            </div>
+            </form>
+          <a class="btn-cadastrar" href="funcionarios.html">Salvar dados</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
