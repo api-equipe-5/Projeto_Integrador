@@ -1,0 +1,34 @@
+{% extends 'tables.html' %} {% block content %}
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>Posição</th>
+	  <th>Pontuação Geral</th>
+      <th>ID Fonte</th>
+      <th>Completude</th>
+      <th>Consistência</th>
+      <th>Confiabilidade</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- O for loop abaixo ordena a tabela que gera o ranking de acordo
+    com a matriz gerada pela função "get_ranking" e importada na rota '/rank'
+     -->
+    {% for fonte in ranking %}
+
+    <tr>
+      <td>{{ fonte[-1] }}</td>
+      <td>{{ fonte[0] }}</td>
+      <td>{{ fonte[1] }}</td>
+      <td>{{ fonte[2] }}</td>
+      <td>{{ fonte[3] }}</td>
+      <td>{{ fonte[4] }}</td>
+    </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

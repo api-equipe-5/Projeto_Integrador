@@ -1,0 +1,640 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.body {
+    width: 1280px;
+    height: 720px;
+}
+
+/* Config para inputs */
+input {
+    display: none;
+}
+
+
+input[type=submit] {
+    width: 47.82px;
+    height: 43.71px;
+    outline: none;
+    background: #55DE74;
+    border-radius: 25px;
+    border: 0;
+    top: 0;
+
+
+}
+
+
+/* botão de sair */
+#bt_sair {
+    position: absolute;
+    width: 64px;
+    height: 29.66px;
+    left: 1184px;
+    top: 33px;
+    
+    outline: none;
+    border: 0;
+    background: #DE6E55;
+    border-radius: 25px;
+}
+
+#label_bt_sair {
+    position: absolute;
+    width: 36px;
+    height: 13px;
+    left: 14px;
+    top: 8px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+/* titulo da pagina */
+#titulo {
+    position: absolute;
+    width: 669px;
+    height: 27px;
+    left: 343px;
+    top: 97px;
+
+}
+
+#titulo h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #0C2B5A;
+}
+
+
+
+/*tb1*/
+
+#box1 {
+    position: absolute;
+    width: 364px;
+    height: 43.71px;
+    left: 454.36px;
+    top: 173px;
+}
+
+#STG_FNT_ITT {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+
+#STG_FNT_ITT h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #0C2B5A;
+
+}
+
+#bt_1 {
+    position: absolute;
+    width: 161.85px;
+    height: 43.71px;
+    left: 138px;
+    top:0;
+
+    background: #3E5374;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#bt_1:hover {
+    transition: 800ms;
+    background: #2c3b53;
+}
+
+#label_bt1 {
+    position: absolute;
+    width: 133.65px;
+    height: 21.85px;
+    left: 13.49px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#up1 {
+    position: absolute;
+    width: 47.82px;
+    height: 43.71px;
+    left: 316px;
+    top: 0px;
+
+    background: #55DE74;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#up1:hover{
+    transition: 400ms;
+    background: #46bb61;
+}
+
+#label_up1{
+    position: absolute;
+    left: 13.5px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+/*tb2*/
+
+#box2 {
+    position: absolute;
+    width: 364px;
+    height: 43.71px;
+    left: 454.36px;
+    top: 255.82px;
+}
+
+#STG_MDL {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+
+#STG_MDL h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #0C2B5A;
+
+}
+
+#bt_2 {
+    position: absolute;
+    width: 161.85px;
+    height: 43.71px;
+    left: 138px;
+    top:0;
+
+    background: #3E5374;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#bt_2:hover {
+    transition: 800ms;
+    background: #2c3b53;
+}
+
+
+#label_bt2 {
+    position: absolute;
+    width: 133.65px;
+    height: 21.85px;
+    left: 13.49px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#up2 {
+    position: absolute;
+    width: 47.82px;
+    height: 43.71px;
+    left: 316px;
+    top: 0px;
+
+    background: #55DE74;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#up2:hover{
+    transition: 400ms;
+    background: #46bb61;
+}
+
+#label_up2{
+    position: absolute;
+    left: 13.5px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+/*tb3*/
+
+#box3 {
+    position: absolute;
+    width: 364px;
+    height: 43.71px;
+    left: 454.36px;
+    top: 338.63px;
+}
+
+#STG_MVT_CRD {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+
+#STG_MVT_CRD h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #0C2B5A;
+
+}
+
+#bt_3 {
+    position: absolute;
+    width: 161.85px;
+    height: 43.71px;
+    left: 138px;
+    top:0;
+
+    background: #3E5374;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#bt_3:hover {
+    transition: 800ms;
+    background: #2c3b53;
+}
+
+
+#label_bt3 {
+    position: absolute;
+    width: 133.65px;
+    height: 21.85px;
+    left: 13.49px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#up3 {
+    position: absolute;
+    width: 47.82px;
+    height: 43.71px;
+    left: 316px;
+    top: 0px;
+
+    background: #55DE74;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#up3:hover{
+    transition: 400ms;
+    background: #46bb61;
+}
+
+#label_up3{
+    position: absolute;
+    left: 13.5px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+/*tb4*/
+
+#box4 {
+    position: absolute;
+    width: 364px;
+    height: 43.71px;
+    left: 454.36px;
+    top: 420.3px;
+}
+
+#STG_OPR_ITT {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+
+#STG_OPR_ITT h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #0C2B5A;
+
+}
+
+#bt_4 {
+    position: absolute;
+    width: 161.85px;
+    height: 43.71px;
+    left: 138px;
+    top:0;
+
+    background: #3E5374;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#bt_4:hover {
+    transition: 800ms;
+    background: #2c3b53;
+}
+
+
+#label_bt4 {
+    position: absolute;
+    width: 133.65px;
+    height: 21.85px;
+    left: 13.49px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#up4 {
+    position: absolute;
+    width: 47.82px;
+    height: 43.71px;
+    left: 316px;
+    top: 0px;
+
+    background: #55DE74;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#up4:hover{
+    transition: 400ms;
+    background: #46bb61;
+}
+
+#label_up4{
+    position: absolute;
+    left: 13.5px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+/*tb5*/
+
+#box5 {
+    position: absolute;
+    width: 364px;
+    height: 43.71px;
+    left: 454.36px;
+    top: 503.12px;
+}
+
+#STG_PGT {
+    position: absolute;
+    width: 97px;
+    height: 19px;
+    left: 0;
+    top: 0;
+}
+
+#STG_PGT h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #0C2B5A;
+
+}
+
+#bt_5 {
+    position: absolute;
+    width: 161.85px;
+    height: 43.71px;
+    left: 138px;
+    top:0;
+
+    background: #3E5374;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#bt_5:hover {
+    transition: 800ms;
+    background: #2c3b53;
+}
+
+
+#label_bt5 {
+    position: absolute;
+    width: 133.65px;
+    height: 21.85px;
+    left: 13.49px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#up5 {
+    position: absolute;
+    width: 47.82px;
+    height: 43.71px;
+    left: 316px;
+    top: 0px;
+
+    background: #55DE74;
+    border-radius: 25px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+#up5:hover{
+    transition: 400ms;
+    background: #46bb61;
+}
+
+#label_up5{
+    position: absolute;
+    left: 13.5px;
+    top: 11.5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+
+/* Botão Ranking */
+#bt_rank{
+    position: absolute;
+    width: 365px;
+    height: 43.71px;
+    left: 458px;
+    top: 614px;
+
+    background: #55DE74;
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+#bt_rank button {
+    position: absolute;
+    width: 365px;
+    height: 43.71px;
+    outline: none;
+    border: 0;
+
+    background: #55DE74;
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+#bt_rank button a {
+   
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+#bt_rank button:hover {
+    transition: 800ms;
+    background: #47bd63;
+}
