@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Unica+One&family=Varela+Round&display=swap"
+	rel="stylesheet">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link href="/css/cadastro.css" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+<link href="/bootstrap/css/ionicons.min.css" rel="stylesheet">
+<link href="/bootstrap/css/lightbox.min.css" rel="stylesheet">
+<link href="/bootstrap/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="/js/maskTel.js"> </script>
+<!-- Máscara para o telefone -->
+<script type="text/javascript" src="/js/maskCPF.js"> </script>
+<!-- Máscara para o CPF -->
+
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body class="body">
+	<div id="header">
+		<div id="logo">
+			<h1>
+				<a href="/">n<span>Learning</span></a>
+			</h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/" accesskey="1" title="">Home</a></li>
+				<li><a href="/" accesskey="2" title="">Serviços</a></li>
+				<li><a href="/" accesskey="3" title="">Sobre nós</a></li>
+				<li><a href="menuTutor" accesskey="5" title="">Voltar</a></li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<div class="main_cadastro">
+			<h1 class="titulo_cadastro">Alterar tutor</h1>
+			<form method='post'>
+				<div class="row about-container">
+					<div class="col-lg-6">
+						<h3 class="titulos_forms ">Nome</h3>
+						<input class="input_forms" type='text' placeholder="Nome"
+							name="nome" required th:value="${tutor.nome}"
+							th:placeholder="${tutor.nome}" />
+
+						<h3 class="titulos_forms">CPF</h3>
+						<input class="input_forms" maxlength="14" type='text' id="cpf"
+							onkeypress="mascara(this, mcpf);" placeholder="CPF" name="cpf"
+							required th:value="${tutor.cpf}" th:placeholder="${tutor.cpf}" />
+
+						<h3 class="titulos_forms">Telefone</h3>
+						<input class="input_forms" maxlength="15" type='text'
+							id="telefone" onkeypress="mascara(this, mtel);"
+							placeholder="Telefone" name="telefone" required
+							th:value="${tutor.telefone}" th:placeholder="${tutor.telefone}" />
+
+						<h3 class="titulos_forms ">Endereço</h3>
+						<input id="margem_bottom" class="input_forms" type='text'
+							placeholder="Endereço" name="endereco" required
+							th:value="${tutor.endereco}" th:placeholder="${tutor.endereco}" />
+					</div>
+
+					<div class="col-lg-6">
+
+
+						<h3 class="titulos_forms">E-mail</h3>
+						<input class="input_forms" type='email'
+							placeholder="you@example.com" name="email" required
+							th:value="${tutor.email}" th:placeholder="${tutor.email}" />
+
+						<h3 class="titulos_forms">Senha</h3>
+						<input class="input_forms" type='password' placeholder="Senha"
+							name="senha" required />
+
+						<h3 class="titulos_forms">Confirme sua senha</h3>
+						<input id="margem_bottom" class="input_forms" type='password'
+							placeholder="Confirme sua senha" required /> <br>
+							<input type="submit" value="Salvar" class="botao_salvar">
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</body>
+<footer>
+	<div id="footer_main">
+			<div class="flex_footer">
+				<div class="flex_footer_div1">
+						<h1 class="h1_footer">Empresa</h1>
+						<a class="a_footer" href=""  title="">⸰ Sobre nós</a>
+						<a class="a_footer" href=""  title="">⸰ Legal</a>
+						<a class="a_footer" href=""  title="">⸰ Negócios</a>
+				</div>
+
+				<div class="flex_footer_div2">
+					<h1 class="h1_footer">Ajuda</h1>
+					<a class="a_footer" href="" title="">⸰ Central de ajuda</a>
+					<a class="a_footer" href="" title="">⸰ Cursos</a>
+					<a class="a_footer" href="" title="">⸰ Contato</a>
+				</div>
+
+				<div>
+					<h1 class="h1_footer1">Midias sociais</h1>
+					<img class="img_midia1 " src="/imagens/midias.svg">
+				</div>
+			</div>
+			
+	</div>
+</footer>
+</html>

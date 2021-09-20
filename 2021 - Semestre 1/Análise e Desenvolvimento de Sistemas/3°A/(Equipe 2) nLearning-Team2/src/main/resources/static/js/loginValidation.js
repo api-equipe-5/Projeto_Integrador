@@ -1,0 +1,5 @@
+function loginValidation()
+{
+	int = user
+	
+}

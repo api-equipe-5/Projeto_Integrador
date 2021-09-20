@@ -1,0 +1,53 @@
+.beautyButton{
+    padding: 15px;
+
+    border-radius: 30px;
+    border: none;
+
+    color: cornsilk;  /* Cor do texto */
+
+    transition: 0.1s;  /* Transição para clicar */
+}
+
+
+/* Normal */
+.beautyButtonNormal{
+    background-color: var(--beautyButtonNormalBgColor);
+}
+
+.beautyButtonNormal:hover{
+    background-color: var(--beautyButtonNormalHoverColor);
+
+    cursor: pointer;
+}
+
+.beautyButtonNormal:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px var(--beautyButtonNormalFocusedColor);
+}
+
+.beautyButtonNormal:active{
+    background: var(--beautyButtonNormalActiveColor);
+}
+/* ---------------------- */
+
+/* Red */
+.beautyButtonRed{
+    background-color: var(--beautyButtonRedBgColor);
+}
+
+.beautyButtonRed:hover{
+    background-color: var(--beautyButtonRedHoverColor);
+
+    cursor: pointer;
+}
+
+.beautyButtonRed:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px var(--beautyButtonRedFocusedColor);
+}
+
+.beautyButtonRed:active{
+    background: var(--beautyButtonRedActiveColor);
+}
+/* ---------------------- */

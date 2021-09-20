@@ -1,0 +1,254 @@
+#header{
+    background:#0B2E50 ; 
+}
+
+.container_principal{
+    background: #0C3756;
+}
+
+.intro{
+	color: white;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.intro_text{
+	margin-top: 3rem;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    
+}
+
+.oferecimento_text{
+    margin-top: 1rem;
+    font-size: 150%;
+    text-align: center;
+}
+
+.oferecimento{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titulo_beneficios{
+    padding-top: 3rem;
+    color: white;
+    font-size: 2.20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#imagem{
+    padding: 20px 0;
+    height: 175px;
+    width: 100px;
+}
+.container_beneficios p{
+    font-size: 125%;
+    
+    font-weight: 400;
+}
+
+.imagem_beneficio1{
+    float: left;
+    margin-left: 20%;
+    margin-right: 25px;
+}
+
+.imagem_beneficio2{
+    float: left;
+    margin-left: 20%;
+    margin-right: 25px;
+}
+
+.margem_baixo{
+    margin-bottom: 7rem;
+}
+
+.text_icons{
+    margin-top: 1rem;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.lapis_tamanho{
+    height: 116px;
+}
+
+.espac{
+    margin-top: 10px;
+}
+
+.produtos{
+    margin-left: 20px;
+    color: white;
+    font-size:25px;
+}
+
+.div_produtos{
+	margin: 180px auto;
+}
+
+.style_jornada{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #1F5372;
+}
+
+.btn_jornada{
+    margin-top: 1rem;
+    margin-left: 43%;
+    height: 40px;
+    width: 150px;
+    background: #0080c0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.desc_aprender{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #1F5372;
+    font-size: 150%;
+}
+
+.meio_jornada{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #1F5372;
+}
+
+.btn_jornada2{
+    margin-top: 1rem;
+    margin-left: 43%;
+    height: 40px;
+    width: 150px;
+    background: #3A728E;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.desc_ensinar{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #1F5372;
+    font-size: 150%;
+}
+
+.div_beneficios{
+    background: #1F5372;
+}
+
+#error_margem{
+    margin-right: 0;
+}
+
+.desc_beneficios{
+    color: white;
+}
+
+.titulo_plataforma{
+    color: #1F5372;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.img_plataforma{
+	float: right;
+	margin-top: 1rem;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 20%;
+}
+
+.img_midias{
+	float: right;
+	margin-right: 4rem;
+    height: 250px;
+    width: 250px;
+}
+
+.desc_plataforma{
+    color: #1F5372;
+    text-align: center;
+    width: auto;
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 150%;
+    
+}
+
+#div_duvidas{
+    background: white;
+    margin-bottom: 0;
+}
+
+.titulo_duvidas{
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 3%;
+    color: #1F5372;
+}
+
+.btn_ajuda{
+    margin-top: 1rem;
+    margin-left: 43%;
+    height: 40px;
+    width: 150px;
+    background: #0080c0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3%;
+}
+
+#footer_main1{
+  background: #1B1B1B;
+  padding-top: 3.5%;
+  padding-bottom:3.5% ;
+  
+}
+
+.btn_venha_aprender {
+margin-top: 1rem;
+    margin-left: 43%;
+    height: 40px;
+    width: 150px;
+    background: black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

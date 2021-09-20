@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://tuffi.db.elephantsql.com:5432/xdtegcie
+    username: xdtegcie
+    password: bk597m73TvxONLROlFFIhJcLPV27GM7X
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: org.hibernate.cfg.EJB3NamingStrategy
+  flyway:
+    enabled: true
+
+jwt:
+  secret: usersecret
+

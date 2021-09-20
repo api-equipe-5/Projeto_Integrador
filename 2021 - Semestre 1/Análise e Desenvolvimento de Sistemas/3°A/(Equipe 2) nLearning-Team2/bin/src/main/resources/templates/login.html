@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Unica+One&family=Varela+Round&display=swap"
+	rel="stylesheet">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link href="/css/login.css" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+<link href="/bootstrap/css/ionicons.min.css" rel="stylesheet">
+<link href="/bootstrap/css/lightbox.min.css" rel="stylesheet">
+<link href="/bootstrap/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="/js/maskUsuarioInvalido.js"> </script>
+
+<style type="text/css">
+#pass {
+	width: 150px;
+	padding-right: 20px;
+}
+
+.olho {
+	cursor: pointer;
+	width: 45px;
+}
+</style>
+
+</head>
+
+</head>
+<body id="bg_body">
+	<div id="header">
+		<div id="logo">
+			<h1>
+				<a href="/">n<span>Learning</span></a>
+			</h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/" accesskey="1" title="">Home</a></li>
+				<li><a href="/" accesskey="2" title="">Serviços</a></li>
+				<li><a href="/" accesskey="3" title="">Sobre nós</a></li>
+				<li><a href="/Login" accesskey="5" title="">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="padrao">
+		<form action="Login" method="post" class="form_design">
+			<img class="logo_login" src="/imagens/logo.svg">
+			<h1 class="titulo_login">nLearning</h1>
+			<div class="container altura_container">
+				<label class="color_text" for="email"><b>E-mail</b></label> <input
+					class="input_forms" type="text" name="email" id="email" required>
+				<label class="color_text" for="senha"><b>Senha</b></label> <img
+					onmousedown="usuarioInvalido() "
+					src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698426-icon-22-eye-512.png"
+					id="olho" class="olho"> <input class="input_forms"
+					type="password" name="senha" id="senha" required>
+
+				<button class="hover_btn" type="submit">Login</button>
+				<label class="color_text"><input type="checkbox"
+					checked="checked" name="remember"> Manter conectado </label> <span
+					class="senha"> <a class="color_text" href="#">Esqueceu a
+						senha?</a></span>
+			</div>
+		</form>
+	</div>
+</body>
+<footer>
+	<div id="footer_main">
+			<div class="flex_footer">
+				<div class="flex_footer_div1">
+						<h1 class="h1_footer">Empresa</h1>
+						<a class="a_footer" href=""  title="">⸰ Sobre nós</a>
+						<a class="a_footer" href=""  title="">⸰ Legal</a>
+						<a class="a_footer" href=""  title="">⸰ Negócios</a>
+				</div>
+
+				<div class="flex_footer_div2">
+					<h1 class="h1_footer">Ajuda</h1>
+					<a class="a_footer" href="" title="">⸰ Central de ajuda</a>
+					<a class="a_footer" href="" title="">⸰ Cursos</a>
+					<a class="a_footer" href="" title="">⸰ Contato</a>
+				</div>
+
+				<div>
+					<h1 class="h1_footer1">Midias sociais</h1>
+					<img class="img_midia1 " src="/imagens/midias.svg">
+				</div>
+			</div>
+			
+	</div>
+</footer>
+</html>

@@ -1,0 +1,40 @@
+#fundo_cursos {
+	background: #fff;
+}
+
+.titulo_cursos {
+	margin-left: 30%;
+	font-size: 3rem;
+}
+
+.imagem_tamanho {
+	height: 200px;
+	width: 290px;
+}
+
+.alinhamento {
+	display: flex;
+	flex-direction: row;
+	float: left;
+	min-height: 600px;
+	height: 650px;
+}
+
+.alinhamento2 {
+	margin-top: 30%;
+}
+
+.botao-cor-especial {
+	background-color: #0B2E50 !important;
+	color: white !important;
+}
+
+.card-corpo1 {
+	width: 333px !important;
+	height: 300px !important;
+}
+
+.card-corpo2 {
+	width: 320px !important;
+	height: 300px !important;
+}

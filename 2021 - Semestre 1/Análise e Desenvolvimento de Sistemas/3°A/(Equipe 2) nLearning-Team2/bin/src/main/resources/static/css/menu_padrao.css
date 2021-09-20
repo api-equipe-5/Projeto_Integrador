@@ -1,0 +1,209 @@
+#body{
+    background: #1a1a1a;
+}
+.espac{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.pesquisa{
+    margin-left: 5%;
+    margin-top: 40px;
+    width: 500px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.cursos{
+    text-align: center;
+    font-size: 25px;
+    width: 175px;
+    height: 35px;
+    margin-left: 5%;
+    margin-top:35px;
+    margin-bottom: 45px;
+    color: #1a1a1a;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+	float: left;
+	width: 200px;
+	height: 100px;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	height: 100px;
+}
+
+.itens_painel{
+    width: 70px;
+}
+
+.imagem1{
+    margin-left:5%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1%;
+}
+
+.imagem2{
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 80px;
+}
+
+.imagem_fim1{
+    margin-left:200px ;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.imagem_fim2{
+    margin-left:100px ;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.container_painel{
+    width: flex;
+    margin: 0px auto;
+    
+}
+
+.div_float{
+    float: left;
+}
+
+.imagem_titulo{
+    padding: 17px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:#3A728E;
+    display: 1%;
+    flex-direction: column;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.porta_sair{
+    margin-left: 3%;
+    margin-top:3% ;
+    width: 40px;
+    height: 40px;
+}
+
+.sair_titulo{
+    font-size: 1.3rem;
+    margin-left: 2%;
+    margin-top: 3.5%;
+    color: white;
+    width: 200px;
+}
+
+.menu-mobile {
+	margin-top:0;
+  width:270px;
+  height:100%;
+  background-color: #0B2E50;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+}
+
+.menu-mobile ul li {
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.menu-mobile ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-mobile ul li a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.btn-menu {
+  width: 45px;
+  height: 40px; 
+  position: absolute;
+  left: 15px;
+  top: 35px;
+  padding: 10px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+}
+
+.btn-menu span {
+  height: 3px;
+  display: block;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.menu-mobile {transform: translateX(-210px);}
+.btn-menu {transform: translateX(0);}
+
+.btn-menu-active .menu-mobile {
+  transform: translateX(0);
+}
+
+.btn-menu-active .btn-menu {
+  transform: translateX(15px);
+  left: 0px;
+}
+
+.btn-menu-active .main_cadastro {
+  transform: translateX(200px);
+  left: 0px;
+}
+
+.btn-menu-active .alinhamento {
+  transform: translateX(200px);
+  left: 0px;
+}
+.btn-menu-active .card  {
+  transform: translateX(200px);
+  left: 0px;
+}
+
+.btn-menu-active .card_title  {
+  transform: translateX(200px);
+  left: 0px;
+}
+
+.btn-menu-active .row  {
+  transform: translateX(200px);
+  left: 0px;
+}
+
+.btn-menu-active .nav  {
+  transform: translateX(200px);
+  left: 0px;
+}

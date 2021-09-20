@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : SimpleCorp 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20132402
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>nLearning</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="icons/style.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menu do Aluno - nLearning</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Unica+One&family=Varela+Round&display=swap"
+	rel="stylesheet">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link href="/css/menu_padrao.css" rel="stylesheet" type="text/css" />
+<link href="/css/cadastro.css" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="/css/menu_padrao.css" rel="stylesheet" type="text/css" />
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+<link href="/bootstrap/css/ionicons.min.css" rel="stylesheet">
+<link href="/bootstrap/css/lightbox.min.css" rel="stylesheet">
+<link href="/bootstrap/css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Unica+One&family=Varela+Round&display=swap"
+	rel="stylesheet">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link href="/css/modal.css" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+<link href="/bootstrap/css/ionicons.min.css" rel="stylesheet">
+<link href="/bootstrap/css/lightbox.min.css" rel="stylesheet">
+<link href="/bootstrap/css/style.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/curriculo.js"> </script>
+<script type="text/javascript" src="/js/maskTel.js"> </script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="body">
+
+	<div id="header">
+		<div id="logo">
+			<h1>
+				<a href="/">n<span>Learning</span></a>
+			</h1>
+			<span class="btn-menu"> <span></span> <span></span> <span></span>
+			</span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/" accesskey="1" title="">Home</a></li>
+				<li><a href="" accesskey="2" title="">Serviços</a></li>
+				<li><a href="" accesskey="3" title="">Sobre nós</a></li>
+				<li><a href="/Login" accesskey="5" title="">Sair</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="featured-wrapper">
+		<nav class="menu-mobile">
+		<ul>
+			<li><a href="alterarDadosAluno">Perfil</a></li>
+			<li><a href="cursosnLearning">Cursos</a></li>
+			<li><a href="seusCursos">Seus Cursos</a></li>
+			<li><a href="bibliotecaAluno">Biblioteca</a></li>
+			<li><a href="">Trilha de aprendizado</a></li>
+			<li><a href="menuAluno">Calendário</a></li>
+			<li><a href="">Ajuda</a></li>
+			<li><a href="/Login">Sair</a></li>
+		</ul>
+		</nav>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+			type="text/javascript"></script>
+		<script>
+	$('.btn-menu').on('click touchstart', function () {
+		  $('html').toggleClass('btn-menu-active');
+		});
+	</script>
+</body>
+<script th:inline="javascript">
+/*<![CDATA[*/
+var nomeAluno = /*[[${aluno.nome}]]*/ "Nome do aluno";
+var nomeCurso = /*[[${curso.nomeCurso}]]*/ "Nome do curso";
+/*]]>*/
+$(document).ready(function() {
+	$("#btn").click(function() {
+
+		// Obtém a data/hora atual
+		var data = new Date();
+
+		// Guarda cada pedaço em uma variável
+		var dia = data.getDate();           // 1-31
+		var mes = data.getMonth();          // 0-11 (zero=janeiro)
+		var ano4 = data.getFullYear();       // 4 dígitos
+
+		// Formata a data e a hora (note o mês + 1)
+		var str_data = dia + '/' + (mes + 1) + '/' + ano4;
+
+
+		var certificado = document.querySelector("#image");
+
+		var dataConclusao = str_data;
+		var placename = 'Place Name';
+		var dateevent = 'Day/Year/Month';
+		var filename = 'certificado';
+		var doc = new jsPDF('landscape', 'mm', 'a4')
+		doc.addImage(certificado, 'JPEG', 0, 0, 297, 210)
+		doc.setFont('times')
+
+		/* Nome do Aluno */
+		console.log(nomeAluno.length)
+
+		doc.setFontSize(40)
+		doc.text(65, 101, nomeAluno)
+
+
+		/* Nome do curso */
+		doc.setFontSize(14)
+		doc.text(83, 122, nomeCurso)
+
+
+		/* Data de conclusão */
+		doc.setFontSize(14)
+		doc.text(114, 129, dataConclusao)
+
+		doc.save(filename + '.pdf')
+	});
+});
+        </script>
+<center>
+	<img id="image" src="imagens/certificado.png">
+</center>
+
+<button class="btn_ajuda" id="btn">Gerar seu certificado</button>
+<table class="container">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="aluno : ${aluno}">
+
+			<td></td>
+		</tr>
+
+		<table class="container">
+			<thead>
+				<tr>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="curso : ${curso}">
+
+					<td></td>
+				</tr>
+				<footer>
+				<div id="footer_main">
+					<div class="flex_footer">
+						<div class="flex_footer_div1">
+							<h1 class="h1_footer">Empresa</h1>
+							<a class="a_footer" href="" title="">⸰ Sobre nós</a> <a
+								class="a_footer" href="" title="">⸰ Legal</a> <a
+								class="a_footer" href="" title="">⸰ Negócios</a>
+						</div>
+
+						<div class="flex_footer_div2">
+							<h1 class="h1_footer">Ajuda</h1>
+							<a class="a_footer" href="" title="">⸰ Central de ajuda</a> <a
+								class="a_footer" href="" title="">⸰ Cursos</a> <a
+								class="a_footer" href="" title="">⸰ Contato</a>
+						</div>
+
+						<div>
+							<h1 class="h1_footer1">Midias sociais</h1>
+							<img class="img_midia1 " src="/imagens/midias.svg">
+						</div>
+					</div>
+
+				</div>
+				</footer>
+				</html>

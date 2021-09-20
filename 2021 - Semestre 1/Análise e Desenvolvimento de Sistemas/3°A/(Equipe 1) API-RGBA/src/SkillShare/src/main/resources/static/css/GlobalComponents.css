@@ -1,0 +1,105 @@
+body{
+    font-family: Poppins;
+
+    margin: 0px;
+
+}
+
+:root{
+    --beautyInputBorderColor: #0fcac3;
+    --beautyInputIconColor: var(--beautyInputBorderColor);
+
+    --beautyButtonNormalBgColor: var(--beautyInputBorderColor);
+    --beautyButtonNormalHoverColor: #2f8ea3;
+    --beautyButtonNormalActiveColor: #88dbee;
+    --beautyButtonNormalFocusedColor: rgba(53, 151, 146, 0.568);
+
+    --beautyButtonRedBgColor: rgb(255, 74, 74);
+    --beautyButtonRedHoverColor: rgb(211, 37, 37);
+    --beautyButtonRedActiveColor: rgb(255, 138, 138);
+    --beautyButtonRedFocusedColor: rgb(202, 100, 100);
+
+    --headerTextColor: #0aada7;
+    --adminToolBarColor: var(--headerTextColor);
+
+    --headTableColor: #0fcac3;
+
+    --beautyTableSelectedRow: rgb(108, 253, 210);
+
+    --subOptionOpenedHeight: 150px;
+}
+
+.justifyLeft{
+    align-items: flex-start;
+}
+
+.hBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset;
+    width: 600px;
+
+}
+@media (max-width: 610px){
+    .hBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220px;
+
+    }
+    .hBox > .usageTermsContainer{
+        margin: 10px;
+    }
+
+}
+
+.vBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.vBoxBorder{
+    border: solid rgba(0, 0, 0, 0.1);
+    border-width: 2px;
+    height: 100vh;
+    width: 500px;
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.274);
+    justify-content: center;
+
+}
+
+.usageTermsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.usageTermsLabel{
+    width: 250px;
+    margin-left: 5px;
+    left: 20px;
+
+    text-decoration: underline;
+}
+
+.fa-beautyInputIcon{
+    position: absolute;
+    left: -10px;
+    bottom: 36px;
+    font-size: 20px;
+    color:var(--beautyInputIconColor);
+}
+
+.headerText{
+    color: var(--headerTextColor);
+}
+
+.maxWidth{
+    width: 100%;
+}

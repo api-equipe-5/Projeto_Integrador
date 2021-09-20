@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"
+	rel="stylesheet" type="text/css">
+<link href="/css/cadastro.css" rel="stylesheet" type="text/css" />
+<link href="/css/default.css" rel="stylesheet" type="text/css"
+	media="all" />
+	<link href="/css/menu_padrao.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+<link href="/bootstrap/css/ionicons.min.css" rel="stylesheet">
+<link href="/bootstrap/css/lightbox.min.css" rel="stylesheet">
+<link href="/bootstrap/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="/js/maskTel.js"> </script>
+<!-- Máscara para o telefone -->
+<script type="text/javascript" src="/js/maskCPF.js"> </script>
+<!-- Máscara para o CPF -->
+<script type="text/javascript" src="/js/maskSenha.js"> </script>
+<!-- Confirmação de senha -->
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body class="body">
+	<div id="header">
+		<div id="logo">
+			<h1>
+				<a href="/">n<span>Learning</span></a>
+			</h1>
+			<span class="btn-menu"> <span></span> <span></span> <span></span>
+		</span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="/" accesskey="1" title="">Home</a></li>
+				<li><a href="/" accesskey="2" title="">Serviços</a></li>
+				<li><a href="/" accesskey="3" title="">Sobre nós</a></li>
+				<li><a href="menuTutor" accesskey="5" title="">Voltar</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="featured-wrapper">
+	<nav class="menu-mobile">
+			<ul>
+				<li><a href="cadastrarAluno">Cadastro de Alunos</a></li>
+				<li><a href="cadastrarTutor">Cadastro de Tutores</a></li>
+				<li><a href="cadastrarCurso">Cadastro de Cursos</a></li>
+				<li><a href="cadastrarGestor">Cadastro de Gestores</a></li>
+				<li><a href="cursosQuestoes">Questões e Avaliações</a></li>
+				<li><a href="cursos">Lista de Cursos</a></li>
+				<li><a href="usuarios">Lista de Usuários</a></li>
+				<li><a href="candidatos">Candidatos</a></li>
+				<li><a href="update_admin">Alterar Dados</a></li>
+				<li><a href="/Login">Sair</a></li>
+			</ul>
+		</nav>
+		<div class="main_cadastro">
+			<h1 class="titulo_cadastro">Cadastro de Tutor</h1>
+			<form method='post'>
+				<div class="row about-container">
+					<div class="col-lg-6">
+						<h3 class="titulos_forms ">Nome:</h3>
+						<input class="input_forms" type='text' placeholder="Nome"
+							name="nome" required />
+
+						<h3 class="titulos_forms">CPF:</h3>
+						<input class="input_forms" maxlength="14" type='text' id="cpf"
+							onkeypress="mascara(this, mcpf);" placeholder="CPF" name="cpf"
+							required />
+
+
+						<h3 class="titulos_forms">Telefone:</h3>
+						<input class="input_forms" maxlength="15" type='text'
+							id="telefone" onkeypress="mascara(this, mtel);"
+							placeholder="Telefone" name="telefone" required />
+
+
+						<h3 class="titulos_forms ">Endereço:</h3>
+						<input id="margem_bottom" class="input_forms" type='text'
+							placeholder="Endereço" name="endereco" required />
+
+					</div>
+
+					<div class="col-lg-6">
+
+
+						<h3 class="titulos_forms">E-mail:</h3>
+						<input class="input_forms" type='email'
+							placeholder="you@example.com" name="email" required />
+
+						<h3 class="titulos_forms">Senha:</h3>
+						<input class="input_forms" type='password' placeholder="Senha"
+							id="password" name="senha" required />
+
+						<h3 class="titulos_forms">Confirme sua senha:</h3>
+						<input onchange="alertSenhaIncorreta()" id="password_confirmation"
+							class="input_forms" type='password' name="senhaConfirmacao"
+							placeholder="Confirme sua senha" required />
+
+						<div id="alertId" class="alert alert-danger fade in hide" role="alert">
+						Senhas divergentes. Por favor, insira senhas iguais!</div>
+
+						<input onclick="alertCadastro()" type="submit" value="Salvar" class="botao_salvar">
+
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+		type="text/javascript"></script>
+	<script>
+	$('.btn-menu').on('click touchstart', function () {
+		  $('html').toggleClass('btn-menu-active');
+		});
+	</script>
+</body>
+<footer>
+	<div id="footer_main">
+			<div class="flex_footer">
+				<div class="flex_footer_div1">
+						<h1 class="h1_footer">Empresa</h1>
+						<a class="a_footer" href=""  title="">⸰ Sobre nós</a>
+						<a class="a_footer" href=""  title="">⸰ Legal</a>
+						<a class="a_footer" href=""  title="">⸰ Negócios</a>
+				</div>
+
+				<div class="flex_footer_div2">
+					<h1 class="h1_footer">Ajuda</h1>
+					<a class="a_footer" href="" title="">⸰ Central de ajuda</a>
+					<a class="a_footer" href="" title="">⸰ Cursos</a>
+					<a class="a_footer" href="" title="">⸰ Contato</a>
+				</div>
+
+				<div>
+					<h1 class="h1_footer1">Midias sociais</h1>
+					<img class="img_midia1 " src="/imagens/midias.svg">
+				</div>
+			</div>
+			
+	</div>
+</footer>
+</html>

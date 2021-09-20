@@ -1,0 +1,95 @@
+#header{
+    background:#1a1a1a ; 
+}
+
+.espac{
+    margin-top: 10px;
+}
+.body{
+    background: white;
+}
+
+
+.blueTable td, table.blueTable th {
+	border: 1px solid #AAAAAA;
+	padding: 3px 2px;
+}
+.blueTable tr:nth-child(even) {
+	background: #D0E4F5;
+}
+
+.blueTable thead {
+	background: #1C6EA4;
+}
+
+.blueTable thead th {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.titulo {
+	text-align: center;
+	padding: 10px;
+}
+
+.blueTable {
+	width: 60%;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 80px auto;
+}
+
+.espac_footer{
+    margin-top: 25%;
+}
+
+#footer_main{
+    background: #1B1B1B;
+    padding-top: 3.5%;
+    padding-bottom:3.5% ;
+}
+
+.flex_footer_div1{
+    float: left;
+    color: white;
+    margin-left: 12%;
+}
+
+.flex_footer_div2{
+    float: left;
+    color: white;
+    margin-left:10%;
+}
+
+.h1_footer{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.a_footer{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 15px;
+}
+
+.img_midia1{
+    margin-bottom: 3%;
+    margin-left: 30%;
+    display: inline;
+}
+
+.img_midia{
+    margin-left: 1%;
+    margin-bottom: 3%;
+    display: inline;
+}
+
+.h1_footer1{
+    margin-bottom: 20px;
+    margin-left: 68.5%;
+    color: white;
+    font-size: 20px;
+}

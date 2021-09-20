@@ -1,0 +1,251 @@
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  z-index: 10;
+  background: #1a1a1a ;
+  -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+	
+}
+.body{
+    background: white;
+}
+
+.main_cadastro{
+    width: 1000px;
+	margin: 0px auto;
+	margin-left: 5%;
+    flex-direction: row;
+}
+
+.titulo_cadastro{
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #131549;
+    font-family: Calibri;
+	font-style: bold;
+	font-weight: 300;
+	font-size: 56px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	
+	color: #131549;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_cadastro{
+    margin-top: 0%;
+    margin-left: 5%;
+    color: #131549;
+    font-family: Calibri;
+	font-style: bold;
+	font-weight: 300;
+	font-size: 56px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	
+	color: #131549;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulos_forms{
+    color: #000000;
+    font-family: Calibri;
+    font-style: bold;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+
+#margem_bot{
+    margin-bottom: 40%;
+}
+
+.input_forms{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+	border: 1px solid #131549;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-left: 5%;
+}
+
+.botao_salvar{
+    font-family: Calibri;
+    font-style: bold;
+    font-weight: 300;
+    font-size: 20px;
+    
+    height: 32px;
+    width: 100px;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-top: 36px;
+    background: #131549;
+	border: 1px solid #A2A0F7;
+	box-sizing: border-box;
+	border-radius: 4px;
+    
+    
+
+    background: #131549;
+    color: white;
+} 
+
+.botao_finalizar{
+    font-family: Calibri;
+    font-style: bold;
+    font-weight: 300;
+    font-size: 20px;
+    
+    height: 40px;
+    width: 150px;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-top: 36px;
+    background: #131549;
+	border: 1px solid #A2A0F7;
+	box-sizing: border-box;
+	border-radius: 4px;
+    
+    
+
+    background: #131549;
+    color: white;
+} 
+
+.botao-cor-especial{
+    background-color: #0B2E50!important;
+    color: white!important;
+}
+
+
+
+.espac_esquerda{
+	margin-left:5%;
+}
+
+.espac_baixo{
+	margin-bottom:5%;
+}
+
+.titulo_form{
+	margin-top:2%;
+	margin-bottom:4%;
+	font-size:1.5rem;
+	margin-left:5%;
+}
+
+.espac_file{
+	margin-bottom:2%;
+}
+
+.flutua{
+	float:left;
+}
+
+.ajeitando{
+	margin-left:10%;
+}
+
+.flex_divide{
+	display:flex;
+	justify-content:around;
+}
+
+.margem_video{
+	margin-top:5%!important;
+}
+
+.espaca_p{
+	margin-bottom:2%;
+}
+
+.titulo_curso{
+    color: #131549;
+    font-family: Calibri;
+	font-style: bold;
+	font-weight: 300;
+	font-size: 56px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	
+	color: #131549;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_pilula{
+	margin-top:5%!important;
+	color: #131549;
+    font-family: Calibri;
+    font-style: bold;
+    font-size: 2rem;
+    font-weight: 400
+}
+
+.titulo_alteracao{
+	margin-top: 0%;
+    margin-left: -5%;
+    color: #131549;
+    font-family: Calibri;
+	font-style: bold;
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	
+	color: #131549;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_alteracao1{
+	margin-top: 0%;
+    color: #131549;
+    font-family: Calibri;
+	font-style: bold;
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	
+	color: #131549;
+	
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.posicionamento_download{
+	margin-left:26%;
+	color:#ec1707;
+	font-size:1.5rem;
+}
+
+.posicionamento_livro{
+	font-style:normal;
+	font-weight:500;
+	margin-left:33%;
+	display:inline;
+	color:#0B2E50;
+	font-size:1.5rem;
+}
+
+.forte{
+	margin-left:15%;
+	margin-bottom:5%;
+	margin-top:3%;
+}

@@ -1,0 +1,107 @@
+
+#header{
+    background: #1a1a1a;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  font-family: Calibri;
+  font-style: bold;
+  background-color: #131549;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 30px;
+}
+
+/* The "Forgot password" text */
+span.senha {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.senha {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  
+  
+}
+.input_forms{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+	border: 1px solid #131549;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.padrao{
+  background: #0B2E50;
+  align-items: center;
+  height: 76%;
+}
+
+.color_text{
+  color: white;
+}
+
+.form_design{
+  margin-top: 10%;
+  height: 400px;
+  margin-left: 33%;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 3px solid white;
+  background: #06233B;
+}
+
+#bg_body{
+  background: #0B2E50;
+}
+
+.logo_login{
+  float: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.titulo_login{
+  margin-top: 1.5rem;
+  margin-left: 100px;
+  color: white;
+}
+
+.hover_btn:hover{
+  background :#0008d8;
+  transition: 0.5s;
+}
