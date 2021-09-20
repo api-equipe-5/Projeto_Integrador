@@ -1,0 +1,198 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+}
+
+.empresa {
+  width: 90%;
+  padding: 24px 0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  border-bottom: solid 1px #ECECEC;
+  white-space: nowrap;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-weight: 600; 
+}
+
+.custom-input {
+  border-radius: 6px;
+  padding: 4px;
+  border: solid 1px #D4D4D4;
+  flex-grow: 1;
+}
+
+.btn {
+  border: none;
+  background-color: #7AA9E1;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.empresa__header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.empresa__header .plataform-name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #7AA9E1;
+}
+
+.empresa__header .empresario {
+  
+  display: flex;
+  align-items: center;
+}
+
+.empresa__header .empresario .empresario-info {
+  
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+
+  cursor: pointer;
+}
+
+.empresa__header .empresario .empresario-info .name {
+  
+  font-weight: 600;
+  
+  margin-bottom: 4px;
+}
+
+.empresa__header .empresario .empresario-pic img {
+  
+  border-radius: 50px;
+  
+  width: 49px;
+  height: 49px;
+  
+  margin-left: 16px;
+}
+
+.empresa__content {
+  display: flex;
+  align-items: baseline;
+}
+
+.empresa__projects {
+  margin-right: 24px;
+}
+
+.empresa__projects table thead {
+  background-color: #7AA9E1;
+  color: #0D2B50;
+  font-weight: 600;
+}
+
+.empresa__projects table th,
+.empresa__projects table td {
+  
+  height: 40px;
+  
+  padding: 8px 12px;
+  
+  font-size: 14px;
+  text-align: left;
+  
+  vertical-align: middle;
+}
+
+.empresa__projects table td.status { 
+  font-weight: 600;
+}
+
+.empresa__projects table td.status.status--green { 
+  color: #009A19;
+}
+
+.empresa__projects table td.status.status--blue { 
+  color: #00369a;
+}
+
+.empresa__projects table td.status.status--yellow { 
+  color: #FFBF1A;
+}
+
+.empresa__projects table td.status.status--red { 
+  color: #FF271A;
+}
+
+.empresa__projects table thead th:first-child {
+  border-top-left-radius: 3px;
+}
+
+.empresa__projects table thead th:last-child {
+  border-top-right-radius: 3px;
+}
+
+.empresa__projects table tbody tr {
+  background-color: #EBF3FC;
+  cursor: pointer;
+}
+
+.empresa__projects table tbody tr:nth-child(2n) {
+  background-color: #DCECFF;
+}
+
+.empresa__projects table tbody tr:hover {
+  background-color: #cbe2ff;
+}
+
+.empresa__regist .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empresa__regist .form .field {
+  
+  margin-bottom: 8px; 
+}
+
+.empresa__regist .form label {
+  
+  display: block;
+
+  margin-bottom: 8px; 
+}
+
+.empresa__regist .form .btn {
+  margin-top: 8px;
+}
+
+@media (max-width: 830px) {
+  .empresa__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .empresa__projects, .empresa__regist {
+    width: 100%;
+  }
+
+  .empresa__projects {
+    margin: 0;
+  }
+
+  .empresa__regist {
+    margin-bottom: 24px;
+  }
+}

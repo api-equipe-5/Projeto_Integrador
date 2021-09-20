@@ -1,0 +1,120 @@
+.popup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.popup .popup-wrapper {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__body {
+  width: 90%;
+  max-width: 800px;
+  min-height: 350px; 
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.popup__body .body-header,
+.popup__body .body-content {
+  padding: 16px 24px;
+}
+
+.popup__body .body-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2; 
+}
+.popup__body .body-header .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.popup__body .body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__body .body-content .body-content-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup__body .body-content .body-content-section {
+  margin: 8px;
+  margin-left: 0;
+
+  min-width: 40%;
+}
+
+.popup__body .body-content .body-content-section .title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.body-content-section--progresso {
+  min-height: 100px;
+}
+
+.body-content-section--progresso {
+  width: 100%;
+}
+
+.body-content-section--progresso .timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.body-content-section--progresso .timeline .event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100px;
+}
+
+.body-content-section--progresso .timeline .event .label {
+  width: 75px;
+  text-align: center;
+  margin: 8px 0 auto 0;
+}
+
+.body-content-section--progresso .timeline .event .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: solid 3px #d5d5d5;
+}
+
+.body-content-section--progresso .timeline .event .circle--blue {
+  border-color: #00369a;
+}
+
+.body-content-section--progresso .timeline .event .circle--green {
+  border-color: green;
+}
+
+.body-content-section--progresso .timeline .event .circle--yellow {
+  border-color: yellow;
+}
+
+.popup__shadow {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+}

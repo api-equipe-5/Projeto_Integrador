@@ -1,0 +1,106 @@
+image: maven:latest 
+
+
+stages:
+    - test
+    - build
+    - release
+    - create-image
+    - deploy
+    
+variables:
+    IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: "0"
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - target/*.jar
+  script: 
+    - sed -ir "s/^[#]*\s*app.url=.*/app.url=${APP_URL}/" ./src/main/resources/application.properties
+    - $MAVEN_HOME/bin/mvn clean install -DskipTests 
+    
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - .m2/repository/
+      - build
+  only:
+    - master
+
+
+test:
+  stage: test
+  script: 
+    - $MAVEN_HOME/bin/mvn test
+  only:
+    - merge_requests
+    - master
+
+
+create-image:
+  image: gradle:alpine
+  stage: create-image
+  tags:
+    - deploy
+  script:
+    - cp target/*.jar .
+    - sudo docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - sudo docker build -t projetoantenas/antenas-integracao .
+    - sudo docker push projetoantenas/antenas-integracao
+  when: manual
+  only:
+    - master
+
+.prod_deploy: &prod_deploy
+  image: google/cloud-sdk
+  script:
+    # Processo para configuração do cluster:
+    #- gcloud container clusters get-credentials cluster-antenas-gke --zone southamerica-east1-a --project united-monument-269917
+    #- kubectl create deployment $NOME_SERVICO --image=projetoantenas/antenas-integracao:latest
+    #- kubectl expose deployment $NOME_SERVICO --type=LoadBalancer --port 80 --target-port 8080
+    #- kubectl get service
+    #- kubectl scale deployment $NOME_SERVICO --replicas=3
+    # Processo de Deploy Contínuo:
+    - kubectl get deployment $NOME_SERVICO
+    - kubectl get pods
+    - kubectl set image deployment/$NOME_SERVICO antenas-integracao=projetoantenas/antenas-integracao:latest
+
+deploy:
+  <<: *prod_deploy
+  stage: deploy
+  tags:
+    - cluster
+  when: manual
+  only:
+    - master
+
+sonarcloud-check:
+  image: maven:3.6.3-jdk-11
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - mvn verify sonar:sonar
+  only:
+    - merge_requests
+    - master
+
+release:
+  stage: release
+  tags:
+    - deploy
+  script:
+    - pwd
+    - git clone https://Releaser-ci:${CI_JOB_TOKEN}@gitlab.com/jesscahelen/antenas-integracao.git
+    - cd antenas-integracao    
+    - git checkout master 
+    - mvn -B -DskipTests -Darguments=-DskipTests release:clean release:prepare
+  when: manual
+  only:
+  - master
+  

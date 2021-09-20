@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>DARWING!</title>
+
+	<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+	<link href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="static/css/main.css">
+	<style type="text/css">
+		html, body{
+			height:100%;
+			padding:0px;
+			margin:0px;
+			overflow: hidden;
+		}
+		.gantt_task_line.gantt_project{
+				color:white;
+			}
+
+			.gantt_side_content{
+				color:#333;
+			}
+
+			.summary-bar{
+				font-weight: bold;
+			}
+
+			.gantt_resource_task .gantt_task_content{
+				color:inherit;
+			}
+
+			.gantt_resource_task .gantt_task_progress{
+				background-color:rgba(33,33,33,0.3);
+			}
+
+			.gantt_cell:nth-child(1) .gantt_tree_content{
+				border-radius: 16px;
+				width: 100%;
+				height: 80%;
+				margin: 5% 0;
+				line-height: 230%;
+			}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="container">
+		  <h5 style="text-align:center;background-color:#4b4276;color: #fff;padding: 5px 5px">DARWING</h5>
+		  <nav>
+		  <ul>
+			<li style="text-align:center;background-color:#4b4276;color: #fff"><a><input type="radio" id="scale1" class="gantt_radio" name="scale" value="hour"><label for="scale1">Hour scale</label></a></li>
+			<li style="text-align:center;background-color:#4b4276;color: #fff"><a><input type="radio" id="scale3" class="gantt_radio" name="scale" value="day"><label for="scale3">Day scale</label></a></li>
+			<li style="text-align:center;background-color:#4b4276;color: #fff"><a><input type="radio" id="scale2" class="gantt_radio" name="scale" value="week"><label for="scale2">Week scale</label></a></li>	
+			<li style="text-align:center;background-color:#4b4276;color: #fff"><a><input type="radio" id="scale3" class="gantt_radio" name="scale" value="month"><label for="scale3">Month scale</label></a></li>
+		  </ul>
+		  </nav>
+		</div>
+	</header>
+
+<div id="gantt_here" style='width:100%; height:100%;'></div>
+<script type="text/javascript">
+
+gantt.config.duration_unit = "hour";
+var zoomConfig = {
+		levels: [
+			{
+				name:"hour",
+				scale_height: 27,
+				min_column_width:80,
+				scales:[
+				{unit: "hour", step: 1, format: "%H:%i"}
+				]
+			},
+			{
+				name:"day",
+				scale_height: 27,
+				min_column_width:80,
+				scales:[
+					{unit: "day", step: 1, format: "%d %M"}
+				]
+			},
+			{
+				name:"week",
+				scale_height: 50,
+				min_column_width:50,
+				scales:[
+					{unit: "week", step: 1, format: function (date) {
+						var dateToStr = gantt.date.date_to_str("%d %M");
+						var endDate = gantt.date.add(date, -6, "day");
+						var weekNum = gantt.date.date_to_str("%W")(date);
+						return "#" + weekNum + ", " + dateToStr(date) + " - " + dateToStr(endDate);
+					}},
+					{unit: "day", step: 1, format: "%j %D"}
+				]
+			},
+			{
+				name:"month",
+				scale_height: 50,
+				min_column_width:120,
+				scales:[
+					{unit: "month", format: "%F, %Y"},
+					{unit: "week", format: "Week #%W"}
+				]
+			}
+		]
+	};
+
+	gantt.ext.zoom.init(zoomConfig);
+	gantt.ext.zoom.setLevel("day");
+	gantt.ext.zoom.attachEvent("onAfterZoom", function(level, config){
+		document.querySelector(".gantt_radio[value='" +config.name+ "']").checked = true;
+	})
+
+	function zoomIn(){
+		gantt.ext.zoom.zoomIn();
+	}
+	function zoomOut(){
+		gantt.ext.zoom.zoomOut()
+	}
+
+	var radios = document.getElementsByName("scale");
+	for (var i = 0; i < radios.length; i++) {
+		radios[i].onclick = function (event) {
+			gantt.ext.zoom.setLevel(event.target.value);
+		};
+	}
+	var dev =  [
+		{key: 1, label: "Vitor", backgroundColor:"#03A9F4", textColor:"#FFF"},
+		{key: 2, label: "Fernanda", backgroundColor:"#f57730", textColor:"#FFF"},
+		{key: 3, label: "Gabriela", backgroundColor:"#e157de", textColor:"#FFF"},
+		{key: 4, label: "Cadu", backgroundColor:"#78909C", textColor:"#FFF"},
+		{key: 7, label: "Adriana", backgroundColor:"#8D6E63", textColor:"#FFF"},
+		{key: 8, label: "  ", backgroundColor:"#000", textColor:"#FFF"}
+	]
+		//lista de DEVS'
+	gantt.serverList("staff", dev);
+		//CONFIG DA BARRA LATERAL
+	gantt.config.grid_width = 420;
+	gantt.config.grid_resize = true;
+	gantt.config.open_tree_initially = true;
+
+	var labels = gantt.locale.labels;
+	labels.column_owner = labels.section_owner = "Owner";
+
+	function byId(list, id) {
+		for (var i = 0; i < list.length; i++) {
+			if (list[i].key == id)
+				return list[i].label || "";
+		}
+		return "";
+	}
+
+			//CONFIGURAÇÃO DA COLUNAS DE INFO
+	gantt.config.columns = [
+		{name: "owner", width: 80, align: "center", template: function (item) {
+				return byId(gantt.serverList('staff'), item.owner_id)}},
+		{name: "text", label: "Task name", tree: true, width: '*'},
+    	{name: "start_date", align: "center", width: 80, resize: true},
+    	{name: "duration", width: 60, align: "center"},
+		{name: "add", width: 40}
+	];
+			//MODAL DA ADIÇÃO DE TAREFAS
+	gantt.config.lightbox.sections = [
+		{name: "description", height: 38, map_to: "text", type: "textarea", focus: true},
+		{name: "owner", height: 22, map_to: "owner_id", type: "select", options: gantt.serverList("staff")},
+		{name: "time", type: "duration", map_to: "auto"}
+	];
+
+	gantt.templates.grid_row_class =
+		gantt.templates.task_row_class =
+			gantt.templates.task_class = function (start, end, task) {
+		var css = [];
+		if (task.$virtual || task.type == gantt.config.types.project)
+			css.push("summary-bar");
+
+		if(task.owner_id){
+			css.push("gantt_resource_task gantt_resource_" + task.owner_id);
+		}
+
+		return css.join(" ");
+	};
+
+	gantt.attachEvent("onParse", function(){
+		var styleId = "dynamicGanttStyles";
+		var element = document.getElementById(styleId);
+		if(!element){
+			element = document.createElement("style");
+			element.id = styleId;
+			document.querySelector("head").appendChild(element);
+		}
+		var html = [];
+		var resources = gantt.serverList("staff");
+
+		resources.forEach(function(r){
+			html.push(".gantt_task_line.gantt_resource_" + r.key + "{" +
+				"background-color:"+r.backgroundColor+"; " +
+				"color:"+r.textColor+";" +
+			"}");
+			html.push(".gantt_row.gantt_resource_" + r.key + " .gantt_cell:nth-child(1) .gantt_tree_content{" +
+				"background-color:"+r.backgroundColor+"; " +
+				"color:"+r.textColor+";" +
+				"}");
+		});
+		element.innerHTML = html.join("");
+	});
+
+	gantt.config.xml_date = "%Y-%m-%d %H:%i:%s";
+
+	gantt.config.order_branch = true;/*!*/
+	gantt.config.order_branch_free = true;/*!*/
+
+	gantt.init("gantt_here");
+
+	gantt.load("/data");
+
+	var dp = new gantt.dataProcessor("/data");
+	dp.init(gantt);
+	dp.setTransactionMode("REST");
+</script>
+</body>

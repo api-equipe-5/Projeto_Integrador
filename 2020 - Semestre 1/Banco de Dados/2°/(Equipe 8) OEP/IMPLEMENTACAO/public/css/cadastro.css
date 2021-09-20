@@ -1,0 +1,24 @@
+body{
+    font-family: inherit;
+    background-color: #111344;
+}
+#card{
+	margin-left: auto;margin-right: auto;width: 600px;margin-top: 7rem
+}
+.form-control{
+	border-color: black;
+}
+#cad{
+	position:relative;
+	top: 0px;
+	right: 150px;
+}
+#exit{
+	position:relative;
+	top: 0px;
+	left: 150px;
+}
+#imagem_fundo{
+	height: 40rem;
+
+}

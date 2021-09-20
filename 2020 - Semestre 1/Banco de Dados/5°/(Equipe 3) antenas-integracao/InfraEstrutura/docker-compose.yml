@@ -1,0 +1,151 @@
+version: "3"
+services:
+  webserver:
+    image: server_tomcat:1
+    container_name: webServer
+    ports:
+      - 8088:8081
+      - 8085:8080
+    volumes:
+      - /var/dockerVolumes/jenkins/workspace/antenas-ci/build/libs:/usr/local/tomcat/webapps
+    depends_on:
+      - jenkins
+      - mongo
+    command: java -jar ./usr/local/tomcat/webapps/antenas-ci.jar
+    restart: always
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - 5000:5000
+      - 8082:8080
+    volumes:
+      - /var/dockerVolumes/jenkins/:/var/jenkins_home
+    restart: always
+  mongo_antenas:
+    image: mongo
+    container_name: mongo_antenas
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+    restart: always
+  mongo-express:
+    image: mongo-express
+    container_name: mongoExrpess_antenas
+    depends_on:
+      - mongo
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: 12345678
+
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    restart: always
+    ports:
+      - 9000:9000
+      - 8083:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/dockerVolumes/portainer/:/data portainer/portainer
+  prometheus:
+    image: linuxtips/prometheus_alpine
+    volumes:
+      - ./conf/prometheus/:/etc/prometheus/
+      - prometheus_data:/var/lib/prometheus
+    networks:
+      - backend
+    ports:
+      - 9090:9090
+
+  node-exporter:
+    image: linuxtips/node-exporter_alpine
+    hostname: '{{.Node.ID}}'
+    volumes:
+      - /proc:/usr/proc
+      - /sys:/usr/sys
+      - /:/rootfs
+    deploy:
+      mode: global
+    networks:
+      - backend
+    ports:
+      - 9100:9100
+  alertmanager:
+    image: linuxtips/alertmanager_alpine
+    volumes:
+      - ./conf/alertmanager/:/etc/alertmanager/
+    networks:
+      - backend
+    ports:
+      - 9093:9093
+
+  cadvisor:
+    image: google/cadvisor
+    hostname: '{{.Node.ID}}'
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - backend
+    deploy:
+      mode: global
+    ports:
+      - 8080:8080
+  grafana:
+    image: grafana/grafana
+    depends_on:
+      - prometheus
+    volumes:
+      - grafana_data:/var/lib/grafana
+    env_file:
+      - grafana.config
+    networks:
+      - backend
+      - frontend
+    ports:
+      - 3000:3000
+# If you already have a RocketChat instance running, just comment the code of rocketchat, mongo and mongo-init-replica services bellow
+  rocketchat:
+    image: rocketchat/rocket.chat:latest
+    volumes:
+      - rocket_uploads:/app/uploads
+    environment:
+      - PORT="3080"
+      - ROOT_URL=http://YOUR_IP:3080
+      - MONGO_URL=mongodb://mongo:27017/rocketchat
+      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
+#      - MAIL_URL=smtp://user:pass@smtp.email
+#      - HTTP_PROXY=http://proxy.domain.com
+#      - HTTPS_PROXY=http://proxy.domain.com
+    depends_on:
+      - mongo
+    ports:
+      - 3080:3080
+  mongo:
+    image: mongo:3.4.23
+    volumes:
+     - mongodb_data:/data/db
+     #- ./data/dump:/dump
+    command: mongod --smallfiles --oplogSize 128 --replSet rs0
+  mongo-init-replica:
+    image: mongo:3.4.23
+    command: 'mongo mongo/rocketchat --eval "rs.initiate({ _id: ''rs0'', members: [ { _id: 0, host: ''localhost:27017'' } ]})"'
+    depends_on:
+      - mongo
+networks:
+  frontend:
+  backend:
+
+volumes:
+    portainer_data:
+    prometheus_data:
+    grafana_data:
+    rocket_uploads:
+    mongodb_data:

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" sizes="16x16">
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Projeto Antena - CADI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+
+  <script src="js/jquery-2.3.3.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+  
+<script src="css/styles.css" type="text/javascript>"></script>
+</head>
+
+<body> 
+
+  <div class="row navbar navbar-light " style="margin: 0 0 0 0; background-color: #e3f2fd">
+        <img class="img-fluid col-1" style="max-width:180px" src="imgs/logo.svg">
+        <img class="img-fluid col-1" style="max-width:180px; margin:15px 0 15px -100px" src="imgs/cadi.svg">
+
+        <div class="navbar-buttons">
+          
+        </div>
+    </div>
+
+    <div id="login" >
+      
+      <form method="POST" id="form_login">
+
+        <div class="container">
+          <label for="email-login"></label>
+          <input type="text" id="email-login" name="email-login" placeholder="Email" style="max-width:350px" required>
+          <br></br>
+
+          <label for="senha-login"></label>
+          <input type="password" id="senha-login" name="senha-login" placeholder="Senha" style="max-width:350px" required>
+          <br></br>
+            
+          <button type="submit" style="max-width:150px">Entrar</button>
+          <br></br>
+          
+          <a href class="text" onclick="abrePopupCadastro(event)">Registre - se</a>
+        </div>
+      </form>
+    </div>
+
+    <div id="cadastro" class="modal">
+        <form  method="POST" id="form_register" class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="fechaPopupCadastro(event)" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+          <div class="container">
+            <h2 style="color:#3172C1">Cadastro</h2>
+            <label for="nome-cadastro"></label>
+            <input type="text" id="nome-cadastro" placeholder="Nome" required>
+            
+            <label for="cpf-cadastro"></label>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            
+            <label for="cargo-cadastro"></label>
+            <input type="text" id="cargo-cadastro" placeholder="Cargo" required>
+
+            <label for="email-cadastro"></label>
+            <input type="email" id="email-cadastro" class="email-field" placeholder="Email" required>
+      
+            <label for="senha-cadastro"></label>
+            <input type="password" id="senha-cadastro" placeholder="Senha" required>
+            <br></br>
+          
+            <button id="btn-cadastro" type="submit" style="max-width:150px;">Cadastrar</button>
+            <div info-register></div>
+          </div>
+          </form>
+      </div>
+      </div>
+
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+  <script src="js/login.js"></script>
+</body>
+
+</html>

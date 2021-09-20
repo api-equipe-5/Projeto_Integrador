@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Desenvolvedor</title>
+    <script type="text/javascript" src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="../js/FileSaver.js"></script>
+    <script type="text/javascript" src="../js/save_dev.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../js/gantt.js"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/form_dev.css">
+</head>
+<body>
+    <img src="../img/logo.jpg" style="width:80px;height:50px;">
+    <button class="btn btn-dark border border-info" onclick="location.href = 'index.html';" id="Chart">Diagrama de Gantt</button>
+    <button class="btn btn-dark border border-info" onclick="location.href = 'form_dev.html';" id="form_dev">Cadastrar Desenvolvedor</button>
+    <button class="btn btn-dark border border-info" onclick="location.href = 'login.html';" id="sair">Sair</button>
+
+    <img src="../img/fundo2.jpg" class="card-img"  id="imagem_fundo">
+	<div class="card-img-overlay" id="card" >
+        <div class="card-body" style="text-align: auto;">
+            
+            <div class="form-group mx-3 ">
+                <legend><b>Nome do Desenvolvedor</b></legend>
+                <input class="form-control " placeholder="Nome do Desenvolvedor" type="text" id="id-nome-dev" name="nome-dev">
+                
+                <legend><b>Status</b></legend>
+                <div class="btn btn-outline-dark">
+                    <label for="id-indisp"><b>Indisponivel</b></label>
+                    <input type="radio" id="id-indisp" name="disp">
+                </div>
+                <div class="btn btn-outline-dark">
+                    <label for="id-disp"><b>Disponivel</b></label>
+                    <input type="radio" id="id-disp" name="disp">
+                </div>
+                <legend><b>Especialidade</b></legend>
+                <div class="btn btn-outline-dark">
+                    <label for="id-front"><b>Front-end</b></label><input type="radio" id="id-front" name="espec">
+                </div>
+                <div class="btn btn-outline-dark">
+                    <label for="id-back"><b>Back-end</b></label><input type="radio" id="id-back" name="espec">
+                </div>
+                <div class="btn btn-outline-dark">
+                    <label for="id-full"><b>Fullstack</b></label><input type="radio" id="id-full" name="espec">
+                </div>
+                
+            </div>
+        <div class="card-footer" style="text-align: center;">
+            <input class="btn btn-primary border border-dark w-50 rounded-pill" onclick="salvardev()" type="submit" value="Salvar">
+        </div>
+    </div>
+</body>
+</html>

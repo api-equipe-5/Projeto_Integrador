@@ -1,0 +1,162 @@
+image: docker
+services:
+  - docker:dind
+
+stages:
+  - build
+  - runmongo_master
+  - runmongo_dev
+  - runmongo_staging
+  - package_master
+  - package_dev
+  - package_staging
+  - deploy_master
+  - deploy_dev
+  - deploy_staging
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
+runmongo_master:
+  stage: runmongo_master
+  script:
+    - docker container stop mongo_master || true
+    - docker container rm -f mongo_master || true
+    - docker pull mongo
+    - docker run -p 27017:27017 --name mongo_master -d mongo
+  only:
+    - master
+  except:
+    - dev
+    - staging
+
+runmongo_dev:
+  stage: runmongo_dev
+  script:
+    - docker container stop mongo_dev || true
+    - docker container rm -f mongo_dev || true
+    - docker pull mongo
+    - docker run -p 27019:27017 --name mongo_dev -d mongo
+  only:
+    - dev
+  except:
+    - master
+    - staging
+
+runmongo_staging:
+  stage: runmongo_staging
+  script:
+    - docker container stop mongo_staging || true
+    - docker container rm -f mongo_staging || true
+    - docker pull mongo
+    - docker run -p 27018:27017 --name mongo_staging -d mongo
+  only:
+    - staging
+  except:
+    - master
+    - dev
+
+build:
+  image: gradle:5.0-jdk8-alpine
+  stage: build
+  script:
+    - gradle build
+  artifacts:
+    paths:
+      - build/libs/*.jar
+
+package_master:
+  stage: package_master
+  script:
+    - docker build -t registry.gitlab.com/cristiano.gregio/antenas-integracao-master .
+    - echo "$CI_JOB_TOKEN" | docker login $CI_REGISTRY -u gitlab-ci-token --password-stdin
+    - docker push registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  only:
+    - master
+  except:
+    - dev
+    - staging
+
+package_dev:
+  stage: package_dev
+  script:
+    - docker build -t registry.gitlab.com/cristiano.gregio/antenas-integracao-master .
+    - echo "$CI_JOB_TOKEN" | docker login $CI_REGISTRY -u gitlab-ci-token --password-stdin
+    - docker push registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  only:
+    - dev
+  except:
+    - master
+    - staging
+
+package_staging:
+  stage: package_staging
+  script:
+    - docker build -t registry.gitlab.com/cristiano.gregio/antenas-integracao-master .
+    - echo "$CI_JOB_TOKEN" | docker login $CI_REGISTRY -u gitlab-ci-token --password-stdin
+    - docker push registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  only:
+    - staging
+  except:
+    - master
+    - dev
+
+deploy_master:
+  stage: deploy_master
+  script:
+    - apk upgrade && apk update
+    - apk add openssh-client
+    - apk add sshpass
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker pull registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER "docker container stop master && docker container rm master || true"
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker run --name master -p 8081:8081 -d registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  environment:
+    name: prod
+    url: http://localhost:8081
+  only:
+    - master
+  except:
+    - dev
+    - staging
+
+deploy_dev:
+  stage: deploy_dev
+  script:
+    - apk upgrade && apk update
+    - apk add openssh-client
+    - apk add sshpass
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker pull registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER "docker container stop dev && docker container rm dev || true"
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker run --name dev -p 8082:8082 -d registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  environment:
+    name: dev
+    url: http://localhost:8082
+  only:
+    - dev
+  except:
+    - master
+    - staging
+
+deploy_staging:
+  stage: deploy_staging
+  script:
+    - apk upgrade && apk update
+    - apk add openssh-client
+    - apk add sshpass
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker pull registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER "docker container stop staging && docker container rm staging || true"
+    - sshpass -p "$SERVER_PASSWORD" ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER docker run --name staging -p 8083:8083 -d registry.gitlab.com/cristiano.gregio/antenas-integracao-master
+  environment:
+    name: staging
+    url: http://localhost:8083
+  only:
+    - staging
+  except:
+    - master
+    - dev

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Antenas - Empresa</title>
+  </head>
+  <body>
+
+    <div class="modal fade" id="modal-novo-projeto" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-label">Adicionar novo projeto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form data-form-new-project>
+              <div class="form-group">
+                <label for="projeto-nome">Título do projeto:</label>
+                <input type="text" name="titulo" class="form-control" id="projeto-nome" placeholder="Digite o título do seu projeto">
+              </div>
+              <div class="form-group">
+                <label for="projeto-descricao-breve">Descrição breve:</label>
+                <input type="text" name="descricao-breve" class="form-control" id="projeto-descricao-breve" placeholder="Digite uma breve descrição do seu projeto">
+              </div>
+              <div class="form-group">
+                <label for="projeto-link-externo-1">Link externo:</label>
+                <input type="text" name="link-externo-1" class="form-control" id="projeto-link-externo-1" placeholder="Link externo">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" data-publish-project>Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal-mais-info" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-label"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="info-descricao-breve">
+              <h5>Descrição breve:</h5>
+              <p data-text-content=""></p>
+            </div>
+            
+            <div id="info-descricao-completa">
+              <hr>
+              
+              <h5>Descrição completa:</h5>
+              <p data-text-content=""></p>
+            </div>
+            
+            <div id="info-descricao-tecnologias">
+              <hr>
+  
+              <h5>Descrição das tecnologias:</h5>
+              <p data-text-content></p>
+            </div>
+            
+            <div id="info-links-externos">
+              <hr>
+
+              <div id="info-link-externo-1">
+                <h5>Link externo 1:</h5>
+                <a data-text-content="" target="_blank"></a>
+              </div>
+              
+              <div id="info-link-externo-2">
+                <h5>Link externo 2:</h5>
+                <a data-text-content target="_blank"></a>
+              </div>
+            </div>
+
+            <div id="info-responsavel-cadi">
+              <hr>
+
+              <h5>Responsavel CADI:</h5>
+              <p data-text-content></p>
+            </div>
+
+            <div id="info-professores-responsaveis">
+              <hr>
+
+              <h5>Professores responsáveis:</h5>
+              <ul data-text-content></ul>
+            </div>
+
+            <div id="info-reuniao">
+              <hr>
+
+              <h5>Data e hora da reunião:</h5>
+              <p data-text-content></p>
+            </div>
+
+            <div id="info-entregas">
+              <hr>
+
+              <h5>Entregas</h5>
+              <ul data-text-content></ul>
+            </div>
+
+            <div id="info-negado">
+              <hr>
+
+              <h5>Motivo da recusa:</h5>
+              <p data-text-content></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span>Projeto Antenas</span>
+        <span data-empresario-nome></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-novo-projeto">Adicionar projeto</a>
+          </li>
+          <li class="nav-item">
+            <a data-empresario-logout class="nav-link" href="#">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content-wrapper">
+      <table class="table table-hover">
+
+        <thead>
+          <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Progresso</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody data-projects-table-body></tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

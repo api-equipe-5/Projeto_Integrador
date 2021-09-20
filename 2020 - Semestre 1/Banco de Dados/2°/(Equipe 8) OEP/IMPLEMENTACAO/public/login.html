@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+	<img src="../img/fundo2.jpg" class="card-img" id="imagem_fundo">
+	<div class="card-img-overlay" id="card" style="text-align: center">
+		<div class="card-body" style="color:black;" >
+			<img src="../img/logo.jpg" width="100" height="100">
+			<div style="text-align: left;" class="mx-3">
+				<label><b>Usuário</b></label>
+				<input class="form-control border-primary "type="text" id="usuario" placeholder="Usuário" >
+				<label><b>Senha</b></label>
+				<input class="form-control border-primary "type="password" id="senha" placeholder="Senha" >
+			</div>
+		</div>
+		<div class="card-footer">
+			<button class="btn btn-primary w-25 border border-dark rounded-pill" id="va" onclick="validar()"><b>Entrar</b></button> 
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript">
+	function validar(){
+		if ($("#usuario").val().toUpperCase()!= "ADMIN" || $("#senha").val()!= "megadev2020") {
+			return alert("Usuário ou Senha invalido");
+		}
+		window.location.href="index.html";
+
+	}
+	$("#usuario, #senha").keypress(function(event){
+		if (event.keyCode == 13) {
+			validar()
+		}
+	})
+</script>
+</html>

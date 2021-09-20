@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Reuniao
+		</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+  		<!-- script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+		<script>
+		$(window).on( "load", function(){
+				
+				$("#reuniaoid").click(function() {
+					
+					var info = $("#info").val();
+					
+					
+					$("#tabelaReuniao").empty();
+					
+											
+					var url = "/cadi/dataReuniao";
+				
+					
+					$.getJSON(url, function(data) {
+						
+						var itens = [];
+						
+						$.each(data, function(i){
+							
+							itens.push("<tr> <td>"+ this.info + "</td></tr>");
+						
+						});
+						
+						$("#tabelaReuniao").append(itens);
+							
+					});
+				});
+				
+				
+					
+					});	
+				
+		
+			
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="row navbar navbar-light " style="margin: 0 0 0 0; background-color: #e3f2fd">
+       		<img class="img-fluid col-1" style="max-width:180px" src="imgs/logo.svg">
+        	<h2 style="margin:15px 0 15px -100px; color:#3172C1">TESTE_DATA</h2>
+
+        	<div class="navbar-buttons">
+          
+        	</div>
+		</div>
+		<div class="container">
+			<br/>
+			<form>
+				<div>
+					<label for="data">Data da Reuniao</label><br/>
+					<input type="date" id="diaReuniao" name="diaReuniao" placeholder="Escolha a data da reuniao" min="2019-10-04" max="2019-10-18">
+					<span class="validity" id="diaReuniao"></span>
+				</div>
+				<div>
+					</br>
+					<button type="submit" class="btn btn-success">Enviar</button>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>

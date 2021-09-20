@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.min.js"></script>
+	<script src="https://export.dhtmlx.com/gantt/api.js?v=20180322"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?v=5.2.4" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js?v=5.2.4"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:regular,medium,thin,bold">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css?v=5.2.4">
+	<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>	
+	<link rel="stylesheet" href="https://docs.dhtmlx.com/gantt/codebase/dhtmlxgantt.css?v=6.0.0">
+	<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Icones Fontawesome -->
+	<script src="https://kit.fontawesome.com/83250a9515.js" crossorigin="anonymous"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+	<!-- React -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<!-- JSX -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	
+
+	<title>Necto - Gantt</title>
+	
+	<style>
+			body, html {
+			  height: 100%;
+			  font-family: "Inconsolata", sans-serif;
+			}
+			
+			.bgimg {
+			  background-position: center;
+			  background-size: cover;
+			  background-image:url("/home/daniele/Desktop/tentativa/frontito/fotiras/capa.jpg");
+			  min-height: 75%;
+			}
+			
+			.menu {
+			  display: none;
+			}
+		.chart-wrap, * { font-family: "Inconsolata", sans-serif; }
+		
+				 .chart-wrap {
+				    background: #f3f3f6;
+				  padding: 20px;
+				/* height: 100%; */
+				}
+				  
+				  
+				  .gantt_task_link {
+				    opacity: .2; }
+				  
+				  
+				  .gantt_scale_cell, .gantt_task_cell {
+				    border-right: 1px solid #F3F3F6; }
+				  
+				  .gantt_grid_data .gantt_row, .gantt_grid_data .gantt_row.odd {
+				  	transition: .3s all ease-in-out;   }
+				  
+				  .gantt_task_line {
+				  	background: #7Fbeeb;
+				    border: 0px solid blue;  	}
+				  
+				  .gantt_task_content {
+				    text-align: left !important; 
+				    font-weight: bold; }
+				  .gantt_grid .gantt_grid_scale .gantt_grid_head_cell {
+				    text-transform: none;
+					  font-weight: 800;
+					  color: #C9CAD5;
+				  font-size: 18px;}
+				  
+				  .gantt_cell[data-column-name="text"] { /* Prokect Title */
+				    font-weight: bold;
+				    font-size: 18px;
+				  	color: #2E2C56}
+				  
+				  .gantt_row div:nth-child(4) { /* Subtask Title */
+				    font-weight: 600;
+				    font-size: 16px;
+				  	color: #474469}
+				  
+				 .gantt_task .gantt_task_scale .gantt_scale_cell {
+				   text-transform: none; } 
+				  .gantt_grid_data .gantt_row.gantt_selected, .gantt_grid_data .gantt_row.odd.gantt_selected, .gantt_task_row.gantt_selected {
+				    background: azure; }
+				  .gantt_task_row.gantt_selected .gantt_task_cell {
+				    border-right-color: rgba(145,210,210,.2); }
+				  .gantt_grid_data .gantt_row:hover {
+				    background-color: rgba(0,199,181,.1); }
+				  .gantt_tree_icon.gantt_close {
+				    width: 20px;
+				    cursor: pointer;
+				    padding-right: 5px; 
+				    opacity: .5; }
+				  div.gantt_grid_scale:after, div.gantt_scale_line:last-child:after {
+				    box-shadow: none; }
+				  .subtitle {
+				    color: #999;
+				    margin:0px 0px -10px 0px;
+				    font-weight: 400;
+				    font-size: 14px;
+				  }
+				
+				.badge.badge-danger {
+				  background: red;
+				  color: white;
+				}
+			.modalDialog {
+				position: fixed;
+				font-family: Arial, Helvetica, sans-serif;
+				top: x;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				pointer-events: none;
+			}
+		
+			.modalDialog:target {
+				opacity:1;
+				pointer-events: auto;
+			}
+		
+			.modalDialog > div {
+				width: 400px;
+				position: relative;
+				margin: 10% auto;
+				padding: 5px 20px 13px 20px;
+				border-radius: 10px;
+				background: #fff;
+				background: -moz-linear-gradient(#fff, #999);
+				background: -webkit-linear-gradient(#fff, #999);
+				background: -o-linear-gradient(#fff, #999);
+			}
+		
+			.close {
+				background: #606061;
+				color: #FFFFFF;
+				line-height: 25px;
+				position: absolute;
+				right: -12px;
+				text-align: center;
+				top: -10px;
+				width: 24px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000;
+			}
+		
+			.close:hover { background: #00d9ff; }
+			
+			 .btn {
+			  background-color: #000000;
+			  border: none;
+			  color: white;
+			  padding: 12px 16px;
+			  font-size: 16px;
+			  cursor: pointer;
+			}
+			
+			/* Darker background on mouse-over */
+			.btn:hover {
+			  background-color: #000000;
+			}
+
+			.weekend{ background: #f4f7f4 !important;}
+			
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+			
+			/* Modal Content */
+			.modal-content {
+			  position: relative;
+			  background-color: #fefefe;
+			  margin: auto;
+			  padding: 0;
+			  border: 1px solid #888;
+			  width: 80%;
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			  -webkit-animation-name: animatetop;
+			  -webkit-animation-duration: 0.4s;
+			  animation-name: animatetop;
+			  animation-duration: 0.4s
+			}
+			
+			/* Add Animation */
+			@-webkit-keyframes animatetop {
+			  from {top:-300px; opacity:0} 
+			  to {top:0; opacity:1}
+			}
+			
+			@keyframes animatetop {
+			  from {top:-300px; opacity:0}
+			  to {top:0; opacity:1}
+			}
+			
+			/* The Close Button */
+			.close {
+			  color: white;
+			  float: right;
+			  font-size: 28px;
+			  font-weight: bold;
+			}
+			
+			.close:hover,
+			.close:focus {
+			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+			
+			.modal-header {
+			  padding: 2px 16px;
+			  background-color: #000000;
+			  color: white;
+			}
+			
+			.modal-body {padding: 2px 16px;}
+			
+			.modal-footer {
+			  padding: 2px 16px;
+			  background-color: #5cb85c;
+			  color: white;
+			}
+		h1 {
+		  	font-family: "Inconsolata", sans-serif;			
+			margin-bottom: 1rem;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		fieldset {
+			border: 0;
+		}
+
+		body, input, select, textarea {
+			height: 100%;
+  			font-family: "Inconsolata", sans-serif;			
+  			font-size: 1em;
+		}
+		
+		.grupo:before, .grupo:after {
+			content: " ";
+			display: table;
+		}
+		
+		.grupo:after {
+			clear: both;
+		}
+
+		.campo {
+			margin-bottom: 1em;
+		}
+
+		.campo label {
+			margin-bottom: 0.2em;
+			color: #666;
+			display: block;
+		}
+
+		fieldset.grupo .campo {
+			float:  left;
+			margin-right: 1em;
+		}
+
+		.campo input[type="text"],
+		.campo input[type="email"],
+		.campo input[type="url"],
+		.campo input[type="tel"],
+		.campo select,
+		.campo textarea {
+			padding: 0.2em;
+			border: 1px solid #CCC;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			display: block;
+		}
+
+		.campo select option {
+			padding-right: 1em;
+		}
+
+		.campo input:focus, .campo select:focus, .campo textarea:focus {
+			background: #FFC;
+		}
+
+		.campo label.checkbox {
+			color: #000;
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		.botao {
+			font-size: 1.5em;
+			background: #0000c8;
+			border: 0;
+			margin-bottom: 1em;
+			color: #FFF;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+
+		.botao:hover {
+			background: #0000c8;
+			box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: none;
+		}
+
+		.botao, select, label.checkbox {
+			cursor: pointer;
+		}
+	</style>
+  </head>
+  <body>
+	  <!-- Links de cima --> 
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-black">
+		    <div class="w3-col s3">
+		      <a href="/" class="w3-button w3-block w3-black">HOME</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="/ganttTasks" class="w3-button w3-block w3-black">GANTT</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="/devs" class="w3-button w3-block w3-black">Desenvolvedores</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="https://gitlab.com/gurst6/projeto-integrador-gantt" class="w3-button w3-block w3-black">GIT</a>
+		    </div>
+		  </div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<button id="save" style="margin-left: 15px" class="btn"><i class="fa fa-folder"></i> SAVE</button>
+		<button style="margin-right: 15px; float: right;" class="btn" id="myBtn">+ Funcionário</button>
+		<br>
+		<br>
+		<div id="gantt_here" style="width:100%; height:100%;"></div>
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal" style="width: 50%; height: 50%; left: 25%; top: 25% ">		
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Formulario:</h2>
+				</div>
+				<br>
+				<div class="modal-body">
+				
+					<form id="form" method="post">
+					<fieldset>
+			
+						<div class="campo">
+							<label for="email">Nome Completo:</label>
+							<input type="text" required="required" id="label" name="label" style="width: 100%" value="" />
+						</div>
+						<button id="login" type="submit" class="botao submit">+ Salvar</button>
+				
+					</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+
+				gantt.config.wide_form = true; 
+				gantt.config.resource_property = "user_id";
+
+				//----------------------------------------------------------------------------------
+				// Carregamento dos dados ----------------------------------------------------------
+				//----------------------------------------------------------------------------------
+				
+				gantt.serverList("people", [
+					{{#funcionarios}}
+					{
+						key: "{{id}}",
+						label: "{{label}}"
+					},
+					{{/funcionarios}}
+				]);
+
+				var data = {
+					"data" : [ 
+						{{#projetos}}
+						{
+							"id" : "{{id}}",
+							"text" : "{{text}}",
+							"start_date" : "{{start_date}}",
+							"end_date" : "{{end_date}}",
+							"status" : "On Track",
+							"order" : 10,
+							"progress" : "{{progress}}",
+							"type" : "{{type}}",
+							"open" : true,
+							"parent" : "{{parent}}",
+							"duration" : "{{duration}}",
+							"priority" : "{{priority}}"
+						},
+						{{/projetos}}
+						{{#tarefas}}
+						{
+							"id" : "{{id}}",
+							"text" : "{{text}}",
+							"start_date" : "{{start_date}}",
+							"end_date" : "{{end_date}}",
+							"status" : "On Track",
+							"progress" : "{{progress}}",
+							"parent" : "{{parent}}",
+							"duration" : "{{duration}}",
+							"priority" : "{{priority}}",
+							"type" : "{{type}}",
+							"render" : "{{render}}",
+							"owner_id" : "{{owner}}"
+						},
+						{{/tarefas}}
+					],
+					"links" : [
+						{{#links}}
+						  {
+						   "id":"{{id}}",
+						   "source":"{{source}}",
+						   "target":"{{target}}",
+						   "type":"{{type}}"
+					      },
+						{{/links}}
+					]
+				};
+				//----------------------------------------------------------------------------------
+
+
+				//----------------------------------------------------------------------------------
+				// Carregamento dos dados ----------------------------------------------------------
+				//----------------------------------------------------------------------------------
+				gantt.i18n.setLocale({
+					date: {
+						month_full: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+							"Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+						month_short: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", 
+							"Ago", "Set", "Out", "Nov", "Dec"],
+						day_full: ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira",
+							"Sexta-feira", "Sábado"],
+						day_short: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+					},
+					labels: {
+						new_task: "Nova tarefa",
+						icon_save: "Salvar",
+						icon_cancel: "Cancelar",
+						icon_details: "Detalhes",
+						icon_edit: "Editar",
+						icon_delete: "Deletar",
+						gantt_save_btn: "Salvar",
+						gantt_cancel_btn: "Cancelar",
+						gantt_delete_btn: "Excluir",
+						confirm_closing: "",// Your changes will be lost, are you sure?
+						confirm_deleting: "A tarefa será excluída permanentemente. Confirmar exclusão?",
+						section_description: "Descrição",
+						section_time: "Período de tempo",
+						section_type: "Tipo",
+				
+						/* grid columns */
+						column_wbs: "WBS",
+						column_text: "Nome da tarefa",
+						column_start_date: "Hora de início",
+						column_duration: "Duração",
+						column_add: "",
+				
+						/* link confirmation */
+						link: "Link",
+						confirm_link_deleting: "Será excluído",
+						link_start: " (Começo)",
+						link_end: " (Fim)",
+				
+						type_task: "Tarefa",
+						type_project: "Projeto",
+						type_milestone: "Marco",
+				
+						minutes: "Minutos",
+						hours: "Horas",
+						days: "Dias",
+						weeks: "Semanas",
+						months: "Meses",
+						years: "Anos",
+				
+						/* message popup */
+						message_ok: "OK",
+						message_cancel: "Cancelar",
+				
+						/* constraints */
+						section_constraint: "Constante",
+						constraint_type: "Tipo de Constante",
+						constraint_date: "Data da Constante",
+						asap: "Assim que possível",
+						alap: "Mais tarde possível",
+						snet: "Não iniciar antes de",
+						snlt: "Não iniciar depois de",
+						fnet: "Não terminar antes de",
+						fnlt: "Não terminar depois de",
+						mso: "Deve começar em",
+						mfo: "Deve terminar em",
+				
+						/* resource control */
+						resources_filter_placeholder: "Digite para filtrar",
+						resources_filter_label: "Esconder vazios"
+					}
+				});
+
+				gantt.locale.labels.section_owner = "Responsável"
+				gantt.locale.labels.section_split = "Dividir"
+				gantt.locale.labels.section_priority = "Prioridade"
+				//----------------------------------------------------------------------------------
+				
+				gantt.templates.scale_cell_class = function(date){
+					if(!gantt.isWorkTime(date)){
+						return "weekend";
+					}
+				};
+				gantt.templates.timeline_cell_class = function(task,date){
+					if(!gantt.isWorkTime({task:task, date:date})){
+						return "weekend" ;
+					}
+				};
+	
+				var formatter = gantt.ext.formatters.durationFormatter({
+									enter: "hour", 
+									store: "hour",
+									format: "hour"
+								});
+				
+				gantt.config.columns = [ {
+					name : "text",
+					label : "Projetos",
+					tree : true,
+					width : '*',
+					template : RowTitle
+				}, {
+					name: "owner", label : "Responsável", width: 80, align: "center", template: function (item) {
+						for (var i = 0; i < gantt.serverList('people').length; i++){
+							if (gantt.serverList('people')[i].key == item.owner_id){
+								return gantt.serverList('people')[i].label
+							}
+						}
+					}
+				}, {
+					name: "start_date", label: "Início"
+				}, {
+				 	name : "add"
+				}];
+				
+				//----------------------------------------------------------------------------------
+				// Configuração das telas de crud --------------------------------------------------
+				//----------------------------------------------------------------------------------
+								
+				gantt.config.lightbox.sections = [
+					{name: "type", type: "typeselect", height:30, map_to: "type"},
+					{name:"priority", label: "Prioridade", height:30, map_to:"priority", type:"select", options: [ 
+						{key:1, label: "Alta"},                                               
+						{key:2, label: "Média"},                                             
+						{key:3, label: "Baixa"}                                                 
+					]},
+					{name:"description", height:60, map_to:"text", type:"textarea", focus:true},
+        			{name:"owner", map_to:"owner_id", height:30, type:"select", options:gantt.serverList("people")}, 
+        			{name: "time", type: "duration", height:40, map_to: "auto", formatter: formatter},
+				];				
+
+				gantt.config.lightbox.project_sections = [
+					{name: "type", type: "typeselect", height:30, map_to: "type"},
+					{name:"priority", height:30, map_to:"priority", type:"select", options: [ 
+						{key:1, label: "Alta"},                                               
+						{key:2, label: "Média"},                                             
+						{key:3, label: "Baixa"}                                                 
+					]},
+					{name:"description", height:30, map_to:"text", type:"textarea", focus:true},
+				];	
+
+				gantt.config.lightbox.milestone_sections = [
+					{name: "type", type: "typeselect", height:30, map_to: "type"},
+					{name:"description", height:30, map_to:"text", type:"textarea", focus:true},
+				];	
+				// ------------------------------------------------------------------------------
+				
+				gantt.config.work_time = false;  // removes non-working time from calculations 
+				//gantt.config.skip_off_time = true;
+				gantt.config.duration_unit = "hour";
+				//gantt.config.show_tasks_outside_timescale = true;
+
+				gantt.config.drag_project = true;
+				
+				var RowTitle = function(obj) {
+					return ('<h3 style=\"line-height:14px;color:#0b0839;margin:5px 0px -10px 0px;\">Title</h3><p class=\"subtitle\">small subtitle</p>');
+				}
+
+				gantt.config.row_height = 50
+			
+				//gantt.config.scroll_size = 20;
+			
+				gantt.config.scale_unit = "day";
+				gantt.config.date_scale = "%d %M %Y";
+				//gantt.config.min_column_width = 50;
+			
+				gantt.config.scale_height = 70;
+			
+				var weekScaleTemplate = function(date) {
+					var dateToStr = gantt.date.date_to_str("%d %M");
+					var endDate = gantt.date.add(gantt.date.add(date, 1, "week"), -1, "day");
+					return dateToStr(date) + " - " + dateToStr(endDate);
+				};
+			
+				var daysStyle = function(date) {
+					var dateToStr = gantt.date.date_to_str("%D");
+					if (dateToStr(date) == "Sun" || dateToStr(date) == "Sat")
+						return "weekend";
+			
+					return "";
+				};
+			
+				var hourToStr = gantt.date.date_to_str("%H:%i");
+
+				var hourRangeFormat = function(step){
+					return function(date){
+						var intervalEnd = new Date(gantt.date.add(date, step, "hour") - 1)
+						return hourToStr(date) + " - " + hourToStr(intervalEnd);
+					};
+				};
+
+				gantt.config.subscales = [   {
+					unit : "hour",
+					step : 1,
+					date : "%Hh"
+				} ];
+
+				var zoomConfig = {
+					levels: [
+					{
+						name:"hour",
+						//scale_height: 27,
+						min_column_width:10,
+						scales:[
+							{unit: "hour", step: 1, format: "%Hh"}
+						]
+					},
+					{
+						name:"day",
+						//scale_height: 27,
+						min_column_width:80,
+						scales:[
+							{unit: "day", step: 1, format: "%d %M"}
+						]
+					},
+					{
+						name:"week",
+						//scale_height: 50,
+						min_column_width:100,
+						scales:[
+						{unit: "week", step: 1, format: function (date) {
+						var dateToStr = gantt.date.date_to_str("%d %M");
+						var endDate = gantt.date.add(date, -6, "day");
+						var weekNum = gantt.date.date_to_str("%W")(date);
+						return "#" + weekNum + ", " + dateToStr(date) + " - " + dateToStr(endDate);
+						}},
+						{unit: "day", step: 1, format: "%j %D"}
+						]
+					},
+					{
+						name:"month",
+						//scale_height: 50,
+						min_column_width:120,
+						scales:[
+							{unit: "month", format: "%F, %Y"},
+							{unit: "week", format: "Week #%W"}
+						]
+						},
+						{
+						name:"quarter",
+						//height: 50,
+						min_column_width:140,
+						scales:[
+						{unit: "month", step: 1, format: "%M"},
+						{
+						unit: "quarter", step: 1, format: function (date) {
+							var dateToStr = gantt.date.date_to_str("%M");
+							var endDate = gantt.date.add(gantt.date.add(date, 3, "month"), -1, "day");
+							return dateToStr(date) + " - " + dateToStr(endDate);
+						}
+						}
+						]},
+						{
+						name:"year",
+						//scale_height: 50,
+						min_column_width: 200,
+						scales:[
+							{unit: "year", step: 1, format: "%Y"}
+						]}
+					],
+					useKey: "ctrlKey",
+									trigger: "wheel",
+									element: function(){
+										return gantt.$root.querySelector(".gantt_task");
+									}
+				};
+
+				gantt.ext.zoom.init(zoomConfig);
+				gantt.init("gantt_here");
+								
+				gantt.parse(data);				    
+
+				$("#save").click(function() {
+					
+				// PREPARE FORM DATA
+					var formData = JSON.stringify(gantt.serialize());
+					
+					// DO POST
+					jQuery.ajax ({
+						url: "/salvar",
+						type: "POST",
+						data: formData,
+						dataType: "json",
+						contentType: "application/json; charset=utf-8",
+						success: function(){
+							gantt.message("Diagramas salvos com sucesso.");							
+						}
+					});
+				});
+				
+				$('form').submit(function(e){    
+				
+					e.preventDefault();
+					
+					var label = $('#label').val().trim();
+						
+					var funcData = JSON.stringify({label : label});
+					
+					jQuery.ajax({
+						url : "/submitFunc",
+						type : "POST",
+						data : funcData,
+						dataType : "json",
+						contentType : "application/json; charset=utf-8",
+						success : function() {
+							gantt.message("Funcionário cadastrado.");
+							
+						}
+					});
+
+					jQuery.ajax({
+						url : "/funcionario/getFuncionarios",
+						type : "GET",
+						dataType : "json",
+						contentType : "application/json; charset=utf-8",
+						success : function(data) {
+							var res = JSON.parse(JSON.stringify(gantt.serverList("people")).replace("id", "key"));
+							gantt.updateCollection("people", res);
+						}
+					});
+					modal.style.display = "none";
+
+				});
+			});
+		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+			
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			  modal.style.display = "block";
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+			
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+			    modal.style.display = "none";
+			  }
+			}
+			</script>
+		<!-- Rodapé -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+		  <p>Powered by Bubble Sort</p>
+		  <p><center>Members: Gabriel Queiroz, Gustavo Ribeiro e Igor Pereira.<br> Master: Gabriel Queiroz </center></p>
+		</footer>
+
+</body>
+</html>

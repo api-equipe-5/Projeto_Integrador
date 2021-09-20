@@ -1,0 +1,6 @@
+[submodule "AntenasClient"]
+	path = AntenasClient
+	url = https://github.com/antena-dream-team/AntenasClient
+[submodule "AntenasService"]
+	path = AntenasService
+	url = https://github.com/antena-dream-team/AntenasService

@@ -1,0 +1,7 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.content-wrapper {
+  overflow-x: auto;
+}

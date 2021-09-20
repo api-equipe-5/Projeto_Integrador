@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/login.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="card" id="telaLogin" style="text-align: center">
+		<div class="card-body" >
+            <div class="cardy-body">
+              <label>Usuário</label>
+              <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Digite o email">
+            </div>
+            <div class="form-group">
+              <label>Senha</label>
+              <input type="password" class="form-control" id="senha" placeholder="Digite a senha">
+            </div>
+            <div class="buttons">
+            <button class="btn btn-outline-secondary" id="login" onclick="validar()">Entrar</button>
+            <button class="btn btn-outline-secondary" id="cadastro" onclick="cadastro()">Cadastrar</button>
+            </div>
+        </div>
+      </div>
+ </body>
+<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript">
+	function validar(){
+		if ($("#usuario").val()!= "admin@darwing" || $("#senha").val()!= "darwing") {
+			return alert("Usuário ou Senha Inválidos");
+		}
+		window.location.href="index.html";
+
+	}
+	$("#usuario, #senha").keypress(function(event){
+		if (event.keyCode == 13) {
+			validar()
+		}
+	})
+</script>
+<script type="text/javascript">
+	function cadastro(){
+		window.location.href="cadastro.html"
+	}
+</script>
+</html>

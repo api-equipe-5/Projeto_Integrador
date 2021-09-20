@@ -1,0 +1,56 @@
+{
+	"empresario": {
+		"nome": "aa",
+		"email": "bbb",
+		"empresa": "embraboing",
+		"cpf": "vcc",
+		"senha": "ddd",
+		"telefone": "190",
+		"ativo": false
+	},
+	"projeto": {
+		"_id": "6ads68we",
+		"c have": "chavezinha",
+		"titulo": "a",
+		"descricao-breve": "a",
+		"link-externo-1": "",
+		"link-externo-2": "",
+		"descricao-completa": "a",
+		"descricao-tecnologias": "",
+		"fase": 4,
+		"reuniao": {
+			"data": "",
+			"horario": "",
+			"local": "",
+			"datas-possiveis": [
+				{
+					"data": "02/03/2020",
+					"hora": "13:50"
+				}
+			]
+		},
+		"status": {
+			"negado": true,
+			"motivo": "sou um merda"
+		},
+		"entregas": [
+			{
+				"aluno-responsavel": "responsavel@email.com",
+				"alunos": [
+					"outros@email.com"
+				],
+				"link-repositorio": "http://repo.com.br",
+				"link-cloud": "http://cloud.com",
+				"comentario": "sla"
+			}
+		],
+		"responsavel-cadi": "suamae@hotmail.com",
+		"responsavel-professor": [
+			"seupai@yahoo.com"
+		],
+		"responsavel-empresario": "empresario@email",
+		"alunos": [
+			"email@alunos.com.br"
+		]
+	}
+}

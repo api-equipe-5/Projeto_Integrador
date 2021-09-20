@@ -1,0 +1,47 @@
+.control-form{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	margin: 20px 0;
+}
+.control-form #control-aluno {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding:40px 20px;
+}
+.control-form #control-aluno #aluno input{
+	border: none;
+	width: 50%;
+	margin: 10px;
+	border-bottom: solid 1px #ccc;
+	padding: 5px;
+	transition: all linear 0.2s;
+}
+.control-form #control-aluno #aluno input:focus {
+    outline: none;
+    border-bottom: solid 1px #0072bb;
+    transition: all linear 0.2s;
+}
+.control-form #control-aluno .btn-cadAlu{
+	background:#0083bb;
+	padding: 10px;
+	text-transform: uppercase;
+	border: none;
+	margin: 10px 0;
+	color: white;
+	width: 130px;
+	font-weight: 700;
+	transition: all linear 0.2s;
+	cursor: pointer;
+}
+.control-form #control-aluno .btn-cadAlu:hover{
+	background:#008eea;
+	padding: 10px;
+	text-transform: uppercase;
+	border: none;
+	margin: 10px 0;
+	color: white;
+	font-weight: 700;
+	transition: all linear 0.2s;
+}
+

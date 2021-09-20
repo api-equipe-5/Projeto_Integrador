@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+	<div class="card" id="telaCadastro" style="text-align: center">
+		<div class="card-body" >
+                <div class="name-body">
+				<label>Nome Completo</label>
+				<input type="text" class="form-control" id="name_user" placeholder="Nome Completo">
+                </div>
+                <div class="email-body">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email_user" aria-describedby="emailHelp" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                <label>Senha</label>
+                <input type="password" class="form-control" id="senha_user" placeholder="Digite a senha">
+                </div>
+                <button type="submit" class="btn btn-outline-secondary"  id="cadastro" onclick="cadastrar()">Cadastrar</button>
+                <button type="submit" class="btn btn-outline-secondary"  id="sair" onclick="sair()">Sair</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function sair(){
+			window.location.href= "login.html";
+		}
+	</script>
+</body>
+</html>

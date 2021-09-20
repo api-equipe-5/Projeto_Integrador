@@ -1,0 +1,1197 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+*/
+@import url(./frappe-gantt.css);
+
+
+/*DEFININDO A CLASS BORDER BOX-SHADOW*/
+
+/**/
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.boxShadow1{
+    box-shadow: 0px 2px 5px #888888;
+}
+
+.div_shadow{
+    width: 150px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #666666;
+    box-shadow: 0px 0px 5px #698FEB;
+}
+
+.btn_shadow0{
+    width: 120px;
+    height: 35px;
+    border-style: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../images/seta1.png);
+    display:inline;
+    border-width: 0px;
+}
+
+.btn_shadow1{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../images/seta1.png);
+    display:inline;
+}
+
+.btn_shadow1_1{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+    background-image: url(../images/seta2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.btn_shadow2{
+    width: 150px;
+    min-height: 35px;
+    height: fit-content;  
+    border-radius: 6px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+}
+
+.btn_shadow3{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    color: #698FEB;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+
+.btn_shadow4{
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    color: #698FEB;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+    margin-top: 12px;
+    margin-right: 5px;
+    
+}
+
+.btn_shadow4_1{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    border-style: none;
+    color: #698FEB;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    
+}
+
+.styleWord1_2{
+    color: #698FEB;
+    font-weight: 200;
+    font-family: monospace;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/*BOTÃO CRIADO PARA O RELATÓRIO - BTN PROJETOS*/
+.btn_shadow4_2{
+    width: 270px;
+    height: 35px;
+    border-style: none;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;    
+}
+
+
+.styleWord1{
+    padding-top: 5px;
+    padding: 5px;
+    color: #698FEB;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**/
+/*///////////////////////////////////*/
+
+/*///////////////////////////////////*/
+
+
+/*TELA PADRÃO DE CADASTROS - DIALOG*/
+
+.abreCadastro{
+    border-style: inset;
+  border-width: 5px;
+  border-color: #698FEB;
+  border-radius:0px 20px 0px 20px;
+    width: 600px;
+    height: 550px;
+  
+}
+
+
+.abreCadastro #btn_fechar{
+    margin-top: 10px;
+     margin-left: 500px;
+     width: 80px;
+}
+
+#bloco_superior{
+    width: 590px;
+    min-height: 60px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#bloco_superior h1{
+    width: 320px;
+    margin-left: 5px;
+     margin-top: -30px;
+}
+
+
+
+/*///////////////////////////////////*/
+
+/*TELA DIALOG DENTRO DE DIALOG*/
+
+.abreCadastro_1{
+    border-style: inset;
+  border-width: 5px;
+  border-color: rgb(83, 97, 129);
+  border-radius:0px 20px 0px 20px;
+    width: 400px;
+    height: 350px;
+  
+}
+.abreCadastro_1 #btn_fechar_1{
+    margin-top: 10px;
+     margin-left: 310px;
+     width: 70px;
+}
+
+#bloco_superior_1{
+     width: 390px;
+    height: 50px;
+    margin-left: 5px;
+     margin-top: 10px;
+}
+
+#bloco_superior_1 h1{
+    width: 300px;
+    margin-left: 5px;
+     margin-top: -30px;
+     font-size: 15px;
+}
+
+
+/*///////////////////////////////////*/
+
+/*TELA DIALOG - DASHBOARD*/
+
+.abreDialogDashboard{
+    border-style: inset;
+  border-width: 5px;
+  border-color: rgb(83, 97, 129);
+  border-radius:0px 20px 0px 20px;
+    width: 1200px;
+    height: 550px;
+}
+
+
+/*///////////////////////////////////*/
+
+/*DEFININDO O ESTILO DA BARRA SUPERIOR*/
+#top {
+    display: inline-flex;
+	width: 1248px;
+	height: 60px;
+}
+
+#top #imgbtn_menusuperior{
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*MENU 1 DROPDOWN*/
+
+/**/
+.dropdown_menusuperior {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content_menusuperior {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 165px;
+  
+  
+}
+
+.dropdown-content_menusuperior a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 130px;
+    border-style: solid;
+    border-color: #698FEB;
+    border-width: 1px;
+}
+
+.dropdown_menusuperior a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/**/
+
+
+/*////////////////*/
+
+#top h1{
+    margin-top: 13px;
+    justify-content: flex-start;
+    margin-left: 60px;
+    width: 350px;
+    font-size: 1.2vw;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+#top #btn_compartilhar{
+    justify-content: flex-end;
+    margin: 10px;
+    width: 100px;
+}
+
+#top #btn_salvarplanning{
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 180px;
+   margin-left: 500px;
+    
+}
+
+
+/*///////////////////////////////////*/
+
+
+
+/*DEININDO O ESTILO DA PÁGINA CENTRAL*/
+
+/*TOPO*/
+#top_central{
+    margin-top: 30px;
+    margin-left: 200px;
+    display:inline-flex;
+    width: 860px;
+    height: 60px;
+}
+
+#top_central h1{
+    justify-content: flex-start;
+    width: 150px;
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 350px;
+    margin-left: 30px;
+    margin-top: 15px;
+    height: 40px;
+    
+}
+
+
+
+#top_central #btn_salvarplanning{
+    margin-top: 10px;
+    width: 80px;
+    margin-left: -20px;
+}
+
+#top_central #imgbtn_prj{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 13px;
+    margin-right: 85px;
+    margin-left: -85px;
+    
+}
+
+
+
+
+#top_central #imgbtn_trf{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 90px;
+    margin-left: -40px;
+    
+}
+
+#imgbtn_close{
+    width: 30px;
+    height: 30px; 
+    display: inline;  
+    margin-right: 10px;
+    position: absolute;
+    top: 4%; 
+    left: 85%;
+}
+
+
+
+
+#top_central #imgbtn_pessoas{
+    justify-content: flex-end;
+    width: 30px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 80px;
+    margin-left: -50px;
+    
+}
+
+
+
+#top_central #imgbtn_download{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 50px;
+    margin-left: -50px;
+    
+}
+
+#top_central .div_icon{
+    margin-left: 40px;
+}
+#top_central #imgbtn_icon{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+
+/*///////////////////////////////////*/
+
+/*DEFININDO O ESTILO DAS COLUNAS CENTRAIS*/
+
+#central{
+    
+	width: 1248px;
+	display: flex;
+	flex-wrap: wrap;    
+	margin-top: 3px;
+}
+
+#left_center{
+	overflow: auto;
+	width: 180px;
+	height: 380px;
+    justify-content: flex-start;
+    
+	
+}
+
+
+
+#central #left_center #col_tarefas{
+    height: 350px;
+    width: 170px;
+    overflow:auto;
+    margin-left: 15px;
+    
+}
+
+#left_center #btn_expandetarefa{
+    margin-left: 15px;
+}
+
+#center {
+    overflow: auto;
+    margin-left: 20px;
+	width: 856px;
+	height: 370px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #68BAE8;
+    justify-content: center;
+    
+}
+
+
+
+#right_center{
+    justify-content: flex-end;
+    
+	width: 180px;
+	height: 380px;
+	
+}
+
+#right_center #btn_pessoas{
+    margin-left: 25px;
+    
+}
+
+#right_center #pessoas_top #pessoas_list{
+    width: 145px;
+    height: 160px;
+    margin-left: 27px;
+    margin-top: 3px;
+    overflow:auto;
+    padding-top: 20px;
+}
+
+#right_center #pessoas_top #pessoas_list #lb_pessoa_hd{ 
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+}
+
+#right_center #pessoas_top #pessoas_list #lb_pessoa_hd #lb_horasdispo_pes{
+    color: red;
+
+}
+
+#right_center #btn_datas{
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+#right_center #datas #datas_list{
+    width: 145px;
+    height: 145px;
+    margin-left: 27px;
+    margin-top: 3px;
+}
+
+#right_center #datas #datas_list label{
+    margin-left: -5px;
+}
+
+#right_center #datas #datas_list #dt_prazo{
+    font-size: 12px;
+    margin-left: -5px;
+    color: red;
+}
+
+#right_center #datas #datas_list #dt_inicial{
+    font-size: 12px;
+    margin-left: -5px;
+    color: red;
+}
+
+#right_center #datas #datas_list #dt_final{
+    font-size: 12px;
+    margin-left: -5px;
+    color: red;
+}
+
+
+
+
+/*///////////////////////////////////*/
+
+#bottom_central{
+     margin-top: 3px;
+    margin-left: 200px;
+    display:flex;
+    justify-content: flex-end;
+    width: 860px;
+    height: 60px;
+    display: inline-block;
+}
+
+#bottom_central #btn6{
+    margin-left: 10px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+/*///////////////////////////////////*/
+
+/*CADASTRO DE HABILIDADES*/
+
+#CadastroHabilidades #lb_nome_habilidade{
+    margin-left: 20px;
+}
+
+#CadastroHabilidades #nome_habilidade{
+    margin-left: 20px;
+    
+}
+
+
+
+#CadastroHabilidades #btn_gravarHabilidade{
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#habilidades_cadastradas #lista_habilidades_cadastradas{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: auto;
+
+}
+
+#habilidades_cadastradas #lista_habilidades_cadastradas .class_habilidades{
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*//////////////////////////////////////////*/
+
+/*INCLUIR HABILIDADES*/
+
+#InclusaoHabilidades #lb_nome_pessoa{
+    margin-left: 20px;
+}
+
+#InclusaoHabilidades #nome_pessoa{
+    margin-left: 20px;
+    width: 200px;
+}
+
+#InclusaoHabilidades #lb_seleciona_nome_habilidade{
+    margin-left: 20px;
+}
+
+#InclusaoHabilidades #seleciona_nome_habilidade{
+    margin-left: 20px;
+    width: 200px;
+}
+
+#InclusaoHabilidades #btn_gravarInclusao{
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#InclusaoHabilidades #btn_mostrarInclusoesCadastradas{
+    width: 140px;
+
+}
+
+#cadastrados_pes_hab #nome_pessoa_1{
+    margin-left: 20px;
+    width: 200px;
+}
+
+#cadastrados_pes_hab #lista_pessoas_habilidades{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: auto;
+
+}
+
+#cadastrados_pes_hab #lista_pessoas_habilidades .class_habilidades{
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*//////////////////////////////////////////*/
+
+/*CADASTRO PROJETO*/
+
+#cadastro_projeto{
+    margin-top: -25px;
+    width: 575px;
+    margin-left: 20px;
+    display: block;
+    
+}
+
+
+#cadastro_projeto #codProjeto{
+   width: 100px;
+   margin-bottom: 5px;
+   
+    
+}
+
+#cadastro_projeto #codAnteriorCadasProjeto{
+    width: 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#cadastro_projeto #codPosteriorCadasProjeto{
+    width: 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#cadastro_projeto #lb_progresso{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
+}
+
+#cadastro_projeto #progresso{
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+#cadastro_projeto #nomeProjeto{
+   width: 200px;
+   margin-bottom: 10px;
+}
+#cadastro_projeto #escopo{
+    width: 170px;
+    margin-bottom: 10px;
+}
+#cadastro_projeto #dt_inicioProjeto{
+    width: 130px;
+    margin-bottom: 10px;
+}
+#cadastro_projeto #dt_prazoProjeto{
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+#cadastro_projeto #custo{
+    width: 90px;
+    margin-bottom: 10px;
+ }
+
+ #cadastro_projeto #horas_desenvolvimento{
+    width: 90px;
+    margin-bottom: 10px;
+ }
+
+ 
+
+#cadastro_projeto #corProjeto{
+    width: 200px;
+    margin-bottom: 10px;
+}
+#cadastro_projeto #btn_novoprojeto{
+    width: 80px;
+}
+#cadastro_projeto #btn_salvarprojeto{
+    width: 80px;
+    margin-left: 5px;
+}
+#cadastro_projeto #btn_atualizarCadasProjeto{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#cadastro_projeto #btn_excluirCadasProjeto{
+    width: 80px;
+    margin-left: 5px;
+}
+#cadastro_projeto #btn_cancelarCadasProjeto{
+    width: 80px;
+    
+}
+
+#listaProjeto{
+    margin-top: 10px;
+    width: 550px;
+    height: 130px;
+    overflow: auto;
+}
+
+#listaProjeto table{
+    width: 500px;
+    margin-left: 30px;
+    
+}
+
+#listaProjeto table caption{
+    width: 200px;
+    text-align: left;
+}
+
+
+
+/*////////////////////////////////////*/
+
+/*CADASTRO DE PESSOAS*/
+
+#btn_cadasHabilidades{
+    margin-left: 10px;
+    display: inline;
+}
+
+#cadastroPessoas{
+    width: 200px;
+    margin-left: 45px;
+    display: inline;
+}
+
+#cadastroPessoas #codPessoa{
+    width: 50px;
+}
+
+#cadastroPessoas #nomePessoa{
+    width: 200px;
+}
+
+#cadastroPessoas #contato{
+    width: 100px;
+}
+
+#cadastroPessoas #salario{
+    width: 100px;
+}
+
+#cadastroPessoas #faltas{
+    width: 30px;
+}
+#cadastroPessoas #horas_disponiveis{
+    width: 30px;
+}
+
+#cadastroPessoas #codAnteriorCadasPessoa{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#cadastroPessoas #codPosteriorCadasPessoa{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+#cadastroPessoas #btn_novapessoa{
+    width: 80px;
+}
+#cadastroPessoas #btn_salvarpessoa{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#cadastroPessoas #btn_atualizarCadasPessoa{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#cadastroPessoas #btn_excluirCadasPessoa{
+    width: 80px;
+    margin-left: 5px;
+}
+#cadastroPessoas #btn_cancelarCadasPessoa{
+    width: 80px;
+    
+}
+
+#TablePessoas{
+    margin-top: 30px;
+    width: 550px;
+    height: 200px;
+    overflow: auto;
+}
+
+#TablePessoas table{
+    width: 500px;
+    margin-left: 30px;
+    
+}
+
+#TablePessoas table caption{
+    width: 200px;
+    margin-left: -30px;
+}
+
+
+/*////////////////////////////////////*/
+
+/*DISTRIBUI PESSOAS*/
+
+
+#distribuicaoPessoas{
+    width: 500px;
+    margin-left: 20px;
+}
+
+#distribuicaoPessoas #codDistribuicao{
+    width: 100px;
+}
+
+#distribuicaoPessoas #selecionaProjeto_distribuicao{
+     width: 250px;
+    margin-bottom: 10px;
+}
+
+#distribuicaoPessoas #listaTarefa{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#distribuicaoPessoas #listaPessoa{
+    width: 250px;
+}
+
+#TableDistribuicao{
+    
+    width: 610px;
+    height: 150px;
+    overflow: auto;
+}
+
+#TableDistribuicao table{
+    width: 590px;
+    margin-left: 5px;
+    
+}
+
+#TableDistribuicao caption{
+    width: 300px;
+    text-align: left;
+}
+
+.col1{
+    width: 120px;
+}
+
+.col4{
+    width: 6px;
+}
+
+
+#distribuicaoPessoas #codAnteriorDistribuicao{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas #codPosteriorDistribuicao{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+
+#distribuicaoPessoas  #btn_novadistribuicao{
+    width: 80px;
+    margin-top: 10px;
+}
+#distribuicaoPessoas  #btn_salvardistribuicao{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas  #btn_atualizarCadasDistribuicao{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas  #btn_excluirCadasDistribuicao{
+    width: 80px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas  #btn_cancelarCadasDistribuicao{
+    width: 80px;
+    margin-left: 5px;
+}
+
+/*////////////////////////////////////*/
+
+/*CADASTRO TAREFA*/
+
+#cadastro_tarefa{
+    width: 580px;
+    margin-left: 15px;
+    display: block;
+    
+}
+
+
+#cadastro_tarefa #listaProjetos{
+     width: 250px;
+    margin-bottom: 10px;
+}
+
+#cadastro_tarefa #listaInterdependencia{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#cadastro_tarefa #interdependencia{
+     width: 200px;
+    margin-bottom: 10px;
+}
+
+#cadastro_tarefa #codTarefa{
+   width: 100px;
+   
+    
+}
+
+#cadastro_tarefa #codAnteriorCadasTarefa{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#cadastro_tarefa #codPosteriorCadasTarefa{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+
+#cadastro_tarefa #lb_progressotarefa{
+    margin-left: 10px;
+}
+
+#cadastro_tarefa #progressotarefa{
+    width: 80px;
+    margin-left: 10px;
+}
+
+#cadastro_tarefa #nomeTarefa{
+   width: 200px;
+}
+#cadastro_tarefa  #dt_inicioTarefa{
+    width: 150px;
+}
+#cadastro_tarefa  #dt_finalTarefa{
+    width: 150px;
+    margin-bottom: 10px;
+}
+#cadastro_tarefa  #dt_prazoTarefa{
+    width: 150px;
+}
+
+
+
+#cadastro_tarefa  #entregavel{
+    width: 15px;
+    height: 15px;
+}
+
+#cadastro_tarefa  #btn_novatarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_tarefa  #btn_salvartarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_tarefa #btn_atualizarCadasTarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_tarefa #btn_excluirCadasTarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+
+#cadastro_tarefa  #btn_cancelarCadasTarefa{
+    width: 100px;
+    
+}
+
+
+
+
+
+/*////////////////////////////////////*/
+
+/*RELATÓRIO*/
+
+#draganddrop_projetos{
+    width: 595px;
+    height: 200px;
+}
+
+#draganddrop_projetos #rel_projetos{
+    width: 270px;
+    height: 300px;
+    margin-left: 10px;
+    float: left;
+}
+
+#draganddrop_projetos #rel_projetos #projetos_cadastrados{
+    border-color: #68BAE8;
+    border-style: dashed;
+    width: 270px;
+    height: 280px;
+    overflow: auto;
+}
+
+
+
+#draganddrop_projetos #escolhe_projetos{
+    width: 270px;
+    height: 300px;
+    margin-left: 10px;
+    float: right;
+}
+
+#draganddrop_projetos #escolhe_projetos #projetos_dashboard{
+    border-color: #68BAE8;
+    border-style: dashed;
+    width: 270px;
+    height: 280px;
+    overflow: auto;
+}
+
+
+
+
+#abreRelatorio #btn_dashboard{
+    float: right;
+    margin-top: 50px;
+}
+
+/*DASHBOARD*/
+
+#dashboard_projetos{
+    width: 1070px;
+    height: 500px;
+    float: right;
+    overflow: auto;
+    margin-top: +70px;
+}
+
+#dashboard_projetos .view_projeto{
+    border-style: inset;
+    border-width: 2px;
+    border-radius:0px 20px 0px 20px;
+    border-style: outset;
+    width: 1030px;
+    height: 300px;
+    overflow: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: inherit;
+}
+
+#dashboard_projetos .class_nome_projeto{
+    width: 700px;
+    font-size: 25px;
+    margin-left: 50px;
+    
+}
+
+#dashboard_projetos #div_cor_projeto{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+    
+}
+
+#dashboard_projetos .view_projeto .class_dados_projeto{
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#dashboard_projetos .view_projeto .class_dados_projeto #lb_dados_projeto{
+    width: 700px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#dashboard_projetos .view_projeto .class_dados_tarefa{
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#dashboard_projetos .view_projeto .class_dados_tarefa #lb_nome_tarefa_dashboard{
+    font-weight: 600;
+}
+
+#dashboard_projetos .view_projeto .class_dados_pessoa{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+#abreDashboard #btn_fechardashboard{
+    float: right;
+    width: 70px;
+}
+/*////////////////////////////////////*/
+
+/*CUSTOM GANTT*/
+
+
+.details-container{
+    width: 200px;
+    background-color: white;
+    border-style: inset;
+    border-color: #698FEB;
+    border-width: 2px;
+    padding-left: 10px;
+    border-style: outset;
+    border-radius: 7px;
+}

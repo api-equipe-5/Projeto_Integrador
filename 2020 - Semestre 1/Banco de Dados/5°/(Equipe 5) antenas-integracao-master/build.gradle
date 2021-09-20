@@ -1,0 +1,42 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+//apply plugin: 'jetty'
+apply plugin: 'application'
+
+mainClassName = 'empresario.hello.MainServer'
+applicationName = 'antena'
+
+defaultTasks = ['clean', 'jar']
+
+dependencies {
+	compile 'com.sparkjava:spark-core:2.3'
+	compile 'org.json:json:20141113'
+	compile 'com.google.code.gson:gson:1.7.2'
+	compile 'com.sparkjava:spark-template-mustache:1.0.0'
+	compile 'org.slf4j:slf4j-api:1.7.12'
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.11.0'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    compile group: 'com.github.fakemongo', name: 'fongo', version: '2.1.0'
+    implementation 'com.auth0:java-jwt:3.8.2'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-email
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'empresario.hello.MainServer'
+    }
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } } {
+        // remove all signature files
+        exclude 'META-INF/*.SF'
+        exclude 'META-INF/*.DSA'
+        exclude 'META-INF/*.RSA'
+    }
+}
+//task stage(dependsOn: ['clean', 'installApp'])
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean

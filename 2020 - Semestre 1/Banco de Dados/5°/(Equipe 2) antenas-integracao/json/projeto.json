@@ -1,0 +1,24 @@
+{
+	"chave": "",
+	"titulo": "Primeiro Projeto",
+	"descricaoBreve": "Descricao inicial trallala",
+	"descricaoCompleta": "",
+	"descricaoTecnologica": "",
+	"fase": 0,
+	"reuniao": null,
+	"statusMotivo": "",
+	"status" : "novo",
+	"entregas": null,
+	"responsavelCadi": "",
+	"responsavelProfessor": [],
+	"responsavelEmpresario": "",
+	"alunos": []
+}
+
+{
+	"data": "15/04/2020",
+	"horario": "20:00",
+	"local": "alltec"
+}
+
+

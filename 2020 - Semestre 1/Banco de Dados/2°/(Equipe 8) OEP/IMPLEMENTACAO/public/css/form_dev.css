@@ -1,0 +1,14 @@
+body{
+    font-family: inherit;
+    background-color: #4491c4;
+}
+#card{
+	margin-left: auto;margin-right: auto;width: 500px;margin-top: 7rem
+}
+.form-control{
+	border-color: black;
+}
+#imagem_fundo{
+	height: 40rem;
+
+}

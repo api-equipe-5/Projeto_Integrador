@@ -1,0 +1,23 @@
+.banner{
+	background: #0072bb;
+	/*background: rgb(255,149,200);*/
+	background-size: cover;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.3em;
+}
+.img-banner{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/cad.jpg);
+	background-size: cover;
+	height: 25vh;
+	background-position: center;
+}
+.banner-index{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/cadastro.jpg);
+	background-size: cover;
+	height: 40vh;
+	background-position: center;
+}

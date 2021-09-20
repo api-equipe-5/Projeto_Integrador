@@ -1,0 +1,161 @@
+body{
+    font-family: inherit;
+    background-color: #111344;
+}
+a:link, a:visited{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.hidden {
+    display:none;
+}
+input {
+    display:block;
+}
+#menu-home{
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.modal{
+    margin: auto;
+    position: absolute;
+    top: 87px;
+    left: 15%;
+    padding: 15%;
+    background: #fff;
+    width: 40%;
+    border-radius: 10px;
+    display: none;  
+}
+.modal:target{
+    display: block;
+}
+.fechar{
+    position: absolute;
+    top: -27px;
+    left: 870px;
+}
+.titulo-modal{
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #fff;
+}
+#titulo-escr{
+    color: #111344;
+    position: relative;
+    left: 50px;
+}
+.modal-dia{
+    margin: auto;
+    position: absolute;
+    top: 87px;
+    left: 24px;
+    padding-top: 39%;
+    background: #fff;
+    width: 97%;
+    border-radius: 10px;
+    display: none;
+}
+.modal-dia:target{
+    display: block;
+}
+.fechar-dia{
+    position: absolute;
+    top: -27px;
+    left: 1240px;
+}
+.titulo-modal-dia{
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #fff;
+}
+#titulo-escr-dia{
+    color: #111344;
+    position: relative;
+    left: 40px;
+}
+#chart_div{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    width: 1300px;
+    height: 20px;
+}
+#chart1{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+#chart_div2{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    width: 1300px;
+    height: 20px;
+}
+#chart2{
+    position: absolute;
+    top: 360px;
+    left: 500px;
+}
+.carrocel{
+    width: 1000px;
+    top: 20px;
+    right: 20px;
+}
+#formulario{
+    width: 850px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.btn{
+    position: relative;
+    top: 210px;
+    right: -220px;
+    width: 100px;
+}
+#tabela-proj{
+    border-style: solid;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 900px;
+}
+#tabela-dev{
+    color: black;
+    border-style: solid;
+    position: absolute;
+    top: -135px;
+    right: -672px;
+    width: 900px;
+}
+#chart-btn{
+    position: absolute;
+    left: 40%;
+    top: 95%;
+}
+#chart-btn2{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+}

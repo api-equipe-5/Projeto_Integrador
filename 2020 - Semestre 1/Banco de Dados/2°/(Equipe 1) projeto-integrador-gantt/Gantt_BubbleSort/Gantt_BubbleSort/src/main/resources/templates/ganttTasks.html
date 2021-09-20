@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.min.js"></script>
+	<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>	
+	<script src="https://export.dhtmlx.com/gantt/api.js?v=20180322"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Icones Fontawesome -->
+	<script src="https://kit.fontawesome.com/83250a9515.js" crossorigin="anonymous"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+	<!-- React -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<!-- JSX -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	
+
+	<title>Necto - Gantt</title>
+	
+	<style>
+			body, html {
+			  height: 100%;
+			  font-family: "Inconsolata", sans-serif;
+			}
+			
+			.bgimg {
+			  background-position: center;
+			  background-size: cover;
+			  background-image:url("/home/daniele/Desktop/tentativa/frontito/fotiras/capa.jpg");
+			  min-height: 75%;
+			}
+			
+			.menu {
+			  display: none;
+			}
+		.chart-wrap, * { font-family: "Inconsolata", sans-serif; }
+		
+				 .chart-wrap {
+				    background: #f3f3f6;
+				  padding: 20px;
+				/* height: 100%; */
+				}
+				  
+				  
+				  .gantt_task_link {
+				    opacity: .2; }
+				  
+				  
+				  .gantt_scale_cell, .gantt_task_cell {
+				    border-right: 1px solid #F3F3F6; }
+				  
+				  .gantt_grid_data .gantt_row, .gantt_grid_data .gantt_row.odd {
+				  	transition: .3s all ease-in-out;   }
+				  
+				  .gantt_task_line {
+				  	background: #7Fbeeb;
+				    border: 0px solid blue;  	}
+				  
+				  .gantt_task_content {
+				    text-align: left !important; 
+				    font-weight: bold; }
+				  .gantt_grid .gantt_grid_scale .gantt_grid_head_cell {
+				    text-transform: none;
+					  font-weight: 800;
+					  color: #C9CAD5;
+				  font-size: 18px;}
+				  
+				  .gantt_cell[data-column-name="text"] { /* Prokect Title */
+				    font-weight: bold;
+				    font-size: 18px;
+				  	color: #2E2C56}
+				  
+				  .gantt_row div:nth-child(4) { /* Subtask Title */
+				    font-weight: 600;
+				    font-size: 16px;
+				  	color: #474469}
+				  
+				 .gantt_task .gantt_task_scale .gantt_scale_cell {
+				   text-transform: none; } 
+				  .gantt_grid_data .gantt_row.gantt_selected, .gantt_grid_data .gantt_row.odd.gantt_selected, .gantt_task_row.gantt_selected {
+				    background: azure; }
+				  .gantt_task_row.gantt_selected .gantt_task_cell {
+				    border-right-color: rgba(145,210,210,.2); }
+				  .gantt_grid_data .gantt_row:hover {
+				    background-color: rgba(0,199,181,.1); }
+				  .gantt_tree_icon.gantt_close {
+				    width: 20px;
+				    cursor: pointer;
+				    padding-right: 5px; 
+				    opacity: .5; }
+				  div.gantt_grid_scale:after, div.gantt_scale_line:last-child:after {
+				    box-shadow: none; }
+				  .subtitle {
+				    color: #999;
+				    margin:0px 0px -10px 0px;
+				    font-weight: 400;
+				    font-size: 14px;
+				  }
+				
+				.badge.badge-danger {
+				  background: red;
+				  color: white;
+				}
+			.modalDialog {
+				position: fixed;
+				font-family: Arial, Helvetica, sans-serif;
+				top: x;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				pointer-events: none;
+			}
+		
+			.modalDialog:target {
+				opacity:1;
+				pointer-events: auto;
+			}
+		
+			.modalDialog > div {
+				width: 400px;
+				position: relative;
+				margin: 10% auto;
+				padding: 5px 20px 13px 20px;
+				border-radius: 10px;
+				background: #fff;
+				background: -moz-linear-gradient(#fff, #999);
+				background: -webkit-linear-gradient(#fff, #999);
+				background: -o-linear-gradient(#fff, #999);
+			}
+		
+			.close {
+				background: #606061;
+				color: #FFFFFF;
+				line-height: 25px;
+				position: absolute;
+				right: -12px;
+				text-align: center;
+				top: -10px;
+				width: 24px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000;
+			}
+		
+			.close:hover { background: #00d9ff; }
+			
+			 .btn {
+			  background-color: #000000;
+			  border: none;
+			  color: white;
+			  padding: 12px 16px;
+			  font-size: 16px;
+			  cursor: pointer;
+			}
+			
+			/* Darker background on mouse-over */
+			.btn:hover {
+			  background-color: #000000;
+			}
+	</style>
+  </head>
+  <body>
+	  <!-- Links de cima --> 
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-black">
+		    <div class="w3-col s3">
+		      <a href="/" class="w3-button w3-block w3-black">HOME</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="/ganttTasks" class="w3-button w3-block w3-black">GANTT</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="/report" class="w3-button w3-block w3-black">REPORT</a>
+		    </div>
+		    <div class="w3-col s3">
+		      <a href="https://gitlab.com/gurst6/projeto-integrador-gantt" class="w3-button w3-block w3-black">GIT</a>
+		    </div>
+		  </div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<script>
+			$(document).ready(function(){
+				
+				gantt.serverList("people", [
+				    {key: 1, label: "John"},
+				    {key: 2, label: "Mike"},
+				    {key: 3, label: "Anna"},
+				    {key: 4, label: "Bill"},
+				    {key: 7, label: "Floe"}
+				]);
+				
+				gantt.config.columns = [ {
+					name : "text",
+					label : "Title",
+					tree : true,
+					width : '*',
+					template : RowTitle
+				},	{
+					name : "status",
+					label : "Status",
+					align : "center",
+					hide : true
+				},  {	
+					name:"owner", map_to:"owner_id", type:"select", options:gantt.serverList("people")
+				},{
+					name : "add"
+				}];
+				
+				var RowTitle = function(obj) {
+					return ('<h3 style=\"line-height:14px;color:#0b0839;margin:5px 0px -10px 0px;\">Title</h3><p class=\"subtitle\">small subtitle</p>');
+				}
+				
+
+				gantt.config.row_height = 50
+			
+				gantt.config.scroll_size = 20;
+			
+				gantt.config.scale_unit = "month";
+				gantt.config.step = 1;
+				gantt.config.date_scale = "%F, %Y";
+				gantt.config.min_column_width = 50;
+			
+				gantt.config.scale_height = 90;
+			
+				var weekScaleTemplate = function(date) {
+					var dateToStr = gantt.date.date_to_str("%d %M");
+					var endDate = gantt.date.add(gantt.date.add(date, 1, "week"), -1, "day");
+					return dateToStr(date) + " - " + dateToStr(endDate);
+				};
+			
+				var daysStyle = function(date) {
+					var dateToStr = gantt.date.date_to_str("%D");
+					if (dateToStr(date) == "Sun" || dateToStr(date) == "Sat")
+						return "weekend";
+			
+					return "";
+				};
+			
+				gantt.config.subscales = [ {
+					unit : "week",
+					step : 1,
+					template : weekScaleTemplate
+				}, {
+					unit : "day",
+					step : 1,
+					date : "%D",
+					css : daysStyle
+				} ];
+				
+				
+				var data = {
+					"data" : [ 
+						{
+							"id" : "1",
+							"text" : "teste",
+							"start_date" : "11-07-2020",
+							"end_date" : null,
+							"status" : "On Track",
+							"order" : 10,
+							"progress" : null,
+							"type" : "project",
+							"open" : true
+						},
+					],
+					"links" : [
+					//  { "id":1, "source":1, "target":2, "type":"0"},
+					//  { "id":3, "source":3, "target":4, "type":"0"},
+					]
+				};
+					
+				gantt.init("gantt_here");
+			
+				gantt.parse(data);				    
+
+				$("#save").click(function(event) {
+					
+				// PREPARE FORM DATA
+					var formData = JSON.stringify(gantt.serialize());
+
+					alert(formData);
+					
+					// DO POST
+					jQuery.ajax({
+								url : "/salvar",
+								type : "POST",
+								data : formData,
+								dataType : "json",
+								contentType : "application/json; charset=utf-8",
+								success : function() {
+									alert("Save Success!")
+								}
+							});
+				});
+			});
+		</script>
+		<div id="newProj" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Novo Projeto</h5>
+						<span aria-hidden="true">&times;</span>
+					</div>
+					<div class="modal-body">
+						<form>
+						<div class="form-group">
+							<label for="gt-dev" class="col-form-label">Cliente:</label>
+							<input type="text" class="form-control" id="gt-dev">
+						</div>
+						
+						<div class="form-group">
+							<label for="gt-date" class="col-form-label">Data de Inicio:</label>
+							<input class="form-control" id="gt-date" type="date"></input>
+						</div>
+		
+						<div class="form-group">
+							<label for="gt-text" class="col-form-label">Descrição:</label>
+							<textarea class="form-control" id="gt-text"></textarea>
+						</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						<button type="button" class="btn btn-primary" onclick="criarElemento()" data-dismiss="modal">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="newTask" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Nova Atividade</h5>
+						<span aria-hidden="true">&times;</span>
+					</div>
+					<div class="modal-body">
+						<form>
+						<div class="form-group">
+							<label for="gt-dev" class="col-form-label">Nome:</label>
+							<input type="text" class="form-control" id="gt-dev">
+						</div>
+						
+						<div class="form-group">
+							<label for="gt-date" class="col-form-label">Data de Inicio:</label>
+							<input class="form-control" id="gt-date" type="date"></input>
+						</div>
+						
+						<div class="form-group">
+							<label for="gt-date" class="col-form-label">Data de Final
+							:</label>
+							<input class="form-control" id="gt-date" type="date"></input>
+						</div>
+		
+						<div class="form-group">
+							<label for="gt-text" class="col-form-label">Descrição:</label>
+							<textarea class="form-control" id="gt-text"></textarea>
+						</div>
+						
+						<div class="form-group">
+							<label for="gt-dev" class="col-form-label">Projeto Mãe:</label>
+							<input type="text" class="form-control" id="gt-dev">
+						</div>
+						
+						<div class="form-group">
+							<label for="gt-dev" class="col-form-label">Desenvolvedor(es):</label>
+							<input type="text" class="form-control" id="gt-dev">
+						</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						<button type="button" class="btn btn-primary" onclick="criarElemento()" data-dismiss="modal">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="postResultDiv" align="center"></div>
+		<div class="w3-container w3-center">
+			<div class="w3-bar">
+			  <a href="#newProj"><button class="w3-button w3-black">+ Project</button></a>
+			  <a href="#newTask"><button class="w3-button w3-teal">+ Task</button></a>
+			  <button class="w3-button w3-red">+ Developer</button>
+			</div>
+		</div>
+		<button type="submit" id="save" style="margin-left: 15px" class="btn"><i class="fa fa-folder"></i> SAVE</button>
+		<br>
+		<br>
+		<div id="gantt_here" style="width: 100%; height: 100%;"></div>
+		
+		<!-- Rodapé -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+		  <p>Powered by Bubble Sort</p>
+		  <p><center>Members: Gabriel Queiroz e Gustavo Ribeiro.<br> Master: Gabriel Queiroz </center></p>
+		</footer>
+
+</body>
+</html>

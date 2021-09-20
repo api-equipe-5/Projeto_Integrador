@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projetos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+  		<!-- script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function () {
+			
+				
+				$.getJSON("/listarProf", function(data){
+					
+					var profs = [];
+					
+					$.each(data, function(i){
+	    				
+						profs.push("<option>" + this.name + "</option>");
+					});	
+
+				$('#professor').append(profs);
+				});
+				
+				$('form').submit(function(e){
+					
+					e.preventDefault();
+			
+					var professor = $( "#professor option:selected" ).text();
+					alert(professor);
+			
+					$.post("/putProf", JSON.stringify({'_id':"5d929d03ceea7312a8cbb090",'responsavel-professor': professor}), "json");
+				});
+			});
+		</script>
+		
+    </head>
+    
+	<body>
+    	<div class="row navbar navbar-light " style="margin: 0 0 0 0; background-color: #e3f2fd">
+       		<img class="img-fluid col-1" style="max-width:180px" src="imgs/logo.svg">
+        	<h2 style="margin:15px 0 15px -100px; color:#3172C1">TESTE_PROFS</h2>
+
+        	<div class="navbar-buttons">
+          
+        	</div>
+		</div>
+			
+			<div class="container">
+				<br></br>
+  				<h2>Designa&ccedil;&atilde;o de Professores</h2>
+				<br></br>
+  					
+  				<button type="button" id="botao" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal">Designar Professor</button>
+
+
+				<form class="form-group form-group">
+  				<div class="modal fade" id="modal" role="dialog">
+    				<div class="modal-dialog modal-dialog-centered">
+    
+      				
+      				<div class="modal-content">
+        			<div class="modal-header">
+          			<h4 class="modal-title">Professores</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+        			</div>
+        			<div class="modal-body">
+          				<div class="dropdown" style="max-width:400px">
+                			<select id="professor">
+								<option value="" selected="selected ">Escolha um Professor</option>
+							</select>
+            			</div>
+        			</div>
+        			<div class="modal-footer">
+          			<button type="submit" class="btn btn-success" data-dismiss="modal">Designar</button>
+        			</div>
+      				</div>
+      				
+      				</div>
+  				</div>
+  				</form>
+  
+			</div>
+
+    </body>
+</html>

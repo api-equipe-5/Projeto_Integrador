@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Planejamento Diario - Gantt</title>
+				
+		<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+		<script src="https://export.dhtmlx.com/gantt/api.js?v=7.0.5"></script>
+		<link href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css" rel=stylesheet>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<style type="text/css">
+			html, body{
+				height: 100%;
+				padding: 0px;
+				margin: 0px;
+				overflow: hidden;
+			}
+			.gantt_task_line.gantt_dependent_task {
+				background-color: #161866;
+				border: 4px solid #161866;
+			}
+			.gantt_task_line.gantt_dependent_task .gantt_task_progress {
+				background-color: #111344;
+			}
+			.gantt_bar_task {
+				background-color: rgb(44, 107, 255);
+				border: 4px solid rgb(44, 107, 255);
+
+			}
+			.gantt_bar_task .gantt_task_progress {
+				background-color: rgb(0, 76, 255);
+			}
+			.gantt_task_line.gantt_milestone.gantt_bar_milestone {
+				background-color: rgb(240, 225, 20);
+				border: 4px solid rgb(240, 225, 20);
+			}
+			.nested_task .gantt_add{
+				display: none !important;
+			}
+			.weekend {
+				background-color: rgb(232, 255, 255);
+			}
+			.gantt_selected .weekend {
+				background-color: rgb(232, 255, 255);
+			}
+			.gantt_scale_cell.weekend{
+				background-color: rgb(232, 255, 255);
+			}
+			.gantt-export{
+				position: absolute;
+				left: 500px;
+				top: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div style="text-align: center;">
+				<img src="/public/img/logo.jpg" style="width:80px;height:50px;">  	
+				<input class="btn btn-outline-danger" value="Export to PDF" type="button" onclick='gantt.exportToPDF()'>
+				<input class="btn btn-outline-info" value="Export to PNG" type="button" onclick='gantt.exportToPNG()'>
+				<input class="btn btn-outline-success" value="Export to XLS" type="button" onclick='gantt.exportToExcel()'>
+				<input class="btn btn-outline-dark" value="Cadastrar Projeto/Tarefa" type="button" onclick='gantt.createTask()'>
+				<button class="btn btn-outline-dark" onclick="location.href = 'form_dev.html';" id="form_dev"><b>Cadastrar Desenvolvedor</b></button>
+				<button class="btn btn-outline-dark "onclick="location.href = 'login.html';" id="sair"><b>Sair</b></button>	
+			</div>
+		</header>
+		<div id="gantt_here" style='width:100%; height:100%;'></div>
+		<script type="text/javascript">
+					
+			// LISTA DE DESENVOLVEDORES
+			gantt.serverList("staff", [
+				{key: 1, label: "Felipe"},
+				{key: 2, label: "Gabriel"},
+				{key: 3, label: "Nathan"},
+				{key: 4, label: "Empresa"},
+			]);
+
+			// DEFINE A UNIDADE DE MEDIDA DA DURAÇÃO
+			gantt.config.duration_unit = "hour";
+			gantt.config.duration_step = 1; 
+
+
+			// Unidade de Medida de Tempo p/ quadro
+			gantt.config.scale_unit = "hour";
+
+			// Informação Quadro de Descrição MES/DIA/HORA/ANO
+			gantt.config.date_scale = "%H ";
+	
+			// Tamanho Quadro de Descrição MES/DIA/HORA/ANO
+			gantt.config.scale_height = 50;
+			gantt.config.min_column_width = 30;
+
+			
+			//Informação Quadro Geral			
+			gantt.config.subscales = [
+				{unit:"day", date:"%l %j %F %Y" }
+			];
+			
+			// Ativar Descrição ao Passar do Mouse
+			gantt.plugins({ 
+				tooltip: true 
+			}); 
+			
+			// Configuração da Descrição ao Passar do Mouse
+			gantt.templates.tooltip_text = function(start,end,task){
+				return  "<b>Descrição: </b> " + task.text +
+						"<br/><b>Inicio: </b>" + gantt.templates.tooltip_date_format(start) +
+						"<br/><b>Final: </b>" + gantt.templates.tooltip_date_format(end) +
+						"<br/><b>Duração: </b>" + task.duration + " hora(s) até a conclusão";
+			};
+
+			// Configuração de Data da Descrição ao Passar do Mouse
+			gantt.templates.tooltip_date_format=function (date){
+				var formatFunc = gantt.date.date_to_str("%d-%m-%Y %H:%i");
+				return formatFunc(date);
+			};
+			
+			// Tempo de Folga Não Entra nos Calculos de Execução
+			gantt.config.work_time = true;
+			gantt.config.correct_work_time = false;   
+
+			//Define as Horas de trabalho
+			gantt.setWorkTime({ hours:[8, 12, 13, 17]});
+
+			// Demarca Quais São os Dias do Fim de Semana
+			gantt.templates.scale_cell_class = function (date) {
+				if (date.getDay() == 0 || date.getDay() == 6) {
+					return "weekend";
+				}
+			};
+			gantt.templates.timeline_cell_class = function (item, date) {
+				if (date.getDay() == 0 || date.getDay() == 6) {
+					return "weekend"
+				}
+			};
+
+			// Mensagens de Aviso
+			gantt.attachEvent("onAfterTaskDrag", function (id, mode) {
+				var task = gantt.getTask(id);
+				if (mode == gantt.config.drag_mode.progress) {
+					var pr = Math.floor(task.progress * 100 * 10) / 10;
+					gantt.message({type:"error", text:task.text + " agora esta " + pr + "% concluída!"});
+				} else {
+					var convert = gantt.date.date_to_str("%H:%i, %F %j");
+					var s = convert(task.start_date);
+					var e = convert(task.end_date);
+					gantt.message({type:"error", text:task.text + " foi alterada :<br/>Inicio:" + s + "<br/>Final:" + e});
+				}
+			});
+			gantt.attachEvent("onBeforeTaskChanged", function (id, mode, old_event) {
+				var task = gantt.getTask(id);
+				if (mode == gantt.config.drag_mode.progress) {
+					if (task.progress < old_event.progress) {
+						gantt.message({type:"error", text:"O progresso não pode ser desfeito!"});
+						return false;
+					}
+				}
+				return true;
+			});
+			gantt.attachEvent("onBeforeTaskDrag", function (id, mode) {
+				var task = gantt.getTask(id);
+				var message = task.text + " ";
+
+				if (mode == gantt.config.drag_mode.progress) {
+					message += "progresso sendo atualizado!";
+				} else {
+					message += " esta sendo ";
+					if (mode == gantt.config.drag_mode.move)
+						message += "movida!";
+					else if (mode == gantt.config.drag_mode.resize)
+						message += "redimensionada!";
+				}
+
+				gantt.message({type:"error", text:message});
+				return true;
+			});
+
+			// Ativa as funções de Exportação
+			gantt.templates.task_text = function (s, e, task) {
+				return task.text;
+			}
+
+			// Tamanho do Container do Gantt Automatico
+			gantt.config.autosize = true;
+
+			// Limita a Tarefa de Ir Para a Esquerda
+			function limitMoveRight(task, limit) {
+				var dur = task.end_date - task.start_date;
+				task.start_date = new Date(limit.start_date);
+				task.end_date = new Date(+task.start_date + dur);
+			}
+			function limitResizeRight(task, limit) {
+				task.start_date = new Date(limit.start_date)
+			}
+			gantt.attachEvent("onTaskDrag", function (id, mode, task, original, e) {
+				var parent = task.parent ? gantt.getTask(task.parent) : null,
+					children = gantt.getChildren(id),
+					modes = gantt.config.drag_mode;
+
+				var imitRight = null;
+
+				if (!(mode == modes.move || mode == modes.resize)) return;
+
+				if (mode == modes.move) {
+					limitRight = limitMoveRight;
+				} else if (mode == modes.resize) {
+					limitRight = limitResizeRight;
+				}
+				//Verifica as restrições dos projetos
+				if (parent && +parent.start_date > +task.start_date) {
+					limitRight(task, parent);
+				}
+				//Verifica as restrições das tarefas
+				for (var i = 0; i < children.length; i++) {
+					var child = gantt.getTask(children[i]);
+					if (+task.end_date < +child.end_date) {
+						limitRight(task, child);
+					} 
+				}
+			});
+
+			// COLUNAS DE INFORMAÇÃO A ESQUERDA
+			gantt.config.columns = [
+				{name: "text", label: "Tarefa/Projeto", tree: true, width: 500},
+				{name: "owner", label: "Responsável", align: "center", width: 100,
+					template: function (item) {
+						if (!item.users) return "Empresa";
+						return item.users.join(", ");
+					}
+				},
+				{name: "progress", label: "Progresso", width: 80, align: "center",
+					template: function (item) {
+						if (item.progress >= 1)
+							return "Finalizada";
+						if (item.progress == 0)
+							return "Não Iniciada";
+						return Math.round(item.progress * 100) + "%";
+					}
+				},
+				{name: "duration", label: "Duração", align: "center"}
+			];
+
+			// ALTERA O NOME DAS COLUNAS
+			gantt.locale.labels["section_progress"] = "Progresso";
+			gantt.locale.labels["section_type"] = "Dependência";
+			gantt.locale.labels["section_description"] = "Titulo";
+			gantt.locale.labels["section_time"] = "Duração";
+			gantt.locale.labels["section_owner"] = "Responsável";
+
+
+			// MODAL DE CADASTROS 
+			gantt.config.lightbox.sections = [
+				{name: "description", height: 30, map_to: "text", type: "textarea", focus: true},
+				{name:"type", height: 30, type:"parent", allow_root:"true", root_label:"Sem Dependência"},
+				{name: "users", height: 30, map_to: "users_id", type: "select", options: gantt.serverList("staff")},
+				{name: "time", height: 30, type: "time", map_to: "auto", time_format: ["%d", "%m", "%Y", "%H:%i"]},
+				{name: "progress", height: 30, map_to: "progress", type: "select", options: [
+							{key: "0", label: "Não Iniciada"},
+							{key: "0.1", label: "10%"},
+							{key: "0.2", label: "20%"},
+							{key: "0.3", label: "30%"},
+							{key: "0.4", label: "40%"},
+							{key: "0.5", label: "50%"},
+							{key: "0.6", label: "60%"},
+							{key: "0.7", label: "70%"},
+							{key: "0.8", label: "80%"},
+							{key: "0.9", label: "90%"},
+							{key: "1", label: "Finalizada"}
+				]},
+			];
+			
+			// DEFINE UMA MARCAÇÃO PARA A DATA DE HOJE
+			gantt.plugins({ 
+				marker: true 
+			}); 
+			var dateToStr = gantt.date.date_to_str(gantt.config.task_date);
+				var markerId = gantt.addMarker({
+					start_date: new Date(), 
+					text: "Agora",
+			});				
+
+			// Define a barra lateral
+			gantt.config.grid_width = 420;
+			gantt.config.grid_resize = true;
+			gantt.config.open_tree_initially = true;
+
+			// // Ao Iniciar Tarefas Escondidas
+			// // **** MANTER NO FIM DO SCRIPT ****
+			// gantt.eachTask(function(task){
+			// 	task.$open = false;
+			// });
+			
+			// // Exportar JSON
+			// gantt.exportToJSON({
+			// 	name:"gantt.json"
+			// });
+			
+			gantt.config.xml_date = "%Y-%m-%d %H:%i:%s";
+
+			gantt.config.order_branch = true;/*!*/
+			gantt.config.order_branch_free = true;/*!*/
+
+			gantt.init("gantt_here");
+			gantt.load("/data");
+
+			var dp = new gantt.dataProcessor("/data");
+			dp.init(gantt);
+			dp.setTransactionMode("REST");
+			
+	</script>
+	</body>
+</html>

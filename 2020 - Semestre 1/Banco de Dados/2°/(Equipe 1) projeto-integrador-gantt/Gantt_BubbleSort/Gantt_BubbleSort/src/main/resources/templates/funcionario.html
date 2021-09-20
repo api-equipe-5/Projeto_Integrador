@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<title>Necto - Gantt</title>
+	<style>
+
+		h1 {
+		  	font-family: "Inconsolata", sans-serif;			
+			margin-bottom: 1rem;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		fieldset {
+			border: 0;
+		}
+
+		body, input, select, textarea, button {
+			height: 100%;
+  			font-family: "Inconsolata", sans-serif;			
+  			font-size: 1em;
+		}
+		
+		.grupo:before, .grupo:after {
+			content: " ";
+			display: table;
+		}
+		
+		.grupo:after {
+			clear: both;
+		}
+
+		.campo {
+			margin-bottom: 1em;
+		}
+
+		.campo label {
+			margin-bottom: 0.2em;
+			color: #666;
+			display: block;
+		}
+
+		fieldset.grupo .campo {
+			float:  left;
+			margin-right: 1em;
+		}
+
+		.campo input[type="text"],
+		.campo input[type="email"],
+		.campo input[type="url"],
+		.campo input[type="tel"],
+		.campo select,
+		.campo textarea {
+			padding: 0.2em;
+			border: 1px solid #CCC;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			display: block;
+		}
+
+		.campo select option {
+			padding-right: 1em;
+		}
+
+		.campo input:focus, .campo select:focus, .campo textarea:focus {
+			background: #FFC;
+		}
+
+		.campo label.checkbox {
+			color: #000;
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		.botao {
+			font-size: 1.5em;
+			background: #0000c8;
+			border: 0;
+			margin-bottom: 1em;
+			color: #FFF;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+
+		.botao:hover {
+			background: #0000c8;
+			box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: none;
+		}
+
+		.botao, select, label.checkbox {
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('form').submit(function(e){    
+				
+				e.preventDefault();
+				
+				var nome = $('#nome').val().trim();
+				
+				var Ncadastro = $('#Ncadastro').val().trim();
+
+				var funcData = JSON.stringify({nome : nome, Ncadastro : Ncadastro});
+				
+				jQuery.ajax({
+					url : "/submitFunc",
+					type : "POST",
+					data : funcData,
+					dataType : "json",
+					contentType : "application/json; charset=utf-8",
+					success : function() {
+						alert("Save Success!")
+					}
+				});
+				
+			});
+		});
+	</script>
+  </head>
+  <body>
+			
+	<!-- background cor -->
+	<div class="w3-sand w3-grayscale w3-large">
+
+	<h1>Formulário:</h1>
+
+	<form id="form" method="post">
+	<fieldset>
+
+		<div class="campo">
+			<label for="email">Nome Completo:</label>
+			<input type="text" required="required" id="nome" name="nome" style="width: 100%" value="" />
+		</div>
+
+		<button id="login" type="submit" class="botao submit">+ Submit</button>
+		
+	</fieldset>
+	</form>
+				
+	<!-- Rodapé -->
+	<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<p>Powered by Bubble Sort</p>
+	<p><center>Members: Gabriel Queiroz e Gustavo Ribeiro.<br> Master: Gabriel Queiroz </center></p>
+	</footer>
+	</body>
+</html>

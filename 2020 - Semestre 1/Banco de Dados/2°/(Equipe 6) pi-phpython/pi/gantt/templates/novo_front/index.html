@@ -1,0 +1,496 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4" />
+
+	<title>PI - PHPYTHON - GANTT</title>	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+      <script type="text/javascript" src="{% static 'js/frappe-gantt.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/dialog-polyfill.js' %}"></script> 
+      <script type="text/javascript" src="{% static 'js/pi_urls_api.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/pi_csrftoken.js' %}"></script> 
+         <script type="text/javascript" src="{% static 'js/pi_cadastro_pessoa.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_cadastro_projeto.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_cadastro_tarefa.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_cadastro_distribuicao.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_relatorio.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_view.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_gantt.js' %}"></script>
+         <script type="text/javascript" src="{% static 'js/pi_windowonload.js' %}"></script>
+        </head>
+<body>
+	<div id="top" class="boxShadow1">
+       <div class="dropdown_menusuperior">
+          <img id="imgbtn_menusuperior" src="{% static 'images/btn_menu_superior.png' %}" onclick="menuDropdown_menusuperior()" class="dropbtn_menusuperior">
+              <div id="menu_superior" class="dropdown-content_menusuperior">
+                <a href="#" onclick="clicaProjeto()">Cadastro de Projeto</a>
+                <a href="#" onclick="clicaTarefa()">Cadastro de Tarefa</a>
+                <a href="#" onclick="clicaPessoas()">Cadastro de Pessoa</a>
+                <a href="#" onclick="clicaRelatorio()">Criar Relatório</a>
+                
+               
+              </div>
+        </div>
+
+         <h1>Gantt Planner - by PHPython</h1>
+         <button id="btn_salvarplanning" data-toggle="tooltip" data-placement="bottom" title="Você pode reportar um erro através do formulário" class="btn_shadow2 center"
+                onclick="location.href='https://login.microsoftonline.com/common/oauth2/authorize?response_mode=form_post&response_type=id_token+code&scope=openid&msafed=0&nonce=2caac479-8424-49d9-90a2-b8622fdf3b62.637301023233603373&state=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DveJyzyt6g0e96znVewf3b9b4_yDtk8tHonR2N6BOkalUQzlUT1oxWTczME5SWkVINUxXOUpSVFIwSy4u&client_id=c9a559d2-7aab-4f13-a6ed-e7e9c52aec87&redirect_uri=https%3a%2f%2fforms.office.com%2fauth%2fsignin'">REPORTAR ERROS</button>   
+        <button id="btn_compartilhar" data-toggle="tooltip" data-placement="bottom" title="Como utilizar o Gantt Planner - Acesse o Guia"
+                class="btn_shadow2" onclick="location.href='https://gitlab.com/felipemessibraga/pi-phpython/-/wikis/Como-utilizar%3F'">AJUDA</button>
+	</div>
+    
+    <div id="top_central" class="boxShadow1">
+        <h1 contenteditable="true" id="nomePlanner">Nome Planejamento</h1>
+        <div>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_dia()"
+            data-toggle="tooltip" data-placement="bottom" title="Visualizar o gráfico por DIA" >D</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_semana()"
+            data-toggle="tooltip" data-placement="bottom" title="Visualizar o gráfico por SEMANA" >S</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_mes()"
+            data-toggle="tooltip" data-placement="bottom" title="Visualizar o gráfico por MÊS" >M</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_ano()"
+            data-toggle="tooltip" data-placement="bottom" title="Visualizar o gráfico por ANO" >A</button> 
+        </div>
+        <div class="div_icon">
+            <img id="imgbtn_icon" onclick="clicaDistribuicao()" src="{% static 'images/img_pessoas.png' %}"
+            data-toggle="tooltip" data-placement="bottom" title="Aqui você pode fazer a atribuição de uma pessoa à uma tarefa" >
+            <img id="imgbtn_icon" onclick="ganttProjetos()" src="{% static 'images/img_play.png' %}"
+            data-toggle="tooltip" data-placement="bottom" title="Atualizar a visualização do gráfico de gantt" >    
+        </div>
+      
+    </div>
+    
+
+	<div  id="central">
+	
+			<div id="left_center">
+                
+                <div id="prj_cadastrados">
+                    
+                    
+
+                </div>
+                
+               
+			</div>
+
+			<div id="center" class="box">
+               <svg id="gantt"></svg>
+                
+			</div>
+
+			<div id="right_center" class="box">
+                
+                <div id="pessoas_top">
+                    <button id="btn_pessoas" class="btn_shadow2" onclick="expandePessoas()">HORAS DISPONÍVEIS</button>
+                    <div id="pessoas_list" class="boxShadow1"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="datas">
+                    <button id="btn_datas" class="btn_shadow2">DATAS (Prazos)</button>
+                    <div id="datas_list" class="boxShadow1"> 
+                        <br>
+                        <label class="styleWord1"><strong>Prazo:</strong></label>
+                        <label id="dt_prazo" class="styleWord1_2"></label>
+                        <br><br>
+                        <label class="styleWord1"><strong>Início:</strong></label>
+                        <label id="dt_inicial" class="styleWord1_2"></label>
+                        <br><br>
+                        <label class="styleWord1"><strong>Final:</strong></label>
+                        <label id="dt_final" class="styleWord1_2"></label>
+                        
+                    </div>
+                </div>
+                 
+			</div>
+	</div>  
+
+    <!--CADASTRO DE PESSOAS-->
+    <dialog id="abreCadastroPessoas" class="abreCadastro" role="dialog"> 
+        <div id="bloco_superior" class="boxShadow1">
+            <h1 class="styleWord1">Cadastro de Pessoas</h1> 
+            <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharCadastroPessoa()">
+        </div>
+       <br> 
+       <button id="btn_cadasHabilidades" type="button" onclick="cadastrarHabilidades();" class="btn_shadow4_1">Cadastrar Habilidades</button> 
+       <button id="btn_incluirHabilidades" type="button" onclick="incluirHabilidades();" class="btn_shadow4_1">Incluir Habilidades</button>
+        <br><br>
+                <!--CADASTRAR HABILIDADES-->
+                <dialog id="abreCadastroHabilidades" role="dialog" class="abreCadastro_1">
+                    <div id="bloco_superior_1" class="boxShadow1">
+                        <h1 class="styleWord1">Cadastro de Habilidades</h1>
+                        <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharCadastroHabilidade()"> 
+                    </div>
+                    <div id="CadastroHabilidades">
+                        <br><br><br>
+                        <label id="lb_nome_habilidade" for="nome_habilidade">Nome habilidade: <input id="nome_habilidade" autocomplete="off" type='text' name="hab_nome"></label>
+                        <br><br><br>
+                        <button id="btn_gravarHabilidade" type="submit" class="btn_shadow2" onclick="gravarHabilidade();" >Gravar</button>
+                        <button id="btn_mostrarHabilidades" type="submit" class="btn_shadow2" onclick="mostrarHabilidades();">Mostrar habilidades</button>
+                    </div>
+                    <dialog id="habilidades_cadastradas" role="dialog" class="abreCadastro_1">
+                        <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharListaHabilidades()">                   
+                        <div id="lista_habilidades_cadastradas">
+                        </div>
+                    </dialog>
+                </dialog>
+               
+
+                <!--INCLUIR HABILIDADES-->
+                <dialog id="abreInclusaoHabilidades" role="dialog" class="abreCadastro_1">
+                    <div id="bloco_superior_1" class="boxShadow1">
+                        <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharInclusaoHabilidade()">
+                        <h1 class="styleWord1">Inclusão de Habilidades</h1> 
+                    </div>
+                        <div id="InclusaoHabilidades">
+                            <br><br><br>
+                            <label id="lb_nome_pessoa">Selecione a pessoa: </label>
+                            <select id="nome_pessoa" onselect="selectPessoas()">
+
+                            </select>
+                            <br>
+                            <br>
+                            <label id="lb_seleciona_nome_habilidade">Selecione a habilidade: </label>
+                            <select id="seleciona_nome_habilidade" >
+
+                            </select>
+                            <br><br><br>
+                            <button id="btn_gravarInclusao" type="submit" class="btn_shadow2" onclick="gravarPessoaHabilidade()">Gravar</button>
+                            <button id="btn_mostrarInclusoesCadastradas" type="submit" class="btn_shadow2" onclick="mostrarPessoasHabilidades()">Mostrar cadastrados</button>
+                        </div>
+                        <dialog id="cadastrados_pes_hab" role="dialog" class="abreCadastro_1">
+                            <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharPessoasHabilidades()">
+                            <br><br>
+                            <label id="lb_nome_pessoa_1">Selecione a pessoa: </label>
+                            <select id="nome_pessoa_1" onselect="selectPessoas()" onchange="get_pessoas_habilidades()">
+
+                            </select>
+                            <div id="lista_pessoas_habilidades">
+
+                            </div>
+
+                        </dialog>
+            
+            
+                    </dialog>
+     
+       <div id='cadastroPessoas'>
+           
+          
+           <label for='codPessoa'>Código: </label><input readonly="true" type='text' id='codPessoa' name="pes_id" name="pes_id">
+           <button type="button" disabled="true" id="codAnteriorCadasPessoa" class="btn_shadow1_1" onclick="recuarCodPessoa()"></button>
+                <button type="button" disabled="true" id="codPosteriorCadasPessoa" class="btn_shadow1" onclick="avancarCodPessoa()"></button>
+           
+                <br><br>
+           <label for='nomePessoa'>Nome: </label><input readonly="true" required="required" autocomplete="off" type='text' id='nomePessoa' name="nomePessoa" name="pes_nome">
+           
+           <label for='contato'>Contato: </label><input readonly="true" required="required" autocomplete="off" type='text' id='contato' name="pes_contato">
+           <br><br>
+           <label for='salario'>Salário: </label><input readonly="true" autocomplete="off" type='number' required="required" maxlength="15" placeholder="R$" id='salario' name="pes_salario">
+           
+           <label for='faltas'>Faltas: <input readonly="true" required="required" autocomplete="off" type='text' id="faltas"></label>
+           <label for='horas_disponiveis'>Horas Disponíveis: <input readonly="true" required="required" autocomplete="off" type='text' id="horas_disponiveis"></label>
+           
+           <br><br>
+       
+           <button id="btn_novapessoa" type="submit" class="btn_shadow2" onclick="novaPessoa()">Novo</button>       
+           <button id="btn_salvarpessoa" type="submit" class="btn_shadow2" onclick="postPessoa(), getPessoas_paramenupessoas()">Gravar</button>
+           <button id="btn_atualizarCadasPessoa" type="submit" class="btn_shadow2" onclick="putPessoa(), getPessoas_paramenupessoas()">Atualizar</button>
+           <button id="btn_excluirCadasPessoa"  type="submit" class="btn_shadow2" onclick="deletePessoa(), getPessoas_paramenupessoas()">Excluir</button>
+           <button id="btn_cancelarCadasPessoa" type="submit" class="btn_shadow2" onclick="cancelarCadasPessoa()">Cancelar</button>
+           
+       </div>
+      <div id='TablePessoas'>
+           
+           <table border=1>
+                   <thead>
+                       <caption>Pessoas cadastradas:</caption>
+                       <tr>
+                       <th>Código</th><th>Nome</th><th>Contato</th>
+                       </tr>
+                 </thead>
+                   <tbody id="corpoTabelaPessoas">
+                       
+                      
+                   
+
+
+                   </tbody>
+
+       
+           </table>
+       </div>
+       
+   </dialog>
+
+   
+  
+    
+    <!--CADASTRO DE PROJETO -->
+            <dialog id="abreCadastroProjeto" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+            <h1 class="styleWord1">Cadastro de Projeto</h1> 
+            <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharCadastroProjeto()">      
+        </div>
+
+        <br><br>
+                   
+        <div id="cadastro_projeto">
+            
+            <label  for="codProjeto">Código projeto: <input readonly="true" id="codProjeto" type="text" name="prj_id"></label>
+            <button type="button" id="codAnteriorCadasProjeto" class="btn_shadow1_1" onclick="recuarCodProjeto()"></button>
+            <button type="button" id="codPosteriorCadasProjeto" class="btn_shadow1" onclick="avancarCodProjeto()"></button>
+            <label id="lb_progressoprojeto">Progresso % :</label>
+        <select id="progressoprojeto" name="prj_progresso" disabled="true">
+            <option>0</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            <option>60</option>
+            <option>70</option>
+            <option>80</option>
+            <option>90</option>
+            <option>100</option>
+        </select>                
+        <br><br>
+        <label for="nomeProjeto">Nome projeto: <input autocomplete="off" id="nomeProjeto" readonly="true" type="text" name="prj_nome"></label>
+            
+            <label for="escopo">Escopo: <input autocomplete="off" id="escopo" readonly="true" type="text" name="prj_escopo"></label>
+            <br>
+            <label for="dt_inicioProjeto">Data Início: <input readonly="true" id="dt_inicioProjeto" type="date" name="prj_datainicio"></label>
+            
+            <label for="dt_prazoProjeto">Prazo Entrega: <input readonly="true" id="dt_prazoProjeto" type="date" name="prj_prazo"></label>
+            <br>
+        
+            <label for="custo">Custo Projeto: <input readonly="true" id="custo" type="number" name="prj_cost"></label>
+            
+            <label for="horas_desenvolvimento">Horas Desenvolvimento: <input readonly="true" id="horas_desenvolvimento" type="number" name="prj_hrs_dev"></label>
+            <br>
+            <label for="corProjeto">Cor do projeto: <input disabled="true" id="corProjeto" type="color" name="prj_cor"></label>
+            <br>
+            <button id="btn_novoprojeto" type="submit" class="btn_shadow2" onclick="novoProjeto()">Novo</button>
+        
+                <button id="btn_salvarprojeto" type="submit" class="btn_shadow2" onclick="postProjeto()">Gravar</button>
+                <button id="btn_atualizarCadasProjeto" type="submit" class="btn_shadow2" onclick="putProjeto()">Atualizar</button>
+                <button id="btn_excluirCadasProjeto" type="submit" class="btn_shadow2" onclick="deleteProjeto()">Excluir</button>
+                <button id="btn_cancelarCadasProjeto" type="submit" class="btn_shadow2" onclick="cancelarCadasProjeto()">Cancelar</button>
+        </div>
+               
+                <div id='listaProjeto'>
+            
+            <table border=1>
+                    <thead>
+                        <caption>Projetos cadastrados:</caption>
+                        <tr>
+                        <th>Código</th><th>Projeto</th><th>Data Início</th><th>Prazo</th><th>Cor</th>
+                        </tr>
+                  </thead>
+                    <tbody id="corpoTabelaProjeto">
+                        
+                       
+                    
+
+
+                    </tbody>
+
+        
+            </table>
+                   
+        </div>
+                 
+              
+            </dialog>
+
+    
+<!--CADASTRO DE TAREFA -->
+            <dialog id="abreCadastroTarefa" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+            <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharCadastroTarefa()"> 
+            <h1 class="styleWord1">Cadastro de Tarefa</h1>        
+         </div>
+        <br><br>
+                
+           <div id="cadastro_tarefa">
+                <label  for="codTarefa">Código: <input readonly="true" id="codTarefa" type="text" name="trf_id"></label>
+                 <button type="button" id="codAnteriorCadasTarefa" class="btn_shadow1_1" onclick="recuarCodTarefa()"></button>
+                 <button type="button" id="codPosteriorCadasTarefa" class="btn_shadow1" onclick="avancarCodTarefa()"></button>
+                 <label id="lb_progressotarefa">Progresso % :</label>
+                <select id="progressotarefa" name="prj_progresso" disabled="true">
+                    <option>0</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                    <option>80</option>
+                    <option>90</option>
+                    <option>100</option>
+                </select>                
+                <br><br>
+                
+               <label for="listaProjetos">Selecione o projeto:</label>
+                  <select id="listaProjetos" disabled="true" onselect="carregaDatalistProjetos()" onchange="carregaDatalistInterdependencia()">
+                      
+                  </select>
+               <br>
+               <label for="listaInterdependencia">Interdependencia: </label>
+                  <select id="listaInterdependencia" disabled="true">
+                      
+                  </select>
+
+               <br>
+                <label for="nomeTarefa">Nome tarefa: <input autocomplete="off" id="nomeTarefa" readonly="true" type="text" name="trf_nometarefa"></label>
+               <br>
+               <br>
+               <label for="dt_inicioTarefa">Data Início: <input id="dt_inicioTarefa" readonly="true" type="date" name="trf_datainicial"></label>
+               <label for="dt_finalTarefa">Data Final: <input id="dt_finalTarefa" readonly="true" type="date" name="trf_datafinal"></label>
+               <br>
+               <label for="dt_prazoTarefa">Prazo: <input id="dt_prazoTarefa" readonly="true" type="date" name="trf_prazo"></label>
+               <label>Entregável: </label><input id="entregavel" disabled="true" type="checkbox" name="trf_entregavel">
+               <br><br>
+               <button id="btn_novatarefa" type="submit" class="btn_shadow2" onclick="novaTarefa()">Novo</button>       
+               <button id="btn_salvartarefa" type="submit" class="btn_shadow2" onclick="postTarefa()">Gravar</button>
+               <button id="btn_atualizarCadasTarefa" type="submit" class="btn_shadow2" onclick="putTarefa()">Atualizar</button>
+               <button id="btn_excluirCadasTarefa" type="submit" class="btn_shadow2" onclick="deleteTarefa()">Excluir</button>
+                <button id="btn_cancelarCadasTarefa" type="submit" class="btn_shadow2" onclick="cancelarCadasTarefa()">Cancelar</button>
+                
+                </div>
+          </dialog>
+            
+    
+    
+    
+     <!--DISTRIBUIR PESSOAS AOS PROJETOS -->
+    
+    <dialog id="distribuiPessoas" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+                <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharCadastroDistribuicao()">  
+             <h1 class="styleWord1">Distribuição Pessoas </h1>       
+        </div>
+        <br><br>
+        <div id='distribuicaoPessoas'>
+            <label  for="codDistribuicao">Código: <input readonly="true" id="codDistribuicao" type="text" name="pes_trf_id"></label>
+            <button type="button" id="codAnteriorDistribuicao" class="btn_shadow1_1" onclick="recuarCodDistribuicao()"></button>
+                 <button type="button" id="codPosteriorDistribuicao" class="btn_shadow1" onclick="avancarCodDistribuicao()"></button>
+                <br><br>
+              <label for="selecionaProjeto_distribuicao">Selecione o projeto: </label>
+                  <select id="selecionaProjeto_distribuicao" disabled="true" onselect="dt_projetos_distribuicao()" onclick="dt_tarefas_distribuicao()">  
+                      
+                  </select>
+                  
+               <br>
+            <label>Selecione a Tarefa: </label>
+                  <select id="listaTarefa" onclick="dt_pessoas_distribuicao()" disabled="true">
+                      
+                  </select>
+                  
+               <br>
+            <label for="listaPessoa">Selecione a Pessoa: </label>
+                  <select id="listaPessoa" disabled="true">
+                      
+                  </select>
+                  
+               <br>
+               <button id="btn_novadistribuicao" type="submit" class="btn_shadow2" onclick="novaDistribuicao()">Novo</button>       
+               <button id="btn_salvardistribuicao" type="submit" class="btn_shadow2" onclick="postDistribuicao()">Gravar</button>
+               <button id="btn_atualizarCadasDistribuicao" type="submit" class="btn_shadow2" onclick="putDistribuicao()">Atualizar</button>
+               <button id="btn_excluirCadasDistribuicao" type="submit" class="btn_shadow2" onclick="deleteDistribuicao()">Excluir</button>
+                <button id="btn_cancelarCadasDistribuicao" type="submit" class="btn_shadow2" onclick="cancelarCadasDistribuicao()">Cancelar</button>
+                 </div>
+        
+        <br><br>
+        
+            <div id='TableDistribuicao'>
+            
+            <table border=1>
+                    <thead>
+                        <caption>Distribuição de pessoas:</caption>
+                        <tr>
+                        <th class="col1">Pessoa</th><th class="col2">Tarefa</th><th class="col3">Projeto</th><th class="col4">Cor</th>
+                        </tr>
+                  </thead>
+                    <tbody id="corpoTabelaDistribuicao">
+                        
+                       
+                    
+
+
+                    </tbody>
+
+        
+            </table>
+        </div>
+        
+        
+       
+    </dialog>
+
+    <!--RELATÓRIO - TELA INICIAL-->
+
+    <dialog id="abreRelatorio" class="abreCadastro">
+        <div id="bloco_superior" class="boxShadow1">
+            <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharRelatorio()"> 
+            <h1 class="styleWord1">Relatório</h1>       
+        </div>
+    <br><br><br>
+        <div id="draganddrop_projetos">
+            
+                <div id="rel_projetos">
+                        <label>Projetos cadastrados:</label>
+                        <div id="projetos_cadastrados" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+
+                        </div>
+
+                </div>
+                
+                <div id="escolhe_projetos">
+                        <label>Projetos para Dashboard:</label>
+                        <div id="projetos_dashboard" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+
+                        </div>
+                </div>
+        </div>
+        <br><br>
+        <button id="btn_dashboard" type="submit" class="btn_shadow2" onclick="gerarDashboard();">Gerar Dashboard</button>
+        
+                <!--RELATÓRIO - DASHBOARD-->
+            <dialog id="abreDashboard" role="dialog" class="abreDialogDashboard">
+                    <img id="imgbtn_close" src="{% static 'images/close.png' %}" onclick="fecharDashboard()"> 
+                    <img id="img_graficodashboard" src="{% static 'images/img_graficodashboard.png' %}">
+                    <div id="dashboard_projetos">
+                        <!--DINAMICO-->
+                        
+                        <!--DINAMICO-->
+                    </div>
+                    
+                </dialog>
+                
+
+    </dialog>
+    <style>
+       /*.tcolor-1 .bar {
+           fill: black;
+        }*/
+        
+        
+    </style>
+        
+    
+    
+</body>
+
+
+
+</html>
