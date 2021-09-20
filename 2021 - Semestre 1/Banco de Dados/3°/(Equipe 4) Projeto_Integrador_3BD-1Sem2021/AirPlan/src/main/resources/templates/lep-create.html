@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset='utf-8'>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LepCreate</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" th:href="@{/styles/components.css}" >
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   </head>
+   <body>
+      <header id="header">
+         <div id="logo">
+            <img id="logoLep" src='images/lep.png'> </img>
+            <h1 id="titulo"> <strong> List of Effective Pages </strong> </h1>
+         </div>
+      </header>
+      <hr>
+      <form id="myForm" th:action="@{/lep-create}" th:object="${lep}" method="post">
+         <div>
+            <label>Primary key
+            <input type="text" th:field="*{mnl_name}" class="fileLep" >
+            </label>
+            <label>Tag
+            <input type="text" th:field="*{flg_tag}" class="fileLep">
+            </label>
+            <label>Lep Code
+            <input type="text" th:field="*{cdl_code}" class="fileLep" >
+            </label>
+         </div>
+         <div>
+            <label>Revision Dates <i class="fas fa-info-circle"><span class="tooltiptext">eg. of input: ORIGINAL0DEC 09, 2010-REVISION1DEC 29...</span></i>
+                <input type="text" th:field="*{revision_dates}" class="fileLepRevision" >
+            </label>
+            <button onclick="getFile();" id="consult-lep" class="btn btn-secondary float-right">Create</button>
+         </div>
+         <div>
+            <div style="display: block; border-bottom: 1px solid #8bdee0; margin-top: 20px;"></div>
+         </div>
+      </form>
+      <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}"></div>
+      <div class="alert alert-danger" role="alert" th:text="${error}" th:if="${error}"></div>
+      <div>
+         <div style="display: block; border-bottom: 1px solid #8bdee0; margin-top: 20px;"></div>
+      </div>
+      <div>
+         <a id="back-lep" class="btn btn-secondary float-right" href="/menu" >Back</a>
+      </div>
+   </body>
+</html>

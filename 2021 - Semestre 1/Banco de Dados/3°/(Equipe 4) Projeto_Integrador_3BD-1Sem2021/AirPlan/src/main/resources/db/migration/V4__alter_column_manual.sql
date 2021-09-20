@@ -1,0 +1,1 @@
+alter table manual modify column mnl_name varchar(40) not null;

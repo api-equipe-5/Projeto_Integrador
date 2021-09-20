@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" th:href="@{/styles/components.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CodeCreate</title>
+</head>
+<body id="code-create" class=".bg-info">
+
+<header id = "header">
+    <div id="logo">
+        <img id="codeImage" src='images/146.png'> </img>
+        <h1 id="titulo"> <strong> Codelist </strong> </h1>
+    </div>
+
+    <a id="codeCreate" href="/code-create" class="btn">
+        Create Codelist
+    </a>
+
+    <a id="codeConsult" href="/code-consult" class="btn">
+        Consult Codelist
+    </a>
+
+    <a id="codeImport" href="/code-import" class="btn">
+        Import Codelist
+    </a>
+</header>
+<form id="myForm" th:action="@{/code-create}" th:object="${general}" method="post">
+    <hr>
+    <div>
+        <div class="container" style = "background-color: rgba(0,0,0,.05);">
+            <label>Primary Key*
+                <input id="primaryKey" class="file" th:field="*{mnl_name}" type="text"></input>
+            </label>
+            <label>Secundary Key
+                <input id="secundaryKey" class="file" th:field="*{flg_secundary_id}" type="text"></input>
+            </label>
+            <label>Tag
+                <input id="tag" class="file" th:field="*{flg_tag}" type="text"></input>
+            </label>
+        </div>
+
+            <div class="container">
+                <label class="fileLabel" value="Section Number">Section Number*
+                    <input id="sectionNumber" class="file" th:field="*{codelist[0].cdl_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Subsection
+                    <input id="subsection" class="file" th:field="*{codelist[0].cdl_sub_section}" type="text" ></input>
+                </label>
+                <label class="fileLabel">Block Number*
+                    <input id="blockNumber" class="file" th:field="*{codelist[0].cdl_block_number}" type="text" ></input>
+                </label>
+                <label class="fileLabel">Block Name
+                    <input id="blockname" class="file" th:field="*{codelist[0].cdl_block_name}" type="text"></input>
+                </label>
+                <label class="fileLabel">Code
+                    <input id="code" class="file" th:field="*{codelist[0].cdl_code}" type="text"></input>
+                </label>
+                <label class="fileLabel">Secundary Key*
+                    <input id="secundaryKey1" class="file" th:field="*{codelist[0].flg_secundary}" type="text"></input>
+                </label>
+            </div>
+            <div class="container" style = "background-color: rgba(0,0,0,.05);">
+                <label class="fileLabel">Section Number*
+                    <input id="sectionNumber2" class="file" th:field="*{codelist[1].cdl_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Subsection
+                    <input id="subsection2" class="file" th:field="*{codelist[1].cdl_sub_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Block Number*
+                    <input id="blockNumber2" class="file" th:field="*{codelist[1].cdl_block_number}" type="text"></input>
+                </label>
+                <label class="fileLabel">Block Name
+                    <input id="blockname2" type="text" th:field="*{codelist[1].cdl_block_name}" class="file"/>
+                </label>
+                <label class="fileLabel">Code
+                    <input id="code2" class="file" th:field="*{codelist[1].cdl_code}" type="text"></input>
+                </label>
+                <label class="fileLabel">Secundary Key*
+                    <input id="secundaryKey2" th:field="*{codelist[1].flg_secundary}" class="file" type="text">
+                </label>
+            </div>
+            <div class="container">
+                <label class="fileLabel">Section Number*
+                    <input id="sectionNumber3" class="file" th:field="*{codelist[2].cdl_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Subsection
+                    <input id="subsection3" class="file" th:field="*{codelist[2].cdl_sub_section}" type="text"></input>
+                </label>
+                <label class="fileLabel">Block Number*
+                    <input id="blockNumber3" class="file" th:field="*{codelist[2].cdl_block_number}" type="text"></input>
+                </label>
+                <label class="fileLabel">Block Name
+                    <input id="blockname3" type="text" th:field="*{codelist[2].cdl_block_name}" class="file"/>
+                </label>
+                <label class="fileLabel">Code
+                    <input id="code3" class="file" th:field="*{codelist[2].cdl_code}" type="text"></input>
+                </label>
+                <label class="fileLabel">Secundary Key*
+                    <input id="secundaryKey3" class="file" th:field="*{codelist[2].flg_secundary}" type="text">
+                </label>
+            </div>
+        <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}"></div>
+        <div class="alert alert-danger" role="alert" th:text="${error}" th:if="${error}"></div>
+    </div>
+    <hr>
+    <button onclick="getFile();" id="create-code" class="btn btn-secondary float-right">Create</button>
+</form>
+<a id="back-code" href="/menu" class="btn btn-secondary float-right">Back</a>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

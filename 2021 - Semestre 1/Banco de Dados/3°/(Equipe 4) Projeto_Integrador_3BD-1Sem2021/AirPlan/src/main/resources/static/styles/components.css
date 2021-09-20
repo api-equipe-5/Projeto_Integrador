@@ -1,0 +1,381 @@
+body, html{
+  background-color: #D0F2F3 !important;
+  margin: 5%;
+
+}
+
+
+label{
+  color: #0367A5;
+  margin: auto;
+  margin-left: 3%;
+  text-align: left;
+  font-family: Roboto;
+  margin-top: 2%;
+}
+.file{
+  background-color: #CFCFCF;
+  display: block;
+  Width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+.codeimport{
+  width: 500px;
+  border-radius: 5px;
+  margin-top: 2%;
+  background-color: #CFCFCF;
+}
+#back-menu{
+  background-color:  #D89191;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: 2%;
+  width: 200px;
+  Height: 50px;
+  border-radius: 25px;
+  margin-top: 3%;
+  border: none;
+}
+
+#create-code {
+  background-color:#91BDD8;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto;
+  width: 160px;
+  Height: 40px;
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-right: 1%;
+  border:0;
+}
+header {
+  text-align: center;
+  margin-top: -9%;
+}
+
+
+#codeCreate, #codeConsult, #codeImport, #pdfFull, #pdfDelta {
+background-color: #0367A5;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+color: white;
+font-size: 24px;
+line-height: 50px;
+width: 250px;
+margin-right: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
+border-radius: 10px;
+}
+
+#codeCreate:hover, #codeConsult:hover, #codeImport:hover, #pdfFull:hover, #pdfDelta:hover {
+background-color: #71a3c2;
+}
+#logo{
+display: flex;
+
+}
+#codeImage {
+width: 70px;
+height: 70px;
+margin-top: 4%;
+}
+#titulo{
+margin-top: 4.0%;
+margin-left: 0.5%;
+font-size: 25px;
+}
+
+hr {
+width: 100%;
+border: none;
+height: 1px;
+background-color:rgba(196, 196, 196, 1);
+margin-top: 3%;
+}
+
+#pdfBody {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  color: #2c3e50;
+  margin: 4%;
+}
+
+.fa-search, .fa-filter{
+    margin-top: 3%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+#tableConsult{
+  display: grid;
+}
+
+.table-striped{
+    margin-top: 5%;
+    
+}
+
+#secondTableConsult{
+  display: grid;
+  margin-top: -9.4% !important;
+  margin-left: 26%;
+}
+
+#pagenable{
+  margin-left: 26%;
+}
+
+#importLabel{
+  margin-right: 4%;
+}
+
+#back-code {
+  background-color:#D89191;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto;
+  width: 160px;
+  Height: 40px;
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-right: 1%;
+  border:0;
+}
+
+/* Início do css da view Menu */
+
+#logout {
+   color: black !important;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(77, 75, 75);
+  color: #0367A5;
+  font-family: Roboto;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.fa-info-circle:hover .tooltiptext {
+  visibility: visible;
+}
+
+#mainMenu, #htmlMenu {
+  background-color: #5498c2 !important;
+}
+#codeMenu{
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+#lepMenu, #pdfMenu {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+#codeTitle {
+  margin: auto;
+
+}
+
+.card {
+  border-radius: 30px !important;
+  background-color: #D0F2F3 !important;
+  width: 18rem;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #535c5c;
+}
+
+.card:hover {
+  background-color: #a4e7e9 !important;
+}
+
+.card-text {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#logoMenu {
+  width: 60px;
+  height: 90px;
+}
+#divLogo{
+  margin-bottom: 5%;
+  margin-top: -4%;
+  margin-left: -3%;
+}
+
+#logoutMenu {
+  float: right;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+
+#addUser {
+  color: black !important;
+}
+
+#iconUser {
+  margin-top: 3%;
+}
+
+/* Início do css da views da LEP */
+
+#logoLep {
+  width: 70px;
+  height: 70px;
+}
+
+.radio{
+  background-color: #CFCFCF;
+  width: 180px;
+}
+
+#consult-lep{
+background-color:#91BDD8;
+color: white;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+margin: auto;
+width: 160px;
+Height: 40px;
+border-radius: 25px;
+margin-top: 3.5%;
+border:0;
+}
+
+#resetForm {
+
+background-color:#D89191;
+color: white;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+margin: auto;
+width: 160px;
+Height: 40px;
+border-radius: 25px;
+margin-top: 2%;
+margin-right: 1%;
+border:0;
+}
+
+.fileLep{
+background-color: #CFCFCF;
+display: block;
+Width: 180px;
+height: 35px;
+border-radius: 10px;
+border: none;
+}
+.fileLepRevision{
+  background-color: #CFCFCF;
+  display: block;
+  Width: 625px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+
+#back-lep{
+  background-color:#D89191;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto;
+  width: 160px;
+  Height: 40px;
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-right: -0.5%;
+  border:0;
+  }
+
+#back{
+background-color:#D89191;
+color: white;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+margin: auto;
+width: 160px;
+Height: 40px;
+border-radius: 25px;
+margin-top: 2%;
+margin-right: -7%;
+border:0;
+}
+
+/* Início do css da views do PDF */
+
+#logoPdf {
+  width: 70px;
+  height: 70px;
+}
+
+.filePdf{
+  background-color: #CFCFCF;
+  display: block;
+  Width: 280px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+
+.inline{
+ text-align: center;
+}
+
+#create-pdf{
+  background-color:#91BDD8;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto;
+  width: 160px;
+  Height: 40px;
+  border-radius: 25px;
+  margin-top: 4%;
+  border:0;
+}

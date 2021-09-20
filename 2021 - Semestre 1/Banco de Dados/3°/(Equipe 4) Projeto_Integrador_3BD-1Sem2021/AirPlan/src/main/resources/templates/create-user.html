@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de Registro</title>
+    <link rel="stylesheet" th:href="@{styles/register.css}">
+</head>
+<body>
+<div id="main-container">
+    <h1> Register to access </h1>
+    <form id="register-form" th:action="@{/create-user}" th:object="${general}" method="post">
+        <div class = "half-box spacing">
+            <label for="role">Select a role</label>
+            <select name="typ_id" id="role">
+                <option value=0>Select</option>
+                <option value=1>General Administrator</option>
+                <option value=2>Manual author</option>
+                <option value=3>Manual editor</option>
+                <option value=4>Manual responsible</option>
+            </select>
+        </div>
+        <div class = "half-box spacing">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="emp_name" placeholder="Type your first name">
+        </div>
+        <div class = "half-box">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="emp_last_name" placeholder="Type your last name">
+        </div>
+        <div class = "half-box spacing">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="emp_password" placeholder="Type your password">
+        </div>
+        <div class = "half-box">
+            <label for="passconfirmation">Confirm your password</label>
+            <input type="password" name="emp_confirm_password" id="passconfirmation" placeholder="Confirm your password">
+        </div>
+        <div class = "full-box">
+            <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}"></div>
+            <div class="alert alert-danger" role="alert" th:text="${error}" th:if="${error}"></div>
+            <input type="submit" id="btn-submit" value="Register">
+            <a id="btn-voltar" href="/menu">Back</a>
+        </div>
+    </form>
+</div>
+<p class="error-validation template"></p>
+<script src="js.scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Helena Assistente Virtual",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/helenaicon.png",
+    "splash": {
+      "image": "./assets/mulher.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5A189A"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/helenaicon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "br.com.fatec.helena"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

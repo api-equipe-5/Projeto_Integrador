@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" th:href="@{/styles/components.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CodeImport</title>
+</head>
+<body id="code-import" class=".bg-info">
+
+<header id="header">
+    <div id="logo">
+        <img id="codeImage" src='images/146.png'> </img>
+        <h1 id="titulo"> <strong> Codelist </strong> </h1>
+    </div>
+
+    <a id="codeCreate" href="/code-create" class="btn">
+        Create Codelist
+    </a>
+
+    <a id="codeConsult" href="/code-consult" class="btn">
+        Consult Codelist
+    </a>
+
+    <a id="codeImport" href="/code-import" class="btn">
+        Import Codelist
+    </a>
+</header>
+<hr>
+<form th:action="@{/code-import}" enctype="multipart/form-data" th:object="${manual}" method="post">
+    <div>
+
+        <label id="importLabel" class="fileLabel" value="Section Number">Primary Key*
+            <input id="primaryKey" class="file" th:field="*{mnl_name}" type="text"></input>
+        </label>
+
+        <input class="codeimport" type="file" id="myFile" name="files" accept=".xls,.xlsx">
+
+    </div>
+    <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}"></div>
+    <div class="alert alert-danger" role="alert" th:text="${error}" th:if="${error}"></div>
+    <hr>
+    <button onclick="getFile();" id="create-code" class="btn btn-secondary float-right">Create</button>
+</form>
+
+<a id="back-code" href="/menu" class="btn btn-secondary float-right">Back</a>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

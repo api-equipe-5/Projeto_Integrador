@@ -1,0 +1,1 @@
+insert into employee(emp_name, emp_password, typ_id) values("admin", "admin", 1);
