@@ -1,0 +1,116 @@
+{% extends "_base.jinja" %}
+
+{% from "_formhelpers.jinja" import r_info_from_str %}
+{% from "_formhelpers.jinja" import r_info_field %}
+
+{% set title = "Account" %}
+{% block TITLE %}{{ title }}{% endblock %}
+
+{% block CONTENT %}
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav uk-flex-between uk-logo">
+            <h1 class="uk-heading-bullet" ><span><a href="{{url_for('app.account')}}" class="uk-link-heading uk-button-text"> Account </a></span></h1>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right uk-margin-right uk-flex-around">
+        <form class="uk-margin-right" action="{{ url_for('app.data-report') }}" method="post">
+            {{ form.csrf_token }}
+            <button class="uk-button uk-button-text" type="submit" uk-tooltip="Download your data!">
+                <span uk-icon="icon: download; ratio: 2"></span>
+            </button>
+        </form>
+        <button class="uk-button uk-button-text uk-margin-right" type="button" uk-tooltip="Delete your data!" uk-toggle="target: #my-id">
+            <span uk-icon="icon: trash; ratio: 2"></span>
+        </button>
+
+        <form class="uk-margin-right" action="{{ url_for('app.signout') }}" method="get">
+            {{ form.csrf_token }}
+            <button class="uk-button uk-button-text" type="submit" uk-tooltip="Log out!">
+                <span uk-icon="icon: sign-out; ratio: 2"></span>
+            </button>
+        </form>
+    </div>
+</nav>
+
+<div class="uk-grid uk-column-1-3">
+    <div class="uk-card uk-card-body uk-width-expand">
+        <ul id="tabs" class="group uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li>
+                <a class="linktab uk-text-large uk-button-text" for="personal-info">
+                    <span class="uk-margin-small-right" uk-icon="icon: user"></span>
+                    Personal Info
+                </a>
+            </li>
+            <li>
+                <a class="linktab uk-text-large uk-button-text" for="address">
+                    <span class="uk-margin-small-right" uk-icon="icon: location"></span>
+                    Address
+                </a>
+            </li>
+            <li>
+                <a class="linktab uk-text-large uk-button-text" for="payment">
+                    <span class="uk-margin-small-right" uk-icon="icon: credit-card"></span>
+                    Payment
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="uk-card uk-card-default uk-card-primary uk-card-body uk-width-3-4 uk-card-medium uk-margin-right">
+        <div id="personal-info" class="tab active">        
+            <table class="uk-table uk-table-middle uk-table-divider uk-text-left">
+                <tbody class="uk-column-1-2">
+                    {{ r_info_from_str(form.email.label, mask('EMAIL', form.email.data)) }}
+                    {{ r_info_from_str(form.phone.label, form.phone.data and mask('PHONE', form.phone.data.e164)) }}
+                    {{ r_info_field(form.firstname) }}
+                    {{ r_info_field(form.lastname) }}
+                    {{ r_info_field(form.more.income) }}
+                    {{ r_info_field(form.more.age) }}
+                    {{ r_info_from_str(form.more.gender.label, form.more.gender.object_data.value) }}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="address" class="tab">
+            <table class="uk-table uk-table-middle uk-table-divider uk-text-left">
+                <tbody class="uk-column-1-2">
+                    {{ r_info_field(form.city) }}
+                    {{ r_info_field(form.more.state) }}
+                    {{ r_info_field(form.more.country) }}
+                    {{ r_info_field(form.address1) }}
+                    {{ r_info_field(form.address2) }}
+                    {{ r_info_field(form.zip) }}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="payment" class="tab">
+            <table class="uk-table uk-table-middle uk-table-divider uk-text-left">
+                <tbody class="uk-column-1-2">
+                    {{ r_info_field(form.creditcard) }}
+                    {{ r_info_field(form.creditcardexpiration) }}
+                </tbody>
+            </table>
+        </div>            
+    </div>
+</div>
+
+<!-- This is the modal -->
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Are you sure?</h2>
+        <p>Do you really want to delete your account and data related to it?</p>
+        <p class="uk-text-right">
+            <form class="uk-flex" action="{{ url_for('app.account-delete') }}">
+                {{ form.csrf_token }}
+                <button class="uk-button uk-button-default uk-modal-close uk-margin-right" type="button">Cancel</button>
+                <button class="uk-button uk-button-danger" type="submit">Confirm</button>
+            </form>
+
+        </p>
+    </div>
+</div>
+{% endblock %}

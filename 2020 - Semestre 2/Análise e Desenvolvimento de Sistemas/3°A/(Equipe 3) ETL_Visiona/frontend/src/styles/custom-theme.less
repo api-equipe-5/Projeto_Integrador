@@ -1,0 +1,131 @@
+@import 'rsuite/lib/Uploader/styles/themes/dark.less';
+@import 'rsuite/lib/Modal/styles/themes/dark.less';
+@import 'rsuite/lib/Alert/styles/themes/dark.less';
+@import '~rsuite/lib/Toggle/styles/themes/dark.less';
+
+.rs-uploader-trigger-btn {
+    font-family: Roboto, Sans-Serif;
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    margin-top: 3rem;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid #00FFE0;
+    border: none;
+}
+
+.rs-uploader-file-item-title {
+    color: #000000;
+    text-align: left;
+}
+
+.rs-uploader-text .rs-uploader-file-item-icon-loading .rs-uploader-file-item-icon::before, .rs-uploader-text .rs-uploader-file-item-icon-loading .rs-uploader-file-item-icon::after {
+    width: 13px;
+    height: 13px;  
+}
+
+.rs-uploader-text .rs-uploader-file-item-size{
+    color: #434346;
+}
+
+.rs-uploader-text .rs-uploader-file-item-icon-loading .rs-uploader-file-item-icon::after {
+    border: 3px solid #2d93d8;
+    border-top-color: #00ffe0;
+}
+
+.rs-loader-spin:after{
+    border: 3px solid #2d93d8;
+    border-top-color: #00ffe0;
+}
+
+.rs-uploader-text .rs-uploader-file-item-btn-remove{
+    color: #434346;
+}
+
+@-webkit-keyframes loaderSpin {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+@keyframes loaderSpin {
+    from {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+.rs-alert-container .rs-alert-error .rs-alert-item-content {
+    color: #ffffff;
+    font-size: 13.3333px;
+    // font-weight: 600;
+}
+
+.rs-alert-container .rs-alert-success .rs-alert-item-content {
+    color: #000000;
+    font-size: 13.3333px;
+    // font-weight: 600;
+}
+
+.rs-modal-wrapper{
+    opacity: 0.9;
+}
+
+.rs-modal-open .rs-modal-wrapper{
+    background: linear-gradient(180deg, #0500FF 0%, #00A3FF 100%), #FFFFFF;
+    // opacity: 0.9;
+}
+
+.rs-modal-open .rs-modal-dialog {
+    opacity: 1;
+}
+
+.rs-modal-open .rs-modal {
+    margin: 15% auto 0 auto;
+}
+
+.rs-modal-open .rs-modal-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@border-radius-base: 10px;
+@btn-default-bg: #00FFE0;
+@btn-default-hover-color: @text-color;
+@btn-default-hover-bg: @B200;
+@btn-default-active-bg: #00FFE0;
+@btn-default-focus-bg: #00FFE0;
+@btn-default-disabled-color: @B400;
+@btn-default-disabled-bg: #00FFE0;
+@btn-font-weight: 600;
+@font-size-base: 13.3333px;
+@uploader-file-item-icon-content: @icon-attachment;
+@uploader-file-item-icon-font-size: 14px;
+@uploader-file-item-icon-loading-font-size: 14px;
+@uploader-default-font-color: #000000;
+@loader-duration-normal: 0.6s;
+@btn-default-color: #000000;
+
+@alert-success-bg: #c5ff00;
+@state-success-bg: #c5ff00;
+@alert-success-icon-color: #000000;
+@success-light-color: #000000;
+
+@alert-error-bg: #aa43f0;
+@alert-error-icon-color: #ffffff;
+@error-color: #ffffff;
+@error-message-font-color: #ffffff;
+
+@font-size-small: 12px;
+
+@modal-backdrop-opacity: 0.8;

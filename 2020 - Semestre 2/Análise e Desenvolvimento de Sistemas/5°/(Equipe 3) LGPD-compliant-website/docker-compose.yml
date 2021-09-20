@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+  backend:
+    depends_on:
+      - db
+      - db_isolated
+    build:
+      context: .
+      target: backend
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./:/app:cached
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  db_isolated:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ${ISOLATED_DB_NAME}
+      POSTGRES_USER: ${ISOLATED_DB_USER}
+      POSTGRES_PASSWORD: ${ISOLATED_DB_PASSWORD}
+    volumes:
+      - db_isolated_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+  db_isolated_data:

@@ -1,0 +1,49 @@
+version: "3"
+
+volumes:
+  postgres:
+  api_mix:
+  api_deps:
+  api_build:
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  sakavault:
+    tty: true
+    image: emaiax/elixir:1.10-alpine
+    env_file: api.env
+    working_dir: /app
+    command: bash -c "mix setup && mix phx.server"
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/app
+      - api_mix:/root/.mix
+      - api_deps:/root/deps
+      - api_build:/root/_build
+    depends_on:
+      - postgres
+
+  api-prod:
+    tty: true
+    build:
+      context: .
+      args:
+        COOKIE: "sakavault"
+    environment:
+      PORT: 4000
+      SECRET_KEY_BASE: "P8dmUyCYuLivfa9YgkNzNJmHfNywDV9UgJavVKwDbcpRdiqUu/wvipb2sAkbtE0u"
+      DATABASE_URL: "postgresql://postgres:postgres@postgres/sakavault"
+    # command: "create_database"
+    ports:
+      - 4000:4000
+    depends_on:
+      - postgres

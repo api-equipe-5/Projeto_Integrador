@@ -1,0 +1,42 @@
+-- SEQUENCE: public.ft_bacia_hidrografica_n1_gid_seq
+
+-- DROP SEQUENCE public.ft_bacia_hidrografica_n1_gid_seq;
+
+CREATE SEQUENCE public.ft_bacia_hidrografica_n1_gid_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1;
+
+ALTER SEQUENCE public.ft_bacia_hidrografica_n1_gid_seq
+    OWNER TO postgres;
+
+-- Table: public.ft_bacia_hidrografica_n1
+
+-- DROP TABLE public.ft_bacia_hidrografica_n1;
+
+CREATE TABLE public.ft_bacia_hidrografica_n1
+(
+    gid integer NOT NULL DEFAULT nextval('ft_bacia_hidrografica_n1_gid_seq'::regclass),
+    BHI_CD bigint,
+    BHI_CD_OTTO character varying(254) COLLATE pg_catalog."default",
+    BHI_AR numeric,
+    geom geometry(MultiPolygon),
+    CONSTRAINT ft_bacia_hidrografica_n1_pkey PRIMARY KEY (gid)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.ft_bacia_hidrografica_n1
+    OWNER to postgres;
+-- Index: ft_bacia_hidrografica_n1_geom_idx
+
+-- DROP INDEX public.ft_bacia_hidrografica_n1_geom_idx;
+
+CREATE INDEX ft_bacia_hidrografica_n1_geom_idx
+    ON public.ft_bacia_hidrografica_n1 USING gist
+    (geom)
+    TABLESPACE pg_default;

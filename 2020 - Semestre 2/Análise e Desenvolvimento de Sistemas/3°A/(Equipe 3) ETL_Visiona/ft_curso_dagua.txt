@@ -1,0 +1,48 @@
+-- SEQUENCE: public.ft_curso_dagua_gid_seq
+
+-- DROP SEQUENCE public.ft_curso_dagua_gid_seq;
+
+CREATE SEQUENCE public.ft_curso_dagua_gid_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1;
+
+ALTER SEQUENCE public.ft_curso_dagua_gid_seq
+    OWNER TO postgres;
+
+-- Table: public.ft_curso_dagua
+
+-- DROP TABLE public.ft_curso_dagua;
+
+CREATE TABLE public.ft_curso_dagua
+(
+    gid integer NOT NULL DEFAULT nextval('ft_curso_dagua_gid_seq'::regclass),
+    CDA_CD bigint,
+    CDA_CD_OTTO character varying(254) COLLATE pg_catalog."default",
+    CDA_NU_DIST_BH numeric,
+    CDA_NU_COMP numeric,
+    CDA_AR_BACIA numeric,
+    CDA_CD_DESAGUA character varying(254) COLLATE pg_catalog."default",
+    CDA_NU_NIVEL_OTTO bigint,
+    CDA_NU_ORDEM bigint,
+    CDA_DS_DOMINIALIDADE character varying(254) COLLATE pg_catalog."default",
+    geom geometry(MultiLineString),
+    CONSTRAINT ft_curso_dagua_pkey PRIMARY KEY (gid)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.ft_curso_dagua
+    OWNER to postgres;
+-- Index: ft_curso_dagua_geom_idx
+
+-- DROP INDEX public.ft_curso_dagua_geom_idx;
+
+CREATE INDEX ft_curso_dagua_geom_idx
+    ON public.ft_curso_dagua USING gist
+    (geom)
+    TABLESPACE pg_default;

@@ -1,0 +1,20 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+
+build:
+  docker:
+    web: Dockerfile
+    runner:
+      dockerfile: Dockerfile
+      target: runner
+  config:
+    MIX_ENV: prod
+    DATABASE_URL: $DATABASE_URL
+    SECRET_KEY_BASE: $SECRET_KEY_BASE
+
+release:
+  image: runner
+  command:
+    - /opt/app/bin/sakavault eval "Elixir.SakaVault.ReleaseTasks.migrate_database()"

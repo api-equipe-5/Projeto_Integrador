@@ -1,0 +1,17 @@
+{% extends "report/customer_data/_base.jinja" %}
+
+{% block CONTAINER %}
+
+<div class="row">
+    <div style="position: absolute; left: 0; top: 10px;">
+        <a class="button button-primary" href="index.html" >⟵ Go back</a>
+    </div>
+    <div class="title eleven columns">
+        <h1>{% block TITLE %}{% endblock %}</h1>
+    </div>
+</div>
+{% block DATA_REPORT %}
+
+{% endblock %}
+
+{% endblock %}

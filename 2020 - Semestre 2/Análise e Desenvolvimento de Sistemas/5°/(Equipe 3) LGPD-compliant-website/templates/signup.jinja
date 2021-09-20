@@ -1,0 +1,38 @@
+{% extends "_authentication.jinja" %}
+{% set title = "SIGN UP" %}
+
+{% block TITLE %}{{ title }}{% endblock %}
+{% block FORM_TITLE %}{{ title }}{% endblock %}
+
+
+{% block FORM_CONTENT %}
+
+{{ r_input(form.firstname) }}
+{{ r_input(form.lastname) }}
+{{ r_input(form.more.age) }}
+{{ r_input(form.more.gender) }}
+{{ r_input(form.email) }}
+{{ r_input(form.phone) }}
+{{ r_input(form.password) }}
+{{ r_input(form.more.country) }}
+{{ r_input(form.zip) }}
+{{ r_input(form.more.state) }}
+{{ r_input(form.city) }}
+{{ r_input(form.address1) }}
+{{ r_input(form.address2) }}
+
+{% endblock %}
+
+
+{% block AFTER_FORM_CONTENT %}
+<div class="uk-flex uk-flex-column">
+    <button class="uk-button uk-button-primary" type="submit">
+        {{ title }}       
+    </button>
+
+    <a class="uk-link uk-margin-top" href="{{ url_for('app.signin') }}">
+        Alrealdy have an account?
+    </a>
+ </div>
+{% endblock %}
+

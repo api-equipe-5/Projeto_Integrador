@@ -1,0 +1,29 @@
+<!doctype html>
+  <head>
+    {% block HEAD %}
+      <title>{% block TITLE %}{% endblock %}</title>
+      {% include "_head.jinja" %}
+      {% block LOCAL_HEAD %}{% endblock %}
+    {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+
+  </head>
+
+  <body class="uk-grid uk-align-center uk-justify-center">   
+    {% if g.user is none  %}
+        <div class="uk-alert-primary uk-position-bottom hidden"  id="cookie-alert" uk-alert>
+            <button class="uk-alert-close" uk-close ></button>
+            <p>We use cookies to make interactions with our websites and services easy and      meaningful, to better understand how they are used and to tailor
+              advertising. You can <a href="#">read more</a> and <a href="#">make your cookie choices here</a>. By continuing to use this site you are giving us your consent to do this.
+            </p>
+        </div> 
+    {% endif %}
+
+    {% block CONTENT %}{% endblock %}
+    {% block FOOTER_SCRIPTS %}
+      {% include "_foot.jinja" %}
+      {% block LOCAL_FOOTER_SCRIPTS %}{% endblock %}  
+    {% endblock %}
+  </body>
+  
+</html>

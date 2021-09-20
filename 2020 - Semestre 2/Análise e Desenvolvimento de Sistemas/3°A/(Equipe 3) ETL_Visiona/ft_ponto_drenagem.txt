@@ -1,0 +1,42 @@
+-- SEQUENCE: public.ft_ponto_drenagem_gid_seq
+
+-- DROP SEQUENCE public.ft_ponto_drenagem_gid_seq;
+
+CREATE SEQUENCE public.ft_ponto_drenagem_gid_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1;
+
+ALTER SEQUENCE public.ft_ponto_drenagem_gid_seq
+    OWNER TO postgres;
+
+-- Table: public.ft_ponto_drenagem
+
+-- DROP TABLE public.ft_ponto_drenagem;
+
+CREATE TABLE public.ft_ponto_drenagem
+(
+    gid integer NOT NULL DEFAULT nextval('ft_ponto_drenagem_gid_seq'::regclass),
+    PDR_CD bigint,
+    PDR_CD_CURSO_DAGUA character varying(254) COLLATE pg_catalog."default",
+    PDR_DS character varying(254) COLLATE pg_catalog."default",
+    geom geometry(MultiPoint),
+    CONSTRAINT ft_ponto_drenagem_pkey PRIMARY KEY (gid)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.ft_ponto_drenagem
+    OWNER to postgres;
+-- Index: ft_ponto_drenagem_geom_idx
+
+-- DROP INDEX public.ft_ponto_drenagem_geom_idx;
+
+CREATE INDEX ft_ponto_drenagem_geom_idx
+    ON public.ft_ponto_drenagem USING gist
+    (geom)
+    TABLESPACE pg_default;

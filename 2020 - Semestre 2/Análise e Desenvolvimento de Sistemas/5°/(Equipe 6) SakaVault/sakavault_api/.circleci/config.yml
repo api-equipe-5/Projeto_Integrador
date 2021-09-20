@@ -1,0 +1,52 @@
+version: 2.1
+
+jobs:
+  build:
+    parallelism: 1
+    docker:
+      - image: circleci/elixir
+        environment:
+          MIX_ENV: test
+          POSTGRES_HOSTNAME: localhost
+
+      - image: circleci/postgres:10
+        environment:
+          POSTGRES_PASSWORD: postgres
+
+    working_directory: ~/app
+
+    steps:
+      - checkout
+
+      - run: mix local.hex --force  # install Hex locally (without prompt)
+      - run: mix local.rebar --force  # fetch a copy of rebar (without prompt)
+
+      - restore_cache:
+          keys:
+            - mix-cache-v1-{{ .Branch }}-{{ checksum "mix.lock" }}
+            - mix-cache-v1-{{ .Branch }}
+
+      - run: mix deps.get
+      - run: mix format --check-formatted
+      - run: mix compile --warnings-as-errors --all-warnings
+
+      - save_cache:
+          key: mix-cache-v1-{{ .Branch }}-{{ checksum "mix.lock" }}
+          paths:
+              - deps
+              - _build
+
+      - run: # special utility that stalls main process until DB is ready
+          name: wait for database
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+
+      - run: mix fast_ci
+
+      - store_artifacts:
+          path: cover/
+
+workflows:
+  build_and_test:
+    jobs:
+      - build
+
