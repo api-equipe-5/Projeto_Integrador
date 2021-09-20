@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+/*Estilos da Página de Cadastro de Projetos*/
+
+/*
+Conteúdo de Projetos
+*/
+section.conteudo{
+    position: relative;
+    display: flex;
+    margin-top: 227px;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    justify-content: center;
+    text-align: justify; 
+}
+
+.center-conteudo{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(241, 237, 237, 0.151);
+}
+
+.titulo-projetos{
+    width: 100%;
+}
+
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em;  
+}
+
+.texto{
+    position: relative;
+    float: left;
+    width: 48%;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: auto;
+    margin-right: 2%;
+    margin-top: 15px;
+}
+
+.imagem{
+    position: relative;
+    width: 48%;
+    float: right;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+.imagem img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.saiba-mais{
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.botao.left{
+    font-size: 1.2em;
+    background: #0E7AF0;
+    border:0;
+    position: relative;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.6em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/*
+Formulário de Projetos
+*/
+form.formulario{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+.center-form{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #f1f1f1;
+}
+
+.titulo-form{
+    width: 100%;
+}
+
+.subtitulo{ /*altera o subtítulo*/
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;
+    text-align: center;
+    background-color: #f1f1f1;
+    font-size: 4em;
+    padding-top: 60px;
+    margin-bottom: 0px;
+}
+
+.grupo{
+    width: 100%;
+    padding-top: 50px;
+    border: 0;
+}
+
+/*Altera o corpo da página*/
+.preenchimento-form{
+    width: 97%;
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-top: 5px;
+}
+
+.campo.left{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.campo.right{
+    position: relative;
+    float: right;
+    width: 50%;
+}
+
+.campo.inline.left{
+    position: relative;
+    float: left;
+    width: 98%;
+    display: flex;
+}
+
+.campo.center{
+    position: relative;
+    width: 98%;
+    text-align: center;
+}
+
+.onde-conheceu{
+    position: relative;
+    width: 96%;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 25px;
+}
+
+.campo label{ /*nome dos campos a serem preenchidos*/
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+.campo.left label, .campo.right label, .campo.center label{ /*nome dos campos a serem preenchidos*/
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+.campo.inline.left label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea{
+    padding: 0.5em;
+    border: 1px solid rgba(194, 190, 190, 0.452);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    width: 95%;
+}
+
+.campo.center input[type="text"]{
+    width: 49%;
+}
+
+input:focus, select:focus, textarea:focus{
+    background: rgba(156, 193, 241, 0.356);
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.mensagem{
+    margin: auto;
+    display: block;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #0E7AF0;
+    border:0;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover{
+    color: black;
+    background: #bedaf8;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+
+@media screen and (max-width: 768px){
+    /*
+    Conteúdo de Projetos
+    */
+    section.conteudo{
+        position: relative;
+        margin-top: 50px;
+
+    }
+
+    .center-conteudo{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo{
+       font-size:300%;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .texto p{
+        font-size: 100%;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    form.formulario{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .center-form{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .subtitulo{
+       font-size:300%;
+    }
+
+    /*Altera o corpo da página*/
+    .preenchimento-form{
+        width: 97%;
+    }
+
+    .campo.left{
+        width: 100%;
+    }
+
+    .campo.right{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .campo.inline.left{
+        width: 97%;
+        padding-top: 10px;
+    }
+
+    .campo.center input[type="text"]{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 480px){
+     /*
+    Conteúdo de Projetos
+    */
+    .center-conteudo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .texto p{
+        font-size: 82%;
+    }
+
+    /*
+    Formulário de Projetos
+    */
+    .center-form{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*Altera o corpo da página*/
+    .preenchimento-form{
+        width: 94%;
+    }
+
+    .campo.inline.left label{
+        display: inline-flex;
+    }
+
+    .campo.center{
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .campo.center input[type="text"]{
+        width: 105%;
+    }
+}

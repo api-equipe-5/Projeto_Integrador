@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./envio de projeto.css"/>
+    <title>Envio de Projeto</title>
+</head>
+<body>
+    
+        <div>
+            <h1 id="titulo">Cadastro de projeto</h1>
+            <br>
+            <br>
+        </div>
+
+              
+        <form id="projeto" method="POST" action="http://localhost/Projeto/Projeto-API-main/Código/Back-end/processacadproj.php">
+           <fieldset class="grupo">
+                <div class="campo">
+                <label for="nome"><strong>nome do projeto</strong></label>   
+                <input type="text" name="nomeproj" placeholder="">
+                </div>
+                
+                <div class="campo">
+                <label for="descrição"><strong>descrição do projeto</strong></label>
+                <textarea id="descricaoproj" type="text" name="messageproj" placeholder=""></textarea>
+                </div>
+                <div>
+                
+                <input class="enviar" type="submit" value="Enviar">
+                </div>
+            </fieldset>    
+        </form>
+        </div>
+     
+</body>
+</html>

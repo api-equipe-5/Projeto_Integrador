@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" type="text/css" href="formulario_participante.css" media="screen"/>
+     <title>cadastro de participante</title>
+</head>
+<body>
+    
+    <div>
+       <h1 id="titulo">Cadastro de Participante</h1>
+       <br>
+        <br>   
+    </div>
+    
+ </form id= "formulario">
+       <fieldset class="grupo">
+              <div class="campo">
+            <label for="name"><strong>Nome do Participante</strong></label>
+            <input type="text" name="Nome do Participante" id="name" required>
+         </div>
+        
+         <div class="campo">
+             <label for="RG"><strong>RG do Participante</strong></label>
+            <input type="text" name="RG do Participante" id="RG" required>
+        </div>
+        <div class="campo">
+            <label for="CPF"><strong>CPF do Participante</strong></label>
+            <input type="text" name="CPF do Participante" id="CPF" required>
+        </div>
+        <div class="campo">
+            <label for="CEP"><strong>CEP</strong></label>
+            <input type="text" name="CEP" id="CEP" required>
+        </div>
+        <div class="campo">
+            <label for="Endereço"><strong>Endereço</strong></label>
+            <input type="text" name="Endereço" id="Endereço" required>
+        </div>
+        <div class="campo">
+            <label for="mãe"><strong>Nome da Mãe</strong></label>
+            <input type="text" name="mãe" id="mãe" required>
+        </div>
+        <div class="campo">
+            <label for="Pai"><strong>Nome do Pai</strong></label>
+            <input type="text" name="Pai" id="Pai" required>
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" data-min-length="3" >
+        </div>
+
+        <div class="campo">
+            <label for="senha"><strong>Senha</strong></label>
+            <input type="password" name="senha" id="senha"required>
+        </div>
+        <button class="botao" type="submit" id="enviar">Enviar</button>
+        </Fieldset>
+ </form>
+ <script>
+     document.querySelector('#enviar')
+         .addEventListener('click', () => {
+             window.location.href = 'file:///C:/Users/Douglas/Desktop/formulario/formularioenviado.html';
+            });
+</script>
+</body>
+</html>

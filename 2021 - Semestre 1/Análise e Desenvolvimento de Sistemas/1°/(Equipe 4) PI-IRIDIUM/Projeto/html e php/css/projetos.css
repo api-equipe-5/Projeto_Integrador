@@ -1,0 +1,23 @@
+body {
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c
+}
+
+h1, h2, h3, h4 {
+    font-family: Asap, sans-serif;
+    color: #000000
+}
+.botao {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: 1em;
+    border-radius: 3px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+div h1 {
+    text-align: center;
+}

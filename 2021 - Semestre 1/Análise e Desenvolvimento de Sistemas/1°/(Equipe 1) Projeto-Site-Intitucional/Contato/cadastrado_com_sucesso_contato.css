@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*Estilos da página de cadastro com sucesso de contato*/
+
+section.check{
+    position: relative;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.center-check{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.imagem_check{
+    text-align: center;
+    margin-right:auto; 
+    margin-left: auto; 
+    width: 100%;
+    padding-right: auto;
+}
+
+.imagem_check img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+section.sucesso{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.center-sucesso{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.titulo-sucesso{
+    width: 100%;
+    text-align: center;
+}
+
+.h1{
+    color: #47525E;
+    font-family: Lato;
+    font-size:50px;
+    letter-spacing: 2px;
+    line-height: 65px;
+    padding-top: 40px;  
+    text-align: center;
+}
+
+.subtitulo-sucesso{
+    width: 100%;
+    text-align: center;
+}
+
+.h2{
+  font-family: Lato;
+  font-size: 55px;
+  line-height: 52px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px; 
+  color: #47525E;
+}
+
+.imagem_maos{
+    width: 100%;
+    text-align: center; 
+}
+
+.imagem_maos img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 92%;
+
+}
+
+.titulo-agradecimento{
+    width: 100%;
+    text-align: center;
+}
+
+.h3{
+  font-family: Lato;
+  font-size: 43px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1px;
+  color: #47525E;
+}
+
+@media screen and (max-width: 768px){
+    section.check{
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .center-check{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .imagem_check img{
+        width: 90%;
+    }
+
+    section.sucesso{
+        position: relative;
+    }
+
+    .center-sucesso{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .h1{
+        font-size: 250%;
+    }
+
+
+    .h2{
+        font-size: 250%;
+    }
+
+    .h3{
+        font-size: 190%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .center-check{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .imagem_check img{
+        width: 70%;
+    }
+
+    .center-sucesso{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .imagem_maos img{
+        width: 85%;
+    }
+
+    .h1{
+        font-size: 170%;
+    }
+
+    .h2{
+        font-size: 170%;
+    }
+
+    .h3{
+        font-size: 130%;
+    }
+}

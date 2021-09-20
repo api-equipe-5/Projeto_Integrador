@@ -1,0 +1,17 @@
+#Projeto1{
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+p{
+    margin-right: 0px;
+}
+img#FotoProjeto{
+    max-width: 500px;           
+    width: 100%;          
+    max-height: 300px;  
+    min-height: auto;    
+}
+#Titulo{
+    text-align: left;
+    margin-left: 0px;
+}

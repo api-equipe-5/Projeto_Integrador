@@ -1,0 +1,253 @@
+body{
+    background-image: url(./imagem.png);
+    background-attachment: fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: auto;
+    background-color: white;
+    height: 110px;
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+.menu ul li{
+	background-color: white;
+	width: 205px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	position: relative;
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul li:hover{
+	background-color:white;
+}
+
+.menu ul ul{
+	display: none;
+    padding-top: 5px;
+}
+
+.menu ul li:hover > ul{
+	display:block;
+}
+
+
+.menu ul ul li:hover{
+	background-color: #f8edeb;
+}
+
+
+.menu a{
+	color: tomato;
+	text-decoration: none;
+}
+
+
+li{
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    width: 16%;
+    list-style: none;
+}
+
+.logo{
+    float: left;
+    padding:15px;
+}
+
+a{
+    text-decoration: none;
+    color: tomato;
+}
+
+#inicio{
+    background-color: white;
+    width: 85%;
+    height: 1760px; 
+    position: absolute;
+	left: 100px;
+    top: 180px;
+}
+
+ol{
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+
+.menu2{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    list-style: none;
+    text-align: center;
+    border: 2px solid #000; 
+    height: 55px;
+    align-items: center;
+    width: 86%;
+    margin-left: 70px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+}
+.text{
+    text-align: center;
+    font-size: 35px;
+}
+
+.im{
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.req ul li{
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	line-height: 25px;
+	font-size: 25px;
+	position: relative;
+}
+
+.req ul ul{
+	display: none;
+}
+
+.req ul{
+    padding:0;
+}
+
+.req ul li:hover > ul{
+	display:block;
+}
+
+.req2 ul li{
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	line-height: 25px;
+	font-size: 25px;
+	position: relative;
+}
+
+
+.req2 ul ul{
+	display: none;
+}
+
+.req2 ul{
+    padding:0;
+}
+
+.req2 ul li:hover > ul{
+	display:block;
+}
+
+#caixa2{
+    position: relative;
+    width: 1040px;
+    height: 300px;
+    border: 4px solid black;
+    right: -50px;
+    bottom: -100px;
+    margin-top: -70px;
+}
+
+#circulo1{
+    background-color: #EDEF7A;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circulo2{
+    background-color: #7AA9EF;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    float: right;
+    margin-top: -250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caixa3{
+    position: relative;
+    width: 280px;
+    height: 330px;
+    border: 4px solid black;
+    margin-left: 10%;
+    bottom: -100px; 
+    margin-top: -50px;
+}
+
+#caixa4{
+    position: relative;
+    width: 280px;
+    height: 330px;
+    margin-left: 40%;
+    border: 4px solid black;
+    bottom: -100px; 
+    margin-top: -338px;
+}
+
+#caixa5{
+    position: relative;
+    width: 280px;
+    height: 330px;
+    border: 4px solid black;
+    margin-left: 70%;
+    bottom: -100px; 
+    margin-top: -338px;
+}
+
+#chat{
+    position: fixed;
+    right: -2px;
+    bottom: -5px;
+}
+
+h5{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h5:hover {
+    color: tomato;
+  }
+
+.rodape{
+    text-align: center;
+    margin-top: 2%;
+}

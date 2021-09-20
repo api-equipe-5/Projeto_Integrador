@@ -1,0 +1,367 @@
+#comeco{
+    background-color: white;
+    width: 85%;
+    height: 100%; 
+    position: absolute;
+	left: 100px;
+    top: 180px;
+}
+
+.doacao{
+    background-color: #fff;
+    width: 100%;
+    float: right;
+    color: #293241;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    height: 20%;
+}
+
+.local{
+  margin-top: 30px;
+  width: 100%; 
+  background-color: #fff;
+  height: 390px;
+  position: absolute;
+  float: left;
+}
+
+.pix{
+    margin-left: 90px;
+    width: 40%; 
+    height: 390px;
+    position: relative;
+    float: left;
+    padding-left: 5px;
+    background-color: #fff;
+    text-align: justify;;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.cartao{
+    width: 40%; 
+    background-color: #fff;
+    height: 53%;
+    position: right;
+    float: right;
+    text-align: justify;
+    padding: 20px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.doadores{
+    background: url('azul.png');
+    width: 100%;
+    height: 600px;
+    color: #293241;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+
+#caixa3{
+  position: relative;
+  width: 280px;
+  height: 330px;
+  border: 4px solid black;
+  margin-left: 10%;
+  bottom: -100px; 
+  margin-top: -50px;
+}
+
+#caixa4{
+  position: relative;
+  width: 280px;
+  height: 330px;
+  margin-left: 40%;
+  border: 4px solid black;
+  bottom: -100px; 
+  margin-top: -338px;
+}
+
+#caixa5{
+  position: relative;
+  width: 280px;
+  height: 330px;
+  border: 4px solid black;
+  margin-left: 70%;
+  bottom: -100px; 
+  margin-top: -338px;
+}
+
+h4{
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+h3{
+    font-size: 22px;
+    color: #293241;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+ol{
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+
+.menu2{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-right: 80px;
+    list-style: none;
+    text-align: center;
+    height: 75px;
+    border: 2px solid #000; 
+    height: 55px;
+    align-items: center;
+    width: 84%;
+    margin-left: 90px;
+}
+
+h5{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h5:hover {
+    color: tomato;
+  }
+
+h6{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-family: Helvetica,sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.texto{
+    color: #000;
+    margin-top: 38%;
+    font-size: 28px;
+    font-family: Helvetica,sans-serif;
+    text-align: center;
+}
+
+.odoacao{
+    background: url('verde.png');
+    width: 100%;
+    float: right;
+    color: #293241;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    height: 770px;
+    margin-bottom: 60px;
+}
+
+.imagem{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.texto6{
+    color: tomato;
+    font-size: 22px;
+    font-family: Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+.rodape{
+    margin-top: 0px;
+}
+
+.maneiras{
+    width: 100%; 
+    background-color:#95d5b2;
+    height: 300px;
+    padding: 0;
+}
+
+.relatorios1{
+    width: 50%; 
+    background-color: #000;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.relatorios2{
+    width: 50%; 
+    background: url('verde.png');
+    float: right;
+    position: relative;
+    height: 300px;
+}
+
+.relatorio1{
+    width: 50%; 
+    background: url('verde.png');
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.relatorio2{
+    width: 50%; 
+    background: url('verde.png');
+    float: right;
+    position: relative;
+    height: 300px;
+}
+
+.texto2{
+    text-align: center;
+    font-size: 20px;
+    font-family: Helvetica,sans-serif;
+}
+
+/*form*/
+
+#main-container2 {
+    width: 50%;
+    height: 66%;
+    margin-left: 25%;
+    margin-top: 70px;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 35px;
+    position: fixed;
+  }
+  
+  #main-container2 h1 {
+    text-align: center;
+    font-family: Helvetica,sans-serif;
+    font-size: 20px;  
+  }
+
+  /* form */
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*criar espaço autom qdo dois input estiverem juntos*/
+  }
+
+  .full-box {
+    flex: 1 1 30%;
+  }
+  
+  .half-box {
+    flex: 1 1 50%;
+  }
+
+  input:focus[type="submit"] {
+    display:none;
+  }
+  
+  input[type="submit"] {
+    background-color: #323232;
+    color: #FFF;
+    padding: 8px 5px;
+    color: #fff;
+    font-family: Helvetica,sans-serif;
+    font-size: 20px;  
+    border: 1px solid #fff; 
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+  }
+  
+  input[type="submit"]:hover{
+    background: tomato;
+  }
+  
+  input, label[type="fullbox"] {
+    width: 50%; 
+  }
+  
+  label {
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;  
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;  
+    margin-bottom: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  
+  input:focus /*quando vc clica no input*/{
+    border-color: tomato;
+    outline: none;
+  }
+  
+  
+  input:focus [type="lastname"] /*quando vc clica no input*/{
+    outline: none;
+  display: block;
+  }
+  
+  
+  input[type="checkbox"] {
+    background-color: #323232;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    text-align: right;
+    padding: 0px;
+    width: 5%;
+    flex-wrap: none;
+    margin-left: -2%;
+    position: relative;
+  }
+  
+  input:focus[type="checkbox"] {
+    display:inline-block;
+  }
+  
+  .middle-box {
+    flex: 1 1 50%;
+    margin-left: 25%;
+  }
+  
+  .middle-box2 {
+    flex: 1 1 50%;
+    position: absolute;
+    width: 100%;
+    margin-top: 3%;
+  }

@@ -1,0 +1,23 @@
+    h2 {
+        font-size: 50px;
+        font-stretch: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    
+
+    .titulozao {
+        border-radius: 50px;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        background-color: #8677DE;
+        padding: 40px 40px;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #888080;
+        height: 300px;
+    }

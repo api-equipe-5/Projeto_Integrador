@@ -1,0 +1,227 @@
+
+.container2 {
+    display: none;
+    height: 400;
+    width: 23%;
+    right: 25px;
+    bottom: 20px;
+    background-color: rgb(248, 187, 176);
+    font-size: 17px;
+    position: fixed;
+}
+
+.chat2{
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+}
+
+#btn-div{
+    background-color: blue; 
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-bottom: 410px;
+    margin-left: 100%;
+    border-style: none;
+    position: fixed;
+}
+
+#ok{
+    background-color: transparent;
+    bottom: 0;
+    border-radius: 50%;
+    margin-bottom: 1%;
+    border-style: none;
+    position: fixed;
+    width: 40px;
+    height: 5%;
+    right: 38px;
+    display: block;
+}
+
+
+.top{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 119, 98); 
+}
+
+.bottom {
+    height: 350px;
+    width: 100%;
+    bottom: 0px;
+    background-color:  rgb(248, 187, 176); 
+    position: relative;
+    float: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.perfil{
+    float: left;
+    width: 80%;
+    position: relative;
+    background-color: rgb(241, 119, 98); 
+    height: 100%;
+}
+
+.sair{
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+    width: 10%;
+    position: relative;
+    background-color: transparent; 
+    height: 50%;
+    text-align: center;
+}
+
+.exit{
+    position: fixed;
+    right: 36px;
+    display: none;
+    margin-bottom: auto;
+}
+
+.botao2{
+    bottom: 0px;
+    margin-right: 100%;
+}
+
+.foto{
+    background-color: tomato;
+    border-radius: 50% 50% 50% 50%;
+    width: 40px;
+    height: 80%;
+    margin-left: 11px;
+    position: relative;
+    float: left;
+    margin-top: 2%;
+}
+
+.nome {
+    position: relative;
+    margin-top: 3%;
+    font-size: 20px;
+    margin-left: 65px;
+    background-color: transparent;
+    width: 50%;
+    height: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.estado {
+    position: relative;
+    margin-top: 0%;
+    font-size: 13px;
+    margin-left: 65px;
+    background-color: transparent;
+    width: 50%;
+    bottom: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+    margin-top: 4px;
+}
+
+.container3 {
+	width: 100%;
+	height: 100%;
+}
+
+.chat {
+    position: fixed;
+    height: 370px;
+    width: 23%;
+	display: flex;
+	flex-direction: column;
+    text-align: left;
+	align-items: center;
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-right: 28px;
+    bottom: 20px;
+} 
+ 
+input { 
+	border: 0; 
+	padding: 15px; 
+	width: 90%;
+    right: auto;
+    margin: 0px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+input:focus { 
+	outline: thin dotted;
+    outline: 0px auto;
+    outline-offset: 0px;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 100%;
+	width: 90%;
+	background-color: transparent;
+	padding: 15px;
+	margin: 0;
+    margin-top: 0px;
+	border-radius: 10px;
+    font-size: 17px;
+}
+
+#bot {
+	margin-left: auto;
+}
+
+#user {
+    position: relative;
+    align-items: right;
+    float: right;
+    margin-left: 73%;
+}
+
+.bot {
+	font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    align-items: left;
+    float: left;
+}
+
+.avatar {
+	height: 30px;
+}
+
+.response {
+	display: flex;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .container3 {
+		flex-direction: column; 
+		justify-content: flex-start;
+	}
+	.chat {
+		width: 75vw;
+		margin: 10vw;
+	}
+}
+

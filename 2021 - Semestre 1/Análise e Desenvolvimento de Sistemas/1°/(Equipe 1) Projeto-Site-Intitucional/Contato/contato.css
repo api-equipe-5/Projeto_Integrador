@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+/*Estilos da Página de Cadastro de Contato*/
+
+/*
+Conteúdo de Contato
+*/
+section.conteudo{
+    position: relative;
+    display: flex;
+    margin-top: 227px;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    justify-content: center;
+    text-align: justify; 
+}
+
+.center-conteudo{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(241, 237, 237, 0.151);
+}
+
+.titulo-contato{
+    width: 100%;
+}
+
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em; 
+}
+
+.left{
+    position: relative;
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 15px;
+    font-size: 6mm;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: black solid;
+    max-width: auto;
+}
+
+.left p{
+    float: center;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.email{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.imagem{
+    position: relative;
+    width: 48%;
+    float: right;
+    margin-left: 2%;
+    margin-top: 15px;
+}
+
+.imagem iframe{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/*
+Formulário de Contato
+*/
+form.formulario{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: justify; 
+}
+
+.center-formulario{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(241, 237, 237, 0.151);
+}
+
+.titulo-formulario{
+    width: 100%;
+}
+
+.titulo-form{
+    text-align: center;
+    font-size: 7mm;  
+    margin-top: 100px;
+}
+
+.grupo{
+    border: solid rgb(160, 158, 158);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px; 
+    margin-bottom: 2em;
+}
+
+/*Altera o corpo da página*/
+.preenchimento-form{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.preenchimento-form-textarea{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+.campo.center{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea{
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 0 auto;
+    border: 1px;
+    border-color: rgb(100, 100, 100);
+    border-bottom-style: groove;
+    display: block;
+    font-size: 4mm;
+    width: 85%;
+}
+
+input:focus, select:focus, textarea:focus{
+    background: rgba(156, 193, 241, 0.356);
+}
+
+textarea{
+    height: 180px;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #0E7AF0;
+    border:0;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover{
+    background: #2eb42e;
+}
+
+@media screen and (max-width: 768px){
+    /*
+    Conteúdo de Contato
+    */
+    section.conteudo{
+        position: relative;
+        margin-top: 50px;
+
+    }
+
+    .center-conteudo{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo{
+       font-size:300%;
+    }
+
+    .left{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .left p{
+        font-size: 90%;
+    }
+
+    .email{
+        display: inline;
+    }
+
+    .imagem{
+        width: 105%;
+    }
+
+    .imagem iframe{
+        width: 95%;
+    }
+
+    /*
+    Formulário de Contato
+    */
+    form.formulario{
+        position: relative;
+    }
+
+    .center-formulario{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo-formulario{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .titulo-form{
+        font-size: 200%;
+    }
+
+    .grupo{
+        width: 80%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], textarea{
+        padding: 0.5em;
+        font-size: 3.5mm;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    /*
+    Conteúdo de Contato
+    */
+    .center-conteudo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .left p{
+        font-size: 82%;
+    }
+
+    .imagem iframe{
+        width: 95%;
+        height: 150%;
+    }
+
+    /*
+    Formulário de Contato
+    */
+    .center-formulario{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .titulo-form{
+        font-size: 150%;
+    }
+
+    .grupo{
+        width:90%;
+    }
+}
+

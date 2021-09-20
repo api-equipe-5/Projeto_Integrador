@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+h4{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0px;
+    font:bold 2.5em Helvetica, sans-serif;
+}
+
+#comeco{
+    background-color: white;
+    width: 85%;
+    height: 1400px; 
+    position: absolute;
+	left: 100px;
+    top: 180px;
+}
+
+.nossosprojetos{
+    background-color: #fff;
+    width: 100%;
+    float: right;
+    color: #293241;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    height: 1370px;
+    margin-bottom: 60px;
+}
+
+.todosprojetos{
+    width: 98%; 
+    background-color:#fff;
+    height: 300px;
+    padding: 10;
+    margin: auto;
+}
+
+.projeto1{
+    width: 50%; 
+    background: url('verde.png');
+    height: 350px;
+    float: left;
+    position: relative;
+    border-radius: 10% 0% 0% 10% ;
+}
+
+.imgp{
+    width: 50%; 
+    background: url('verde.png');
+    float: right;
+    position: relative;
+    height: 350px;
+    border-radius: 0% 10% 10% 0% ;
+}
+
+.projeto2{
+    width: 50%; 
+    background-color: #FCE1DD;
+    height: 350px;
+    float: left;
+    position: relative;
+    border-radius: 10% 0% 0% 10% ;
+    margin-top: 20px;
+}
+
+.imgp2{
+    width: 50%; 
+    background-color: #FCE1DD;
+    float: right;
+    position: relative;
+    height: 350px;
+    border-radius: 0% 10% 10% 0% ;
+    margin-top: 20px;
+}
+
+.projeto3{
+    width: 50%; 
+    background-color: #B4C7D2;
+    height: 350px;
+    float: left;
+    position: relative;
+    border-radius: 10% 0% 0% 10% ;
+    margin-top: 20px;
+}
+
+.imgp3{
+    width: 50%; 
+    background-color: #B4C7D2;
+    float: right;
+    position: relative;
+    height: 350px;
+    border-radius: 0% 10% 10% 0% ;
+    margin-top: 20px;
+}
+
+.texto6{
+    color: #ff6347;
+    text-align: center;
+    margin: 0;
+    margin-top: 0px;
+    font:bolder 1.7em Helvetica, sans-serif;
+}
+
+.texto5{
+    color: black;
+    text-align: justify;
+    margin: 0;
+    margin-left: 25px;
+    font:1em Helvetica, sans-serif;
+}
+
+.imagem{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rodape{
+    margin-top: 0px;
+}
+
+
+.middle-box {
+    flex: 1 1 50%;
+    align-items: center;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    width: 40%;
+    background-color: #323232;
+    color: #FFF;
+    padding: 8px 5px;
+    color: #fff;
+    font-family: Helvetica,sans-serif;
+    font-size: 20px;  
+    margin-top: 2%;
+    align-items: center;
+    border: 1px solid #fff; 
+    margin-bottom: 20px;  
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+  }
+  
+  input[type="submit"]:hover{
+    background: tomato;
+  }
+
+  input {
+    border-bottom: 2px solid #323232;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;  
+    margin-bottom: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 40%;
+    margin-left: 12%;
+    margin-top: 4%;
+  }
+
+.localbusca{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.busca{
+    width: 30%;
+    float: right;
+    text-align: center;
+    align-items: center;    
+    margin-right: 5%;
+}
+
+input[type=search] {
+    width: 80%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: white;
+    background-image: url('lupinha.png');
+    background-position: 100%; 
+    background-size: 50px;
+    background-repeat: no-repeat;
+    padding: 20px 0px 20px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 50px 50px 50px 50px ;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }
+
+input[type=search]:focus {
+    width: 100%;
+  }

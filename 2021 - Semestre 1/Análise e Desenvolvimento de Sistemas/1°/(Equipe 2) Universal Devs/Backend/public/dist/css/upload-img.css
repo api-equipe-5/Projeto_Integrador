@@ -1,0 +1,18 @@
+.uploadFileInput{
+    background: #d2d2d2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadFileInput:hover{
+    background: #858585;
+
+}
+
+#preview ul li{
+    list-style: none;
+}
+
+#preview img{
+    max-width: 100%;
+}

@@ -1,0 +1,11 @@
+-Principal:
+  -Desenvolver um site institucional para escola Vó Maria Felix. ONG que atende 250 crianças de 0 a 7 anos.
+
+-Requisitos Funcionais:
+  -Cadastro de Participantes
+  -Cadastro de projetos
+  -Cadastro de Voluntários (Voluntário específico e ou Voluntário Apoio)
+
+-Requisitos Não Funcionais:
+  -Todos os conteúdos devem ser de autoria própria;
+  -Site de caráter institucional

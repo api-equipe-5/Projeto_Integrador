@@ -1,0 +1,161 @@
+body{
+    background-image: url(./imagem.png);
+    background-attachment: fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    margin: auto;
+    background-color: white;
+    height: 110px;
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+.menu ul li{
+	background-color: white;
+	float: left;
+	width: 205px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	position: relative;
+
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul li:hover{
+	background-color:white;
+}
+
+.menu ul ul{
+	display: none;
+    padding-top: 5px;
+}
+
+.menu ul li:hover > ul{
+	display:block;
+}
+
+
+.menu ul ul li:hover{
+	background-color: #f8edeb;
+}
+
+
+.menu a{
+	color: tomato;
+	text-decoration: none;
+}
+
+li{
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    width: 16%;
+    list-style: none;
+}
+
+.logo{
+    float: left;
+    padding:15px;
+}
+
+a{
+    text-decoration: none;
+    color: tomato;
+}
+
+#inicio{
+    background-color: white;
+    width: 65%;
+    height: 400px; 
+    position: absolute;
+	left: 100px;
+    top: 180px;
+    border-radius: 20px;
+    border-color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+th{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 130px;
+}
+
+td{
+    padding: 10px;
+    padding-left: 130px;
+    font-size: 20px;
+}
+
+.linhavertical {
+    width: 0px;
+    height: 400px;
+    margin-top: -370px;
+}
+
+hr{
+    border-color: tomato;
+}
+
+.controle ul li{
+	background-color: white;
+	float: right;
+	width: 300px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	font-size: 18px;
+	position: relative;
+    border-radius: 0;
+    margin-right: 2%;
+}
+
+.controle ul li:hover{
+	background-color: white;
+}
+
+.controle ul ul{
+	display: none;
+    margin-right: -1.5mm;
+}
+
+.controle ul li:hover > ul{
+	display: block;
+}
+
+
+.controle ul ul li:hover{
+	background-color: pink;
+}
+
+
+.controle a{
+	color: tomato;
+	text-decoration: none;
+}
+
+
+
+#chat{
+    position: fixed;
+    right: -2px;
+    bottom: -5px;
+}
+
+.rodape{
+    text-align: center;
+}

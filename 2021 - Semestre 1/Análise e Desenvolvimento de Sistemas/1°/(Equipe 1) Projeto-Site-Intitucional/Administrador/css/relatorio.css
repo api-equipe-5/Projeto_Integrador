@@ -1,0 +1,72 @@
+.fundo{
+    background-image: url("../../Administrador/imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.tabela, th, td{
+    border: 1px solid #000; 
+    border-collapse:collapse;
+    font-size: 1.02em;
+    
+}
+th, td {
+    text-align: center;
+    padding: 8px 12px;
+} 
+th{
+    background: rgba(156, 193, 241, 0.356);
+}
+
+.ordernar{
+    font-size: 20px;
+}
+.formm input{
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-color:#319cb7da;
+    color: #ffffff;
+    font-size: medium;
+    
+     
+}
+.tabela tr:nth-child(odd){
+    background-color: #ddd;
+}
+.tabela tr:nth-child(even){
+    background-color: white;
+}
+.man{
+    margin-left: 15px;
+    margin-right: 0%;
+}
+.titu{
+    
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.footer {
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    width:100%;
+    height: 25px;
+    padding-bottom: 30px;
+    margin-top: 19px;
+    bottom: 0px;
+    position: relative;
+}
+.xtreme{
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+}
+.back{
+    background-color:#e5e5e5ab;
+    margin: 0px;
+    padding-top: 1px;
+}

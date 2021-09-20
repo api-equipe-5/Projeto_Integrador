@@ -1,0 +1,149 @@
+.cabecalho{
+    background-color:  #319cb7;
+    color: white;
+    border: 0px;
+    font-size: larger;
+    text-align: center;
+    font-family: "Graphik", sans-serif;
+    
+}
+.background, body{
+    background-color:#e5e5e5ab;
+    margin: 0px;
+}
+
+#tabela{
+    width: max-content;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.coluna{
+    white-space: nowrap;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+.botao_acoes{
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+}
+
+.newuser{
+    float: left;
+    padding-top: 10px;
+}
+
+/*CSS DA PÁGINA EDITAR_ADM*/
+h1{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.campo {
+    padding-top: 20px;
+    padding: 50px;
+    text-align: left;
+    font-size: large;
+
+}
+
+.input{
+    padding-right: 90px; /*altera o tamanho da caixa do input do adicionar novo usuário */
+
+}
+
+.save {
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #088eaf;
+    width: 90px;
+    height: 25px;
+    margin-left: 35%;
+    margin-right: 50%;
+
+}
+
+.footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-image: linear-gradient(to right, #319cb7, #76c4d7);
+    left: 0px;
+    height: 25px;
+    padding-bottom: 30px;
+}
+
+.xtreme{
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+}
+ 
+/*CSS DO INDEX*/
+.fundo{
+    background-image: url("../imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo:before{
+    opacity: 0.1;
+}
+
+.button{
+    background-color:#319cb7;
+    font-size: 2.2em;
+    border: 0;
+    margin-top: 30px;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+.botao{
+    width: 495px;
+    margin: auto;
+    padding-top: 220px;
+    text-decoration: none;
+}
+
+.help{
+    float: right;
+    width: 115px;
+    padding-top: 115px;
+    
+    
+}   
+
+/* CSS DA PAG. AJUDA*/
+.video_center{
+    text-align: center;
+    background-image: url("imagens/background_ajuda.png");
+
+}
+.video_center h1{
+    padding-top: 17px;
+    margin-block-start: 0em;
+}
+
+.video_center .footer{
+    position: relative;
+}
+

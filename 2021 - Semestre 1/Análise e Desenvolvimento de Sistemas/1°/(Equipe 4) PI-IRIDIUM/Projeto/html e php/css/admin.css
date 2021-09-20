@@ -1,0 +1,73 @@
+#icone img{
+    max-width:40px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.barra{
+    background-color: rgb(51, 51, 51);
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+.link{
+    color: #eeb704;
+    background-color: rgb(104, 103, 105);
+    padding: 20px;
+    font-family: Arial;
+    font-size: 12pt;
+    transition: all .2s linear;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+.link:houver{
+    background-color: #050542;
+}
+
+*{
+    margin: 0;
+    padding: o;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#check:checked ~ .barra{
+    transform: translate(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+

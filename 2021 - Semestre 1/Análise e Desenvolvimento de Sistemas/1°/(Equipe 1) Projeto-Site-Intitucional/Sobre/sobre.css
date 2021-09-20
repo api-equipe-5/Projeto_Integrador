@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/*Estilos da Página Sobre*/
+
+/*
+Título de Sobre Nós
+*/
+section.titulo-conteudo{
+    position: relative;
+    display: flex;
+    margin-top: 227px;
+    font-size: 1em; /* tamanho da letra*/
+    color: black;
+    justify-content: center;
+    text-align: justify; 
+}
+
+.center-titulo{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.titulo--sobre-nos{
+    width: 100%;
+}
+
+.titulo{
+    font-family: 'Cabin Sketch', cursive;
+    color: #545454;   
+    text-align: center;
+    font-size: 7em; 
+}
+
+/*
+Conteúdo de Sobre Nós
+*/
+section.sobre-nos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.center-sobre-nos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-image: url(../Sobre/sobrenos.jpg);
+    background-color: rgba(241, 237, 237, 0.151);
+    background-position: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paragrafo-missao, .paragrafo-visao, .paragrafo-valores{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+}
+
+.texto-missao, .texto-visao, .texto-valores{
+    position: relative;
+    float: left;
+    width: 48%;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: auto;
+    margin-right: 2%;
+    padding-top: 30px;
+}
+
+.p-missao,.p-visao, .p-valores{
+    position: relative;
+    width: 48%;
+    float: right;
+    margin-left: 2%;
+}
+
+
+.missao, .visao, .valores{
+    font-size: 25mm;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.missao{
+    color: fuchsia;
+}
+
+.valores{
+    color: cornflowerblue;
+}
+
+.visao{
+    color: goldenrod;
+}
+
+.p-missao p,.p-visao p, .p-valores p{
+    text-align: center;
+    margin-right: 5%;
+    font-size: 6mm;
+}
+
+@media screen and (max-width: 768px){
+    /*
+    Título de Sobre Nós
+    */
+    section.titulo-conteudo{
+        position: relative;
+        margin-top: 50px;
+
+    }
+
+    .center-titulo{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo-sobre-nos{
+        width: 100%;
+    }
+
+    .titulo{
+       font-size:300%;
+    }
+
+    /*
+    Conteúdo de Sobre Nós
+    */
+    section.sobre-nos{
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .center-sobre-nos{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .paragrafo-missao, .paragrafo-visao, .paragrafo-valores{
+        width: 100%;
+        margin-top: 0;
+    }
+
+   .texto-missao, .texto-visao, .texto-valores{
+        width: 100%;
+    }
+
+    .missao, .visao, .valores{
+        font-size: 300%;
+    }
+
+    .p-missao, .p-visao, .p-valores{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .p-missao p,.p-visao p, .p-valores p{
+        font-size: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    /*
+    Título de Sobre Nós
+    */
+    .center-titulo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*
+    Conteúdo de Sobre Nós
+    */
+    .center-sobre-nos{
+        margin-left: 2%;
+        margin-right: 2%;
+        background-position: 85%;
+    }
+}
