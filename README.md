@@ -6,7 +6,6 @@
 <h2> :calendar: Cronograma de entregas </h2>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/ec25aed9017c82f0447d23ffdaa3aea6299a5863/Imagens/Sprints1.png" /></h1>
 <br>
-<h2> :calendar: Entregas </h2>
 
 ## Backlog
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/4e20196f1fb4ece5c7bbc3d87ca1fabb60c9751c/Imagens/backlog.png"/></h1>
