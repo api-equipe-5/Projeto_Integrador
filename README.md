@@ -22,13 +22,15 @@
 
 #### Whimsical: Prototipagem
 
-#### GitHub: Versionamento
+#### GitHub: Hospedagem de código-fonte e arquivos
+
+#### Git: Versionamento
 
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
 | -------- |-------- |-------- |
 |**Ana Carolina das Neves** (Scrum Master)|[@GitHub](https://github.com/AnaCarolinaNeves)|[@LinkedIn](https://www.linkedin.com/in/ana-carolina-neves-36aa68207/)|
-|**Barbara dos Santos Sant'Ana**|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
-|**Gabriel dos Santos**|[@GitHub](https://github.com/GabriellSantos341)|[@LinkedIn](https://www.linkedin.com/in/gabriel-dos-santos-18b9aa220/)|
-|**Gabriele Stephanie Silva de Oliveira**|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
-|**Guilherme Marcondes Caetano**|[@GitHub](https://github.com/gui-marcondes)|[@LinkedIn](https://www.linkedin.com/in/guilhermemarcondescaetano/)|
+|**Barbara dos Santos Sant'Ana** (Dev)|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
+|**Gabriel dos Santos** (Dev)|[@GitHub](https://github.com/GabriellSantos341)|[@LinkedIn](https://www.linkedin.com/in/gabriel-dos-santos-18b9aa220/)|
+|**Gabriele Stephanie Silva de Oliveira** (Dev)|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
+|**Guilherme Marcondes Caetano** (Dev)|[@GitHub](https://github.com/gui-marcondes)|[@LinkedIn](https://www.linkedin.com/in/guilhermemarcondescaetano/)|
