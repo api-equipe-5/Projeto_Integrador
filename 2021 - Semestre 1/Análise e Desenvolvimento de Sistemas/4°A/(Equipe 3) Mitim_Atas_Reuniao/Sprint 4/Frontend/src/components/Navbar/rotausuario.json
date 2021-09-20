@@ -1,0 +1,22 @@
+ [
+    {
+      "path": "/home",
+      "breadcrumbName": "Página Inicial"
+    },
+    {
+      "path": "/editmeuperfil",
+      "breadcrumbName": "Editar Meu Perfil"
+    },
+    {
+      "path": "/editusuario",
+      "breadcrumbName": "Editar Usuário"
+    },
+    {
+      "path": "/aprusuario",
+      "breadcrumbName": "Aprovar Usuário"
+    },
+    {
+      "path": "",
+      "breadcrumbName": ""
+    }
+  ]

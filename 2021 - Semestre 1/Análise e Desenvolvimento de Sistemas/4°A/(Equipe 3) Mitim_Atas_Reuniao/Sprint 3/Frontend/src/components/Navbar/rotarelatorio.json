@@ -1,0 +1,18 @@
+[
+    {
+      "path": "/home",
+      "breadcrumbName": "Página Inicial"
+    },
+    {
+      "path": "/atasger",
+      "breadcrumbName": "ATAs Geradas"
+    },
+    {
+      "path": "/usucad",
+      "breadcrumbName": "Usuários Cadastrados"
+    },
+    {
+      "path": "",
+      "breadcrumbName": ""
+    }
+  ]

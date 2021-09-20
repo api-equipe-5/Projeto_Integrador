@@ -1,0 +1,30 @@
+[
+    {
+      "path": "/home",
+      "breadcrumbName": "Página Inicial"
+    },
+    {
+      "path": "/criata",
+      "breadcrumbName": "Criar ATA"
+    },
+    {
+      "path": "/impata",
+      "breadcrumbName": "Imprimir ATA"
+    },
+    {
+      "path": "/monata",
+      "breadcrumbName": "Monitorar ATA"
+    },
+    {
+      "path": "/aprata",
+      "breadcrumbName": "Aprovar ATA"
+    },
+    {
+      "path": "/revisoes",
+      "breadcrumbName": "Revisões"
+    },
+    {
+      "path": "",
+      "breadcrumbName": ""
+    }
+  ]

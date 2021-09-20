@@ -1,0 +1,28 @@
+.site-page-header {
+    text-align: left;
+    margin-bottom: 3%;
+    display: block;
+    width: 100%;
+}
+.ant-page-header-heading-left {
+    width: 100%;
+}
+.ant-page-header-heading-title {
+    width: 90%;
+}
+.logout-link{
+    text-align: right;
+    color: white;
+}
+.img-logo-nav{
+    width: 15%;
+    height: 20%;
+    
+    min-width: 75px;
+    max-width: 250px;
+}
+@media screen and (max-width: 600px) {
+    .logout-link {
+      display: none;
+    }
+  }

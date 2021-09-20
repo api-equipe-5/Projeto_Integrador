@@ -1,0 +1,18 @@
+ [
+    {
+      "path": "/home",
+      "breadcrumbName": "Página Inicial"
+    },
+    {
+      "path": "/cadusuario",
+      "breadcrumbName": "Cadastrar Usuário"
+    },
+    {
+      "path": "/editusuario",
+      "breadcrumbName": "Editar Usuário"
+    },
+    {
+      "path": "",
+      "breadcrumbName": ""
+    }
+  ]

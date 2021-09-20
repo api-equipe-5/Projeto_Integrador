@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html, body{
+    background-color: url('https://i.imgur.com/o2zpW6k.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.login {
+  height: 80vh;
+}
+
+.tituloAutenticacao {
+    font-size: 25pt;
+}
+
+.welcomeEA {
+    color: #383838;
+    font-weight: bold;
+}
+
+.bg-esquerda {
+    background-color: #4B8DA7;
+}
+
+.sign-up{
+	text-align:right;         
+	clear: both;
+}
+
+.centered{
+    margin:5%;
+}
+
+.welcome{
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.shadow{
+    box-shadow:inset 5em 1em gold;
+}
