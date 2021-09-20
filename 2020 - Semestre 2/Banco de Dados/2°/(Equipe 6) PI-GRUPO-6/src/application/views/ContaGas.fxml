@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="btnContaAgua" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ContaGasController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Cod. de Usuário: *" />
+                        <TextField fx:id="txtCodUsuario" prefHeight="25.0" prefWidth="160.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="63.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Nome titular:" />
+                        <TextField fx:id="txtNomeTitular" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="UF:" />
+                        <TextField fx:id="txtUf" disable="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Cidade: " />
+                        <TextField fx:id="txtCidade" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Bairro: " />
+                        <TextField fx:id="txtBairro" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Rua: " />
+                        <TextField fx:id="txtRua" disable="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Número: " />
+                        <TextField fx:id="txtNumero" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Complemento: " />
+                        <TextField fx:id="txtComplemento" disable="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="CEP: " />
+                        <TextField fx:id="txtCep" disable="true" onKeyReleased="#txtCepKeyReleased" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Segmento: *" />
+                        <TextField fx:id="txtSegmento" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Dias de Consumo: *" />
+                        <TextField fx:id="txtDiasConsumo" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Tipo do Medidor: *" />
+                        <TextField fx:id="txtTipoMedidor" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Número do medidor: *" />
+                        <TextField fx:id="txtNumeroMedidor" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Consumo Corrigido: *" />
+                        <TextField fx:id="txtConsumoCorrigido" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Consumo: *" />
+                        <TextField fx:id="txtConsumo" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Valor Leitura Atual: *" />
+                        <TextField fx:id="txtValorLeituraAtual" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Valor Leitura Anterior: *" />
+                        <TextField fx:id="txtValorLeituraAnterior" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Data Leitura Atual: " />
+                        <DatePicker fx:id="txtDataLeituraAtual" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="463.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Data Leitura Anterior: " />
+                        <DatePicker fx:id="txtDataLeituraAnterior" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Data de Vencimento: " />
+                        <DatePicker fx:id="txtDataVencimento" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="63.0" prefWidth="150.0">
+                     <children>
+                        <Label text="Total a Pagar: *" />
+                        <TextField fx:id="txtTotalPagar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="1.0" prefWidth="547.0" spacing="50.0">
+               <children>
+                  <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#clickLimpar" text="LIMPAR" />
+                  <Button mnemonicParsing="false" text="EDITAR" />
+                  <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#clickCadastrar" text="CADASTRAR" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Cadastro de Conta de Gás" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="15.0" top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>

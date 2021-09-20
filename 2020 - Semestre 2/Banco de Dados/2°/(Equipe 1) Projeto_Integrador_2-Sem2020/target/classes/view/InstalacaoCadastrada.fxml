@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InstalacaoCadastrada">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image></ImageView>
+      <Text layoutX="252.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="RGI:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="252.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial;" text="Número de Instalação:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNumeroInstalacao" layoutX="252.0" layoutY="129.0" prefHeight="20.0" prefWidth="350.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtRGI" layoutX="252.0" layoutY="346.0" onKeyReleased="#mascaraRGI" prefHeight="20.0" prefWidth="350.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="73.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/RGIAgua.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="73.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/InstalacaoLuz.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="txtBotaoBuscarRGI" layoutX="626.0" layoutY="346.0" mnemonicParsing="false" onAction="#changeScreenBuscarAgua" prefHeight="20.0" prefWidth="120.0" style="-fx-background-radius: 5em;" text="Buscar">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="txtBotaoBuscarNumInstalacao" layoutX="626.0" layoutY="129.0" mnemonicParsing="false" onAction="#changeScreenBuscarEnergia" prefHeight="20.0" prefWidth="120.0" style="-fx-background-radius: 5em;" text="Buscar">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="txtBotaoRetornar" layoutX="27.0" layoutY="487.0" mnemonicParsing="false" onAction="#changeScreenRetornar" prefHeight="37.0" prefWidth="180.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>SPC</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="css/bootstrap.min.css" rel=stylesheet>
+<link href="plugin/all.min.css" rel=stylesheet>
+<link rel="stylesheet" href="../css/all.css">
+<link rel="stylesheet" href="../plugin/all.min.css">
+
+<script>
+	$(document).ready(function() {
+		var userName = sessionStorage.getItem("user");
+		if (userName == null) {
+			window.location.href = '/index.html';
+		}
+	});
+</script>
+</head>
+<body>
+	<div class="flex-dashboard">
+		<sidebar>
+		<div class="sidebar-title">
+			<img src="../Imagens/spc.png" alt="">
+			<h2>Valcode</h2>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><i class="fas fa-undo"></i> <a href='/user.html'>
+						Início</a></li>
+				<li><i class="fas fa-home"></i> <a href='/dashboard.html'>
+						Dashboard</a></li>
+				<li><i class="fas fa-user"></i> <a href='/meuPerfil.html'>
+						Meu Perfil</a></li>
+				<li><i class="fas fa-balance-scale-left"></i> <a
+					href='/score.html'> Score</a></li>
+				<li><i class="fas fa-wallet"></i> <a href='/gerenciador.html'>Gerenciador</a></li>
+			</ul>
+		</div>
+		</sidebar>
+		<main>
+			<header>
+				<a href='/dashboard.html'> <i class="fas fa-home"></i> Dashboard
+				</a> <a href='/index.html'> <i class="fas fa-sign-out-alt"></i>
+					Logout
+				</a>
+			</header>
+			<div class="main-content">
+				<div class="panel">
+					<p>
+						<b>Conheça o SPC Brasil</b>
+					<p></p>
+					<p align="justify">Juntos dos brasileiros há mais de mais de 60
+						anos, prestamos serviços especializados a toda a sociedade.
+						Oferecemos soluções a consumidores e empresários com o objetivo de
+						facilitar a realização de negócios por meio de informação
+						confiável.
+					<p></p>
+					Parte do sistema CNDL, temos uma estrutura de banco de dados
+					constituída pelas Câmaras de Dirigentes Lojistas (CDL), que reúne
+					informações do comércio de todo o país. Estamos presentes em todo o
+					território nacional, por meio de mais de 2.200 Entidades espalhadas
+					por todas as capitais e principais cidades do Brasil.
+					<p></p>
+					Do pequeno ao grande lojista, indústrias, empresas de serviços e do
+					mercado financeiro, mais de 1,2 milhão de Associados às Entidades
+					acessam nosso banco de dados e usufruem das soluções desenvolvidas
+					para atender às mais diversas necessidades de empresas e
+					consumidores.
+					<p></p>
+					Estimulamos os brasileiros a fazer uso consciente e sustentável do
+					dinheiro por meio da educação financeira e empoderamos os
+					consumidores por meio de iniciativas como o Cadastro Positivo:
+					https://www.spcbrasil.org.br/cadastropositivo/consumidor/
+					<p></p>
+					Mais do que simplesmente auxiliar as empresas na concessão de
+					crédito, apoiamos os processos de tomada de decisão com
+					informações, inteligência, soluções de negócio e identidade
+					digital.
+					<p></p>
+					Assim, buscamos não apenas ser o maior banco de dados da América
+					Latina, mas a principal plataforma integradora de informação e
+					inteligência de dados, capaz de impulsionar e transformar toda a
+					economia brasileira. </div>
+					
+					<div class="panel">
+					<p>
+						<b>Visão, Missão e Valores</b>
+					<p></p>
+					<p align="justify">Nosso propósito Nós existimos para ser o elo de confiança entre as
+					pessoas para realização de negócios.
+					<p></p> Missão Prover soluções que
+					atendam às necessidades de negócio e de crédito, valorizando
+					relacionamentos e experiências, integrando entidades, associados,
+					consumidores e parceiros em plataforma colaborativa, para
+					impulsionar seus resultados 
+					<p></p> Visão Até 2021, seremos reconhecidos
+					como a principal plataforma integradora de informações,
+					conhecimento e inteligência para crédito, identidade digital e
+					soluções de negócio às entidades, aos associados e aos parceiros,
+					gerando benefícios compartilhados com a sociedade
+					
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="plugin/bootstrap.min.js"></script>
+	<script src="plugin/all.min.js"></script>
+</body>
+</html>

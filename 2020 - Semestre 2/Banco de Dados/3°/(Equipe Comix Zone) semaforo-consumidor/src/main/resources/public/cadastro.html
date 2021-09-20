@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+<head>  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Login - Semáforo do Consumidor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  
+</head>
+<body>
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+          <a class="navbar-brand logo-right" href="javascript:void(0)">Semáforo Consumidor</a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Fechar Menu</button>
+    </div>    
+    <!-- <Formulário de Login"> -->
+    <header id="home">
+      
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html"><i class="mdi-maps-traffic"></i>Semáforo do Consumidor</a>
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div> 
+    </header>
+    <main class="container">
+        <h3>Cadastro de Pessoa Física</h3>
+        <form id="cadastroForm">
+          <div class="form-group">
+            <input id="cpf" type="text" class="validate" data-mask="00000000000" required >
+            <label for="labelCPF">CPF (00000000000)</label>
+          </div>
+          <div class="form-group">
+            <input id="anoNascimento" type="text" class="validate" data-mask="0000" required>
+            <label for="anoNascimento">Ano de Nascimento (0000)</label>
+          </div>
+          <div class="form-group">
+                <input id="cidade" type="text" class="validate" required>
+                <label for="cidade">Cidade</label>
+          </div>
+          <div class="form-group">
+            <select id="selectEstados" class="form-control" required>
+              <option value = "ACRE" selected>Acre</option>
+              <option value = "ALAGOAS">Alagoas</option>
+              <option value = "AMAPA">Amapá</option>
+              <option value = "AMAZONAS">Amazonas</option>
+              <option value = "BAHIA">Bahia</option>
+              <option value = "CEARA">Ceará</option>
+              <option value = "DISTRITO FEDERAL">Distrito Federal</option>
+              <option value = "ESPIRITO SANTO">Espírito Santo</option>
+              <option value = "GOIAS">Goiás</option>
+              <option value = "MARANHAO">Maranhão</option>
+              <option value = "MATO GROSSO">Mato Grosso</option>
+              <option value = "MATO GROSSO DO SUL">Mato Grosso do Sul</option>
+              <option value = "MINAS GERAIS">Minas Gerais</option>
+              <option value = "PARA">Pará</option>
+              <option value = "PARAIBA">Paraíba</option>
+              <option value = "PARANA">Paraná</option>
+              <option value = "PERNAMBUCO">Pernambuco</option>
+              <option value = "PIAUI">Piauí</option>
+              <option value = "RIO DE JANEIRO">Rio de Janeiro</option>
+              <option value = "RIO GRANDE DO NORTE">Rio Grande do Norte</option>
+              <option value = "RIO GRANDE DO SUL">Rio Grande do Sul</option>
+              <option value = "RONDONIA">Rondônia</option>
+              <option value = "RORAIMA">Roraima</option>
+              <option value = "SANTA CATARINA">Santa Catarina</option>
+              <option value = "SAO PAULO">São Paulo</option>
+              <option value = "SERGIPE">Sergipe</option>
+              <option value = "TOCANTINS">Tocantins</option>
+            </select>
+            <label for="estado">Estado</label>
+          </div>
+          <div class="form-group">
+            <input type="password" class="validate" id="senha" required >
+            <label for="senha">Senha</label>
+          </div>
+          <div class="form-group">
+            <input id="confirmarSenha" type="password" class="validate" required>
+            <label for="confirmarSenha">Confirme sua senha</label>
+          </div>
+          <div class="row">
+            <label>Qual o seu Sexo</label>
+            <p>
+                <label>
+                    <input id="fem" name="sexo" type="radio" value="F" checked />
+                    <span>Feminino</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input id="mal" name="sexo" type="radio" value="M" />
+                    <span>Masculino</span>
+                </label>
+            </p>
+          </div>
+
+          <button type="submit" id="botao" class="btn btn-primary" name="action">Cadastrar</button>
+        </form>
+    </main> 
+
+    <!-- Scripts  -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/cadastroPF.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+</body>
+</html>
+
+

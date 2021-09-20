@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>SPC</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="css/bootstrap.min.css" rel=stylesheet>
+<link href="plugin/all.min.css" rel=stylesheet>
+<link rel="stylesheet" href="../css/all.css">
+<link rel="stylesheet" href="../plugin/all.min.css">
+
+<script>
+	$(document).ready(function() {
+		var userName = sessionStorage.getItem("user");
+		if (userName == null) {
+			window.location.href = '/index.html';
+		}
+	});
+</script>
+</head>
+<body>
+	<div class="flex-dashboard">
+		<sidebar>
+		<div class="sidebar-title">
+			<img src="../Imagens/spc.png" alt="">
+			<h2>Valcode</h2>
+		</div>
+		<div class="menu">
+			<ul>
+			 <li><i class="fas fa-undo"></i> <a href='/user.html'> Início</a></li>
+				<li><i class="fas fa-home"></i> <a href='/dashboard.html'> Dashboard</a></li>
+				<li><i class="fas fa-user"></i> <a href='/meuPerfil.html'> Meu Perfil</a></li>
+				<li><i class="fas fa-balance-scale-left"></i> <a href='/score.html'> Score</a></li>
+				<li><i class="fas fa-wallet"></i> <a href='/gerenciador.html'>Gerenciador</a></li>
+			</ul>
+		</div>
+		</sidebar>
+		<main>
+			<header>
+				<a href='/dashboard.html'> <i class="fas fa-home"></i> Dashboard </a> 
+				<a href='/index.html'> <i class="fas fa-sign-out-alt"></i> Logout </a> 
+			</header>
+		</main>
+	</div>
+	<script src="plugin/bootstrap.min.js"></script>
+	<script src="plugin/all.min.js"></script>
+</body>
+</html>

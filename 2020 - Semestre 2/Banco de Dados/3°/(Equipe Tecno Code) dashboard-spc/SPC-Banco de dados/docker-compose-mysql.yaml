@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mysqlsrv:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "spc-pi"
+    ports:
+      - "3307:3306"
+    volumes:
+      - spc-pi:/var/lib/mysql
+    networks:
+      - mysql-compose-network
+
+volumes:
+  spc-pi:
+networks: 
+  mysql-compose-network:
+    driver: bridge

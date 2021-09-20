@@ -1,0 +1,165 @@
+@charset "ISO-8859-1";
+
+
+
+div.flex-dashboard {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	widht: 100%;
+	
+}
+
+sidebar {
+	display: block;
+	height: 100%;
+	width: 300px;
+	background-color: #48D1CC;
+	border: 1px solid rgba(0, 0, 0, .0625);
+	
+}
+
+main {
+	display: block;
+	height: 100%;
+	background-color: #f7f7f7;
+	width: calc(100% - 300px);
+
+}
+
+main .main-content {
+	padding: 30px;
+	width: 100%;
+	height: calc(100% - 90px);
+	overflow-y: auto;
+}
+
+.main-content .panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+	
+}
+
+
+.panel-row {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.panel-50 {
+	width: 48%;
+}
+
+.panel-row button {
+	hight: 180px;
+	background: linear-gradient(135deg, #6e8efb, #a777e3);
+	font-size: 22px;
+	color: #fff;
+}
+
+.panel-row button:hover {
+	transform: scale(1.15);
+	transition: 0.2s;
+}
+
+
+
+.flex-dashboard header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	background-color: #48D1CC;
+	padding: 20px 30px;
+	border: 1px solid rgba(0, 0, 0, .0625);
+	
+}
+
+.flex-dashboard header a{
+	text-decoration: none;
+	color: #0000CD;
+}
+
+.flex-dashboard header a > svg {
+	color: #0000CD;
+}
+
+.flex-dashboard header a:hover {
+ color: #4d4d4d;
+	
+
+	}
+
+
+
+sidebar .sidebar-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 30px;
+	height: 89px;
+	border: 1px solid rgba(0, 0, 0, .0625);
+		
+}
+
+sidebar .sidebar-title img{
+	height: 50px;
+	width: 100px;
+	border-right: 0px;
+}
+
+sidebar .sidebar-title h2{
+	font-size: 20px;
+	margin-top: 8px;
+		
+}
+
+div .menu {
+
+	border-right: 1px solid rgba(0,0,0,.0625);
+}
+
+div .menu ul {
+	list-style-type: none;
+}
+
+div .menu ul li {
+	padding: 20px 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+
+div .menu ul li svg {
+	color: #0000CD;
+	font-size: 20px;
+}
+
+div .menu ul li a {
+	
+	color: #0000CD;
+	margin-left: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+
+div .menu ul li a:hover {
+	color: #4d4d4d;
+
+
+}
+

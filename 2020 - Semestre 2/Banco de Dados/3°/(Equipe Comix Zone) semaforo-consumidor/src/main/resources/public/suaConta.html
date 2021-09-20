@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Bloqueio de visualização de Dados</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  
+  </head>
+  <body>
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+          <a class="navbar-brand logo-right" href="tela-principal.html"><span class="material-icons">
+            Semáforo Consumidor</span></i></a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="tela-principal.html">Home</a></li>
+            <li><a href="consultaDadosTerceiros.html">Consultar CPF de Terceiros</a></li>
+            <li><a id="Logout" href="#">Sair</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Fechar Menu</button>
+    </div>    
+
+    <!-- <Formulário de Login"> -->
+    <header id="home">
+      
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html">Semáforo do Consumidor</a>
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div> 
+    </header>
+    <main>
+        <section>
+            <form id="cadastroForm">
+                <div class="row">
+                    <h2>Bloquear um CNPJ</h2>
+                    <input id="cnpj" type="text" class="validate" required>
+                    <label for="cnpj">Insira o CPF ou CNPJ a ser bloqueado</label>
+                </div>
+                <div class="center">
+                    <button type="submit" id="botao" class="btn btn-primary" name="action">Bloquear</button>
+
+                </div>
+            </form>
+
+            <div class="container">
+                    <h2 class="suaConta">Histórico de pagamentos</h2>
+                    <p class="suaConta">Tabela com os dados referentes ao seu histórico de pagamentos:</p>
+                <table id="tabela" class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>ID pagamento</th>
+                        <th>CPF</th>
+                        <th>Nº Pgtos Realizados</th>
+                        <th>Quantidade Parcelas</th>
+                        <th>Vencimento Ult.Parcela</th>
+                        <th>Número contrato</th>
+                        <th>Valor Total-Contrato</th>
+                        <th>Código modalidade</th>
+                    </tr>
+                    </thead>
+                    <tbody id="operacoes">
+                    <tr>
+                        <!--Tabela de Operações-->
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright-text">
+                        © Semáforo do Consumidor - grupo Comix
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/suaConta.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/logado.js"></script>
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+  </body>
+</html>

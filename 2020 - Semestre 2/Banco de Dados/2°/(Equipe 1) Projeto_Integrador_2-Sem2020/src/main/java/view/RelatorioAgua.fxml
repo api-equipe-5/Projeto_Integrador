@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RelatorioAgua">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="TableAgua" layoutX="14.0" layoutY="131.0" prefHeight="448.0" prefWidth="687.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0">
+        <columns>
+          <TableColumn fx:id="ClnNInstalacao" prefWidth="112.0" text="Número instalação" />
+          <TableColumn fx:id="ClnMesReferencia" prefWidth="94.0" text="Mês Referência" />
+            <TableColumn fx:id="ClnTipoLigacao" prefWidth="77.0" text="Tipo ligação" />
+            <TableColumn fx:id="ClnHidrometro" prefWidth="75.0" text="Hidrômetro" />
+            <TableColumn fx:id="ClnConsumo" prefWidth="71.0" text="Consumo" />
+            <TableColumn fx:id="ClnValorAgua" minWidth="7.0" prefWidth="69.0" text="Valor água" />
+            <TableColumn fx:id="ClnValorEsgoto" prefWidth="79.0" text="Valor esgoto" />
+            <TableColumn fx:id="ClnTaxaRegulamentacao" prefWidth="129.0" text="Taxa Regulamentação" />
+            <TableColumn fx:id="ClnMulta" prefWidth="53.0" text="Multa" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="42.0" text="Relatório contas de água" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="15.0" layoutY="494.0" mnemonicParsing="false" onAction="#changeScreenRetornar" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 5em;" text="Voltar" textFill="#4a8af2" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="675.0" layoutY="494.0" mnemonicParsing="false" onAction="#changeScreenEditar" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 5em;" text="Editar" textFill="#4a8af2" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="790.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RelatorioEnergia">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="TableAgua" layoutX="13.0" layoutY="70.0" prefHeight="448.0" prefWidth="687.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0">
+        <columns>
+          <TableColumn fx:id="ClnNumInstalacao" prefWidth="133.0" text="Número de instalação" />
+          <TableColumn fx:id="ClnMesReferencia" prefWidth="103.0" text="Mês referência" />
+            <TableColumn fx:id="ClnConsumo" prefWidth="86.0" text="Consumo" />
+            <TableColumn fx:id="ClnNMedidor" prefWidth="114.0" text="N° Medidor" />
+            <TableColumn fx:id="ClnBandeira" prefWidth="94.0" text="Bandeira" />
+            <TableColumn fx:id="ClnTensaoNominal" prefWidth="116.0" text="Tensão Nominal" />
+            <TableColumn fx:id="ClnValorTotal" prefWidth="112.0" text="Valor Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnVoltar" layoutX="19.0" layoutY="485.0" mnemonicParsing="false" onAction="#changeScreenRetornar" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 5em;" text="Voltar" textFill="#4a8af2" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="652.0" layoutY="490.0" mnemonicParsing="false" onAction="#changeScreenEditar" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 5em;" text="Editar" textFill="#4a8af2" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="30.0" prefHeight="30.0" prefWidth="247.0" text="Relatório contas de energia" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

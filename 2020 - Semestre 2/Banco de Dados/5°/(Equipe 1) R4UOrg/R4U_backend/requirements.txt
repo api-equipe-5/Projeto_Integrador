@@ -1,0 +1,9 @@
+Flask==1.1.2
+Flask-SQLAlchemy==2.4.3
+Flask-Migrate==2.5.3
+psycopg2==2.8.5
+IMDbPY==6.8
+scikit-fuzzy==0.4.2
+matplotlib==3.2.1
+flask_swagger_ui==3.20.9
+Flask-Cors==3.0.8

@@ -1,0 +1,88 @@
+body {
+    color: #2e2e2e;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image: url("img/fundo.png");
+    background-size: cover;
+}
+/* 
+#imagemlogin {
+    width: 600px;
+    height: 650px;
+} */
+
+#login {
+    position: absolute;
+    top: 90px;
+    left: 800px;
+    background-color: #f7f7f8;
+}
+
+#link-voltar {
+    color: black;
+}
+
+#seta {
+    font-size: 30px;
+}
+
+#voltar {
+    position: absolute;
+    top: 67px;
+    left: 100px;
+    font-size: 20px;
+}
+
+.form-style {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0%;
+    border-bottom-color:#4d4d4d;
+    background-color: transparent;
+}
+.form-style:focus {
+    background-color: transparent;
+}
+
+
+.btn-custom {
+    background-color: #ebc130;
+    width: 100%;
+}
+
+.btn-custom:hover {
+    background-color: #bb8f00;
+    color: white;
+}
+
+.bg-custom {
+    background-color: #f7f7f8a4; 
+}
+
+#footer {
+    position: absolute;
+    left: 77%;
+}
+
+.icon {
+    font-size: 25px;
+    margin:3px;
+}
+
+#logo {
+    width: 110px;
+    height: 90px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

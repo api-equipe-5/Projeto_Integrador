@@ -1,0 +1,202 @@
+/*CLASSES*/
+.form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    width: 100%;
+}
+/*///////*/
+
+#div_central{
+    width: 100vw;
+	height: 100vh;
+    display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#div_topo{
+    background-color: #792FDE;
+    border-bottom: 5px solid #657794;
+    border-radius: 5px;
+    border-width: 3px;
+    height: 100px;
+    width: 100%;
+    margin-top: -5%;
+    
+}
+
+#div_central #div_conteudo{
+    box-shadow: 0px 0px 20px #b0a29b;
+    border-radius: 15px;
+	box-shadow: 0px 0px 20px #b0a29b;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 80%;
+    margin-top: 5%;
+    display:flex;
+	flex-direction: column;
+}
+
+#div_conteudotopo{
+    display:flex;
+	flex-direction: row;
+    width: 99%;
+    
+}
+
+#div_conteudocentral{
+    height: 80%;
+    width: 100%;
+}
+
+#div_conteudocentraldinamico{
+    width: 100%;
+    height: 100%;
+}
+
+
+#div_conteudorodape{
+    display:flex;
+	flex-direction: row;
+    width: 99%;
+}
+
+#div_botoes{
+    width: 99%;
+    
+}
+
+#span_score{
+    margin-left: 1%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#span_xp{
+    margin-right: 30%;
+    margin-top: 1%;
+    float: right;
+    
+}
+
+#btn_avancar{
+    float: right;
+    
+}
+
+#btn_voltar{
+    margin-left: 10%;
+}
+
+#btn_facasimulacao{
+    width: 60%;
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+#div_imageminicial{
+    width: 100%;
+    margin-left: 35%;
+}
+
+#img_bruxo{
+    width: 45%;
+    height: 45%;
+}
+
+#img_bruxoOriginal{
+     width: 20%;
+    height: 20%;
+}
+
+#img_metas{
+    width: 70%;
+    height: 70%;
+}
+
+#div_selectobjetivo{
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 20%;
+}
+
+#id_objetivo{
+    width: 100%;
+}
+
+#div_metas{
+
+    border-width: 1px;
+    margin-top: 1%;
+    width: 90%;
+    height: 60%;
+    float: right;
+    overflow-y: auto;
+
+}
+
+#span_metas{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#div_imagemobjetivo{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#div_imagemmetas{
+    width: 100%;
+    margin-left: 10%;
+}
+
+#img_objetivo {
+    width: 110%;
+    height: 110%;
+}
+
+
+#div_imagemOriginal{
+    width: 100%;
+   display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+#img_bruxoOriginal{
+    margin-top: 15%;
+}
+
+#div_resultado{
+   
+    width: 180%;
+    height: 100%;
+    margin-left: -40%;
+}
+
+.letraResultado{
+    font-family: Optima, sans-serif;
+    color: cadetblue;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.letraResultadoParabens{
+    font-family: Optima, sans-serif;
+    color: chocolate;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#btn_novasimulacao{
+    width: 30%;
+    float: right;
+}

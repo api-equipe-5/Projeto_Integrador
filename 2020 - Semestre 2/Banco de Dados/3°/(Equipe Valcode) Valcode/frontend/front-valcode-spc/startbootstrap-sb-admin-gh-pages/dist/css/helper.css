@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+
+div.card-header {
+	background-color: black;
+	color: white;
+	
+}
+
+div.card-body {
+	color: black;
+	background-color: #D3D3D3;
+}
+
+a.btn {
+	background-color: mediumblue;
+}
+
+
+a {
+  font-size: 14px;
+
+}

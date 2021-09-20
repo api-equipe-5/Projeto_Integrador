@@ -1,0 +1,22 @@
+/*numero de pagamentos feitos pelo usuario*/
+select count (*)
+from PAGAMENTO
+where DOC_CLI=78153538549;
+
+/*numero de pagamentos em dia do usuario*/
+select count (*)
+from PAGAMENTO
+where DOC_CLI=78153538549
+and DAT_VCT>DAT_PGT;
+
+/*numero de pagamentos atrasados do usuario*/
+select count (*)
+from PAGAMENTO
+where DOC_CLI=78153538549
+and DAT_VCT<DAT_PGT;
+
+
+/*calcular idade do usuario*/
+select trunc((months_between(sysdate, to_date(pf.ANO_DAT_NASCIMENTO,'yyyy')))/12) AS idade
+from PESSOA_FISICA pf
+where pf.DOC_CLI=44834905690;

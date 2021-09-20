@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" prefHeight="538.0" prefWidth="790.0" scaleShape="false" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastrarEnderecoAgua">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" layoutY="1.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="305.0" text="Cadastrar novo endereço" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCEP" layoutX="126.0" layoutY="79.0" onKeyReleased="#mascaraCEP" prefHeight="32.0" prefWidth="141.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCidade" layoutX="126.0" layoutY="156.0" prefHeight="30.0" prefWidth="269.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEndereco" layoutX="129.0" layoutY="242.0" prefHeight="33.0" prefWidth="269.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboUF" layoutX="465.0" layoutY="80.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-radius: 5em;" />
+      <Button fx:id="btnCadastrarEndereco" layoutX="603.0" layoutY="488.0" mnemonicParsing="false" onAction="#changeScreenCadastrar" prefHeight="37.0" prefWidth="160.0" style="-fx-background-radius: 5em;" text="Cadastrar" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetornarEndereco" layoutX="14.0" layoutY="488.0" mnemonicParsing="false" onAction="#changeScreenRetornar" prefHeight="37.0" prefWidth="160.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="567.0" layoutY="463.0" prefHeight="16.0" prefWidth="215.0" text="Campos com * são obrigatórios" AnchorPane.leftAnchor="567.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="247.0" text="Endereço*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="84.0" text="CEP*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="84.0" text="Estado*" AnchorPane.leftAnchor="362.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="161.0" text="Cidade*" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

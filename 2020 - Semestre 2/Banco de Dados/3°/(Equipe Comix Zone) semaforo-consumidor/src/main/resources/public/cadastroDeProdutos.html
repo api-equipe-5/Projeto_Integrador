@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-br">
+<head>  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Cadastro de Produtos</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  
+</head>
+<body>
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+          <a class="navbar-brand logo-right" href="javascript:void(0)">Semáforo Consumidor</a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Fechar Menu</button>
+    </div>    
+    <!-- <Formulário de Login"> -->
+    <header id="home">
+      
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html"><img class="materialboxed" src="images/logo.png" width="10%" ></a>
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div> 
+    </header>
+    <main class="container">
+      <form id="cadastroForm">
+        <div class="row">
+          <div class="col s12">
+            <h3>Cadastre seu produto</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <div class="form-group">
+              <input id="link_do_produto" type="text" class="validate" required >
+              <label for="labelCPF">Link do produto</label>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="form-group">
+              <input id="link_do_produto" type="text" class="validate" required >
+              <label for="labelCPF">Valor do produto</label>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="form-group">
+              <input id="link_do_produto" type="text" class="validate" required >
+              <label for="labelCPF">Link do produto</label>
+            </div>
+          </div>
+          <div class="input-field col s6">
+            <div class="form-group">
+              <select id="selectEstados" class="form-control" required>
+                <option value = "Alimentos e Bebidas" selected>Alimentos e Bebidas</option>
+                <option value = "Atividades ao Ar Livre">Atividades ao Ar Livre</option>
+                <option value = "Beleza">Beleza</option>
+                <option value = "Brinquedos e Jogos">Brinquedos e Jogos</option>
+                <option value = "Calçados, Bolsas de Mão e Óculos">Calçados, Bolsas de Mão e Óculos</option>
+                <option value = "Câmeras">Câmeras</option>
+                <option value = "Casa & Cozinha">Casa & Cozinha</option>
+                <option value = "Celulares">Celulares</option>
+                <option value = "Computadores">Computadores</option>
+                <option value = "Eletrônicos">Eletrônicos</option>
+                <option value = "Esportes">Esportes</option>
+                <option value = "Ferramentas e Materiais de Construção">Ferramentas e Materiais de Construção</option>
+                <option value = "Games">Games</option>
+                <option value = "Jóias">Jóias</option>
+                <option value = "Livros">Livros</option>
+                <option value = "Malas e Acessórios de Viagem">Malas e Acessórios de Viagem</option>
+                <option value = "Papelaria e Escritório">Papelaria e Escritório</option>
+                <option value = "Pet Shop">Pet Shop</option>
+                <option value = "Produtos automotivos">Produtos automotivos</option>
+                <option value = "Produtos para Bebê">Produtos para Bebê</option>
+                <option value = "Relógios">Relógios</option>
+                <option value = "Roupas e Acessóros">Roupas e Acessóros</option>
+                <option value = "Saúde e Cuidados Pessoais">Saúde e Cuidados Pessoais</option>
+                <option value = "Jardim e Piscina">Jardim e Piscina</option>                
+              </select>
+              <label for="estado">Categoria</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button type="submit" id="botao" class="btn btn-primary" name="action">Cadastrar</button>
+          </div>
+        </div>  
+      </form>
+      <div class="row">
+        <div class="col s12">
+          <h5>Meus produtos cadastrados</h5>
+        </div>
+      </div>
+      <div class="row center indigo">
+        <div class="col s3">
+          <span class="white-text text-darken-2">Descrição</span>
+        </div>
+        <div class="col s3">
+          <span class="white-text text-darken-2">Caegoria</span>
+        </div>
+        <div class="col s3">
+          <span class="white-text text-darken-2">Desconto</span>
+        </div>
+        <div class="col s3">
+          <span class="white-text text-darken-2">Opções</span>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      <div class="row center indigo lighten-5">
+        <div class="col s3">
+          <blockquote>
+            This is an example quotation that uses the blockquote tag.
+          </blockquote>
+        </div>
+        <div class="col s3">
+          <br>Eletrônicos
+        </div>
+        <div class="col s3">
+          <br>R$:15,00
+        </div>
+        <div class="col s3"><br>
+          <i class="material-icons">create</i>
+          <i class="material-icons">delete</i>
+          <i class="material-icons">share</i>
+        </div>
+      </div>
+      
+
+
+    </main> 
+
+    <!-- Scripts  -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/cadastroPF.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+</body>
+</html>
+
+

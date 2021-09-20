@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.UsuarioController">
+   <children>
+      <TextField fx:id="txtNomeUsuario" layoutX="210.0" layoutY="137.0" prefHeight="25.0" prefWidth="307.0" />
+      <TextField fx:id="txtTelefone" layoutX="210.0" layoutY="185.0" onKeyReleased="#txtTelefoneKeyReleased" prefHeight="25.0" prefWidth="307.0" />
+      <TextField fx:id="txtLogin" layoutX="212.0" layoutY="232.0" prefHeight="25.0" prefWidth="307.0" />
+      <TextField fx:id="txtNumMatricula" layoutX="210.0" layoutY="283.0" prefHeight="25.0" prefWidth="307.0" />
+      <PasswordField fx:id="txtSenha" layoutX="210.0" layoutY="332.0" prefHeight="25.0" prefWidth="307.0" />
+      <TextField fx:id="txtCpf" layoutX="208.0" layoutY="382.0" onKeyReleased="#txtCpfKeyReleased" prefHeight="25.0" prefWidth="314.0" />
+      <Label layoutX="195.0" layoutY="52.0" text="Cadastro de Usuario">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMensagem" layoutX="286.0" layoutY="316.0" />
+      <Label layoutX="90.0" layoutY="132.0" prefHeight="17.0" prefWidth="125.0" text="Nome do Usuário: *" />
+      <Button fx:id="btnCadastrar" layoutX="195.0" layoutY="525.0" mnemonicParsing="false" onAction="#executarClickCadastrar" text="CADASTRAR" />
+      <Label layoutX="90.0" layoutY="189.0" prefHeight="17.0" prefWidth="125.0" text="Telefone:" />
+      <Label layoutX="87.0" layoutY="336.0" prefHeight="17.0" prefWidth="125.0" text="Senha: *" />
+      <Label layoutX="90.0" layoutY="236.0" text="Login: *" />
+      <Label layoutX="90.0" layoutY="287.0" text="Número Matrícula" />
+      <Label layoutX="87.0" layoutY="386.0" text="CPF:" />
+      <Button fx:id="btnEditar" layoutX="338.0" layoutY="525.0" mnemonicParsing="false" onAction="#executarClickEditar" text="EDITAR" />
+      <Button fx:id="btnLimpar" layoutX="459.0" layoutY="525.0" mnemonicParsing="false" onAction="#executarClickLimpar" text="LIMPAR" />
+      <Button fx:id="btnBuscar" layoutX="80.0" layoutY="525.0" mnemonicParsing="false" onAction="#executarClickBuscar" text="BUSCAR" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <img src="img/img-login.jpg" class="img-fluid float-left" alt="Imagem login" id="imagemlogin">
+        <div class="card border-0 p-5" id="login">
+            <div class="card-body">
+                    <a href="#" id="link-voltar">
+                        <i class="fas fa-chevron-left mb-5" id="seta"></i>
+                        <label id="voltar">Voltar</label>
+                    </a>
+                </i>
+                <form action="#" th:action="@{/indexerror}" th:object="${index}" method="post">
+                    <div class="form-group" >
+                        <label for="InputDoc">CPF ou CNPJ:</label>
+                        <input type="text" th:field="*{cpf}" class="form-control form-style mb-5" />
+                    </div>
+                    <div class="form-group">
+                        <label for="InputSenha">Senha:</label>
+                        <input type="password" th:field="*{senha_usu}" class="form-control form-style mb-5"/>
+                    </div>
+				    <p><input type="submit" class="btn mt-4 btn-custom" value="Submit" /> </p>
+                    <div>
+                        <span>Não possui uma conta?
+                            <a href="/cadastro">Cadastre-se já!</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

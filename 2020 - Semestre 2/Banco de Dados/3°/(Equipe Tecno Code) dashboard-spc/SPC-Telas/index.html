@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- JQUERY tamanho da imagem: 1200x500-->
+  <script src="js/jquery/jquery.3.3.1.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+  <script type="text/javascript" src="js/pagamento/pagamentos.js"></script>
+  <script type="text/javascript" src="js/scorePessoa/scorePessoa.js"></script>
+  
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Score'],
+          ['Janeiro',  720],
+          ['Fevereiro',  786],
+          ['Março',  702],
+          ['Abril',  641],
+          ['Maio',  728],
+          ['Junho',  697],
+          ['Julho',  654],
+          ['Agosto',  785],
+          ['Setembro',  690],
+          ['Outubro',  773],
+          ['Novembro',  694],
+          ['Dezembro',  1000]
+        ]);
+
+        var options = {
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+	<title>Plataforma Cadastro Positivo</title>
+    <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="position.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body{background-color:#D3D3D3;}
+        #cabecalho{widht:100%; height:50px; background-color:#6495ED;}
+        .texto_cabecalho{text-align:justify;font-size:15px;font-family:"Arial";color:#000000;}
+        <!-- #rodape{widht:100%; height:150px; background-color:#6495ED;} -->
+        .primeira_linha{text-align:left;font-size:15px;font-family:"Arial";color:#000000;font-weight: bold;}
+        .texto_rodape{text-align:left;font-size:15px;font-family:"Arial";color:#000000;}
+        table, th, td {
+  border: 1px solid black;
+}
+        #titulo{text-align:center;font-weight: bold;}
+        .direita{text-align:center;}
+    </style>
+</head>
+
+<!------------------------------------------------------- BODY ------------------------------------------------------------>
+<body>
+	<!--------------- CABECALHO ---------------------------------------------------->
+    <div id="cabecalho" >
+        <p class="texto_cabecalho"> <img src="logoSVG.svg">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <font size="6">Plataforma Cadastro Positivo</font>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Olá, Enrico Pietro da Cunha,
+        CPF: 204.804.561-69
+        <button><a class="texto_cabecalho" href="Login.html">Sair</a> </button>
+        </p>
+    </div>
+	<!-------------------------------------------------------------------------------->
+
+
+
+    <! -- banner -->
+	<div id="teste">
+    <div class="elementExample_first">
+      <div class="container" style="width: 923px; height: 260px;"   style="border:2px  solid black">
+	  <div id="meuCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#meuCarousel" data-slide-to="1"></li>
+		  <li data-target="#meuCarousel" data-slide-to="2"></li>
+		  <li data-target="#meuCarousel" data-slide-to="3"></li>
+		  <li data-target="#meuCarousel" data-slide-to="4"></li>
+		  <li data-target="#meuCarousel" data-slide-to="5"></li>
+		  <li data-target="#meuCarousel" data-slide-to="6"></li>
+		</ol>
+
+
+	  <div class="carousel-inner">
+		<div class="item active">
+		  <a href="Artigos/Cadastro Positivo.html">
+		  <img src="img/1.jpg" alt="Banner 1" title="Banner 1"></a>
+		  <div class="carousel-caption"><h3>O que é o cadastro positivo?</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Como Melhorar O Score.html">
+		  <img src="img/2.jpg" alt="Banner 1" title="Banner 2">
+		  <div class="carousel-caption"><h3>O que fazer para aumentar o score?</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Como Organizar as Contas.html">
+		  <img src="img/3.jpg" alt="Banner 1" title="Banner 3">
+		  <div class="carousel-caption"><h3>Como organizar as contas de casa em 5 passos</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Dicas para Você Organizar suas Dívidas.html">
+		  <img src="img/4.jpg" alt="Banner 1" title="Banner 4">
+		  <div class="carousel-caption"><h3>Como sair das dívidas rapidamente: confira 20 dicas práticas</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Renda Fixa.html">
+		  <img src="img/5.jpg" alt="Banner 1" title="Banner 5">
+		  <div class="carousel-caption"><h3>Tipos de investimento em renda fixa: quais são as melhores opções?</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Simulador de Financiamento.html">
+		  <img src="img/6.jpg" alt="Banner 1" title="Banner 6">
+		  <div class="carousel-caption"><h3>Simulador de financiamento</h3></div>
+		</div>
+
+		<div class="item">
+		  <a href="Artigos/Tarifas Bancárias.html">
+		  <img src="img/7.jpg" alt="Banner 1" title="Banner 7">
+		  <div class="carousel-caption"><h3>Taxas bancárias: confira as principais tarifas de seu banco</h3></div>
+		</div>
+	  </div>
+
+	  <a href="#meuCarousel" class="left carousel-control" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Anterior</span>
+	  </a>
+	  <a href="#meuCarousel" class="right carousel-control" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Próximo</span>
+	  </a>
+	 </div>
+	</div>
+	</div>
+
+	<! -- score -->
+    <div class="elementExample elementExample_second">
+        <div><center>Score Atual</center>
+        <div id='myChart'></div>
+    </div>
+  </div>
+
+<!---------------  GRAFICOS --------------------------------------------------------------------------------------------------->
+	<div id="tabela">
+
+		<!-- pizza -->
+		<div class="elementExample_third">
+            <div><center>
+              Status de Pagamento das Contas<br>
+              <select id="mesContas">
+                <option value="" >Selecione um mês</option>
+                <option value=1>Janeiro</option>
+                <option value=2>Fevereiro</option>
+                <option value=3>Março</option>
+                <option value=4>Abril</option>
+                <option value=5>Maio</option>
+                <option value=6>Junho</option>
+                <option value=7>Julho</option>
+                <option value=8>Agosto</option>
+                <option value=9>Setembro</option>
+                <option value=10>Outubro</option>
+                <option value=11>Novembro</option>
+                <option value=12>Dezembro</option>
+            </select>
+              <select id="anosContas">
+                  <option value="">Selecione um ano</option><option>1983</option><option>1984</option><option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option><option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+                  <option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option>
+                  <option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option>
+              </select>
+            </center>
+              <div id="piechart"></div></div>
+		</div>
+
+		<!--  histórico -->
+		<div class="elementExample_fourth">
+<div><center>Histórico do Score<br>
+  
+            <div id="curve_chart"></div>
+          </div>
+		</div>
+
+		<!-- Tabela -->
+		<div class="elementExample_fifth">
+      <div><center>
+        Custo Mensal<br>
+        <select>
+            <option>Selecione um mês</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option>
+        </select>
+        <select>
+            <option>Selecione um ano</option><option>1983</option><option>1984</option><option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option><option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option>
+            <option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option>
+            <option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option>
+        </select>
+        <br>
+        <table>
+<tr>
+<th>Tipo de Despesa</th>
+<th>Valor</th>
+</tr>
+<tr>
+<td>Adiantamento Depositante</td>
+<td>R$ 1000,00</td>
+</tr>
+<tr>
+<td>Avais e Fianças Honrados</td>
+<td>R$ 0,00</td>
+</tr>
+<tr>
+<td>Cartão de Crédito</td>
+<td>R$ 0,00</td>
+</tr>
+<tr>
+<td>Cheque Especial e Conta Garantida</td>
+<td>R$ 200,00</td>
+</tr>
+<tr>
+<td>Consórcio</td>
+<td>R$ 550,00</td>
+</tr>
+<tr>
+<td>Empréstimos</td>
+<td>R$ 300,00</td>
+</tr>
+<tr>
+<td>Financiamentos</td>
+<td>R$ 0,00</td>
+</tr>
+<tr>
+<td>Títulos Descontados</td>
+<td>R$ 0,00</td>
+</tr>
+</table></center>
+		</div >
+	</div>
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+<!-------------------------------------------------------RODAPE ----------------------------------------------------------------------->
+	<div class="rdp">
+        <p class="primeira_linha">
+            &nbsp;&nbsp;Parceiros &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;Sobre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Desenvolvedores
+        </p>
+        <p class="texto_rodape">
+        <a class="texto_rodape" href="https://www.spcbrasil.org.br/cadastropositivo/consumidor/">&nbsp;&nbsp;SPC Brasil</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://gitlab.com/tecno-code/dashboard-spc/-/tree/master/Documentos">O Projeto</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://linkedin.com/in/fabricioadriel">&nbsp;&nbsp;Fabrício Adriel</a><br>
+        <a class="texto_rodape" href="http://fatecsjc.edu.br/">&nbsp;&nbsp;Fatec SJC</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://gitlab.com/tecno-code/dashboard-spc">Repositório (Git Lab)</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://www.linkedin.com/in/felipe-santos-454060187/">&nbsp;&nbsp;&nbsp;Felipe Santos</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://www.linkedin.com/in/gabriela-momilli-105b1a184/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gabriela Momilli</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="texto_rodape" href="https://www.linkedin.com/in/gilberto-santos-jr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gilberto Santos</a>
+        <p align="center">Powered By Tecno Code<br>2020</p>
+        </p>
+	</div>
+
+</body>
+</html>

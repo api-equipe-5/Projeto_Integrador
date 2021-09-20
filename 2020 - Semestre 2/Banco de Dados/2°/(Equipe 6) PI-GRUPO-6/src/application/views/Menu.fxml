@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MenuController">
+   <top>
+      <HBox fx:id="cabecalho" alignment="CENTER" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCadastroUsuario" mnemonicParsing="false" onAction="#clickCadastroUsuario" prefHeight="25.0" prefWidth="108.0" text="Cadastro Usuario" />
+            <Button fx:id="btnCadastroCliente" mnemonicParsing="false" onAction="#clickCadastroCliente" prefHeight="25.0" prefWidth="109.0" text="Cadastro Cliente" />
+            <Button fx:id="btnContaAgua" mnemonicParsing="false" onAction="#clickContaAgua" text="Conta Água" />
+            <Button fx:id="btnContaGas" mnemonicParsing="false" onAction="#clickContaGas" text="Conta Gás" />
+            <Button fx:id="btnContaLuz" mnemonicParsing="false" onAction="#clickContaLuz" text="Conta Luz" />
+            <Button fx:id="btnCadastroImovel" mnemonicParsing="false" onAction="#clickCadastroImovel" text="Cadastro Imóvel" />
+            <Button fx:id="btnBuscar" mnemonicParsing="false" onAction="#clickBuscar" text="Buscar" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>

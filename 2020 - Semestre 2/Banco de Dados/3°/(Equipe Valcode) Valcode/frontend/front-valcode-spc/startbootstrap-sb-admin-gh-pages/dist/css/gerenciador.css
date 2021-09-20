@@ -1,0 +1,234 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#app {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 56px 0;
+}
+@media (max-width: 1092px) {
+  #app {
+    margin: 0 16px;
+  }
+}
+
+
+p {
+  margin-top: 0;
+}
+h1.marketing,
+h2.marketing {
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+h1.marketing {
+  font-size: 72px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+h2.marketing {
+  font-size: 36px;
+}
+p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #BDC2C4;
+  transition: all 275ms;
+}
+a:hover {
+  color: #FFFFFF;
+}
+input {
+  display: block;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+  outline: black;
+  transition: all 275ms;
+}
+input:focus {
+  border-color: grey;
+}
+input::placeholder {
+  color: #A9A9A9	;
+}
+button {
+  min-width: 70px;
+  height: 40px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #000080;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 275ms;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  padding: 12px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: blue;
+}
+th:last-child {
+  text-align: right;
+  
+}
+tbody tr:nth-child(odd) {
+  background-color: blue;
+   
+}
+td {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color:#000080 ;
+}
+td:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: right;
+}
+hr {
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #2B383F;
+}
+.budget {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.budget .marketing {
+  grid-column: span 3;
+  margin-bottom: 8px;
+}
+.budget__budget-input,
+.budget__expense-input {
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #DCDCDC;
+}
+.budget__budget-input h2,
+.budget__expense-input h2 {
+  margin-bottom: 24px;
+}
+.budget__budget-input input,
+.budget__expense-input input,
+.budget__budget-input button,
+.budget__expense-input button {
+  width: 100%;
+}
+.budget__budget-input {
+  margin-bottom: 40px;
+}
+.budget__details {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.budget__item {
+  border-right: 1px solid #2B383F;
+}
+.budget__item:nth-child(3) {
+  margin-right: 0;
+  border-right: none;
+}
+.budget__item-amount {
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.budget__item-label {
+  font-size: 12px;
+  color: blue;
+}
+.budget__transactions {
+  grid-column: span 3;
+}
+.budget__transactions th:nth-child(2),
+.budget__transactions td:nth-child(2) {
+  width: 80px;
+  text-align: right;
+}
+.budget__transactions th:nth-child(3),
+.budget__transactions td:nth-child(3),
+.budget__transactions th:last-child,
+.budget__transactions td:last-child {
+  width: 1%;
+  text-align: center;
+}
+.budget__transactions th:nth-child(3),
+.budget__transactions td:nth-child(3) {
+  text-align: right;
+}
+.delete__modal {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  background: #2B383F;
+  border-radius: 8px;
+}
+.delete__modal p {
+  margin-bottom: 16px;
+}
+.delete__modal-buttons {
+  display: flex;
+  justify-content: center;
+}
+.delete__modal-buttons button {
+  transition: all 275ms;
+}
+.delete__modal-buttons button:first-child {
+  background-color: #F85640;
+  margin-right: 16px;
+}
+.delete__modal-buttons button:first-child:hover {
+  background-color: #f96c59;
+}
+.delete__modal-buttons button:last-child {
+  background-color: #4F5E65;
+}
+.delete__modal-buttons button:last-child:hover {
+  background-color: #5a6b73;
+}

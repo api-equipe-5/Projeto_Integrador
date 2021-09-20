@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.LoginController">
+   <center>
+      <VBox prefHeight="251.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="59.0" prefWidth="517.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="Login: ">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtLogin" prefHeight="25.0" prefWidth="357.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="58.0" prefWidth="517.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="46.0" text="Senha: ">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtSenha" prefHeight="25.0" prefWidth="357.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Sistema de Controle de Contas" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="120.0" top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#clickEntrar" prefHeight="24.0" prefWidth="61.0" text="ENTRAR" BorderPane.alignment="BASELINE_RIGHT">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="50.0" right="95.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

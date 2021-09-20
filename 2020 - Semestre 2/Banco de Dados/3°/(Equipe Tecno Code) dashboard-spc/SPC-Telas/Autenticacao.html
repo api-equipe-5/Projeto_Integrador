@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confirme seus dados</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
+
+</head>
+<body>
+    <div class="registration-form">
+        <form action="index.html" method="post">
+            <h2 class="center'">Confirme seus dados</h2>
+            <br>
+            <div class="form-group">
+                Sexo:<br> 
+                <input type="radio" name="radio1" value="1">Masculino
+                <input type="radio" name="radio1" value="2">Feminino
+            </div>
+            <div class="form-group">
+                Ano de Nascimento:<br>
+                <input class="form-control item" id="data_nascimento"  name="data_nascimento" \ 
+                type="number" min="1900" max="2100" step="1" \
+                pattern="[0-9]{4}" title="Digite o ano com 4 dígitos">
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="Estado" type="text">
+                    <option>Selecionar Estado</option>
+                </select>           
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="Cidade" type="text">
+                    <option>Selecionar Cidade</option>
+                </select>             
+            </div>
+            <br>
+            <div class="form-group">
+                <!-- CAPTCHA -->
+                <!--<div class="g-recaptcha" data-sitekey="6LcFEfAZAAAAAAPiedMUBC_XANo02JNnuAlg7pCs"></div>-->
+                <img src="images/captcha.png">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-block create-account" type="submit">Confirmar</button>
+            </div>                
+        </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cities.js"></script>
+   
+</body>
+</html>

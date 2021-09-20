@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">  
+</head>
+<body>
+    <div class="registration-form">
+        <form action="" method="post">
+            <div class="form-group">
+                Sexo: <br>
+                <input type="radio" name="radio1" value="1">Masculino
+                <input type="radio" name="radio1" value="2">Feminino
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="text" id="cpf" \
+                pattern="[0-9]{11}" title="Digite apenas os números do CPF" \
+                placeholder="CPF">
+                <p style="margin-top: -20px; margin-bottom: 25px">Insira somente números sem pontos, nem traços</p>
+            </div>
+            <div class="form-group">
+                Data de Nascimento: <br>
+                <input class="form-control item"  id="data_nascimento" type="date" placeholder="Data de Nascimento">
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="Estado">
+                    <option>Selecionar Estado</option>
+                </select>           
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="Cidade">
+                    <option>Selecionar Cidade</option>
+                </select>             
+            </div>
+            <br>
+            <div class="form-group">
+                <input class="form-control item" id="password" type="password" placeholder="Senha">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block create-account" type="button" onclick="val()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cities.js"></script>
+    <script src="assets/js/validacadastro.js"></script>
+</body>
+</html>

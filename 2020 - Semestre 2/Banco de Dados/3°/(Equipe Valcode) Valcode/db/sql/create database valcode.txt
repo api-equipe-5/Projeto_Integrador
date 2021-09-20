@@ -1,0 +1,13 @@
+CREATE TABLESPACE  VALCODE
+DATAFILE 'C:\BD\VALCODE.dbf' SIZE 1M
+AUTOEXTEND ON;
+
+Create User VALCODE
+Identified by valcode
+Default Tablespace VALCODE
+Temporary Tablespace temp
+Quota Unlimited on VALCODE;
+
+GRANT connect to VALCODE;
+
+GRANT ALL PRIVILEGES TO VALCODE;

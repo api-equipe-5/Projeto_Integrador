@@ -1,0 +1,8 @@
+server.port: 9000
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    username: ${SPC_MYSQL_USERNAME}
+    password: ${SPC_MYSQL_PASSWORD}
+    url: ${SPC_MYSQL_URI}
+  jpa.hibernate.ddlAuto: none

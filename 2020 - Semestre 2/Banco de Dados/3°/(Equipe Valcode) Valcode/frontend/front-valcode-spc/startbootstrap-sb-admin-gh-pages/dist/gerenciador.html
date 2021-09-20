@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Controle de Gastos</title>
+<link href="css/styles.css" rel="stylesheet" />
+<link href="css/gerenciador.css" rel="stylesheet" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Muli:900|Roboto:400,500,700"
+	rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body class="sb-nav-fixed">
+	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Portal do Consumidor</a>
+		<button class="btn btn-link btn-sm order-1 order-lg-0"
+			id="sidebarToggle" href="#">
+			<i class="fas fa-bars"></i>
+		</button>
+		<!-- Navbar Perfil-->
+		<form
+			class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+		</form>
+		<!-- Navbar Dashboard-->
+		<ul class="navbar-nav ml-auto ml-md-0">
+			<li class="nav-item dropdown"><a
+				class="nav-link dropdown-toggle" id="userDropdown" href="#"
+				role="button" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+				<div class="dropdown-menu dropdown-menu-right"
+					aria-labelledby="userDropdown">
+					<a class="dropdown-item" href="user.html">Minha Conta</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="login.html">Sair</a>
+				</div></li>
+		</ul>
+	</nav>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	crossorigin="anonymous">
+</head>
+	<div class="row"
+		style="display: flex; justify-content: center; margin-top: 50px">
+		<div id="layoutSidenav">
+			<div id="layoutSidenav_nav">
+				<nav class="sb-sidenav accordion sb-sidenav-dark"
+					id="sidenavAccordion">
+					<div class="sb-sidenav-menu">
+						<div class="nav">
+							<a class="nav-link" href="index.html">
+								<div class="sb-nav-link-icon">
+									<i class="fas fa-tachometer-alt"></i>
+								</div> Dashboard
+							</a> <a class="nav-link" href="pontos.html">
+								<div class="sb-nav-link-icon">
+									<i class="fas fa-chart-area"></i>
+								</div> Meus Pontos
+							</a> <a class="nav-link" href="gerenciador.html">
+								<div class="sb-nav-link-icon">
+									<i class="fas fa-chart-area"></i>
+								</div> Gerenciador <a class="nav-link" href="#">
+									<div class="sb-nav-link-icon">
+										<i class="fas fa-chart-area"></i>
+									</div> Transações
+							</a> <a class="nav-link" href="helper.html">
+									<div class="sb-nav-link-icon">
+										<i class="fas fa-table"></i>
+									</div> Helper
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div id="app" :class="{ 'modal-active': modalActive }">
+			<div class="budget">
+				<h2 class="marketing">Caderneta Pessoal</h2>
+				<div>
+					<form class="budget__budget-input">
+						<h2>Entradas</h2>
+						<input @input="formatAmount($event)" type="number"
+							v-model="budgetAmount" placeholder="Insira o valor da Entrada">
+						<button @click.prevent="createBudget">Calcular</button>
+					</form>
+					<form class="budget__expense-input">
+						<h2>Saídas</h2>
+						<input type="text" v-model="expenseName" required
+							placeholder="Nome da despesa"> <input type="number"
+							v-model="expenseAmount" required placeholder="Valor da despesa">
+						<button @click.prevent="onExpenseSubmit">Adicionar
+							despesa</button>
+					</form>
+				</div>
+				<div class="budget__details">
+					<div class="budget__item">
+						<h2 class="budget__item-amount">R${{ displayedBudget }}</h2>
+						<span class="budget__item-label">Entrada</span>
+					</div>
+					<div class="budget__item">
+						<h2 class="budget__item-amount">R${{ expenses }}</h2>
+						<span class="budget__item-label">Saída</span>
+					</div>
+					<div class="budget__item">
+						<h2 class="budget__item-amount">R${{ balance }}</h2>
+						<span class="budget__item-label">Balanço</span>
+					</div>
+					<div class="budget__transactions">
+						<h1>Despesas</h1>
+						<table>
+							<thead>
+								<th>Nome</th>
+								<th>Valor</th>
+								<th>Editar</th>
+								<th>Deletar</th>
+							</thead>
+							<tbody>
+								<tr v-for="(trans, i) in transactions">
+									<td>{{ trans.name }}</td>
+									<td>{{ parseFloat(trans.amount).toFixed(2) }}</td>
+									<td><a href="#" @click="editTransaction(i)"><i
+											class="fas fa-pen"></i></a></td>
+									<td><a href="#" @click="openDeleteModal(i)"><i
+											class="fas fa-trash-alt"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div v-if="modalActive" class="delete__modal">
+				<p>Tem certeza que deseja excluir essa despesa?</p>
+				<div class="delete__modal-buttons">
+					<button @click="deleteTransaction">OK</button>
+					<button @click="closeDeleteModal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="py-4 bg-light mt-auto">
+		<div class="container-fluid">
+			<div class="d-flex align-items-center justify-content-between small">
+				<div class="text-muted">Copyright &copy; SPC - Cadastro
+					Positivo - VALCODE - FATEC - São José dos Campos</div>
+				<div>
+					<a href="#">Privacy Policy</a> &middot; <a href="#">Terms &amp;
+						Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script>
+	<script src="./script.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/gerenciador.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+		crossorigin="anonymous"></script>
+</body>
+</html>

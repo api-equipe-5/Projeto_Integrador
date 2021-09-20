@@ -1,0 +1,177 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 3556px;
+	 height: 2000px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 3556px;
+	 height: 2000px;
+	 z-index:1;
+} 
+
+ #f1c3c161a2ebd632ea84 
+{ 
+	 left: -19px; 
+	 top: -196px; 
+	 position: absolute; 
+	 width: 3594px;
+	 height: 2397px;
+	 z-index:2;
+} 
+
+ #VectorSmartObjectDou 
+{ 
+	 left: 130px; 
+	 top: 1538px; 
+	 position: absolute; 
+	 width: 64px;
+	 height: 321px;
+	 z-index:3;
+} 
+
+ #Shape 
+{ 
+	 left: 418px; 
+	 top: 1450px; 
+	 position: absolute; 
+	 width: 551px;
+	 height: 139px;
+	 z-index:4;
+} 
+
+ #BodyText 
+{ 
+	 left: 500px; 
+	 top: 1499px; 
+	 position: absolute; 
+	 width: 354px;
+	 height: 39px;
+	 z-index:5;
+} 
+
+ #Subtitle 
+{ 
+	 left: 536px; 
+	 top: 1305px; 
+	 position: absolute; 
+	 width: 1126px;
+	 height: 60px;
+	 z-index:6;
+} 
+
+ #Title 
+{ 
+	 left: 432px; 
+	 top: 1111px; 
+	 position: absolute; 
+	 width: 1201px;
+	 height: 162px;
+	 z-index:7;
+} 
+
+ #Navigation 
+{ 
+	 left: 1620px; 
+	 top: 155px; 
+	 position: absolute; 
+	 width: 1605px;
+	 height: 49px;
+	 z-index:8;
+} 
+
+ #Menucomrolodefilme 
+{ 
+	 left: 1931px; 
+	 top: 1541px; 
+	 position: absolute; 
+	 width: 1408px;
+	 height: 404px;
+	 z-index:9;
+} 
+
+ #Ator 
+{ 
+	 left: 2042px; 
+	 top: 1664px; 
+	 position: absolute; 
+	 width: 120px;
+	 height: 159px;
+	 z-index:10;
+} 
+
+ #Diretor 
+{ 
+	 left: 2739px; 
+	 top: 1664px; 
+	 position: absolute; 
+	 width: 142px;
+	 height: 161px;
+	 z-index:11;
+} 
+
+ #Duble 
+{ 
+	 left: 2360px; 
+	 top: 1664px; 
+	 position: absolute; 
+	 width: 209px;
+	 height: 161px;
+	 z-index:12;
+} 
+
+ #Filme 
+{ 
+	 left: 3068px; 
+	 top: 1661px; 
+	 position: absolute; 
+	 width: 176px;
+	 height: 160px;
+	 z-index:13;
+} 
+
+ #Retngulo2 
+{ 
+	 left: 1941px; 
+	 top: 1622px; 
+	 position: absolute; 
+	 width: 333px;
+	 height: 243px;
+	 z-index:14;
+} 
+
+ #Logo 
+{ 
+	 left: 194px; 
+	 top: 67px; 
+	 position: absolute; 
+	 width: 323px;
+	 height: 339px;
+	 z-index:15;
+} 
+
+ #Ator_0 
+{ 
+	 left: 2050px; 
+	 top: 1735px; 
+	 position: absolute; 
+	 width: 104px;
+	 height: 36px;
+	 z-index:16;
+} 

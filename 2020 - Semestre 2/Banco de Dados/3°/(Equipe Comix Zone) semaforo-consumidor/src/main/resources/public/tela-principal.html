@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Home - Semáforo do Consumidor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    
+  
+  </head>
+  <body>
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+          <a class="navbar-brand logo-right" href="tela-principal.html">Semáforo Consumidor</a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="consultaDadosTerceiros.html">Consultar CPF de Terceiros</a></li>
+            <li><a href="suaConta.html">Sua Conta</a></li>
+            <li><a id="Logout" href="#">Sair</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Fechar Menu</button>
+    </div>    
+
+    <header id="home">
+      
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html">Semáforo do Consumidor</a>
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div> 
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 id="userScore" class="card-title">Card title</h5>
+                        <div class="container">
+                            <div class="progress">
+                                <div id="scoreBar" role="progressbar">
+                            </div>
+                        </div>
+                    </div>
+                    <p id="cardScore" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-md-4"><div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                  <h5 id="dica1" class="card-title"></h5>
+                  <p id="dica1Descricao" class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Confira aqui!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4"><div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                  <h5 id="dica2" class="card-title"></h5>
+                  <p id="dica2Descricao" class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Confira aqui!</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/tela-principal.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/logado.js"></script>
+
+  </body>
+</html>

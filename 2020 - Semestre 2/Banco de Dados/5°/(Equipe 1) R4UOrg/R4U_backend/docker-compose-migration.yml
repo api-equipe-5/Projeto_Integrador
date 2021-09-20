@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  flyway:
+    image: boxfuse/flyway:5-alpine
+    command: -url=jdbc:postgresql://postgres:5432/pi -schemas=public -user=fatec -password=fatec -connectRetries=10 migrate
+    volumes:
+        - ./migration:/flyway/sql
+
+  flyway_tests:
+    image: boxfuse/flyway:5-alpine
+    command: -url=jdbc:postgresql://postgres:5432/pi -schemas=test -user=fatec -password=fatec -connectRetries=10 migrate
+    volumes:
+        - ./migration-test:/flyway/sql
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    domainname: postgres
+    build: ./migration
+    ports:
+        - 5432:5432
+    environment:
+        POSTGRES_USER: fatec
+        POSTGRES_PASSWORD: fatec
+        POSTGRES_DB: pi

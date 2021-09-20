@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" centerShape="false" prefHeight="538.0" prefWidth="790.0" scaleShape="false" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroPessoaFisica">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="790.0" layoutY="1.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/TECSUS.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="283.0" text="Cadastrar pessoa física" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCPF" layoutX="296.0" layoutY="79.0" onKeyReleased="#mascaraCPF" prefHeight="33.0" prefWidth="330.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNomeCompleto" layoutX="296.0" layoutY="140.0" prefHeight="33.0" prefWidth="330.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="297.0" layoutY="203.0" prefHeight="33.0" prefWidth="327.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnCadastrarPF" layoutX="516.0" layoutY="488.0" mnemonicParsing="false" onAction="#changeScreenCadastrar" prefHeight="37.0" prefWidth="211.0" style="-fx-background-radius: 5em;" text="Cadastrar" textFill="#4a8af2" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="63.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetornarPF" layoutX="14.0" layoutY="488.0" mnemonicParsing="false" onAction="#changeScreenRetornar" opacity="0.96" prefHeight="37.0" prefWidth="141.0" style="-fx-background-radius: 5em;" text="Retornar" textFill="#4a8af2" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="516.0" layoutY="466.0" text="Campos com * são obrigatórios" AnchorPane.leftAnchor="516.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="145.0" text="Nome Completo*" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="84.0" text="CPF*" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="208.0" text="E-mail" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

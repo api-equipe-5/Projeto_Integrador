@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+        <a href="/index" id="link-voltar">
+            <i class="fas fa-arrow-alt-circle-left ml-5 mt-5"></i>
+            <span class="font-weight-bold">Voltar</span>
+        </a>
+    <div class="card bg-custom mx-5 p-2">
+        <div class="card form-style m-3 p-1 mb-5">
+            <h1>Cadastro</h1>
+        </div>
+        <div class="mt-4 mx-4 px-4">
+            <form class="row" action="#" th:action="@{/cadastro}" th:object="${cadastro}" method="post">
+                <div class="form-group col-4">
+                    <label for="InputIdent">CPF ou CNPJ:</label>
+                    <input type="text" th:field="*{documento}" class="form-control form-style"  maxlength="11" pattern="[0-9]{11}" title="Este campos só aceita números" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputNome">Nome:</label>
+                    <input type="text" th:field="*{nome}" class="form-control form-style mb-5" maxlength="60" pattern="([A-zÀ-ž\s]){2,}" required>
+                </div>
+                <div class="form-group col-2">
+                    <label for="InputSexo">Sexo:</label>
+                    <select th:field="*{sexo}" class="form-control form-style mb-5" required>
+                        <option th:value="''" th:text="Escolha..."></option>
+                        <option th:value="'F'" th:text="Feminino"></option>
+                        <option th:value="'M'" th:text="Masculino"></option>
+                    </select>
+                </div>
+                <div class="form-group col-2">
+                    <label for="InputNasc">Ano de Nascimento:</label>
+                    <input type="number" th:field="*{anoNascimento}" class="form-control form-style" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputCidade">Cidade:</label>
+                    <input type="text" th:field="*{cidade}" class="form-control form-style mb-5" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputEstado">Estado:</label>
+                    <input type="text" th:field="*{estado}" class="form-control form-style" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputSenha">Senha:</label>
+                    <input type="password" th:field="*{senha}" class="form-control form-style" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Sua senha precisa conter no mínimo um número, letras maiúsculas e minúsculas, e no mínimo 8 caracteres ou mais" required>
+                </div>
+                <button type="submit" onclick="window.location.href='/index'" class="btn btn-custom m-3" value="Submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <!-- <div id="footer">
+            <label>Nossas Redes Sociais:</label>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="icon text-danger"><i class="fab fa-youtube"></i></a>
+        </div> -->
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

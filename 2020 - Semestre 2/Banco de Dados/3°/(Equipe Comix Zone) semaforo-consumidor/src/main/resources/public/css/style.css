@@ -1,0 +1,45 @@
+main {
+    padding-top: 150px;
+}
+
+.row {
+    padding-top: 50px;
+}
+
+#logo-container {
+    margin: 10px;
+    font-size: larger;
+}
+
+.navibar {
+    background-color:#7300e6;
+}
+
+#video {
+    margin-top: 40px;
+}
+
+#login {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#cadastroForm {
+    display: grid;
+}
+
+#copyright {
+    margin-top: 30px;
+}
+
+#botao {
+    margin-bottom: 50px;
+}
+
+.suaConta {
+    display: flex;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,9 @@
+INSERT into MATERIA (id, mat_foto, mat_titulo, mat_txt, mat_valor_min) VALUES (1, 'www', 'aaaaa', 'Tree female also set, likeness set he let grass stars itself good cant green fish seasons.', 20);
+
+INSERT into MATERIA (id, mat_foto, mat_titulo, mat_txt, mat_valor_min) VALUES (2, 'fff', 'bbbbb', 'Green for hath. Forth you them spirit morning seasons.', 40);
+
+INSERT into MATERIA (id, mat_foto, mat_titulo, mat_txt, mat_valor_min) VALUES (3, 'sss', 'ccccc', 'GOf seasons. Whose, dont replenish also First fruitful i life appear meat good fly Their theyre, great', 60);
+
+INSERT into MATERIA (id, mat_foto, mat_titulo, mat_txt, mat_valor_min) VALUES (4, 'aaa', 'ddddd', 'For multiply good. Air lights us. Moving creepeth yielding creepet', 80);
+
+INSERT into MATERIA (id, mat_foto, mat_titulo, mat_txt, mat_valor_min) VALUES (5, 'nnn', 'eeeee', ' Face it brought winged spirit Spirit meat creeping also light gathering waters', 100);

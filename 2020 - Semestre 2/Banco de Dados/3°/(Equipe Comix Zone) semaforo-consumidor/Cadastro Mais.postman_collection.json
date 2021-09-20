@@ -1,0 +1,672 @@
+{
+	"info": {
+		"_postman_id": "631737cb-cad5-4714-8586-6b0217b420e6",
+		"name": "Cadastro Mais",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario Pessoa Fisica",
+			"item": [
+				{
+					"name": "Post Usuario Pessoa Fisica",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "anoNascimento",
+									"value": "1997",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "ITABUNA",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "BAHIA",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenha",
+									"value": "123",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Usuario Pessoa Fisica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario Pessoa Fisica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario Pessoa Fisica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "anoNascimento",
+									"value": "1997",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "F",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "ITABUNA",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "BAHIA",
+									"type": "text"
+								},
+								{
+									"key": "senhaAntiga",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "senhaNova",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenhaNova",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuario Pessoa Juridica",
+			"item": [
+				{
+					"name": "Post Usuario Pessoa Juridica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cnpj",
+									"value": "12345678901234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@email.com.br",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "12997633562",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "SAO JOSE DOS CAMPOS",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "SAO PAULO",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenha",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Usuario Pessoa Juridica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica",
+								"12345678901234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario Pessoa Juridica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cnpj",
+									"value": "12345678901234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@email.com.br",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "12997633562",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "SAO JOSE DOS CAMPOS",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "SAO PAULO",
+									"type": "text"
+								},
+								{
+									"key": "senhaAntiga",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "senhaNova",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenhaNova",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario Pessoa Juridica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica",
+								"12345678901234"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Score",
+			"item": [
+				{
+					"name": "Get Score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Score/12345678900",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Score",
+								"12345678900"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dados CPF",
+			"item": [
+				{
+					"name": "Get Dados CPF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/DadosPF/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"DadosPF",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lista Negra",
+			"item": [
+				{
+					"name": "Post Lista Negra",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "docCliBloqueador",
+									"value": "66607215875",
+									"type": "text"
+								},
+								{
+									"key": "docCliBloqueado",
+									"value": "98673869379",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/ListaNegra",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"ListaNegra"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login CPF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Desejos",
+			"item": [
+				{
+					"name": "Post Desejos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "idDesejosList",
+									"value": "[1,3]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Desejos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Desejos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Desejos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Desejos/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Desejos",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Post Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idCategoria",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "12345678901234",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://urlteste.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Produtos Por CNPJ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos/CNPJ/12345678901234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos",
+								"CNPJ",
+								"12345678901234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Produtos Por Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos/Categoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos",
+								"Categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

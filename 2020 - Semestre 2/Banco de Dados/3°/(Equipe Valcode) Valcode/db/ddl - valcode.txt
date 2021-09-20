@@ -1,0 +1,64 @@
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+create table pagamento (
+doc_cli varchar(20),
+tip_cli varchar(1),
+id_fnt number (5),
+num_unc varchar(40),
+dat_pgt TIMESTAMP,
+dat_vct TIMESTAMP,
+vlr_pgt number(15,2),
+cod_mdl varchar(3)
+);
+
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+create table modalidade (
+cod_modalidade varchar(3),
+des_modalidade varchar(100)
+);
+
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+create table movimento (
+doc_cli varchar(20),
+tip_cli varchar(1),
+id_fnt varchar(4),
+num_unc varchar(40),
+dat_vct varchar(40),
+qtd_pcl_vnc number(5),
+qtd_pcl_pgr number(5),
+vlr_tot_fat number(15,2),
+vlr_min_fat number(15,2),
+vlr_pcl number(15,2),
+tip_mvt varchar(3),
+prd  varchar(2)
+);
+
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+create table operacao (
+doc_cli varchar(20),
+tip_cli varchar(1),
+num_unc number(5),
+id_mdl number(2),
+cod_mdl varchar(3),
+qtd_pcl number(5),
+dat_ctrc varchar(40),
+dat_vct_ult_pcl TIMESTAMP,
+dat_vct TIMESTAMP,
+vlr_ctrd_fta number(15,2),
+vlr_ctrd number(15,2),
+sdo_ddr number(15,2)
+);
+
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+create table pessoa_fisica (
+doc_cli varchar(20),
+idc_sexo varchar(1),
+ano_dat_nascimento number(4),
+nom_cidade varchar(100),
+des_estado varchar(100)
+);
+
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

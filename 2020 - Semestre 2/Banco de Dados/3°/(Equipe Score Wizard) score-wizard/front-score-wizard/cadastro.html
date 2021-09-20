@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="card bg-custom m-5 p-2">
+        <div class="card form-style m-3 p-2 mb-5">
+            <h1>Cadastro</h1>
+        </div>
+        <div class="mt-4 mx-4 px-4">
+            <form class="row" method="POST">
+                <div class="form-group col-4">
+                    <label for="InputNome">Nome Completo:</label>
+                    <input type="text" class="form-control form-style mb-5" id="InputNome" aria-describedby="Nome" maxlength="60" pattern="([A-zÀ-ž\s]){2,}" name="nome" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputIdent">CPF ou CNPJ:</label>
+                    <input type="text" class="form-control form-style" id="InputIdent" aria-describedby="Ident" maxlength="11" pattern="[0-9]{11}" title="Este campos só aceita números" name="documento" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputNasc">Data de Nascimento:</label>
+                    <input type="date" class="form-control form-style" id="InputNasc" aria-describedby="Nasc" name="nascimento" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputEmail">E-mail:</label>
+                    <input type="email" class="form-control form-style mb-5" id="InputEmail" aria-describedby="Email" maxlength="60"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="InputCEmail">Confirme seu Email:</label>
+                    <input type="email" class="form-control form-style" id="InputCEmail" aria-describedby="CEmail" maxlength="60"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="cemail" required>
+                </div>
+                <div class="form-group col-2">
+                    <label for="InputCelular">(DDD) Celular:</label>
+                    <input type="tel" class="form-control form-style" id="InputCelular" aria-describedby="Celular" maxlength="11" pattern="[0-9]{11}" title="Este campos só aceita números" name="celular" required>
+                </div>
+                <div class="form-group col-2">
+                    <label for="InputSenha">Senha:</label>
+                    <input type="password" class="form-control form-style" id="InputSenha" aria-describedby="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Sua senha precisa conter no mínimo um número, letras maiúsculas e minúsculas, e no mínimo 8 caracteres ou mais" name="senha" required>
+                </div>
+                <button type="submit" class="btn btn-custom m-4">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <label>Nossas Redes Sociais:</label>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="icon text-danger"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

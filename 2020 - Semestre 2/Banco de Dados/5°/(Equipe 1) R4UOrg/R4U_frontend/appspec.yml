@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/r4u_application_frontend
+permissions:
+  - object: /home/ubuntu/r4u_application_frontend
+    owner: root
+    group: root
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install/remove_old_code_r4u.sh
+      timeout: 20
+      runas: root
