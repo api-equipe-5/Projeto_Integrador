@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <title>Professor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/PerfilAluno.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                  <a class="navbar-brand" href="/index">
+                      <img src="../assets/ness-logo-website.svg" width="150px" class="img-fluid" />
+                  </a>
+                  <button 
+                      class="navbar-toggler" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#navbarNav" 
+                      aria-controls="navbarNav" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#"></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Pílulas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/cadastrocurso">Cadastrar cursos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Meus Cursos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/cursos">Tarefas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active">Perfil</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/index">Sair</a>
+                          </li>
+                      </ul>
+                  </div>
+          </nav>
+      </div>
+  </div>
+  
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#curso1" data-slide-to="0" class="active"></li>
+              <li data-target="#curso2" data-slide-to="1"></li>
+              <li data-target="#curso3" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href="#"><img id="img" src="/assets/cursosExemplo.png" alt="First slide"></a>
+              </div>
+              <div class="carousel-item">
+                  <a href="#"><img id="img" src="/assets/cursosExemplo.png" alt="Second slide"></a>
+              </div>
+              <div class="carousel-item">
+                 <a href="#"><img id="img" src="/assets/cursosExemplo.png" alt="Third slide"></a>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+          </a> 
+      </div>
+      <br><br><br><hr width="100%" style="height:1px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+      <div id="cursosAndamento" class="container">
+          <h2 class="Title">Cursos em Andamento</h2><br><br>
+          <div class="row">
+            <div class="col-sm-7">
+              <a href="#"><img class="imagem5" src="/assets/cursosExemplo.png" alt="curso1" width="300px"></a><br>
+            </div>
+            <div class="col-sm-4">
+              <div class="progress barra">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>            
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-7">
+                <a href="#"><img class="imagem5" src="/assets/cursosExemplo.png" alt="curso1" width="300px"></a><br>
+              </div>
+              <div class="col-sm-4">
+                <div class="progress barra">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> 
+            </div>
+        </div> 
+        <br>
+        <a class="Title" href="#" style="text-decoration: none;"><h3>Ver todos</h3></a>
+        <br><br><br><hr width="100%" style="height:1px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+        </div>
+
+        <div class="container">
+          <h2 class="Title">Cursos Disponíveis</h2><br><br>
+          <div id="cursosDisp" class="row">
+            <div th:each="curso: ${cursos}" class="col-sm-4">
+              <a th:href="@{/detalhes/{id}(id = ${curso.id})}"><img class="imagem5" th:src="@{/{imagem}(imagem = ${curso.imagem})}" alt="curso1" width="200px"/></a><br>
+              <a style="color: black;"><span th:text="${curso.nome}"></span></a>
+             </div>
+          </div>
+          
+
+          <!-- div id="cursosDisp" class="row">
+              <div class="col-sm-4">
+                <a href="#"><img class="imagem5" src="/assets/cursosExemplo.png" alt="curso1" width="300px"></a><br>
+                <p class="Title">Titulo</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="#"><img class="imagem5" src="/assets/cursosExemplo.png" alt="curso1" width="300px"></a><br>
+                <p class="Title">Titulo</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="#"><img class="imagem5" src="/assets/cursosExemplo.png" alt="curso1" width="300px"></a><br>
+                <p class="Title">Titulo</p>
+              </div>
+            </div-->
+            </div>
+
+            <!--link para biblioteca -->
+            <br>
+            <!-- a class="Title" href="#" style="text-decoration: none;"><h3>Ver todos</h3></a-->
+            <br><br>
+
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

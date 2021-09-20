@@ -1,0 +1,76 @@
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+			<h1 class="masthead-heading text-uppercase mb-0">LMS</h1>
+			<p></p>
+    </div>
+</header>
+
+<section class="page-section portfolio" id="portfolio">
+	<div class="container">
+		<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Categorias de Cursos</h2>
+		<div class="divider-custom">
+
+		</div>
+		<div class="row justify-content-center">
+			<% CourseCategory.all.each do |category| %>
+				<div class="col-md-6 col-lg-4 mb-5">
+					<div class="portfolio-item mx-auto" data-toggle="modal">
+						<% if category.cover_picture.attached? %>
+							<%= image_tag(category.cover_picture, :class => 'img-fluid') %>
+						<% else %>
+							<%= image_tag 'portfolio/default_category.png' , class: "img-fluid" %>
+						<% end %>
+
+						<h3><%= link_to category.name, course_category_path(category)%></h3>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>
+
+<section class="page-section bg-primary text-white mb-0" id="sobre">
+	<div class="container">
+		<h2 class="page-section-heading text-center text-uppercase text-white">Sobre</h2>
+		<div class="divider-custom divider-light">
+
+		</div>
+		<div class="row">
+				<div class="col-lg-4 ml-auto"><p class="lead"></p>Desenvolver uma plataforma web voltada ai ensino á distância para a gestão e oferta de conhecimento, dando suporte ás mais diversas arquiteturas de aprendizagem, alinhado com os objetivos estratégicos a serem alcançados por cada organização que a empresa parceira da FATEC atende como clientes.</div>
+				<div class="col-lg-4 mr-auto"><p class="lead"></p>De forma simples e intuitiva o LMS - Learning Management System, deve funcioanr via web, com acesso via computador, tablete ou celular (pelo navegador ou aplicativo), sem a naecessidade de instalação de qualquer plug-in. A plataforma web deve aceitar a publicação de arquivos scom, mp4, mp3, pdf, jpeg e png. Seu layout deve ser de fácil personalização, possuindo templates pré definidiso, trazendo autonomia para a gestão da plataforma.</div>
+		</div>
+		<div class="text-center mt-4">
+		</div>
+	</div>
+</section>
+
+
+<section class="page-section  text-white mb-0" id="depoimentos">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Depoimentos</h2>
+			</div>
+
+			<div class="col-md-6">
+				<%= image_tag 'portfolio/person' %> 
+				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
+
+				<h5>Ana Clara</h5>
+			</div>
+
+			<div class="col-md-6">
+				<%= image_tag 'portfolio/person' %> 
+				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
+
+				<h5>Ana Clara</h5>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+  <% if current_user && current_user.role == 'admin' %>
+    <a target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=0fc79747-7a2d-4a5d-893b-0ed9974fe5b8&autoAuth=true&ctid=cf72e2bd-7a2b-4783-bdeb-39d57b07f76f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" class="floating-icon"><%= image_tag 'portfolio/bi-logo.png', class: 'floating-icon__image' %></a>
+  <% end %>

@@ -1,0 +1,34 @@
+
+
+<div class="container">
+  <div class="row" >
+    <div class="col-md-12">
+      <br><br>
+      <h2 class="page-section-heading text-uppercase text-secondary mb-0" style="text-align:center"><%= @course.name %></h2>
+
+    </div>
+
+      <div class="col-md-4 information-courses">
+        <% if @course.cover_picture.attached? %>
+          <%= image_tag(@course.cover_picture) %>
+        <% else %>
+          <%= image_tag 'portfolio/sketch-design-mobile' , class: "icon" %>
+        <% end %>
+      </div>
+
+      <div class="col-md-8 information-courses">
+        <h2 class="page-section-heading text-uppercase text-secondary mb-0" style="text-align:center">Resumo do curso</h2>
+        <p>
+          <%= @course.description%>
+        </p>
+
+        <% if @course.course_lecture.any? %>
+          <%= link_to "INICIAR CURSO", course_lecture_path(@course.course_lecture.first), class: 'btn btn-primary course-button' %>
+        <% end %>
+      </div>
+  </div>
+  <%= commontator_thread(@course) %>
+  <% if @course.meet_url %>
+    <a target="_blank" href="<%= @course.meet_url %>" class="floating-icon"><%= image_tag 'portfolio/meet-logo.png', class: 'floating-icon__image' %></a>
+  <% end %>
+</div>

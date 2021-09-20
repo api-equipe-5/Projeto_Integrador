@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*_header.php*/
+
+header{
+    background-image:url(https://img.wallpapersafari.com/desktop/1680/1050/14/18/jXrad2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding:0pt;
+    margin:0%;
+}
+
+ul {
+    padding:10pt;
+    margin:10pt;
+    list-style:none;
+    text-align:end;
+}
+
+ul li { 
+    display: inline; 
+}
+
+ul li a {
+    padding: 2px 10px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size:69px;
+    font-weight: 100;
+    font-stretch: expanded;
+    text-align:center;
+    color:#f3f3d9;
+}
+
+/*_footer.php > style_footer.css e incluso em algumas páginas que o footer e diferente*/
+ 
+#contato {
+    padding:10pt;
+    text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a.face {
+    padding-right: 50pt;
+}
+
+a.youtube {
+    padding-left: 50pt;
+}
+
+/*_index.php*/
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:left;
+    color:black ;
+	margin-bottom:5pt;
+}
+
+#bemvindo {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-top: 5pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+	
+}
+
+#projetos {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+	text-decoration: none;
+}
+
+#ajudar {
+    margin-left:50pt;
+    margin-right: 50pt;
+	margin-bottom:20pt;
+    padding:10pt;
+    padding-top: 1pt;
+    background-color: white;
+}
+figure.aluno {
+    float: left;
+    padding-right: 50pt;
+}
+
+figure.proj {
+    float:right;
+    padding-left: 50pt;
+}
+
+figure.ajudar {
+    float: left;
+    padding-right: 50pt;
+}
+
+/*participantes.php > style_participantes.css
+ voluntario_apoio> style_apoio.css
+ voluntario_especifico.php > style_especifico.css<*/
+
+/*projeto > style_projeto.css<*/
+
+/*comoajudar.php > style_comoajudar.css */
+
+/*contato.php > style_contato.css
+
+/*saibamais.php > saibamais.css*/
+
+/*alteradmin.php > stylealt.css*/
+
+a.btn {
+    background-color:rgb(198,37,47);
+    width: 250px;
+    border-color: black;
+    color:white;
+    padding: 10px 277px;
+    text-align: right;
+	border-radius: 10px;
+	
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+	margin:auto;
+	margin-top:10pt;
+{

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="flashes ">
+    {% for message in messages %}
+    <div class="text-center  container-fluid col-12"style="; background-color: ; width:300px; ">{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+{% endwith %}
+
+<div class="login text-center col-4 offset-4  " style="margin-top:100px;">
+<h1>Login Api Analytics</h1>
+<form method="POST" action="">
+    
+    {{ form.csrf_token }}
+    <fieldset>
+    <div class="form-group" style="width:;">
+    <label>Nome de usuário</label>
+    {% if form.username.errors %}
+    {{ form.username(class="form-control form-control-lg is-invalid") }}
+        <div class="invalid-feedback">
+            {% for error in form.username.errors %}
+                <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+    {% else %}
+        {{ form.username(class="form-control form-control-lg") }}
+    {% endif %}
+    </div>
+    <div class="form-group">
+    <label>Senha</label>
+    {% if form.password.errors %}
+    {{ form.password(class="form-control form-control-lg is-invalid") }}
+        <div class="invalid-feedback">
+            {% for error in form.password.errors %}
+                <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+    {% else %}
+        {{ form.password(class="form-control form-control-lg") }}
+    {% endif %}
+    </div>
+</fieldset>
+<div class="container-fluid text-center" style="margin-bottom: ;">
+    {{form.submit(class="ad2 btn  mt-3 ", style="background-color:rgba(0, 0, 0, 0.5) ; color:rgb(255,255,255);")}}
+</div>
+</form>
+</div>
+
+{% endblock%}

@@ -1,0 +1,133 @@
+.cabecalho{
+    background-color: #d7666d;
+    color: white;
+    border: 2px;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+	border-color:black;
+    
+}
+.background, body{
+    background-color:white;
+    margin: 0px;
+}
+
+body{
+    background-image: url('imagens/backg.png');
+	
+}
+
+#tabela{
+    width: max-content;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.coluna{
+    white-space: nowrap;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+.botao_acoes{
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+}
+
+.newuser{
+    float: left;
+    padding-top: 10px;
+}
+
+/*EDITAR_ADM*/
+h1{
+    font-size: x-large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.campo {
+    padding-top: 20px;
+    padding: 50px;
+    text-align: left;
+    font-size: large;
+	font-family:'Open Sans', sans-serif;
+
+}
+
+.input{
+    padding-right: 90px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.save {
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    border: 0px;
+    background: #d7666d;
+    width: 90px;
+    height: 25px;
+    margin-left: 35%;
+    margin-right: 50%;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-image:#400202;
+    left: 0px;
+    height: 25px;
+    padding-bottom: 30px;
+}
+
+/*INDEX*/
+.fundo{
+    background-image:grey;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo:before{
+    opacity: 0.1;
+}
+
+.button{
+    background-image: linear-gradient(to right, #d7666d,#99464b);
+    font-size: 2.2em;
+    border: 0;
+    margin: auto;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+	width: 495px;
+	
+
+}
+.botao{
+    text-decoration: none;
+    
+}
+.botao button:hover{
+    background-image: linear-gradient(to right #982b2e, #8C1317);
+
+}
+
+

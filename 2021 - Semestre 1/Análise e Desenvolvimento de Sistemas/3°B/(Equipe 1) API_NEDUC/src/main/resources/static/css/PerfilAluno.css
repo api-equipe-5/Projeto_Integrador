@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+@media only screen and (min-device-width: 801px) {
+#carousel{
+  width: 600px;
+  margin-left: 385px;
+  margin-top: 100px;
+}
+#img{
+  width: 600px;
+  height: 300px;
+}
+#imgB{
+  width: 300px;
+  height: 150px;
+}
+#cursosAndamento{
+  margin-bottom: 50px;
+}
+#cursosDisp{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+  #carousel{
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  #img{
+    width: 300px;
+    height: 150px;
+  }
+  #imgB{
+    width: 300px;
+    height: 150px;
+  }
+  #cursosAndamento{
+    margin-bottom: 50px;
+  }
+  #cursosDisp{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .barra{
+    width: 200px;
+    margin-left: 65px;
+    margin-bottom: 50px;
+  }
+}
+
+body{
+    text-align: center;
+}
+
+#carousel{
+    color: rgb(197, 206, 206);
+    text-align: center;
+}
+#cursosAndamento{
+    text-align: center;
+}
+
+.Title{
+    font-family: nunito;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+}
+.imagem5{
+  transition: all .5s;
+  border: 10px solid transparent;
+}
+.imagem5:hover{
+  border: 10px solid #136497;
+  
+}

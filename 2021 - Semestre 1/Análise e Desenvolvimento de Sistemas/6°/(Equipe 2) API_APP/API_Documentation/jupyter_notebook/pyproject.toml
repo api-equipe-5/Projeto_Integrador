@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jupyter_notebook"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Henrique Fernandes <pedro.fernandes@znc.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyter = "^1.0.0"
+pandas = "^1.2.3"
+folium = "^0.12.1"
+matplotlib = "^3.4.0"
+plotly = "^4.14.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

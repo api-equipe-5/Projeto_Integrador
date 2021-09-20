@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-br" 
+xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>CURSOS</title>
+
+    <link rel="stylesheet" href="../static/css/chat.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--- HEADER DO SITE --->
+    
+    <style type="text/css">   
+        body {
+            color: #404040;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    .card-usuario {
+        display: flex;
+        width: 400px;
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, .15);
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .card-usuario .avatar {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #fff;
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, .15);
+        margin-bottom: 1rem;
+    }
+    .card-usuario .seccion-avatar {
+        background: linear-gradient(BLUE, #80A7FF);
+        padding: 20px;
+        color: #fff;
+    }
+    .card-usuario img {
+        width: 100%;
+    }
+    .card-usuario .datos-usuario span,
+    .card-usuario .datos-usuario {
+        display: block;
+        text-align: center;
+    }
+    .card-usuario .datos-usuario + .datos-usuario {
+        margin-top: 1rem;
+    }
+    .card-usuario .datos-usuario span:nth-child(1) {
+        font-size: 1.3em;
+    }
+    .card-usuario .datos-usuario span:nth-child(2) {
+        font-size: .8em;
+    }
+    
+    .card-usuario .seccion-datos {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 20px;
+    }
+    .card-usuario .seccion-datos h5 {
+        font-size: 1.1em;
+        font-weight: normal;
+    }
+    .card-usuario .seccion-datos p {
+        font-size: .8em;
+        color: #808080;
+        margin-bottom: 1.25rem;
+    }
+    .seccion-datos .botones-redes {
+        margin-bottom: 1.25rem;
+    }
+    .seccion-datos .botones-redes a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .seccion-datos > a {
+        color: #808080;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .seccion-datos > a:hover {
+        color: #5E5E5E;
+    }
+    .seccion-datos .botones-redes a.facebook {
+        background-color: #5E80FF;
+    }
+    .seccion-datos .botones-redes a.twitter {
+        background-color: #36BEC7;
+    }
+    .seccion-datos .botones-redes a.instagram {
+        background: linear-gradient(#D482FF, #80A7FF);
+    }
+    .seccion-datos .bio-usuario {
+        font-size: 0.9rem;
+        color: #858585;
+    }
+    
+    @media (max-width: 780px) {
+        .card-usuario {
+            flex-direction: column;
+            width: 320px;
+        }
+        .card-usuario .seccion-avatar {
+            display: flex;
+            align-items: center;
+        }
+        .seccion-avatar .avatar {
+            margin-right: 1rem;
+            width: 55px;
+            height: 55px;
+            border: 3px solid #fff;
+            margin-bottom: 0;
+        }
+        .card-usuario .seccion-avatar .datos-usuario {
+            margin: 0;
+            margin-right: 1rem;
+        }
+        .card-usuario .seccion-avatar .datos-redes {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            align-items: center;
+        }
+        .card-usuario .datos-usuario span:nth-child(1) {
+            font-size: 1.1em;
+        }
+        .card-usuario .datos-usuario span:nth-child(2) {
+            font-size: .7em;
+        }
+    }
+    </style>
+
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand" href="/homeprofessor">
+                        <img src="../assets/ness-logo-website.svg" width="150px" class="img-fluid" />
+                    </a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page">Cursos</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="/help">Ajuda</a>
+                            </li>
+                            <div class="container-space2"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/div">Perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-text"></div>
+
+    <div class="container" th:each="curso: ${cursos}">
+        <div class="card-usuario">
+            <div class="seccion-avatar">
+                <div class="avatar">
+                    <div class="img-avatar">
+                        <img th:src="@{/{imagem}(imagem = ${curso.imagem})}">
+                    </div>
+                </div>
+            </div>
+            <div class="seccion-datos">
+                <h5><span th:text="${curso.nome}"></span></h5>
+                
+                <!--<div class="botones-redes">
+                    <a href="#" class="btn-social facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn-social twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn-social instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>-->
+                <p class="bio-usuario">
+                    <span th:text="${curso.descricao}"></span>
+                </p>
+                <div class="container-text"></div>
+                <a th:href="@{/novatarefa/{id}(id = ${curso.id})}">Adicionar Tarefa</a>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- div class="container-text"></div>
+    <div class="container">
+        <div class="card-usuario">
+            <div class="seccion-avatar">
+                <div class="avatar">
+                    <div class="img-avatar">
+                        <img src="../assets/html5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="datos-redes">
+                    <div class="datos-usuario">
+                        <span>10</span>
+                        <span>Aulas</span>
+                    </div>
+                    <div class="datos-usuario">
+                        <span>100</span>
+                        <span>horas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion-datos">
+                <h5>HTML5</h5>
+                <p><i class=""></i> Fábio / FrontEnd</p>
+                <!--<div class="botones-redes">
+                    <a href="#" class="btn-social facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn-social twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn-social instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="bio-usuario">
+                    Nesse curso você vai aprender Html5 do 0 ao avançado de forma
+                    criativa e divertida.
+                </p>
+                <div class="container-text"></div>
+                <a href="#" title="">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-text"></div>
+    <div class="container">
+        <div class="card-usuario">
+            <div class="seccion-avatar">
+                <div class="avatar">
+                    <div class="img-avatar">
+                        <img src="../assets/CSS31.png" alt="">
+                    </div>
+                </div>
+                <div class="datos-redes">
+                    <div class="datos-usuario">
+                        <span>10</span>
+                        <span>Aulas</span>
+                    </div>
+                    <div class="datos-usuario">
+                        <span>100</span>
+                        <span>horas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion-datos">
+                <h5>CSS3</h5>
+                <p><i class=""></i> Fábio / FrontEnd</p>
+                <!--<div class="botones-redes">
+                    <a href="#" class="btn-social facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn-social twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn-social instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>>
+                <p class="bio-usuario">
+                    Nesse curso você vai aprender CSS3 do 0 ao avançado de forma
+                    criativa e divertida.
+                </p>
+                <div class="container-text"></div>
+                <a href="#" title="">Saiba mais</a>
+            </div>
+        </div>
+    </div-->
+
+    <div class="container-text"></div>
+
+
+
+    <!--- //HEADER DO SITE --->
+
+    <div class="container-text"></div>
+    <div class="container-text"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" 
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" 
+    crossorigin="anonymous">
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../static/scripts/responses.js"></script>
+<script src="../static/scripts/chat.js"></script>
+
+</html>

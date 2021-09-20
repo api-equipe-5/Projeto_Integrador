@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:42px;
+    font-weight:lighter;
+    font-stretch: expanded;
+    text-align:center;
+    color:black ;
+	margin-bottom:5pt;
+	margin-left:233pt;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: rgb(112, 99, 99);
+    margin-left: 40pt;
+	margin-right:50pt;
+}
+
+fieldset{
+    margin-left: 40pt;
+	margin-right:30pt;
+	border:0;
+    font-family: sans-serif;
+}
+
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 5pt;
+}
+
+.campo label{
+    margin-bottom: 5pt;
+    color: rgb(48, 47, 47);
+	
+}
+
+.campo #nome{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #certidao{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+
+}
+
+.campo #endereço{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+
+}
+
+.campo #descreva{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #nomeresp{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #escreva{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #email{
+	width:350px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+	
+}
+
+.campo #cpf{
+	width:150px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+	
+}
+
+.campo #telefone{
+	width:150px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+	
+}
+
+.campo select{
+	width:150px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+	
+}
+
+.campo #date,#date2{
+    width:140px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #profissao{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #especializacao{
+	width:80%;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #projdescricao{
+	width:80%;
+    height:fit-content;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo #horario{
+	width:300px;
+	padding: 0.2em;
+    border: 1px solid rgb(48, 47, 47);
+    box-shadow: 1px 1px 1px rgb(99, 41, 46);
+	margin-bottom: 4pt;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus{
+    background: rgb(185, 220, 236);
+}
+
+.botao{
+    font-size: 1.2em;
+    background: rgb(215, 102, 109);
+    border: 0;
+    margin-bottom: 1em;
+    color: rgb(2, 34, 44);
+    padding: 0.2em 0.6em;
+    box-shadow: rgb(168, 173, 97);
+    text-shadow: 1px 1px 1px rgb(96, 105, 26);
+    position: static;
+    top: 72%;
+    left: 47.5%;
+    margin-right: 50pt;
+	margin-left: 65pt;
+	margin-top: 1%;
+   
+}
+
+.botao:hover{
+    background: rgb(153, 70, 75);
+    box-shadow: rgb(168, 173, 97);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+
+}
+
+.botao, #enviar{
+    cursor: pointer;
+	font-size: 1.1em;
+	background-color:rgb(215, 102, 109);
+    text-align: center;
+	color: white;
+	text-shadow: none;
+	font-weight:bold;
+
+	margin-right: 50pt;
+	margin-left: 40pt;
+}
+
+form{
+    margin-top: 2%;
+	margin-bottom: 3,5%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}

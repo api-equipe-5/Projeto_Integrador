@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class=" container-fluid text-light w-75 p-3 mt-5 " style="">
+    <div class="card text-center " style="height: 350px; background-color: #212529;">
+        <h5 class="card-header border-bottom border-light" >Recomendação ID: {{teste4}}<p>Nome produto: {{products.name}}</p></h5>
+        
+        <div class="card-body text-start">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="card-title">Estado cliente: {{customers.state}}</h5>
+                    <h5 class="card-title">Cidade cliente: {{customers.city}}</h5>
+                    <h5 class="card-title">Idade: {{customers.age | int}}</h5>
+                    <h5 class="card-title">Renda pessoa:R$ {{customers.avg_income}}</h5>
+                    
+                </div>
+                <div class="col-6">
+                    <h5 class="card-title">Informação sobre produto que o cliente ja teve ou tem: {% if customers.customers_products.active == True %}Possui produtos ativos{% else%}Desativado ou nunca teve produtos{% endif %}</h5>
+
+                </div>
+                <h5 class="card-text text-center mt-5">Esse produto foi recomendado para este cliente baseado nos nossos perfis de produtos e clientes</h5>
+            </div>
+        </div>
+        <a class="ad1 btn" style="background-color: ; color:#ffff;" type="button" href="/dados/{{current_user.id}}/{{customers.id}}/{{teste4}}/save">salvar</a>
+    </div>
+    
+</div>
+{% endblock %}

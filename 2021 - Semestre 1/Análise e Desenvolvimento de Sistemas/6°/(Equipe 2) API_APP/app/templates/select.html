@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="im container-fluid" style=" height: 400px;">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flashes ">
+        {% for message in messages %}
+        <div class="text-center  container-fluid col-12"style="; background-color: ; width:300px; ">{{ message }}</div>
+        {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form method="POST" action="/uploadcsv" enctype="multipart/form-data">
+        <div class="text-center container-fluid position-absolute top-50 start-50 translate-middle border form-group" style="margin-top: ; width: 40%; background-color:rgba(0, 0, 0, 0.4);">
+            <div class=";">
+                <p class="text-light">Insira um arquivo csv</p>
+            </div>
+            <div>
+                <input type="file" name="inputFile"></input>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
