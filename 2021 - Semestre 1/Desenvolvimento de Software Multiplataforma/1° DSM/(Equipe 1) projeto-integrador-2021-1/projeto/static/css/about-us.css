@@ -1,0 +1,32 @@
+/* LINK DA PÁGINA DESTAQUE -----------------------------*/
+#us {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-color: var(--color-primary);
+  border-style: none none solid none;
+  border-width: 3px;
+}
+
+.action {
+  background: var(--color-background-search-menu);
+  margin: 7% auto 30px;
+}
+
+.action h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--color-text-in-background);
+  padding-left: 11px;
+  border-style: none none none solid;
+  border-width: 4px;
+  border-radius: 3px;
+  border-color: var(--color-primary);
+}
+
+/*CONTEÚDO CENTRAL DA PÁGINA -----------------------------*/
+main p {
+  font-size: 18px;
+  color: var(--color-text-in-background);
+  line-height: 28px;
+}

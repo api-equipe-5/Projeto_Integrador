@@ -1,0 +1,37 @@
+#start {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-color: var(--color-primary);
+  border-style: none none solid none;
+  border-width: 3px;
+}
+
+#search-by-city {
+  border-color: var(--color-primary);
+  border-style: none none solid none;
+  border-width: 3.5px;
+}
+
+#search-by-city a {
+  font-weight: bold;
+}
+
+/*CONTEÚDO CENTRAL DA PÁGINA -----------------------------*/
+#search-result p {
+  color: #9396a9;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
+  margin: 10% auto;
+  cursor: context-menu;
+}
+
+#search-result p ul {
+  color: #9396a9;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  margin: 10px auto auto auto;
+  cursor: context-menu;
+  list-style-type: none;
+}
