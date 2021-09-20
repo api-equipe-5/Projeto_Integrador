@@ -1,0 +1,75 @@
+html{
+    min-width: 1000px;
+  }
+  body{
+      background: #25408F;
+  }
+  
+    *::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+      background-color: #363636;
+      border-radius: 20px;
+    }
+    .projeto{
+      color: white;
+      font-size: 30px;
+      font-weight: bolder;
+      font-family: var(--bs-font-sans-serif);
+      position: relative;
+  }
+  .btn-outline-success {
+      background: #ffc107;
+      color: black;
+      border-color: #ffc107;
+  }
+  .btn-outline-success:hover{
+      background: #ffbf00;
+  }
+  .title-page{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .size{
+      height: 75vh; 
+  }
+  .my-card{
+      position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  .my-card-title{
+      position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #25408F;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;  
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+  }
+  .section-content{
+      height: 30px;
+  }
+  .content{
+      padding-left: 5px;
+  }
+  .min-size{
+    min-width: 1000px;
+  }
+  .col-lg-3{
+    min-width: 200px;
+  }

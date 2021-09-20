@@ -1,0 +1,55 @@
+.card-login {
+  max-width: 30% !important;
+  padding: 30px;
+}
+
+.container-login {
+  padding: 0 !important;
+}
+
+.select-dash {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.select-input-dash {
+  color: #fff !important;
+  margin: 5px 0;
+}
+
+.select-style {
+  color: #fff !important;
+}
+
+.css-r2jef8 {
+  background-color: #000;
+}
+
+.header-kanban {
+  margin: 0 25px;
+}
+
+.login-fields {
+  color: #000 !important;
+}
+
+.box-dropdown-status {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0
+}
+
+.style-dropdown-status {
+  height: 30px;
+}
+
+@media (max-width: 1440px) {
+  .card-login {
+    margin: 20px;
+    max-width: 100% !important;
+    padding: 30px;
+  }
+  .css-1v6vtu7-MuiGrid-root {
+    max-width: 100% !important;
+  }
+}
