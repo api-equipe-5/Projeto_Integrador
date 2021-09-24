@@ -1,14 +1,15 @@
 <h1> Equipe 5</h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" /></h1>
 <h2> :dart: Objetivo</h2>
 
 ##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. Foi solicitado o desenvolvimento de um painel para o Administrador visualizar e dar permissões para futuros usuários, além de analisar e acompanhar os projetos que estão sendo inclusos. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos. 
 
 <h2> :calendar: Cronograma de entregas </h2>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/ec25aed9017c82f0447d23ffdaa3aea6299a5863/Imagens/Sprints1.png" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints1.png" /></h1>
 <br>
 
 ## Backlog
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/4e20196f1fb4ece5c7bbc3d87ca1fabb60c9751c/Imagens/backlog.png" height="800" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/backlog.png" height="800" /></h1>
 <br>
 
 <h1> :rocket: MVP </h2>
