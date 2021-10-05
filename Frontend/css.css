@@ -1,0 +1,48 @@
+html,body{
+	padding: 0;
+	height: 90%;
+	position: relative;
+	font-family: sans-serif;
+}
+
+.faixa{
+	padding: 42px;
+	left: 33%;
+	text-align: 35%;
+}
+
+.imagem{
+	position: absolute;
+	float: left;
+	padding: 10px;
+}
+
+.tabela{
+	position: absolute;
+	top: 200px;
+	left: 34.5%;
+	width: 400px;
+	height: auto;
+	text-align: center;
+}
+
+.texto{
+	position: absolute;
+	bottom: -100px;
+	left: 10px;
+	text-align: center;
+	font-size: 90%;
+}
+
+.logo{
+	height: 150px;
+}
+
+.faixaLogo{
+	width: 40%;
+	position: absolute;
+	top: 135px;
+	left: 30%;
+	padding: 0px;
+	text-align: center;
+}
