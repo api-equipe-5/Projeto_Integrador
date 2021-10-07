@@ -41,8 +41,14 @@ html,body{
 .faixaLogo{
 	width: 40%;
 	position: absolute;
-	top: 135px;
+	top: 100px;
 	left: 30%;
 	padding: 0px;
 	text-align: center;
+}
+
+.dataTable{
+	text-align: center;
+	top: 0px;
+	position: relative;
 }
