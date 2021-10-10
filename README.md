@@ -22,13 +22,13 @@
 
 #### Whatsapp: Comunicação
 
-#### Figma: Prototipagem
-
 #### Git: Versionamento
 
 #### GitHub: Hospedagem de código-fonte e arquivos
 
-### HTML5 e CSS3: Linguagens de marcação 
+#### HTML5 e CSS3: Linguagens de marcação 
+
+#### Python: Linguagem de programação 
 
 <br>
 
