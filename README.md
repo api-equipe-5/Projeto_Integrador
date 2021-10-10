@@ -13,26 +13,22 @@
 <br>
 
 <h1> :rocket: MVP </h2>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/2e1f78d1188a69c45fbc99dcca7eb4e0f212f372/Imagens/videoprototipo.gif" height="450"/></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/site-gif.gif" height="450"/></h1>
 <br>
 
 <h1> :computer: Tecnologias Utilizadas</h2>
-
-#### Discord: Comunicação
 
 #### Teams: Comunicação
 
 #### Whatsapp: Comunicação
 
-#### Asana: Planejamento
-
 #### Figma: Prototipagem
-
-#### Whimsical: Prototipagem
 
 #### Git: Versionamento
 
 #### GitHub: Hospedagem de código-fonte e arquivos
+
+### HTML5 e CSS3: Linguagens de marcação 
 
 <br>
 
