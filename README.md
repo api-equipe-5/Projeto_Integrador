@@ -13,8 +13,11 @@
 <br>
 
 <h1> :rocket: MVP </h2>
+<h3> PROTÓTIPO DO SITE</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/site-gif.gif" height="450"/></h1>
 <br>
+<h3> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/clonagem.gif" height="450"/></h1>
 
 <h1> :computer: Tecnologias Utilizadas</h2>
 
@@ -43,7 +46,8 @@
 
 
 
- <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="90" /></h1>
+ <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="90"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/cyb.png" height="160" />
+ 
 
  <h5 align="center"> Projeto Integrador - Fatec São José dos Campos </h5>
 
