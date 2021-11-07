@@ -2,24 +2,36 @@
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" /></h1>
 <h2> :dart: Objetivo</h2>
 
-##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. Foi solicitado o desenvolvimento de um painel para o Administrador visualizar e dar permissões para futuros usuários, além de analisar e acompanhar os projetos que estão sendo inclusos. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos. 
+##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos. 
 
 <h2> :calendar: Cronograma de entregas </h2>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints.png" /></h1>
 <br>
 
-## Backlog
+## :pushpin: Backlog
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Backlog.png" height="800" /></h1>
 <br>
 
-<h1> :rocket: MVP </h2>
+<h1> :rocket: MVP </h1>
+
+<h2> SPRINT 1 :ballot_box_with_check:</h2>
+<h3> WIREFRAME </h3>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Wireframe.gif" height="450"/></h1>
+<br>
+ 
+<h2> SPRINT 2 :ballot_box_with_check:</h2>
 <h3> PROTÓTIPO DO SITE</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/site-gif.gif" height="450"/></h1>
 <br>
 <h3> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/clonagem.gif" height="450"/></h1>
+<br>
 
-<h1> :computer: Tecnologias Utilizadas</h2>
+<h2> SPRINT 3 :ballot_box_with_check:</h2>
+<h3> DESENVOLVIMENTO DA PÁGINA WEB </h3>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/GIF_Site.gif" height="450"/></h1>
+ 
+<h1> 	:gear: Tecnologias Utilizadas</h2>
 
 #### Teams: Comunicação
 
@@ -30,6 +42,8 @@
 #### GitHub: Hospedagem de código-fonte e arquivos
 
 #### HTML5 e CSS3: Linguagens de marcação 
+ 
+#### jQuery: Biblioteca de funções JavaScript
 
 #### Python: Linguagem de programação 
 
