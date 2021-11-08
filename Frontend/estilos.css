@@ -1,0 +1,79 @@
+body{
+font-family: 'Alegreya Sans', sans-serif;
+text-align: center;
+    }
+
+.titulo{
+margin-top: 5%;
+font-size: 50px;
+text-align: center;
+font-weight: bold;
+color:white;
+}
+
+.texto{
+font-size: 20px;
+text-align: center;
+color: white;
+}
+
+.titulo2{
+margin-top: 158px;
+border: 2px solid #1A3374;
+border-radius: 5px;
+background-color: #1A3374 ;
+font-size: 30px;
+text-align: center;
+font-weight: bold;
+color: white;
+}
+
+.rodape{
+height: 35%;
+background-color: rgba(250, 250, 250, 1);
+margin-top: 500px;
+text-align: center;
+}
+
+.rodape img{
+margin-top: 35px;
+}
+
+.rodape p{
+margin-top: 28px;
+color: rgb(58, 58, 58);   
+}
+            
+.curso{
+margin-left: 20%;
+display: flex;
+align-items: center;
+            
+}
+.curso p {
+font-weight: bold;
+line-height: 3;
+color: rgb(255, 255, 255);
+width: 60%;
+height: 50px;
+background: #112a7a;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+
+.display {
+margin: 25px 0;
+font-size: 0.9em;
+min-width: 400px;
+border-radius: 15px 15px;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(58, 58, 58, 0.363);
+}
+        
+.display thead tr {
+background-color: #112a7a;
+color: #ffffff;
+text-align: center;
+font-weight: bold;
+}
+        
