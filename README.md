@@ -55,7 +55,6 @@
 |**Ana Carolina das Neves** (Scrum Master)|[@GitHub](https://github.com/AnaCarolinaNeves)|[@LinkedIn](https://www.linkedin.com/in/ana-carolina-neves-36aa68207/)|
 |**Barbara dos Santos Sant'Ana**|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
 |**Gabriele Stephanie Silva de Oliveira**|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
-|**Guilherme Marcondes Caetano**|[@GitHub](https://github.com/gui-marcondes)|[@LinkedIn](https://www.linkedin.com/in/guilhermemarcondescaetano/)|
 <br>
 
 
