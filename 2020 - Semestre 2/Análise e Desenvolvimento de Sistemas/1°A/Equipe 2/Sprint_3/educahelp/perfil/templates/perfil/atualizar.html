@@ -1,0 +1,156 @@
+{% extends 'perfil/criar.html' %}
+
+<style>
+
+        .button1 {
+        color: #000000;
+        border-color: #ffcc00;
+        background-color: #ffcc00;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        }
+
+        .button2 {
+        color: #000000;
+        border-color: #ffcc00;
+        background-color: #ffcc00;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        }
+        h3{
+            text-align: center;
+        }
+</style>
+
+{% block titulo %}atualizar perfil{% endblock %}
+
+{% block conteudo %}
+
+<div class="container">
+<h3>Atualizar cadastro</h3>
+<p>
+    Utilize o formulário a seguir para atualizar seus dados.
+</p>
+<div class="card-body">
+    <form method="POST" action=""> {% csrf_token %}
+        <h6 class="heading-small text-muted mb-4">Informações Pessoais</h6>
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Username</label>
+                        <input id="input-email" class="form-control form-control-alternative"value="{{user}}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="input-email">Endereço de e-mail</label>
+                        <input id="input-email" class="form-control form-control-alternative" value="{{ user.email }}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">Primeiro nome</label>
+                        <input id="input-email" class="form-control form-control-alternative" value="{{user.first_name}}">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">Último nome</label>
+                        <input id="input-email" class="form-control form-control-alternative" value="{{user.last_name}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <h6 class="heading-small text-muted mb-4">Informações de contato</h6>
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Endereço</label>
+                        <input id="input-email" class="form-control form-control-alternative" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">Cidade</label>
+                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder=""
+                            value="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">País</label>
+                        <input type="text" id="input-country" class="form-control form-control-alternative"
+                            placeholder="" value="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label class="form-control-label" for="input-country">CEP</label>
+                        <input type="number" id="input-postal-code" class="form-control form-control-alternative"
+                            placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h6 class="heading-small text-muted mb-4">Dados do Cartão</h6>
+
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Número do cartão</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative"
+                            placeholder="" value="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="input-email">Nome no cartão</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative"
+                            placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="pl-lg-0">
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group focused">
+                            <label class="form-control-label" for="input-city">Validade</label>
+                            <input type="text" id="input-city" class="form-control form-control-alternative"
+                                placeholder="" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group focused">
+                            <label class="form-control-label" for="input-country">CVC</label>
+                            <input type="text" id="input-country" class="form-control form-control-alternative"
+                                placeholder="" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-country">CPF/CNPJ do titular</label>
+                            <input type="number" id="input-postal-code" class="form-control form-control-alternative"
+                                placeholder="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<button type="submit" class='btn btn-primary btn-lg' style="float: right;">Salvar</button>
+</form>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}

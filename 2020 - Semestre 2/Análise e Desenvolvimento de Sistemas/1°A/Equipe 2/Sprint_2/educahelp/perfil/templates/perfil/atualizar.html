@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<style>
+
+.button1 {
+color: #000000;
+border-color: #ffcc00;
+background-color: #ffcc00;
+box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+</style>
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}</title>
+    
+</head>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+    
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+    
+ <div class="col-lg mt-3">
+        
+    {% block titulocadastro %}
+    <h4>Seus Dados:</h4>
+    <p>
+        Primeiro Nome: {{user.first_name}}
+    </p>
+    <p>
+        Ultimo Nome: {{user.last_name}}
+    </p>
+    <p>
+        Usuário: {{user}}
+    </p>
+    <p>
+        Email: {{ user.email }}
+    </p>
+    <a href="{% url 'perfil:atualizar' %}"><button class='button1'>Editar </button></a>
+    {% endblock %}
+</div>
+
+   
+    {% include 'parciais/_footer.html' %}
+
+    
+</body>
+
+</html>

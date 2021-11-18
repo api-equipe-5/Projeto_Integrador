@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Pagamento | {% endblock %}
+
+{% load omfilters %}
+{% load static %}
+
+{% block conteudo %}
+<div class="container-fluid">
+    <div class="col" style="width: 300px;">
+        <h3>Pedido confirmado!</h3>
+
+    </div>
+</div>
+
+
+
+<div class="row mt-4">
+    <div class="col">
+        <a href="/" class="btn btn-primary " style="float: center;">Voltar para página inicial</a>
+    </div>
+</div>
+
+
+{% endblock %}

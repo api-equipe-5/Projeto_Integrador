@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}</title>
+    
+</head>
+<style>
+
+
+.tx1{
+    position: absolute;
+    width: 185px;
+    height: 60px;
+    left: 70px;
+    top: 100px;
+    
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 12px;
+
+}
+
+.fc{
+    position: absolute;
+    left: -2px;
+    top: 130px;
+
+}
+
+
+
+
+
+
+</style>
+
+<body>
+    {% include 'parciais/_nav.html' %}
+    
+        {% include 'parciais/_messages.html' %}
+        {% block conteudo %}{% endblock %}
+    </main>
+    <form>
+        <input type="button" value="Download .pdf" class="btn btn-warning"
+        onClick="window.location.href='https://github.com/RoyaltyDev/Projeto_integrador_2020-2/raw/master/Conteudos/L%C3%93GICA.pdf'"
+
+
+    </form>
+    <center>
+    <iframe src="https://drive.google.com/file/d/1Z4eUbPETTDgKcBd3qwEInXYSpJGHD8mD/preview" width="640" height="750"></iframe>
+    </center>
+
+
+    {% include 'parciais/_footer.html' %}
+
+
+    <br>
+</body>
+
+</html>

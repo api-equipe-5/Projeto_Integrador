@@ -1,0 +1,100 @@
+{% load omfilters %}
+
+<style>
+    .navbar{
+        background-color: #ffcc00;
+        border-radius: 0%;
+        border-color: #ffcc00;
+    }
+    #logoimg{
+      padding-top: 5px;
+      margin-top: 0px;
+    }
+
+    #navbarDropdown{
+      color: black;
+      background-color: #ffcc00;
+    }
+    #entrar{
+      color: black;
+    }
+    #criar-conta{
+      color: black;
+    }
+    #nome{
+      color: black;
+    }
+</style>
+
+
+
+<nav class="navbar navbar-inverse navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-left" href="{% url 'produto:lista' %}">
+          <img src="https://raw.githubusercontent.com/RoyaltyDev/Projeto_integrador_2020-2/master/imagens/educahelp.png" width="80" height="40" class="d-inline-block align-top" alt="" loading="lazy" id="logoimg">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="form-inline" method="GET" action="{% url 'produto:busca' %}" style="margin-left: 30%;">
+        <input name="termo" value="{{ request.GET.termo }}" class="form-control" type="search" style="min-width:300px;"
+
+            placeholder="Busca" aria-label="Busca">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+    </form>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'perfil:meus_pedidos' %}" id="nome"> <strong> Meus Conteúdos </strong> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'produto:lista' %}" id="nome"> <strong> Olá! {{ request.user }} </strong> </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <strong>Conta</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="{% url 'perfil:criar' %}">Perfil</a>
+                    {% if perms.global_permissions.pode_adicionar_conteudo %}
+                    <a class="dropdown-item " href="http://localhost:8000/admin/produto/produto/add/" target="__blank">Adicionar conteúdo</a>
+                    <a class="dropdown-item" href="{% url 'pedido:export' %}">Baixar Relatório</a>
+                    {% endif %}
+                    <a class="dropdown-item " href="{% url 'pedido:lista' %}">Meus pedidos</a>
+                    <a class="dropdown-item" href="{% url 'perfil:logout' %}">Sair</a>
+                </div>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'perfil:criar' %}" id="entrar">Entrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'perfil:criar' %}" id="criar-conta">Criar conta</a>
+            </li>
+            {% endif %}
+
+            {% if request.session.carrinho %}
+            <li class="nav-item">
+                <a class="nav-link nav-cart-link active" href="{% url 'produto:carrinho' %}">
+                    <span class="nav-cart-text mr-1 text-dark">
+
+                    </span>
+                    <span class="nav-cart-count mr-1 text-dark">
+                        <strong>{{ request.session.carrinho|cart_total_qtd }}x</strong>
+                    </span>
+                    <span class="nav-cart-icon mr-2 text-dark">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                    </span>
+                </a>
+            </li>
+            {% endif %}
+
+
+        </ul>
+    </div>
+    </div>
+</nav>

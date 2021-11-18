@@ -1,0 +1,5 @@
+Pillow
+django-crispy-forms
+Pil
+django-debug-toolbar
+Django
