@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="panelEnergia" prefHeight="231.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_instalacaoEnergiaController">
+   <children>
+         <Label layoutX="28.0" layoutY="26.0" text="Codigo de Identificação:" />
+         <TextField fx:id="txt_codIdentificacaoEnergia" layoutX="163.0" layoutY="22.0" prefHeight="25.0" prefWidth="164.0" />
+         <Label layoutX="332.0" layoutY="26.0" text="Codigo Fiscal:" />
+       <TextField fx:id="txt_codFiscalEnergia" layoutX="412.0" layoutY="22.0" prefHeight="25.0" prefWidth="138.0" />
+         <Label layoutX="29.0" layoutY="60.0" text="Grupo:" />
+         <TextField fx:id="txt_grupoEnergia" layoutX="75.0" layoutY="56.0" prefHeight="25.0" prefWidth="164.0" />
+         <Label layoutX="244.0" layoutY="60.0" text="SubGrupo:" />
+         <TextField fx:id="txt_subgrupoEnergia" layoutX="305.0" layoutY="56.0" />
+         <Label layoutX="29.0" layoutY="92.0" text="Classe:" />
+         <TextField fx:id="txt_classeEnergia" layoutX="75.0" layoutY="88.0" />
+         <Label layoutX="236.0" layoutY="92.0" text="Tipo de Fornecimento:" />
+         <TextField fx:id="txt_tipofornecimentoEnergia" layoutX="360.0" layoutY="88.0" />
+         <Label layoutX="30.0" layoutY="123.0" text="Modalide Tarifaria:" />
+         <TextField fx:id="txt_modalidadeEnergia" layoutX="135.0" layoutY="119.0" />
+         <Label layoutX="296.0" layoutY="123.0" text="Tensão:" />
+         <TextField fx:id="txt_tensaoEnergia" layoutX="343.0" layoutY="119.0" />
+         <Label layoutX="30.0" layoutY="156.0" text="Roteiro de Leitura:" />
+         <TextField fx:id="txt_roteiroEnergia" layoutX="135.0" layoutY="152.0" prefHeight="25.0" prefWidth="174.0" />
+         <Label layoutX="316.0" layoutY="156.0" text="Medidor:" />
+         <TextField fx:id="txt_medidorEnergia" layoutX="371.0" layoutY="152.0" />
+      <Button fx:id="btn_salvarInstEnergia" layoutX="276.0" layoutY="195.0" mnemonicParsing="false" onAction="#salvarInstEnergia" text="Salvar" />
+      <TextField fx:id="txt_idInstalacao" layoutX="569.0" layoutY="14.0" prefHeight="25.0" prefWidth="25.0" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+============================================================================================
+Storie Cards
+============================================================================================
+
+
+Tela de Cadastro de contas
+============================================================================================
+	- O usuário Manager seleciona o cliente;
+	- O usuário Manager Seleciona o tipo de conta a ser cadastrada;
+	- O usuário Manager preenche os campos de acordo com a conta selecionada;
+	- O usuário Manager seleciona a opção de salvar cadastro;
+	- A conta é salva no sistema.
+
+**OBS: de início, não é necessário o cadastro de concessionárias, mas sim apenas a verificação dos dados utilizando
+	a API da receita federal.
+
+
+Tela de cadastro de clientes
+============================================================================================
+	- O usuário Manager seleciona a opção "cadastrar cliente" na tela de contas;
+	- O usuário Manager preenche os campos com os dados do cliente;
+	- O usuário seleciona a opção "salvar";
+	- O cliente é adicionado no sistema.
+	
+	
+Tela de cadastro de usuários
+============================================================================================
+	- O usuário Manager seleciona a opção "cadastrar usuário" na tela de contas;
+	- O usuário Manager preenche os campos com os dados do novo usuário;
+	- O usuário Manager seleciona a opção "salvar";
+	- O novo usuário é adicionado no sistema.
+
+
+Tela de contas
+============================================================================================
+	- O usuário Manager seleciona a opção "Novo cadastro";
+	- O usuário é direciona para a tela de Cadastro.
+
+Caminho alternativo (exclusão de cadastro):
+	- O usuário manager realiza uma pesquisa (Nome do cliente, data de cadastro) para localizar a conta desejada;
+	- O usuário manager seleciona a opção de excluir conta;
+	- O usuário manager precisa confirmar a exclusão selecionando o botão "Ok";
+	- O usuário recebe um aviso de que a conta foi apagada com sucesso.
+
+Caminho alternativo (edição de um cadastro):
+	- O usuário manager realiza uma pesquisa (Nome do cliente, data de cadastro) para localizar a conta desejada;
+	- O usuário manager seleciona a opção de editar conta;
+	- O usuário manager é direcionado para a tela de cadastro;
+	- O usuário manager precisa confirmar a edição selecionando o botão "Ok";
+	- O usuário recebe um aviso de que a conta foi alterada com sucesso.
+
+
+Tela de Login
+============================================================================================
+	- O usuário coloca o email e a senha nos campos;
+	- O usuário seleciona a opção "Entrar";
+	- O usuário é direcionado para a tela de Contas.
+
+Caminho alternativo (Situação: o usuário esqueceu a senha):
+	- O usuário seleciona a opção "esqueci minha senha";
+	- O usuário digita o email para receber o reset de senha;
+	- É enviado um email com um link para reset de senha;
+	- Nesse link ele é direcionado para a tela de reset de senha.
+
+
+Tela de reset de senha
+============================================================================================
+	- O usuário digita a nova senha e precisa digitá-la novamente para confirmar;
+	- O usuário seleciona a opção de salvar nova senha;
+	- O usuário é direcionado para a tela de Login.

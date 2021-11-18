@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="769.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecsus.ddc.app.dashboard.DashboardController">
+  <children>
+    <MenuBar style="-fx-background-color: #40514e;" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>
+            <AnchorPane prefHeight="720.0" prefWidth="1087.0">
+               <children>
+                  <AnchorPane prefHeight="720.0" prefWidth="116.0" style="-fx-background-color: #e4f9f5;">
+                     <children>
+                        <Button fx:id="btnAddEnergy" layoutX="25.0" layoutY="174.0" mnemonicParsing="false" onAction="#addEnergy" style="-fx-background-color: #11999e;" text="Energia" textFill="WHITE" />
+                        <Button fx:id="btnAddWater" layoutX="31.0" layoutY="217.0" mnemonicParsing="false" onAction="#addWater" style="-fx-background-color: #11999e;" text="Água" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="billTable" layoutX="116.0" layoutY="137.0" prefHeight="583.0" prefWidth="943.0" style="-fx-border-radius: 10;">
+                    <columns>
+                      <TableColumn fx:id="number" prefWidth="100.0" text="Nº" />
+                        <TableColumn fx:id="clientCNPJ" prefWidth="100.0" text="CNPJ Cliente" />
+                        <TableColumn fx:id="clientName" prefWidth="175.0" text="Cliente" />
+                        <TableColumn fx:id="supplier" prefWidth="100.0" text="Fornecedor" />
+                        <TableColumn fx:id="type" prefWidth="100.0" text="Tipo" />
+                        <TableColumn fx:id="instalation" prefWidth="100.0" text="Instalação" />
+                        <TableColumn fx:id="hidrometer" prefWidth="100.0" text="Hidrômetro" />
+                      <TableColumn fx:id="register" prefWidth="100.0" text="Cadastro" />
+                    </columns>
+                  </TableView>
+                  <AnchorPane layoutX="108.0" layoutY="-2.0" prefHeight="139.0" prefWidth="978.0" style="-fx-background-color: #e4f9f5;">
+                     <children>
+                        <Label layoutX="-83.0" layoutY="21.0" prefHeight="61.0" prefWidth="464.0" text="DDC - Sistema de Digitação de Contas" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnUserReport" layoutX="437.0" layoutY="82.0" mnemonicParsing="false" onAction="#userReport" style="-fx-background-color: #11999e;" text="Relatório de usuário" textFill="WHITE" />
+                        <Button fx:id="btnClientReport" layoutX="592.0" layoutY="82.0" mnemonicParsing="false" onAction="#clientReport" style="-fx-background-color: #11999e;" text="Relatório de clientes" textFill="WHITE" />
+                        <Button fx:id="btnLogOff" layoutX="921.0" layoutY="25.0" mnemonicParsing="false" onAction="#logoff" style="-fx-background-color: #11999e;" text="Sair" textFill="WHITE" />
+                        <Button fx:id="edit" layoutX="743.0" layoutY="82.0" mnemonicParsing="false" onAction="#edit" style="-fx-background-color: #11999e;" text="Editar" textFill="WHITE" />
+                        <Button fx:id="delete" layoutX="816.0" layoutY="82.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #11999e;" text="Deletar ($)" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label font="$x3" maxWidth="-1.0" text="Right status" textFill="$x4" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" prefHeight="763.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadContaController">
+   <top>
+      <AnchorPane fx:id="ancPane_TelaInicio" prefHeight="26.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" layoutY="2.0" prefHeight="25.0" prefWidth="686.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Cadastro">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pesquisa">
+                  <items>
+                    <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                  </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="749.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="276.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Contas" />
+            <Text layoutX="37.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Instalação:" />
+            <TextField fx:id="txt_pesqInstalacao" layoutX="116.0" layoutY="35.0" prefHeight="25.0" prefWidth="173.0" />
+            <Button fx:id="btn_pesqInstalacao" layoutX="298.0" layoutY="35.0" mnemonicParsing="false" onAction="#pesquisarInstalacao" text="Pesquisar" />
+            <Label layoutX="32.0" layoutY="77.0" text="Apelido Instalação:" />
+            <TextField fx:id="txt_apelido" editable="false" focusTraversable="false" layoutX="140.0" layoutY="73.0" />
+            <Label layoutX="302.0" layoutY="77.0" text="Tipo Instalação:" />
+            <TextField fx:id="txt_tipoInstalacao" editable="false" focusTraversable="false" layoutX="387.0" layoutY="73.0" />
+            <Separator layoutY="25.0" prefHeight="6.0" prefWidth="686.0" />
+            <ScrollPane focusTraversable="false" layoutX="21.0" layoutY="110.0" prefHeight="595.0" prefWidth="644.0">
+               <content>
+                  <Pane fx:id="panel_contas" prefHeight="592.0" prefWidth="642.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainPane" prefHeight="522.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadClienteController">
+   <center>
+      <AnchorPane prefHeight="506.0" prefWidth="585.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="ancPane_TelaInicio" layoutX="1.0" prefHeight="536.0" prefWidth="584.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="40.0" text="Nome:" />
+                  <TextField fx:id="txtFld_NomeCliente" layoutX="82.0" layoutY="36.0" prefHeight="25.0" prefWidth="376.0" />
+                  <Label layoutX="14.0" layoutY="77.0" text="CPF/CNPJ:" />
+                  <TextField fx:id="txtFld_DocCliente" layoutX="82.0" layoutY="73.0" prefHeight="25.0" prefWidth="196.0" />
+                  <Button fx:id="btn_CadCliente" layoutX="200.0" layoutY="118.0" mnemonicParsing="false" onAction="#insertCliente" text="SALVAR" />
+                  <Button fx:id="btn_LimparCliente" layoutX="288.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="LIMPAR" />
+                  <ScrollPane layoutX="9.0" layoutY="162.0">
+                     <content>
+                        <TitledPane animated="false" collapsible="false" prefHeight="123.0" prefWidth="565.0" text="Estabelecimentos">
+                           <content>
+                              <TableView prefHeight="200.0" prefWidth="200.0">
+                                <columns>
+                                  <TableColumn prefWidth="90.0" text="APELIDO" />
+                                    <TableColumn prefWidth="370.0" text="ENDEREÇO" />
+                                  <TableColumn prefWidth="103.0" text="AÇÕES" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </TitledPane>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="9.0" layoutY="334.0">
+                     <content>
+                        <TitledPane animated="false" collapsible="false" prefHeight="123.0" prefWidth="565.0" text="Instalações">
+                           <content>
+                              <TableView prefHeight="200.0" prefWidth="200.0">
+                                <columns>
+                                  <TableColumn prefWidth="94.0" text="Nº Instalação" />
+                                  <TableColumn prefWidth="102.0" text="Apelido" />
+                                    <TableColumn prefWidth="151.0" text="Estabelecimeto" />
+                                    <TableColumn prefWidth="139.0" text="Tipo de Instalação" />
+                                    <TableColumn prefWidth="77.0" text="Ações" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </TitledPane>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btn_NovoEstabelecimento" layoutX="202.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" text="NOVO ESTABELECIMENTO" />
+                  <Button fx:id="btn_NovoInstalacao" layoutX="202.0" layoutY="468.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" text="NOVA INSTALAÇÃO" />
+                  <TextField fx:id="txtFld_idCliente" layoutX="522.0" layoutY="28.0" prefHeight="25.0" prefWidth="34.0" />
+               </children>
+            </AnchorPane>
+            <Separator layoutY="7.0" prefHeight="33.0" prefWidth="585.0" />
+            <Label layoutX="238.0" layoutY="4.0" text="Cadastro de Clientes" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar fx:id="menuBar_TelaInicial" prefHeight="25.0" prefWidth="584.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Cadastro">
+               <items>
+                  <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                  <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                  <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Pesquisa">
+               <items>
+                  <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                  <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                  <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="329.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.PesqContaAguaController">
+   <children>
+      <Button fx:id="btn_Alterar" layoutX="244.0" layoutY="22.0" mnemonicParsing="false" onAction="#alterarContaAgua" text="Alterar" />
+      <Button fx:id="btn_Deletar" layoutX="328.0" layoutY="22.0" mnemonicParsing="false" onAction="#deletarContaAgua" text="Deletar" />
+      <TableView fx:id="tbview_Contas" layoutY="64.0" prefHeight="265.0" prefWidth="655.0">
+         <columns>
+            <TableColumn fx:id="col_NInstalacao" prefWidth="104.0" text="Nº INSTALAÇÃO" />
+            <TableColumn fx:id="col_ApelidoInstalacao" prefWidth="148.0" text="APELIDO INSTALAÇÃO" />
+            <TableColumn fx:id="col_cliente" prefWidth="183.0" text="CLIENTE" />
+            <TableColumn fx:id="col_ValorConta" prefWidth="104.0" text="VALOR" />
+            <TableColumn fx:id="col_CompetenciaConta" prefWidth="113.0" text="COMPETENCIA" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

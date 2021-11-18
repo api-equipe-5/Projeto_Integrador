@@ -1,0 +1,19 @@
+==============================================================================================
+Papéis
+==============================================================================================
+	Bruno - DEV
+		<bruno.araujo38@fatec.sp.gov.br>
+	Eguimar - DEV
+		<eguimar.costa@fatec.sp.gov.br>
+	William - DEV
+		<william.antoniazzi@fatec.sp.gov.br>
+	Ruan - master
+		<ruan.macedo@fatec.sp.gov.br>
+	Wallace - DEV
+		<wallace.santos13@fatec.sp.gov.br>
+	Tobias - PO
+		<tobias.lino@fatec.sp.gov.br>
+==============================================================================================
+Links Úteis
+==============================================================================================
+Trelo: https://trello.com/b/6eW9AzGM/pitecsus

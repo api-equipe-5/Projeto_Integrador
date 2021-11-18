@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadInstalacoesController">
+   <children>
+      <Label layoutX="58.0" layoutY="82.0" text="Nome:" />
+      <TextField fx:id="txtFld_Nome" layoutX="104.0" layoutY="78.0" onAction="#teste" />
+   </children>
+</AnchorPane>

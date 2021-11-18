@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainPane" prefHeight="506.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadConcessionariaController">
+   <top>
+      <AnchorPane fx:id="ancPane_TelaInicio" prefHeight="28.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" layoutY="2.0" prefHeight="23.0" prefWidth="686.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Cadastro">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pesquisa">
+                  <items>
+                    <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                  </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="325.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="17.0" layoutY="40.0" text="Nome:" />
+            <TextField fx:id="txtFld_NomeConcessionaria" layoutX="110.0" layoutY="38.0" prefHeight="25.0" prefWidth="344.0" />
+            <Label layoutX="17.0" layoutY="78.0" text="CNPJ:" />
+            <TextField fx:id="txtFld_CnpjConcessionaria" layoutX="109.0" layoutY="76.0" />
+            <Label layoutX="17.0" layoutY="118.0" text="Insc. Estadual:" />
+            <TextField fx:id="txtFld_InscEstadualConcessionaria" layoutX="109.0" layoutY="116.0" />
+            <Label layoutX="17.0" layoutY="153.0" text="Email:" />
+            <TextField fx:id="txtFld_EmailConcessionaria" layoutX="110.0" layoutY="151.0" prefHeight="25.0" prefWidth="279.0" />
+            <Label layoutX="16.0" layoutY="193.0" text="Site:" />
+            <TextField fx:id="txtFld_SiteConcessionaria" layoutX="110.0" layoutY="191.0" prefHeight="25.0" prefWidth="294.0" />
+            <Label layoutX="16.0" layoutY="230.0" text="CEP:" />
+            <TextField fx:id="txtFld_CepConcessionaria" layoutX="109.0" layoutY="226.0" />
+            <Label layoutX="15.0" layoutY="268.0" text="Endereço:" />
+            <TextField fx:id="txtFld_EndConcessionaria" layoutX="109.0" layoutY="264.0" prefHeight="25.0" prefWidth="329.0" />
+            <Label layoutX="446.0" layoutY="268.0" text="Numero:" />
+            <TextField fx:id="txtFld_NumEndConcessionaria" layoutX="505.0" layoutY="264.0" prefHeight="25.0" prefWidth="64.0" text="0" />
+            <Label layoutX="14.0" layoutY="312.0" text="Complemento:" />
+            <TextField fx:id="txtFld_CompEndConcessionaria" layoutX="108.0" layoutY="308.0" prefHeight="25.0" prefWidth="232.0" />
+            <Label layoutX="358.0" layoutY="312.0" text="Bairro:" />
+            <TextField fx:id="txtFld_UfEndConcessionaria1" layoutX="400.0" layoutY="308.0" prefHeight="25.0" prefWidth="171.0" />
+            <Label layoutX="14.0" layoutY="355.0" text="Cidade:" />
+            <TextField fx:id="txtFld_CidadeConcessionaria" layoutX="109.0" layoutY="351.0" prefHeight="25.0" prefWidth="191.0" />
+            <Label layoutX="322.0" layoutY="355.0" text="UF:" />
+            <TextField fx:id="txtFld_UfEndConcessionaria" layoutX="350.0" layoutY="351.0" prefHeight="25.0" prefWidth="61.0" />
+            <Button fx:id="btn_CadConcessionaria" layoutX="273.0" layoutY="439.0" mnemonicParsing="false" onAction="#insert_Concessionaria" text="Cadastrar" />
+            <Button fx:id="btn_LimparConcessionaria" layoutX="351.0" layoutY="439.0" mnemonicParsing="false" onAction="#btn_Limpar" text="Limpar" />
+            <Separator layoutX="1.0" layoutY="23.0" prefHeight="0.0" prefWidth="686.0" />
+            <Label layoutX="246.0" layoutY="4.0" text="Cadastro de Concessionarias" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

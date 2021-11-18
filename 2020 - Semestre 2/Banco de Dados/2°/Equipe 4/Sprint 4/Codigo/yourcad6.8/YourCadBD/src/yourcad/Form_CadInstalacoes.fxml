@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainPane" prefHeight="458.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadInstalacoesController">
+   <top>
+      <AnchorPane fx:id="ancPane_TelaInicio" prefHeight="28.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutY="2.0">
+               <children>
+                  <MenuBar fx:id="menuBar_TelaInicial" prefHeight="25.0" prefWidth="686.0">
+                     <menus>
+                        <Menu fx:id="menu_Cadastro" mnemonicParsing="false" text="Cadastro">
+                           <items>
+                              <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                              <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                              <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Pesquisa">
+                           <items>
+                              <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                              <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                              <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                           </items>
+                        </Menu>
+                        <Menu id="menu_Relatorios" fx:id="menu_Relatorios" mnemonicParsing="false" text="Relatórios" visible="false">
+                           <items>
+                              <MenuItem id="menuItem_RelatAcessos" fx:id="menuItem_RelatAcessos" mnemonicParsing="false" onAction="#gotoRelatAcessos" text="Relatório de Acessos" visible="false" />
+                              <MenuItem id="menuItem_RelatClientes" fx:id="menuItem_RelatClientes" mnemonicParsing="false" onAction="#gotoRelatClientes" text="Relatório por Clientes" visible="false" />
+                              <MenuItem id="menuItem_RelatDigitador" fx:id="menuItem_RelatDigitador" mnemonicParsing="false" onAction="#gotoRelatDigitador" text="Relatório de Digitador" visible="false" />
+                           </items>
+                        </Menu>
+                        <Menu fx:id="menu_Configuracao" mnemonicParsing="false" text="Configuração" visible="false">
+                           <items>
+                              <MenuItem fx:id="menuItem_CadUsuarios" mnemonicParsing="false" onAction="#gotoUsuarios" text="Cadastrar Usuários" />
+                              <MenuItem fx:id="menuItem_PesqUsuarios" mnemonicParsing="false" onAction="#gotoPesqUsuarios" text="Pesquisar Usuários" />
+                           </items>
+                        </Menu>
+                        <Menu fx:id="menu_Sair" mnemonicParsing="false" text="Sair">
+                           <items>
+                              <MenuItem fx:id="menuItem_SairSistema" mnemonicParsing="false" onAction="#gotoSair" text="Sair do Sistema" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txt_idCliente" layoutX="637.0" layoutY="14.0" prefHeight="25.0" prefWidth="35.0" visible="false" />
+            <Label layoutX="20.0" layoutY="26.0" prefHeight="17.0" prefWidth="73.0" text="Nº Instalação:" />
+            <TextField fx:id="txt_numeroInstalacao" layoutX="97.0" layoutY="22.0" prefHeight="25.0" prefWidth="217.0" />
+            <Label layoutX="321.0" layoutY="26.0" text="Apelido:" />
+            <TextField fx:id="txt_apelidoInstalacao" layoutX="371.0" layoutY="22.0" />
+            <Label layoutX="24.0" layoutY="68.0" text="Tipo:" />
+            <ComboBox fx:id="cbox_tipoInstalacao" editable="true" layoutX="97.0" layoutY="64.0" prefWidth="150.0" />
+            <TextField fx:id="txt_idInstalacao" layoutX="638.0" layoutY="51.0" prefHeight="25.0" prefWidth="34.0" visible="false" />
+            <ComboBox fx:id="cbox_concessionariaInstalacao" disable="true" editable="true" layoutX="370.0" layoutY="64.0" prefWidth="150.0" visible="false" />
+            <Label disable="true" layoutX="280.0" layoutY="68.0" text="Concessionaria:" visible="false" />
+            <ScrollPane layoutX="20.0" layoutY="158.0" pannable="true" prefHeight="258.0" prefViewportHeight="218.0" prefViewportWidth="644.0" prefWidth="646.0">
+               <content>
+                  <Pane fx:id="panel_01" layoutX="20.0" layoutY="10.0" prefHeight="256.0" prefWidth="644.0" />
+               </content>
+            </ScrollPane>
+            <Button fx:id="btn_limparInstalacao" layoutX="335.0" layoutY="102.0" mnemonicParsing="false" text="Limpar" />
+            <Button fx:id="btn_salvarInstalacao" layoutX="280.0" layoutY="102.0" mnemonicParsing="false" onAction="#salvarInstalacao" text="Salvar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

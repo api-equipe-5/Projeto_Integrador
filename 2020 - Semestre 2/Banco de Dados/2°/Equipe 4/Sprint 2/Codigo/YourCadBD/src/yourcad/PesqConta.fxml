@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainPane" prefHeight="458.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.PesqClienteController">
+   <top>
+      <AnchorPane>
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" prefHeight="14.0" prefWidth="686.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastro">
+                  <items>
+                    <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Pesquisa">
+                  <items>
+                    <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator layoutX="-1.0" layoutY="25.0" prefHeight="2.0" prefWidth="686.0" />
+            <Label layoutX="294.0" layoutY="7.0" text="Pesquisa de Contas" />
+            <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="38.0" prefHeight="133.0" prefWidth="654.0" text="Clientes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="87.0" prefWidth="652.0">
+                     <children>
+                        <Button fx:id="btn_PesquisarCliente" layoutX="436.0" layoutY="68.0" mnemonicParsing="false" text="Pesquisar" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Cliente:" />
+                        <TextField fx:id="txtFld_ClienteConta" layoutX="71.0" layoutY="10.0" prefHeight="22.0" prefWidth="365.0" />
+                        <Label layoutX="16.0" layoutY="65.0" text="Nº Conta:" />
+                        <TextField fx:id="txtFld_NumConta" layoutX="71.0" layoutY="61.0" prefHeight="22.0" prefWidth="189.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <ScrollPane layoutX="14.0" layoutY="191.0">
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="653.0">
+                    <columns>
+                      <TableColumn prefWidth="71.0" text="Nº CONTA" />
+                      <TableColumn prefWidth="97.0" text="CLIENTE" />
+                        <TableColumn prefWidth="93.0" text="VALOR" />
+                        <TableColumn prefWidth="142.0" text="COMPETENCIA" />
+                        <TableColumn prefWidth="176.0" text="LOCAL CONSUMO" />
+                        <TableColumn editable="false" prefWidth="73.0" sortable="false" text="AÇÕES" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

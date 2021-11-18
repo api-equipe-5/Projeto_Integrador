@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" prefHeight="763.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadContaController">
+   <top>
+      <AnchorPane fx:id="ancPane_TelaInicio" prefHeight="26.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" layoutY="2.0" prefHeight="25.0" prefWidth="686.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Cadastro">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pesquisa">
+                  <items>
+                    <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                  </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="749.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtPesqNInstalacao" layoutX="99.0" layoutY="47.0" />
+            <Text layoutX="20.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Instalação:" />
+            <Separator layoutY="25.0" prefHeight="6.0" prefWidth="686.0" />
+            <Text layoutX="276.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Contas" />
+            <ScrollPane layoutX="26.0" layoutY="105.0" prefHeight="595.0" prefWidth="644.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="649.0">
+                     <children>
+                        <TextField fx:id="txt_EnergiaDescricao" layoutX="69.0" layoutY="304.0" prefHeight="25.0" prefWidth="128.0" />
+                        <TextField fx:id="txt_EnergiaConsumoLeituraAtual" layoutX="69.0" layoutY="344.0" prefHeight="25.0" prefWidth="109.0" />
+                        <TextField fx:id="txt_EnergiaNMedidor" layoutX="273.0" layoutY="302.0" prefHeight="25.0" prefWidth="133.0" />
+                        <TextField fx:id="txt_EnergiaConstMult" layoutX="252.0" layoutY="344.0" />
+                        <TextField fx:id="txt_EnergiaConsumoLeituraAnterior" layoutX="491.0" layoutY="304.0" prefHeight="25.0" prefWidth="135.0" />
+                        <TextField fx:id="txt_EnergiaKwhMes" layoutX="500.0" layoutY="344.0" prefHeight="25.0" prefWidth="126.0" />
+                        <TextField fx:id="txt_EnergiaCci" layoutX="116.0" layoutY="420.0" prefHeight="25.0" prefWidth="89.0" />
+                        <Text layoutX="10.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição:" />
+                        <Text layoutX="10.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leit Atual:" />
+                        <Text layoutX="202.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Medidor:" />
+                        <Text layoutX="187.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Const Mult:" />
+                        <Text layoutX="415.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leit. Anterior:" />
+                        <Text layoutX="415.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qtd kWh/Mês:" />
+                        <Text layoutX="10.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCI:" />
+                        <Text layoutX="253.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição de Consumo" />
+                        <Separator layoutY="287.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Separator layoutY="402.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="253.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes Faturamento" />
+                        <Separator layoutY="385.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="10.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarifa Aplic:" />
+                        <TextField fx:id="txt_EnergiaTarifaAplicada" layoutX="116.0" layoutY="454.0" prefHeight="25.0" prefWidth="84.0" />
+                        <Text layoutX="9.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B. Calc ICMS:" />
+                        <TextField fx:id="txt_EnergiaBaseICMS" layoutX="116.0" layoutY="489.0" prefHeight="25.0" prefWidth="112.0" />
+                        <Text layoutX="9.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B. Calc PIS/COFINS:" />
+                        <TextField fx:id="txt_EnergiaBasePisCofins" layoutX="116.0" layoutY="530.0" prefHeight="25.0" prefWidth="103.0" />
+                        <Text layoutX="238.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc. Produto:" />
+                        <TextField fx:id="txt_EnergiaDescricaoProduto" layoutX="319.0" layoutY="426.0" prefHeight="25.0" prefWidth="126.0" />
+                        <Text layoutX="238.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor Fornec. :" />
+                        <TextField fx:id="txt_EnergiaValorFornecedor" layoutX="319.0" layoutY="460.0" prefHeight="25.0" prefWidth="109.0" />
+                        <Text layoutX="238.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aliq. ICMS %:" />
+                        <TextField fx:id="txt_EnergiaAliquotaIcms" layoutX="319.0" layoutY="497.0" prefHeight="25.0" prefWidth="85.0" />
+                        <Text layoutX="238.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aliq. PIS %:" />
+                        <TextField fx:id="txt_EnergiaAliquotaPis" layoutX="319.0" layoutY="538.0" prefHeight="25.0" prefWidth="87.0" />
+                        <TextField fx:id="txt_EnergiaValorPis" layoutX="526.0" layoutY="541.0" prefHeight="25.0" prefWidth="87.0" />
+                        <Text layoutX="451.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor PIS:" />
+                        <TextField fx:id="txt_EnergiaValorIcms" layoutX="526.0" layoutY="500.0" prefHeight="25.0" prefWidth="85.0" />
+                        <Text layoutX="449.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor ICMS:" />
+                        <TextField fx:id="txt_EnergiaTarifaImposto" layoutX="526.0" layoutY="463.0" prefHeight="25.0" prefWidth="94.0" />
+                        <Text layoutX="448.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarifa c/ Imp:" />
+                        <TextField fx:id="txt_EnergiaQuantidade" layoutX="483.0" layoutY="426.0" prefHeight="25.0" prefWidth="126.0" />
+                        <Text layoutX="453.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qtd:" />
+                        <Separator layoutY="83.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="253.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandeiras Tarifarias" />
+                        <Separator layoutY="100.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="16.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Conta:" />
+                        <TextField fx:id="txt_EnergiaNConta" layoutX="75.0" layoutY="14.0" prefHeight="25.0" prefWidth="155.0" />
+                        <TextField fx:id="txt_EnergiaValor" layoutX="281.0" layoutY="14.0" prefHeight="25.0" prefWidth="91.0" />
+                        <Text layoutX="246.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor:" />
+                        <TextField fx:id="txt_EnergiaCompetencia" layoutX="474.0" layoutY="14.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Text layoutX="390.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competencia:" />
+                        <TextField fx:id="txt_EnergiaConsumoMes" layoutX="102.0" layoutY="47.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Text layoutX="16.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consumo mês:" />
+                        <TextField fx:id="txt_EnergiaVencimento" layoutX="318.0" layoutY="47.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Text layoutX="248.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vencimento:" />
+                        <Text layoutX="405.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="á" />
+                        <TextField fx:id="txt_EnergiaPeriodo2" layoutX="423.0" layoutY="112.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Text layoutX="240.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo:" />
+                        <TextField fx:id="txt_EnergiaPeriodo" layoutX="291.0" layoutY="112.0" prefHeight="25.0" prefWidth="105.0" />
+                        <TextField fx:id="txt_EnergiaCor" layoutX="68.0" layoutY="112.0" prefHeight="25.0" prefWidth="155.0" />
+                        <Text layoutX="16.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor:" />
+                        <Separator layoutX="-2.0" layoutY="165.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="251.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo de Faturamento" />
+                        <Separator layoutX="-2.0" layoutY="148.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Separator layoutX="-1.0" layoutY="268.0" prefHeight="4.0" prefWidth="637.0" />
+                        <Text layoutX="416.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº dias Faturamento:" />
+                        <Text layoutX="188.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prev. prox Leit:" />
+                        <Text layoutX="203.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leit. Atual:" />
+                        <Text layoutX="11.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leit. Anterior:" />
+                        <Text layoutX="11.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emissão:" />
+                        <TextField fx:id="txt_EnergiaDiasFaturamento" layoutX="534.0" layoutY="187.0" prefHeight="25.0" prefWidth="88.0" />
+                        <TextField fx:id="txt_EnergiaPrevisãoLeitura" layoutX="273.0" layoutY="227.0" prefHeight="25.0" prefWidth="113.0" />
+                        <TextField fx:id="txt_EnergiaLeituraAtual" layoutX="274.0" layoutY="185.0" prefHeight="25.0" prefWidth="117.0" />
+                        <TextField fx:id="txt_EnergiaLeituraAnterior" layoutX="85.0" layoutY="227.0" prefHeight="25.0" prefWidth="101.0" />
+                        <TextField fx:id="txt_EnergiaEmissao" layoutX="70.0" layoutY="187.0" prefHeight="25.0" prefWidth="104.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button layoutX="276.0" layoutY="47.0" mnemonicParsing="false" text="Pesquisar" />
+            <Button layoutX="265.0" layoutY="705.0" mnemonicParsing="false" text="Cadastrar" />
+            <Button layoutX="349.0" layoutY="705.0" mnemonicParsing="false" text="Limpar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

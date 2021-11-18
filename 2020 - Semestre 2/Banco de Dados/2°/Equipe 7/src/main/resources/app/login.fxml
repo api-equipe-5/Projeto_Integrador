@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="768.0" prefWidth="1024.0" style="-fx-max-width: 1024; -fx-max-height: 768;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecsus.ddc.app.login.LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="522.0" prefWidth="615.0" style="-fx-background-color: #11999e;" VBox.vgrow="ALWAYS">
+      <children>
+            <AnchorPane layoutX="279.0" layoutY="93.0" prefHeight="582.0" prefWidth="466.0" style="-fx-background-color: #e4f9f5; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="170.0" layoutY="73.0" prefHeight="65.0" prefWidth="149.0" text="DDC Login" textAlignment="CENTER">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="186.0" text="Login">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="213.0" layoutY="245.0" text="Senha">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="170.0" layoutY="363.0" mnemonicParsing="false" style="-fx-background-color: #e4f9f5;" text="Esqueci minha senha" textFill="#147966" />
+                  <Button fx:id="btnSignin" layoutX="190.0" layoutY="312.0" mnemonicParsing="false" onAction="#signIn" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #11999e; -fx-border-radius: 10;" text="Entrar" textFill="WHITE" />
+                  <Label layoutX="176.0" layoutY="484.0" text="Não tem uma conta ?" />
+                  <TextField fx:id="usernameField" layoutX="88.0" layoutY="207.0" prefHeight="25.0" prefWidth="284.0" />
+                  <PasswordField fx:id="passwordField" layoutX="92.0" layoutY="266.0" prefHeight="25.0" prefWidth="284.0" />
+               </children>
+            </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

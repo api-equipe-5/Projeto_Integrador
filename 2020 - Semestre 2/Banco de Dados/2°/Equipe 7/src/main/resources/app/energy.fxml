@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="497.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tecsus.ddc.app.energy.EnergyController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" text="Instalação:" />
+        <TextField fx:id="txtInstalacao" layoutX="94.0" layoutY="10.0" prefHeight="25.0" prefWidth="148.0" />
+      <Button fx:id="btnBuscar" onAction="#searchInstalation" layoutX="254.0" layoutY="10.0" mnemonicParsing="false"  prefWidth="140.0" text="Buscar" />
+        <Label layoutX="14.0" layoutY="46.0" text="Cliente:" />
+        <Label fx:id="lblCliente" layoutX="94.0" layoutY="46.0" prefHeight="17.0" prefWidth="303.0" underline="true" />
+        <Label layoutX="14.0" layoutY="74.0" text="Fornecedor:" />
+        <Label fx:id="lblFornecedor" layoutX="94.0" layoutY="74.0" prefHeight="17.0" prefWidth="303.0" underline="true" />
+        <Label layoutX="14.0" layoutY="100.0" text="Endereço:" />
+        <Label fx:id="lblEndereco" layoutX="94.0" layoutY="100.0" prefHeight="17.0" prefWidth="303.0" underline="true" />
+        <Separator layoutY="133.0" prefHeight="6.0" prefWidth="411.0" />
+        <Label layoutX="14.0" layoutY="149.0" text="Numero da conta:" />
+        <TextField fx:id="txtNumConta" layoutX="14.0" layoutY="173.0" prefHeight="25.0" prefWidth="187.0" />
+        <TextField fx:id="txtMedidor" layoutX="210.0" layoutY="173.0" prefHeight="25.0" prefWidth="187.0" />
+        <Label layoutX="210.0" layoutY="149.0" text="Numero do medidor:" />
+        <Label layoutX="14.0" layoutY="207.0" text="Mês de referência:" />
+        <Label layoutX="211.0" layoutY="207.0" text="Valor R$" />
+        <TextField fx:id="txtMesRef" layoutX="14.0" layoutY="224.0"  prefHeight="25.0" prefWidth="187.0" onKeyPressed="#mascRef"/>
+        <TextField fx:id="txtValor" layoutX="210.0" layoutY="224.0" prefHeight="25.0" prefWidth="187.0" />
+        <Label layoutX="14.0" layoutY="259.0" text="Data leitura atual:" />
+        <Label layoutX="208.0" layoutY="259.0" text="Valor leitura atual:" />
+        <TextField fx:id="txtLeituraAtual" layoutX="14.0" layoutY="276.0"  prefHeight="25.0" prefWidth="187.0" onKeyPressed="#mascData"/>
+        <TextField fx:id="txtValorAtual" layoutX="211.0" layoutY="276.0" prefHeight="25.0" prefWidth="187.0" />
+        <Label layoutX="14.0" layoutY="309.0" text="Data leitura anterior:" />
+        <Label layoutX="210.0" layoutY="309.0" text="Valor leitura anterior:" />
+        <TextField fx:id="txtLeituraAnterior" layoutX="14.0" layoutY="326.0"  prefHeight="25.0" prefWidth="187.0" onKeyPressed="#mascData"/>
+        <TextField fx:id="txtValorAnterior" layoutX="210.0" layoutY="326.0" prefHeight="25.0" prefWidth="187.0" />
+        <Label layoutX="16.0" layoutY="358.0" text="Data próxima leitura:" />
+        <Label layoutX="212.0" layoutY="358.0" text="Vencimento:" />
+        <TextField fx:id="txtProximaLeitura" layoutX="15.0" layoutY="375.0"  prefHeight="25.0" prefWidth="187.0" onKeyPressed="#mascData"/>
+        <TextField fx:id="txtVencimento" layoutX="210.0" layoutY="375.0" prefHeight="25.0" prefWidth="187.0" onKeyPressed="#mascData" />
+        <Label layoutX="16.0" layoutY="408.0" text="Consumo KW/h:" />
+        <Label layoutX="211.0" layoutY="408.0" text="Período de consumo:" />
+        <TextField fx:id="txtConsumo" layoutX="14.0" layoutY="425.0" prefHeight="25.0" prefWidth="187.0" />
+        <TextField fx:id="txtPeriodoConsumo" layoutX="210.0" layoutY="425.0" prefHeight="25.0" prefWidth="187.0" />
+        <Button fx:id="btnVoltar"  onAction="#back" layoutX="16.0" layoutY="458.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="100.0" text="Voltar" />
+        <Button fx:id="btnSalvar" onAction="#save" layoutX="123.0" layoutY="458.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salvar" />
+    </children>
+</AnchorPane>

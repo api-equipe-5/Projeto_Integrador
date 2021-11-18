@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainPane" prefHeight="458.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.PesqUsuariosController">
+   <top>
+      <AnchorPane>
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" prefHeight="25.0" prefWidth="686.0">
+               <menus>
+                  <Menu fx:id="menu_Cadastro" mnemonicParsing="false" text="Cadastro">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pesquisa">
+                     <items>
+                        <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoPesqCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoPesqConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoPesqConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu id="menu_Relatorios" fx:id="menu_Relatorios" mnemonicParsing="false" text="Relatórios" visible="false">
+                     <items>
+                        <MenuItem id="menuItem_RelatAcessos" fx:id="menuItem_RelatAcessos" mnemonicParsing="false" onAction="#gotoRelatAcessos" text="Relatório de Acessos" visible="false" />
+                        <MenuItem id="menuItem_RelatClientes" fx:id="menuItem_RelatClientes" mnemonicParsing="false" onAction="#gotoRelatClientes" text="Relatório por Clientes" visible="false" />
+                        <MenuItem id="menuItem_RelatDigitador" fx:id="menuItem_RelatDigitador" mnemonicParsing="false" onAction="#gotoRelatDigitador" text="Relatório de Digitador" visible="false" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="menu_Configuracao" mnemonicParsing="false" text="Configuração" visible="false">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadUsuarios" mnemonicParsing="false" onAction="#gotoUsuarios" text="Cadastrar Usuários" />
+                        <MenuItem fx:id="menuItem_PesqUsuarios" mnemonicParsing="false" onAction="#gotoPesqUsuarios" text="Pesquisar Usuários" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="menu_Sair" mnemonicParsing="false" text="Sair">
+                     <items>
+                        <MenuItem fx:id="menuItem_SairSistema" mnemonicParsing="false" onAction="#gotoSair" text="Sair do Sistema" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane animated="false" collapsible="false" focusTraversable="false" layoutX="16.0" layoutY="41.0" prefHeight="133.0" prefWidth="654.0" text="Usuários">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="87.0" prefWidth="652.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Nome:" />
+                        <TextField fx:id="txt_UsuarioNome" layoutX="71.0" layoutY="10.0" prefHeight="22.0" prefWidth="365.0" />
+                        <Label layoutX="12.0" layoutY="45.0" text="Nivel de Acesso:" />
+                        <Button fx:id="btn_PesquisarUsuario" layoutX="436.0" layoutY="68.0" mnemonicParsing="false" onAction="#PesqUsuarios" text="Pesquisar" />
+                        <ComboBox fx:id="cbox_UsuarioNivelAcesso" layoutX="104.0" layoutY="41.0" prefWidth="150.0" />
+                        <Label layoutX="12.0" layoutY="76.0" text="Status:" />
+                        <ComboBox fx:id="cbox_usuarioStatus" layoutX="56.0" layoutY="72.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <Separator layoutX="-1.0" layoutY="25.0" prefHeight="2.0" prefWidth="686.0" />
+            <Label layoutX="294.0" layoutY="7.0" text="Pesquisa de Usuários" />
+            <Button fx:id="btn_alterarUsuario" layoutX="279.0" layoutY="181.0" mnemonicParsing="false" onAction="#AlterUsuarios" text="Alterar" />
+            <Button fx:id="btn_ExcluirUsuario" layoutX="363.0" layoutY="181.0" mnemonicParsing="false" onAction="#DeletarUsuarios" text="Excluir" />
+            <ScrollPane focusTraversable="false" layoutX="15.0" layoutY="217.0">
+               <content>
+                  <TableView fx:id="table_lista_Usuarios" prefHeight="200.0" prefWidth="653.0">
+                     <columns>
+                        <TableColumn fx:id="table_Usuarios_Cod" prefWidth="41.0" text="COD" />
+                        <TableColumn fx:id="table_Usuarios_Nome" prefWidth="207.0" text="NOME" />
+                        <TableColumn fx:id="table_Usuarios_Email" prefWidth="195.0" text="E-MAIL" />
+                        <TableColumn fx:id="table_Usuarios_NivelAcesso" editable="false" prefWidth="125.0" sortable="false" text="NIVEL DE ACESSO" />
+                        <TableColumn fx:id="table_Usuarios_Status" editable="false" prefWidth="84.0" sortable="false" text="STATUS" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
