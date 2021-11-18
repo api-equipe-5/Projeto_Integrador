@@ -1,0 +1,779 @@
+/* Global */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #DFDFDF;
+}
+
+main {
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Header **/
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    background: #112244;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header #branding {
+    margin-left: 2rem;
+}
+
+header #branding h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Boxes */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+#boxes {
+    margin: 10px;
+    display: flex;
+}
+
+#boxes div {
+    min-height: 70px;
+}
+
+#boxes .box {
+    width: 30%;
+    max-height: 50px;
+    padding: 10px;
+    background: #ffffff;
+    margin: 0.25rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#boxes .page_box {
+    width: 30%;
+    max-height: 50px;
+    padding: 10px;
+    background: #3749E9;
+    margin: 0.25rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#boxes .box:hover {
+    background-color: rgba(116, 114, 115, 0.247);
+}
+
+#boxes .page_box:hover {
+    background-color: rgba(116, 114, 115, 0.247);
+}
+
+#boxes .box h3 {
+    color: #707070;
+    margin-top: -0.025rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#boxes .page_box h3 {
+    color: #F3F3F3;
+    margin-top: -0.025rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#boxes .box p {
+    color: #707070;
+    margin-top: -13px;
+    font-size: 0.65rem;
+    line-height: 0.75rem;
+}
+
+#boxes .page_box p {
+    color: #F3F3F3;
+    margin-top: -13px;
+    font-size: 0.65rem;
+    line-height: 0.75rem;
+}
+
+
+/* Grid form */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.head {
+    height: 40px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+    background: rgba(116, 114, 115, 0.247);
+}
+
+.title {
+    font-size: 11pt;
+    color: #4e4e4e;
+}
+
+.paragraph {
+    font-size: 10pt;
+    color: #707070;
+}
+
+.content {
+    background: #ffffff;
+    width: auto;
+    height: 90%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+}
+
+.content_graph {
+    height: auto;
+    margin: 10px;
+    background: black;
+    color: white;
+}
+
+.content_percent {
+    height: auto;
+    margin: 10px;
+    background: black;
+    color: white;
+}
+
+
+/* Grids */
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.graph_one {
+    background-color: #ffffff;
+    grid-area: one;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_two {
+    background-color: #ffffff;
+    grid-area: two;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_three {
+    background-color: #ffffff;
+    grid-area: three;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_four {
+    background-color: #ffff;
+    grid-area: four;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_five {
+    background-color: #ffffff;
+    grid-area: five;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_six {
+    background-color: #ffffff;
+    grid-area: six;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_seven {
+    background-color: #ffffff;
+    grid-area: seven;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_eight {
+    background-color: #ffffff;
+    grid-area: eight;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.graph_nine {
+    background-color: #ffffff;
+    grid-area: nine;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bonus_01{
+    background-color: #ffffff;
+    grid-area: bonus_01;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bonus_02{
+    background-color: #ffffff;
+    grid-area: bonus_02;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bonus_03{
+    background-color: #ffffff;
+    grid-area: bonus_03;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/*Containers*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.first_graph_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 30vh 50vh 10vh;
+    grid-gap: 10px;
+    grid-template-areas: "one two three" 
+                         "four four three";
+    margin: 50px 50px 0px 50px;
+}
+
+.second_graph_container_FNT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "bonus_01 bonus_02" 
+                         "five six" 
+                         "seven eight";
+    margin: 0px 50px 50px 50px;
+}
+
+.second_graph_container_MVT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh 70vh 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "bonus_01 bonus_02"
+                         "bonus_01 bonus_03" 
+                         "five five" 
+                         "six six" 
+                         "seven seven" 
+                         "eight eight" 
+                         "nine nine";
+    margin: 0px 50px 50px 50px;
+}
+
+.second_graph_container_OPR {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.1fr;
+    grid-template-rows: 40vh 40vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "bonus_01 bonus_01 bonus_02 bonus_02" 
+                         "bonus_01 bonus_01 bonus_03 bonus_03" 
+                         "five five five five" 
+                         "six six six seven" 
+                         "eight eight eight eight";
+    margin: 0px 50px 50px 50px;
+}
+
+.second_graph_container_PGT {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh 70vh 70vh 70vh 70vh 70vh;
+    grid-gap: 10px;
+    grid-template-areas: "bonus_01 bonus_02" 
+                         "bonus_01 bonus_03" 
+                         "six six"
+                         "five five" 
+                         "seven seven" 
+                         "eight eight" 
+                         "nine nine";
+    margin: 0px 50px 50px 50px;
+}
+
+
+/* Grids Media Queries*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 760px) {
+    .first_graph_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "one two" "four four" "three three";
+        margin: 50px 50px 10px 50px;
+    }
+    .second_graph_container_FNT {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "five" "six" "seven" "eight";
+        margin: 0px 50px 50px 50px;
+    }
+    .second_graph_container_MVT {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "bonus_03" "five" "six" "seven" "eight" "nine";
+        margin: 0px 50px 50px 50px;
+    }
+    .second_graph_container_OPR {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "bonus_03" "five" "six" "seven" "eight";
+        margin: 0px 50px 50px 50px;
+    }
+    .second_graph_container_PGT {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "bonus_03" "five" "six" "seven" "eight" "nine";
+        margin: 0px 50px 50px 50px;
+    }
+    .second_graph_container_OPR {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "bonus_03" "five" "six" "seven" "eight";
+        margin: 0px 50px 50px 50px;
+    }
+    .second_graph_container_PGT {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-gap: 10px;
+        grid-template-areas: "bonus_01" "bonus_02" "bonus_03" "five" "six" "seven" "eight" "nine";
+        margin: 0px 50px 50px 50px;
+    }
+}
+
+/* se ambos second_graph_container_OPR second_graph_container_PGT estiverem com problema na responsividade, colocá-los nessa MQ*/
+@media screen and (max-width: 1100px) {
+
+}
+
+
+/* titles and paragraphs*/
+
+@media screen and (max-width: 1200px) {
+    .first_graph_container .title {
+        font-size: 8.5pt;
+    }
+    .first_graph_container .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_FNT .title {
+        font-size: 10pt;
+    }
+    .second_graph_container_FNT .paragraph {
+        font-size: 9pt;
+    }
+    .second_graph_container_MVT .title {
+        font-size: 10pt;
+    }
+    .second_graph_container_MVT .paragraph {
+        font-size: 9pt;
+    }
+    .second_graph_container_OPR .title {
+        font-size: 10pt;
+    }
+    .second_graph_container_OPR .paragraph {
+        font-size: 9pt;
+    }
+    .second_graph_container_PGT .title {
+        font-size: 10pt;
+    }
+    .second_graph_container_PGT .paragraph {
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .first_graph_container .title {
+        font-size: 8.5pt;
+    }
+    .first_graph_container .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_FNT .title {
+        font-size: 10pt;
+    }
+    .second_graph_container_FNT .paragraph {
+        font-size: 9pt;
+    }
+    .second_graph_container_MVT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_MVT .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_OPR .title {
+        font-size: 9pt;
+    }
+    .second_graph_container_OPR .paragraph {
+        font-size: 8pt;
+    }
+    .second_graph_container_PGT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_PGT .paragraph {
+        font-size: 7.5pt;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .first_graph_container .title {
+        font-size: 9pt;
+    }
+    .first_graph_container .paragraph {
+        font-size: 8pt;
+    }
+    .second_graph_container_FNT .title {
+        font-size: 9pt;
+    }
+    .second_graph_container_FNT .paragraph {
+        font-size: 8pt;
+    }
+    .second_graph_container_MVT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_MVT .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_OPR .title {
+        font-size: 9pt;
+    }
+    .second_graph_container_OPR .paragraph {
+        font-size: 8pt;
+    }
+    .second_graph_container_PGT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_PGT .paragraph {
+        font-size: 7.5pt;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .first_graph_container .title {
+        font-size: 10pt;
+    }
+    .first_graph_container .paragraph {
+        font-size: 9pt;
+    }
+    .second_graph_container_FNT .title {
+        font-size: 9pt;
+    }
+    .second_graph_container_FNT .paragraph {
+        font-size: 8pt;
+    }
+    .second_graph_container_MVT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_MVT .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_OPR .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_OPR .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_PGT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_PGT .paragraph {
+        font-size: 7.5pt;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .first_graph_container .title {
+        font-size: 8.5pt;
+    }
+    .first_graph_container .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_FNT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_FNT .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_MVT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_MVT .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_OPR .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_OPR .paragraph {
+        font-size: 7.5pt;
+    }
+    .second_graph_container_PGT .title {
+        font-size: 8.5pt;
+    }
+    .second_graph_container_PGT .paragraph {
+        font-size: 7.5pt;
+    }
+}
+
+
+/* Boxes Media Queries*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+@media(max-width: 1200px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 3rem;
+        min-height: 3rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 3rem;
+        min-height: 3rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 1000px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 4rem;
+        min-height: 4rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 4rem;
+        min-height: 4rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .box p {
+        color: #707070;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+    #boxes .page_box p {
+        color: #F3F3F3;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media(max-width: 800px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 5rem;
+        min-height: 5rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 5rem;
+        min-height: 5rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .box p {
+        color: #707070;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+    #boxes .page_box p {
+        color: #F3F3F3;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media(max-width: 700px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 600px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .box h3 {
+        color: #707070;
+        margin-top: -0.025rem;
+        font-size: 0.70rem;
+        font-weight: bold;
+    }
+    #boxes .page_box h3 {
+        color: #F3F3F3;
+        margin-top: -0.025rem;
+        font-size: 0.70rem;
+        font-weight: bold;
+    }
+    #boxes .box p {
+        color: #707070;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+    #boxes .page_box p {
+        color: #F3F3F3;
+        margin-top: -0.5rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media(max-width: 500px) {
+    #boxes .box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #ffffff;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .page_box {
+        width: 30%;
+        max-height: 6rem;
+        min-height: 6rem;
+        padding: 10px;
+        background: #3749E9;
+        margin: 0.25rem;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    #boxes .box h3 {
+        color: #707070;
+        margin-top: -0.025rem;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    #boxes .page_box h3 {
+        color: #F3F3F3;
+        margin-top: -0.025rem;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    #boxes .box p {
+        color: #707070;
+        margin-top: -0.25rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+    #boxes .page_box p {
+        color: #F3F3F3;
+        margin-top: -0.25rem;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+}

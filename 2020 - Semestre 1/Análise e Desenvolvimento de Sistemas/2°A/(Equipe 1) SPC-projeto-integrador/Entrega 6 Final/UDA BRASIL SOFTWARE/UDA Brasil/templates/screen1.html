@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+
+
+  <title>Login</title>
+
+  <link rel="stylesheet" href="../static/styles/screen1.css">
+  <link rel="stylesheet" href="../static/styles/screen1.css">
+
+
+</head>
+
+<body>
+  <div class="layout">
+    <div class="e1"></div>
+    <div class="e2"></div>
+    <div class="e3"></div>
+    <div class="e4"></div>
+    <div class="e5"></div>
+  </div>
+
+  <div id="logo"><img src="../static/assets/logo_UDA.png"></div>
+
+  <div id="slogan">
+    <h1>SUA ANÁLISE MAIS FÁCIL</h1>
+  </div>
+
+
+  <div id="login">
+    <h1>Log In</h1>
+  </div>
+
+  <div id="e-mail">
+    <h1>E-mail</h1>
+  </div>
+
+  <div id="senha">
+    <h1>Senha</h1>
+  </div>
+
+  <div id="campo_email">
+    <input type="email" required autofocus>
+  </div>
+
+  <div id="campo_senha">
+    <input type="password">
+  </div>
+
+  <div id="bt_log">
+    <button type="submit">
+      <a href="http://127.0.0.1:5000/input">Login</a>
+    </button>
+  </div>
+
+  <div id="bt_sair">
+    <label id="label_bt_sair">
+      Sair
+      <input type="Button"></input>
+    </label>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

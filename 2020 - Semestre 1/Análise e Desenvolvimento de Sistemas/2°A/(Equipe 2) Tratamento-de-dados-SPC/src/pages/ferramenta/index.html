@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DP Standardize</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../globalStyle.css">
+</head>
+<body>
+
+  <div class="center table-name">
+    
+    <section class="welcome">
+      <strong>Bem vindo ao DP Standardize</strong>
+    </section>
+
+    <div class="drop-zone">
+      <div class="drop-zone-thumb" data-label="Arraste o arquivo aqui ou Clique para Upload"></div>
+      <input type="file" accept=".xlsx, .csv" name="myFile" class="drop-zone-input">
+    </div>
+
+    <!-- Código antigo <section class="inputs">
+      <input class="inputTableName" type="text" placeholder="Type a file name">
+    </section>-->
+
+    <section class="buttons">
+      <a href="../login/login.html">
+        <button class="btn goBack">
+          Anterior
+        </button>
+      </a>
+
+      <!-- <a href="../analise_geral/modal.html"> -->
+      <a>
+        <button class="btn" onclick="toSettingsPage()">
+          Próximo
+        </button>
+      </a>
+
+    </section>
+  </div>
+
+  <div class="center pre-settings hidden">
+    
+    <div class="message"></div>
+    <div class="buttons">
+      <section class="buttons-col">     
+        
+      </section>
+    </div>
+  </div>  
+
+  <div class="center analizator hidden">
+    <section class="relatorio-main">
+      <h2>Relatório geral</h2>
+      <textarea 
+        class="textAreaRelatorio"
+        readonly
+        placeholder="Oppss ... ocorreu algum erro">
+      </textarea>
+    </section>
+
+    <section class="buttons-analise">
+      <button class="btn" onclick="goBackToStart(true)">Analisar outra tabela</button>
+      <button class="disabled" disabled>Gerar tabela com dados no padrão</button>
+      <button class="disabled" disabled>Gerar tabela com dados fora do padrão</button>
+    </section>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

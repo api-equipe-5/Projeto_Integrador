@@ -1,0 +1,65 @@
+
+{% extends "layouts/default.html" %}
+
+{% block title %} Chart JS {% endblock title %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="page-inner">
+        <h4 class="page-title">Análise gráfica da tabela Pagamento</h4>
+        <div class="page-category">Confira abaixo a qualidade dos dados, referente a cada uma das fontes, para a tabela de Pagamento
+        </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Confiabilidade das Fontes</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                        	<img id="teste" src="/static/img/confiabilidade_pagamento.png" style="width: 100%; height: 100%">
+                            <!-- <canvas id="lineChart"></canvas> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Consistência das Fontes</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <img id="teste" src="/static/img/consistencia_pagamento.png" style="width: 100%; height: 100%">
+                            <!-- <canvas id="barChart"></canvas> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Completude das Fontes</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <img id="teste" src="/static/img/completude_pagamento.png" style="width: 100%; height: 100%">
+                            <!-- <canvas id="pieChart" style="width: 50%; height: 50%"></canvas> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

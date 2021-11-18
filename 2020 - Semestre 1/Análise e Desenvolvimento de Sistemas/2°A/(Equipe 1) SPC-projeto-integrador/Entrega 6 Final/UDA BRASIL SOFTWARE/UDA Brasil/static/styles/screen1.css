@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/*Layout de fundo */
+
+.body {
+    width: 1280px;
+    height: 720px;
+}
+
+.layout {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.e1 {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.e2 {
+    position: absolute;
+    width: 431px;
+    height: 720px;
+    left: calc(50% - 431px/2 - 424.5px);
+    top: calc(50% - 720px/2);
+
+    background: #0C2B5A;
+}
+
+.e3 {
+    position: absolute;
+    width: 1111px;
+    height: 600px;
+    left: calc(50% - 1111px/2 + 0.5px);
+    top: calc(50% - 600px/2);
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.35);
+}
+
+.e4{
+    position: absolute;
+    width: 346px;
+    height: 600px;
+    left: calc(50% - 346px/2 - 382px);
+    top: calc(50% - 600px/2);
+
+    background: #0C2B5A;
+}
+
+.e5{
+    position: absolute;
+    width: 765px;
+    height: 600px;
+    left: calc(50% - 765px/2 + 173.5px);
+    top: calc(50% - 600px/2);
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#logo {
+    position: absolute;
+    width: 197px;
+    height: 102.08px;
+    left: 156px;
+    top: 280px;
+
+    background: url(../assets2/logo_UDA.svg)  
+}
+
+#slogan {
+    position: absolute;
+    width: 196.4px;
+    height: 13.73px;
+    left: 157px;
+    top: 408px;
+}
+
+#slogan h1{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+/*Área de Login*/
+
+#login  {
+    position: absolute;
+    width: 271px;
+    height: 27px;
+    left: 673px;
+    top: 190px;
+}
+
+#login h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #0C2B5A;
+
+}
+
+#e-mail {
+    position: absolute;
+    width: 50px;
+    height: 19px;
+    left: 592px;
+    top: 274px;
+}
+
+#e-mail h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #0C2B5A;
+}
+
+#senha {
+    position: absolute;
+    width: 48px;
+    height: 19px;
+    left: 594px;
+    top: 359px;
+
+}
+
+#senha h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #0C2B5A;
+}
+
+#campo_email {
+    position: absolute;
+    width: 435px;
+    height: 29px;
+    left: 592px;
+    top: 300px;
+}
+
+#campo_email input {
+    outline: none;
+    width: 435px;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 2px solid #D4D4D4;
+    border-radius: 25px;
+}
+
+#campo_senha {
+    position: absolute;
+    width: 435px;
+    height: 29px;
+    left: 592px;
+    top: 386px;
+}
+
+#campo_senha input{
+    outline: none;
+    width: 435px;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 2px solid #D4D4D4;
+    border-radius: 25px;
+}
+
+#bt_log{
+    position: absolute;
+    width: 435px;
+    height: 38px;
+    left: 596px;
+    top: 536px;
+
+    background: #55DE74;
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+#bt_log button {
+    position: absolute;
+    width: 435px;
+    height: 38px;
+    outline: none;
+    border: 0;
+
+    background: #55DE74;
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+#bt_log button a {
+   
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+#bt_log button:hover {
+    transition: 800ms;
+    background: #47bd63;
+}
+
+#bt_sair {
+    position: absolute;
+    width: 64px;
+    height: 29.66px;
+    left: 782px;
+    top: 580px;
+
+    
+    outline: none;
+    border: 0;
+    background: #DE6E55;
+    border-radius: 25px;
+}
+
+#label_bt_sair {
+    position: absolute;
+    width: 36px;
+    height: 13px;
+    left: 14px;
+    top: 8px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+input {
+    display: none;
+}
+
+
+

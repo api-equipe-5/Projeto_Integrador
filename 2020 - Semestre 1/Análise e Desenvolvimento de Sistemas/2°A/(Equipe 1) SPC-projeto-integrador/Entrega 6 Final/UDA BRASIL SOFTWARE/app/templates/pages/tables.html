@@ -1,0 +1,67 @@
+
+{% extends "layouts/default.html" %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="page-inner">
+        <div class="row"style="width: 100%; height: 100%">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Ranking UDA Brasil</div>
+                    </div>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <div class="card-sub">
+                            Visualize a posição das fontes em relação à qualidade de seus dados
+                        </div>
+                        <div class="table-responsive" style="width: 100%; height: 100%">
+
+                             <table class="table-striped" style="width: 100%; height: 100%">
+                                <thead>
+                                  <tr>
+                                    <th>Posição</th>
+                                    <th>Pontuação Geral</th>
+                                    <th>ID Fonte</th>
+                                    <th>Completude</th>
+                                    <th>Consistência</th>
+                                    <th>Confiabilidade</th>
+                                  </tr>
+                                </thead>
+                              
+                                <tbody>
+                                  <!-- O for loop abaixo ordena a tabela que gera o ranking de acordo
+                                  com a matriz gerada pela função "get_ranking" e importada na rota '/rank'
+                                   -->
+                                  {% for fonte in ranking %}
+                              
+                                  <tr>
+                                    <td>{{ fonte[-1] }}</td>
+                                    <td>{{ fonte[0] }}</td>
+                                    <td>{{ fonte[1] }}</td>
+                                    <td>{{ fonte[2] }}</td>
+                                    <td>{{ fonte[3] }}</td>
+                                    <td>{{ fonte[4] }}</td>
+                                  </tr>
+                              
+                                  {% endfor %}
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="git: diegosilva89, ud21">
+  <title>METAlitcs - STG_FNT_ITT</title>
+  <link rel="stylesheet" href="_style.css">
+  <link rel="icon" href="">
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <div class="metalitcs">
+        <p><b>METAlitcs</b></p>
+      </div>
+      <div class="location">
+        <div class="leftbox">
+          <p>Validação das Tabelas</p>
+        </div>
+        <div class="rightbox">
+          <p>STG_FNT_ITT</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-menu-col">
+        <div class="menu-col">
+          <div class="index">
+            <p>Validação das Tabelas</p>
+          </div>
+          <a style="text-decoration: none;" href="table_FNT.html">
+            <div class="stg-in">
+              <p>STG_FNT_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_MVT.html">
+            <div class="stg">
+              <p>STG_MVT_CRD</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_OPR.html">
+            <div class="stg">
+              <p>STG_OPR_ITT</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="table_PGT.html">
+            <div class="stg">
+              <p>STG_PGT</p>
+            </div>
+          </a>
+
+          <div class="index">
+            <p>Resultados da Remessa</p>
+          </div>
+          <a style="text-decoration: none;" href="result_MVT.html">
+            <div class="stg">
+              <p>Movimentações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_OPR.html">
+            <div class="stg">
+              <p>Operações</p>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="result_PGT.html">
+            <div class="stg">
+              <p>Pagamentos</p>
+            </div>
+          </a>
+
+          <div class="index_two_rows">
+            <p>Índice de Pagamentos<br>em Dia</p>
+          </div>
+          <a style="text-decoration: none;" href="index_MOD.html">
+            <div class="stg">
+              <p>Por Modalidades</p>
+            </div>
+          </a>
+          <div class="index_two_rows">
+            <p>Índice de Número de Pagamentos por Clientes</p>
+          </div>
+          <a style="text-decoration: none;" href="index_FaixaVAL.html">
+            <div class="stg">
+              <p>Por Faixas de Valores</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="container-content-col">
+        <section id="graphs">
+          <div class="static_graph_container_01">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validade da Tabela</div>
+              </div>
+              <div class="table_content">
+                <div class="table_value">4%</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Média de Preenchimento da Tabela</div>
+              </div>
+              <div class="table_content">
+                <div class="table_value">99%</div>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Verificação de Campos Não Nulos</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_preenchimento.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Datas Encontradas</div>
+                <div class="paragraph">Porcentagem de campos preenchidos nas colunas DAT_INC_DBO e DAT_RSS_FNT_ITT</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_tab_datas.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+
+          <div class="dynamic_graph_container_FNT">
+            <div class="graph_one">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validação dos Tipos de Dados</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_tipo.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_two">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Definição das Colunas com Dados Sensíveis</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_tab_sensibilidade.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_three">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validação de Dados idênticos</div>
+                <div class="paragraph">Porcentagem de campos preenchidos por colunas</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_unicos.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_four">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Validade Geral da Tabela</div>
+                <div class="paragraph">Porcentagem de campos de CNPJs váidos (somente linhas com Razões Sociais 
+                  Únicas), invalidados (inclui CNPJs válidos, mas em linhas com Razões Sociais Idênticas) e não
+                  válidos (CNPJs com mais ou menos de 14 caracteres)</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_cnpjs_validos.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_five">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">CNPJs Únicos x idênticos</div>
+                <div class="paragraph">Porcentagem de campos com dados únicos x idênticos</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_cnpjs_unicos.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_six">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Contagem de Caracteres dos CNPJs</div>
+                <div class="paragraph">Porcentagem de campos com 14 caracteres, mais de 14 e menos de 14 da 
+                  soma das colunas NUM_CNPJ e NUM_COMP
+                </div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_cnpjs_caracteres.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+            <div class="graph_seven">
+              <!-- graph form -->
+              <div class="head">
+                <div class="title">Razão Social Únicos x Idênticos</div>
+                <div class="paragraph">Porcentagem de campos com dados únicos x idênticos</div>
+              </div>
+              <div class="content">
+                <iframe src=pags/fnt_nomes_unicos.html></iframe>
+              </div>
+              <!-- graph form -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
