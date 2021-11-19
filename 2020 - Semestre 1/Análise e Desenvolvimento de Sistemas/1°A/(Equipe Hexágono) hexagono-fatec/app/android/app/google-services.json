@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "941934779919",
+    "firebase_url": "https://app-db-e1e6c.firebaseio.com",
+    "project_id": "app-db-e1e6c",
+    "storage_bucket": "app-db-e1e6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941934779919:android:15693fb460581383b64d7a",
+        "android_client_info": {
+          "package_name": "com.hexagono.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941934779919-ear56rvd9oqenca5fm2sq115mrqmmi51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hexagono.app",
+            "certificate_hash": "ae29246eeccb3abd4ac7d28c4ed62cfec7931b53"
+          }
+        },
+        {
+          "client_id": "941934779919-p4vbk6jvskr9sbttts6qon9pp5m43279.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXWlLbIRrjvIZhn5zR7CAiukAUJWbZvNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941934779919-p4vbk6jvskr9sbttts6qon9pp5m43279.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
