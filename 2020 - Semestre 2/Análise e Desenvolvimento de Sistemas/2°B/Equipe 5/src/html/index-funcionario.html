@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entregas Rápidas by iTruck Solutions</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="../img/header-sidebar.png" alt="sidebar image">
+      <div class="user-level">
+        <img src="../img/user-circle.png" alt="user identification">
+      <h2>Administrador</h2></div>
+      <ul class="nav">
+        <li>
+          <a href="funcionarios.html">
+            <span>Funcionários</span>
+          </a>
+        </li>
+        <li>
+          <a href="filiais.html">
+            <span>Filiais</span>
+          </a>
+        </li>
+        <li>
+          <a href="veiculos.html">
+            <span>Veículos</span>
+          </a>
+        </li>
+        <li>
+          <a href="estados.html">
+            <span>Estados</span>
+          </a>
+        </li>
+        <li>
+          <a href="jornadas.html">
+            <span>Jornadas</span>
+          </a>
+        </li>
+        <li>
+          <a href="contato.html">
+            <span>Contato - iTruck</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="container">   
+          <div id="content-title">
+          FUNCIONÁRIO   
+          </div>
+          <form>
+            <div class="container-form">
+            <div>
+              <label for="Nome">Nome:</label>
+              <input type="text" class="nome-funcionario" required>
+            </div>
+            <div>
+              <label for="cpf">CPF:</label>
+              <input type="text" class="cpf-funcionario" placeholder="Ex.: 000.000.000-00" data-mask="000.000.000-00" maxlength="14" autocomplete="off" required>
+              <label for="rg">RG:</label>
+              <input type="text" class="rg-funcionario" placeholder="Ex.: 00.000.000-0" data-mask="00.000.000-0" maxlength="12" autocomplete="off" required>
+            </div>
+            <div>
+            <label for="cep">CEP</label>
+                <input class="cep-funcionario"id="cep" type="text" placeholder="Somente Números"required>
+            <label for="logradouro">Logradouro</label>
+                <input class="logradouro-funcionario"id="logradouro" type="text" required>
+            </div>
+            <div>
+            <label for="numero">Número</label>
+                <input class="num-end-func"id="numero" type="text" required>
+            <label for="complemento">Complemento</label>
+                <input class="compl-end-func"id="complemento" type="text"/>
+            </div>
+            <div>
+            <label for="bairro">Bairro</label>
+                <input class="bairro-end-func" id="bairro" type="text" required>
+            <label for="uf">Estado</label>
+                <select id="uf" class="estado-end-func">
+                  <option value="selecione">Selecione um Estado:</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+              <label for="telefone">Telefone:</label>
+              <input type="text" class="telefone-funcionario" placeholder="Ex.: (00)0000-0000" data-mask="(00)0000-0000" maxlength="13" autocomplete="off">
+              <label for="celular">Celular:</label>
+              <input type="text" class="celular-funcionario" placeholder="Ex.: (00)00000-0000" data-mask="(00)00000-0000" maxlength="14" autocomplete="off" required>
+            </div>
+            <div>
+              <label for="cod-filial">Código da Filial</label>
+              <select name="cod-filial" id="cod-filial">
+                <option value="selecione">Selecione uma Filial:</option>
+                <option value="0001">0001 - São José dos Campos</option>
+                <option value="0002">0002 - Jacareí</option>
+                <option value="0003">0003 - Curitiba</option>
+                <option value="0004">0004 - Uberlândia</option>
+              </select>
+              <label for="cargos-funcionários">Cargo:</label>
+              <select class="cargo-funcionario"name="cargo-funcionario" id="cargo-funcionario">
+                <option value="selecione">Selecione uma opção:</option>
+                <option value="administrador">Administrador</option>
+                <option value="entregador">Entregador</option>
+                <option value="motorista">Motorista</option>
+                <option value="supervisor">Supervisor</option>
+              </select>
+            </div>
+            <div>
+              <label for="Email">Email:</label>
+              <input type="email" class="email-funcionario" placeholder="seuemail@provedor.com" required>
+            </div>
+            <div>
+              <label for="login">Login:</label>
+              <input type="text" class="login-funcionario" maxlength="14" required>
+              <label for="senha">Senha:</label>
+              <input type="password" class="senha-funcionario" maxlength="10" autocomplete="off" required>
+            </div>
+            </div>
+            </form>
+          <a class="btn-cadastrar" href="funcionarios.html">Salvar dados</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#cep").focusout(function(){
+        //Início do Comando AJAX
+        $.ajax({
+          //O campo URL diz o caminho de onde virá os dados
+          //É importante concatenar o valor digitado no CEP
+          url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+          //Aqui você deve preencher o tipo de dados que será lido,
+          //no caso, estamos lendo JSON.
+          dataType: 'json',
+          //SUCESS é referente a função que será executada caso
+          //ele consiga ler a fonte de dados com sucesso.
+          //O parâmetro dentro da função se refere ao nome da variável
+          //que você vai dar para ler esse objeto.
+          success: function(resposta){
+            //Agora basta definir os valores que você deseja preencher
+            //automaticamente nos campos acima.
+            $("#logradouro").val(resposta.logradouro);
+            $("#complemento").val(resposta.complemento);
+            $("#bairro").val(resposta.bairro);
+            $("#cidade").val(resposta.localidade);
+            $("#uf").val(resposta.uf);
+            //Vamos incluir para que o Número seja focado automaticamente
+            //melhorando a experiência do usuário
+            $("#numero").focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

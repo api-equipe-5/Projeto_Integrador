@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JOGO DA MEMÓRIA</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você encontrou todos os pares com</p>
+        <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+        <a href="index.html">Jogar denovo</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+      <a href="index.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros <span id="movimentos">0</span></h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+        <a href="index.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "fonte">
+          <img
+            class="frente"
+            src="https://images-na.ssl-images-amazon.com/images/I/713lc7EipEL._AC_SX466_.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "fonte">
+          <img
+            class="frente"
+            src="https://images-na.ssl-images-amazon.com/images/I/713lc7EipEL._AC_SX466_.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pendrive">
+          <img
+            class="frente"
+            src="https://static3.tcdn.com.br/img/img_prod/49613/180_pendrive_16gb_altomex_al_u_16_5457_1_20191022142618.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pendrive">
+          <img
+            class="frente"
+            src="https://static3.tcdn.com.br/img/img_prod/49613/180_pendrive_16gb_altomex_al_u_16_5457_1_20191022142618.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "monitor">
+          <img
+            class="frente"
+            src="https://images.tcdn.com.br/img/img_prod/740836/monitor_concordia_gamer_curvo_c78_27_led_full_hd_ips_hdmi_vga_1585_1_20201002092005.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "monitor">
+          <img
+            class="frente"
+            src="https://images.tcdn.com.br/img/img_prod/740836/monitor_concordia_gamer_curvo_c78_27_led_full_hd_ips_hdmi_vga_1585_1_20201002092005.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "gabinete">
+          <img
+            class="frente"
+            src="https://www.oceanoinformatica.com.br/media/catalog/product/cache/1/thumbnail/2000x2000/9df78eab33525d08d6e5fb8d27136e95/g/a/gabinete_bg-00.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "gabinete">
+          <img
+            class="frente"
+            src="https://www.oceanoinformatica.com.br/media/catalog/product/cache/1/thumbnail/2000x2000/9df78eab33525d08d6e5fb8d27136e95/g/a/gabinete_bg-00.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pulseira antiestatica">
+          <img
+            class="frente"
+            src="https://cdn.dooca.store/27/products/pulseira_640x640+fill_ffffff.jpg?v=1596639504&webp=0"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pulseira antiestatica">
+          <img
+            class="frente"
+            src="https://cdn.dooca.store/27/products/pulseira_640x640+fill_ffffff.jpg?v=1596639504&webp=0"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "mouse">
+          <img
+            class="frente"
+            src="https://images-na.ssl-images-amazon.com/images/I/613bhsrtc4L._AC_SX466_.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "mouse">
+          <img
+            class="frente"
+            src="https://images-na.ssl-images-amazon.com/images/I/613bhsrtc4L._AC_SX466_.jpg"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="https://image.flaticon.com/icons/svg/2476/2476231.svg"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <footer>
+      <ul>
+        <li><h3>Produzido por </h3></li>
+        <li><h3>S.O.S Educa</h3></li>
+      </ul>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
