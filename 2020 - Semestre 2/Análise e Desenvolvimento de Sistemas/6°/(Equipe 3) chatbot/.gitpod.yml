@@ -1,0 +1,13 @@
+ports:
+  - port: 8080
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - command: psql -f backend/src/main/resources/database/db.sql
+
+vscode:
+  extensions:
+    - Pivotal.vscode-spring-boot@1.21.0:VrPD7WUvW3BLuex1cvs7Sg==
+    - PKief.material-icon-theme@4.3.0:URe4ANXBLYHzB6CeGyTN8A==
