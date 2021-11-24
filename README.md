@@ -44,7 +44,7 @@ os projetos;
 
 <h2> SPRINT 3 :ballot_box_with_check:</h2>
 <h3> DESENVOLVIMENTO DA PÁGINA WEB </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/GIF_Site.gif" height="450"/></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/site.gif" height="450"/></h1>
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
