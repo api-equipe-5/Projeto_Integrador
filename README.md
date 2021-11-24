@@ -3,7 +3,7 @@
 <h2> :dart: Objetivo</h2>
 
 ##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos. 
-
+- [x] teste
 <h2> :calendar: Cronograma de entregas </h2>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints.png" /></h1>
 <br>
