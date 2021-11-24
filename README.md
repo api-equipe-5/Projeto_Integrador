@@ -31,7 +31,7 @@ os projetos;
 
 <h2> SPRINT 1 :ballot_box_with_check:</h2>
 <h3> WIREFRAME </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Wireframe.gif" height="450"/></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Prot%C3%B3tipo.gif" height="450"/></h1>
 <br>
  
 <h2> SPRINT 2 :ballot_box_with_check:</h2>
