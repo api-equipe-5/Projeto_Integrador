@@ -2,8 +2,23 @@
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" /></h1>
 <h2> :dart: Objetivo</h2>
 
-##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos. 
-- [x] teste
+##### O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos.
+
+<h2> Requisitos Funcionais </h2>
+
+- [x] As pastas devem seguir uma organização por curso, semestre, turma e equipe; 
+- [x] Clonagem dos repositórios dos projetos anteriores;
+- [x] Gerar um código para incorporar na página da Fatec SJC, contendo a indexação de todos
+os projetos;
+- [x] Linguagem CSS, HTML e Python;
+- [x] Raspagem das URLs dos projetos no canal do youtube da Fatec SJC;
+- [x] Upload dos projetos para o GitHub da Fatec SJC.
+
+<h2> Requisitos Não Funcionais </h2>
+
+- [ ] Manual de Instalação;
+- [x] Organização do GitHub.
+
 <h2> :calendar: Cronograma de entregas </h2>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints.png" /></h1>
 <br>
