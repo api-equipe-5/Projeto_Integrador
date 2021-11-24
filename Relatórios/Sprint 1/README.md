@@ -1,6 +1,6 @@
 
 <h2> :calendar: Cronograma de entregas </h2>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints.png" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/cronograma-sprint1.png" /></h1>
 <br>
 
 ## :pushpin: Backlog
