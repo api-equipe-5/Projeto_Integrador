@@ -29,22 +29,9 @@ os projetos;
 
 <h1> :rocket: MVP </h1>
 
-<h2> SPRINT 1 :ballot_box_with_check:</h2>
-<h3> WIREFRAME </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Wireframe.gif" height="450"/></h1>
-<br>
- 
-<h2> SPRINT 2 :ballot_box_with_check:</h2>
-<h3> PROTÓTIPO DO SITE</h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/site-gif.gif" height="450"/></h1>
-<br>
-<h3> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/clonagem.gif" height="450"/></h1>
-<br>
-
 <h2> SPRINT 3 :ballot_box_with_check:</h2>
 <h3> DESENVOLVIMENTO DA PÁGINA WEB </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/GIF_Site.gif" height="450"/></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/GIF_Site.gif" height="450"/></h1>
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
