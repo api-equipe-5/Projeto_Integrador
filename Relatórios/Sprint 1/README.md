@@ -10,14 +10,16 @@
 
 <h1> :rocket: MVP </h1>
 
+
+<h5>Na sprint 1, entregamos o wireframe. Um site contendo os trabalhos dos projetos anteriores com os seus respectivos links de apresentação e repositórios. Com uma página do administrador que possui acesso de adicionar ou remover projetos, o usuário master poderá convidar usuários para inserir projetos e retirar o acesso posteriormente. O convidado irá criar um login logo após de receber o convite no e-mail, onde terá acesso para a inclusão do projeto. Para facilitar a busca, terá uma pesquisa avançada contendo o ano, semestre, turma e equipe.
+Fizemos a raspagem manual dos links, além de realizar a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h5>
+
+
 <h2> SPRINT 1 :ballot_box_with_check:</h2>
 <h3> PROTÓTIPO </h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Prot%C3%B3tipo.gif" height="450"/></h1>
 <br>
  
-<h4>Na sprint 1, entregamos o wireframe. Um site contendo os trabalhos dos projetos anteriores com os seus respectivos links de apresentação e repositórios. Com uma página do administrador que possui acesso de adicionar ou remover projetos, o usuário master poderá convidar usuários para inserir projetos e retirar o acesso posteriormente. O convidado irá criar um login logo após de receber o convite no e-mail, onde terá acesso para a inclusão do projeto. Para facilitar a busca, terá uma pesquisa avançada contendo o ano, semestre, turma e equipe.
-
-Fizemos a raspagem manual dos links, além de realizar a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h4>
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
 #### Discord, Teams e Whatsapp: Comunicação
