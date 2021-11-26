@@ -13,7 +13,7 @@
 
 
 <h3 align="center"> DESENVOLVIMENTO DA PÁGINA WEB </h3>
-<h5 align="justify"> Na sprint 3, desenvolvemos melhor a página web com um design modificado. Na página inicial, o cabeçalho possui ícones que levam para as redes sociais da Fatec-sjc. O rodapé possui o brasão do Centro Paula Souza. No corpo do site contém ícones de cada curso,  por meio de um botão é possível selecionar o ano dos projetos, que leva para uma nova aba com uma lista contendo o nome da equipe, semestre,  link do YouTube e GitHub. No canto superior esquerdo tem um caixa de seleção para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre para facilitar a busca. </h5>
+<h5 align="justify"> Nessa sprint, foi mais bem desenvolvido a página web contendo um design modificado. Na página inicial, temos o cabeçalho onde possui os ícones que levam para as redes sociais da Fatec-sjc. No rodapé temos o brasão do Centro Paula Souza e o brasão do governo estadual. O corpo do site contém os ícones de cada curso e por meio de um botão é possível selecionar o ano desejado dos projetos, que em seguida o(a) redireciona para uma nova aba com uma lista que contém os nomes das equipes, semestres, links do YouTube e GitHub. No canto superior esquerdo tem um caixa de seleção que serve para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre desejados para facilitar a busca. </h5>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/GIF_Site.gif" height="450"/></h1>
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
