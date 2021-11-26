@@ -33,5 +33,5 @@ os projetos;
  <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="70"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/cyb-logo.png" height="70" />
  
 
- <h5 align="center"> Projeto Integrador - Fatec São José dos Campos </h5>
+ <h5 align="center"> Projeto Integrador - Faculdade de Tecnologia de São José dos Campos - Prof. Jessen Vidal </h5>
 
