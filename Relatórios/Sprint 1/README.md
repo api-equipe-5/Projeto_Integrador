@@ -11,11 +11,11 @@
 <br>
 
 <h1> :rocket: MVP </h1>
-<h5 align="justify">Na sprint 1, fizemos a raspagem manual dos links, além de realizar a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h5>
+<h5 align="justify">Na sprint 1, realizamos a raspagem manual dos links. Efetuamos a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h5>
 
 
-<h3 align="center"> PROTÓTIPO </h3>
-<h5 align="justify">Entregamos também o wireframe. Um protótipo contendo os trabalhos dos projetos anteriores com os seus respectivos links de apresentação e repositórios. Com uma página do administrador que possui acesso de adicionar ou remover projetos, o usuário master poderá convidar usuários para inserir projetos e retirar o acesso posteriormente. O convidado irá criar um login logo após de receber o convite no e-mail, onde terá acesso para a inclusão do projeto. Para facilitar a busca, terá uma pesquisa avançada contendo o ano, semestre, turma e equipe. <br> </h5>
+<h3 align="center"> WIREFRAME </h3>
+<h5 align="justify">Inclusive entregamos o wireframe, contendo os trabalhos dos projetos anteriores com os seus respectivos links de apresentação e repositório. Para facilitar a busca, terá uma pesquisa avançada contendo o ano, semestre, turma e equipe. Haverá uma página do administrador com a funcionalidade de adicionar, remover projetos, convidar usuários e removê-los posteriormente. Aqueles que forem convidados receberão um convite no e-mail, tendo que criar um login, em seguida possuindo acesso para a inclusão do projeto. <br> </h5>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Prot%C3%B3tipo.gif" height="450"/></h1>
 <br>
  
