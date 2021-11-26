@@ -29,7 +29,7 @@
 
 #### Teams e Whatsapp: Comunicação
 
-#### Figma: Edição de imagem
+#### Figma: Editor gráfico
 
 #### Git: Versionamento
 
