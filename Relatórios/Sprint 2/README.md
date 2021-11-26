@@ -35,10 +35,10 @@ os projetos;
 
 No protótipo temos a página inicial onde possui uma tabela com os cursos sendo possivel a escolha de um deles, logo após será direcionado para uma página com uma lista de todas as equipes, com as informações do ano, link do GitHub ou GitLab e Youtube. No canto superior esquerdo tem um caixa de seleção para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre para facilitar a busca.</h5>
 
-<h3> PROTÓTIPO DO SITE</h3>
+<h3 align="center"> PROTÓTIPO DO SITE</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/prototipo-site_sprint2.gif" height="450"/></h1>
 <br>
-<h3> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
+<h3 align="center"> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/clonagem_sprint2.gif" height="450"/></h1>
 <br>
  
