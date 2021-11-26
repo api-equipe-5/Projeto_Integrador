@@ -17,7 +17,9 @@
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
-#### Teams e Whatsapp: Comunicação
+#### Bootstrap: Framework front-end
+
+#### CSS3: Linguagem de folha de estilo
 
 #### Figma: Editor gráfico 
 
@@ -26,12 +28,10 @@
 #### GitHub: Hospedagem de código-fonte e arquivos
 
 #### HTML5: Linguagem de marcação
-
-#### CSS3: Linguagem de folha de estilo
  
 #### jQuery: Biblioteca de funções JavaScript
 
-#### Python: Linguagem de programação 
+#### Teams e Whatsapp: Comunicação
 
 <br>
 
