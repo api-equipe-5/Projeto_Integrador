@@ -3,7 +3,7 @@
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"></h1>
 
 <h2> :calendar: Cronograma de entregas </h2>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/cronograma-sprint%204.png" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/cronograma-sprint%204.png" height="250"></h1>
 <br>
 
 ## :pushpin: Backlog
@@ -11,6 +11,10 @@
 <br>
 
 <h1> :rocket: MVP </h1>
+<h2> PUBLICAÇÃO DA PÁGINA</h2>
+Na sprint 4, publicamos a nossa página web, deixando-a pública, através do Netlify, uma ferramenta que permite a hospedagem do site, a qual poderá acessar aqui.
+
+
 
 <h3>  </h3>
 <h1 align="center"> <img src = "" height="450"/></h1>
