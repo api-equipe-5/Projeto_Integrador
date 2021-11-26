@@ -54,7 +54,7 @@
 
 
 
- <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="90"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/cyb.png" height="160" />
+ <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="90"  align="auto"> <img src="">
  
 
  <h5 align="center"> Projeto Integrador - Fatec São José dos Campos </h5>
