@@ -11,7 +11,7 @@
 <br>
 
 <h1> :rocket: MVP </h1>
-<h5 align="justify">Na sprint 1, realizamos a raspagem manual dos links. Efetuamos a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h5>
+<h5 align="justify">Nessa sprint, realizamos a raspagem manual dos links. Efetuamos a clonagem e upload dos projetos no GitHub, organizando os mesmos por curso, semestre, turma e equipe.</h5>
 
 
 <h3 align="center"> WIREFRAME </h3>
