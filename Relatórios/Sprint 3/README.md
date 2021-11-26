@@ -19,7 +19,7 @@
 
 #### Teams e Whatsapp: Comunicação
 
-#### Figma: Edição de imagem 
+#### Figma: Editor gráfico 
 
 #### Git: Versionamento
 
@@ -28,7 +28,6 @@
 #### HTML5: Linguagem de marcação
 
 #### CSS3: Linguagem de folha de estilo
-
  
 #### jQuery: Biblioteca de funções JavaScript
 
