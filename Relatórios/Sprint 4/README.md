@@ -24,7 +24,7 @@ os projetos;
 <br>
 
 ## :pushpin: Backlog
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Backlog.png" height="800" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/backlog.png" height="500" /></h1>
 <br>
 
 <h1> :rocket: MVP </h1>
