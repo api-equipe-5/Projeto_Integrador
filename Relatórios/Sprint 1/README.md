@@ -1,5 +1,7 @@
 <h1 align="center"> SPRINT 1 :ballot_box_with_check: </h1>
 
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"/></h1>
+
 <h2> :calendar: Cronograma de entregas </h2>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/cronograma-sprint1.png" /></h1>
 <br>
