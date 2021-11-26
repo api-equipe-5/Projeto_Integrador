@@ -19,50 +19,6 @@ os projetos;
 - [ ] Manual de Instalação;
 - [x] Organização do GitHub.
 
-<h2> :calendar: Cronograma de entregas </h2>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Sprints.png" /></h1>
-<br>
-
-## :pushpin: Backlog
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Backlog.png" height="800" /></h1>
-<br>
-
-<h1> :rocket: MVP </h1>
-
-<h2> SPRINT 1 :ballot_box_with_check:</h2>
-<h3> WIREFRAME </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Prot%C3%B3tipo.gif" height="450"/></h1>
-<br>
- 
-<h2> SPRINT 2 :ballot_box_with_check:</h2>
-<h3> PROTÓTIPO DO SITE</h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/site-gif.gif" height="450"/></h1>
-<br>
-<h3> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/clonagem.gif" height="450"/></h1>
-<br>
-
-<h2> SPRINT 3 :ballot_box_with_check:</h2>
-<h3> DESENVOLVIMENTO DA PÁGINA WEB </h3>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/site.gif" height="450"/></h1>
- 
-<h1> 	:gear: Tecnologias Utilizadas</h2>
-
-#### Teams: Comunicação
-
-#### Whatsapp: Comunicação
-
-#### Git: Versionamento
-
-#### GitHub: Hospedagem de código-fonte e arquivos
-
-#### HTML5 e CSS3: Linguagens de marcação 
- 
-#### jQuery: Biblioteca de funções JavaScript
-
-#### Python: Linguagem de programação 
-
-<br>
 
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
@@ -74,7 +30,7 @@ os projetos;
 
 
 
- <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="90"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/cyb.png" height="160" />
+ <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="70"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/cyb-logo.png" height="70" />
  
 
  <h5 align="center"> Projeto Integrador - Fatec São José dos Campos </h5>
