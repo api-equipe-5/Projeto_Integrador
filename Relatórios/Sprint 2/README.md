@@ -1,4 +1,4 @@
-<h1 align="center"> SPRINT 2 </h1>
+<h1 align="center"> SPRINT 2  :ballot_box_with_check: </h1>
  
 <h1> Equipe 5</h1>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" /></h1>
@@ -26,7 +26,7 @@ os projetos;
 <br>
 
 ## :pushpin: Backlog
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/backlog.png" height="500" /></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/backlog-sprint2.png" height="500" /></h1>
 <br>
 
 <h1> :rocket: MVP </h1>
@@ -35,7 +35,6 @@ os projetos;
 
 No protótipo temos a página inicial onde possui uma tabela com os cursos sendo possivel a escolha de um deles, logo após será direcionado para uma página com uma lista de todas as equipes, com as informações do ano, link do GitHub ou GitLab e Youtube. No canto superior esquerdo tem um caixa de seleção para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre para facilitar a busca.</h5>
 
-<h2> SPRINT 2 :ballot_box_with_check:</h2>
 <h3> PROTÓTIPO DO SITE</h3>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/prototipo-site_sprint2.gif" height="450"/></h1>
 <br>
