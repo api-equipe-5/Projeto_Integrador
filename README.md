@@ -29,6 +29,11 @@ os projetos;
 |<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/README.md">Sprint 3 </a>|
 |<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/README.md">Sprint 4 </a>|
 
+<br>
+
+<h3> Para conferir o resultado final, <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> clique aqui  </a> </h3>
+
+<br>
 
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
