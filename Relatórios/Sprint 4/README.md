@@ -11,13 +11,13 @@
 <br>
 
 <h1> :rocket: MVP </h1>
-<h2> PUBLICAÇÃO DA PÁGINA</h2>
-Na sprint 4, publicamos a nossa página web, deixando-a pública, através do Netlify, uma ferramenta que permite a hospedagem do site, a qual poderá acessar aqui.
+<h3 align="center"> PUBLICAÇÃO DA PÁGINA</h3>
+<h5 align="justify"> Através do Netlify, uma ferramenta que permite a hospedagem do site, publicamos a nossa página web, deixando-a pública, a qual poderá acessar
+<a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> aqui </a> </h5>
+
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/site-sprint4.gif" height="450"/></h1>
 
 
-
-<h3>  </h3>
-<h1 align="center"> <img src = "" height="450"/></h1>
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
@@ -40,9 +40,9 @@ Na sprint 4, publicamos a nossa página web, deixando-a pública, através do Ne
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
 | -------- |-------- |-------- |
-|**Ana Carolina das Neves** (Scrum Master)|[@GitHub](https://github.com/AnaCarolinaNeves)|[@LinkedIn](https://www.linkedin.com/in/ana-carolina-neves-36aa68207/)|
-|**Barbara dos Santos Sant'Ana**|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
-|**Gabriele Stephanie Silva de Oliveira**|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
+|**Ana Carolina das Neves** (Scrum Master)|<a href="https://github.com/AnaCarolinaNeves" target="_blank"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/ana-carolina-neves-36aa68207/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Barbara dos Santos Sant'Ana**|<a href="https://github.com/BaahSSantana" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/barbara-santana/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Gabriele Stephanie Silva de Oliveira**|<a href="https://github.com/oliveira-gabriele" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> |<a href="https://www.linkedin.com/in/gabriele-oliveira-929317221" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
 <br>
 
 
