@@ -25,10 +25,11 @@ os projetos;
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
 | -------- |-------- |-------- |
-|**Ana Carolina das Neves** (Scrum Master)|[@GitHub](https://github.com/AnaCarolinaNeves)|[@LinkedIn](https://www.linkedin.com/in/ana-carolina-neves-36aa68207/)|
-|**Barbara dos Santos Sant'Ana**|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
-|**Gabriele Stephanie Silva de Oliveira**|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
+|**Ana Carolina das Neves** (Scrum Master)|<a href="https://github.com/AnaCarolinaNeves" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/ana-carolina-neves-36aa68207/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Barbara dos Santos Sant'Ana**|<a href="https://github.com/BaahSSantana" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/barbara-santana/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Gabriele Stephanie Silva de Oliveira**|<a href="https://github.com/oliveira-gabriele" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> |<a href="https://www.linkedin.com/in/gabriele-oliveira-929317221" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
 <br>
+
 
 
 
