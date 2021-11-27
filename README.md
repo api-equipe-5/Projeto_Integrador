@@ -21,6 +21,14 @@ os projetos;
 - [ ] Manual de Instalação;
 - [x] Organização do GitHub.
 
+## Relatórios
+|Resultados|
+| -------- |
+|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/README.md">Sprint 1 </a>|
+|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/README.md">Sprint 2 </a>|
+|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/README.md">Sprint 3 </a>|
+|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/README.md">Sprint 4 </a>|
+
 
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
