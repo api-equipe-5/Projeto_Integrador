@@ -12,7 +12,7 @@
 
 <h1> :rocket: MVP </h1>
 <h3 align="center"> PUBLICAÇÃO DA PÁGINA</h3>
-<h5 align="justify"> Através do Netlify, uma ferramenta que permite a hospedagem do site, publicamos a nossa página web, deixando-a pública, a qual poderá acessar
+<h5 align="justify"> Através do Netlify, uma ferramenta que permite a hospedagem de sites. Publicamos a nossa página web, deixando-a pública, a qual poderá acessar
 <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> aqui </a> </h5>
 
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/site-sprint4.gif" height="450"/></h1>
