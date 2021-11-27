@@ -13,7 +13,7 @@
 
 
 <h3 align="center"> DESENVOLVIMENTO DA PÁGINA WEB </h3>
-<h5 align="justify"> Nessa sprint, foi mais bem desenvolvido a página web contendo um design modificado. Na página inicial, temos o cabeçalho onde possui os ícones que levam para as redes sociais da Fatec-sjc. No rodapé temos o brasão do Centro Paula Souza e o brasão do governo estadual. O corpo do site contém os ícones de cada curso e por meio de um botão é possível selecionar o ano desejado dos projetos, que em seguida o(a) redireciona para uma nova aba com uma lista que contém os nomes das equipes, semestres, links do YouTube e GitHub. No canto superior esquerdo tem um caixa de seleção que serve para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre desejados para facilitar a busca. </h5>
+<h5 align="justify"> Nessa sprint, foi mais bem desenvolvido a página web contendo um design modificado. Na página inicial, temos o cabeçalho onde possui os ícones que levam para as redes sociais da Fatec São José dos Campos. No rodapé temos o brasão do Centro Paula Souza e o do governo estadual. O corpo do site contém os ícones de cada curso, por meio de um botão, é possível selecionar o ano desejado dos projetos, sendo redirecionando para uma nova aba com uma lista que contém os nomes das equipes, semestres, links do YouTube e GitHub. No canto superior esquerdo tem um caixa de seleção para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe ou semestre desejados para facilitar a busca. </h5>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/GIF_Site.gif" height="450"/></h1>
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
@@ -39,9 +39,9 @@
 ## Time de Desenvolvimento
 |Nome|GitHub|LinkedIn|
 | -------- |-------- |-------- |
-|**Ana Carolina das Neves** (Scrum Master)|[@GitHub](https://github.com/AnaCarolinaNeves)|[@LinkedIn](https://www.linkedin.com/in/ana-carolina-neves-36aa68207/)|
-|**Barbara dos Santos Sant'Ana**|[@GitHub](https://github.com/BaahSSantana)|[@LinkedIn](https://www.linkedin.com/in/barbara-santana/)|
-|**Gabriele Stephanie Silva de Oliveira**|[@GitHub](https://github.com/oliveira-gabriele)|[@LinkedIn](https://www.linkedin.com/in/gabriele-oliveira-929317221/)|
+|**Ana Carolina das Neves** (Scrum Master)|<a href="https://github.com/AnaCarolinaNeves" target="_blank"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/ana-carolina-neves-36aa68207/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Barbara dos Santos Sant'Ana**|<a href="https://github.com/BaahSSantana" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/barbara-santana/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
+|**Gabriele Stephanie Silva de Oliveira**|<a href="https://github.com/oliveira-gabriele" target="_blanck"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> |<a href="https://www.linkedin.com/in/gabriele-oliveira-929317221" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
 <br>
 
  <h1 align="center"> <img src = "https://fatecsjc-prd.azurewebsites.net/images/logo/fatecsjc_400x192.png" height="70"  align="auto"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/cyb-logo.png" height="70" />
