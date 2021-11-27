@@ -6,7 +6,7 @@
 
 <p align="justify"> O objetivo desse projeto é criar um site que exibirá todos os projetos de Aprendizagem por Projeto Integrador da FATEC SJC, através de diferentes fontes de dados, a seguir, fornecê-los para o cliente. A função desse projeto é solucionar todas as questões que envolvem os APIs anteriores para que assim o cliente consiga ter total acesso e para que não haja perda dos projetos.</p>
 
-<h2> Requisitos Funcionais </h2>
+<h2> :bookmark_tabs: Requisitos Funcionais </h2>
 
 - [x] As pastas devem seguir uma organização por curso, semestre, turma e equipe; 
 - [x] Clonagem dos repositórios dos projetos anteriores;
@@ -16,13 +16,13 @@ os projetos;
 - [x] Raspagem das URLs dos projetos no canal do youtube da Fatec SJC;
 - [x] Upload dos projetos para o GitHub da Fatec SJC.
 
-<h2> Requisitos Não Funcionais </h2>
+<h3> Requisitos Não Funcionais </h3>
 
 - [ ] Manual de Instalação;
 - [x] Organização do GitHub.
 
-## Relatórios
-|Resultados|
+## :clipboard:Relatórios
+|Resultados:open_file_folder:|
 | -------- |
 |<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/README.md">Sprint 1 </a>|
 |<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/README.md">Sprint 2 </a>|
