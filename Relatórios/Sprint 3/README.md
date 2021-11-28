@@ -2,7 +2,7 @@
 
 <h1 align="center"> SPRINT 3 :ballot_box_with_check:</h1>
 
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"/></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/cyberbug-logo.png" height="300" width="600"/></p>
 
 <p align="center">
     <a href="#cronograma">Cronograma</a> | 
@@ -33,7 +33,7 @@
 
 <h3 align="center"> DESENVOLVIMENTO DA PÁGINA WEB </h3>
 <p align="justify"> Nessa sprint, foi mais bem desenvolvido a página web contendo um design modificado. Na página inicial, temos o cabeçalho onde possui os ícones que levam para as redes sociais da Fatec São José dos Campos. No rodapé temos o brasão do Centro Paula Souza e o do governo estadual. O corpo do site contém os ícones de cada curso, por meio de um botão, é possível selecionar o ano desejado dos projetos, sendo redirecionando para uma nova aba com uma lista que contém os nomes das equipes, semestres, links do YouTube e GitHub. No canto superior esquerdo tem um caixa de seleção para filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe ou semestre desejados para facilitar a busca. </p>
-<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/GIF_Site.gif" height="450"/></h1>
+<h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/img/site-sprint3.gif"></h1>
  
 <span id="tecnologias"> 
  
