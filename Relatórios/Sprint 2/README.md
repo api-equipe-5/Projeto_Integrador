@@ -32,13 +32,13 @@
 
 <h3 align="center"> PROTÓTIPO DO SITE</h3>
 
-<h5 align="justify"> Nessa sprint, fizemos um protótipo da página inicial do site contendo uma tabela com os cursos onde será possível fazer a escolha de um deles, logo após será direcionado para uma página que terá uma lista de todas as equipes, com as informações do ano, link do Youtube e GitHub ou GitLab. No canto superior esquerdo tem uma caixa de seleção onde é possível filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre para facilitar a busca.</h5>
+<p align="justify"> Nessa sprint, fizemos um protótipo da página inicial do site contendo uma tabela com os cursos onde será possível fazer a escolha de um deles, logo após será direcionado para uma página que terá uma lista de todas as equipes, com as informações do ano, link do Youtube e GitHub ou GitLab. No canto superior esquerdo tem uma caixa de seleção onde é possível filtrar a quantidade de linhas em uma mesma página. Há também um campo de pesquisa, onde pode ser digitado o nome da equipe, ano ou semestre para facilitar a busca.</p>
 <h1 align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/prototipo-site_sprint2.gif" height="450"/></h1>
 <br>
 
 <h3 align="center"> CÓDIGO DE CLONAGEM DO SITE FATEC</h3>
  
-<h5 align="justify"> Foi entregue também um código que faz a raspagem de forma automática, utilizando as bibliotecas do Python Beautiful Soup e Requests. Os dados foram retirados do site da Fatec São José dos Campos, onde os links do youtube de cada equipe foram armazenados em uma lista. A partir dos dados armazenados foi possível encontrar o nome da equipe, ano com semestre e curso, além dos links do GitHub que levam para o repositório do projeto.</h5>
+<p align="justify"> Foi entregue também um código que faz a raspagem de forma automática, utilizando as bibliotecas do Python Beautiful Soup e Requests. Os dados foram retirados do site da Fatec São José dos Campos, onde os links do youtube de cada equipe foram armazenados em uma lista. A partir dos dados armazenados foi possível encontrar o nome da equipe, ano com semestre e curso, além dos links do GitHub que levam para o repositório do projeto.</p>
 
 <p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/img/clonagem_sprint2.gif" height="450"/></p>
 <br>
