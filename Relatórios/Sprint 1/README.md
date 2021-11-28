@@ -46,7 +46,7 @@
 - [Figma](http://www.figma.com): Editor gráfico e Prototipagem 
 - [Git](https://git-scm.com): Versionamento
 - [GitHub](https://github.com/): Hospedagem de código
-- [HTML](): Estruturação das páginas do site
+- [HTML5](): Estruturação das páginas do site
 - [Teams](https://teams.microsoft.com): Comunicação
 - [Whatsapp](): Comunicação
 - [Whimsical](https://whimsical.com): Prototipagem
