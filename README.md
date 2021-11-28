@@ -55,18 +55,20 @@ Foram usadas as seguintes ferramentas, linguagens, bibliotecas e tecnologias par
 
 - [Asana](https://www.asana.com/): Planejamento
 - [Bootstrap](https://getbootstrap.com): Framework front-end
-- [CSS](): Estilização do site
+- [CSS3](): Estilização do site
 - [Discord](https://discord.com): Comunicação
 - [Figma](http://www.figma.com): Editor gráfico e Prototipagem
 - [Excel](https://www.microsoft.com/pt-br/microsoft-365/excel): Gráfico de burndown
 - [Git](https://git-scm.com): Versionamento
 - [GitHub](https://github.com/): Hospedagem de código
-- [HTML](): Estruturação das páginas do site
+- [HTML5](): Estruturação das páginas do site
 - [jQuery](): Biblioteca de funções JavaScript
 - [Netlify](https://app.netlify.com): Hospedagem do site
 - [Python](https://www.python.org/): Criação do código
 - [Teams](https://teams.microsoft.com): Comunicação
 - [Visual Studio Code](https://code.visualstudio.com/): Codificação
+- [Whatsapp](): Comunicação
+- [Whimsical](https://whimsical.com): Prototipagem
 
 → [Voltar ao topo](#topo)
 
