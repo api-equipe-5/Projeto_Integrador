@@ -1,6 +1,6 @@
 <br id="topo">
 
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/cyberbug-logo.png" height="300" width="600"></p>
 
 <p align="center">
     <a href="#objetivo">Objetivo</a> | 
