@@ -21,7 +21,7 @@
 <span id="backlog">
  
 ## :pushpin: Backlog
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/backlog-sprint1.png" height="500" /></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/backlog-sprint1.png"></p>
 <br>
 
  → [Voltar ao topo](#topo)
