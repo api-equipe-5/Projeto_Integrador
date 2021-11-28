@@ -2,7 +2,7 @@
  
 <h1 align="center"> SPRINT 1 :ballot_box_with_check: </h1>
 
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"/></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/cyberbug-logo.png" height="300" width="600"/></p>
 
 <p align="center">
     <a href="#cronograma">Cronograma</a> | 
@@ -34,7 +34,7 @@
 
 <h3 align="center"> WIREFRAME </h3>
 <p align="justify">Inclusive entregamos o wireframe, contendo os trabalhos dos projetos anteriores com os seus respectivos links de apresentação e repositório. Para facilitar a busca, terá uma pesquisa avançada contendo o ano, semestre, turma e equipe. Haverá uma página do administrador com a funcionalidade de adicionar, remover projetos, convidar usuários e removê-los posteriormente. Aqueles que forem convidados receberão um convite no e-mail, tendo que criar um login, em seguida possuindo acesso para a inclusão do projeto. <br> </p>
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Prot%C3%B3tipo.gif" height="450"/></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/img/Wireframe-sprint1.gif" height=""/></p>
 <br>
  
 <span id="tecnologias">
