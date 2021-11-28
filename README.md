@@ -53,19 +53,19 @@ os projetos;
 
 Foram usadas as seguintes ferramentas, linguagens, bibliotecas e tecnologias para a execução do projeto:
 
-- [Asana](): Planejamento
-- [Bootstrap](): Framework front-end
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): Estilização do site
-- [Discord](): Comunicação
+- [Asana](https://www.asana.com/): Planejamento
+- [Bootstrap](https://getbootstrap.com): Framework front-end
+- [CSS](): Estilização do site
+- [Discord](https://discord.com): Comunicação
 - [Figma](http://www.figma.com): Editor gráfico e Prototipagem
-- [Excel](https://www.google.com/sheets/about/): Gráfico de burndown
-- [Git](): Versionamento
-- [GitHub](): Hospedagem de código
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): Estruturação das páginas do site
+- [Excel](https://www.microsoft.com/pt-br/microsoft-365/excel): Gráfico de burndown
+- [Git](https://git-scm.com): Versionamento
+- [GitHub](https://github.com/): Hospedagem de código
+- [HTML](): Estruturação das páginas do site
 - [jQuery](): Biblioteca de funções JavaScript
-- [Netlify](): Hospedagem do site
+- [Netlify](https://app.netlify.com): Hospedagem do site
 - [Python](https://www.python.org/): Criação do código
-- [Teams](): Comunicação
+- [Teams](https://teams.microsoft.com): Comunicação
 - [Visual Studio Code](https://code.visualstudio.com/): Codificação
 
 → [Voltar ao topo](#topo)
