@@ -2,7 +2,7 @@
 
 <h1 align="middle"> SPRINT 4 :ballot_box_with_check:</h1>
 
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens/Logo%203.png" height="300" width="600"></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/cyberbug-logo.png" height="300" width="600"></p>
 
 <p align="center">
     <a href="#cronograma">Cronograma</a> | 
@@ -33,7 +33,7 @@
 <p align="justify"> Através do Netlify, uma ferramenta que permite a hospedagem de sites. Publicamos a nossa página web, deixando-a pública, a qual poderá acessar
 <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> aqui </a> </p>
 
-<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/site-sprint4.gif" height="450"/></p>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/img/website-sprint4.gif"></p>
 
 <span id="tecnologias"> 
  
