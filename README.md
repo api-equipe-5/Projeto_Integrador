@@ -22,12 +22,13 @@ os projetos;
 - [x] Organização do GitHub.
 
 ## :clipboard:Relatórios
-|Resultados:open_file_folder:|
-| -------- |
-|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%201/README.md">Sprint 1 </a>|
-|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%202/README.md">Sprint 2 </a>|
-|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%203/README.md">Sprint 3 </a>|
-|<a href="https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Relat%C3%B3rios/Sprint%204/README.md">Sprint 4 </a>|
+
+| Sprint | Lançamento | Status | Histórico |
+|:-----:|:----------:|:---------:|:---------:|
+| 01 | 19/09/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%201/README.md) |
+| 02 | 10/10/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%202/README.md) |
+| 03 | 07/11/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%203/README.md) |
+| 04 | 28/11/2021 | Em andamento | [ver relatório](/Relat%C3%B3rios/Sprint%204/README.md) |
 
 <br>
 
