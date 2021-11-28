@@ -45,7 +45,7 @@
  
 <span id="tecnologias">
  
-<h2> 	:gear: Tecnologias Utilizadas</h2>
+<h2> :gear: Tecnologias Utilizadas</h2>
  
 - [CSS3](): Estilização do site
 - [Figma](http://www.figma.com): Editor gráfico e Prototipagem 
@@ -62,7 +62,7 @@
 
 <span id="equipe">
 
-## Equipe
+## 👩‍💻 Equipe
 |Função|Nome|GitHub|LinkedIn|
 | -------- | -------- |-------- |-------- |
 |Scrum Master|Ana Carolina das Neves|<a href="https://github.com/AnaCarolinaNeves" target="_blank"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>|<a href="https://www.linkedin.com/in/ana-carolina-neves-36aa68207/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>|
