@@ -55,8 +55,6 @@
 - [Python](https://www.python.org/): Criação do código
 - [Teams](https://teams.microsoft.com): Comunicação
 - [Whatsapp](): Comunicação
-- [Whimsical](https://whimsical.com): Prototipagem
- 
  
 <br>
 
