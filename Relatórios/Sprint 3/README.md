@@ -54,7 +54,7 @@
  
 <span id="equipe">
  
-## Equipe
+## 👩‍💻 Equipe
  
 |Função|Nome|GitHub|LinkedIn|
 | -------- | -------- |-------- |-------- |
