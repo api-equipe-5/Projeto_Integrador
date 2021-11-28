@@ -31,7 +31,7 @@ os projetos;
 
 <br>
 
-<h3> Para conferir o resultado final, <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> clique aqui  </a> </h3>
+<h3> :point_right: Para conferir o resultado final, <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> clique aqui :mag_right: </a> </h3>
 
 <br>
 
