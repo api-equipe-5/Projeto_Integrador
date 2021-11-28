@@ -23,7 +23,7 @@ os projetos;
 
 ## :clipboard:Relatórios
 
-| Sprint | Lançamento | Status | Histórico |
+| Sprint | Entrega | Status | Histórico |
 |:-----:|:----------:|:---------:|:---------:|
 | 01 | 19/09/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%201/README.md) |
 | 02 | 10/10/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%202/README.md) |
