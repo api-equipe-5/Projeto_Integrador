@@ -45,13 +45,16 @@ color: rgb(58, 58, 58);
 }
             
 .curso{
-margin-left: 20%;
 display: flex;
-align-items: center;
-            
 }
+
+.curso img{
+margin-left:10%;       
+}
+
 .curso p {
 font-weight: bold;
+margin-left: 3%;
 line-height: 3;
 color: rgb(255, 255, 255);
 width: 60%;
