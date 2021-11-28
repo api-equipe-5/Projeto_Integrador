@@ -39,9 +39,7 @@
  
 <h1> 	:gear: Tecnologias Utilizadas</h2>
 
-- [Asana](https://www.asana.com/): Planejamento
 - [Bootstrap](https://getbootstrap.com): Framework front-end
-- [Discord](https://discord.com): Comunicação
 - [Figma](http://www.figma.com): Editor gráfico e Prototipagem 
 - [Git](https://git-scm.com): Versionamento
 - [GitHub](https://github.com/): Hospedagem de código
