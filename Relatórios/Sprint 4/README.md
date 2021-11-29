@@ -46,6 +46,7 @@
 - [HTML5](): Estruturação das páginas do site
 - [Netlify](https://app.netlify.com): Hospedagem do site
 - [Teams](https://teams.microsoft.com): Comunicação
+- [Visual Studio Code](https://code.visualstudio.com/): Edição de código
 - [Whatsapp](): Comunicação 
 
 <br>

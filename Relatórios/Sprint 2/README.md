@@ -54,6 +54,7 @@
 - [HTML5](): Estruturação das páginas do site
 - [Python](https://www.python.org/): Criação do código
 - [Teams](https://teams.microsoft.com): Comunicação
+- [Visual Studio Code](https://code.visualstudio.com/): Edição de código
 - [Whatsapp](): Comunicação
  
 <br>
