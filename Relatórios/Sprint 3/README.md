@@ -46,6 +46,7 @@
 - [HTML5](): Estruturação das páginas do site
 - [jQuery](): Biblioteca de funções JavaScript 
 - [Teams](https://teams.microsoft.com): Comunicação
+- [Visual Studio Code](https://code.visualstudio.com/): Edição de código
 - [Whatsapp](): Comunicação
 
 <br>
