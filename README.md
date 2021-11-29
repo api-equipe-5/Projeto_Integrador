@@ -43,7 +43,7 @@ os projetos;
 | 01 | 19/09/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%201/README.md) |
 | 02 | 10/10/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%202/README.md) |
 | 03 | 07/11/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%203/README.md) |
-| 04 | 28/11/2021 | Em andamento | [ver relatório](/Relat%C3%B3rios/Sprint%204/README.md) |
+| 04 | 28/11/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%204/README.md) |
 
 <br>
 
