@@ -7,7 +7,7 @@
     <a href="#requisitos">Requisitos</a> | 
     <a href="#relatório">Relatório</a> | 
     <a href="#tecnologias">Tecnologias</a> | 
-    <a href="#projeto">Projeto</a> |
+    <a href="#projeto">Resultado Final</a> |
     <a href="#equipe">Equipe</a> | 
 </p>
 
@@ -32,21 +32,42 @@ os projetos;
 - [ ] Manual de Instalação;
 - [x] Organização do GitHub.
  
+
  → [Voltar ao topo](#topo)
 
+## 📌 Backlog
+    
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/backlog-sprint4.png"></p>
+    
+## 📆 Cronograma de entregas
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/cronograma-sprint%204.png"></p>  
+ 
+<br>
+    
 <span id="relatório">
  
 ## :clipboard: Relatórios
-
-| Sprint | Entrega | Status | Histórico |
+Na tabela abaixo é possível visualizar os resultados de cada Sprint clicando em "Ver relatório". 
+    
+| Sprint | Entrega | Status | Relatório |
 |:-----:|:----------:|:---------:|:---------:|
 | 01 | 19/09/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%201/README.md) |
 | 02 | 10/10/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%202/README.md) |
 | 03 | 07/11/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%203/README.md) |
 | 04 | 28/11/2021 | ✔️ | [ver relatório](/Relat%C3%B3rios/Sprint%204/README.md) |
+ 
+<span id="projeto">
+    
+<br>
+    
+## 🖥️ Resultado Final
+
+<h3 align="center">Abaixo é possível visualizar o funcionamento do site</h3>
+<p align="center"> <img src = "https://github.com/api-equipe-5/Projeto_Integrador/blob/master/Imagens%20README/V%C3%ADdeo%20Final.gif"></p>
+<h3> :point_right: Para acessar o site <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> clique aqui :mag_right: </a> </h3>
 
 <br>
-
+    
 <span id="tecnologias">
 
 ## 🛠️ Tecnologias
@@ -71,9 +92,6 @@ Foram usadas as seguintes ferramentas, linguagens, bibliotecas e tecnologias par
 - [Whimsical](https://whimsical.com): Prototipagem
 
 → [Voltar ao topo](#topo)
-
-<span id="projeto">
-<h3> :point_right: Para conferir o resultado final, <a href= "https://fatecsjc-projetointegrador.netlify.app/" target="_blank"> clique aqui :mag_right: </a> </h3>
 
 <br>
  
