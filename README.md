@@ -6,8 +6,8 @@
     <a href="#objetivo">Objetivo</a> | 
     <a href="#requisitos">Requisitos</a> | 
     <a href="#relatório">Relatório</a> | 
-    <a href="#tecnologias">Tecnologias</a> | 
     <a href="#projeto">Resultado Final</a> |
+    <a href="#tecnologias">Tecnologias</a> | 
     <a href="#equipe">Equipe</a> | 
 </p>
 
